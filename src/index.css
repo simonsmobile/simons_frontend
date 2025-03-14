@@ -1,0 +1,50 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+}
+
+body {
+  background-color: var(--primary-bg) !important;
+  background-image: url('Background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* Fonts */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.no-link {
+  text-decoration: none;
+}
+
+:root {
+  --primary-bg: #3f62ca;
+  --primary-accent: #1F41BB;
+  --primary-accent2: #3a4d83;
+  --secondary-bg: #ffffff;
+  --secondary-accent: #e5e5e9;
+  --primary-font: #f1f2f6;
+  --secondary-font: #4b4c50;
+  --dark: #080808;
+  --light: #d3d3d3;
+  --success: #21baa0;
+  --info: #10a8c3;
+  --warning: #e9cb3c;
+  --danger: #e74c3c;
+  --shadow: #bdc3c7;
+  --highlight: #1fa5ed;
+  --highlight2: #2bd471;
+  --bg0: #d9dcf1;
+  --bg1: #f8f9ff;
+  --bg2: #7c7af5;
+  --bg3: #260115;
+
+}
+
+
