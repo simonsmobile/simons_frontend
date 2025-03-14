@@ -1,7 +1,7 @@
 const env = {
-    SERVER_URL: '',
+    SERVER_URL: 'https://simons-backend.onrender.com/e-learning-portal/api/core/v01',
 
-    // ''
+    // 'https://simons-backend.onrender.com/e-learning-portal/api/core/v01'
     // 'http://localhost:5000/e-learning-portal/api/core/v01'
 
     QS_MAIN: [
