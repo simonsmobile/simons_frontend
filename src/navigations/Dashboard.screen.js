@@ -53,7 +53,7 @@ const DashboardScreen = () => {
     <div className="container-dash">
       <nav className="top-nav">
         <div className="logo">
-          <h2>SimOns</h2>
+          <h2>SIMOnS</h2>
         </div>
         <div className="logout">
           <button onClick={handleLogout} className="logout-button">
