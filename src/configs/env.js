@@ -2852,7 +2852,7 @@ const env = {
           answer: "A set of instructions or rules",
           points: 1.0,
           type: "3.4",
-          level: "beginner"
+          level: "basic"
       },
       {
           title: "3.4 B2",
@@ -2865,7 +2865,7 @@ const env = {
           answer: "So a computer can understand it",
           points: 1.0,
           type: "3.4",
-          level: "beginner"
+          level: "basic"
       },
       {
           title: "3.4 B3",
@@ -2879,7 +2879,7 @@ const env = {
           answer: "Ambiguous",
           points: 1.0,
           type: "3.4",
-          level: "beginner"
+          level: "basic"
       },
       {
           title: "3.4 B4",
@@ -2893,7 +2893,7 @@ const env = {
           answer: "A sequence of instructions designed to solve a problem",
           points: 1.0,
           type: "3.4",
-          level: "beginner"
+          level: "basic"
       },
       {
           title: "3.4 B5",
@@ -2907,7 +2907,7 @@ const env = {
           answer: "To perform an action if the condition is true",
           points: 1.0,
           type: "3.4",
-          level: "beginner"
+          level: "basic"
       },
       {
           title: "3.4 B6",
@@ -2921,7 +2921,7 @@ const env = {
           answer: "By creating an algorithm that describes the steps to the solution",
           points: 1.0,
           type: "3.4",
-          level: "beginner"
+          level: "basic"
       },
       {
           title: "3.4 M1",
@@ -3667,7 +3667,7 @@ const env = {
           answer: "Check the power supply",
           points: 1.0,
           type: "5.1",
-          level: "beginner"
+          level: "basic"
       },
       {
           title: "5.1 B2",
@@ -3680,7 +3680,7 @@ const env = {
           answer: "Observe the issue and take note of any error messages",
           points: 1.0,
           type: "5.1",
-          level: "beginner"
+          level: "basic"
       },
       {
           title: "5.1 B3",
@@ -3694,7 +3694,7 @@ const env = {
           answer: "Too many applications running",
           points: 1.0,
           type: "5.1",
-          level: "beginner"
+          level: "basic"
       },
       {
           title: "5.1 B4",
@@ -3706,7 +3706,7 @@ const env = {
           answer: "True",
           points: 1.0,
           type: "5.1",
-          level: "beginner"
+          level: "basic"
       },
       {
           title: "5.1 B5",
@@ -3720,7 +3720,7 @@ const env = {
           answer: "Software",
           points: 1.0,
           type: "5.1",
-          level: "beginner"
+          level: "basic"
       },
       {
           title: "5.1 B6",
@@ -3734,7 +3734,7 @@ const env = {
           answer: "Command Prompt",
           points: 1.0,
           type: "5.1",
-          level: "beginner"
+          level: "basic"
       },
       {
           title: "5.1 M1",
