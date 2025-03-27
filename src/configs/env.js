@@ -4387,11 +4387,390 @@ const env = {
                 {
                     target: "Mendeley",
                     url: "https://www.mendeley.com/"
-                }
+                },
+                {
+                    target: "Harvard Biomedical Data Management",
+                    url: "https://datamanagement.hms.harvard.edu/"
+                },
             ],
             type: "1.3",
             level: "master"
+        },
+        {
+            text: "Learn how to use a variety of digital technologies to interact with your peers or teachers in an institutional or private environment, and to choose the most appropriate communication tools for a given context.",
+            links: [
+                {
+                    target: "Trello",
+                    url: "https://trello.com/"
+                }, 
+                {
+                    target: "Notion",
+                    url: "https://www.notion.com/"
+                }
+            ],
+            type: "2.1",
+            level: "basic"
+        },
+        {
+            text: "Learn how to interact with Artificial Intelligence tools, and to choose the right communication platform for diverse situations, especially for collaborative work.",
+            links: [
+              
+            ],
+            type: "2.1",
+            level: "master"
+        },
+        {
+            text: "Learn how to use digital tools and technologies to share data, information and digital content with others. By understanding sharing rules and proper attribution, you can enhance collaborative work to another level.",
+            links: [
+                {
+                    target: "Creative Commons",
+                    url: "https://creativecommons.org/"
+                }, 
+                {
+                    target: "Dropbox",
+                    url: "https://www.dropbox.com/"
+                }
+            ],
+            type: "2.2",
+            level: "basic"
+        },
+        {
+            text: "Learn how to properly share data and information online by using the right tools and understanding copyright content and types of licenses.",
+            links: [
+
+            ],
+            type: "2.2",
+            level: "master"
+        },
+        {
+            text: "Learn how to participate in society through the use of public and private digital services. Seek opportunities for self-empowerment and for participatory citizenship through appropriate digital technologies.",
+            links: [
+                {
+                    target: "SurveyMonkey",
+                    url: "https://www.surveymonkey.com/"
+                }, 
+                {
+                    target: "Meetup",
+                    url: "https://www.meetup.com/"
+                }
+            ],
+            type: "2.3",
+            level: "basic"
+        },
+        {
+            text: "Learn how to engage as citizen in the digital world by understanding blockchain and AI technologies. Use surveys to collect different perspectives and mobilise communities on social media.",
+            links: [
+
+            ],
+            type: "2.3",
+            level: "master"
+        },
+
+        {
+            text: "Learn how to use digital tools and technologies for collaborative work, and for co-construction and co-creation of data, resources and knowledge.",
+            links: [
+                {
+                    target: "Mentimeter",
+                    url: "https://www.mentimeter.com/"
+                }, 
+                {
+                    target: "Slido",
+                    url: "https://www.slido.com/"
+                },
+                {
+                    target: "Canva",
+                    url: "https://www.canva.com/"
+                }
+            ],
+            type: "2.4",
+            level: "basic"
+        },
+
+        {
+            text: "Learn how to enhance group work through online collaboration and keep track of changes made in shared files. Improve your creativity remixing other people’s content and act as a contributor in the co-creation of knowledge.",
+            links: [
+
+            ],
+            type: "2.4",
+            level: "master"
+        },
+
+        {
+            text: "Be aware of behavioural norms and know-how while using digital technologies to interact with others.",
+            links: [
+
+            ],
+            type: "2.5",
+            level: "basic"
+        },
+
+        {
+            text: "Learn how to adapt communication strategies to your specific audience and to be inclusive and respectful of cultural and generational diversity in digital environments.",
+            links: [
+
+            ],
+            type: "2.5",
+            level: "master"
+        },
+
+        {
+            text: "Learn how to create and manage multiple digital identities by protecting your own reputation and being mindful of your social media publications.",
+            links: [
+                {
+                    target: "GDPR info",
+                    url: "https://gdpr-info.eu/"
+                }, 
+
+            ],
+            type: "2.6",
+            level: "basic"
+        },
+
+        {
+            text: "Learn how to protect your digital identities using secure authentications and knowing how to deal with the data that you produce online on different platforms, tools and services.",
+            links: [
+
+            ],
+            type: "2.6",
+            level: "master"
+        },
+
+        {
+            "text": "Learn how to create, modify, and improve digital content by integrating different media formats, such as text, images, and audio, using a range of digital tools.",
+            "links": [
+                {
+                    "target": "Create to Learn",
+                    "url": "https://createtolearn.online/?"
+                },
+            ],
+            "type": "3.1",
+            "level": "basic"
+        },
+        {
+            "text": "Learn how to design, develop, and optimise complex digital content, integrating multimedia, interactive elements, and data visualisation tools.",
+            "links": [
+
+            ],
+            "type": "3.1",
+            "level": "master"
+        },
+
+        {
+            "text": "Select ways to modify, refine, improve and integrate simple information to create new content.",
+            "links": [
+
+            ],
+            "type": "3.2",
+            "level": "basic"
+        },
+        {
+            "text": "Critically analyse, transform, and innovate digital content by integrating diverse multimedia formats, advanced editing techniques, and data-driven elements. Apply creative and technical skills to enhance digital materials while ensuring originality, accessibility, and ethical reuse.",
+            "links": [
+
+            ],
+            "type": "3.2",
+            "level": "master"
+        },
+
+
+        {
+            "text": "Specify well-defined rules of copyright and licenses that apply to data  digital information and content. Learn how to use and share digital content legally by checking the terms and conditions and licensing schemes  such as the Creative Commons License. Know how to identify copyright limitations and exceptions.",
+            "links": [],
+            "type": "3.3",
+            "level": "basic"
+        },
+        {
+            "text": "Choose the most appropriate copyright and licence rules for data  digital information and content. Learn how to elaborate a suitable strategy  including content licensing  for sharing and protecting your original creations.",
+            "links": [
+                {
+                    "target": "Creative Commons",
+                    "url": "https://creativecommons.org/share-your-work/cclicenses/"
+                },
+            ],
+            "type": "3.3",
+            "level": "master"
+        },
+
+        {
+            "text": "List simple instructions for a computing system to solve a given problem or perform a specific task.",
+            "links": [
+                {
+                    "target": "Python Central",
+                    "url": "https://www.pythoncentral.io/python-input-function-a-complete-guide/"
+                },
+                {
+                    "target": "Google Colab",
+                    "url": "https://colab.research.google.com/"
+                },
+                {
+                    "target": "Replit",
+                    "url": "https://replit.com/"
+                }
+            ],
+            "type": "3.4",
+            "level": "basic"
+        },
+        {
+            "text": "Learn to develop solutions for complex problems involving multiple interacting factors by planning and creating instructions for a computing system to execute tasks efficiently.",
+            "links": [
+                {
+                    "target": "Science Direct: Planning Algoritm",
+                    "url": "https://www.sciencedirect.com/topics/computer-science/planning-algorithm#:~:text=A%20Planning%20Algorithm%20is%20a"
+                },
+                {
+                    "target": "pandas",
+                    "url": "https://pandas.pydata.org/"
+                },
+            ],
+            "type": "3.4",
+            "level": "master"
+        },
+
+        {
+            "text": "Recognise and apply fundamental strategies to safeguard devices and digital content  assessing common risks and threats in online environments. Identify and implement standard security measures to ensure digital safety with routine tests and best practices. Adopt established approaches to evaluate the reliability of digital information and uphold privacy standards.",
+            "links": [
+
+                {
+                    "target": "Kaspersky: Pre-emptive Safety",
+                    "url": "https://www.kaspersky.com/resource-center/preemptive-safety/how-to-protect-your-devices"
+                },
+
+            ],
+            "type": "4.1",
+            "level": "basic"
+        },
+        {
+            "text": "Select appropriate protections for devices and digital content  by assessing online threats. Develop solutions to complex and challenging issues related to cybersecurity by implementing safety measures  risk management  and privacy protection. Master digital security and guide others in safeguarding their devices and data.",
+            "links": [],
+            "type": "4.1",
+            "level": "master"
+        },
+        {
+            "text": "Identify and apply basic methods to protect personal data and privacy in digital environments  ensuring responsible sharing of personally identifiable information. Recognise and follow standard practices for securely managing and sharing personal data while minimising risks for yourself and others. Understand common privacy policy statements regarding the use of online personal data.",
+            "links": [
+                {
+                    "target": "Complete guide to GDPR compliance",
+                    "url": "https://gdpr.eu/"
+                },
+                {
+                    "target": "EFF: Privacy",
+                    "url": "https://www.eff.org/issues/privacy"
+                },
+                {
+                    "target": "The Italian Data Protection Authority",
+                    "url": "https://www.garanteprivacy.it/web/garante-privacy-en/home_en"
+                }
+            ],
+            "type": "4.2",
+            "level": "basic"
+        },
+        {
+            "text": "Apply and evaluate appropriate methods for protecting personal data and privacy in digital environments  ensuring responsible data sharing while minimising risks for yourself and others.  Analise and assess privacy policies to understand how personal data is used and develop solutions for complex challenges related to data protection and information security. Improve your expertise by proposing innovative approaches to data security and policy development  and guide others in safeguarding digital privacy  ",
+            "links": [],
+            "type": "4.2",
+            "level": "master"
+        },
+        {
+            "text": "Identify and apply basic strategies to prevent health risks and protect physical and psychological well-being when using digital technologies. Choose appropriate measures to safeguard yourself and others from potential dangers in digital environments. Explore and evaluate digital technologies that promote social well-being and inclusion.",
+            "links": [
+                {
+                    "target": "WHO: Digital Health",
+                    "url": "https://www.who.int/health-topics/digital-health"
+                },
+            ],
+            "type": "4.3",
+            "level": "basic"
+        },
+        {
+            "text": "Identify  apply  and adapt effective strategies to prevent health risks and protect physical and psychological well-being when using digital technologies. Implement and evaluate appropriate measures to safeguard yourself and others from online dangers while promoting responsible digital engagement. Develop innovative solutions to complex challenges related to digital well-being  safety  and social inclusion  contributing to advancements in this field.",
+            "links": [],
+            "type": "4.3",
+            "level": "master"
+        },
+        {
+            "text": "Identify the basic environmental impacts of digital technologies and their usage. Recognise and describe routine ways in which digital technologies affect the environment. Explore and discuss strategies to mitigate the environmental impact of using digital technology.",
+            "links": [
+
+            ],
+            "type": "4.4",
+            "level": "basic"
+        },
+        {
+            "text": "Identify and implement effective strategies to reduce the environmental impact of digital technologies. Develop and evaluate innovative solutions to complex challenges related to sustainability in using digital technology. Contribute to sustainable practices by applying knowledge  guiding others in environmental protection  and advancing new ideas in the field.",
+            "links": [],
+            "type": "4.4",
+            "level": "master"
+        },
+
+        {
+            "text": "Learn how to identify and solve simple technical problems when operating devices and using digital environments.",
+            "links": [
+                {
+                    "target": "Microsoft Event Viewer",
+                    "url": "https://learn.microsoft.com/en-us/shows/inside/event-viewer"
+                }
+            ],
+            "type": "5.1",
+            "level": "basic"
+        },
+        {
+            "text": "Learn how to assess technical problems when operating devices and using digital environments. Create solutions to solve complex technical problems.",
+            "links": [],
+            "type": "5.1",
+            "level": "master"
+        },
+        {
+            "text": "Learn to assess needs and to identify  evaluate  select and use digital tools and technological methods to solve problems. Adjust and customise digital environments to personal or institutional needs by focussing on accessibility.",
+            "links": [],
+            "type": "5.2",
+            "level": "basic"
+        },
+        {
+            "text": "Learn how to assess needs choosing the most appropriate digital tools and develop technological solutions to solve those needs.",
+            "links": [],
+            "type": "5.2",
+            "level": "master"
+        },
+        {
+            "text": "Learn how to use digital tools and technologies to create knowledge and to innovate processes and products. ",
+            "links": [
+                {
+                    "target": "MindMeister",
+                    "url": "https://www.mindmeister.com"
+                },
+    
+            ],
+            "type": "5.3",
+            "level": "basic"
+        },
+        {
+            "text": "Engage in communities and with your peers in cognitive processing to understand and solve conceptual problems in digital environments.",
+            "links": [
+                {
+                    "target": "Trello",
+                    "url": "https://trello.com/"
+                },
+                {
+                    "target": "Blender",
+                    "url": "https://www.blender.org/"
+                }
+            ],
+            "type": "5.3",
+            "level": "master"
+        },
+        {
+            "text": "Understand where your own digital competence needs to be improved or updated. Learn how to support others in their digital competence development. ",
+            "links": [],
+            "type": "5.4",
+            "level": "basic"
+        },
+        {
+            "text": "Learn how to seek opportunities for self-development and to keep up-to-date with digital evolution. Apply your knowledge to contribute to your academic progress and to guide others in identifying digital competence gaps.",
+            "links": [],
+            "type": "5.4",
+            "level": "master"
         }
+
     ]
     
     
