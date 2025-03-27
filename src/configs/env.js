@@ -2,7 +2,7 @@ const env = {
     SERVER_URL: 'https://simons-backend.onrender.com/e-learning-portal/api/core/v01',
 
     // 'https://simons-backend.onrender.com/e-learning-portal/api/core/v01'
-    // 'http://localhost:5000/e-learning-portal/api/core/v01'
+    // 'http://localhost:5001/e-learning-portal/api/core/v01'
 
     QS_MAIN: [
         {
@@ -4302,9 +4302,96 @@ const env = {
           type: "5.4",
           level: "master"
       }
+    ], 
 
+    LEARNING_MATERIAL: [
+        {
+            text: "Learn how to articulate information needs and searching effectively in academic databases and search engines, using Boolean operators and refining search strategies to access relevant digital content.",
+            links: [
+                {
+                    target: "Google Scholar",
+                    url: "https://scholar.google.com/"
+                }, 
+                {
+                    target: "Microsoft",
+                    url: "https://support.microsoft.com/en-us/topic/advanced-search-options-b92e25f1-0085-4271-bdf9-14aaea720930"
+                }
+            ],
 
-
+            type: "1.1",
+            level: "basic"
+        },
+        {
+            text: "Master advanced search techniques using academic and specialised databases. Explore research repositories, apply metadata filtering, and optimise searches to retrieve high-quality, peer-reviewed content.",
+            links: [
+                {
+                    target: "Scopus",
+                    url: "https://www.scopus.com/"
+                }, 
+                {
+                    target: "JSTOR",
+                    url: "https://www.jstor.org/"
+                }
+            ],
+            type: "1.1",
+            level: "master"
+        },
+        {
+            text: "Develop critical thinking skills to assess information credibility. Learn to identify trustworthy sources, verify publication dates, check for bias, and compare methodologies to ensure accuracy in data interpretation.",
+            links: [
+                {
+                    target: "FactCheck.org",
+                    url: "https://www.factcheck.org/"
+                }, 
+                {
+                    target: "Media Bias/Fact Check",
+                    url: "https://mediabiasfactcheck.com/"
+                }
+            ],
+            type: "1.2",
+            level: "basic"
+        },
+        {
+            text: "Apply in-depth evaluation techniques, including cross-referencing multiple sources, analysing research methods, and prioritising peer-reviewed data. Enhance research integrity by using metadata and systematic file organisation.",
+            links: [
+                {
+                    target: "Dataset Search",
+                    url: "https://datasetsearch.research.google.com/"
+                }
+            ],
+            type: "1.2",
+            level: "master"
+        },
+        {
+            text: "Learn to organise digital files efficiently with structured folders and clear naming conventions. Use cloud storage to access data everywhere and employ data visualisation tools to improve understanding and increase your research impact.",
+            links: [
+                {
+                    target: "Google Drive",
+                    url: "https://drive.google.com/"
+                }, 
+                {
+                    target: "Microsoft OneDrive",
+                    url: "https://onedrive.live.com/"
+                }
+            ],
+            type: "1.3",
+            level: "basic"
+        },
+        {
+            text: "Implement best practices for digital data management, including regular backups, metadata tagging, and automation for repetitive tasks. Use databases and advanced tools for seamless research organisation.",
+            links: [
+                {
+                    target: "Zotero",
+                    url: "https://www.zotero.org/"
+                }, 
+                {
+                    target: "Mendeley",
+                    url: "https://www.mendeley.com/"
+                }
+            ],
+            type: "1.3",
+            level: "master"
+        }
     ]
     
     

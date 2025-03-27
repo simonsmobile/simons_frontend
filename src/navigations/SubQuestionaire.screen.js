@@ -27,7 +27,7 @@ const SubQuestionnaireScreen = () => {
     level,
     sub.category
   ));
-
+  
   // const [questionnaire, setQuestionaire] = useState(getThreeRandomQuestions(env.QS_SAMPLE2));
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
