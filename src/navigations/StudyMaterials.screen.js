@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import env from '../configs/env';
+import { FaChevronLeft } from "react-icons/fa";
+import { MdOutlineQuiz } from "react-icons/md";
 
 
 const StudyMaterialsScreen = () => {
@@ -20,7 +22,7 @@ const StudyMaterialsScreen = () => {
     );
 
     // Return the material
-    console.log(filteredMaterial);
+    //console.log(filteredMaterial);
     return filteredMaterial;
   };
 
@@ -32,15 +34,14 @@ const StudyMaterialsScreen = () => {
 //  console.log(learning_material[0].text);
 
   const urls = learning_material[0].links;
-  console.log(urls);
+  //console.log(urls);
   return (
     <div className="container">
-      <span className="simple-heading">Learning Materials</span>
-      <h4 className="title">{category} [{level.toLowerCase() === "basic" ? "Foundation / Intermediate" : "Advanced / Highly Specialized"}]</h4>
-      {sub&&<small>{sub.category} - {sub.title}</small>}
+      <p className="title">{category} </p>
+      {sub&&<small>{sub.category} - {sub.title} ({level.toLowerCase() === "basic" ? "Foundation / Intermediate" : "Advanced / Highly Specialized"})</small>}
 
       {/* Video Container */}
-      <div style={{ width: '60%', maxWidth: '800px', margin: '0 auto' }}>
+      <div style={{ width: '50%', maxWidth: '800px', margin: '0 auto' }}>
         <video
           controls
           style={{ width: '100%', height: 'auto', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
@@ -52,21 +53,25 @@ const StudyMaterialsScreen = () => {
 
       <div className="study-content">
         <p>{learning_material[0].text}</p>
-        <p><strong>Additional resources</strong></p>
+        {urls.length > 0 ? <p><strong>Additional resources</strong></p> : <div></div> }
+       
         
         {urls.map(url => <div><a target="_blank" href={`${url.url}`}>{url.target}</a></div>)}
 
       </div>
       <br />
-      <button onClick={handleReattempt} className="reattempt-button">
-        Re-attempt Quiz
-      </button>
+      <div class="button-container">
 
-      <p className="signup-prompt">
-        <Link to={'/dashboard'} className="signup-link">
-          Go to Dashboard
+        <Link to={'/dashboard'}>
+            <button type="button" className="goback-button">
+            <p><FaChevronLeft /> Dashboard</p>
+          </button>
         </Link>
-      </p>
+        <button onClick={handleReattempt} className="takequiz-button">
+        <MdOutlineQuiz /> Take the Quiz
+        </button>
+      </div>
+      <div class="spacer"><p>&nbsp;</p></div>
     </div>
   );
 };

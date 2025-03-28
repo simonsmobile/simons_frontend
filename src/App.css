@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+ /* justify-content: center; */
   height: 100vh;
   /* background-color: #f7f9fc; */
   padding: 20px;
@@ -36,7 +36,7 @@
 }
 
 .title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: #1d1d1f;
   text-align: center;
@@ -80,7 +80,14 @@
 .register-button:hover {
   background-color: #5a6268;
 }
+.goback-button {
+  background-color: #5a6268;
+}
 
+.takequiz-button {
+  background-color:  var(--primary-accent);
+
+}
 
 .form {
   display: flex;
@@ -545,6 +552,22 @@ button:disabled {
   font-weight: bold;
   justify-content: center;
   align-items: center;
+}
+
+.greenok {
+  color: green;
+  font-size: 1.5em;
+
+}
+
+.greydoor {
+  color: darkslategrey;
+  font-size: 1.5em;
+}
+
+.redlock {
+color: red;
+font-size: 1.3em;
 }
 
 .green {

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { AiFillFileMarkdown, AiFillCloseCircle } from 'react-icons/ai';
 import { Link, useNavigate } from 'react-router-dom';
+import { FaCheck, FaDoorOpen, FaLock } from "react-icons/fa";
 
 const ProgressTracker = ({ results }) => {
   console.log(results)
@@ -74,7 +75,7 @@ const ProgressTracker = ({ results }) => {
                         className={`indicator`}
                         onClick={() => handleNavigation(index + 1, 'basic', category, grade)}
                       >
-                        {results[grade.id] == 'B' ? <img src={`${process.env.PUBLIC_URL}/images/lock-black.png`} alt="Match Found" width={20} /> : <img src={`${process.env.PUBLIC_URL}/images/lock-green.png`} alt="Match Found" width={30} />}
+                        {results[grade.id] == 'B' ? <div class="greydoor"><FaDoorOpen /></div> : <div class="greenok"><FaCheck /></div>}
                       </div>
                     </td>
                     <td className="indicator-cell">
@@ -86,10 +87,10 @@ const ProgressTracker = ({ results }) => {
                               : () => handleNavigation(index + 1, 'master', category, grade)
                           }
                         >
-                          {results[grade.id] === 'F' && <img src={`${process.env.PUBLIC_URL}/images/lock-red.png`} alt="Match Found" width={25} />}
-                          {results[grade.id] === 'B' && <img src={`${process.env.PUBLIC_URL}/images/lock-red.png`} alt="Match Found" width={25} />}
-                          {results[grade.id] === 'M' && <img src={`${process.env.PUBLIC_URL}/images/lock-black.png`} alt="Match Found" width={20} />}
-                          {results[grade.id] === 'C' && <img src={`${process.env.PUBLIC_URL}/images/lock-green.png`} alt="Match Found" width={30} />}
+                          {results[grade.id] === 'F' && <div class="redlock"><FaLock /></div>} {/*red*/}
+                          {results[grade.id] === 'B' && <div class="redlock"><FaLock /></div>}
+                          {results[grade.id] === 'M' && <div class="greydoor"><FaDoorOpen /></div>}
+                          {results[grade.id] === 'C' && <div class="greenok"><FaCheck /></div>} 
                       </div>
                     </td>
                   </tr>
