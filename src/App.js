@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate, useNavigate } from 'react-router-dom';
-import './App.css';
+
 import WelcomeScreen from './navigations/Welcome.screen';
 import CreateAccount from './navigations/CreateAccount.screen';
 import BeginScreen from './navigations/Begin.screen';
@@ -27,10 +27,8 @@ function App() {
       if (localStorage.getItem('username')) {
         if (localStorage.getItem('passed') === "Passed") {
           setRedirectRoute('/dashboard');
-          // history('/dashboard')
         } else {
           setRedirectRoute('/quest-begin');
-          // history('/quest-begin')
         }
       }
     };

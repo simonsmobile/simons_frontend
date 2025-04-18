@@ -21,22 +21,49 @@ const WelcomeScreen = () => {
   }, []);
 
   return (
-    <div className="container" style={{ backgroundImage: `${process.env.PUBLIC_URL}/imges/Background.png`, backgroundSize: 'contain',
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center' }}>
-      <div className="image-container top-img">
-        <img src={`${process.env.PUBLIC_URL}/images/Picturec.png`} height={80} alt="Welcome" className="top-image" />
+    <div className="flex flex-col items-center justify-between min-h-screen bg-white px-4 py-8">
+      <div className="w-full max-w-md">
+        <div className="flex justify-center mb-6">
+          <img 
+            src={`${process.env.PUBLIC_URL}/images/Picturec.png`} 
+            alt="SIMOnS Logo" 
+            className="h-20"
+          />
+        </div>
+
+        <div className="flex justify-center mb-8">
+          <img 
+            src={`${process.env.PUBLIC_URL}/images/start.png`} 
+            alt="Welcome" 
+            className="w-full max-w-xs"
+          />
+        </div>
+        
+        <div className="text-center mb-10">
+          <h1 className="text-2xl font-bold text-primary mb-2">
+            SIMOnS Mobile
+          </h1>
+          <p className="text-gray-600 text-sm px-6">
+            A Self-reflection Tool for the European Digital Competence Framework for Citizens
+          </p>
+        </div>
       </div>
-      <div className="image-container">
-        <img src={`${process.env.PUBLIC_URL}/images/start.png`} alt="Welcome" className="welcome-image" />
-      </div>
-      <h1 className="title">SIMOnS Mobile {localStorage.getItem("username")}</h1>
-      <p className="subtitle">
-        A Self-reflection Tool for the European Digital Competence Framework for Citizens
-      </p>
-      <div className="button-container">
-        <Link to={'/login'} className="login-button no-link">Login</Link>
-        <Link to={'/create-account'} className="register-button no-link">Register</Link>
+      
+      <div className="w-full max-w-md px-6 mb-8">
+        <div className="flex flex-col space-y-4">
+          <Link 
+            to="/login" 
+            className="w-full py-3 bg-black text-white font-medium rounded-md text-center shadow-md hover:bg-gray-800 transition-colors duration-300"
+          >
+            Login
+          </Link>
+          <Link 
+            to="/create-account" 
+            className="w-full py-3 bg-white text-black font-medium rounded-md text-center border border-black shadow-md hover:bg-gray-100 transition-colors duration-300"
+          >
+            Register
+          </Link>
+        </div>
       </div>
     </div>
   );

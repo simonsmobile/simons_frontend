@@ -1,8 +1,5 @@
 const env = {
-    SERVER_URL: 'https://simons-backend.onrender.com/e-learning-portal/api/core/v01',
-
-    // 'https://simons-backend.onrender.com/e-learning-portal/api/core/v01'
-    // 'http://localhost:5001/e-learning-portal/api/core/v01'
+    SERVER_URL: process.env.REACT_APP_SERVER_URL, 
 
     QS_MAIN: [
         {
