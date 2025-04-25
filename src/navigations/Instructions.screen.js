@@ -10,7 +10,12 @@ const InstructionsScreen = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      <div className="sticky top-0 z-10 bg-white shadow-sm px-4 py-3">
+      {/* Top design element */}
+      <div className="w-full relative">
+        <div className="absolute top-0 right-0 w-2/3 h-32 bg-amber-300 rounded-bl-full"></div>
+      </div>
+      
+      <div className="sticky top-0 z-10 bg-white shadow-sm px-4 py-3 mb-5">
         <div className="flex items-center">
           <Link to="/complete-account" className="text-gray-800">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -22,40 +27,60 @@ const InstructionsScreen = () => {
         </div>
       </div>
 
-      <div className="flex-1 px-4 py-6">
+      <div className="flex-1 px-4 py-6 mt-12">
         <div className="max-w-md mx-auto">
-          <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg mb-6">
-            <p className="text-gray-800 text-sm leading-relaxed">
-              The initial assessment contains a comprehensive set of 82 self-assessment questions. This test may take
-              about 20 minutes to complete. Therefore, you are advised to respond to all the questions with due attention
-              so that the app suggests you take necessary learning materials corresponding to the specific area of digital
-              competence you need to improve, based on your own self-assessment.
-            </p>
+          <div className="p-5 bg-blue-50 border border-blue-200 rounded-lg mb-6">
+            <div className="flex items-start">
+              <svg className="w-6 h-6 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <p className="text-gray-800 text-sm leading-relaxed">
+                The initial assessment contains a comprehensive set of 82 self-assessment questions. This test may take
+                about 20 minutes to complete. Therefore, you are advised to respond to all the questions with due attention
+                so that the app suggests you take necessary learning materials corresponding to the specific area of digital
+                competence you need to improve, based on your own self-assessment.
+              </p>
+            </div>
           </div>
 
-          <p className="font-medium text-gray-800 mb-4">Please read the following instructions carefully before proceeding:</p>
+          <h2 className="font-medium text-gray-800 mb-4 flex items-center">
+            <svg className="w-5 h-5 text-amber-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+            Please read the following instructions carefully:
+          </h2>
 
           <div className="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden mb-6">
             <ol className="divide-y divide-gray-200">
-              <li className="p-4 flex">
-                <span className="flex-shrink-0 w-6 h-6 bg-black text-white rounded-full flex items-center justify-center mr-3 text-sm">1</span>
-                <span className="text-gray-700">Dedicate appropriate time and attention for the assessment.</span>
+              <li className="p-4 flex items-center">
+                <div className="flex-shrink-0 w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3 text-sm">1</div>
+                <div>
+                  <p className="text-gray-700">Dedicate appropriate time and attention for the assessment.</p>
+                </div>
               </li>
-              <li className="p-4 flex">
-                <span className="flex-shrink-0 w-6 h-6 bg-black text-white rounded-full flex items-center justify-center mr-3 text-sm">2</span>
-                <span className="text-gray-700">Complete all the self-assessment questions in the survey.</span>
+              <li className="p-4 flex items-center">
+                <div className="flex-shrink-0 w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3 text-sm">2</div>
+                <div>
+                  <p className="text-gray-700">Complete all the self-assessment questions in the survey.</p>
+                </div>
               </li>
-              <li className="p-4 flex">
-                <span className="flex-shrink-0 w-6 h-6 bg-black text-white rounded-full flex items-center justify-center mr-3 text-sm">3</span>
-                <span className="text-gray-700">Do not refresh the page while taking the survey.</span>
+              <li className="p-4 flex items-center">
+                <div className="flex-shrink-0 w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3 text-sm">3</div>
+                <div>
+                  <p className="text-gray-700">Do not refresh the page while taking the survey.</p>
+                </div>
               </li>
-              <li className="p-4 flex">
-                <span className="flex-shrink-0 w-6 h-6 bg-black text-white rounded-full flex items-center justify-center mr-3 text-sm">4</span>
-                <span className="text-gray-700">If you encounter any issues, contact support.</span>
+              <li className="p-4 flex items-center">
+                <div className="flex-shrink-0 w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3 text-sm">4</div>
+                <div>
+                  <p className="text-gray-700">If you encounter any issues, contact support.</p>
+                </div>
               </li>
-              <li className="p-4 flex">
-                <span className="flex-shrink-0 w-6 h-6 bg-black text-white rounded-full flex items-center justify-center mr-3 text-sm">5</span>
-                <span className="text-gray-700">Review your answers before submitting the survey.</span>
+              <li className="p-4 flex items-center">
+                <div className="flex-shrink-0 w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3 text-sm">5</div>
+                <div>
+                  <p className="text-gray-700">Review your answers before submitting the survey.</p>
+                </div>
               </li>
             </ol>
           </div>
@@ -64,7 +89,7 @@ const InstructionsScreen = () => {
             <input
               type="checkbox"
               id="acceptInstructions"
-              className="mt-1 h-5 w-5 text-accent border-gray-300 rounded focus:ring-accent"
+              className="mt-1 h-5 w-5 text-amber-500 border-gray-300 rounded focus:ring-amber-500"
               checked={isAccepted}
               onChange={handleCheckboxChange}
             />
@@ -85,6 +110,11 @@ const InstructionsScreen = () => {
             Next
           </Link>
         </div>
+      </div>
+      
+      {/* Bottom design element */}
+      <div className="w-full relative">
+        <div className="absolute bottom-0 left-0 w-24 h-24 bg-amber-200 rounded-tr-full opacity-50"></div>
       </div>
     </div>
   );

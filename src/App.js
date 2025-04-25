@@ -17,13 +17,15 @@ import ResetPasswordScreen from './navigations/ResetPassword.screen';
 import SubQuestionnaireScreen from './navigations/SubQuestionaire.screen';
 import SubEndScreen from './navigations/Sub.End.screen';
 import StudyMaterialsScreen from './navigations/StudyMaterials.screen';
+import CategorySelectionScreen from './navigations/CategorySelection.screen';
+
+import './animations.css';
 
 function App() {
   const [redirectRoute, setRedirectRoute] = useState('/landing');
 
   useEffect(() => {
     const changeRoute = () => {
-      console.log("check")
       if (localStorage.getItem('username')) {
         if (localStorage.getItem('passed') === "Passed") {
           setRedirectRoute('/dashboard');
@@ -50,6 +52,7 @@ function App() {
           <Route path="/validation" element={<OTPVerification />} />
           <Route path="/confirmation" element={<ConfirmationScreen />} />
           <Route path="/quest-begin" element={<BeginScreen />} /> 
+          <Route path="/category-selection" element={<CategorySelectionScreen />} />
           <Route path="/end-screen" element={<EndScreen />} /> 
           <Route path="/sub-end-screen" element={<SubEndScreen />} /> 
           <Route path="/questionnaire" element={<QuestionnaireScreen />} />

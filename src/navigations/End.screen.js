@@ -1,17 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, Link, useNavigate } from "react-router-dom";
 import env from "../configs/env";
+import Notiflix from "notiflix";
+
 import axios from "axios";
 
 const EndScreen = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const { answers = [], questionnaire = [] } = location.state || {};
-  const [grades, setGrades] = useState(["F", "F", "F", "F", "F"]);
+  const {
+    answers = [],
+    questionnaire = [],
+    isPartialAssessment = false,
+    selectedCategory = null,
+  } = location.state || {};
+  const [grades, setGrades] = useState(Array(21).fill("F"));
   const [loading, setLoading] = useState(true);
   const [processingComplete, setProcessingComplete] = useState(false);
+  const [categoryResults, setCategoryResults] = useState([]);
 
-  const [gradesType, setGradesType] = useState([
+  const [gradesType] = useState([
     "1.1",
     "1.2",
     "1.3",
@@ -37,8 +45,22 @@ const EndScreen = () => {
 
   const completedCount = answers.filter((answer) => answer !== null).length;
 
-  const startQuestionnaire = () => {
-    navigate("/dashboard");
+  const handleContinue = () => {
+    if (isPartialAssessment) {
+      // Check if all categories are now complete
+      if (checkAllCategoriesComplete()) {
+        // Show a success message
+        Notiflix.Notify.success(
+          "Congratulations! You've completed all categories!"
+        );
+      }
+
+      // Return to category selection
+      navigate("/category-selection");
+    } else {
+      // For full assessment, go to dashboard as before
+      navigate("/dashboard");
+    }
   };
 
   const calculateMarks = async (qs, answers) => {
@@ -47,9 +69,7 @@ const EndScreen = () => {
       return;
     }
 
-    let pointsArray = [
-      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    ];
+    let pointsArray = Array(21).fill(0);
     let marks = [
       4 * 4,
       4 * 4,
@@ -73,29 +93,7 @@ const EndScreen = () => {
       4 * 3,
       4 * 4,
     ];
-    let updatedGrades = [
-      "F",
-      "F",
-      "F",
-      "F",
-      "F",
-      "F",
-      "F",
-      "F",
-      "F",
-      "F",
-      "F",
-      "F",
-      "F",
-      "F",
-      "F",
-      "F",
-      "F",
-      "F",
-      "F",
-      "F",
-      "F",
-    ];
+    let updatedGrades = Array(21).fill("F");
 
     for (let i = 0; i < qs.length; i++) {
       // Add 1 to each non-null answer, or replace null with 0
@@ -104,49 +102,10 @@ const EndScreen = () => {
       // Get the point value from the questionnaire
       let full = qs[i].points;
 
-      // Add the answer value to the corresponding category in the pointsArray
-      if (full === 1.1) {
-        pointsArray[0] += answerValue;
-      } else if (full === 1.2) {
-        pointsArray[1] += answerValue;
-      } else if (full === 1.3) {
-        pointsArray[2] += answerValue;
-      } else if (full === 2.1) {
-        pointsArray[3] += answerValue;
-      } else if (full === 2.2) {
-        pointsArray[4] += answerValue;
-      } else if (full === 2.3) {
-        pointsArray[5] += answerValue;
-      } else if (full === 2.4) {
-        pointsArray[6] += answerValue;
-      } else if (full === 2.5) {
-        pointsArray[7] += answerValue;
-      } else if (full === 2.6) {
-        pointsArray[8] += answerValue;
-      } else if (full === 3.1) {
-        pointsArray[9] += answerValue;
-      } else if (full === 3.2) {
-        pointsArray[10] += answerValue;
-      } else if (full === 3.3) {
-        pointsArray[11] += answerValue;
-      } else if (full === 3.4) {
-        pointsArray[12] += answerValue;
-      } else if (full === 4.1) {
-        pointsArray[13] += answerValue;
-      } else if (full === 4.2) {
-        pointsArray[14] += answerValue;
-      } else if (full === 4.3) {
-        pointsArray[15] += answerValue;
-      } else if (full === 4.4) {
-        pointsArray[16] += answerValue;
-      } else if (full === 5.1) {
-        pointsArray[17] += answerValue;
-      } else if (full === 5.2) {
-        pointsArray[18] += answerValue;
-      } else if (full === 5.3) {
-        pointsArray[19] += answerValue;
-      } else if (full === 5.4) {
-        pointsArray[20] += answerValue;
+      // Find the index in gradesType for this question's points
+      const index = gradesType.findIndex((grade) => grade === full.toString());
+      if (index !== -1) {
+        pointsArray[index] += answerValue;
       }
     }
 
@@ -163,19 +122,36 @@ const EndScreen = () => {
     // Update the grades state
     setGrades(updatedGrades);
 
-    // Update DB
-    await axios.post(
-      `${env.SERVER_URL}/auth/student/${localStorage.getItem(
-        "username"
-      )}/tests`,
-      {
-        date: new Date().toISOString().split("T")[0],
-        questions: qs,
-        answers,
-        grades: updatedGrades,
-        points: pointsArray,
-      }
-    );
+    // Prepare category results for display
+    if (isPartialAssessment) {
+      const categoryNumber = Math.floor(questionnaire[0].points);
+      const filteredResults = gradesType
+        .filter((grade) => grade.startsWith(categoryNumber.toString()))
+        .map((grade, idx) => {
+          const gradeIndex = gradesType.findIndex((g) => g === grade);
+          return {
+            grade,
+            value: updatedGrades[gradeIndex],
+          };
+        });
+      setCategoryResults(filteredResults);
+    }
+
+    // Only update the database for full assessments
+    if (!isPartialAssessment) {
+      await axios.post(
+        `${env.SERVER_URL}/auth/student/${localStorage.getItem(
+          "username"
+        )}/tests`,
+        {
+          date: new Date().toISOString().split("T")[0],
+          questions: qs,
+          answers,
+          grades: updatedGrades,
+          points: pointsArray,
+        }
+      );
+    }
 
     setLoading(false);
 
@@ -188,16 +164,112 @@ const EndScreen = () => {
   };
 
   useEffect(() => {
-    calculateMarks(questionnaire, answers);
+    const processResults = async () => {
+      try {
+        const result = await calculateMarks(questionnaire, answers);
+
+        // For partial assessments, update the category completion status
+        if (isPartialAssessment && result) {
+          // Get the current completed categories
+          const completedCategories = JSON.parse(
+            localStorage.getItem("completedCategories") || "[]"
+          );
+
+          // Get the category number from the first question
+          const categoryNumber = Math.floor(questionnaire[0].points);
+
+          // Add it to completed categories if not already there
+          if (!completedCategories.includes(categoryNumber)) {
+            completedCategories.push(categoryNumber);
+            localStorage.setItem(
+              "completedCategories",
+              JSON.stringify(completedCategories)
+            );
+          }
+
+          // Check if all categories are complete
+          const allCategories = [1, 2, 3, 4, 5]; // All category numbers
+          const allComplete = allCategories.every((cat) =>
+            completedCategories.includes(cat)
+          );
+
+          // If all categories are complete, mark overall assessment as passed
+          if (allComplete) {
+            localStorage.setItem("passed", "Passed");
+
+            try {
+              // Update the backend to mark the user as passed
+              await axios.patch(
+                `${env.SERVER_URL}/auth/student/${localStorage.getItem(
+                  "username"
+                )}`,
+                { status: "Passed" }
+              );
+            } catch (error) {
+              console.error("Error updating completion status:", error);
+            }
+          }
+        }
+      } catch (error) {
+        console.error("Error processing results:", error);
+        setLoading(false);
+      }
+    };
+
+    processResults();
   }, []);
+
+  const checkAllCategoriesComplete = () => {
+    const completedCategories = JSON.parse(
+      localStorage.getItem("completedCategories") || "[]"
+    );
+    return [1, 2, 3, 4, 5].every((cat) => completedCategories.includes(cat));
+  };
+
+  // Get subcategory name based on grade point
+  const getSubcategoryName = (grade) => {
+    const subcategories = {
+      1.1: "Browsing, searching and filtering data",
+      1.2: "Evaluating data",
+      1.3: "Managing data",
+      2.1: "Interacting through digital technologies",
+      2.2: "Sharing information",
+      2.3: "Engaging in citizenship",
+      2.4: "Collaborating through digital technologies",
+      2.5: "Netiquette",
+      2.6: "Managing digital identity",
+      3.1: "Developing digital content",
+      3.2: "Integrating and re-elaborating digital content",
+      3.3: "Copyright and licenses",
+      3.4: "Programming",
+      4.1: "Protecting devices",
+      4.2: "Protecting personal data and privacy",
+      4.3: "Protecting health and well-being",
+      4.4: "Protecting the environment",
+      5.1: "Solving technical problems",
+      5.2: "Identifying needs and technological responses",
+      5.3: "Creatively using digital technologies",
+      5.4: "Identifying digital competence gaps",
+    };
+    return subcategories[grade] || grade;
+  };
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      <div className="bg-white px-4 py-4 shadow-sm">
-        <h1 className="text-lg font-semibold text-center">Survey Completion</h1>
+      {/* Top design element */}
+      <div className="w-full relative">
+        <div className="absolute top-0 right-0 w-2/3 h-32 bg-amber-300 rounded-bl-full"></div>
       </div>
 
-      <div className="flex-1 px-4 py-6">
+      <div className="sticky top-0 z-10 bg-white shadow-sm px-4 py-3">
+        <h1 className="text-lg font-semibold text-center">
+          {isPartialAssessment
+            ? `${selectedCategory} Assessment`
+            : "Survey Completion"}
+        </h1>
+      </div>
+
+      <div className="flex-1 px-4 py-6 mt-12">
         <div className="max-w-md mx-auto">
           {loading ? (
             <div className="flex flex-col items-center justify-center py-12">
@@ -237,11 +309,15 @@ const EndScreen = () => {
 
               <div className="text-center mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                  Survey Completed!
+                  {isPartialAssessment
+                    ? `Category Assessment Completed!`
+                    : "Survey Completed!"}
                 </h2>
                 <p className="text-gray-600">
-                  You've successfully completed all {completedCount} questions.
-                  Your digital competence profile is now ready.
+                  You've successfully completed {completedCount} questions.
+                  {isPartialAssessment
+                    ? ` Your ${selectedCategory} competence profile is now ready.`
+                    : " Your digital competence profile is now ready."}
                 </p>
               </div>
 
@@ -257,26 +333,64 @@ const EndScreen = () => {
                   </div>
                   <div className="text-center p-3 bg-green-50 rounded-lg">
                     <span className="block text-2xl font-bold text-green-600">
-                      5
+                      {isPartialAssessment ? "1" : "5"}
                     </span>
                     <span className="text-sm text-gray-600">
-                      Competence Areas
+                      Competence {isPartialAssessment ? "Area" : "Areas"}
                     </span>
                   </div>
                 </div>
               </div>
 
+              {isPartialAssessment && (
+                <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-8">
+                  <h3 className="font-medium text-gray-900 mb-3">
+                    {selectedCategory} Results
+                  </h3>
+                  <div className="space-y-3">
+                    {categoryResults.map((result, idx) => (
+                      <div
+                        key={idx}
+                        className="flex items-center justify-between border-b border-gray-100 pb-2"
+                      >
+                        <div>
+                          <p className="text-xs text-gray-600">
+                            {getSubcategoryName(result.grade)}
+                          </p>
+                        </div>
+                        <span
+                          className={`px-2 py-1 rounded-full text-xs font-medium ${
+                            result.value === "M"
+                              ? "bg-green-100 text-green-800"
+                              : result.value === "B"
+                              ? "bg-amber-100 text-amber-800"
+                              : "bg-gray-100 text-gray-800"
+                          }`}
+                        >
+                          {result.value === "M"
+                            ? "Mastered"
+                            : result.value === "B"
+                            ? "Basic"
+                            : "Not Achieved"}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-8">
                 <p className="text-center text-gray-700">
-                  Your results have been saved. You can now explore your digital
-                  competence profile and access personalized learning materials.
+                  {isPartialAssessment
+                    ? "Your category results have been saved. Continue with other categories or explore your profile."
+                    : "Your results have been saved. You can now explore your digital competence profile and access personalized learning materials."}
                 </p>
               </div>
             </div>
           )}
 
           <button
-            onClick={startQuestionnaire}
+            onClick={handleContinue}
             disabled={loading || !processingComplete}
             className={`w-full py-3 font-medium rounded-md shadow-md transition-colors duration-300 ${
               loading || !processingComplete
@@ -284,9 +398,40 @@ const EndScreen = () => {
                 : "bg-black text-white hover:bg-gray-800"
             }`}
           >
-            {loading ? "Processing..." : "Go to Dashboard"}
+            {loading
+              ? "Processing..."
+              : isPartialAssessment
+              ? "Back to Categories"
+              : "Go to Dashboard"}
           </button>
+          <div className="text-center mt-4">
+            <Link
+              to="/dashboard"
+              className="text-gray-600 text-sm hover:underline inline-flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 mr-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+              Skip to Dashboard
+            </Link>
+          </div>
         </div>
+      </div>
+
+      {/* Bottom design element */}
+      <div className="w-full relative min-h-16">
+        <div className="absolute bottom-0 left-0 w-24 h-24 bg-amber-200 rounded-tr-full opacity-50"></div>
       </div>
     </div>
   );
