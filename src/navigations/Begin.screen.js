@@ -71,7 +71,7 @@ const BeginScreen = () => {
             </svg>
           </Link>
           <h1 className="text-lg font-semibold text-center flex-1">
-            Survey Status
+            Assessment Status
           </h1>
         </div>
       </div>
@@ -216,8 +216,8 @@ const BeginScreen = () => {
               className="w-full py-3 bg-black text-white font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300 focus:outline-none relative z-10"
             >
               {completedCount > 0
-                ? "Continue Full Survey"
-                : "Start Full Survey"}
+                ? "Continue Full Assessment"
+                : "Start Full Assessment"}
             </button>
           </div>
           <div className="text-center mt-4 text-sm text-gray-600">

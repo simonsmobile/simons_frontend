@@ -47,18 +47,14 @@ const EndScreen = () => {
 
   const handleContinue = () => {
     if (isPartialAssessment) {
-      // Check if all categories are now complete
       if (checkAllCategoriesComplete()) {
-        // Show a success message
         Notiflix.Notify.success(
           "Congratulations! You've completed all categories!"
         );
       }
 
-      // Return to category selection
       navigate("/category-selection");
     } else {
-      // For full assessment, go to dashboard as before
       navigate("/dashboard");
     }
   };
@@ -96,20 +92,16 @@ const EndScreen = () => {
     let updatedGrades = Array(21).fill("F");
 
     for (let i = 0; i < qs.length; i++) {
-      // Add 1 to each non-null answer, or replace null with 0
       let answerValue = answers[i] !== null ? answers[i] + 1 : 0;
 
-      // Get the point value from the questionnaire
       let full = qs[i].points;
 
-      // Find the index in gradesType for this question's points
       const index = gradesType.findIndex((grade) => grade === full.toString());
       if (index !== -1) {
         pointsArray[index] += answerValue;
       }
     }
 
-    // Calculate the grade for each category
     for (let i = 0; i < pointsArray.length; i++) {
       let score = (100 * pointsArray[i]) / marks[i];
       if (score >= 80) {
@@ -119,10 +111,8 @@ const EndScreen = () => {
       }
     }
 
-    // Update the grades state
     setGrades(updatedGrades);
 
-    // Prepare category results for display
     if (isPartialAssessment) {
       const categoryNumber = Math.floor(questionnaire[0].points);
       const filteredResults = gradesType
@@ -137,7 +127,6 @@ const EndScreen = () => {
       setCategoryResults(filteredResults);
     }
 
-    // Only update the database for full assessments
     if (!isPartialAssessment) {
       await axios.post(
         `${env.SERVER_URL}/auth/student/${localStorage.getItem(
@@ -155,7 +144,6 @@ const EndScreen = () => {
 
     setLoading(false);
 
-    // Show completion animation after a delay
     setTimeout(() => {
       setProcessingComplete(true);
     }, 1000);
@@ -168,17 +156,13 @@ const EndScreen = () => {
       try {
         const result = await calculateMarks(questionnaire, answers);
 
-        // For partial assessments, update the category completion status
         if (isPartialAssessment && result) {
-          // Get the current completed categories
           const completedCategories = JSON.parse(
             localStorage.getItem("completedCategories") || "[]"
           );
 
-          // Get the category number from the first question
           const categoryNumber = Math.floor(questionnaire[0].points);
 
-          // Add it to completed categories if not already there
           if (!completedCategories.includes(categoryNumber)) {
             completedCategories.push(categoryNumber);
             localStorage.setItem(
@@ -187,18 +171,15 @@ const EndScreen = () => {
             );
           }
 
-          // Check if all categories are complete
-          const allCategories = [1, 2, 3, 4, 5]; // All category numbers
+          const allCategories = [1, 2, 3, 4, 5];
           const allComplete = allCategories.every((cat) =>
             completedCategories.includes(cat)
           );
 
-          // If all categories are complete, mark overall assessment as passed
           if (allComplete) {
             localStorage.setItem("passed", "Passed");
 
             try {
-              // Update the backend to mark the user as passed
               await axios.patch(
                 `${env.SERVER_URL}/auth/student/${localStorage.getItem(
                   "username"
@@ -226,7 +207,6 @@ const EndScreen = () => {
     return [1, 2, 3, 4, 5].every((cat) => completedCategories.includes(cat));
   };
 
-  // Get subcategory name based on grade point
   const getSubcategoryName = (grade) => {
     const subcategories = {
       1.1: "Browsing, searching and filtering data",
@@ -265,7 +245,7 @@ const EndScreen = () => {
         <h1 className="text-lg font-semibold text-center">
           {isPartialAssessment
             ? `${selectedCategory} Assessment`
-            : "Survey Completion"}
+            : "Assessment Completion"}
         </h1>
       </div>
 
@@ -311,7 +291,7 @@ const EndScreen = () => {
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
                   {isPartialAssessment
                     ? `Category Assessment Completed!`
-                    : "Survey Completed!"}
+                    : "Assessment Completed!"}
                 </h2>
                 <p className="text-gray-600">
                   You've successfully completed {completedCount} questions.
