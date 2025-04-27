@@ -33,7 +33,7 @@ export const COMPETENCE_AREAS = [
   },
 ];
 
-const GRADE_POINTS_MAP = {
+export const GRADE_POINTS_MAP = {
   F: 0,
   B: 50,
   M: 100,

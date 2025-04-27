@@ -53,9 +53,6 @@ const SubEndScreen = () => {
       if (data) {
         const originalResults = data.firstTest?.grades || [];
         const progressResults = data.lastTest?.grades || originalResults;
-
-        console.log("DATA", progressResults);
-
         calculateMarks(qs, answers, progressResults);
       }
     } catch (error) {

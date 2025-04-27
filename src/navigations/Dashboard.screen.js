@@ -1,14 +1,10 @@
-import React, { useEffect, useState, useRef } from "react";
-import {
-  FaSignOutAlt,
-  FaChevronDown,
-  FaChevronUp,
-  FaEllipsisV,
-} from "react-icons/fa";
+import React, { useEffect, useState } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import env from "../configs/env";
 import BottomNav from "./BottomNav";
+import Header from "./Header";
 import {
   calculateScores,
   COMPETENCE_AREAS,
@@ -27,8 +23,7 @@ const DashboardScreen = () => {
   const [userName, setUserName] = useState(
     localStorage.getItem("username")?.split("@")[0] || "User"
   );
-  const [showMenu, setShowMenu] = useState(false);
-  const menuRef = useRef(null);
+  const [showConfirmationModal, setShowConfirmationModal] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -69,43 +64,12 @@ const DashboardScreen = () => {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        const toggleButton = document.getElementById("header-dashboard-button");
-        if (toggleButton && toggleButton.contains(event.target)) {
-          return;
-        }
-        setShowMenu(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
-  const handleLogout = () => {
-    setShowMenu(false);
-    localStorage.removeItem("username");
-    localStorage.removeItem("passed");
-    localStorage.removeItem("answers");
-    localStorage.removeItem("completedCategories");
-    for (let i = 1; i <= 5; i++) {
-      localStorage.removeItem(`category_answers_${i}`);
-    }
-    navigate("/login");
-  };
-
   const handleCategoryClick = (index) => {
     setExpandedCategory(expandedCategory === index ? null : index);
   };
 
   const navigateToStudy = (areaId, subCompetencePoint, levelNumber, status) => {
     if (status === "Locked") {
-      console.log(
-        `Navigation blocked: Level ${levelNumber} for ${subCompetencePoint} is locked.`
-      );
       return;
     }
 
@@ -133,6 +97,25 @@ const DashboardScreen = () => {
         grade: grade,
       },
     });
+  };
+
+  const handleRetakeAssessment = () => {
+    setShowConfirmationModal(true);
+  };
+
+  const confirmRetake = () => {
+    localStorage.removeItem("passed");
+    localStorage.removeItem("answers");
+    localStorage.removeItem("completedCategories");
+    for (let i = 1; i <= 5; i++) {
+      localStorage.removeItem(`category_answers_${i}`);
+    }
+    setShowConfirmationModal(false);
+    navigate("/quest-begin");
+  };
+
+  const cancelRetake = () => {
+    setShowConfirmationModal(false);
   };
 
   if (loading) {
@@ -180,40 +163,7 @@ const DashboardScreen = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 pb-16">
-      <header className="bg-white text-gray-800 shadow-md sticky top-0 z-20">
-        <div className="max-w-xl mx-auto px-4 py-3 flex justify-between items-center relative">
-          <div className="flex items-center">
-            <img
-              src={`${process.env.PUBLIC_URL}/images/Picturec.png`}
-              alt="SIMOnS Logo"
-              className="h-8 w-auto mr-2"
-            />
-            <h1 className="text-xl font-bold text-black">SIMOnS</h1>
-          </div>
-          <button
-            id="header-dashboard-button"
-            onClick={() => setShowMenu(!showMenu)}
-            className="p-2 rounded-full hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300"
-          >
-            <FaEllipsisV className="text-gray-600 h-5 w-5" />
-          </button>
-
-          {showMenu && (
-            <div
-              ref={menuRef}
-              className="absolute right-4 top-full mt-2 w-48 bg-white rounded-md shadow-lg border border-gray-200 z-30 py-1"
-            >
-              <button
-                onClick={handleLogout}
-                className="flex items-center w-full px-4 py-2 text-sm text-red-600 hover:bg-red-50"
-              >
-                <FaSignOutAlt className="mr-2" />
-                Log Out
-              </button>
-            </div>
-          )}
-        </div>
-      </header>
+      <Header showSimonsText={true} showMenuButton={true} />
       <main className="flex-1 max-w-xl mx-auto px-4 py-6 w-full">
         <div className="mb-6">
           <h2 className="text-2xl font-bold text-gray-900">
@@ -251,24 +201,30 @@ const DashboardScreen = () => {
             Competence Overview
           </h3>
           <div className="space-y-3">
-            {scores.areaScores.map((item) => (
-              <div key={item.id}>
-                <div className="flex justify-between items-center mb-1">
-                  <span className="text-sm font-medium text-gray-700">
-                    {item.name}
-                  </span>
-                  <span className="text-xs font-medium text-amber-700">
-                    {item.score} / {item.maxScore}
-                  </span>
+            {scores.areaScores.map((item) => {
+              const percentage =
+                item.maxScore > 0
+                  ? Math.round((item.score / item.maxScore) * 100)
+                  : 0;
+              return (
+                <div key={item.id}>
+                  <div className="flex justify-between items-center mb-1">
+                    <span className="text-sm font-medium text-gray-700">
+                      {item.name}
+                    </span>
+                    <span className="text-xs font-medium text-amber-700">
+                      {percentage}%
+                    </span>
+                  </div>
+                  <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+                    <div
+                      className="bg-gradient-to-r from-amber-300 to-amber-500 h-2 rounded-full transition-all duration-500"
+                      style={{ width: `${percentage}%` }}
+                    ></div>
+                  </div>
                 </div>
-                <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
-                  <div
-                    className="bg-gradient-to-r from-amber-300 to-amber-500 h-2 rounded-full transition-all duration-500"
-                    style={{ width: `${(item.score / item.maxScore) * 100}%` }}
-                  ></div>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
@@ -360,7 +316,6 @@ const DashboardScreen = () => {
                                   >
                                     <IconLevel1 className="w-5 h-5" />
                                   </button>
-
                                   <button
                                     onClick={() =>
                                       navigateToStudy(
@@ -373,7 +328,7 @@ const DashboardScreen = () => {
                                     disabled={statusLevel2 === "Locked"}
                                     className={`w-10 h-10 flex items-center justify-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 ${
                                       statusLevel2 === "Locked"
-                                        ? "bg-gray-100 text-gray-500 ring-gray-200 cursor-not-allowed"
+                                        ? "bg-gray-100 text-gray-400 ring-gray-200 cursor-not-allowed" 
                                         : statusLevel2 === "Completed"
                                         ? "bg-green-100 text-green-600 ring-green-200 hover:bg-green-200"
                                         : "bg-amber-100 text-amber-700 ring-amber-200 hover:bg-amber-200"
@@ -397,15 +352,43 @@ const DashboardScreen = () => {
         </div>
 
         <div className="text-center mt-8">
-          <Link
-            to="/quest-begin"
+          <button
+            onClick={handleRetakeAssessment}
             className="inline-block px-6 py-3 bg-amber-300 text-black font-medium rounded-md shadow-md hover:bg-amber-400 transition-colors duration-300"
           >
             Take Assessment Again
-          </Link>
+          </button>
         </div>
       </main>
       <BottomNav />
+
+      {showConfirmationModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg shadow-xl p-6 w-full max-w-sm">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              Confirm Action
+            </h3>
+            <p className="text-sm text-gray-600 mb-6">
+              Starting the assessment again will reset your current progress and
+              scores. Are you sure you want to continue?
+            </p>
+            <div className="flex justify-end space-x-3">
+              <button
+                onClick={cancelRetake}
+                className="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 text-sm font-medium"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={confirmRetake}
+                className="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 text-sm font-medium"
+              >
+                Confirm & Reset
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
