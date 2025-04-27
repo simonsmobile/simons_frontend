@@ -98,9 +98,9 @@ const OTPVerification = () => {
         inputRefs.current[0].focus();
       }
 
-      Notiflix.Notify.success('New OTP sent to your email');
+      Notiflix.Notify.success('New Code sent to your email');
     } catch (error) {
-      Notiflix.Notify.failure('Failed to send new OTP');
+      Notiflix.Notify.failure('Failed to send new Code');
       console.error(error);
     } finally {
       setLoading(false);
@@ -113,7 +113,7 @@ const OTPVerification = () => {
     const enteredOTP = inputOTP.join('');
 
     if (enteredOTP.length !== 5) {
-      Notiflix.Notify.failure('Please enter a complete 5-digit OTP');
+      Notiflix.Notify.failure('Please enter a complete 5-digit Code');
       return;
     }
 
@@ -122,10 +122,10 @@ const OTPVerification = () => {
     try {
       if (enteredOTP === otp) {
         await axios.patch(`${env.SERVER_URL}/auth/student/${email}`, { approved: true });
-        Notiflix.Notify.success('OTP verified successfully!');
+        Notiflix.Notify.success('Code verified successfully!');
         navigate('/complete-account');
       } else {
-        Notiflix.Notify.failure('Invalid OTP');
+        Notiflix.Notify.failure('Invalid Code');
 
         inputRefs.current.forEach(input => {
           if (input) {
@@ -222,7 +222,7 @@ const OTPVerification = () => {
                 <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
               </div>
             ) : (
-              'Verify OTP'
+              'Verify Code'
             )}
           </button>
         </form>
@@ -242,7 +242,7 @@ const OTPVerification = () => {
                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
               </svg>
             )}
-            {canResend ? 'Resend OTP' : `Resend OTP in ${timer}s`}
+            {canResend ? 'Resend Code' : `Resend Code in ${timer}s`}
           </button>
         </div>
       </div>

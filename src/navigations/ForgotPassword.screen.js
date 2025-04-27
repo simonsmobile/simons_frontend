@@ -101,7 +101,7 @@ const ForgotPasswordScreen = () => {
       if (response.ok) {
         setSent(true);
         generateOTP();
-        Notiflix.Notify.success("OTP was sent to your email");
+        Notiflix.Notify.success("Code was sent to your email");
 
         setTimeout(() => {
           if (inputRefs.current[0]) {
@@ -110,7 +110,7 @@ const ForgotPasswordScreen = () => {
         }, 300);
       } else {
         const error = await response.json();
-        Notiflix.Notify.failure(error.message || "Failed to send OTP");
+        Notiflix.Notify.failure(error.message || "Failed to send Code");
       }
     } catch (error) {
       console.error(error);
@@ -124,15 +124,15 @@ const ForgotPasswordScreen = () => {
     const enteredOTP = inputOTP.join("");
 
     if (enteredOTP.length !== 5) {
-      Notiflix.Notify.failure("Please enter a complete 5-digit OTP");
+      Notiflix.Notify.failure("Please enter a complete 5-digit Code");
       return;
     }
 
     if (enteredOTP === otp) {
-      Notiflix.Notify.success("OTP verified");
+      Notiflix.Notify.success("Code verified");
       navigate("/reset-password", { state: { email } });
     } else {
-      Notiflix.Notify.failure("Invalid OTP");
+      Notiflix.Notify.failure("Invalid Code");
 
       inputRefs.current.forEach((input) => {
         if (input) {
@@ -167,10 +167,10 @@ const ForgotPasswordScreen = () => {
         if (inputRefs.current[0]) {
           inputRefs.current[0].focus();
         }
-        Notiflix.Notify.success("New OTP was sent to your email");
+        Notiflix.Notify.success("New Code was sent to your email");
       } else {
         const error = await response.json();
-        Notiflix.Notify.failure(error.message || "Failed to send OTP");
+        Notiflix.Notify.failure(error.message || "Failed to send Code");
       }
     } catch (error) {
       console.error(error);

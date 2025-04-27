@@ -150,10 +150,10 @@ const CreateAccount = () => {
       });
 
       if (response.ok) {
-        Notiflix.Notify.success("OTP was sent to your email");
+        Notiflix.Notify.success("Code was sent to your email");
       } else {
         const error = await response.json();
-        Notiflix.Notify.failure(error.message || "Failed to send OTP");
+        Notiflix.Notify.failure(error.message || "Failed to send Code");
       }
     } catch (error) {
       console.error(error);
