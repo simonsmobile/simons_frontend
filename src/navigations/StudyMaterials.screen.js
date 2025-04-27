@@ -102,14 +102,14 @@ const StudyMaterialsScreen = () => {
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <Link 
               to="/dashboard"
-              className="flex items-center justify-center px-6 py-3 bg-gray-200 text-gray-800 font-medium rounded-md hover:bg-gray-300 transition-colors duration-300"
+              className="flex items-center justify-center px-6 py-2 bg-gray-200 text-gray-800 font-medium rounded-md hover:bg-gray-300 transition-colors duration-300"
             >
               <FaChevronLeft className="mr-2" />
               Return to Dashboard
             </Link>
             <button
               onClick={handleReattempt}
-              className="flex items-center justify-center px-6 py-3 bg-black text-white font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300"
+              className="flex items-center justify-center px-6 py-2 bg-black text-white font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300"
             >
               <MdOutlineQuiz className="mr-2 text-lg" />
               Take the Quiz

@@ -178,12 +178,12 @@ const SubQuestionnaireScreen = () => {
             </p>
           </div>
           {/* Score Display */}
-          <div className="text-right w-16">
+          {/* <div className="text-right w-16">
             <span className="text-sm font-medium text-gray-700">
               {scoreSoFar}/{maxPossibleScore}
             </span>
             <span className="text-xs block text-gray-500">Points</span>
-          </div>
+          </div> */}
         </div>
       </div>
 

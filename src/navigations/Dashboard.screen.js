@@ -354,7 +354,7 @@ const DashboardScreen = () => {
         <div className="text-center mt-8">
           <button
             onClick={handleRetakeAssessment}
-            className="inline-block px-6 py-3 bg-amber-300 text-black font-medium rounded-md shadow-md hover:bg-amber-400 transition-colors duration-300"
+            className="inline-block px-6 py-2 bg-amber-300 text-black font-medium rounded-md shadow-md hover:bg-amber-400 transition-colors duration-300"
           >
             Take Assessment Again
           </button>

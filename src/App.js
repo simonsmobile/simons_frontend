@@ -18,9 +18,12 @@ import SubQuestionnaireScreen from './navigations/SubQuestionaire.screen';
 import SubEndScreen from './navigations/Sub.End.screen';
 import StudyMaterialsScreen from './navigations/StudyMaterials.screen';
 import CategorySelectionScreen from './navigations/CategorySelection.screen';
-
 import ScoreScreen from './navigations/Score.screen';
 import ProfileScreen from './navigations/Profile.screen';
+import AboutScreen from './navigations/About.screen';
+import TermsScreen from './navigations/Terms.screen';
+import PrivacyScreen from './navigations/Privacy.screen';
+import LanguageScreen from './navigations/Language.screen';
 
 import './animations.css';
 
@@ -68,6 +71,10 @@ function App() {
         <Route path="/study" element={<ProtectedRoute><StudyMaterialsScreen /></ProtectedRoute>} />
         <Route path="/sub-quest" element={<ProtectedRoute><SubQuestionnaireScreen /></ProtectedRoute>} />
         <Route path="/sub-end-screen" element={<ProtectedRoute><SubEndScreen /></ProtectedRoute>} />
+        <Route path="/about" element={<ProtectedRoute><AboutScreen /></ProtectedRoute>} />
+        <Route path="/terms" element={<ProtectedRoute><TermsScreen /></ProtectedRoute>} />
+        <Route path="/privacy" element={<ProtectedRoute><PrivacyScreen /></ProtectedRoute>} />
+        <Route path="/language-settings" element={<ProtectedRoute><LanguageScreen /></ProtectedRoute>} />
 
          {/* New Gamified Routes */}
          <Route path="/dashboard" element={<ProtectedRoute><DashboardScreen /></ProtectedRoute>} />
