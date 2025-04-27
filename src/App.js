@@ -68,7 +68,7 @@ function App() {
         <Route path="/category-selection" element={<ProtectedRoute><CategorySelectionScreen /></ProtectedRoute>} />
         <Route path="/questionnaire" element={<ProtectedRoute><QuestionnaireScreen /></ProtectedRoute>} />
         <Route path="/end-screen" element={<ProtectedRoute><EndScreen /></ProtectedRoute>} />
-        <Route path="/study" element={<ProtectedRoute><StudyMaterialsScreen /></ProtectedRoute>} />
+        <Route path="/study" element={<StudyMaterialsScreen />} />
         <Route path="/sub-quest" element={<ProtectedRoute><SubQuestionnaireScreen /></ProtectedRoute>} />
         <Route path="/sub-end-screen" element={<ProtectedRoute><SubEndScreen /></ProtectedRoute>} />
         <Route path="/about" element={<ProtectedRoute><AboutScreen /></ProtectedRoute>} />

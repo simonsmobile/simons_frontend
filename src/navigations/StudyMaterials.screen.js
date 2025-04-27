@@ -1,96 +1,189 @@
-import React, { useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import env from '../configs/env';
+import React, { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import env from "../configs/env";
 import { FaChevronLeft } from "react-icons/fa";
 import { MdOutlineQuiz } from "react-icons/md";
+import ReactPlayer from "react-player";
 
 const StudyMaterialsScreen = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const { index, level, category, sub } = location.state || {};
+  const { index, level, category, sub, grade } = location.state || {};
 
-  const handleReattempt = () => {
-    navigate('/sub-quest', { state: { index, level, category, sub } });
-  };
+  const subCategoryIdentifier = sub?.category;
+  const currentLevelIdentifier = level === "basic" ? "basic" : "master";
 
-  const getMaterial = (material, level, type) => {
-    const filteredMaterial = material.filter(
-      (q) => q.level === level && q.type === type
+  const getMaterial = (material, levelId, typeId) => {
+    return (
+      material.find((q) => q.level === levelId && q.type === typeId) || null
     );
-
-    return filteredMaterial;
   };
 
-  const [learning_material, setMaterial] = useState(getMaterial(
-    env.LEARNING_MATERIAL,
-    level,
-    sub?.category
-  ));
+  const [learning_material] = useState(() =>
+    getMaterial(
+      env.LEARNING_MATERIAL,
+      currentLevelIdentifier,
+      subCategoryIdentifier
+    )
+  );
 
-  const urls = learning_material[0]?.links;
+  const videoSrc = subCategoryIdentifier
+    ? `${process.env.PUBLIC_URL}/videos/${subCategoryIdentifier}-${currentLevelIdentifier}.mp4`
+    : null;
+  const urls = learning_material?.links || [];
+  const textContent =
+    learning_material?.text || "No description available for this section.";
+  const displayLevel = level === "basic" ? "Level 1" : "Level 2";
+  const displayTitle = category || "Study Material";
+  const subTitle = sub ? `${sub.category} - ${sub.title}` : "";
+
+  const handleTakeTest = () => {
+    navigate("/sub-quest", { state: { index, level, category, sub, grade } });
+  };
+
+  const isEligible = () => {
+    if (!grade) return level === "basic";
+    if (level === "basic") return true;
+    if (level === "master") return grade === "M" || grade === "C";
+    return false;
+  };
+
+  if (!isEligible()) {
+    return (
+      <div className="flex flex-col min-h-screen bg-gray-50">
+        <div className="sticky top-0 z-10 bg-white shadow-sm px-4 py-3 w-full">
+          <div className="flex items-center max-w-3xl mx-auto">
+            <button onClick={() => navigate(-1)} className="text-gray-800 p-1">
+              <FaChevronLeft className="h-5 w-5" />
+            </button>
+            <div className="flex-1 text-center">
+              <h1 className="text-lg font-semibold">Access Denied</h1>
+            </div>
+            <div className="w-6"></div>
+          </div>
+        </div>
+        <div className="flex-1 flex flex-col items-center justify-center px-6 text-center">
+          <p className="text-red-600 mb-6 font-medium">
+            You need to demonstrate mastery at Level 1 before accessing Level 2
+            materials and quizzes for this competence.
+          </p>
+          <button
+            onClick={() => navigate(-1)}
+            className="px-6 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-800 transition-colors text-sm font-medium"
+          >
+            Go Back
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen bg-gray-50">
       <div className="sticky top-0 z-10 bg-white shadow-sm px-4 py-3">
-        <div className="flex items-center">
-          <Link to="/dashboard" className="text-gray-800">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </Link>
-          <h1 className="text-lg font-semibold text-center flex-1">Study Materials</h1>
+        <div className="flex items-center max-w-3xl mx-auto">
+          <button onClick={() => navigate(-1)} className="text-gray-800 p-1">
+            <FaChevronLeft className="h-5 w-5" />
+          </button>
+          <div className="flex-1 text-center">
+            <h1 className="text-lg font-semibold leading-tight">
+              {displayTitle}
+            </h1>
+            <p className="text-xs text-gray-500">{subTitle}</p>
+          </div>
           <div className="w-6"></div>
         </div>
       </div>
 
       <div className="flex-1 px-4 py-6">
         <div className="max-w-3xl mx-auto">
-          <div className="mb-6">
-            <div className="inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-medium mb-2">
-              {level?.toLowerCase() === "basic" ? "Foundation / Intermediate" : "Advanced / Highly Specialized"}
+          <div className="mb-4">
+            <span className="inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-medium">
+              {displayLevel}
+            </span>
+          </div>
+
+          {videoSrc ? (
+            <div className="relative pt-[56.25%] mb-6 bg-black rounded-lg overflow-hidden shadow-lg border border-gray-300">
+              {/* Aspect ratio container (16:9) */}
+              <ReactPlayer
+                url={videoSrc}
+                className="absolute top-0 left-0"
+                controls={true}
+                width="100%"
+                height="100%"
+                playing={false}
+                config={{
+                  file: {
+                    attributes: {
+                      controlsList: "nodownload",
+                      disablePictureInPicture: false,
+                      poster: `${process.env.PUBLIC_URL}/images/badge.png`,
+                    },
+                  },
+                }}
+              />
             </div>
-            <h2 className="text-xl font-bold text-gray-900 mb-1">{category}</h2>
-            {sub && (
-              <p className="text-gray-600">
-                {sub?.category} - {sub.title}
-              </p>
-            )}
-          </div>
+          ) : (
+            <div className="bg-gray-200 rounded-lg mb-6 aspect-video flex items-center justify-center text-gray-500">
+              Video not available for this section.
+            </div>
+          )}
 
-          <div className="bg-gray-100 rounded-lg overflow-hidden mb-6 relative aspect-video">
-            <video
-              controls
-              className="w-full h-full object-cover"
-              poster={`${process.env.PUBLIC_URL}/images/video-placeholder.jpg`}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+            <button
+              onClick={() => navigate("/dashboard")}
+              className="flex items-center justify-center px-4 py-3 bg-gray-200 text-gray-800 font-medium rounded-md hover:bg-gray-300 transition-colors duration-300 text-sm"
             >
-              <source src={`${process.env.PUBLIC_URL}/videos/${sub?.category}-${level}.mp4`} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+              <FaChevronLeft className="mr-2" />
+              Return to Dashboard
+            </button>
+            <button
+              onClick={handleTakeTest}
+              className="flex items-center justify-center px-4 py-3 bg-amber-400 text-black font-medium rounded-md shadow-md hover:bg-amber-500 transition-colors duration-300 text-sm"
+            >
+              <MdOutlineQuiz className="mr-2 text-lg" />
+              Take the Quiz
+            </button>
           </div>
 
-          <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 mb-6">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Learning Materials</h3>
-            <div className="prose max-w-none text-gray-700">
-              <p>{learning_material[0]?.text}</p>
+          <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 md:p-6 mb-6">
+            <h3 className="text-base font-semibold text-gray-800 mb-3">
+              Learning Materials
+            </h3>
+            <div className="prose prose-sm max-w-none text-gray-600 leading-relaxed">
+              <p>{textContent}</p>
             </div>
           </div>
 
           {urls?.length > 0 && (
-            <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6 mb-8">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Additional Resources</h3>
-              <ul className="space-y-3">
-                {urls.map((url, index) => (
-                  <li key={index} className="flex">
-                    <svg className="h-6 w-6 text-accent flex-shrink-0 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                    <a 
-                      href={url.url} 
-                      target="_blank" 
+            <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 md:p-6 mb-8">
+              <h3 className="text-base font-semibold text-gray-800 mb-3">
+                Additional Resources
+              </h3>
+              <ul className="space-y-2">
+                {urls.map((url, idx) => (
+                  <li key={idx}>
+                    <a
+                      href={url.url}
+                      target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 hover:underline"
+                      className="text-sm text-blue-600 hover:underline hover:text-blue-800 flex items-center group"
                     >
+                      <svg
+                        className="w-4 h-4 mr-2 flex-shrink-0 text-gray-400 group-hover:text-blue-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                        />
+                      </svg>
                       {url.target}
                     </a>
                   </li>
@@ -98,23 +191,6 @@ const StudyMaterialsScreen = () => {
               </ul>
             </div>
           )}
-
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-            <Link 
-              to="/dashboard"
-              className="flex items-center justify-center px-6 py-2 bg-gray-200 text-gray-800 font-medium rounded-md hover:bg-gray-300 transition-colors duration-300"
-            >
-              <FaChevronLeft className="mr-2" />
-              Return to Dashboard
-            </Link>
-            <button
-              onClick={handleReattempt}
-              className="flex items-center justify-center px-6 py-2 bg-black text-white font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300"
-            >
-              <MdOutlineQuiz className="mr-2 text-lg" />
-              Take the Quiz
-            </button>
-          </div>
         </div>
       </div>
     </div>
