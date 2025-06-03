@@ -3,11 +3,12 @@ import { FaGoogle } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 import { signInWithPopup } from 'firebase/auth';
 import { auth, provider } from '../configs/Firebase';
-import Notiflix from 'notiflix';
+import { useToast } from "../hooks/useToast";
 import env from '../configs/env';
 
 const LoginScreen = () => {
   const navigate = useNavigate();
+  const toast = useToast(); 
   const [value, setValue] = useState(null);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -34,11 +35,11 @@ const LoginScreen = () => {
     event.preventDefault();
 
     if (!validateEmail(email)) {
-      Notiflix.Notify.failure('Invalid email address');
+      toast.error('Invalid email address');
       return;
     }
     if (!validatePassword(password)) {
-      Notiflix.Notify.failure('Password must be at least 6 characters');
+      toast.error('Password must be at least 6 characters');
       return;
     }
 
@@ -57,7 +58,7 @@ const LoginScreen = () => {
         const result = await response.json();
         localStorage.setItem('username', email);
         localStorage.setItem('passed', result.student.status);
-        Notiflix.Notify.success('Login successful');
+        toast.success('Login successful');
 
         if(result.student.status=="Passed") {
           navigate('/dashboard');
@@ -67,11 +68,11 @@ const LoginScreen = () => {
         
       } else {
         const error = await response.json();
-        Notiflix.Notify.failure(error.message || 'Login failed');
+        toast.error(error.message || 'Login failed');
       }
     } catch (error) {
       console.error(error);
-      Notiflix.Notify.failure('Server error');
+      toast.error('Server error');
     } finally {
       setLoading(false);
     }
@@ -97,7 +98,7 @@ const LoginScreen = () => {
           if (result.exists) {
             localStorage.setItem('username', email);
             localStorage.setItem('passed', result.student.status || "Not Passed");
-            Notiflix.Notify.success('Login successful');
+            toast.success('Login successful');
             
             if (result.student.status === "Passed") {
               navigate('/dashboard');
@@ -124,15 +125,15 @@ const LoginScreen = () => {
             });
           }
         } else {
-          Notiflix.Notify.failure(result.message || 'Authentication failed');
+          toast.error(result.message || 'Authentication failed');
         }
       } catch (error) {
         console.error(error);
-        Notiflix.Notify.failure('Server error');
+        toast.error('Server error');
       }
     }).catch((error) => {
       console.error("Google Sign In Error:", error);
-      Notiflix.Notify.failure('Google sign-in failed');
+      toast.error('Google sign-in failed');
     });
   };
 

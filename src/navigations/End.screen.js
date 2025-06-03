@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, Link, useNavigate } from "react-router-dom";
 import env from "../configs/env";
-import Notiflix from "notiflix";
+import { useToast } from "../hooks/useToast";
 import axios from "axios";
 
 const EndScreen = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const toast = useToast();
   const {
     answers = [],
     questionnaire = [],
@@ -47,7 +48,7 @@ const EndScreen = () => {
   const handleContinue = () => {
     if (isPartialAssessment) {
       if (checkAllCategoriesComplete()) {
-        Notiflix.Notify.success(
+        toast.success(
           "Congratulations! You've completed all categories!"
         );
       }

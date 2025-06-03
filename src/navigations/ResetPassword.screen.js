@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
-import Notiflix from "notiflix";
+import { useToast } from "../hooks/useToast";
 import env from "../configs/env";
 
 const ResetPasswordScreen = () => {
+  const toast = useToast();
   const [newPassword, setNewPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [loading, setLoading] = useState(false);
@@ -63,17 +64,17 @@ const ResetPasswordScreen = () => {
     event.preventDefault();
 
     if (newPassword !== confirmPassword) {
-      Notiflix.Notify.failure("Passwords do not match");
+      toast.error("Passwords do not match");
       return;
     }
 
     if (newPassword.trim() === "") {
-      Notiflix.Notify.failure("Password cannot be empty");
+      toast.error("Password cannot be empty");
       return;
     }
 
     if (!validatePassword(newPassword)) {
-      Notiflix.Notify.failure(
+      toast.error(
         "Password must be at least 8 characters and include uppercase, lowercase, digit, and special character"
       );
       return;
@@ -91,7 +92,7 @@ const ResetPasswordScreen = () => {
       });
 
       if (response.ok) {
-        Notiflix.Notify.success("Password reset successful");
+        toast.success("Password reset successful");
 
         document.getElementById("success-animation").classList.remove("hidden");
 
@@ -100,11 +101,11 @@ const ResetPasswordScreen = () => {
         }, 2000);
       } else {
         const error = await response.json();
-        Notiflix.Notify.failure(error.message || "Failed to reset password");
+        toast.error(error.message || "Failed to reset password");
       }
     } catch (error) {
       console.error(error);
-      Notiflix.Notify.failure("Server error");
+      toast.error("Server error");
     } finally {
       setLoading(false);
     }

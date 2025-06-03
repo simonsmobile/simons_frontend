@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import Notiflix from "notiflix";
+import { useToast } from "../hooks/useToast";
 import axios from "axios";
 import env from "../configs/env";
 import { signInWithPopup } from "firebase/auth";
@@ -10,6 +10,7 @@ import countryList from "../utils/countries";
 
 const CreateAccount = () => {
   const location = useLocation();
+  const toast = useToast();
   const googleData = location.state || {};
 
   const [email, setEmail] = useState(
@@ -151,14 +152,14 @@ const CreateAccount = () => {
       });
 
       if (response.ok) {
-        Notiflix.Notify.success("Code was sent to your email");
+        toast.success("Code was sent to your email");
       } else {
         const error = await response.json();
-        Notiflix.Notify.failure(error.message || "Failed to send Code");
+        toast.error(error.message || "Failed to send Code");
       }
     } catch (error) {
       console.error(error);
-      Notiflix.Notify.failure("Server error");
+      toast.error("Server error");
     }
   };
 
@@ -181,7 +182,7 @@ const CreateAccount = () => {
 
           if (response.ok) {
             if (result.exists) {
-              Notiflix.Notify.info("Account already exists. Please login.");
+              toast.info("Account already exists. Please login.");
               navigate("/login");
             } else {
               setEmail(email);
@@ -193,21 +194,21 @@ const CreateAccount = () => {
               }
 
               localStorage.setItem("username", email);
-              Notiflix.Notify.success(
+              toast.success(
                 "Please complete your profile information"
               );
             }
           } else {
-            Notiflix.Notify.failure(result.message || "Authentication failed");
+            toast.error(result.message || "Authentication failed");
           }
         } catch (error) {
           console.error(error);
-          Notiflix.Notify.failure("Server error");
+          toast.error("Server error");
         }
       })
       .catch((error) => {
         console.error("Google Sign Up Error:", error);
-        Notiflix.Notify.failure("Google sign-up failed");
+        toast.error("Google sign-up failed");
       });
   };
 
@@ -290,11 +291,11 @@ const CreateAccount = () => {
         localStorage.setItem("username", email);
         localStorage.setItem("passed", "Not Passed");
         localStorage.setItem("otp", otp);
-        Notiflix.Notify.success("Account created successfully!");
+        toast.success("Account created successfully!");
         navigate("/validation");
       })
       .catch((error) => {
-        Notiflix.Notify.failure(
+        toast.error(
           error.response?.data?.message || "Account creation failed"
         );
       })

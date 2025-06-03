@@ -24,6 +24,7 @@ import AboutScreen from './navigations/About.screen';
 import TermsScreen from './navigations/Terms.screen';
 import PrivacyScreen from './navigations/Privacy.screen';
 import LanguageScreen from './navigations/Language.screen';
+import ToastProvider from './components/ToastProvider';
 
 import './animations.css';
 
@@ -50,41 +51,43 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
-        <Routes>
-        {/* Public Routes */}
-        <Route path="/" element={<WelcomeScreen />} />
-        <Route path="/login" element={<LoginScreen />} />
-        <Route path="/create-account" element={<CreateAccount />} />
-        <Route path="/validation" element={<OTPVerification />} />
-        <Route path="/forgot-password" element={<ForgotPasswordScreen />} />
-        <Route path="/reset-password" element={<ResetPasswordScreen />} />
-        <Route path="/terms" element={<ProtectedRoute><TermsScreen /></ProtectedRoute>} />
-        <Route path="/privacy" element={<ProtectedRoute><PrivacyScreen /></ProtectedRoute>} />
+      <ToastProvider>
+        <div className="App">
+          <Routes>
+          {/* Public Routes */}
+          <Route path="/" element={<WelcomeScreen />} />
+          <Route path="/login" element={<LoginScreen />} />
+          <Route path="/create-account" element={<CreateAccount />} />
+          <Route path="/validation" element={<OTPVerification />} />
+          <Route path="/forgot-password" element={<ForgotPasswordScreen />} />
+          <Route path="/reset-password" element={<ResetPasswordScreen />} />
+          <Route path="/terms" element={<ProtectedRoute><TermsScreen /></ProtectedRoute>} />
+          <Route path="/privacy" element={<ProtectedRoute><PrivacyScreen /></ProtectedRoute>} />
 
-        {/* Protected Routes */}
-        <Route path="/complete-account" element={<ProtectedRoute><CompleteAccountScreen /></ProtectedRoute>} />
-        <Route path="/instructions" element={<ProtectedRoute><InstructionsScreen /></ProtectedRoute>} />
-        <Route path="/confirmation" element={<ProtectedRoute><ConfirmationScreen /></ProtectedRoute>} />
-        <Route path="/quest-begin" element={<ProtectedRoute><BeginScreen /></ProtectedRoute>} />
-        <Route path="/category-selection" element={<ProtectedRoute><CategorySelectionScreen /></ProtectedRoute>} />
-        <Route path="/questionnaire" element={<ProtectedRoute><QuestionnaireScreen /></ProtectedRoute>} />
-        <Route path="/end-screen" element={<ProtectedRoute><EndScreen /></ProtectedRoute>} />
-        <Route path="/study" element={<StudyMaterialsScreen />} />
-        <Route path="/sub-quest" element={<ProtectedRoute><SubQuestionnaireScreen /></ProtectedRoute>} />
-        <Route path="/sub-end-screen" element={<ProtectedRoute><SubEndScreen /></ProtectedRoute>} />
-        <Route path="/about" element={<ProtectedRoute><AboutScreen /></ProtectedRoute>} />
-        <Route path="/language-settings" element={<ProtectedRoute><LanguageScreen /></ProtectedRoute>} />
+          {/* Protected Routes */}
+          <Route path="/complete-account" element={<ProtectedRoute><CompleteAccountScreen /></ProtectedRoute>} />
+          <Route path="/instructions" element={<ProtectedRoute><InstructionsScreen /></ProtectedRoute>} />
+          <Route path="/confirmation" element={<ProtectedRoute><ConfirmationScreen /></ProtectedRoute>} />
+          <Route path="/quest-begin" element={<ProtectedRoute><BeginScreen /></ProtectedRoute>} />
+          <Route path="/category-selection" element={<ProtectedRoute><CategorySelectionScreen /></ProtectedRoute>} />
+          <Route path="/questionnaire" element={<ProtectedRoute><QuestionnaireScreen /></ProtectedRoute>} />
+          <Route path="/end-screen" element={<ProtectedRoute><EndScreen /></ProtectedRoute>} />
+          <Route path="/study" element={<StudyMaterialsScreen />} />
+          <Route path="/sub-quest" element={<ProtectedRoute><SubQuestionnaireScreen /></ProtectedRoute>} />
+          <Route path="/sub-end-screen" element={<ProtectedRoute><SubEndScreen /></ProtectedRoute>} />
+          <Route path="/about" element={<ProtectedRoute><AboutScreen /></ProtectedRoute>} />
+          <Route path="/language-settings" element={<ProtectedRoute><LanguageScreen /></ProtectedRoute>} />
 
-         {/* New Gamified Routes */}
-         <Route path="/dashboard" element={<ProtectedRoute><DashboardScreen /></ProtectedRoute>} />
-         <Route path="/score" element={<ProtectedRoute><ScoreScreen /></ProtectedRoute>} />
-         <Route path="/profile" element={<ProtectedRoute><ProfileScreen /></ProtectedRoute>} />
+          {/* New Gamified Routes */}
+          <Route path="/dashboard" element={<ProtectedRoute><DashboardScreen /></ProtectedRoute>} />
+          <Route path="/score" element={<ProtectedRoute><ScoreScreen /></ProtectedRoute>} />
+          <Route path="/profile" element={<ProtectedRoute><ProfileScreen /></ProtectedRoute>} />
 
-        {/* Redirect unknown routes or add a 404 */}
-        <Route path="*" element={<Navigate to={localStorage.getItem('username') ? "/dashboard" : "/"} />} />
-      </Routes>
-      </div>
+          {/* Redirect unknown routes or add a 404 */}
+          <Route path="*" element={<Navigate to={localStorage.getItem('username') ? "/dashboard" : "/"} />} />
+        </Routes>
+        </div>
+      </ToastProvider>
     </Router>
   );
 }

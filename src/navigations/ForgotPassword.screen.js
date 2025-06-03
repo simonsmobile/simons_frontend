@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Notiflix from "notiflix";
+import { useToast } from "../hooks/useToast";
 import env from "../configs/env";
 
 const ForgotPasswordScreen = () => {
+  const toast = useToast(); 
   const [email, setEmail] = useState("");
   const [otp, setOtp] = useState("");
   const [sent, setSent] = useState(false);
@@ -81,7 +82,7 @@ const ForgotPasswordScreen = () => {
     event.preventDefault();
 
     if (!validateEmail(email)) {
-      Notiflix.Notify.failure("Invalid email address");
+      toast.error("Invalid email address");
       return;
     }
 
@@ -101,7 +102,7 @@ const ForgotPasswordScreen = () => {
       if (response.ok) {
         setSent(true);
         generateOTP();
-        Notiflix.Notify.success("Code was sent to your email");
+        toast.success("Code was sent to your email");
 
         setTimeout(() => {
           if (inputRefs.current[0]) {
@@ -110,11 +111,11 @@ const ForgotPasswordScreen = () => {
         }, 300);
       } else {
         const error = await response.json();
-        Notiflix.Notify.failure(error.message || "Failed to send Code");
+        toast.error(error.message || "Failed to send Code");
       }
     } catch (error) {
       console.error(error);
-      Notiflix.Notify.failure("Server error");
+      toast.error("Server error");
     } finally {
       setLoading(false);
     }
@@ -124,15 +125,15 @@ const ForgotPasswordScreen = () => {
     const enteredOTP = inputOTP.join("");
 
     if (enteredOTP.length !== 5) {
-      Notiflix.Notify.failure("Please enter a complete 5-digit Code");
+      toast.error("Please enter a complete 5-digit Code");
       return;
     }
 
     if (enteredOTP === otp) {
-      Notiflix.Notify.success("Code verified");
+      toast.success("Code verified");
       navigate("/reset-password", { state: { email } });
     } else {
-      Notiflix.Notify.failure("Invalid Code");
+      toast.error("Invalid Code");
 
       inputRefs.current.forEach((input) => {
         if (input) {
@@ -167,14 +168,14 @@ const ForgotPasswordScreen = () => {
         if (inputRefs.current[0]) {
           inputRefs.current[0].focus();
         }
-        Notiflix.Notify.success("New Code was sent to your email");
+        toast.success("New Code was sent to your email");
       } else {
         const error = await response.json();
-        Notiflix.Notify.failure(error.message || "Failed to send Code");
+        toast.error(error.message || "Failed to send Code");
       }
     } catch (error) {
       console.error(error);
-      Notiflix.Notify.failure("Server error");
+      toast.error("Server error");
     } finally {
       setLoading(false);
     }
