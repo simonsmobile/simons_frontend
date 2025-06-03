@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { useLocation, Link, useNavigate } from "react-router-dom";
 import env from "../configs/env";
 import Notiflix from "notiflix";
-
 import axios from "axios";
 
 const EndScreen = () => {
@@ -52,7 +51,6 @@ const EndScreen = () => {
           "Congratulations! You've completed all categories!"
         );
       }
-
       navigate("/category-selection");
     } else {
       navigate("/dashboard");
@@ -93,9 +91,7 @@ const EndScreen = () => {
 
     for (let i = 0; i < qs.length; i++) {
       let answerValue = answers[i] !== null ? answers[i] + 1 : 0;
-
       let full = qs[i].points;
-
       const index = gradesType.findIndex((grade) => grade === full.toString());
       if (index !== -1) {
         pointsArray[index] += answerValue;
@@ -104,10 +100,15 @@ const EndScreen = () => {
 
     for (let i = 0; i < pointsArray.length; i++) {
       let score = (100 * pointsArray[i]) / marks[i];
-      if (score >= 80) {
+
+      if (score >= 90) {
+        updatedGrades[i] = "C";
+      } else if (score >= 75) {
         updatedGrades[i] = "M";
-      } else if (score < 80) {
+      } else if (score >= 50) {
         updatedGrades[i] = "B";
+      } else {
+        updatedGrades[i] = "F";
       }
     }
 
@@ -234,9 +235,23 @@ const EndScreen = () => {
     return subcategories[grade] || grade;
   };
 
+  const getGradeLabel = (grade) => {
+    switch (grade) {
+      case "C":
+        return "Level 2";
+      case "M":
+        return "Level 1 - Mastery";
+      case "B":
+        return "Level 1 - Basic";
+      case "F":
+        return "Not Achieved";
+      default:
+        return "Unknown";
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-white">
-      {/* Top design element */}
       <div className="w-full relative">
         <div className="absolute top-0 right-0 w-2/3 h-32 bg-amber-300 rounded-bl-full"></div>
       </div>
@@ -245,7 +260,7 @@ const EndScreen = () => {
         <h1 className="text-lg font-semibold text-center">
           {isPartialAssessment
             ? `${selectedCategory} Assessment`
-            : "Assessment Completion"}
+            : "Assessment"}
         </h1>
       </div>
 
@@ -255,11 +270,11 @@ const EndScreen = () => {
             <div className="flex flex-col items-center justify-center py-12">
               <div className="w-20 h-20 border-4 border-t-accent border-gray-200 rounded-full animate-spin mb-6"></div>
               <h2 className="text-xl font-medium text-gray-900 mb-2">
-                Processing Your Results
+                Processing Your Assessment
               </h2>
               <p className="text-center text-gray-600">
-                Please wait while we analyze your responses and generate
-                personalized insights.
+                Please wait while we analyze your responses and determine your
+                starting levels.
               </p>
             </div>
           ) : (
@@ -281,7 +296,7 @@ const EndScreen = () => {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M5 13l4 4L19 7"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
                     />
                   </svg>
                 </div>
@@ -290,19 +305,19 @@ const EndScreen = () => {
               <div className="text-center mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
                   {isPartialAssessment
-                    ? `Category Assessment Completed!`
-                    : "Assessment Completed!"}
+                    ? `Category Assessment Complete!`
+                    : "Assessment Assessment Complete!"}
                 </h2>
                 <p className="text-gray-600">
                   You've successfully completed {completedCount} questions.
                   {isPartialAssessment
-                    ? ` Your ${selectedCategory} competence profile is now ready.`
-                    : " Your digital competence profile is now ready."}
+                    ? ` Your ${selectedCategory} starting levels have been determined.`
+                    : " Your starting levels for all competences have been determined."}
                 </p>
               </div>
 
               <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-8">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid">
                   <div className="text-center p-3 bg-amber-50 rounded-lg">
                     <span className="block text-2xl font-bold text-amber-600">
                       {completedCount}
@@ -311,21 +326,13 @@ const EndScreen = () => {
                       Questions Answered
                     </span>
                   </div>
-                  <div className="text-center p-3 bg-amber-50 rounded-lg">
-                    <span className="block text-2xl font-bold text-amber-600">
-                      {isPartialAssessment ? "1" : "5"}
-                    </span>
-                    <span className="text-sm text-gray-600">
-                      Competence {isPartialAssessment ? "Area" : "Areas"}
-                    </span>
-                  </div>
                 </div>
               </div>
 
               {isPartialAssessment && (
                 <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-8">
                   <h3 className="font-medium text-gray-900 mb-3">
-                    {selectedCategory} Results
+                    {selectedCategory} Assessment Results
                   </h3>
                   <div className="space-y-3">
                     {categoryResults.map((result, idx) => (
@@ -340,18 +347,16 @@ const EndScreen = () => {
                         </div>
                         <span
                           className={`px-2 py-1 rounded-full text-xs font-medium ${
-                            result.value === "M"
-                              ? "bg-amber-100 text-amber-800"
+                            result.value === "C"
+                              ? "bg-green-100 text-green-800"
+                              : result.value === "M"
+                              ? "bg-blue-100 text-blue-800"
                               : result.value === "B"
                               ? "bg-amber-100 text-amber-800"
                               : "bg-gray-100 text-gray-800"
                           }`}
                         >
-                          {result.value === "M"
-                            ? "Level 2"
-                            : result.value === "B"
-                            ? "Level 1"
-                            : "Not Achieved"}
+                          {getGradeLabel(result.value)}
                         </span>
                       </div>
                     ))}
@@ -359,11 +364,12 @@ const EndScreen = () => {
                 </div>
               )}
 
-              <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-8">
-                <p className="text-center text-gray-700">
+              <div className="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-4 mb-8">
+                <h3 className="font-medium text-gray-900 mb-2">Next Steps</h3>
+                <p className="text-sm text-gray-800">
                   {isPartialAssessment
-                    ? "Your category results have been saved. Continue with other categories."
-                    : "Your results have been saved. You can now explore your digital competence profile and access personalized learning materials."}
+                    ? "The assessment determines which levels you can access. Complete other categories or start earning points through timed exercises!"
+                    : "Your assessment is complete! Start earning points by taking timed exercises for each competence level."}
                 </p>
               </div>
             </div>
@@ -387,7 +393,6 @@ const EndScreen = () => {
         </div>
       </div>
 
-      {/* Bottom design element */}
       <div className="w-full relative min-h-16">
         <div className="absolute bottom-0 left-0 w-24 h-24 bg-amber-200 rounded-tr-full opacity-50"></div>
       </div>

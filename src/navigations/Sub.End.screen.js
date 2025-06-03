@@ -1,4 +1,3 @@
-// navigations/Sub.End.screen.js - Updated with new scoring and feedback
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import env from "../configs/env";
@@ -6,10 +5,10 @@ import axios from "axios";
 import {
   calculateQuizScore,
   generateQuizFeedback,
+  submitQuizResult,
 } from "../utils/scoring";
 
-import SCORING_CONFIG from '../configs/scoringConfig';
-
+import SCORING_CONFIG from "../configs/scoringConfig";
 
 const SubEndScreen = () => {
   const location = useLocation();
@@ -31,7 +30,6 @@ const SubEndScreen = () => {
   const [newGrade, setNewGrade] = useState("F");
 
   const levelNumber = level === "basic" ? 1 : 2;
-  const completedCount = answers.filter((answer) => answer !== null).length;
 
   const handleNavigation = (index, level, category, sub) => {
     navigate("/study", { state: { index, level, category, sub } });
@@ -59,28 +57,26 @@ const SubEndScreen = () => {
 
   const processQuizResults = async () => {
     try {
-      // Calculate quiz score using new system
       const result = calculateQuizScore(answers, questionnaire, timeTaken);
       setQuizResult(result);
 
-      // Generate feedback
       const feedbackData = generateQuizFeedback(result, category, levelNumber);
       setFeedback(feedbackData);
 
-      // Determine new grade based on performance
       const { correctAnswers, totalQuestions, isPerfect } = result;
       let grade = "F";
 
-      if (isPerfect) {
-        grade = levelNumber === 1 ? "M" : "C"; // Master for Level 1, Complete for Level 2
-      } else if (correctAnswers === totalQuestions) {
-        grade = levelNumber === 1 ? "B" : "M"; // Basic for Level 1, Master for Level 2
+      if (correctAnswers === totalQuestions) {
+        if (isPerfect) {
+          grade = levelNumber === 1 ? "M" : "C";
+        } else {
+          grade = levelNumber === 1 ? "B" : "M";
+        }
       }
 
       setNewGrade(grade);
 
-      // Update backend with new score
-      await updateBackendScore(result, grade);
+      await submitQuizToBackend(result, grade);
 
       setLoading(false);
       setTimeout(() => {
@@ -92,9 +88,26 @@ const SubEndScreen = () => {
     }
   };
 
-  const updateBackendScore = async (result, grade) => {
+  const submitQuizToBackend = async (result, grade) => {
     try {
-      // Get current grades
+      const quizData = {
+        grades: [],
+        answers,
+        questions: questionnaire,
+        timeTaken,
+        level: levelNumber === 1 ? "basic" : "master",
+        competenceArea: sub?.category,
+        totalScore: result.totalScore,
+        baseScore: result.baseScore,
+        timeBonus: result.timeBonus,
+        perfectBonus: result.isPerfect
+          ? Math.round(SCORING_CONFIG.PERFECT_RUN_BONUS / 21)
+          : 0,
+        correctAnswers: result.correctAnswers,
+        accuracy: result.accuracy,
+        isPerfect: result.isPerfect,
+      };
+
       const response = await axios.get(
         `${env.SERVER_URL}/auth/student/${localStorage.getItem(
           "username"
@@ -104,7 +117,6 @@ const SubEndScreen = () => {
       const currentGrades =
         response.data?.lastTest?.grades || Array(21).fill("F");
 
-      // Find the index for this competence
       const competenceMap = {
         1.1: 0,
         1.2: 1,
@@ -130,27 +142,31 @@ const SubEndScreen = () => {
       };
 
       const competenceIndex = competenceMap[sub?.category];
-      if (competenceIndex !== undefined) {
-        currentGrades[competenceIndex] = grade;
+      if (
+        competenceIndex !== undefined &&
+        result.correctAnswers === result.totalQuestions
+      ) {
+        const existingGradeValue = getGradeValue(
+          currentGrades[competenceIndex]
+        );
+        const newGradeValue = getGradeValue(grade);
+
+        if (newGradeValue > existingGradeValue) {
+          currentGrades[competenceIndex] = grade;
+        }
       }
 
-      // Save updated grades
-      await axios.post(
-        `${env.SERVER_URL}/auth/student/${localStorage.getItem(
-          "username"
-        )}/new_tests`,
-        {
-          date: new Date().toISOString().split("T")[0],
-          questions: questionnaire,
-          answers,
-          grades: currentGrades,
-          timeTaken,
-          quizScore: result,
-        }
-      );
+      quizData.grades = currentGrades;
+
+      await submitQuizResult(quizData);
     } catch (error) {
       console.error("Error updating backend score:", error);
     }
+  };
+
+  const getGradeValue = (grade) => {
+    const values = { F: 0, B: 1, M: 2, C: 3 };
+    return values[grade] || 0;
   };
 
   useEffect(() => {
@@ -191,7 +207,7 @@ const SubEndScreen = () => {
             Calculating Your Score
           </h2>
           <p className="text-center text-gray-600">
-            Analyzing your performance and time bonuses...
+            Analysing your performance and time bonuses...
           </p>
         </div>
       </div>
@@ -252,7 +268,6 @@ const SubEndScreen = () => {
               processingComplete ? "opacity-100" : "opacity-0"
             }`}
           >
-            {/* Header Info */}
             <div className="mb-6">
               <div className="flex items-center space-x-2 mb-2">
                 <div className="inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-medium">
@@ -262,14 +277,9 @@ const SubEndScreen = () => {
               <h2 className="text-xl font-bold text-gray-900 mb-1">
                 {category}
               </h2>
-              {sub && (
-                <p className="text-gray-600 text-sm">
-                  {sub.title}
-                </p>
-              )}
+              {sub && <p className="text-gray-600 text-sm">{sub.title}</p>}
             </div>
 
-            {/* Main Feedback Card */}
             <div className="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden mb-6">
               <div
                 className={`p-6 text-center ${
@@ -278,7 +288,7 @@ const SubEndScreen = () => {
               >
                 <div
                   className={`text-4xl mb-2 ${
-                    isSuccess ? "text-amber-500" : "text-white-500"
+                    isSuccess ? "text-amber-500" : "text-gray-500"
                   }`}
                 >
                   {isSuccess ? "🎉" : "📚"}
@@ -288,11 +298,10 @@ const SubEndScreen = () => {
                 </h3>
                 <p className="text-gray-600 mb-4">{feedback.message}</p>
                 <div className="text-lg font-semibold text-gray-800">
-                  You earned: + {totalScore} points
+                  You earned: +{totalScore} points
                 </div>
               </div>
 
-              {/* Detailed Breakdown */}
               <div className="p-4 bg-gray-50">
                 <h4 className="font-medium text-gray-800 mb-3">
                   Score Breakdown
@@ -310,11 +319,11 @@ const SubEndScreen = () => {
                       <span className="font-medium">+{timeBonus} pts</span>
                     </div>
                   )}
-                  {isPerfect && (
+                  {isPerfect && quizResult.perfectBonus > 0 && (
                     <div className="flex justify-between text-purple-600">
                       <span>Perfect score bonus</span>
                       <span className="font-medium">
-                        +{Math.round(SCORING_CONFIG.PERFECT_RUN_BONUS / 21)} pts
+                        +{quizResult.perfectBonus} pts
                       </span>
                     </div>
                   )}
@@ -325,7 +334,6 @@ const SubEndScreen = () => {
                 </div>
               </div>
 
-              {/* Failure Details */}
               {!isSuccess && feedback.details && (
                 <div className="p-4 border-t">
                   <h4 className="font-medium text-gray-800 mb-3">
@@ -361,7 +369,6 @@ const SubEndScreen = () => {
               )}
             </div>
 
-            {/* Action Buttons */}
             <div className="space-y-3">
               {!isSuccess && (
                 <>

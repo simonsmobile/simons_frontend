@@ -1,4 +1,3 @@
-// navigations/Score.screen.js - Updated with new scoring system
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -10,6 +9,8 @@ import {
   getGamificationDetails,
   getSubCompetencesForArea,
   GRADE_LEVELS,
+  getProgressPercentage,
+  getQuizScoresFromBackend,
 } from "../utils/scoring";
 import { Radar } from "react-chartjs-2";
 import {
@@ -46,6 +47,7 @@ const ScoreScreen = () => {
   const [confettiSize, setConfettiSize] = useState({ width: 0, height: 0 });
   const gamificationCardRef = useRef(null);
   const animationTimeoutRef = useRef(null);
+  const [completedLevels, setCompletedLevels] = useState({});
 
   useEffect(() => {
     const fetchScores = async () => {
@@ -57,9 +59,17 @@ const ScoreScreen = () => {
           )}/new_tests`
         );
         const latestGrades = response.data?.lastTest?.grades || null;
-        const calculated = calculateScores(latestGrades);
+        setCompletedLevels(response.data?.completedLevels || {});
+
+        const backendData = {
+          totalScore: response.data?.totalScore || 0,
+          competenceScores: response.data?.competenceScores || {},
+          completedLevels: response.data?.completedLevels || {},
+        };
+
+        const calculated = calculateScores(latestGrades, backendData);
         setScores(calculated);
-        const gameDetails = getGamificationDetails(calculated.totalScore);
+        const gameDetails = getGamificationDetails(backendData.totalScore);
         setGamification(gameDetails);
         if (gameDetails) {
           setAnimateBadge(true);
@@ -72,7 +82,7 @@ const ScoreScreen = () => {
         }
       } catch (error) {
         console.error("Error fetching scores:", error);
-        setScores(calculateScores(null));
+        setScores(calculateScores(null, null));
       } finally {
         setLoading(false);
       }
@@ -133,10 +143,8 @@ const ScoreScreen = () => {
     labels: scores.areaScores.map((area) => area.name),
     datasets: [
       {
-        label: "Competence Score %",
-        data: scores.areaScores.map((area) =>
-          Math.round((area.score / area.maxScore) * 100)
-        ),
+        label: "Points Earned",
+        data: scores.areaScores.map((area) => area.score),
         backgroundColor: "rgba(251, 191, 36, 0.2)",
         borderColor: "rgba(217, 119, 6, 1)",
         borderWidth: 2,
@@ -148,18 +156,22 @@ const ScoreScreen = () => {
     ],
   };
 
+  const maxAreaScore = Math.max(
+    ...scores.areaScores.map((area) => area.maxScore)
+  );
+
   const chartOptions = {
     scales: {
       r: {
         angleLines: { display: true, color: "rgba(0, 0, 0, 0.1)" },
         suggestedMin: 0,
-        suggestedMax: 100,
+        suggestedMax: maxAreaScore,
         ticks: {
-          stepSize: 20,
+          stepSize: Math.ceil(maxAreaScore / 5),
           backdropColor: "transparent",
           color: "rgba(0, 0, 0, 0.6)",
           callback: function (value) {
-            return value + "%";
+            return value + " pts";
           },
         },
         pointLabels: { font: { size: 10 }, color: "rgba(0, 0, 0, 0.8)" },
@@ -173,7 +185,7 @@ const ScoreScreen = () => {
           label: function (context) {
             let label = context.dataset.label || "";
             if (label) label += ": ";
-            if (context.parsed.r !== null) label += context.parsed.r + "%";
+            if (context.parsed.r !== null) label += context.parsed.r + " pts";
             return label;
           },
         },
@@ -199,29 +211,30 @@ const ScoreScreen = () => {
       default:
         return (
           <div className="flex items-center justify-center">
-  <img 
-    src={`${process.env.PUBLIC_URL}/images/logo.png`} 
-    alt="Badge" 
-    className="w-24 h-auto" 
-  />
-</div>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/logo.png`}
+              alt="Badge"
+              className="w-24 h-auto"
+            />
+          </div>
         );
     }
   };
 
-  const getAreaLevelDisplay = (areaScores) => {
-    if (!areaScores.competenceDetails) return "Level 1";
+  const getAreaLevelDisplay = (areaData, backendCompletedLevels) => {
+    if (!areaData.competenceDetails || !backendCompletedLevels)
+      return "Not Started";
 
-    const levels = areaScores.competenceDetails.map(
-      (comp) => GRADE_LEVELS[comp.grade]?.level || 0
-    );
+    let hasLevel1 = false;
+    let hasLevel2 = false;
 
-    const uniqueLevels = [...new Set(levels)].filter((l) => l > 0).sort();
-
-    if (uniqueLevels.length === 0) return "Not Started";
-
-    const hasLevel1 = uniqueLevels.includes(1);
-    const hasLevel2 = uniqueLevels.includes(2);
+    areaData.points.forEach((point) => {
+      const levelData = backendCompletedLevels[point];
+      if (levelData) {
+        if (levelData.level1) hasLevel1 = true;
+        if (levelData.level2) hasLevel2 = true;
+      }
+    });
 
     if (hasLevel1 && hasLevel2) {
       return "Level 1‑2";
@@ -239,8 +252,7 @@ const ScoreScreen = () => {
       <Header title="Score" showMenuButton={true} />
 
       <div className="flex-1 px-4 py-6 max-w-xl mx-auto w-full">
-        {/* Gamification Card */}
-        {gamification && (
+        {gamification && gamification.threshold > 0 && (
           <div
             ref={gamificationCardRef}
             className="relative bg-white p-6 rounded-lg shadow border border-amber-200 mb-8 text-center overflow-hidden"
@@ -269,7 +281,24 @@ const ScoreScreen = () => {
           </div>
         )}
 
-        {/* Total Score Display */}
+        {(!gamification || gamification.threshold === 0) && (
+          <div className="bg-white p-6 rounded-lg shadow border border-gray-200 mb-8 text-center">
+            <div className="flex items-center justify-center mb-4">
+              <img
+                src={`${process.env.PUBLIC_URL}/images/logo.png`}
+                alt="SimONS Logo"
+                className="w-16 h-16"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              Welcome to SimONS!
+            </h3>
+            <p className="text-sm text-gray-600">
+              Complete exercises to start earning points and unlock achievements
+            </p>
+          </div>
+        )}
+
         <div className="text-center mb-6">
           <p className="text-sm text-gray-500">Total score</p>
           <p className="text-4xl font-bold text-gray-800">
@@ -302,8 +331,10 @@ const ScoreScreen = () => {
             {scores.areaScores.map((area, areaIndex) => {
               const isExpanded = expandedCategories[area.id];
               const subCompetences = getSubCompetencesForArea(area.id);
-              const percentage = Math.round((area.score / area.maxScore) * 100);
-              const levelDisplay = getAreaLevelDisplay(area);
+              const progressPercentage = getProgressPercentage(
+                area.competenceDetails
+              );
+              const levelDisplay = getAreaLevelDisplay(area, completedLevels);
 
               return (
                 <div
@@ -330,7 +361,7 @@ const ScoreScreen = () => {
                           <div className="w-24 bg-gray-300 rounded-full h-2 mr-2">
                             <div
                               className="bg-gray-800 h-2 rounded-full"
-                              style={{ width: `${percentage}%` }}
+                              style={{ width: `${progressPercentage}%` }}
                             ></div>
                           </div>
                         </div>
@@ -354,10 +385,8 @@ const ScoreScreen = () => {
                         {subCompetences.map((sub, subIndex) => {
                           const competenceDetail =
                             area.competenceDetails?.[subIndex];
-                          const grade = competenceDetail?.grade || "F";
-                          const gradeInfo = GRADE_LEVELS[grade];
-                          const subScore = gradeInfo?.points || 0;
-                          const maxSubScore = 150;
+                          const subScore = competenceDetail?.score || 0;
+                          const maxSubScore = 300;
 
                           const competenceNumber =
                             scores.areaScores
@@ -371,6 +400,16 @@ const ScoreScreen = () => {
                             subIndex +
                             1;
 
+                          const quizProgress =
+                            competenceDetail?.quizProgress || {
+                              level1: false,
+                              level2: false,
+                            };
+                          const completedLevels =
+                            (quizProgress.level1 ? 1 : 0) +
+                            (quizProgress.level2 ? 1 : 0);
+                          const progressPercent = (completedLevels / 2) * 100;
+
                           return (
                             <li
                               key={sub.point}
@@ -382,16 +421,12 @@ const ScoreScreen = () => {
                                 </span>
                                 <div className="flex items-center space-x-2 mt-1">
                                   <span className="text-xs text-gray-500">
-                                    {gradeInfo?.label || "Not achieved"}
+                                    {subScore} points earned
                                   </span>
                                   <div className="w-16 bg-gray-200 rounded-full h-1">
                                     <div
                                       className="bg-amber-500 h-1 rounded-full"
-                                      style={{
-                                        width: `${
-                                          (subScore / maxSubScore) * 100
-                                        }%`,
-                                      }}
+                                      style={{ width: `${progressPercent}%` }}
                                     ></div>
                                   </div>
                                 </div>
@@ -408,7 +443,6 @@ const ScoreScreen = () => {
           </div>
         </div>
 
-        {/* Milestones */}
         {scores.milestones && scores.milestones.length > 0 && (
           <div className="mt-8 bg-white rounded-lg shadow border border-gray-200 p-4">
             <h3 className="text-lg font-semibold text-gray-700 mb-4">

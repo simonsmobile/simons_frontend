@@ -333,7 +333,7 @@ const env = {
     {
       title: "Question 23",
       question:
-        "I know how to pay for goods and services that I buy online (e.g. using direct bank transfer, credit/debit cards, other online paymentsystems). ",
+        "I know how to pay for goods and services that I buy online (e.g. using direct bank transfer, credit/debit cards, other online payment systems). ",
       options: [
         "I do not know",
         "I need some help",
@@ -977,7 +977,7 @@ const env = {
     {
       title: "Question 66",
       question:
-        "I know how to reduce the energy consumption of my devices (e.g. change settings, close apps, turn off wifi).",
+        "I know how to reduce the energy consumption of my devices (e.g. change settings, close apps, turn off Wi-Fi).",
       options: [
         "I do not know",
         "I need some help",
@@ -1022,7 +1022,7 @@ const env = {
     {
       title: "Question 69",
       question:
-        "I know some reasons why a digital device may fail to connect online (e.g. wrong wifi password, airplane mode on). ",
+        "I know some reasons why a digital device may fail to connect online (e.g. wrong Wi-Fi password, airplane mode on). ",
       options: [
         "I do not know",
         "I need some help",
@@ -1959,7 +1959,7 @@ const env = {
         "Select the correct matching of the following online platforms with their primary use:",
       options: [
         "Zoom: Record videos",
-        "WhatsApp: Microblogging",
+        "WhatsApp: Micro-blogging",
         "MS Teams: Online classes",
         "X: Instant messaging",
       ],
@@ -2481,13 +2481,13 @@ const env = {
       question:
         "Imagine you are publishing a post on Instagram about an upcoming hackathon at your university. Which hashtags are more appropriate to attract other students to the site?",
       options: [
-        "#hackaton #university",
+        "#hackathon #university",
         "#comevisit #events",
-        "#hackaton #[name of the university] #[name of the event and year]",
+        "#hackathon #[name of the university] #[name of the event and year]",
         "#city #programming",
       ],
       answer:
-        "#hackaton #[name of the university] #[name of the event and year]",
+        "#hackathon #[name of the university] #[name of the event and year]",
       points: 1.0,
       type: "2.4",
       level: "basic",
@@ -2870,7 +2870,7 @@ const env = {
     {
       title: "2.6 B5",
       question:
-        "Is it appropriate to share a picture with minors (eg. underaged siblings or cousins) on social media?",
+        "Is it appropriate to share a picture with minors (eg. underage siblings or cousins) on social media?",
       options: [
         "No, never.",
         "Yes, because it is a private space.",
@@ -2932,7 +2932,7 @@ const env = {
     {
       title: "2.6 M3",
       question:
-        "What metainformation is possible to be collected by tech companies from a selfie taken with your mobile phone?",
+        "What meta-information is possible to be collected by tech companies from a selfie taken with your mobile phone?",
       options: [
         "Name",
         "Location",
@@ -3070,7 +3070,7 @@ const env = {
       title: "3.1 M1",
       question: "What six elements can be combined to create multimedia?",
       options: [
-        "Colour, hypertext, images, music, voiceover and video",
+        "Colour, hypertext, images, music, voice-over and video",
         "Audio, hypertext, images, colour, music and animation",
         "Text, links, animation, video, sound effect and animation",
         "Audio, images, animation, hypertext, text and video",
@@ -4818,7 +4818,7 @@ const env = {
       question:
         "Which of the following technologies can be used to prototype and test innovative product ideas?",
       options: [
-        "3D modeling software like Blender",
+        "3D modelling software like Blender",
         "Virtual reality environments",
         "AI-driven generative design tools",
         "All of the above",
@@ -5296,7 +5296,7 @@ const env = {
       text: "Learn to develop solutions for complex problems involving multiple interacting factors by planning and creating instructions for a computing system to execute tasks efficiently.",
       links: [
         {
-          target: "Science Direct: Planning Algoritm",
+          target: "Science Direct: Planning Algorithm",
           url: "https://www.sciencedirect.com/topics/computer-science/planning-algorithm#:~:text=A%20Planning%20Algorithm%20is%20a",
         },
         {
@@ -5345,7 +5345,7 @@ const env = {
       level: "basic",
     },
     {
-      text: "Apply and evaluate appropriate methods for protecting personal data and privacy in digital environments  ensuring responsible data sharing while minimising risks for yourself and others.  Analise and assess privacy policies to understand how personal data is used and develop solutions for complex challenges related to data protection and information security. Improve your expertise by proposing innovative approaches to data security and policy development  and guide others in safeguarding digital privacy  ",
+      text: "Apply and evaluate appropriate methods for protecting personal data and privacy in digital environments  ensuring responsible data sharing while minimising risks for yourself and others. Analyse and assess privacy policies to understand how personal data is used and develop solutions for complex challenges related to data protection and information security. Improve your expertise by proposing innovative approaches to data security and policy development  and guide others in safeguarding digital privacy  ",
       links: [],
       type: "4.2",
       level: "master",

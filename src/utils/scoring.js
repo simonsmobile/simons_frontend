@@ -1,8 +1,7 @@
-// utils/scoring.js - Updated to use centralized config
 import { FaPlay, FaLock, FaCheckCircle } from "react-icons/fa";
 import SCORING_CONFIG from "../configs/scoringConfig";
+import env from "../configs/env";
 
-// Re-export commonly used constants for backward compatibility
 export const COMPETENCE_AREAS = Object.keys(
   SCORING_CONFIG.COMPETENCE_AREAS
 ).map((id) => ({
@@ -43,56 +42,61 @@ const GRADES_TYPE = [
 
 export const calculateTimeBonus = (remainingSeconds) => {
   if (remainingSeconds <= 0) return 0;
-  // The document shows max 50 points for answering "instantly" - this should be per question
-  return Math.round(SCORING_CONFIG.MAX_TIME_BONUS * (remainingSeconds / SCORING_CONFIG.TIME_LIMIT_SECONDS));
+  return Math.round(
+    SCORING_CONFIG.MAX_TIME_BONUS *
+      (remainingSeconds / SCORING_CONFIG.TIME_LIMIT_SECONDS)
+  );
 };
 
-// FIXED: Calculate quiz score with proper time bonus limits
 export const calculateQuizScore = (answers, questions, timeTaken = []) => {
   let totalScore = 0;
   let correctAnswers = 0;
   let timeBonus = 0;
-  
+
   const level = questions[0]?.level === "master" ? 2 : 1;
-  const basePoints = level === 1 ? 
-    SCORING_CONFIG.LEVEL_1_BASE_POINTS : 
-    SCORING_CONFIG.LEVEL_2_BASE_POINTS;
-  
-  // Calculate per-question bonuses first
+  const basePoints =
+    level === 1
+      ? SCORING_CONFIG.LEVEL_1_BASE_POINTS
+      : SCORING_CONFIG.LEVEL_2_BASE_POINTS;
+
   let individualTimeBonuses = [];
-  
+
   answers.forEach((answerIndex, questionIndex) => {
     const question = questions[questionIndex];
     const isCorrect = question.options[answerIndex] === question.answer;
-    
+
     if (isCorrect) {
       correctAnswers++;
       totalScore += basePoints;
-      
-      // Calculate time bonus for this question
+
       if (timeTaken[questionIndex] !== undefined) {
         const questionTime = timeTaken[questionIndex];
-        const remainingTime = Math.max(0, SCORING_CONFIG.TIME_LIMIT_SECONDS - questionTime);
+        const remainingTime = Math.max(
+          0,
+          SCORING_CONFIG.TIME_LIMIT_SECONDS - questionTime
+        );
         const questionTimeBonus = calculateTimeBonus(remainingTime);
         individualTimeBonuses.push(questionTimeBonus);
       }
     }
   });
-  
+
   timeBonus = individualTimeBonuses.reduce((sum, bonus) => sum + bonus, 0);
   totalScore += timeBonus;
-  
-  // Perfect score bonus calculation
+
   const isPerfect = correctAnswers === questions.length;
   let perfectBonus = 0;
-  
-  if (isPerfect && questions.length === SCORING_CONFIG.QUESTIONS_PER_COMPETENCE) {
-    // According to document: 5,000 points per level for exactly 63 correct answers
-    // For individual competence (3 questions), proportional bonus:
-    perfectBonus = Math.round(SCORING_CONFIG.PERFECT_RUN_BONUS / SCORING_CONFIG.TOTAL_COMPETENCES);
+
+  if (
+    isPerfect &&
+    questions.length === SCORING_CONFIG.QUESTIONS_PER_COMPETENCE
+  ) {
+    perfectBonus = Math.round(
+      SCORING_CONFIG.PERFECT_RUN_BONUS / SCORING_CONFIG.TOTAL_COMPETENCES
+    );
     totalScore += perfectBonus;
   }
-  
+
   return {
     totalScore,
     correctAnswers,
@@ -103,18 +107,70 @@ export const calculateQuizScore = (answers, questions, timeTaken = []) => {
     isPerfect,
     accuracy: correctAnswers / questions.length,
     level,
-    individualTimeBonuses, // For debugging
+    individualTimeBonuses,
     breakdown: {
       base: correctAnswers * basePoints,
       time: timeBonus,
       perfect: perfectBonus,
-      total: totalScore
-    }
+      total: totalScore,
+    },
   };
 };
 
-// Enhanced scoring calculation for main assessment (STILL OLD SYSTEM)
-export const calculateScores = (gradesArray, detailedScores = null) => {
+export const getQuizScoresFromBackend = async () => {
+  try {
+    const response = await fetch(
+      `${env.SERVER_URL}/auth/student/${localStorage.getItem(
+        "username"
+      )}/new_tests`
+    );
+    if (response.ok) {
+      const data = await response.json();
+      const lastTest = data.lastTest;
+      if (lastTest && lastTest.totalScore) {
+        return {
+          totalScore: lastTest.totalScore,
+          baseScore: lastTest.baseScore || 0,
+          timeBonus: lastTest.timeBonus || 0,
+          perfectBonus: lastTest.perfectBonus || 0,
+          accuracy: lastTest.accuracy || 0,
+        };
+      }
+    }
+  } catch (error) {
+    console.error("Error fetching quiz scores:", error);
+  }
+  return {};
+};
+
+export const submitQuizResult = async (quizData) => {
+  try {
+    const response = await fetch(
+      `${env.SERVER_URL}/auth/student/${localStorage.getItem(
+        "username"
+      )}/new_tests`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(quizData),
+      }
+    );
+
+    if (response.ok) {
+      const result = await response.json();
+      return result;
+    } else {
+      throw new Error("Failed to submit quiz result");
+    }
+  } catch (error) {
+    console.error("Error submitting quiz result:", error);
+    throw error;
+  }
+};
+
+export const calculateScores = (gradesArray, backendData = null) => {
   if (!gradesArray || gradesArray.length !== GRADES_TYPE.length) {
     return {
       totalScore: 0,
@@ -122,12 +178,12 @@ export const calculateScores = (gradesArray, detailedScores = null) => {
         ...area,
         score: 0,
         maxScore: getAreaMaxScore(area.id),
-        levels: area.points.map(() => 0),
         competenceDetails: area.points.map((point) => ({
           point,
           level: 0,
           grade: "F",
           score: 0,
+          quizProgress: { level1: false, level2: false },
         })),
       })),
       competenceLevels: {},
@@ -136,73 +192,58 @@ export const calculateScores = (gradesArray, detailedScores = null) => {
     };
   }
 
-  let totalScore = 0;
+  // Use backend data if available
+  const totalScore = backendData?.totalScore || 0;
+  const competenceScores = backendData?.competenceScores || {};
+  const completedLevels = backendData?.completedLevels || {};
+
   const areaScores = [];
   const competenceLevels = {};
   const badges = [];
   const milestones = [];
 
-  // Calculate individual competence scores using NEW GRADE SYSTEM
-  const competenceScores = GRADES_TYPE.map((gradeType, index) => {
-    const grade = gradesArray[index] || "F";
-    const gradeInfo = GRADE_LEVELS[grade];
-    const points = gradeInfo.points;
-
-    totalScore += points;
-    competenceLevels[gradeType] = grade;
-
-    return {
-      gradeType,
-      points,
-      grade,
-      level: gradeInfo.level,
-      label: gradeInfo.label,
-    };
-  });
-
-  // Calculate area scores with mixed levels
   COMPETENCE_AREAS.forEach((area) => {
-    const relevantCompetences = competenceScores.filter((sc) =>
-      area.points.includes(sc.gradeType)
-    );
+    let areaScore = 0;
+    const competenceDetails = area.points.map((point, index) => {
+      const grade =
+        gradesArray[GRADES_TYPE.findIndex((g) => g === point)] || "F";
+      const compData = competenceScores[point] || {
+        level1: 0,
+        level2: 0,
+        totalScore: 0,
+      };
+      const levelData = completedLevels[point] || {
+        level1: false,
+        level2: false,
+      };
 
-    const currentPoints = relevantCompetences.reduce(
-      (sum, sc) => sum + sc.points,
-      0
-    );
-    const maxPossiblePoints = getAreaMaxScore(area.id);
+      areaScore += compData.totalScore;
+      competenceLevels[point] = grade;
 
-    // Calculate levels for each competence in the area
-    const competenceLevels = relevantCompetences.map((comp) => comp.level);
-    const competenceDetails = relevantCompetences.map((comp, index) => ({
-      point: area.points[index],
-      level: comp.level,
-      grade: comp.grade,
-      score: comp.points,
-      label: comp.label,
-    }));
-
-    // Area level is the highest level achieved in any competence
-    const maxLevel = Math.max(...competenceLevels, 0);
+      return {
+        point,
+        level: GRADE_LEVELS[grade]?.level || 0,
+        grade,
+        score: compData.totalScore,
+        label: GRADE_LEVELS[grade]?.label || "Not achieved",
+        quizProgress: levelData,
+      };
+    });
 
     areaScores.push({
       ...area,
-      score: currentPoints,
-      maxScore: maxPossiblePoints,
-      level: maxLevel,
-      levels: competenceLevels,
+      score: areaScore,
+      maxScore: getAreaMaxScore(area.id),
       competenceDetails,
-      percentage: Math.round((currentPoints / maxPossiblePoints) * 100),
+      percentage: Math.round((areaScore / getAreaMaxScore(area.id)) * 100),
     });
   });
 
-  // Check for badges and milestones using NEW THRESHOLDS
   const gamificationData = getGamificationDetails(totalScore);
   if (gamificationData) {
     badges.push(gamificationData);
   }
 
-  // Add milestone achievements
   milestones.push(...getMilestones(totalScore));
 
   return {
@@ -215,16 +256,12 @@ export const calculateScores = (gradesArray, detailedScores = null) => {
   };
 };
 
-// Get maximum possible score for an area
 const getAreaMaxScore = (areaId) => {
   const area = COMPETENCE_AREAS.find((a) => a.id === areaId);
   if (!area) return 0;
-
-  // Each competence can achieve maximum points based on new system
-  return area.points.length * SCORING_CONFIG.MAX_POSSIBLE_PER_COMPETENCE;
+  return area.points.length * 300;
 };
 
-// Updated gamification thresholds
 export const getGamificationDetails = (totalScore) => {
   const thresholds = SCORING_CONFIG.GAMIFICATION_THRESHOLDS;
   const messages = SCORING_CONFIG.FEEDBACK_MESSAGES.MILESTONES;
@@ -249,13 +286,12 @@ export const getGamificationDetails = (totalScore) => {
     };
   }
   return {
-      ...messages[0],
-      badge: "simons",
-      threshold: totalScore,
-    };;
+    ...messages[0],
+    badge: "simons",
+    threshold: totalScore,
+  };
 };
 
-// Get milestone achievements
 export const getMilestones = (totalScore) => {
   const milestones = [];
   const thresholds = SCORING_CONFIG.GAMIFICATION_THRESHOLDS;
@@ -287,7 +323,6 @@ export const getMilestones = (totalScore) => {
   return milestones;
 };
 
-// Generate detailed feedback for quiz failures using NEW FEEDBACK SYSTEM
 export const generateQuizFeedback = (quizResult, competenceArea, level) => {
   const { correctAnswers, totalQuestions, accuracy, totalScore } = quizResult;
   const failed = correctAnswers < totalQuestions;
@@ -297,20 +332,11 @@ export const generateQuizFeedback = (quizResult, competenceArea, level) => {
       status: "success",
       title: level === 1 ? "Way to go!" : "Excellent work!",
       message: `Perfect score! You earned +${totalScore} points`,
-      // suggestions: [],
     };
   }
 
   const incorrect = totalQuestions - correctAnswers;
   let title = "Try again...";
-  // let suggestions = [];
-
-  // if (accuracy >= 0.67) {
-  //   title = "Almost there...";
-  //   suggestions = SCORING_CONFIG.IMPROVEMENT_SUGGESTIONS.MEDIUM_ACCURACY;
-  // } else {
-  //   suggestions = SCORING_CONFIG.IMPROVEMENT_SUGGESTIONS.LOW_ACCURACY;
-  // }
 
   return {
     status: "failure",
@@ -327,18 +353,16 @@ export const generateQuizFeedback = (quizResult, competenceArea, level) => {
           ? SCORING_CONFIG.LEVEL_1_BASE_POINTS
           : SCORING_CONFIG.LEVEL_2_BASE_POINTS),
     },
-    // suggestions,
   };
 };
 
-// Rest of the functions remain the same but now use config values
 export const getGradeStatus = (grade, levelNumber) => {
   const gradeInfo = GRADE_LEVELS[grade] || GRADE_LEVELS.F;
 
   if (levelNumber === 1) {
-    return gradeInfo.level >= 1 ? "Completed" : "Play";
+    return gradeInfo.level >= 1 ? "Play" : "Play";
   } else if (levelNumber === 2) {
-    if (gradeInfo.level >= 2) return "Completed";
+    if (gradeInfo.level >= 2) return "Play";
     if (gradeInfo.level >= 1) return "Play";
     return "Locked";
   }
@@ -442,4 +466,18 @@ export const translateLevelTerminology = (level) => {
     }
   }
   return level;
+};
+
+export const getProgressPercentage = (competenceDetails) => {
+  if (!competenceDetails || competenceDetails.length === 0) return 0;
+
+  const totalPossible = competenceDetails.length * 2;
+  let completed = 0;
+
+  competenceDetails.forEach((comp) => {
+    if (comp.quizProgress?.level1) completed += 1;
+    if (comp.quizProgress?.level2) completed += 1;
+  });
+
+  return Math.round((completed / totalPossible) * 100);
 };

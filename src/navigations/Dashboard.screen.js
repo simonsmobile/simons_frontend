@@ -1,4 +1,3 @@
-// navigations/Dashboard.screen.js - Updated with mixed levels and new scoring
 import React, { useEffect, useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
@@ -15,6 +14,7 @@ import {
   getCompetenceLevelText,
   getGamificationDetails,
   GRADE_LEVELS,
+  getProgressPercentage,
 } from "../utils/scoring";
 
 import RisingStarBadge from "../assets/badges/RisingStarBadge";
@@ -32,6 +32,7 @@ const DashboardScreen = () => {
   );
   const [showConfirmationModal, setShowConfirmationModal] = useState(false);
   const [gamification, setGamification] = useState(null);
+  const [completedLevels, setCompletedLevels] = useState({});
 
   useEffect(() => {
     const fetchData = async () => {
@@ -42,11 +43,20 @@ const DashboardScreen = () => {
             "username"
           )}/new_tests`
         );
+
         const grades = response.data?.lastTest?.grades || Array(21).fill("F");
         setLatestGrades(grades);
-        const calculated = calculateScores(grades);
+
+        const backendData = {
+          totalScore: response.data?.totalScore || 0,
+          competenceScores: response.data?.competenceScores || {},
+          completedLevels: response.data?.completedLevels || {},
+        };
+        setCompletedLevels(response.data?.completedLevels || {});
+
+        const calculated = calculateScores(grades, backendData);
         setScores(calculated);
-        const gameDetails = getGamificationDetails(calculated.totalScore);
+        const gameDetails = getGamificationDetails(backendData.totalScore);
         setGamification(gameDetails);
 
         try {
@@ -66,7 +76,7 @@ const DashboardScreen = () => {
         console.error("Error fetching score data:", error);
         const defaultGrades = Array(21).fill("F");
         setLatestGrades(defaultGrades);
-        setScores(calculateScores(defaultGrades));
+        setScores(calculateScores(defaultGrades, null));
       } finally {
         setLoading(false);
       }
@@ -128,19 +138,20 @@ const DashboardScreen = () => {
     setShowConfirmationModal(false);
   };
 
-  const getAreaLevelDisplay = (areaScores) => {
-    if (!areaScores.competenceDetails) return "Level 1";
+  const getAreaLevelDisplay = (areaData, backendCompletedLevels) => {
+    if (!areaData.competenceDetails || !backendCompletedLevels)
+      return "Not Started";
 
-    const levels = areaScores.competenceDetails.map(
-      (comp) => GRADE_LEVELS[comp.grade]?.level || 0
-    );
+    let hasLevel1 = false;
+    let hasLevel2 = false;
 
-    const uniqueLevels = [...new Set(levels)].filter((l) => l > 0).sort();
-
-    if (uniqueLevels.length === 0) return "Not Started";
-
-    const hasLevel1 = uniqueLevels.includes(1);
-    const hasLevel2 = uniqueLevels.includes(2);
+    areaData.points.forEach((point) => {
+      const levelData = backendCompletedLevels[point];
+      if (levelData) {
+        if (levelData.level1) hasLevel1 = true;
+        if (levelData.level2) hasLevel2 = true;
+      }
+    });
 
     if (hasLevel1 && hasLevel2) {
       return "Level 1‑2";
@@ -151,6 +162,21 @@ const DashboardScreen = () => {
     }
 
     return "Not Started";
+  };
+
+  const getQuizCompletionStatus = (
+    competenceDetails,
+    subCompetencePoint,
+    levelNumber
+  ) => {
+    const comp = competenceDetails.find((c) => c.point === subCompetencePoint);
+    if (!comp?.quizProgress) return "Play";
+
+    if (levelNumber === 1) {
+      return comp.quizProgress.level1 ? "Completed" : "Play";
+    } else {
+      return comp.quizProgress.level2 ? "Completed" : "Play";
+    }
   };
 
   if (loading) {
@@ -209,7 +235,6 @@ const DashboardScreen = () => {
           </p>
         </div>
 
-        {/* Gamification Card */}
         <div className="bg-white rounded-lg shadow border border-gray-200 p-4 mb-6 flex items-center justify-between">
           <div className="flex items-center">
             {gamification ? (
@@ -254,14 +279,13 @@ const DashboardScreen = () => {
           </Link>
         </div>
 
-        {/* Competence Overview */}
         <div className="bg-white rounded-lg shadow border border-gray-200 p-5 mb-6">
           <h3 className="text-lg font-bold text-gray-900 mb-4">
             Competence Overview
           </h3>
           <div className="space-y-3">
             {scores.areaScores.map((item) => {
-              const percentage = Math.round((item.score / item.maxScore) * 100);
+              const percentage = getProgressPercentage(item.competenceDetails);
               return (
                 <div key={item.id}>
                   <div className="flex justify-between items-center mb-1">
@@ -284,7 +308,6 @@ const DashboardScreen = () => {
           </div>
         </div>
 
-        {/* Training Exercises with Mixed Levels */}
         <div className="bg-white rounded-lg shadow border border-gray-200 overflow-hidden mb-6">
           <h3 className="text-lg font-bold text-gray-900 p-4 border-b border-gray-200">
             Training exercises
@@ -294,7 +317,10 @@ const DashboardScreen = () => {
               const isExpanded = expandedCategory === areaIndex;
               const subCompetences = getSubCompetencesForArea(area.id);
               const areaData = scores.areaScores.find((a) => a.id === area.id);
-              const levelDisplay = getAreaLevelDisplay(areaData);
+              const levelDisplay = getAreaLevelDisplay(
+                areaData,
+                completedLevels
+              );
 
               return (
                 <div key={area.id}>
@@ -319,8 +345,8 @@ const DashboardScreen = () => {
                             <div
                               className="bg-gray-800 h-2 rounded-full"
                               style={{
-                                width: `${Math.round(
-                                  (areaData.score / areaData.maxScore) * 100
+                                width: `${getProgressPercentage(
+                                  areaData.competenceDetails
                                 )}%`,
                               }}
                             ></div>
@@ -365,12 +391,29 @@ const DashboardScreen = () => {
 
                           const gradeInfo =
                             GRADE_LEVELS[grade] || GRADE_LEVELS.F;
-                          const currentLevel = gradeInfo.level;
                           const levelText = getCompetenceLevelText(grade);
                           const statusLevel1 = getGradeStatus(grade, 1);
                           const statusLevel2 = getGradeStatus(grade, 2);
-                          const IconLevel1 = getIconForStatus(statusLevel1);
-                          const IconLevel2 = getIconForStatus(statusLevel2);
+
+                          const completionStatusLevel1 =
+                            getQuizCompletionStatus(
+                              areaData.competenceDetails,
+                              sub.point,
+                              1
+                            );
+                          const completionStatusLevel2 =
+                            getQuizCompletionStatus(
+                              areaData.competenceDetails,
+                              sub.point,
+                              2
+                            );
+
+                          const IconLevel1 = getIconForStatus(
+                            completionStatusLevel1
+                          );
+                          const IconLevel2 = getIconForStatus(
+                            completionStatusLevel2
+                          );
 
                           const competenceNumber =
                             COMPETENCE_AREAS.slice(0, areaIndex).reduce(
@@ -411,26 +454,26 @@ const DashboardScreen = () => {
                                       }
                                       disabled={statusLevel1 === "Locked"}
                                       className={`w-12 h-12 flex items-center justify-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 ${
-                                        statusLevel1 === "Completed"
+                                        completionStatusLevel1 === "Completed"
                                           ? "bg-amber-400 text-white hover:bg-amber-500"
                                           : statusLevel1 === "Locked"
                                           ? "bg-gray-200 text-gray-400 cursor-not-allowed"
                                           : "bg-white border-2 border-gray-800 text-gray-800 hover:bg-gray-50"
                                       }`}
-                                      title={`Level 1: ${statusLevel1}`}
+                                      title={`Level 1: ${completionStatusLevel1}`}
                                     >
                                       <IconLevel1 className="w-6 h-6" />
                                     </button>
                                     <span
                                       className={`text-xs mt-1 font-medium ${
-                                        statusLevel1 === "Completed"
+                                        completionStatusLevel1 === "Completed"
                                           ? "text-amber-600"
                                           : statusLevel1 === "Locked"
                                           ? "text-gray-400"
                                           : "text-gray-700"
                                       }`}
                                     >
-                                      {statusLevel1}
+                                      {completionStatusLevel1}
                                     </span>
                                   </div>
 
@@ -446,26 +489,26 @@ const DashboardScreen = () => {
                                       }
                                       disabled={statusLevel2 === "Locked"}
                                       className={`w-12 h-12 flex items-center justify-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 ${
-                                        statusLevel2 === "Completed"
+                                        completionStatusLevel2 === "Completed"
                                           ? "bg-amber-400 text-white hover:bg-amber-500"
                                           : statusLevel2 === "Locked"
                                           ? "bg-gray-200 text-gray-400 cursor-not-allowed"
                                           : "bg-white border-2 border-gray-800 text-gray-800 hover:bg-gray-50"
                                       }`}
-                                      title={`Level 2: ${statusLevel2}`}
+                                      title={`Level 2: ${completionStatusLevel2}`}
                                     >
                                       <IconLevel2 className="w-6 h-6" />
                                     </button>
                                     <span
                                       className={`text-xs mt-1 font-medium ${
-                                        statusLevel2 === "Completed"
+                                        completionStatusLevel2 === "Completed"
                                           ? "text-amber-600"
                                           : statusLevel2 === "Locked"
                                           ? "text-gray-400"
                                           : "text-gray-700"
                                       }`}
                                     >
-                                      {statusLevel2}
+                                      {completionStatusLevel2}
                                     </span>
                                   </div>
                                 </div>
