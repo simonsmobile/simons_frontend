@@ -61,8 +61,8 @@ function App() {
           <Route path="/validation" element={<OTPVerification />} />
           <Route path="/forgot-password" element={<ForgotPasswordScreen />} />
           <Route path="/reset-password" element={<ResetPasswordScreen />} />
-          <Route path="/terms" element={<ProtectedRoute><TermsScreen /></ProtectedRoute>} />
-          <Route path="/privacy" element={<ProtectedRoute><PrivacyScreen /></ProtectedRoute>} />
+          <Route path="/terms" element={<TermsScreen />} />
+          <Route path="/privacy" element={<PrivacyScreen />} />
 
           {/* Protected Routes */}
           <Route path="/complete-account" element={<ProtectedRoute><CompleteAccountScreen /></ProtectedRoute>} />

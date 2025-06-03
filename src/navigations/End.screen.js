@@ -369,7 +369,7 @@ const EndScreen = () => {
                 <h3 className="font-medium text-gray-900 mb-2">Next Steps</h3>
                 <p className="text-sm text-gray-800">
                   {isPartialAssessment
-                    ? "The assessment determines which levels you can access. Complete other categories or start earning points through timed exercises!"
+                    ? "The assessment determines which levels you can access. Complete other categories to start earning points through timed exercises!"
                     : "Your assessment is complete! Start earning points by taking timed exercises for each competence level."}
                 </p>
               </div>

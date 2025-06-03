@@ -7,6 +7,7 @@ import { signInWithPopup } from "firebase/auth";
 import { auth, provider } from "../configs/Firebase";
 import { FaGoogle } from "react-icons/fa";
 import countryList from "../utils/countries";
+import ReactDatePickerComponent from "../components/ReactDatePicker";
 
 const CreateAccount = () => {
   const location = useLocation();
@@ -194,9 +195,7 @@ const CreateAccount = () => {
               }
 
               localStorage.setItem("username", email);
-              toast.success(
-                "Please complete your profile information"
-              );
+              toast.success("Please complete your profile information");
             }
           } else {
             toast.error(result.message || "Authentication failed");
@@ -260,6 +259,7 @@ const CreateAccount = () => {
   };
 
   const submitAction = (event) => {
+    console.log(dob)
     event.preventDefault();
 
     if (!validateForm()) {
@@ -295,9 +295,7 @@ const CreateAccount = () => {
         navigate("/validation");
       })
       .catch((error) => {
-        toast.error(
-          error.response?.data?.message || "Account creation failed"
-        );
+        toast.error(error.response?.data?.message || "Account creation failed");
       })
       .finally(() => {
         setLoading(false);
@@ -404,19 +402,17 @@ const CreateAccount = () => {
 
               <div className="flex space-x-3">
                 <div className="flex-1">
-                  <input
-                    type={dob ? "date" : "text"}
+                  <ReactDatePickerComponent
+                    value={dob}
+                    onChange={(dateString) => {
+                      setDob(dateString);
+                      if (dateString) {
+                        setAge(calculateAge(dateString));
+                      } else {
+                        setAge("");
+                      }
+                    }}
                     placeholder="Date of Birth"
-                    className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-400"
-                    value={dob || ""}
-                    onFocus={(e) => (e.target.type = "date")}
-                    onBlur={(e) => {
-                      if (!dob) e.target.type = "text";
-                    }}
-                    onChange={(e) => {
-                      setDob(e.target.value);
-                      setAge(calculateAge(e.target.value));
-                    }}
                   />
                 </div>
               </div>
