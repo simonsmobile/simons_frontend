@@ -1,210 +1,402 @@
-import React, { useEffect, useState } from 'react';
-import { useLocation, useNavigate, Link } from 'react-router-dom';
-import env from '../configs/env';
-import axios from 'axios';
+// navigations/Sub.End.screen.js - Updated with new scoring and feedback
+import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate, Link } from "react-router-dom";
+import env from "../configs/env";
+import axios from "axios";
+import {
+  calculateQuizScore,
+  generateQuizFeedback,
+} from "../utils/scoring";
+
+import SCORING_CONFIG from '../configs/scoringConfig';
+
 
 const SubEndScreen = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const { answers = [], questionnaire = [], category, level, sub, subIndex } = location.state || {};
-  const [grades, setGrades] = useState(['F', 'F', 'F', 'F', 'F']);
-  const [isPass, setPass] = useState(false);
+  const {
+    answers = [],
+    questionnaire = [],
+    timeTaken = [],
+    category,
+    level,
+    sub,
+    subIndex,
+  } = location.state || {};
+
+  const [quizResult, setQuizResult] = useState(null);
+  const [feedback, setFeedback] = useState(null);
   const [loading, setLoading] = useState(true);
   const [processingComplete, setProcessingComplete] = useState(false);
+  const [newGrade, setNewGrade] = useState("F");
 
-  const [gradesType, setGradesType] = useState([
-    'Information & Data Literacy',
-    'Com. & Collaboration',
-    'Digital Content Creation',
-    'Safety',
-    'Problem Solving'
-  ]);
-  
-  const completedCount = answers.filter(answer => answer !== null).length;
-  
-  const correctCount = questionnaire.reduce((count, q, index) => {
-    const selectedOption = q.options[answers[index]];
-    return selectedOption === q.answer ? count + 1 : count;
-  }, 0);
-  
-  const getIdByTitle = (title) => {
-    const item = env.QS_CAT.find((category) => category.title === title);
-    return item ? item.id : null; 
+  const levelNumber = level === "basic" ? 1 : 2;
+  const completedCount = answers.filter((answer) => answer !== null).length;
+
+  const handleNavigation = (index, level, category, sub) => {
+    navigate("/study", { state: { index, level, category, sub } });
   };
 
   const startQuestionnaire = () => {
     setLoading(true);
     setTimeout(() => {
-      localStorage.removeItem('sub_answers');
-      navigate('/dashboard');
+      localStorage.removeItem("sub_answers");
+      navigate("/dashboard");
       setLoading(false);
     }, 1000);
   };
 
-  const handleNavigation = (index, level, category, sub) => {
-    navigate('/study', { state: { index, level, category, sub } });
+  const retakeQuiz = () => {
+    navigate("/sub-quest", {
+      state: {
+        index: subIndex,
+        level,
+        category,
+        sub,
+      },
+    });
   };
 
-  const retrievePrevious = async (qs, answers) => {
+  const processQuizResults = async () => {
     try {
-      const response = await fetch(`${env.SERVER_URL}/auth/student/${localStorage.getItem('username')}/tests`);
-      const data = await response.json();
+      // Calculate quiz score using new system
+      const result = calculateQuizScore(answers, questionnaire, timeTaken);
+      setQuizResult(result);
 
-      if (data) {
-        const originalResults = data.firstTest?.grades || [];
-        const progressResults = data.lastTest?.grades || originalResults;
-        calculateMarks(qs, answers, progressResults);
+      // Generate feedback
+      const feedbackData = generateQuizFeedback(result, category, levelNumber);
+      setFeedback(feedbackData);
+
+      // Determine new grade based on performance
+      const { correctAnswers, totalQuestions, isPerfect } = result;
+      let grade = "F";
+
+      if (isPerfect) {
+        grade = levelNumber === 1 ? "M" : "C"; // Master for Level 1, Complete for Level 2
+      } else if (correctAnswers === totalQuestions) {
+        grade = levelNumber === 1 ? "B" : "M"; // Basic for Level 1, Master for Level 2
       }
+
+      setNewGrade(grade);
+
+      // Update backend with new score
+      await updateBackendScore(result, grade);
+
+      setLoading(false);
+      setTimeout(() => {
+        setProcessingComplete(true);
+      }, 500);
     } catch (error) {
-      console.error('Error fetching test data:', error);
+      console.error("Error processing quiz results:", error);
       setLoading(false);
     }
   };
 
-  const calculateMarks = async (qs, answers, prev) => {
-    let pointsArray = [0, 0, 0, 0, 0];
-    let marks = 4*qs.length;
-    let updatedGrades = prev || ['F', 'F', 'F', 'F', 'F'];
-    let current = sub ? getIdByTitle(sub.title) : 0;
-    let pointValue = 0;
-    
-    if (current || current === 0) {
-      pointValue = pointsArray[current];
-    } 
-  
-    let score = (correctCount / completedCount);
-    
-    if (score === 1) {
-      setPass(true);
-      if (level === "basic") {
-        updatedGrades[current] = "M";
-      } else if (level === "master") {
-        updatedGrades[current] = "C";
+  const updateBackendScore = async (result, grade) => {
+    try {
+      // Get current grades
+      const response = await axios.get(
+        `${env.SERVER_URL}/auth/student/${localStorage.getItem(
+          "username"
+        )}/new_tests`
+      );
+
+      const currentGrades =
+        response.data?.lastTest?.grades || Array(21).fill("F");
+
+      // Find the index for this competence
+      const competenceMap = {
+        1.1: 0,
+        1.2: 1,
+        1.3: 2,
+        2.1: 3,
+        2.2: 4,
+        2.3: 5,
+        2.4: 6,
+        2.5: 7,
+        2.6: 8,
+        3.1: 9,
+        3.2: 10,
+        3.3: 11,
+        3.4: 12,
+        4.1: 13,
+        4.2: 14,
+        4.3: 15,
+        4.4: 16,
+        5.1: 17,
+        5.2: 18,
+        5.3: 19,
+        5.4: 20,
+      };
+
+      const competenceIndex = competenceMap[sub?.category];
+      if (competenceIndex !== undefined) {
+        currentGrades[competenceIndex] = grade;
       }
-    } 
-      
-    setGrades(updatedGrades);
 
-    await axios.post(`${env.SERVER_URL}/auth/student/${localStorage.getItem('username')}/tests`, { 
-      date: new Date().toISOString().split('T')[0],
-      questions: qs,
-      answers,
-      grades: updatedGrades,
-      points: pointsArray
-    });
-  
-    setLoading(false);
-
-    setTimeout(() => {
-      setProcessingComplete(true);
-    }, 500);
-    
-    return updatedGrades;
+      // Save updated grades
+      await axios.post(
+        `${env.SERVER_URL}/auth/student/${localStorage.getItem(
+          "username"
+        )}/new_tests`,
+        {
+          date: new Date().toISOString().split("T")[0],
+          questions: questionnaire,
+          answers,
+          grades: currentGrades,
+          timeTaken,
+          quizScore: result,
+        }
+      );
+    } catch (error) {
+      console.error("Error updating backend score:", error);
+    }
   };
 
   useEffect(() => {
-    retrievePrevious(questionnaire, answers);
+    processQuizResults();
   }, []);
+
+  if (loading) {
+    return (
+      <div className="flex flex-col min-h-screen bg-white">
+        <div className="bg-white px-4 py-4 shadow-sm">
+          <div className="flex items-center">
+            <button onClick={() => navigate(-1)} className="text-gray-800">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            <h1 className="text-lg font-semibold text-center flex-1">
+              Processing Results
+            </h1>
+            <div className="w-6"></div>
+          </div>
+        </div>
+
+        <div className="flex-1 flex flex-col items-center justify-center py-12">
+          <div className="w-16 h-16 border-4 border-t-amber-400 border-gray-200 rounded-full animate-spin mb-6"></div>
+          <h2 className="text-xl font-medium text-gray-900 mb-2">
+            Calculating Your Score
+          </h2>
+          <p className="text-center text-gray-600">
+            Analyzing your performance and time bonuses...
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  if (!quizResult || !feedback) {
+    return (
+      <div className="flex flex-col min-h-screen bg-white">
+        <div className="flex-1 flex items-center justify-center">
+          <p className="text-red-500">Error processing quiz results</p>
+        </div>
+      </div>
+    );
+  }
+
+  const {
+    correctAnswers,
+    totalQuestions,
+    totalScore,
+    baseScore,
+    timeBonus,
+    isPerfect,
+  } = quizResult;
+  const isSuccess = feedback.status === "success";
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <div className="bg-white px-4 py-4 shadow-sm">
         <div className="flex items-center">
-          <Link to="/study" className="text-gray-800" onClick={() => navigate(-1)}>
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          <button onClick={() => navigate(-1)} className="text-gray-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
             </svg>
-          </Link>
-          <h1 className="text-lg font-semibold text-center flex-1">Quiz Results</h1>
-          <div className="w-6"></div> 
+          </button>
+          <h1 className="text-lg font-semibold text-center flex-1">
+            Quiz Results
+          </h1>
+          <div className="w-6"></div>
         </div>
       </div>
 
       <div className="flex-1 px-4 py-6">
         <div className="max-w-md mx-auto">
-          {loading ? (
-            <div className="flex flex-col items-center justify-center py-12">
-              <div className="w-16 h-16 border-4 border-t-accent border-gray-200 rounded-full animate-spin mb-6"></div>
-              <h2 className="text-xl font-medium text-gray-900 mb-2">Processing Your Results</h2>
-              <p className="text-center text-gray-600">
-                Please wait while we analyze your responses.
-              </p>
+          <div
+            className={`transition-opacity duration-500 ${
+              processingComplete ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            {/* Header Info */}
+            <div className="mb-6">
+              <div className="flex items-center space-x-2 mb-2">
+                <div className="inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-medium">
+                  {levelNumber === 1 ? "Level 1" : "Level 2"}
+                </div>
+              </div>
+              <h2 className="text-xl font-bold text-gray-900 mb-1">
+                {category}
+              </h2>
+              {sub && (
+                <p className="text-gray-600 text-sm">
+                  {sub.title}
+                </p>
+              )}
             </div>
-          ) : (
-            <div className={`transition-opacity duration-500 ${processingComplete ? 'opacity-100' : 'opacity-0'}`}>
-              <div className="mb-6">
-                <div className="inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-medium mb-2">
-                  {level.toLowerCase() === "basic" ? "Foundation / Intermediate" : "Advanced / Highly Specialized"}
-                </div>
-                <h2 className="text-xl font-bold text-gray-900 mb-1">{category}</h2>
-                {sub && (
-                  <p className="text-gray-600">
-                    {sub.category} - {sub.title}
-                  </p>
-                )}
-              </div>
 
-              <div className="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden mb-8">
-                <div className="border-b border-gray-200 p-4">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold text-gray-900">Quiz Results</h3>
-                    <div className={`px-3 py-1 rounded-full text-sm font-medium ${isPass ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
-                      {isPass ? 'Passed' : 'Not Passed'}
-                    </div>
-                  </div>
+            {/* Main Feedback Card */}
+            <div className="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden mb-6">
+              <div
+                className={`p-6 text-center ${
+                  isSuccess ? "bg-amber-50" : "bg-white"
+                }`}
+              >
+                <div
+                  className={`text-4xl mb-2 ${
+                    isSuccess ? "text-amber-500" : "text-white-500"
+                  }`}
+                >
+                  {isSuccess ? "🎉" : "📚"}
                 </div>
-
-                <div className="p-4 grid grid-cols-2 gap-4">
-                  <div className="bg-gray-50 p-4 rounded-lg text-center">
-                    <span className="text-3xl font-bold text-green-600">{correctCount}</span>
-                    <p className="text-sm text-gray-600 mt-1">Correct</p>
-                  </div>
-                  <div className="bg-gray-50 p-4 rounded-lg text-center">
-                    <span className="text-3xl font-bold text-red-600">{completedCount - correctCount}</span>
-                    <p className="text-sm text-gray-600 mt-1">Incorrect</p>
-                  </div>
-                </div>
-
-                <div className="p-4 flex justify-center">
-                  <div className="relative inline-flex">
-                    <div className="w-32 h-32 rounded-full overflow-hidden bg-gray-100">
-                      <div 
-                        className={`h-full ${isPass ? 'bg-green-500' : 'bg-amber-500'}`}
-                        style={{ width: `${(correctCount / completedCount) * 100}%` }}
-                      ></div>
-                    </div>
-                    <div className="absolute inset-0 flex items-center justify-center text-2xl font-bold">
-                      {Math.round((correctCount / completedCount) * 100)}%
-                    </div>
-                  </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  {feedback.title}
+                </h3>
+                <p className="text-gray-600 mb-4">{feedback.message}</p>
+                <div className="text-lg font-semibold text-gray-800">
+                  You earned: + {totalScore} points
                 </div>
               </div>
 
-              <div className="space-y-4">
-                {!isPass && (
-                  <button 
-                    onClick={() => handleNavigation(subIndex, level, category, sub)} 
-                    className="w-full py-3 bg-accent text-black font-medium rounded-md shadow-md hover:bg-amber-400 transition-colors duration-300"
+              {/* Detailed Breakdown */}
+              <div className="p-4 bg-gray-50">
+                <h4 className="font-medium text-gray-800 mb-3">
+                  Score Breakdown
+                </h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span>
+                      Correct answers ({correctAnswers}/{totalQuestions})
+                    </span>
+                    <span className="font-medium">+{baseScore} pts</span>
+                  </div>
+                  {timeBonus > 0 && (
+                    <div className="flex justify-between text-amber-600">
+                      <span>Speed bonus</span>
+                      <span className="font-medium">+{timeBonus} pts</span>
+                    </div>
+                  )}
+                  {isPerfect && (
+                    <div className="flex justify-between text-purple-600">
+                      <span>Perfect score bonus</span>
+                      <span className="font-medium">
+                        +{Math.round(SCORING_CONFIG.PERFECT_RUN_BONUS / 21)} pts
+                      </span>
+                    </div>
+                  )}
+                  <div className="border-t pt-2 flex justify-between font-semibold">
+                    <span>Total Score</span>
+                    <span>+{totalScore} pts</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Failure Details */}
+              {!isSuccess && feedback.details && (
+                <div className="p-4 border-t">
+                  <h4 className="font-medium text-gray-800 mb-3">
+                    What went wrong?
+                  </h4>
+                  <div className="grid grid-cols-2 gap-4 text-sm">
+                    <div className="text-center p-3 bg-amber-50 rounded">
+                      <div className="text-2xl font-bold text-amber-600">
+                        {feedback.details.correct}
+                      </div>
+                      <div className="text-gray-600">Correct</div>
+                    </div>
+                    <div className="text-center p-3 bg-gray-50 rounded">
+                      <div className="text-2xl font-bold text-black">
+                        {feedback.details.incorrect}
+                      </div>
+                      <div className="text-gray-600">Incorrect</div>
+                    </div>
+                  </div>
+
+                  {feedback.details.pointsLost > 0 && (
+                    <div className="mt-3 p-3 bg-orange-50 rounded text-sm">
+                      <div className="font-medium text-orange-800">
+                        Missed Opportunity
+                      </div>
+                      <div className="text-orange-600">
+                        You could have earned {feedback.details.pointsLost} more
+                        points with correct answers
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+
+            {/* Action Buttons */}
+            <div className="space-y-3">
+              {!isSuccess && (
+                <>
+                  <button
+                    onClick={() =>
+                      handleNavigation(subIndex, level, category, sub)
+                    }
+                    className="w-full py-3 bg-amber-400 text-black font-medium rounded-md shadow-md hover:bg-amber-500 transition-colors duration-300"
                   >
                     Review Learning Materials
                   </button>
+                  <button
+                    onClick={retakeQuiz}
+                    className="w-full py-3 bg-gray-600 text-white font-medium rounded-md shadow-md hover:bg-gray-700 transition-colors duration-300"
+                  >
+                    Retake Quiz
+                  </button>
+                </>
+              )}
+
+              <button
+                onClick={startQuestionnaire}
+                className="w-full py-3 bg-black text-white font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300"
+                disabled={loading}
+              >
+                {loading ? (
+                  <div className="flex justify-center items-center">
+                    <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                  </div>
+                ) : (
+                  "Return to Dashboard"
                 )}
-                <button 
-                  onClick={startQuestionnaire} 
-                  className="w-full py-3 bg-black text-white font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300"
-                  disabled={loading}
-                >
-                  {loading ? (
-                    <div className="flex justify-center items-center">
-                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                    </div>
-                  ) : (
-                    'Return to Dashboard'
-                  )}
-                </button>
-              </div>
+              </button>
             </div>
-          )}
+          </div>
         </div>
       </div>
     </div>

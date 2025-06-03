@@ -1,3 +1,4 @@
+// navigations/Dashboard.screen.js - Updated with mixed levels and new scoring
 import React, { useEffect, useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
@@ -12,7 +13,13 @@ import {
   getGradeStatus,
   getIconForStatus,
   getCompetenceLevelText,
+  getGamificationDetails,
+  GRADE_LEVELS,
 } from "../utils/scoring";
+
+import RisingStarBadge from "../assets/badges/RisingStarBadge";
+import SavvyMentorBadge from "../assets/badges/SavvyMentorBadge";
+import SimonsAdvocateBadge from "../assets/badges/SimonsAdvocateBadge";
 
 const DashboardScreen = () => {
   const navigate = useNavigate();
@@ -24,6 +31,7 @@ const DashboardScreen = () => {
     localStorage.getItem("username")?.split("@")[0] || "User"
   );
   const [showConfirmationModal, setShowConfirmationModal] = useState(false);
+  const [gamification, setGamification] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -32,12 +40,14 @@ const DashboardScreen = () => {
         const response = await axios.get(
           `${env.SERVER_URL}/auth/student/${localStorage.getItem(
             "username"
-          )}/tests`
+          )}/new_tests`
         );
         const grades = response.data?.lastTest?.grades || Array(21).fill("F");
         setLatestGrades(grades);
         const calculated = calculateScores(grades);
         setScores(calculated);
+        const gameDetails = getGamificationDetails(calculated.totalScore);
+        setGamification(gameDetails);
 
         try {
           const userResponse = await axios.get(
@@ -118,6 +128,31 @@ const DashboardScreen = () => {
     setShowConfirmationModal(false);
   };
 
+  const getAreaLevelDisplay = (areaScores) => {
+    if (!areaScores.competenceDetails) return "Level 1";
+
+    const levels = areaScores.competenceDetails.map(
+      (comp) => GRADE_LEVELS[comp.grade]?.level || 0
+    );
+
+    const uniqueLevels = [...new Set(levels)].filter((l) => l > 0).sort();
+
+    if (uniqueLevels.length === 0) return "Not Started";
+
+    const hasLevel1 = uniqueLevels.includes(1);
+    const hasLevel2 = uniqueLevels.includes(2);
+
+    if (hasLevel1 && hasLevel2) {
+      return "Level 1‑2";
+    } else if (hasLevel2) {
+      return "Level 2";
+    } else if (hasLevel1) {
+      return "Level 1";
+    }
+
+    return "Not Started";
+  };
+
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-gray-50">
@@ -174,18 +209,41 @@ const DashboardScreen = () => {
           </p>
         </div>
 
+        {/* Gamification Card */}
         <div className="bg-white rounded-lg shadow border border-gray-200 p-4 mb-6 flex items-center justify-between">
           <div className="flex items-center">
-            <img
-              src={`${process.env.PUBLIC_URL}/images/badge.png`}
-              alt="Badge"
-              className="h-12 w-12 mr-3"
-            />
+            {gamification ? (
+              <div className="h-12 w-12 mr-3">
+                {gamification.badge === "star" ? (
+                  <RisingStarBadge className="h-full w-full" />
+                ) : gamification.badge === "mentor" ? (
+                  <SavvyMentorBadge className="h-full w-full" />
+                ) : gamification.badge === "advocate" ? (
+                  <SimonsAdvocateBadge className="h-full w-full" />
+                ) : (
+                  <img
+                    src={`${process.env.PUBLIC_URL}/images/logo.png`}
+                    alt="Badge"
+                    className="h-12 w-12 mr-3"
+                  />
+                )}
+              </div>
+            ) : (
+              <img
+                src={`${process.env.PUBLIC_URL}/images/logo.png`}
+                alt="Badge"
+                className="h-12 w-12 mr-3"
+              />
+            )}
             <div>
               <h3 className="text-lg font-bold text-amber-600">
                 {scores.totalScore} points
               </h3>
-              <p className="text-xs text-gray-500">Current achievement score</p>
+              <p className="text-xs text-gray-500">
+                {gamification
+                  ? gamification.title
+                  : "Current achievement score"}
+              </p>
             </div>
           </div>
           <Link
@@ -196,16 +254,14 @@ const DashboardScreen = () => {
           </Link>
         </div>
 
+        {/* Competence Overview */}
         <div className="bg-white rounded-lg shadow border border-gray-200 p-5 mb-6">
           <h3 className="text-lg font-bold text-gray-900 mb-4">
             Competence Overview
           </h3>
           <div className="space-y-3">
             {scores.areaScores.map((item) => {
-              const percentage =
-                item.maxScore > 0
-                  ? Math.round((item.score / item.maxScore) * 100)
-                  : 0;
+              const percentage = Math.round((item.score / item.maxScore) * 100);
               return (
                 <div key={item.id}>
                   <div className="flex justify-between items-center mb-1">
@@ -228,35 +284,77 @@ const DashboardScreen = () => {
           </div>
         </div>
 
+        {/* Training Exercises with Mixed Levels */}
         <div className="bg-white rounded-lg shadow border border-gray-200 overflow-hidden mb-6">
           <h3 className="text-lg font-bold text-gray-900 p-4 border-b border-gray-200">
-            Competence Areas
+            Training exercises
           </h3>
           <div className="divide-y divide-gray-200">
-            {COMPETENCE_AREAS.map((area, index) => {
-              const isExpanded = expandedCategory === index;
+            {COMPETENCE_AREAS.map((area, areaIndex) => {
+              const isExpanded = expandedCategory === areaIndex;
               const subCompetences = getSubCompetencesForArea(area.id);
+              const areaData = scores.areaScores.find((a) => a.id === area.id);
+              const levelDisplay = getAreaLevelDisplay(areaData);
 
               return (
                 <div key={area.id}>
                   <button
                     className="w-full px-4 py-3 flex justify-between items-center text-left hover:bg-gray-50 transition-colors duration-150"
-                    onClick={() => handleCategoryClick(index)}
+                    onClick={() => handleCategoryClick(areaIndex)}
                   >
-                    <span className="font-medium text-gray-800">
-                      {area.name}
-                    </span>
-                    {isExpanded ? (
-                      <FaChevronUp className="text-gray-500" />
-                    ) : (
-                      <FaChevronDown className="text-gray-500" />
-                    )}
+                    <div className="flex items-center">
+                      <div className="w-16 h-12 rounded-md bg-black flex flex-col items-center justify-center mr-4 flex-shrink-0">
+                        <span className="text-white font-bold text-[10px] leading-tight text-center px-1">
+                          {levelDisplay.includes("-") ? (
+                            <span className="block">{levelDisplay}</span>
+                          ) : (
+                            levelDisplay
+                          )}
+                        </span>
+                      </div>
+                      <div className="flex-1">
+                        <p className="font-medium text-gray-800">{area.name}</p>
+                        <div className="flex items-center mt-1">
+                          <div className="w-24 bg-gray-300 rounded-full h-2 mr-2">
+                            <div
+                              className="bg-gray-800 h-2 rounded-full"
+                              style={{
+                                width: `${Math.round(
+                                  (areaData.score / areaData.maxScore) * 100
+                                )}%`,
+                              }}
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex items-center flex-shrink-0">
+                      {isExpanded ? (
+                        <FaChevronUp className="text-gray-500" />
+                      ) : (
+                        <FaChevronDown className="text-gray-500" />
+                      )}
+                    </div>
                   </button>
 
                   {isExpanded && (
                     <div className="px-4 pt-2 pb-4 bg-gray-50 border-t border-gray-200">
-                      <ul className="space-y-3 mt-2">
-                        {subCompetences.map((sub) => {
+                      <div className="flex justify-between items-center mb-3 mt-2 bg-amber-300 rounded-t-lg px-4 py-2">
+                        <span className="font-bold text-gray-900">
+                          Competences
+                        </span>
+                        <div className="flex space-x-8">
+                          <span className="font-bold text-gray-900">
+                            Level 1
+                          </span>
+                          <span className="font-bold text-gray-900">
+                            Level 2
+                          </span>
+                        </div>
+                      </div>
+
+                      <ul className="space-y-0 bg-white rounded-b-lg border border-gray-200 overflow-hidden">
+                        {subCompetences.map((sub, subIndex) => {
                           const gradeIndex = GRADES_TYPE.findIndex(
                             (g) => g === sub.point
                           );
@@ -264,79 +362,112 @@ const DashboardScreen = () => {
                             gradeIndex !== -1 && latestGrades[gradeIndex]
                               ? latestGrades[gradeIndex]
                               : "F";
+
+                          const gradeInfo =
+                            GRADE_LEVELS[grade] || GRADE_LEVELS.F;
+                          const currentLevel = gradeInfo.level;
                           const levelText = getCompetenceLevelText(grade);
                           const statusLevel1 = getGradeStatus(grade, 1);
                           const statusLevel2 = getGradeStatus(grade, 2);
                           const IconLevel1 = getIconForStatus(statusLevel1);
                           const IconLevel2 = getIconForStatus(statusLevel2);
 
+                          const competenceNumber =
+                            COMPETENCE_AREAS.slice(0, areaIndex).reduce(
+                              (total, prevArea) =>
+                                total +
+                                getSubCompetencesForArea(prevArea.id).length,
+                              0
+                            ) +
+                            subIndex +
+                            1;
+
                           return (
                             <li
                               key={sub.point}
-                              className="p-3 bg-white rounded-md border border-gray-100 shadow-sm"
+                              className="p-4 border-b border-gray-100 last:border-b-0"
                             >
-                              <div className="flex justify-between items-start">
-                                <div className="flex-1 mr-3">
+                              <div className="flex justify-between items-center">
+                                <div className="flex-1 mr-4">
                                   <p className="text-sm font-medium text-gray-800">
-                                    {sub.point} {sub.title}
+                                    {competenceNumber}. {sub.title}
                                   </p>
-                                  <p
-                                    className={`text-xs mt-1 font-medium ${
-                                      levelText === "Advanced"
-                                        ? "text-green-600"
-                                        : levelText === "Intermediate"
-                                        ? "text-blue-600"
-                                        : levelText === "Foundation"
-                                        ? "text-amber-700"
-                                        : "text-gray-500"
-                                    }`}
-                                  >
-                                    Level: {levelText}
-                                  </p>
+                                  <div className="flex items-center mt-1 space-x-2">
+                                    <p className="text-xs text-gray-600">
+                                      Current: {levelText}
+                                    </p>
+                                  </div>
                                 </div>
-                                <div className="flex items-center space-x-2 flex-shrink-0">
-                                  <button
-                                    onClick={() =>
-                                      navigateToStudy(
-                                        area.id,
-                                        sub.point,
-                                        1,
-                                        statusLevel1
-                                      )
-                                    }
-                                    disabled={statusLevel1 === "Locked"}
-                                    className={`w-10 h-10 flex items-center justify-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 ${
-                                      statusLevel1 === "Completed"
-                                        ? "bg-green-100 text-green-600 ring-green-200 hover:bg-green-200"
-                                        : statusLevel1 === "Locked"
-                                        ? "bg-gray-200 text-gray-400 ring-gray-300 cursor-not-allowed"
-                                        : "bg-gray-200 text-gray-700 ring-gray-300 hover:bg-gray-300"
-                                    }`}
-                                    title={`Level 1: ${statusLevel1}`}
-                                  >
-                                    <IconLevel1 className="w-5 h-5" />
-                                  </button>
-                                  <button
-                                    onClick={() =>
-                                      navigateToStudy(
-                                        area.id,
-                                        sub.point,
-                                        2,
-                                        statusLevel2
-                                      )
-                                    }
-                                    disabled={statusLevel2 === "Locked"}
-                                    className={`w-10 h-10 flex items-center justify-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 ${
-                                      statusLevel2 === "Locked"
-                                        ? "bg-gray-100 text-gray-400 ring-gray-200 cursor-not-allowed" 
-                                        : statusLevel2 === "Completed"
-                                        ? "bg-green-100 text-green-600 ring-green-200 hover:bg-green-200"
-                                        : "bg-amber-100 text-amber-700 ring-amber-200 hover:bg-amber-200"
-                                    }`}
-                                    title={`Level 2: ${statusLevel2}`}
-                                  >
-                                    <IconLevel2 className="w-5 h-5" />
-                                  </button>
+                                <div className="flex items-center space-x-8 flex-shrink-0">
+                                  <div className="flex flex-col items-center">
+                                    <button
+                                      onClick={() =>
+                                        navigateToStudy(
+                                          area.id,
+                                          sub.point,
+                                          1,
+                                          statusLevel1
+                                        )
+                                      }
+                                      disabled={statusLevel1 === "Locked"}
+                                      className={`w-12 h-12 flex items-center justify-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 ${
+                                        statusLevel1 === "Completed"
+                                          ? "bg-amber-400 text-white hover:bg-amber-500"
+                                          : statusLevel1 === "Locked"
+                                          ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+                                          : "bg-white border-2 border-gray-800 text-gray-800 hover:bg-gray-50"
+                                      }`}
+                                      title={`Level 1: ${statusLevel1}`}
+                                    >
+                                      <IconLevel1 className="w-6 h-6" />
+                                    </button>
+                                    <span
+                                      className={`text-xs mt-1 font-medium ${
+                                        statusLevel1 === "Completed"
+                                          ? "text-amber-600"
+                                          : statusLevel1 === "Locked"
+                                          ? "text-gray-400"
+                                          : "text-gray-700"
+                                      }`}
+                                    >
+                                      {statusLevel1}
+                                    </span>
+                                  </div>
+
+                                  <div className="flex flex-col items-center">
+                                    <button
+                                      onClick={() =>
+                                        navigateToStudy(
+                                          area.id,
+                                          sub.point,
+                                          2,
+                                          statusLevel2
+                                        )
+                                      }
+                                      disabled={statusLevel2 === "Locked"}
+                                      className={`w-12 h-12 flex items-center justify-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 ${
+                                        statusLevel2 === "Completed"
+                                          ? "bg-amber-400 text-white hover:bg-amber-500"
+                                          : statusLevel2 === "Locked"
+                                          ? "bg-gray-200 text-gray-400 cursor-not-allowed"
+                                          : "bg-white border-2 border-gray-800 text-gray-800 hover:bg-gray-50"
+                                      }`}
+                                      title={`Level 2: ${statusLevel2}`}
+                                    >
+                                      <IconLevel2 className="w-6 h-6" />
+                                    </button>
+                                    <span
+                                      className={`text-xs mt-1 font-medium ${
+                                        statusLevel2 === "Completed"
+                                          ? "text-amber-600"
+                                          : statusLevel2 === "Locked"
+                                          ? "text-gray-400"
+                                          : "text-gray-700"
+                                      }`}
+                                    >
+                                      {statusLevel2}
+                                    </span>
+                                  </div>
                                 </div>
                               </div>
                             </li>
@@ -381,7 +512,7 @@ const DashboardScreen = () => {
               </button>
               <button
                 onClick={confirmRetake}
-                className="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 text-sm font-medium"
+                className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition-colors duration-300 text-sm font-medium"
               >
                 Confirm & Reset
               </button>

@@ -6,6 +6,7 @@ import env from "../configs/env";
 import { signInWithPopup } from "firebase/auth";
 import { auth, provider } from "../configs/Firebase";
 import { FaGoogle } from "react-icons/fa";
+import countryList from "../utils/countries";
 
 const CreateAccount = () => {
   const location = useLocation();
@@ -336,7 +337,7 @@ const CreateAccount = () => {
         <div className="flex justify-center mb-8">
           <div className="bg-white rounded-full p-3 shadow-md">
             <img
-              src={`${process.env.PUBLIC_URL}/images/Picturec.png`}
+              src={`${process.env.PUBLIC_URL}/images/logo.png`}
               alt="SIMOnS Logo"
               className="h-16 w-16"
             />
@@ -351,13 +352,13 @@ const CreateAccount = () => {
               </div>
             )}
 
-            <p className="text-center text-gray-600 mb-6">Join with Us</p>
+            <p className="text-center text-gray-600 mb-6">Join Us</p>
 
             <button
               onClick={onGoogleSignUp}
               className="w-full mb-6 py-3 bg-white border border-gray-300 text-gray-700 font-medium rounded-md shadow-sm hover:bg-gray-50 transition-colors duration-300 flex items-center justify-center"
             >
-              <FaGoogle className="text-red-500 mr-2" />
+              <FaGoogle className="mr-2" />
               Sign up with Google
             </button>
 
@@ -417,15 +418,6 @@ const CreateAccount = () => {
                     }}
                   />
                 </div>
-                <div className="flex-1">
-                  <input
-                    type="text"
-                    placeholder="Age"
-                    className="w-full p-3 border border-gray-300 rounded-md bg-gray-100"
-                    value={age}
-                    readOnly
-                  />
-                </div>
               </div>
 
               <div>
@@ -444,13 +436,20 @@ const CreateAccount = () => {
               </div>
 
               <div>
-                <input
-                  type="text"
-                  placeholder="Country"
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-400"
+                <select
+                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-400 appearance-none bg-white"
                   value={country}
                   onChange={(e) => setCountry(e.target.value)}
-                />
+                >
+                  <option value="" disabled>
+                    Select Country
+                  </option>
+                  {countryList.map((countryName) => (
+                    <option key={countryName} value={countryName}>
+                      {countryName}
+                    </option>
+                  ))}
+                </select>
               </div>
 
               <div>
@@ -674,7 +673,14 @@ const CreateAccount = () => {
                   onChange={(e) => setAgreement(e.target.checked)}
                 />
                 <label htmlFor="agreement" className="text-sm text-gray-700">
-                  I accept the agreement and privacy policy
+                  I accept the{" "}
+                  <Link
+                    to="/privacy"
+                    className="text-amber-600 font-medium hover:underline"
+                  >
+                    privacy policy
+                  </Link>{" "}
+                  and agreement
                 </label>
               </div>
 

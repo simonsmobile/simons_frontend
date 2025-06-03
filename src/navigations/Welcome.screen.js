@@ -29,7 +29,7 @@ const WelcomeScreen = () => {
           <div className="flex justify-center pt-12">
             <div className="bg-white rounded-full p-3 shadow-md">
               <img
-                src={`${process.env.PUBLIC_URL}/images/Picturec.png`}
+                src={`${process.env.PUBLIC_URL}/images/logo.png`}
                 alt="SIMOnS Logo"
                 className="h-24 w-24"
               />
@@ -70,12 +70,42 @@ const WelcomeScreen = () => {
           </Link>
         </div>
 
-        <div className="flex justify-center mt-12 space-x-4">
-          <img
-            src={`${process.env.PUBLIC_URL}/images/Picturec.png`}
-            alt="EU Logo"
-            className="h-6"
-          />
+        <div className="w-full mt-8">
+          <div className="flex flex-wrap justify-center items-center gap-3 px-4">
+            <img
+              src={`${process.env.PUBLIC_URL}/images/eu.png`}
+              alt="University of Maia"
+              className="h-8 opacity-80"
+            />
+            <img
+              src={`${process.env.PUBLIC_URL}/images/uni_maia.png`}
+              alt="University of Maia"
+              className="h-8 opacity-80"
+            />
+            <img
+              src={`${process.env.PUBLIC_URL}/images/uni_campania.png`}
+              alt="Università degli Studi della Campania"
+              className="h-8 opacity-80"
+            />
+            <img
+              src={`${process.env.PUBLIC_URL}/images/uni_finland.png`}
+              alt="University of Eastern Finland"
+              className="h-8 opacity-80"
+            />
+            <img
+              src={`${process.env.PUBLIC_URL}/images/uni_vilnius.png`}
+              alt="Vilnius College"
+              className="h-8 opacity-80"
+            />
+            <img
+              src={`${process.env.PUBLIC_URL}/images/uni_patras.png`}
+              alt="University of Patras"
+              className="h-8 opacity-80"
+            />
+          </div>
+          <p className="text-center text-xs text-gray-500 mt-3 mb-2">
+            www.simonsproject.eu
+          </p>
         </div>
       </div>
     </div>

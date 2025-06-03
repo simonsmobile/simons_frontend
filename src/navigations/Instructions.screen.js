@@ -29,9 +29,9 @@ const InstructionsScreen = () => {
 
       <div className="flex-1 px-4 py-6 mt-12">
         <div className="max-w-md mx-auto">
-          <div className="p-5 bg-blue-50 border border-blue-200 rounded-lg mb-6">
+          <div className="p-5 bg-amber-50 border border-amber-200 rounded-lg mb-6">
             <div className="flex items-start">
-              <svg className="w-6 h-6 text-blue-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-6 h-6 text-amber-500 mr-2 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <p className="text-gray-800 text-sm leading-relaxed">

@@ -163,7 +163,7 @@ const LoginScreen = () => {
         <div className="flex justify-center mb-8">
           <div className="bg-white rounded-full p-3 shadow-md">
             <img 
-              src={`${process.env.PUBLIC_URL}/images/Picturec.png`} 
+              src={`${process.env.PUBLIC_URL}/images/logo.png`} 
               alt="SIMOnS Logo" 
               className="h-16 w-16"
             />
@@ -243,7 +243,7 @@ const LoginScreen = () => {
             onClick={onGoogleLogin}
             className="w-full py-4 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg shadow-sm hover:bg-gray-50 transition-colors duration-300 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
           >
-            <FaGoogle className="text-red-500 mr-2" />
+            <FaGoogle className="mr-2" />
             Login with Google
           </button>
           

@@ -131,7 +131,7 @@ const EndScreen = () => {
       await axios.post(
         `${env.SERVER_URL}/auth/student/${localStorage.getItem(
           "username"
-        )}/tests`,
+        )}/new_tests`,
         {
           date: new Date().toISOString().split("T")[0],
           questions: qs,
@@ -269,10 +269,10 @@ const EndScreen = () => {
               }`}
             >
               <div className="flex justify-center mb-6">
-                <div className="h-24 w-24 rounded-full bg-green-100 flex items-center justify-center">
+                <div className="h-24 w-24 rounded-full bg-amber-100 flex items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-14 w-14 text-green-500"
+                    className="h-14 w-14 text-amber-500"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -311,8 +311,8 @@ const EndScreen = () => {
                       Questions Answered
                     </span>
                   </div>
-                  <div className="text-center p-3 bg-green-50 rounded-lg">
-                    <span className="block text-2xl font-bold text-green-600">
+                  <div className="text-center p-3 bg-amber-50 rounded-lg">
+                    <span className="block text-2xl font-bold text-amber-600">
                       {isPartialAssessment ? "1" : "5"}
                     </span>
                     <span className="text-sm text-gray-600">
@@ -341,16 +341,16 @@ const EndScreen = () => {
                         <span
                           className={`px-2 py-1 rounded-full text-xs font-medium ${
                             result.value === "M"
-                              ? "bg-green-100 text-green-800"
+                              ? "bg-amber-100 text-amber-800"
                               : result.value === "B"
                               ? "bg-amber-100 text-amber-800"
                               : "bg-gray-100 text-gray-800"
                           }`}
                         >
                           {result.value === "M"
-                            ? "Mastered"
+                            ? "Level 2"
                             : result.value === "B"
-                            ? "Basic"
+                            ? "Level 1"
                             : "Not Achieved"}
                         </span>
                       </div>
@@ -362,7 +362,7 @@ const EndScreen = () => {
               <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-8">
                 <p className="text-center text-gray-700">
                   {isPartialAssessment
-                    ? "Your category results have been saved. Continue with other categories or explore your profile."
+                    ? "Your category results have been saved. Continue with other categories."
                     : "Your results have been saved. You can now explore your digital competence profile and access personalized learning materials."}
                 </p>
               </div>
@@ -384,28 +384,6 @@ const EndScreen = () => {
               ? "Back to Categories"
               : "Go to Dashboard"}
           </button>
-          <div className="text-center mt-4">
-            <Link
-              to="/dashboard"
-              className="text-gray-600 text-sm hover:underline inline-flex items-center"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 mr-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-              Skip to Dashboard
-            </Link>
-          </div>
         </div>
       </div>
 

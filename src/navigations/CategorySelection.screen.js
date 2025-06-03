@@ -89,91 +89,104 @@ const CategorySelectionScreen = () => {
     });
   };
 
+  // Replace the existing getIconComponent function around line 137
   const getIconComponent = (iconName) => {
     switch (iconName) {
       case "search":
         return (
           <svg
             className="w-10 h-10"
-            fill="none"
             viewBox="0 0 24 24"
+            fill="none"
             stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            <line x1="11" y1="8" x2="11" y2="14" />
+            <line x1="8" y1="11" x2="14" y2="11" />
           </svg>
         );
       case "users":
         return (
           <svg
             className="w-10 h-10"
-            fill="none"
             viewBox="0 0 24 24"
+            fill="none"
             stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-            />
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
           </svg>
         );
       case "video":
         return (
           <svg
             className="w-10 h-10"
-            fill="none"
             viewBox="0 0 24 24"
+            fill="none"
             stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"
-            />
+            <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18" />
+            <line x1="7" y1="2" x2="7" y2="22" />
+            <line x1="17" y1="2" x2="17" y2="22" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <line x1="2" y1="7" x2="7" y2="7" />
+            <line x1="2" y1="17" x2="7" y2="17" />
+            <line x1="17" y1="17" x2="22" y2="17" />
+            <line x1="17" y1="7" x2="22" y2="7" />
           </svg>
         );
       case "shield":
         return (
           <svg
             className="w-10 h-10"
-            fill="none"
             viewBox="0 0 24 24"
+            fill="none"
             stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-            />
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            <path d="M9 12l2 2 4-4" />
           </svg>
         );
       case "puzzle":
         return (
           <svg
             className="w-10 h-10"
-            fill="none"
             viewBox="0 0 24 24"
+            fill="none"
             stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
-            />
+            <path d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.968-.925-.198-.525-.741-.848-1.316-.68a.978.978 0 0 0-.725.949c0 .207-.032.412-.094.609-.193.607-.637 1.049-1.242 1.242-.197.062-.402.094-.61.094a.978.978 0 0 0-.949.725c-.168.575.156 1.118.68 1.316.445.166.855.498.925.968a.979.979 0 0 1-.276.837l-1.61 1.61a2.404 2.404 0 0 1-1.705.707 2.402 2.402 0 0 1-1.704-.706l-1.568-1.568a1.026 1.026 0 0 0-.877-.29c-.319.049-.629-.145-.739-.445a.993.993 0 0 0-.93-.646.98.98 0 0 1-.976-.976.993.993 0 0 0-.646-.93c-.3-.11-.494-.42-.445-.738.06-.38-.113-.76-.29-.878L3.707 12.88c-.47-.47-.706-1.087-.706-1.704s.235-1.233.706-1.704l1.611-1.611a.98.98 0 0 1 .837-.276c.47.07.802.48.968.925.198.525.741.848 1.316.68a.978.978 0 0 0 .725-.949c0-.207.032-.412.094-.609.193-.607.637-1.049 1.242-1.242.197-.062.402-.094.61-.094a.978.978 0 0 0 .949-.725c.168-.575-.156-1.118-.68-1.316-.445-.166-.855-.498-.925-.968a.979.979 0 0 1 .276-.837l1.61-1.61a2.404 2.404 0 0 1 1.705-.707 2.402 2.402 0 0 1 1.704.706l1.568 1.568c.23.23.556.338.877.29.319-.05.629.145.739.445a.993.993 0 0 0 .93.646.98.98 0 0 1 .976.976.993.993 0 0 0 .646.93c.3.11.494.42.445.738z" />
           </svg>
         );
       default:
         return null;
     }
+  };
+
+  const checkAllCategoriesComplete = () => {
+    const completedCategories = JSON.parse(
+      localStorage.getItem("completedCategories") || "[]"
+    );
+    const allCategories = [1, 2, 3, 4, 5];
+    return allCategories.every((cat) => completedCategories.includes(cat));
   };
 
   return (
@@ -224,8 +237,8 @@ const CategorySelectionScreen = () => {
                 onClick={() => handleCategorySelect(category)}
                 className={`w-full rounded-lg p-4 flex items-center transition-colors duration-200 ${
                   category.completed
-                    ? "bg-green-100 hover:bg-green-200 border-2 border-green-300"
-                    : "bg-amber-100 hover:bg-amber-200"
+                    ? "bg-amber-100 hover:bg-amber-200 border-2 border-amber-300"
+                    : "bg-gray-100 hover:bg-gray-200"
                 }`}
               >
                 <div className="bg-black text-white p-2 rounded-lg mr-4">
@@ -237,7 +250,7 @@ const CategorySelectionScreen = () => {
                       {category.title}
                     </h3>
                     {category.completed && (
-                      <span className="ml-2 bg-green-500 text-white text-xs px-2 py-1 rounded-full">
+                      <span className="ml-2 bg-amber-500 text-white text-xs px-2 py-1 rounded-full">
                         Completed
                       </span>
                     )}
@@ -278,54 +291,28 @@ const CategorySelectionScreen = () => {
           </div>
         </div>
         <div className="text-center mt-4 mb-2">
-          <button
-            onClick={async () => {
-              localStorage.setItem("passed", "Passed");
-              try {
-                await axios.patch(
-                  `${env.SERVER_URL}/auth/student/${localStorage.getItem(
-                    "username"
-                  )}`,
-                  { status: "Passed" }
-                );
-              } catch (error) {
-                console.error("Error updating status:", error);
-              }
-
-              navigate("/end-screen", {
-                state: {
-                  answers: JSON.parse(localStorage.getItem("answers") || "[]"),
-                  questionnaire: env.QS_MAIN,
-                  isPartialAssessment: false,
-                },
-              });
-            }}
-            className="text-gray-600 text-sm hover:underline inline-flex items-center justify-center"
-          >
-            Complete Now & See Results
-          </button>
-        </div>
-        <div className="text-center mt-6 mb-6">
-          <Link
-            to="/dashboard"
-            className="text-gray-600 text-sm hover:underline inline-flex items-center"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 mr-1"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+          {checkAllCategoriesComplete() ? (
+            <Link
+              to="/dashboard"
+              className="text-gray-600 text-sm hover:underline inline-flex items-center"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-            Go to Dashboard
-          </Link>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 mr-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+              Go to Dashboard
+            </Link>
+          ) : null}
         </div>
       </div>
       <div className="flex justify-center space-x-2 mb-6">

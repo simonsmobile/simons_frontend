@@ -118,30 +118,6 @@ const ProfileScreen = () => {
           </h3>
           <div className="bg-white rounded-lg shadow overflow-hidden border border-gray-200">
             <ul className="divide-y divide-gray-200">
-              <li className="px-4 py-3 flex justify-between items-center">
-                <div className="flex items-center">
-                  <FaMoon className="w-5 h-5 text-gray-500 mr-3" />
-                  <span className="text-gray-700">Mode</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-sm text-gray-500 mr-2">
-                    Dark & Light
-                  </span>
-                  <div className="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
-                    <input
-                      type="checkbox"
-                      name="toggle"
-                      id="toggle"
-                      className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer border-gray-300"
-                      disabled
-                    />
-                    <label
-                      htmlFor="toggle"
-                      className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
-                    ></label>
-                  </div>
-                </div>
-              </li>
               <Link to="/forgot-password" className="block hover:bg-gray-50">
                 <li className="px-4 py-3 flex justify-between items-center cursor-pointer">
                   <div className="flex items-center">
@@ -203,7 +179,7 @@ const ProfileScreen = () => {
 
         <button
           onClick={handleLogout}
-          className="w-full py-3 bg-red-500 text-white font-medium rounded-md shadow-md hover:bg-red-600 transition-colors duration-300 flex items-center justify-center"
+          className="w-full py-3 bg-amber-600 text-white font-medium rounded-md shadow-md hover:bg-amber-500 transition-colors duration-300 flex items-center justify-center"
         >
           <FaSignOutAlt className="mr-2" />
           Logout

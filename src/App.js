@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate, useNavigate } from 'r
 import WelcomeScreen from './navigations/Welcome.screen';
 import CreateAccount from './navigations/CreateAccount.screen';
 import BeginScreen from './navigations/Begin.screen';
-import QuestionnaireScreen from './navigations/Questionaire.screen';
+import QuestionnaireScreen from './navigations/Questionnaire.screen';
 import LoginScreen from './navigations/Login.screen';
 import ConfirmationScreen from './navigations/Confirmation.screen';
 import DashboardScreen from './navigations/Dashboard.screen';
@@ -14,7 +14,7 @@ import OTPVerification from './navigations/OTPVerification.screen';
 import CompleteAccountScreen from './navigations/CompleteAccount.screen';
 import InstructionsScreen from './navigations/Instructions.screen';
 import ResetPasswordScreen from './navigations/ResetPassword.screen';
-import SubQuestionnaireScreen from './navigations/SubQuestionaire.screen';
+import SubQuestionnaireScreen from './navigations/SubQuestionnaire.screen';
 import SubEndScreen from './navigations/Sub.End.screen';
 import StudyMaterialsScreen from './navigations/StudyMaterials.screen';
 import CategorySelectionScreen from './navigations/CategorySelection.screen';
@@ -59,6 +59,8 @@ function App() {
         <Route path="/validation" element={<OTPVerification />} />
         <Route path="/forgot-password" element={<ForgotPasswordScreen />} />
         <Route path="/reset-password" element={<ResetPasswordScreen />} />
+        <Route path="/terms" element={<ProtectedRoute><TermsScreen /></ProtectedRoute>} />
+        <Route path="/privacy" element={<ProtectedRoute><PrivacyScreen /></ProtectedRoute>} />
 
         {/* Protected Routes */}
         <Route path="/complete-account" element={<ProtectedRoute><CompleteAccountScreen /></ProtectedRoute>} />
@@ -72,8 +74,6 @@ function App() {
         <Route path="/sub-quest" element={<ProtectedRoute><SubQuestionnaireScreen /></ProtectedRoute>} />
         <Route path="/sub-end-screen" element={<ProtectedRoute><SubEndScreen /></ProtectedRoute>} />
         <Route path="/about" element={<ProtectedRoute><AboutScreen /></ProtectedRoute>} />
-        <Route path="/terms" element={<ProtectedRoute><TermsScreen /></ProtectedRoute>} />
-        <Route path="/privacy" element={<ProtectedRoute><PrivacyScreen /></ProtectedRoute>} />
         <Route path="/language-settings" element={<ProtectedRoute><LanguageScreen /></ProtectedRoute>} />
 
          {/* New Gamified Routes */}

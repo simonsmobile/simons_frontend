@@ -1,3 +1,4 @@
+// navigations/Score.screen.js - Updated with new scoring system
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -8,7 +9,7 @@ import {
   calculateScores,
   getGamificationDetails,
   getSubCompetencesForArea,
-  GRADE_POINTS_MAP,
+  GRADE_LEVELS,
 } from "../utils/scoring";
 import { Radar } from "react-chartjs-2";
 import {
@@ -53,7 +54,7 @@ const ScoreScreen = () => {
         const response = await axios.get(
           `${env.SERVER_URL}/auth/student/${localStorage.getItem(
             "username"
-          )}/tests`
+          )}/new_tests`
         );
         const latestGrades = response.data?.lastTest?.grades || null;
         const calculated = calculateScores(latestGrades);
@@ -129,7 +130,7 @@ const ScoreScreen = () => {
   }
 
   const chartData = {
-    labels: scores.areaScores.map((area) => area.shortName),
+    labels: scores.areaScores.map((area) => area.name),
     datasets: [
       {
         label: "Competence Score %",
@@ -196,8 +197,41 @@ const ScoreScreen = () => {
       case "advocate":
         return <SimonsAdvocateBadge {...badgeProps} />;
       default:
-        return null;
+        return (
+          <div className="flex items-center justify-center">
+  <img 
+    src={`${process.env.PUBLIC_URL}/images/logo.png`} 
+    alt="Badge" 
+    className="w-24 h-auto" 
+  />
+</div>
+        );
     }
+  };
+
+  const getAreaLevelDisplay = (areaScores) => {
+    if (!areaScores.competenceDetails) return "Level 1";
+
+    const levels = areaScores.competenceDetails.map(
+      (comp) => GRADE_LEVELS[comp.grade]?.level || 0
+    );
+
+    const uniqueLevels = [...new Set(levels)].filter((l) => l > 0).sort();
+
+    if (uniqueLevels.length === 0) return "Not Started";
+
+    const hasLevel1 = uniqueLevels.includes(1);
+    const hasLevel2 = uniqueLevels.includes(2);
+
+    if (hasLevel1 && hasLevel2) {
+      return "Level 1‑2";
+    } else if (hasLevel2) {
+      return "Level 2";
+    } else if (hasLevel1) {
+      return "Level 1";
+    }
+
+    return "Not Started";
   };
 
   return (
@@ -205,6 +239,7 @@ const ScoreScreen = () => {
       <Header title="Score" showMenuButton={true} />
 
       <div className="flex-1 px-4 py-6 max-w-xl mx-auto w-full">
+        {/* Gamification Card */}
         {gamification && (
           <div
             ref={gamificationCardRef}
@@ -234,12 +269,25 @@ const ScoreScreen = () => {
           </div>
         )}
 
+        {/* Total Score Display */}
         <div className="text-center mb-6">
           <p className="text-sm text-gray-500">Total score</p>
           <p className="text-4xl font-bold text-gray-800">
             {scores.totalScore} points
           </p>
-          <p className="text-xs text-gray-400">out of 3150 possible points</p>
+          <p className="text-xs text-gray-400">
+            out of {scores.maxPossibleScore || 48650} possible points
+          </p>
+          <div className="mt-2 w-full bg-gray-200 rounded-full h-2">
+            <div
+              className="bg-gradient-to-r from-amber-300 to-amber-500 h-2 rounded-full transition-all duration-500"
+              style={{
+                width: `${Math.round(
+                  (scores.totalScore / (scores.maxPossibleScore || 48650)) * 100
+                )}%`,
+              }}
+            ></div>
+          </div>
         </div>
 
         <div className="bg-white p-4 rounded-lg shadow border border-gray-200 mb-8 h-64 md:h-80">
@@ -251,71 +299,103 @@ const ScoreScreen = () => {
             Competence areas
           </h3>
           <div className="space-y-3">
-            {scores.areaScores.map((area) => {
+            {scores.areaScores.map((area, areaIndex) => {
               const isExpanded = expandedCategories[area.id];
               const subCompetences = getSubCompetencesForArea(area.id);
-              const percentage =
-                area.maxScore > 0
-                  ? Math.round((area.score / area.maxScore) * 100)
-                  : 0;
+              const percentage = Math.round((area.score / area.maxScore) * 100);
+              const levelDisplay = getAreaLevelDisplay(area);
+
               return (
                 <div
                   key={area.id}
-                  className="bg-white rounded-lg shadow border border-gray-200 overflow-hidden"
+                  className="rounded-lg shadow border border-gray-200 overflow-hidden"
                 >
                   <button
                     onClick={() => toggleCategory(area.id)}
-                    className="w-full p-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
+                    className="w-full px-4 py-3 flex justify-between items-center text-left hover:bg-gray-50 transition-colors duration-150"
                   >
                     <div className="flex items-center flex-1 mr-4">
-                      <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center mr-4 flex-shrink-0">
-                        <span className="text-white font-bold text-lg">
-                          {area.level}
+                      <div className="w-16 h-12 rounded-md bg-black flex flex-col items-center justify-center mr-4 flex-shrink-0">
+                        <span className="text-white font-bold text-[10px] leading-tight text-center px-1">
+                          {levelDisplay.includes("-") ? (
+                            <span className="block">{levelDisplay}</span>
+                          ) : (
+                            levelDisplay
+                          )}
                         </span>
                       </div>
                       <div className="flex-1">
                         <p className="font-medium text-gray-800">{area.name}</p>
-                        <p className="text-sm text-gray-500">{percentage}%</p>
+                        <div className="flex items-center mt-1">
+                          <div className="w-24 bg-gray-300 rounded-full h-2 mr-2">
+                            <div
+                              className="bg-gray-800 h-2 rounded-full"
+                              style={{ width: `${percentage}%` }}
+                            ></div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div className="flex items-center flex-shrink-0">
-                      <div className="w-full bg-gray-200 rounded-full h-2.5 mx-4 flex-1 min-w-[80px] max-w-[100px]">
-                        <div
-                          className="bg-amber-400 h-2.5 rounded-full"
-                          style={{ width: `${percentage}%` }}
-                        ></div>
-                      </div>
                       {isExpanded ? (
-                        <FaChevronUp className="text-gray-400 w-4 h-4" />
+                        <FaChevronUp className="text-gray-600 w-4 h-4" />
                       ) : (
-                        <FaChevronDown className="text-gray-400 w-4 h-4" />
+                        <FaChevronDown className="text-gray-600 w-4 h-4" />
                       )}
                     </div>
                   </button>
 
                   {isExpanded && (
-                    <div className="px-4 pt-2 pb-4 bg-gray-50 border-t border-gray-200">
+                    <div className="px-4 pt-2 pb-4 bg-amber-50 border-t border-gray-200">
                       <h4 className="text-sm font-semibold text-gray-600 mb-3 mt-2">
-                        Sub-competences:
+                        Competences:
                       </h4>
                       <ul className="space-y-2">
-                        {subCompetences.map((sub) => {
-                          const grade =
-                            scores.competenceLevels?.[sub.point] || "F";
-                          const subScore = GRADE_POINTS_MAP[grade] || 0;
-                          const maxSubScore = GRADE_POINTS_MAP["C"];
+                        {subCompetences.map((sub, subIndex) => {
+                          const competenceDetail =
+                            area.competenceDetails?.[subIndex];
+                          const grade = competenceDetail?.grade || "F";
+                          const gradeInfo = GRADE_LEVELS[grade];
+                          const subScore = gradeInfo?.points || 0;
+                          const maxSubScore = 150;
+
+                          const competenceNumber =
+                            scores.areaScores
+                              .slice(0, areaIndex)
+                              .reduce(
+                                (total, prevArea) =>
+                                  total +
+                                  getSubCompetencesForArea(prevArea.id).length,
+                                0
+                              ) +
+                            subIndex +
+                            1;
 
                           return (
                             <li
                               key={sub.point}
-                              className="flex justify-between items-center text-sm pl-2 pr-1 py-1 border-b border-gray-100 last:border-b-0"
+                              className="flex justify-between items-center text-sm pl-2 pr-1 py-2 bg-white rounded border border-gray-100"
                             >
-                              <span className="text-gray-700 flex-1 mr-2">
-                                {sub.point} {sub.title}
-                              </span>
-                              <span className="font-medium text-gray-800 bg-gray-100 px-2 py-0.5 rounded text-xs whitespace-nowrap">
-                                {subScore} / {maxSubScore} pts
-                              </span>
+                              <div className="flex-1 mr-2">
+                                <span className="text-gray-700 font-medium">
+                                  {competenceNumber}. {sub.title}
+                                </span>
+                                <div className="flex items-center space-x-2 mt-1">
+                                  <span className="text-xs text-gray-500">
+                                    {gradeInfo?.label || "Not achieved"}
+                                  </span>
+                                  <div className="w-16 bg-gray-200 rounded-full h-1">
+                                    <div
+                                      className="bg-amber-500 h-1 rounded-full"
+                                      style={{
+                                        width: `${
+                                          (subScore / maxSubScore) * 100
+                                        }%`,
+                                      }}
+                                    ></div>
+                                  </div>
+                                </div>
+                              </div>
                             </li>
                           );
                         })}
@@ -327,6 +407,35 @@ const ScoreScreen = () => {
             })}
           </div>
         </div>
+
+        {/* Milestones */}
+        {scores.milestones && scores.milestones.length > 0 && (
+          <div className="mt-8 bg-white rounded-lg shadow border border-gray-200 p-4">
+            <h3 className="text-lg font-semibold text-gray-700 mb-4">
+              🏆 Milestones Achieved
+            </h3>
+            <div className="space-y-2">
+              {scores.milestones.map((milestone, index) => (
+                <div
+                  key={index}
+                  className="flex items-center justify-between p-2 bg-green-50 rounded"
+                >
+                  <div>
+                    <span className="font-medium text-green-800">
+                      {milestone.title}
+                    </span>
+                    <p className="text-xs text-green-600">
+                      {milestone.description}
+                    </p>
+                  </div>
+                  <span className="text-sm font-bold text-green-700">
+                    {milestone.points} pts
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
       <BottomNav />
       <style jsx global>{`
@@ -343,8 +452,6 @@ const ScoreScreen = () => {
         }
         .animate-bounce-badge {
           animation: bounce-badge 1s infinite;
-          /* Apply animation for 5s only via state was tricky,
-              so infinite bounce is used. Control via state adds complexity */
         }
       `}</style>
     </div>

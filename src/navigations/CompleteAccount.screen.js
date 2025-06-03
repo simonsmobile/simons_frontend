@@ -18,10 +18,10 @@ const CompleteAccountScreen = () => {
       <div className="flex-1 flex items-center justify-center px-4 py-6">
         <div className="w-full max-w-md text-center z-10">
           <div className="flex justify-center mb-8">
-            <div className="h-24 w-24 rounded-full bg-green-100 flex items-center justify-center">
+            <div className="h-24 w-24 rounded-full bg-amber-100 flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-14 w-14 text-green-500"
+                className="h-14 w-14 text-amber-500"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

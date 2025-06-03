@@ -1,3 +1,4 @@
+// navigations/StudyMaterials.screen.js - Fixed to properly load learning materials
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import env from "../configs/env";
@@ -12,21 +13,37 @@ const StudyMaterialsScreen = () => {
   const { index, level, category, sub, grade } = location.state || {};
 
   const subCategoryIdentifier = sub?.category;
+
+  // Fix the level identifier mapping
   const currentLevelIdentifier = level === "basic" ? "basic" : "master";
 
   const getMaterial = (material, levelId, typeId) => {
-    return (
-      material.find((q) => q.level === levelId && q.type === typeId) || null
-    );
+    if (!material || !Array.isArray(material)) {
+      console.warn("LEARNING_MATERIAL is not available or not an array");
+      return null;
+    }
+
+    const found = material.find((q) => {
+      const levelMatch = q.level === levelId;
+      const typeMatch = q.type === typeId;
+      return levelMatch && typeMatch;
+    });
+
+    return found || null;
   };
 
-  const [learning_material] = useState(() =>
-    getMaterial(
+  const [learning_material] = useState(() => {
+    if (!env.LEARNING_MATERIAL) {
+      console.error("env.LEARNING_MATERIAL is not defined");
+      return null;
+    }
+
+    return getMaterial(
       env.LEARNING_MATERIAL,
       currentLevelIdentifier,
       subCategoryIdentifier
-    )
-  );
+    );
+  });
 
   const videoSrc = subCategoryIdentifier
     ? `${process.env.PUBLIC_URL}/videos/${subCategoryIdentifier}-${currentLevelIdentifier}.mp4`
@@ -36,17 +53,19 @@ const StudyMaterialsScreen = () => {
     learning_material?.text || "No description available for this section.";
   const displayLevel = level === "basic" ? "Level 1" : "Level 2";
   const displayTitle = category || "Study Material";
-  const subTitle = sub ? `${sub.category} - ${sub.title}` : "";
+  const subTitle = sub ? `${sub.title}` : "";
 
   const handleTakeTest = () => {
     navigate("/sub-quest", { state: { index, level, category, sub, grade } });
   };
 
   const isEligible = () => {
-    if (!grade) return level === "basic";
     if (level === "basic") return true;
-    if (level === "master") return grade === "M" || grade === "C";
-    return false;
+    if (level === "master") {
+      if (!grade) return true;
+      return grade === "M" || grade === "C" || grade === "B";
+    }
+    return true;
   };
 
   if (!isEligible()) {
@@ -64,8 +83,8 @@ const StudyMaterialsScreen = () => {
           </div>
         </div>
         <div className="flex-1 flex flex-col items-center justify-center px-6 text-center">
-          <p className="text-red-600 mb-6 font-medium">
-            You need to demonstrate mastery at Level 1 before accessing Level 2
+          <p className="text-amber-600 mb-6 font-medium">
+            You need to complete Level 1 exercises before accessing Level 2
             materials and quizzes for this competence.
           </p>
           <button
@@ -106,10 +125,9 @@ const StudyMaterialsScreen = () => {
 
           {videoSrc ? (
             <div className="relative pt-[56.25%] mb-6 bg-black rounded-lg overflow-hidden shadow-lg border border-gray-300">
-              {/* Aspect ratio container (16:9) */}
               <ReactPlayer
                 url={videoSrc}
-                className="absolute top-0 left-0"
+                className="absolute top-0 left-0 bg-white"
                 controls={true}
                 width="100%"
                 height="100%"
@@ -119,7 +137,7 @@ const StudyMaterialsScreen = () => {
                     attributes: {
                       controlsList: "nodownload",
                       disablePictureInPicture: false,
-                      poster: `${process.env.PUBLIC_URL}/images/badge.png`,
+                      poster: `${process.env.PUBLIC_URL}/images/logo.png`,
                     },
                   },
                 }}
@@ -127,7 +145,12 @@ const StudyMaterialsScreen = () => {
             </div>
           ) : (
             <div className="bg-gray-200 rounded-lg mb-6 aspect-video flex items-center justify-center text-gray-500">
-              Video not available for this section.
+              <div className="text-center">
+                <p>Video not available for this section.</p>
+                <p className="text-xs mt-1">
+                  Expected: {subCategoryIdentifier}-{displayLevel}.mp4
+                </p>
+              </div>
             </div>
           )}
 

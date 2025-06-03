@@ -45,6 +45,93 @@ const BeginScreen = () => {
     return Math.round((completedCount / totalQuestions) * 100);
   };
 
+  const getCategoryIcon = (iconName) => {
+    switch (iconName) {
+      case "search":
+        return (
+          <svg
+            className="w-10 h-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        );
+      case "users":
+        return (
+          <svg
+            className="w-10 h-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+            />
+          </svg>
+        );
+      case "video":
+        return (
+          <svg
+            className="w-10 h-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"
+            />
+          </svg>
+        );
+      case "shield":
+        return (
+          <svg
+            className="w-10 h-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+            />
+          </svg>
+        );
+      case "puzzle":
+        return (
+          <svg
+            className="w-10 h-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+            />
+          </svg>
+        );
+      default:
+        return null;
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* Top design element */}
@@ -121,24 +208,30 @@ const BeginScreen = () => {
               Category Progress
             </h3>
             <div className="grid grid-cols-5 gap-2">
-              {[1, 2, 3, 4, 5].map((category) => (
+              {[
+                { id: 1, icon: "search" },
+                { id: 2, icon: "users" },
+                { id: 3, icon: "video" },
+                { id: 4, icon: "shield" },
+                { id: 5, icon: "puzzle" },
+              ].map((category) => (
                 <div
-                  key={category}
-                  className={`h-16 flex items-center justify-center rounded-lg ${
-                    completedCategories.includes(category)
-                      ? "bg-green-100 border-2 border-green-300"
-                      : "bg-gray-100 border border-gray-200"
+                  key={category.id}
+                  className={`flex items-center justify-center p-3 rounded-lg ${
+                    completedCategories.includes(category.id)
+                      ? "bg-amber-100 hover:bg-amber-200 border-2 border-amber-300"
+                      : "bg-gray-200 hover:bg-gray-300 border-2 border-gray-300"
                   }`}
                 >
-                  <span
-                    className={`text-lg font-bold ${
-                      completedCategories.includes(category)
-                        ? "text-green-600"
-                        : "text-gray-500"
-                    }`}
+                  <div
+                    className={`${
+                      completedCategories.includes(category.id)
+                        ? "bg-amber-600"
+                        : "bg-black"
+                    } text-white p-2 rounded-lg flex items-center justify-center`}
                   >
-                    {category}
-                  </span>
+                    {getCategoryIcon(category.icon)}
+                  </div>
                 </div>
               ))}
             </div>
@@ -166,8 +259,8 @@ const BeginScreen = () => {
             {completedCount > 0 && (
               <>
                 <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 flex items-center">
-                  <div className="flex-shrink-0 bg-amber-100 p-3 rounded-full mr-4">
-                    <span className="text-xl font-bold text-amber-600">
+                  <div className="flex-shrink-0 bg-gray-100 p-3 rounded-full mr-4">
+                    <span className="text-xl font-bold text-gray-600">
                       {totalQuestions - completedCount}
                     </span>
                   </div>
@@ -177,8 +270,8 @@ const BeginScreen = () => {
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 flex items-center">
-                  <div className="flex-shrink-0 bg-green-100 p-3 rounded-full mr-4">
-                    <span className="text-xl font-bold text-green-600">
+                  <div className="flex-shrink-0 bg-amber-100 p-3 rounded-full mr-4">
+                    <span className="text-xl font-bold text-amber-600">
                       {completedCount}
                     </span>
                   </div>
@@ -242,59 +335,29 @@ const BeginScreen = () => {
               </p>
             </div>
           </div>
-          <div className="text-center mt-4 mb-2">
-            <button
-              onClick={async () => {
-                // Mark as passed
-                localStorage.setItem("passed", "Passed");
-                try {
-                  await axios.patch(
-                    `${env.SERVER_URL}/auth/student/${localStorage.getItem(
-                      "username"
-                    )}`,
-                    { status: "Passed" }
-                  );
-                } catch (error) {
-                  console.error("Error updating status:", error);
-                }
-
-                // Navigate to end screen with current results
-                navigate("/end-screen", {
-                  state: {
-                    answers: JSON.parse(
-                      localStorage.getItem("answers") || "[]"
-                    ),
-                    questionnaire: env.QS_MAIN,
-                    isPartialAssessment: false,
-                  },
-                });
-              }}
-              className="text-gray-600 text-sm hover:underline inline-flex items-center justify-center"
-            >
-              Complete Now & See Results
-            </button>
-          </div>
           <div className="text-center mt-6">
-            <Link
-              to="/dashboard"
-              className="text-gray-600 text-sm hover:underline inline-flex items-center"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 mr-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+            {calculateProgress() === 100 ? (
+              <Link
+                to="/dashboard"
+                className="text-gray-600 text-sm hover:underline inline-flex items-center"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-              Skip to Dashboard
-            </Link>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 mr-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+                Go to Dashboard
+              </Link>
+            ) : null}
           </div>
         </div>
       </div>

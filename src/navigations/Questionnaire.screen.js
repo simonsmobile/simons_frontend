@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import env from "../configs/env";
+import { translateLevelTerminology } from '../utils/scoring';
 import axios from "axios";
 
 const QuestionnaireScreen = () => {
@@ -385,8 +386,8 @@ const QuestionnaireScreen = () => {
               {getQuestionSubcategory(currentQuestion.points)}
             </div>
 
-            <div className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium">
-              {currentQuestion.level}
+            <div className="inline-block px-3 py-1 bg-amber-300 text-gray-800 rounded-full text-xs font-medium">
+              {translateLevelTerminology(currentQuestion.level)}
             </div>
           </div>
 
@@ -467,67 +468,6 @@ const QuestionnaireScreen = () => {
                 {isPartialAssessment ? "Complete" : "Finish"}
               </button>
             )}
-          </div>
-
-          {/* Complete now option */}
-          <div className="text-center mb-4">
-            <button
-              onClick={async () => {
-                if (isPartialAssessment) {
-                  const mainAnswers = JSON.parse(
-                    localStorage.getItem("answers") ||
-                      JSON.stringify(Array(env.QS_MAIN.length).fill(null))
-                  );
-
-                  questionnaire.forEach((question, index) => {
-                    const fullQuestionnaireIndex = env.QS_MAIN.findIndex(
-                      (q) =>
-                        q.question === question.question &&
-                        q.points === question.points
-                    );
-
-                    if (fullQuestionnaireIndex !== -1) {
-                      mainAnswers[fullQuestionnaireIndex] = answers[index];
-                    }
-                  });
-
-                  localStorage.setItem("answers", JSON.stringify(mainAnswers));
-
-                  const categoryNumber = Math.floor(questionnaire[0].points);
-                  const completedCategories = JSON.parse(
-                    localStorage.getItem("completedCategories") || "[]"
-                  );
-
-                  if (!completedCategories.includes(categoryNumber)) {
-                    completedCategories.push(categoryNumber);
-                    localStorage.setItem(
-                      "completedCategories",
-                      JSON.stringify(completedCategories)
-                    );
-                  }
-                }
-
-                localStorage.setItem("passed", "Passed");
-                await axios.patch(
-                  `${env.SERVER_URL}/auth/student/${localStorage.getItem(
-                    "username"
-                  )}`,
-                  { status: "Passed" }
-                );
-
-                navigate("/end-screen", {
-                  state: {
-                    answers,
-                    questionnaire,
-                    isPartialAssessment,
-                    selectedCategory,
-                  },
-                });
-              }}
-              className="text-gray-600 text-sm hover:underline inline-flex items-center justify-center"
-            >
-              Complete Now & See Results
-            </button>
           </div>
         </div>
       </div>

@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from "react";
+// navigations/SubQuestionnaire.screen.js - Updated with timer and new scoring
+import React, { useEffect, useState, useCallback } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import env from "../configs/env";
-import { FaChevronLeft } from "react-icons/fa";
+import { FaChevronLeft, FaClock } from "react-icons/fa";
+import { calculateTimeBonus } from "../utils/scoring";
+import SCORING_CONFIG from '../configs/scoringConfig';
 
 const SubQuestionnaireScreen = () => {
   const location = useLocation();
@@ -39,23 +42,68 @@ const SubQuestionnaireScreen = () => {
       : Array(questionnaire.length).fill(null);
   });
 
+  // Timer states
+  const [timeRemaining, setTimeRemaining] = useState(
+    SCORING_CONFIG.TIME_LIMIT_SECONDS
+  );
+  const [timeTaken, setTimeTaken] = useState(
+    Array(questionnaire.length).fill(0)
+  );
+  const [questionStartTime, setQuestionStartTime] = useState(Date.now());
+  const [isTimerActive, setIsTimerActive] = useState(true);
+
+  // Timer effect
   useEffect(() => {
-    setQuestionnaire(
-      getFilteredRandomQuestions(
-        env.QS_SAMPLE2,
-        currentLevelIdentifier,
-        subCategoryIdentifier
-      )
+    if (!isTimerActive || timeRemaining <= 0) return;
+
+    const timer = setInterval(() => {
+      setTimeRemaining((prev) => {
+        if (prev <= 1) {
+          handleTimeUp();
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [isTimerActive, timeRemaining]);
+
+  // Reset timer when question changes
+  useEffect(() => {
+    setTimeRemaining(SCORING_CONFIG.TIME_LIMIT_SECONDS);
+    setQuestionStartTime(Date.now());
+    setIsTimerActive(true);
+  }, [currentQuestionIndex]);
+
+  const handleTimeUp = useCallback(() => {
+    setIsTimerActive(false);
+
+    // Record time taken as maximum
+    const newTimeTaken = [...timeTaken];
+    newTimeTaken[currentQuestionIndex] = SCORING_CONFIG.TIME_LIMIT_SECONDS;
+    setTimeTaken(newTimeTaken);
+
+    // Auto-advance to next question or finish
+    setTimeout(() => {
+      if (currentQuestionIndex < questionnaire.length - 1) {
+        handleNext();
+      } else {
+        handleFinish();
+      }
+    }, 1000);
+  }, [currentQuestionIndex, questionnaire.length, timeTaken]);
+
+  // Initialize questionnaire and answers
+  useEffect(() => {
+    const newQuestionnaire = getFilteredRandomQuestions(
+      env.QS_SAMPLE2,
+      currentLevelIdentifier,
+      subCategoryIdentifier
     );
-    setAnswers(
-      Array(
-        getFilteredRandomQuestions(
-          env.QS_SAMPLE2,
-          currentLevelIdentifier,
-          subCategoryIdentifier
-        ).length
-      ).fill(null)
-    );
+    setQuestionnaire(newQuestionnaire);
+    setAnswers(Array(newQuestionnaire.length).fill(null));
+    setTimeTaken(Array(newQuestionnaire.length).fill(0));
     setCurrentQuestionIndex(0);
   }, [level, sub]);
 
@@ -105,6 +153,15 @@ const SubQuestionnaireScreen = () => {
   }
 
   const handleNext = () => {
+    // Record time taken for current question
+    const questionTime = Math.round((Date.now() - questionStartTime) / 1000);
+    const newTimeTaken = [...timeTaken];
+    newTimeTaken[currentQuestionIndex] = Math.min(
+      questionTime,
+      SCORING_CONFIG.TIME_LIMIT_SECONDS
+    );
+    setTimeTaken(newTimeTaken);
+
     if (currentQuestionIndex < questionnaire.length - 1) {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       window.scrollTo(0, 0);
@@ -119,6 +176,8 @@ const SubQuestionnaireScreen = () => {
   };
 
   const handleOptionChange = (optionIndex) => {
+    if (!isTimerActive && timeRemaining <= 0) return; // Don't allow changes after timeout
+
     const newAnswers = [...answers];
     newAnswers[currentQuestionIndex] = optionIndex;
     setAnswers(newAnswers);
@@ -126,13 +185,26 @@ const SubQuestionnaireScreen = () => {
   };
 
   const handleFinish = async () => {
+    // Record final question time if still active
+    if (isTimerActive && currentQuestionIndex < questionnaire.length) {
+      const questionTime = Math.round((Date.now() - questionStartTime) / 1000);
+      const newTimeTaken = [...timeTaken];
+      newTimeTaken[currentQuestionIndex] = Math.min(
+        questionTime,
+        SCORING_CONFIG.TIME_LIMIT_SECONDS
+      );
+      setTimeTaken(newTimeTaken);
+    }
+
     localStorage.removeItem(
       `sub_answers_${subCategoryIdentifier}_${currentLevelIdentifier}`
     );
+
     navigate("/sub-end-screen", {
       state: {
         answers,
         questionnaire,
+        timeTaken,
         subIndex: index,
         category,
         level,
@@ -146,16 +218,26 @@ const SubQuestionnaireScreen = () => {
   const progressPercentage =
     ((currentQuestionIndex + 1) / questionnaire.length) * 100;
   const displayLevel = level === "basic" ? "Level 1" : "Level 2";
-  const scoreSoFar = answers.reduce((count, ans, idx) => {
-    if (
-      ans !== null &&
-      questionnaire[idx]?.options[ans] === questionnaire[idx]?.answer
-    ) {
-      return count + 50;
-    }
-    return count;
-  }, 0);
-  const maxPossibleScore = questionnaire.length * 50;
+
+  // Calculate potential time bonus for current answer
+  const potentialTimeBonus = selected ? calculateTimeBonus(timeRemaining) : 0;
+  const basePoints =
+    level === "basic"
+      ? SCORING_CONFIG.LEVEL_1_BASE_POINTS
+      : SCORING_CONFIG.LEVEL_2_BASE_POINTS;
+
+  // Timer display colors
+  const getTimerColor = () => {
+    if (timeRemaining > 39) return "text-green-600";
+    if (timeRemaining > 19) return "text-yellow-600";
+    return "text-red-600";
+  };
+
+  const getTimerBgColor = () => {
+    if (timeRemaining > 39) return "bg-green-100";
+    if (timeRemaining > 19) return "bg-yellow-100";
+    return "bg-red-100";
+  };
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50">
@@ -174,27 +256,54 @@ const SubQuestionnaireScreen = () => {
           <div className="text-center flex-1">
             <h1 className="text-lg font-semibold">{category}</h1>
             <p className="text-xs text-gray-500">
-              {sub.category} - {sub.title} ({displayLevel})
+              {sub.title} ({displayLevel})
             </p>
           </div>
-          {/* Score Display */}
-          {/* <div className="text-right w-16">
-            <span className="text-sm font-medium text-gray-700">
-              {scoreSoFar}/{maxPossibleScore}
+
+          {/* Timer Display */}
+          <div
+            className={`flex items-center space-x-2 px-3 py-1 rounded-full ${getTimerBgColor()}`}
+          >
+            <FaClock className={`h-4 w-4 ${getTimerColor()}`} />
+            <span className={`text-sm font-bold ${getTimerColor()}`}>
+              {Math.floor(timeRemaining / 60)}:
+              {(timeRemaining % 60).toString().padStart(2, "0")}
             </span>
-            <span className="text-xs block text-gray-500">Points</span>
-          </div> */}
+          </div>
         </div>
       </div>
 
       <div className="flex-1 px-4 py-6">
         <div className="max-w-md mx-auto">
-          {/* Question Number */}
-          <div className="text-center mb-6">
+          {/* Question Number and Scoring Info */}
+          <div className="text-center mb-4">
             <span className="text-sm font-medium text-gray-500">
               Question {currentQuestionIndex + 1} of {questionnaire.length}
             </span>
+            <div className="mt-2 flex justify-center space-x-4 text-xs text-gray-600">
+              <div className="bg-blue-50 px-2 py-1 rounded">
+                Base: {basePoints} pts
+              </div>
+            </div>
           </div>
+
+          {/* Time Warning */}
+          {timeRemaining <= 10 && timeRemaining > 0 && (
+            <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-center">
+              <p className="text-red-600 text-sm font-medium">
+                ⏰ Time running out! {timeRemaining} seconds remaining
+              </p>
+            </div>
+          )}
+
+          {/* Timeout Message */}
+          {timeRemaining === 0 && (
+            <div className="mb-4 p-3 bg-gray-100 border border-gray-300 rounded-lg text-center">
+              <p className="text-gray-700 text-sm font-medium">
+                ⏱️ Time's up! Moving to next question...
+              </p>
+            </div>
+          )}
 
           {/* Question Text */}
           <div className="mb-8 p-4 bg-white rounded-lg shadow border border-gray-200">
@@ -209,19 +318,28 @@ const SubQuestionnaireScreen = () => {
               <div
                 key={optionIndex}
                 className={`p-4 border rounded-lg transition-all duration-200 cursor-pointer ${
-                  selectedAnswerIndex === optionIndex
+                  timeRemaining === 0
+                    ? "border-gray-200 bg-gray-50 cursor-not-allowed opacity-60"
+                    : selectedAnswerIndex === optionIndex
                     ? "border-amber-500 bg-amber-50 ring-2 ring-amber-300"
                     : "border-gray-200 bg-white hover:border-gray-400"
                 }`}
                 onClick={() => handleOptionChange(optionIndex)}
               >
-                <label className="flex items-center cursor-pointer">
+                <label
+                  className={`flex items-center ${
+                    timeRemaining === 0
+                      ? "cursor-not-allowed"
+                      : "cursor-pointer"
+                  }`}
+                >
                   <input
                     type="radio"
                     name={`option-${currentQuestionIndex}`}
                     className="h-4 w-4 text-amber-600 border-gray-300 focus:ring-amber-500 mr-3 flex-shrink-0"
                     checked={selectedAnswerIndex === optionIndex}
                     onChange={() => handleOptionChange(optionIndex)}
+                    disabled={timeRemaining === 0}
                     aria-labelledby={`option-label-${currentQuestionIndex}-${optionIndex}`}
                   />
                   <span
@@ -252,28 +370,42 @@ const SubQuestionnaireScreen = () => {
             {currentQuestionIndex < questionnaire.length - 1 ? (
               <button
                 onClick={handleNext}
-                disabled={!selected}
+                disabled={!selected && timeRemaining > 0}
                 className={`flex-1 py-3 font-medium rounded-md shadow-md transition-colors duration-300 ${
-                  !selected
+                  !selected && timeRemaining > 0
                     ? "bg-gray-300 text-gray-500 cursor-not-allowed"
                     : "bg-black text-white hover:bg-gray-800"
                 }`}
               >
-                Next
+                {timeRemaining === 0 ? "Next" : "Next"}
               </button>
             ) : (
               <button
                 onClick={handleFinish}
-                disabled={!selected}
+                disabled={!selected && timeRemaining > 0}
                 className={`flex-1 py-3 font-medium rounded-md shadow-md transition-colors duration-300 ${
-                  !selected
+                  !selected && timeRemaining > 0
                     ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                    : "bg-green-600 text-white hover:bg-green-700"
+                    : "bg-amber-600 text-white hover:bg-amber-700"
                 }`}
               >
                 Finish
               </button>
             )}
+          </div>
+
+          {/* Scoring Preview */}
+          <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+            <h4 className="text-sm font-medium text-gray-700 mb-2">
+              Scoring Info
+            </h4>
+            <div className="text-xs text-gray-600 space-y-1">
+              <div>• Correct answer: {basePoints} points</div>
+              <div>
+                • Speed bonus: up to {SCORING_CONFIG.MAX_TIME_BONUS} points
+              </div>
+              <div>• Perfect run bonus: Additional points for all correct</div>
+            </div>
           </div>
         </div>
       </div>
