@@ -89,7 +89,6 @@ const CategorySelectionScreen = () => {
     });
   };
 
-  // Replace the existing getIconComponent function around line 137
   const getIconComponent = (iconName) => {
     switch (iconName) {
       case "search":

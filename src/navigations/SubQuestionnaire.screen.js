@@ -1,4 +1,3 @@
-// navigations/SubQuestionnaire.screen.js - Updated with timer and new scoring
 import React, { useEffect, useState, useCallback } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import env from "../configs/env";

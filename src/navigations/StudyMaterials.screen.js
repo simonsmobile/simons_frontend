@@ -1,4 +1,3 @@
-// navigations/StudyMaterials.screen.js - Fixed to properly load learning materials
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import env from "../configs/env";
@@ -14,7 +13,6 @@ const StudyMaterialsScreen = () => {
 
   const subCategoryIdentifier = sub?.category;
 
-  // Fix the level identifier mapping
   const currentLevelIdentifier = level === "basic" ? "basic" : "master";
 
   const getMaterial = (material, levelId, typeId) => {

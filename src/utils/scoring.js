@@ -192,7 +192,6 @@ export const calculateScores = (gradesArray, backendData = null) => {
     };
   }
 
-  // Use backend data if available
   const totalScore = backendData?.totalScore || 0;
   const competenceScores = backendData?.competenceScores || {};
   const completedLevels = backendData?.completedLevels || {};
