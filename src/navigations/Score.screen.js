@@ -8,7 +8,7 @@ import {
   calculateScores,
   getGamificationDetails,
   getSubCompetencesForArea,
-  GRADE_LEVELS,
+  getAreaLevelDisplay,
   getProgressPercentage,
   getQuizScoresFromBackend,
 } from "../utils/scoring";
@@ -48,6 +48,7 @@ const ScoreScreen = () => {
   const gamificationCardRef = useRef(null);
   const animationTimeoutRef = useRef(null);
   const [completedLevels, setCompletedLevels] = useState({});
+  const [latestGrades, setLatestGrades] = useState([]);
 
   useEffect(() => {
     const fetchScores = async () => {
@@ -58,20 +59,17 @@ const ScoreScreen = () => {
             "username"
           )}/new_tests`
         );
-        const latestGrades = response.data?.lastTest?.grades || null;
-        setCompletedLevels(response.data?.completedLevels || {});
+        const backendData = response.data;
+        const grades = backendData?.grades || null;
+        setLatestGrades(grades);
+        setCompletedLevels(backendData?.completedLevels || {});
 
-        const backendData = {
-          totalScore: response.data?.totalScore || 0,
-          competenceScores: response.data?.competenceScores || {},
-          completedLevels: response.data?.completedLevels || {},
-        };
-
-        const calculated = calculateScores(latestGrades, backendData);
+        const calculated = calculateScores(grades, backendData);
         setScores(calculated);
-        const gameDetails = getGamificationDetails(backendData.totalScore);
+        const gameDetails = getGamificationDetails(backendData.totalScore, backendData.allLevelsComplete);
         setGamification(gameDetails);
-        if (gameDetails) {
+
+        if (gameDetails && gameDetails.threshold > 0) {
           setAnimateBadge(true);
           if (animationTimeoutRef.current) {
             clearTimeout(animationTimeoutRef.current);
@@ -221,38 +219,12 @@ const ScoreScreen = () => {
     }
   };
 
-  const getAreaLevelDisplay = (areaData, backendCompletedLevels) => {
-    if (!areaData.competenceDetails || !backendCompletedLevels)
-      return "Not Started";
-
-    let hasLevel1 = false;
-    let hasLevel2 = false;
-
-    areaData.points.forEach((point) => {
-      const levelData = backendCompletedLevels[point];
-      if (levelData) {
-        if (levelData.level1) hasLevel1 = true;
-        if (levelData.level2) hasLevel2 = true;
-      }
-    });
-
-    if (hasLevel1 && hasLevel2) {
-      return "Level 1‑2";
-    } else if (hasLevel2) {
-      return "Level 2";
-    } else if (hasLevel1) {
-      return "Level 1";
-    }
-
-    return "Not Started";
-  };
-
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 pb-16">
       <Header title="Score" showMenuButton={true} />
 
       <div className="flex-1 px-4 py-6 max-w-xl mx-auto w-full">
-        {gamification && gamification.threshold > 0 && (
+        {gamification && (gamification.threshold > 0 || gamification.badge === 'advocate') && (
           <div
             ref={gamificationCardRef}
             className="relative bg-white p-6 rounded-lg shadow border border-amber-200 mb-8 text-center overflow-hidden"
@@ -270,7 +242,7 @@ const ScoreScreen = () => {
             )}
             <div className="relative z-10">
               <h2 className="text-lg font-bold text-amber-600 mb-2">
-                Congratulations you achieved {gamification.threshold} points!
+                {gamification.badge === 'advocate' ? "Congratulations!" : `Congratulations you achieved ${gamification.threshold} points!`}
               </h2>
               {renderBadge()}
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
@@ -281,7 +253,7 @@ const ScoreScreen = () => {
           </div>
         )}
 
-        {(!gamification || gamification.threshold === 0) && (
+        {(!gamification || (gamification.threshold === 0 && gamification.badge !== 'advocate')) && (
           <div className="bg-white p-6 rounded-lg shadow border border-gray-200 mb-8 text-center">
             <div className="flex items-center justify-center mb-4">
               <img
@@ -334,7 +306,7 @@ const ScoreScreen = () => {
               const progressPercentage = getProgressPercentage(
                 area.competenceDetails
               );
-              const levelDisplay = getAreaLevelDisplay(area, completedLevels);
+              const levelDisplay = getAreaLevelDisplay(area, completedLevels, latestGrades);
 
               return (
                 <div

@@ -1,4 +1,4 @@
-import { FaPlay, FaLock, FaCheckCircle } from "react-icons/fa";
+import { FaPlay, FaLock, FaCheckCircle, FaRedo } from "react-icons/fa";
 import SCORING_CONFIG from "../configs/scoringConfig";
 import env from "../configs/env";
 
@@ -171,7 +171,7 @@ export const submitQuizResult = async (quizData) => {
 };
 
 export const calculateScores = (gradesArray, backendData = null) => {
-  if (!gradesArray || gradesArray.length !== GRADES_TYPE.length) {
+  if (!backendData) {
     return {
       totalScore: 0,
       areaScores: COMPETENCE_AREAS.map((area) => ({
@@ -180,78 +180,45 @@ export const calculateScores = (gradesArray, backendData = null) => {
         maxScore: getAreaMaxScore(area.id),
         competenceDetails: area.points.map((point) => ({
           point,
-          level: 0,
           grade: "F",
           score: 0,
           quizProgress: { level1: false, level2: false },
         })),
       })),
-      competenceLevels: {},
-      badges: [],
-      milestones: [],
+      allLevelsComplete: false,
     };
   }
 
-  const totalScore = backendData?.totalScore || 0;
-  const competenceScores = backendData?.competenceScores || {};
-  const completedLevels = backendData?.completedLevels || {};
+  const { totalScore, competenceScores, completedLevels, allLevelsComplete } =
+    backendData;
 
-  const areaScores = [];
-  const competenceLevels = {};
-  const badges = [];
-  const milestones = [];
-
-  COMPETENCE_AREAS.forEach((area) => {
+  const areaScores = COMPETENCE_AREAS.map((area) => {
     let areaScore = 0;
-    const competenceDetails = area.points.map((point, index) => {
-      const grade =
-        gradesArray[GRADES_TYPE.findIndex((g) => g === point)] || "F";
-      const compData = competenceScores[point] || {
-        level1: 0,
-        level2: 0,
-        totalScore: 0,
-      };
-      const levelData = completedLevels[point] || {
-        level1: false,
-        level2: false,
-      };
-
+    const competenceDetails = area.points.map((point) => {
+      const compData = competenceScores[point] || { totalScore: 0 };
       areaScore += compData.totalScore;
-      competenceLevels[point] = grade;
-
       return {
         point,
-        level: GRADE_LEVELS[grade]?.level || 0,
-        grade,
         score: compData.totalScore,
-        label: GRADE_LEVELS[grade]?.label || "Not attempted",
-        quizProgress: levelData,
+        quizProgress: completedLevels[point] || {
+          level1: false,
+          level2: false,
+        },
       };
     });
-
-    areaScores.push({
+    return {
       ...area,
       score: areaScore,
       maxScore: getAreaMaxScore(area.id),
       competenceDetails,
-      percentage: Math.round((areaScore / getAreaMaxScore(area.id)) * 100),
-    });
+    };
   });
-
-  const gamificationData = getGamificationDetails(totalScore);
-  if (gamificationData) {
-    badges.push(gamificationData);
-  }
-
-  milestones.push(...getMilestones(totalScore));
 
   return {
     totalScore,
     areaScores,
-    competenceLevels,
-    badges,
-    milestones,
     maxPossibleScore: SCORING_CONFIG.MAX_POSSIBLE_TOTAL,
+    allLevelsComplete,
   };
 };
 
@@ -261,9 +228,23 @@ const getAreaMaxScore = (areaId) => {
   return area.points.length * 300;
 };
 
-export const getGamificationDetails = (totalScore) => {
+export const getGamificationDetails = (
+  totalScore,
+  allLevelsComplete = false
+) => {
   const thresholds = SCORING_CONFIG.GAMIFICATION_THRESHOLDS;
   const messages = SCORING_CONFIG.FEEDBACK_MESSAGES.MILESTONES;
+
+  if (allLevelsComplete) {
+    return {
+      ...messages[thresholds.ELITE_PERFORMER],
+      title: "SIMOnS Advocate",
+      message:
+        "Incredible! You have successfully completed all exercises and mastered every digital competence. You are a true digital advocate!",
+      badge: "advocate",
+      threshold: thresholds.ELITE_PERFORMER,
+    };
+  }
 
   if (totalScore >= thresholds.ELITE_PERFORMER) {
     return {
@@ -324,9 +305,8 @@ export const getMilestones = (totalScore) => {
 
 export const generateQuizFeedback = (quizResult, competenceArea, level) => {
   const { correctAnswers, totalQuestions, accuracy, totalScore } = quizResult;
-  const failed = correctAnswers < totalQuestions;
 
-  if (!failed) {
+  if (correctAnswers === totalQuestions) {
     return {
       status: "success",
       title: level === 1 ? "Way to go!" : "Excellent work!",
@@ -335,12 +315,18 @@ export const generateQuizFeedback = (quizResult, competenceArea, level) => {
   }
 
   const incorrect = totalQuestions - correctAnswers;
-  let title = "Try again...";
+  let title;
+
+  if (correctAnswers === 2) {
+    title = "Almost there!";
+  } else {
+    title = "Try again...";
+  }
 
   return {
     status: "failure",
     title,
-    message: `Correct answers ${correctAnswers}/${totalQuestions}`,
+    message: `You answered ${correctAnswers}/${totalQuestions} correctly`,
     details: {
       correct: correctAnswers,
       incorrect,
@@ -355,17 +341,114 @@ export const generateQuizFeedback = (quizResult, competenceArea, level) => {
   };
 };
 
-export const getGradeStatus = (grade, levelNumber) => {
-  const gradeInfo = GRADE_LEVELS[grade] || GRADE_LEVELS.F;
+export const getGradeStatus = (grade, levelNumber, quizProgress) => {
+  // Default to an empty structure if quizProgress is null/undefined to prevent errors
+  const progress = quizProgress || {
+    level1: { taken: false, perfected: false },
+    level2: { taken: false, perfected: false },
+  };
 
   if (levelNumber === 1) {
-    return gradeInfo.level >= 1 ? "Play" : "Play";
-  } else if (levelNumber === 2) {
-    if (gradeInfo.level >= 2) return "Play";
-    if (gradeInfo.level >= 1) return "Play";
-    return "Locked";
+    // Level 1 is "Completed" if it was perfected via a quiz OR the user got a 'C' grade in pre-assessment.
+    if (progress.level1?.perfected || grade === "C") {
+      return "Completed";
+    }
+    // If it's not perfected but has been taken, it's "Resume".
+    if (progress.level1?.taken) {
+      return "Resume";
+    }
+    // Otherwise, it's ready to "Play".
+    return "Play";
   }
+
+  if (levelNumber === 2) {
+    // First, check if Level 1 is complete. This is the condition to unlock Level 2.
+    const isLevel1Complete = progress.level1?.perfected || grade === "C";
+    if (!isLevel1Complete) {
+      return "Locked";
+    }
+
+    // If Level 2 is unlocked, determine its own status.
+    if (progress.level2?.perfected) {
+      return "Completed";
+    }
+    if (progress.level2?.taken) {
+      return "Resume";
+    }
+    return "Play";
+  }
+
   return "Locked";
+};
+
+export const getAreaLevelDisplay = (areaData, completedLevels, grades) => {
+  if (!areaData?.points || !completedLevels || !grades) return "Not Started";
+
+  const GRADES_TYPE = [
+    "1.1",
+    "1.2",
+    "1.3",
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.4",
+    "2.5",
+    "2.6",
+    "3.1",
+    "3.2",
+    "3.3",
+    "3.4",
+    "4.1",
+    "4.2",
+    "4.3",
+    "4.4",
+    "5.1",
+    "5.2",
+    "5.3",
+    "5.4",
+  ];
+
+  const competencePoints = areaData.points;
+
+  let allL1Perfected = true;
+  let allL2Perfected = true;
+  let anyL2Activity = false;
+  let anyL1Activity = false;
+
+  for (const comp of competencePoints) {
+    const progress = completedLevels[comp] || { level1: {}, level2: {} };
+    const gradeIndex = GRADES_TYPE.findIndex((g) => g === comp);
+    const placementGrade = gradeIndex !== -1 ? grades[gradeIndex] : "F";
+
+    const isL1Perfected = progress.level1?.perfected || placementGrade === "C";
+    const isL2Perfected = progress.level2?.perfected;
+
+    if (!isL1Perfected) allL1Perfected = false;
+    if (!isL2Perfected) allL2Perfected = false;
+
+    if (progress.level2?.taken || isL2Perfected) {
+      anyL2Activity = true;
+    }
+    if (progress.level1?.taken || isL1Perfected) {
+      anyL1Activity = true;
+    }
+  }
+
+  // Apply the rules in order of priority
+  if (allL1Perfected && allL2Perfected) {
+    return "Completed";
+  }
+  if (allL1Perfected) {
+    return "Level 2";
+  }
+  if (anyL2Activity) {
+    return "Level 1-2";
+  }
+  if (anyL1Activity) {
+    return "Level 1";
+  }
+
+  return "Not Started";
 };
 
 export const getIconForStatus = (status) => {
@@ -374,6 +457,8 @@ export const getIconForStatus = (status) => {
       return FaPlay;
     case "Completed":
       return FaCheckCircle;
+    case "Resume":
+      return FaRedo;
     case "Locked":
       return FaLock;
     default:
@@ -474,9 +559,14 @@ export const getProgressPercentage = (competenceDetails) => {
   let completed = 0;
 
   competenceDetails.forEach((comp) => {
-    if (comp.quizProgress?.level1) completed += 1;
-    if (comp.quizProgress?.level2) completed += 1;
+    if (comp.quizProgress?.level1?.perfected) {
+      completed += 1;
+    }
+    if (comp.quizProgress?.level2?.perfected) {
+      completed += 1;
+    }
   });
 
+  if (totalPossible === 0) return 0;
   return Math.round((completed / totalPossible) * 100);
 };

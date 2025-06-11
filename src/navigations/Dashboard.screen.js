@@ -5,6 +5,7 @@ import axios from "axios";
 import env from "../configs/env";
 import BottomNav from "./BottomNav";
 import Header from "./Header";
+import { useToast } from "../hooks/useToast";
 import {
   calculateScores,
   COMPETENCE_AREAS,
@@ -13,7 +14,7 @@ import {
   getIconForStatus,
   getCompetenceLevelText,
   getGamificationDetails,
-  GRADE_LEVELS,
+  getAreaLevelDisplay,
   getProgressPercentage,
 } from "../utils/scoring";
 
@@ -23,6 +24,7 @@ import SimonsAdvocateBadge from "../assets/badges/SimonsAdvocateBadge";
 
 const DashboardScreen = () => {
   const navigate = useNavigate();
+  const toast = useToast();
   const [scores, setScores] = useState(null);
   const [latestGrades, setLatestGrades] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -44,19 +46,19 @@ const DashboardScreen = () => {
           )}/new_tests`
         );
 
-        const grades = response.data?.lastTest?.grades || Array(21).fill("F");
+        const backendData = response.data;
+        const grades = backendData?.grades || Array(21).fill("F");
         setLatestGrades(grades);
 
-        const backendData = {
-          totalScore: response.data?.totalScore || 0,
-          competenceScores: response.data?.competenceScores || {},
-          completedLevels: response.data?.completedLevels || {},
-        };
-        setCompletedLevels(response.data?.completedLevels || {});
+        setCompletedLevels(backendData?.completedLevels || {});
 
         const calculated = calculateScores(grades, backendData);
         setScores(calculated);
-        const gameDetails = getGamificationDetails(backendData.totalScore);
+
+        const gameDetails = getGamificationDetails(
+          backendData.totalScore,
+          backendData.allLevelsComplete
+        );
         setGamification(gameDetails);
 
         try {
@@ -115,6 +117,7 @@ const DashboardScreen = () => {
           icon: subDetails?.icon,
         },
         grade: grade,
+        isCompleted: status === "Completed",
       },
     });
   };
@@ -123,60 +126,38 @@ const DashboardScreen = () => {
     setShowConfirmationModal(true);
   };
 
-  const confirmRetake = () => {
-    localStorage.removeItem("passed");
-    localStorage.removeItem("answers");
-    localStorage.removeItem("completedCategories");
-    for (let i = 1; i <= 5; i++) {
-      localStorage.removeItem(`category_answers_${i}`);
+  const confirmRetake = async () => {
+    const toastId = toast.loading("Resetting your progress...");
+    try {
+      await axios.delete(
+        `${env.SERVER_URL}/auth/student/${localStorage.getItem(
+          "username"
+        )}/tests/reset`
+      );
+
+      localStorage.removeItem("passed");
+      localStorage.removeItem("answers");
+      localStorage.removeItem("completedCategories");
+      for (let i = 1; i <= 5; i++) {
+        localStorage.removeItem(`category_answers_${i}`);
+      }
+
+      toast.dismiss(toastId);
+      toast.success(
+        "Progress reset! You can now start the self-assessment again."
+      );
+      setShowConfirmationModal(false);
+      navigate("/quest-begin");
+    } catch (error) {
+      toast.dismiss(toastId);
+      toast.error("Failed to reset progress. Please try again.");
+      console.error("Error resetting progress:", error);
+      setShowConfirmationModal(false);
     }
-    setShowConfirmationModal(false);
-    navigate("/quest-begin");
   };
 
   const cancelRetake = () => {
     setShowConfirmationModal(false);
-  };
-
-  const getAreaLevelDisplay = (areaData, backendCompletedLevels) => {
-    if (!areaData.competenceDetails || !backendCompletedLevels)
-      return "Not Started";
-
-    let hasLevel1 = false;
-    let hasLevel2 = false;
-
-    areaData.points.forEach((point) => {
-      const levelData = backendCompletedLevels[point];
-      if (levelData) {
-        if (levelData.level1) hasLevel1 = true;
-        if (levelData.level2) hasLevel2 = true;
-      }
-    });
-
-    if (hasLevel1 && hasLevel2) {
-      return "Level 1‑2";
-    } else if (hasLevel2) {
-      return "Level 2";
-    } else if (hasLevel1) {
-      return "Level 1";
-    }
-
-    return "Not Started";
-  };
-
-  const getQuizCompletionStatus = (
-    competenceDetails,
-    subCompetencePoint,
-    levelNumber
-  ) => {
-    const comp = competenceDetails.find((c) => c.point === subCompetencePoint);
-    if (!comp?.quizProgress) return "Play";
-
-    if (levelNumber === 1) {
-      return comp.quizProgress.level1 ? "Completed" : "Play";
-    } else {
-      return comp.quizProgress.level2 ? "Completed" : "Play";
-    }
   };
 
   if (loading) {
@@ -317,10 +298,7 @@ const DashboardScreen = () => {
               const isExpanded = expandedCategory === areaIndex;
               const subCompetences = getSubCompetencesForArea(area.id);
               const areaData = scores.areaScores.find((a) => a.id === area.id);
-              const levelDisplay = getAreaLevelDisplay(
-                areaData,
-                completedLevels
-              );
+              const levelDisplay = getAreaLevelDisplay(areaData, completedLevels, latestGrades);
 
               return (
                 <div key={area.id}>
@@ -389,31 +367,26 @@ const DashboardScreen = () => {
                               ? latestGrades[gradeIndex]
                               : "F";
 
-                          const gradeInfo =
-                            GRADE_LEVELS[grade] || GRADE_LEVELS.F;
+                          const competenceDetail =
+                            areaData.competenceDetails.find(
+                              (cd) => cd.point === sub.point
+                            );
+                          const quizProgress = competenceDetail?.quizProgress;
+
                           const levelText = getCompetenceLevelText(grade);
-                          const statusLevel1 = getGradeStatus(grade, 1);
-                          const statusLevel2 = getGradeStatus(grade, 2);
-
-                          const completionStatusLevel1 =
-                            getQuizCompletionStatus(
-                              areaData.competenceDetails,
-                              sub.point,
-                              1
-                            );
-                          const completionStatusLevel2 =
-                            getQuizCompletionStatus(
-                              areaData.competenceDetails,
-                              sub.point,
-                              2
-                            );
-
-                          const IconLevel1 = getIconForStatus(
-                            completionStatusLevel1
+                          const statusLevel1 = getGradeStatus(
+                            grade,
+                            1,
+                            quizProgress
                           );
-                          const IconLevel2 = getIconForStatus(
-                            completionStatusLevel2
+                          const statusLevel2 = getGradeStatus(
+                            grade,
+                            2,
+                            quizProgress
                           );
+
+                          const IconLevel1 = getIconForStatus(statusLevel1);
+                          const IconLevel2 = getIconForStatus(statusLevel2);
 
                           const competenceNumber =
                             COMPETENCE_AREAS.slice(0, areaIndex).reduce(
@@ -437,11 +410,12 @@ const DashboardScreen = () => {
                                   </p>
                                   <div className="flex items-center mt-1 space-x-2">
                                     <p className="text-xs text-gray-600">
-                                      Current: {levelText}
+                                      Placement: {levelText}
                                     </p>
                                   </div>
                                 </div>
                                 <div className="flex items-center space-x-8 flex-shrink-0">
+                                  {/* Level 1 Button */}
                                   <div className="flex flex-col items-center">
                                     <button
                                       onClick={() =>
@@ -454,29 +428,30 @@ const DashboardScreen = () => {
                                       }
                                       disabled={statusLevel1 === "Locked"}
                                       className={`w-12 h-12 flex items-center justify-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 ${
-                                        completionStatusLevel1 === "Completed"
-                                          ? "bg-amber-400 text-white hover:bg-amber-500"
+                                        statusLevel1 === "Completed"
+                                          ? "bg-amber-400 text-white cursor-pointer"
                                           : statusLevel1 === "Locked"
                                           ? "bg-gray-200 text-gray-400 cursor-not-allowed"
                                           : "bg-white border-2 border-gray-800 text-gray-800 hover:bg-gray-50"
                                       }`}
-                                      title={`Level 1: ${completionStatusLevel1}`}
+                                      title={`Level 1: ${statusLevel1}`}
                                     >
                                       <IconLevel1 className="w-6 h-6" />
                                     </button>
                                     <span
                                       className={`text-xs mt-1 font-medium ${
-                                        completionStatusLevel1 === "Completed"
+                                        statusLevel1 === "Completed"
                                           ? "text-amber-600"
                                           : statusLevel1 === "Locked"
                                           ? "text-gray-400"
                                           : "text-gray-700"
                                       }`}
                                     >
-                                      {completionStatusLevel1}
+                                      {statusLevel1}
                                     </span>
                                   </div>
 
+                                  {/* Level 2 Button */}
                                   <div className="flex flex-col items-center">
                                     <button
                                       onClick={() =>
@@ -489,26 +464,26 @@ const DashboardScreen = () => {
                                       }
                                       disabled={statusLevel2 === "Locked"}
                                       className={`w-12 h-12 flex items-center justify-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 ${
-                                        completionStatusLevel2 === "Completed"
-                                          ? "bg-amber-400 text-white hover:bg-amber-500"
+                                        statusLevel2 === "Completed"
+                                          ? "bg-amber-400 text-white cursor-pointer"
                                           : statusLevel2 === "Locked"
                                           ? "bg-gray-200 text-gray-400 cursor-not-allowed"
                                           : "bg-white border-2 border-gray-800 text-gray-800 hover:bg-gray-50"
                                       }`}
-                                      title={`Level 2: ${completionStatusLevel2}`}
+                                      title={`Level 2: ${statusLevel2}`}
                                     >
                                       <IconLevel2 className="w-6 h-6" />
                                     </button>
                                     <span
                                       className={`text-xs mt-1 font-medium ${
-                                        completionStatusLevel2 === "Completed"
+                                        statusLevel2 === "Completed"
                                           ? "text-amber-600"
                                           : statusLevel2 === "Locked"
                                           ? "text-gray-400"
                                           : "text-gray-700"
                                       }`}
                                     >
-                                      {completionStatusLevel2}
+                                      {statusLevel2}
                                     </span>
                                   </div>
                                 </div>
@@ -528,7 +503,7 @@ const DashboardScreen = () => {
         <div className="text-center mt-8">
           <button
             onClick={handleRetakeAssessment}
-            className="inline-block px-6 py-2 bg-amber-300 text-black font-medium rounded-md shadow-md hover:bg-amber-400 transition-colors duration-300"
+            className="px-6 py-2 bg-amber-300 text-black text-sm font-medium rounded-md shadow-md hover:bg-amber-400 transition-colors duration-300"
           >
             Take Self-Assessment Again
           </button>
@@ -543,8 +518,9 @@ const DashboardScreen = () => {
               Confirm Action
             </h3>
             <p className="text-sm text-gray-600 mb-6">
-              Starting the self-assessment again will reset your current progress and
-              scores. Are you sure you want to continue?
+              This will delete all your existing test scores and progress,
+              allowing you to start the self-assessment from scratch. This
+              action cannot be undone. Are you sure you want to continue?
             </p>
             <div className="flex justify-end space-x-3">
               <button

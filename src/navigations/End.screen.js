@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useLocation, Link, useNavigate } from "react-router-dom";
 import env from "../configs/env";
 import { useToast } from "../hooks/useToast";
@@ -14,200 +14,136 @@ const EndScreen = () => {
     isPartialAssessment = false,
     selectedCategory = null,
   } = location.state || {};
-  const [grades, setGrades] = useState(Array(21).fill("F"));
+  
   const [loading, setLoading] = useState(true);
   const [processingComplete, setProcessingComplete] = useState(false);
   const [categoryResults, setCategoryResults] = useState([]);
+  const hasSubmitted = useRef(false);
 
   const [gradesType] = useState([
-    "1.1",
-    "1.2",
-    "1.3",
-    "2.1",
-    "2.2",
-    "2.3",
-    "2.4",
-    "2.5",
-    "2.6",
-    "3.1",
-    "3.2",
-    "3.3",
-    "3.4",
-    "4.1",
-    "4.2",
-    "4.3",
-    "4.4",
-    "5.1",
-    "5.2",
-    "5.3",
-    "5.4",
+    "1.1", "1.2", "1.3", "2.1", "2.2", "2.3", "2.4", "2.5", "2.6",
+    "3.1", "3.2", "3.3", "3.4", "4.1", "4.2", "4.3", "4.4",
+    "5.1", "5.2", "5.3", "5.4",
   ]);
 
   const completedCount = answers.filter((answer) => answer !== null).length;
 
   const handleContinue = () => {
-    if (isPartialAssessment) {
-      if (checkAllCategoriesComplete()) {
-        toast.success(
-          "Congratulations! You've completed all categories!"
-        );
-      }
-      navigate("/category-selection");
+    if (checkAllCategoriesComplete()) {
+        navigate("/dashboard");
     } else {
-      navigate("/dashboard");
+        navigate("/category-selection");
     }
   };
-
-  const calculateMarks = async (qs, answers) => {
-    if (qs.length !== answers.length) {
-      console.error("Questionnaire and answers must have the same length!");
-      return;
-    }
-
-    let pointsArray = Array(21).fill(0);
-    let marks = [
-      4 * 4,
-      4 * 4,
-      4 * 4,
-      4 * 4,
-      4 * 4,
-      4 * 4,
-      4 * 3,
-      4 * 4,
-      4 * 4,
-      4 * 4,
-      4 * 4,
-      4 * 4,
-      4 * 4,
-      4 * 4,
-      4 * 5,
-      4 * 3,
-      4 * 4,
-      4 * 4,
-      4 * 4,
-      4 * 3,
-      4 * 4,
-    ];
-    let updatedGrades = Array(21).fill("F");
-
-    for (let i = 0; i < qs.length; i++) {
-      let answerValue = answers[i] !== null ? answers[i] + 1 : 0;
-      let full = qs[i].points;
-      const index = gradesType.findIndex((grade) => grade === full.toString());
-      if (index !== -1) {
-        pointsArray[index] += answerValue;
-      }
-    }
-
-    for (let i = 0; i < pointsArray.length; i++) {
-      let score = (100 * pointsArray[i]) / marks[i];
-
-      if (score >= 90) {
-        updatedGrades[i] = "C";
-      } else if (score >= 75) {
-        updatedGrades[i] = "M";
-      } else if (score >= 50) {
-        updatedGrades[i] = "B";
-      } else {
-        updatedGrades[i] = "F";
-      }
-    }
-
-    setGrades(updatedGrades);
-
-    if (isPartialAssessment) {
-      const categoryNumber = Math.floor(questionnaire[0].points);
-      const filteredResults = gradesType
-        .filter((grade) => grade.startsWith(categoryNumber.toString()))
-        .map((grade, idx) => {
-          const gradeIndex = gradesType.findIndex((g) => g === grade);
-          return {
-            grade,
-            value: updatedGrades[gradeIndex],
-          };
-        });
-      setCategoryResults(filteredResults);
-    }
-
-    if (!isPartialAssessment) {
-      await axios.post(
-        `${env.SERVER_URL}/auth/student/${localStorage.getItem(
-          "username"
-        )}/new_tests`,
-        {
-          date: new Date().toISOString().split("T")[0],
-          questions: qs,
-          answers,
-          grades: updatedGrades,
-          points: pointsArray,
-        }
-      );
-    }
-
-    setLoading(false);
-
-    setTimeout(() => {
-      setProcessingComplete(true);
-    }, 1000);
-
-    return updatedGrades;
-  };
-
-  useEffect(() => {
-    const processResults = async () => {
-      try {
-        const result = await calculateMarks(questionnaire, answers);
-
-        if (isPartialAssessment && result) {
-          const completedCategories = JSON.parse(
-            localStorage.getItem("completedCategories") || "[]"
-          );
-
-          const categoryNumber = Math.floor(questionnaire[0].points);
-
-          if (!completedCategories.includes(categoryNumber)) {
-            completedCategories.push(categoryNumber);
-            localStorage.setItem(
-              "completedCategories",
-              JSON.stringify(completedCategories)
-            );
-          }
-
-          const allCategories = [1, 2, 3, 4, 5];
-          const allComplete = allCategories.every((cat) =>
-            completedCategories.includes(cat)
-          );
-
-          if (allComplete) {
-            localStorage.setItem("passed", "Passed");
-
-            try {
-              await axios.patch(
-                `${env.SERVER_URL}/auth/student/${localStorage.getItem(
-                  "username"
-                )}`,
-                { status: "Passed" }
-              );
-            } catch (error) {
-              console.error("Error updating completion status:", error);
-            }
-          }
-        }
-      } catch (error) {
-        console.error("Error processing results:", error);
-        setLoading(false);
-      }
-    };
-
-    processResults();
-  }, []);
-
+  
   const checkAllCategoriesComplete = () => {
     const completedCategories = JSON.parse(
       localStorage.getItem("completedCategories") || "[]"
     );
     return [1, 2, 3, 4, 5].every((cat) => completedCategories.includes(cat));
   };
+
+  useEffect(() => {
+    const calculateAndSubmitMarks = async () => {
+        if (hasSubmitted.current) return;
+        
+        let localQuestionnaire, localAnswers;
+        
+        if (isPartialAssessment && !checkAllCategoriesComplete()) {
+            localQuestionnaire = questionnaire;
+            localAnswers = answers;
+        } else {
+            localQuestionnaire = env.QS_MAIN;
+            localAnswers = JSON.parse(localStorage.getItem("answers") || "[]");
+        }
+
+        if (localAnswers.length !== localQuestionnaire.length) {
+            console.error("Questionnaire and answers mismatch!");
+            setLoading(false);
+            setProcessingComplete(true);
+            return;
+        }
+
+        let pointsArray = Array(21).fill(0);
+        let questionCounts = Array(21).fill(0);
+        let updatedGrades = Array(21).fill("F");
+
+        for (let i = 0; i < localQuestionnaire.length; i++) {
+            let answerValue = localAnswers[i] !== null ? localAnswers[i] + 1 : 0;
+            let full = localQuestionnaire[i].points;
+            const index = gradesType.findIndex((grade) => grade === full.toString());
+            if (index !== -1) {
+                pointsArray[index] += answerValue;
+                questionCounts[index]++;
+            }
+        }
+
+        for (let i = 0; i < pointsArray.length; i++) {
+            if (questionCounts[i] > 0) {
+                let maxPoints = questionCounts[i] * 4;
+                let scorePercentage = (pointsArray[i] / maxPoints) * 100;
+                
+                if (scorePercentage >= 90) updatedGrades[i] = "C";
+                else if (scorePercentage >= 75) updatedGrades[i] = "M";
+                else if (scorePercentage >= 50) updatedGrades[i] = "B";
+                else updatedGrades[i] = "F";
+            }
+        }
+
+        if (isPartialAssessment) {
+            const categoryNumber = Math.floor(questionnaire[0].points);
+            const filteredResults = gradesType
+              .filter((grade) => grade.startsWith(categoryNumber.toString()))
+              .map((grade) => {
+                const gradeIndex = gradesType.findIndex((g) => g === grade);
+                return {
+                  grade,
+                  value: updatedGrades[gradeIndex],
+                };
+              });
+            setCategoryResults(filteredResults);
+            
+            const completedCategories = JSON.parse(localStorage.getItem("completedCategories") || "[]");
+            if (!completedCategories.includes(categoryNumber)) {
+                completedCategories.push(categoryNumber);
+                localStorage.setItem("completedCategories", JSON.stringify(completedCategories));
+            }
+        }
+
+        if (checkAllCategoriesComplete() || !isPartialAssessment) {
+            hasSubmitted.current = true;
+            try {
+                await axios.post(
+                    `${env.SERVER_URL}/auth/student/${localStorage.getItem("username")}/new_tests`,
+                    {
+                      type: 'pre-assessment',
+                      date: new Date().toISOString().split('T')[0],
+                      questions: localQuestionnaire.map((q, i) => ({
+                          ...q,
+                          selectedAnswer: localAnswers[i] !== null ? q.options[localAnswers[i]] : null,
+                      })),
+                      answers: localAnswers,
+                      grades: updatedGrades,
+                    }
+                );
+    
+                localStorage.setItem("passed", "Passed");
+                await axios.patch(
+                    `${env.SERVER_URL}/auth/student/${localStorage.getItem("username")}`,
+                    { status: "Passed" }
+                );
+            } catch(error) {
+                console.error("Error submitting pre-assessment:", error);
+                toast.error("Failed to save results. Please try again.");
+            }
+        }
+
+        setLoading(false);
+        setProcessingComplete(true);
+    };
+
+    calculateAndSubmitMarks();
+  }, []);
 
   const getSubcategoryName = (grade) => {
     const subcategories = {
@@ -274,8 +210,7 @@ const EndScreen = () => {
                 Processing Your Self-Assessment
               </h2>
               <p className="text-center text-gray-600">
-                Please wait while we analyze your responses and determine your
-                starting levels.
+                Please wait while we analyze your responses.
               </p>
             </div>
           ) : (
@@ -305,15 +240,15 @@ const EndScreen = () => {
 
               <div className="text-center mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                  {isPartialAssessment
-                    ? `Category Self-Assessment Complete!`
-                    : "Self-Assessment Complete!"}
+                  {checkAllCategoriesComplete()
+                    ? "Full Self-Assessment Complete!"
+                    : "Category Self-Assessment Complete!"}
                 </h2>
                 <p className="text-gray-600">
-                  You've successfully completed {completedCount} questions.
-                  {isPartialAssessment
-                    ? ` Your ${selectedCategory} starting levels have been determined.`
-                    : " Your starting levels for all competences have been determined."}
+                   You've successfully completed {completedCount} questions.
+                  {checkAllCategoriesComplete()
+                    ? "Your starting levels for all competences have been determined."
+                    : "You've successfully completed this category. Complete the others to finalize your self-assessment."}
                 </p>
               </div>
 
@@ -324,37 +259,32 @@ const EndScreen = () => {
                       {completedCount}
                     </span>
                     <span className="text-sm text-gray-600">
-                      Questions Answered
+                      Questions Answered in this Session
                     </span>
                   </div>
                 </div>
               </div>
-
-              {isPartialAssessment && (
+              
+              {isPartialAssessment && categoryResults.length > 0 && (
                 <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-8">
                   <h3 className="font-medium text-gray-900 mb-3">
-                    {selectedCategory} Self-Assessment Results
+                    {selectedCategory} Results
                   </h3>
                   <div className="space-y-3">
                     {categoryResults.map((result, idx) => (
                       <div
                         key={idx}
-                        className="flex items-center justify-between border-b border-gray-100 pb-2"
+                        className="flex items-center justify-between border-b border-gray-100 pb-2 last:border-b-0"
                       >
-                        <div>
-                          <p className="text-xs text-gray-600">
+                        <p className="text-xs text-gray-600">
                             {getSubcategoryName(result.grade)}
-                          </p>
-                        </div>
+                        </p>
                         <span
                           className={`px-2 py-1 rounded-full text-xs font-medium ${
-                            result.value === "C"
-                              ? "bg-green-100 text-green-800"
-                              : result.value === "M"
-                              ? "bg-blue-100 text-blue-800"
-                              : result.value === "B"
-                              ? "bg-amber-100 text-amber-800"
-                              : "bg-gray-100 text-gray-800"
+                            result.value === "C" ? "bg-green-100 text-green-800"
+                            : result.value === "M" ? "bg-blue-100 text-blue-800"
+                            : result.value === "B" ? "bg-amber-100 text-amber-800"
+                            : "bg-gray-100 text-gray-800"
                           }`}
                         >
                           {getGradeLabel(result.value)}
@@ -368,9 +298,9 @@ const EndScreen = () => {
               <div className="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-4 mb-8">
                 <h3 className="font-medium text-gray-900 mb-2">Next Steps</h3>
                 <p className="text-sm text-gray-800">
-                  {isPartialAssessment
-                    ? "The self-assessment determines which levels you can access. Complete other categories to start earning points through timed exercises!"
-                    : "Your self-assessment is complete! Start earning points by taking timed exercises for each competence level."}
+                  {checkAllCategoriesComplete()
+                    ? "Your self-assessment is complete! You can now proceed to your dashboard to start the timed exercises."
+                    : "Continue to the next category to complete your self-assessment."}
                 </p>
               </div>
             </div>
@@ -387,9 +317,9 @@ const EndScreen = () => {
           >
             {loading
               ? "Processing..."
-              : isPartialAssessment
-              ? "Back to Categories"
-              : "Go to Dashboard"}
+              : checkAllCategoriesComplete()
+              ? "Go to Dashboard"
+              : "Back to Categories"}
           </button>
         </div>
       </div>

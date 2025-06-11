@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState, useCallback, useMemo } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import env from "../configs/env";
 import { FaChevronLeft, FaClock } from "react-icons/fa";
@@ -41,7 +41,6 @@ const SubQuestionnaireScreen = () => {
       : Array(questionnaire.length).fill(null);
   });
 
-  // Timer states
   const [timeRemaining, setTimeRemaining] = useState(
     SCORING_CONFIG.TIME_LIMIT_SECONDS
   );
@@ -51,7 +50,30 @@ const SubQuestionnaireScreen = () => {
   const [questionStartTime, setQuestionStartTime] = useState(Date.now());
   const [isTimerActive, setIsTimerActive] = useState(true);
 
-  // Timer effect
+   const { shuffledOptions, correctIndexMap } = useMemo(() => {
+    if (!questionnaire || questionnaire.length === 0) {
+      return { shuffledOptions: [], correctIndexMap: {} };
+    }
+    const currentQuestion = questionnaire[currentQuestionIndex];
+    if (!currentQuestion) {
+        return { shuffledOptions: [], correctIndexMap: {} };
+    }
+
+    const optionsWithIndices = currentQuestion.options.map((option, index) => ({
+      text: option,
+      originalIndex: index,
+    }));
+
+    const shuffled = [...optionsWithIndices].sort(() => 0.5 - Math.random());
+    
+    const newCorrectIndexMap = {};
+    shuffled.forEach((option, newIndex) => {
+        newCorrectIndexMap[option.originalIndex] = newIndex;
+    });
+
+    return { shuffledOptions: shuffled, correctIndexMap: newCorrectIndexMap };
+  }, [currentQuestionIndex, questionnaire]);
+
   useEffect(() => {
     if (!isTimerActive || timeRemaining <= 0) return;
 
@@ -175,7 +197,7 @@ const SubQuestionnaireScreen = () => {
   };
 
   const handleOptionChange = (optionIndex) => {
-    if (!isTimerActive && timeRemaining <= 0) return; // Don't allow changes after timeout
+    if (!isTimerActive && timeRemaining <= 0) return;
 
     const newAnswers = [...answers];
     newAnswers[currentQuestionIndex] = optionIndex;
@@ -313,17 +335,17 @@ const SubQuestionnaireScreen = () => {
 
           {/* Options */}
           <div className="space-y-3 mb-8">
-            {currentQuestion.options.map((option, optionIndex) => (
+            {shuffledOptions.map((option, shuffledIndex) => (
               <div
-                key={optionIndex}
+                key={shuffledIndex}
                 className={`p-4 border rounded-lg transition-all duration-200 cursor-pointer ${
                   timeRemaining === 0
                     ? "border-gray-200 bg-gray-50 cursor-not-allowed opacity-60"
-                    : selectedAnswerIndex === optionIndex
+                    : selectedAnswerIndex === option.originalIndex
                     ? "border-amber-500 bg-amber-50 ring-2 ring-amber-300"
                     : "border-gray-200 bg-white hover:border-gray-400"
                 }`}
-                onClick={() => handleOptionChange(optionIndex)}
+                onClick={() => handleOptionChange(option.originalIndex)}
               >
                 <label
                   className={`flex items-center ${
@@ -336,16 +358,16 @@ const SubQuestionnaireScreen = () => {
                     type="radio"
                     name={`option-${currentQuestionIndex}`}
                     className="h-4 w-4 text-amber-600 border-gray-300 focus:ring-amber-500 mr-3 flex-shrink-0"
-                    checked={selectedAnswerIndex === optionIndex}
-                    onChange={() => handleOptionChange(optionIndex)}
+                    checked={selectedAnswerIndex === option.originalIndex}
+                    onChange={() => handleOptionChange(option.originalIndex)}
                     disabled={timeRemaining === 0}
-                    aria-labelledby={`option-label-${currentQuestionIndex}-${optionIndex}`}
+                    aria-labelledby={`option-label-${currentQuestionIndex}-${shuffledIndex}`}
                   />
                   <span
-                    id={`option-label-${currentQuestionIndex}-${optionIndex}`}
+                    id={`option-label-${currentQuestionIndex}-${shuffledIndex}`}
                     className="text-sm font-medium text-gray-800"
                   >
-                    {option}
+                    {option.text}
                   </span>
                 </label>
               </div>

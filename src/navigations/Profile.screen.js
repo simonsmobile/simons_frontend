@@ -179,7 +179,7 @@ const ProfileScreen = () => {
 
         <button
           onClick={handleLogout}
-          className="w-full py-3 bg-amber-600 text-white font-medium rounded-md shadow-md hover:bg-amber-500 transition-colors duration-300 flex items-center justify-center"
+          className="w-full py-3 text-sm bg-amber-600 text-white font-medium rounded-md shadow-md hover:bg-amber-500 transition-colors duration-300 flex items-center justify-center"
         >
           <FaSignOutAlt className="mr-2" />
           Logout

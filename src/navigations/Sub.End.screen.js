@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import env from "../configs/env";
 import axios from "axios";
@@ -28,6 +28,7 @@ const SubEndScreen = () => {
   const [loading, setLoading] = useState(true);
   const [processingComplete, setProcessingComplete] = useState(false);
   const [newGrade, setNewGrade] = useState("F");
+  const hasSubmitted = useRef(false);
 
   const levelNumber = level === "basic" ? 1 : 2;
 
@@ -56,6 +57,9 @@ const SubEndScreen = () => {
   };
 
   const processQuizResults = async () => {
+    if (hasSubmitted.current) return;
+    hasSubmitted.current = true;
+
     try {
       const result = calculateQuizScore(answers, questionnaire, timeTaken);
       setQuizResult(result);
@@ -63,15 +67,14 @@ const SubEndScreen = () => {
       const feedbackData = generateQuizFeedback(result, category, levelNumber);
       setFeedback(feedbackData);
 
-      const { correctAnswers, totalQuestions, isPerfect } = result;
+      const { correctAnswers, totalQuestions } = result;
       let grade = "F";
-
-      if (correctAnswers === totalQuestions) {
-        if (isPerfect) {
-          grade = levelNumber === 1 ? "M" : "C";
-        } else {
-          grade = levelNumber === 1 ? "B" : "M";
-        }
+      const accuracy = correctAnswers / totalQuestions;
+      
+      if (accuracy === 1) {
+        grade = levelNumber === 1 ? "M" : "C";
+      } else if (accuracy > 0.5) { 
+        grade = "B";
       }
 
       setNewGrade(grade);
@@ -91,7 +94,8 @@ const SubEndScreen = () => {
   const submitQuizToBackend = async (result, grade) => {
     try {
       const quizData = {
-        grades: [],
+        type: 'quiz',
+        newGrade: grade,
         answers,
         questions: questionnaire,
         timeTaken,
@@ -100,73 +104,17 @@ const SubEndScreen = () => {
         totalScore: result.totalScore,
         baseScore: result.baseScore,
         timeBonus: result.timeBonus,
-        perfectBonus: result.isPerfect
-          ? Math.round(SCORING_CONFIG.PERFECT_RUN_BONUS / 21)
-          : 0,
+        perfectBonus: result.perfectBonus,
         correctAnswers: result.correctAnswers,
         accuracy: result.accuracy,
         isPerfect: result.isPerfect,
       };
 
-      const response = await axios.get(
-        `${env.SERVER_URL}/auth/student/${localStorage.getItem(
-          "username"
-        )}/new_tests`
-      );
-
-      const currentGrades =
-        response.data?.lastTest?.grades || Array(21).fill("F");
-
-      const competenceMap = {
-        1.1: 0,
-        1.2: 1,
-        1.3: 2,
-        2.1: 3,
-        2.2: 4,
-        2.3: 5,
-        2.4: 6,
-        2.5: 7,
-        2.6: 8,
-        3.1: 9,
-        3.2: 10,
-        3.3: 11,
-        3.4: 12,
-        4.1: 13,
-        4.2: 14,
-        4.3: 15,
-        4.4: 16,
-        5.1: 17,
-        5.2: 18,
-        5.3: 19,
-        5.4: 20,
-      };
-
-      const competenceIndex = competenceMap[sub?.category];
-      if (
-        competenceIndex !== undefined &&
-        result.correctAnswers === result.totalQuestions
-      ) {
-        const existingGradeValue = getGradeValue(
-          currentGrades[competenceIndex]
-        );
-        const newGradeValue = getGradeValue(grade);
-
-        if (newGradeValue > existingGradeValue) {
-          currentGrades[competenceIndex] = grade;
-        }
-      }
-
-      quizData.grades = currentGrades;
-
       await submitQuizResult(quizData);
+
     } catch (error) {
       console.error("Error updating backend score:", error);
     }
-  };
-
-  const getGradeValue = (grade) => {
-    const values = { F: 0, B: 1, M: 2, C: 3 };
-    return values[grade] || 0;
   };
 
   useEffect(() => {

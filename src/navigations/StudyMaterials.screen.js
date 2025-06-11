@@ -9,7 +9,8 @@ const StudyMaterialsScreen = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const { index, level, category, sub, grade } = location.state || {};
+  const { index, level, category, sub, grade, isCompleted } =
+    location.state || {};
 
   const subCategoryIdentifier = sub?.category;
 
@@ -162,10 +163,11 @@ const StudyMaterialsScreen = () => {
             </button>
             <button
               onClick={handleTakeTest}
-              className="flex items-center justify-center px-4 py-3 bg-amber-400 text-black font-medium rounded-md shadow-md hover:bg-amber-500 transition-colors duration-300 text-sm"
+              disabled={isCompleted}
+              className="flex items-center justify-center px-4 py-3 bg-amber-400 text-black font-medium rounded-md shadow-md hover:bg-amber-500 transition-colors duration-300 text-sm disabled:bg-gray-300 disabled:cursor-not-allowed"
             >
               <MdOutlineQuiz className="mr-2 text-lg" />
-              Take the Quiz
+              {isCompleted ? "Quiz Completed" : "Take the Quiz"}
             </button>
           </div>
 
