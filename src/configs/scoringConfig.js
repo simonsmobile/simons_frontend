@@ -34,7 +34,7 @@ export const SCORING_CONFIG = {
     F: {
       level: 0,
       points: 0,
-      label: "Not achieved",
+      label: "Not attempted",
       description: "No competence demonstrated",
     },
     B: {

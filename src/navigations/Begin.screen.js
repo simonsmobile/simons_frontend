@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
 import env from "../configs/env";
+import CategoryTooltip from "../components/CategoryTooltip";
 
 const BeginScreen = () => {
   const navigate = useNavigate();
@@ -51,16 +51,17 @@ const BeginScreen = () => {
         return (
           <svg
             className="w-10 h-10"
-            fill="none"
             viewBox="0 0 24 24"
+            fill="none"
             stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-            />
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            <line x1="11" y1="8" x2="11" y2="14" />
+            <line x1="8" y1="11" x2="14" y2="11" />
           </svg>
         );
       case "users":
@@ -131,6 +132,14 @@ const BeginScreen = () => {
         return null;
     }
   };
+
+  const categories = [
+    { id: 1, icon: "search" },
+    { id: 2, icon: "users" },
+    { id: 3, icon: "video" },
+    { id: 4, icon: "shield" },
+    { id: 5, icon: "puzzle" },
+  ];
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
@@ -203,44 +212,11 @@ const BeginScreen = () => {
             </div>
           </div>
 
-          <div className="mb-6">
-            <h3 className="text-lg font-medium text-gray-900 mb-3">
-              Category Progress
-            </h3>
-            <div className="grid grid-cols-5 gap-2">
-              {[
-                { id: 1, icon: "search" },
-                { id: 2, icon: "users" },
-                { id: 3, icon: "video" },
-                { id: 4, icon: "shield" },
-                { id: 5, icon: "puzzle" },
-              ].map((category) => (
-                <div
-                  key={category.id}
-                  className={`flex items-center justify-center p-3 rounded-lg ${
-                    completedCategories.includes(category.id)
-                      ? "bg-amber-100 hover:bg-amber-200 border-2 border-amber-300"
-                      : "bg-gray-200 hover:bg-gray-300 border-2 border-gray-300"
-                  }`}
-                >
-                  <div
-                    className={`${
-                      completedCategories.includes(category.id)
-                        ? "bg-amber-600"
-                        : "bg-black"
-                    } text-white p-2 rounded-lg flex items-center justify-center`}
-                  >
-                    {getCategoryIcon(category.icon)}
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="mt-2 text-sm text-gray-600 text-center">
-              <span className="font-medium">{completedCategories.length}</span>{" "}
-              of <span className="font-medium">{totalCategories}</span>{" "}
-              categories completed
-            </div>
-          </div>
+          <CategoryTooltip
+            categories={categories}
+            completedCategories={completedCategories}
+            getCategoryIcon={getCategoryIcon}
+          />
 
           <div className="grid grid-cols-1 gap-4 mb-8">
             {completedCount === 0 && (

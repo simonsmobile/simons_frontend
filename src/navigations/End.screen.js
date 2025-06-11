@@ -241,11 +241,11 @@ const EndScreen = () => {
       case "C":
         return "Level 2";
       case "M":
-        return "Level 1 - Mastery";
+        return "Level 1";
       case "B":
-        return "Level 1 - Basic";
+        return "Level 1";
       case "F":
-        return "Not Achieved";
+        return "Not Attempted";
       default:
         return "Unknown";
     }
@@ -260,8 +260,8 @@ const EndScreen = () => {
       <div className="sticky top-0 z-10 bg-white shadow-sm px-4 py-3">
         <h1 className="text-lg font-semibold text-center">
           {isPartialAssessment
-            ? `${selectedCategory} Assessment`
-            : "Assessment"}
+            ? `${selectedCategory} Self-Assessment`
+            : "Self-Assessment"}
         </h1>
       </div>
 
@@ -271,7 +271,7 @@ const EndScreen = () => {
             <div className="flex flex-col items-center justify-center py-12">
               <div className="w-20 h-20 border-4 border-t-accent border-gray-200 rounded-full animate-spin mb-6"></div>
               <h2 className="text-xl font-medium text-gray-900 mb-2">
-                Processing Your Assessment
+                Processing Your Self-Assessment
               </h2>
               <p className="text-center text-gray-600">
                 Please wait while we analyze your responses and determine your
@@ -306,8 +306,8 @@ const EndScreen = () => {
               <div className="text-center mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
                   {isPartialAssessment
-                    ? `Category Assessment Complete!`
-                    : "Assessment Assessment Complete!"}
+                    ? `Category Self-Assessment Complete!`
+                    : "Self-Assessment Complete!"}
                 </h2>
                 <p className="text-gray-600">
                   You've successfully completed {completedCount} questions.
@@ -333,7 +333,7 @@ const EndScreen = () => {
               {isPartialAssessment && (
                 <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-8">
                   <h3 className="font-medium text-gray-900 mb-3">
-                    {selectedCategory} Assessment Results
+                    {selectedCategory} Self-Assessment Results
                   </h3>
                   <div className="space-y-3">
                     {categoryResults.map((result, idx) => (
@@ -369,8 +369,8 @@ const EndScreen = () => {
                 <h3 className="font-medium text-gray-900 mb-2">Next Steps</h3>
                 <p className="text-sm text-gray-800">
                   {isPartialAssessment
-                    ? "The assessment determines which levels you can access. Complete other categories to start earning points through timed exercises!"
-                    : "Your assessment is complete! Start earning points by taking timed exercises for each competence level."}
+                    ? "The self-assessment determines which levels you can access. Complete other categories to start earning points through timed exercises!"
+                    : "Your self-assessment is complete! Start earning points by taking timed exercises for each competence level."}
                 </p>
               </div>
             </div>

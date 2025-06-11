@@ -385,10 +385,6 @@ const QuestionnaireScreen = () => {
             <div className="inline-block px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-xs font-medium">
               {getQuestionSubcategory(currentQuestion.points)}
             </div>
-
-            <div className="inline-block px-3 py-1 bg-amber-300 text-gray-800 rounded-full text-xs font-medium">
-              {translateLevelTerminology(currentQuestion.level)}
-            </div>
           </div>
 
           <div className="mb-8">

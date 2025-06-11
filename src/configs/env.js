@@ -902,7 +902,7 @@ const env = {
     {
       title: "Question 61",
       question:
-        "4.3.1 I am aware that I should manage the time I spend on my digital devices",
+        "I am aware that I should manage the time I spend on my digital devices",
       options: [
         "I don’t know how to do it",
         "I can do it with help",
@@ -917,7 +917,7 @@ const env = {
     {
       title: "Question 62",
       question:
-        "4.3.3 I know how to protect myself from unwanted and malicious online encounters and materials (e.g. spam messages, identity theft emails).",
+        "I know how to protect myself from unwanted and malicious online encounters and materials (e.g. spam messages, identity theft emails).",
       options: [
         "I don’t know how to do it",
         "I can do it with help",

@@ -41,7 +41,7 @@ const CompleteAccountScreen = () => {
           </h1>
           <p className="text-gray-600 mb-8">
             Your account has been successfully created. Please read the
-            instructions before proceeding to the assessment.
+            instructions before proceeding to the self-assessment.
           </p>
 
           <div className="border border-amber-400 bg-amber-50 rounded-lg p-6 mb-8 text-left shadow-sm">
@@ -82,7 +82,7 @@ const CompleteAccountScreen = () => {
                   />
                 </svg>
                 <span className="text-gray-700">
-                  The assessment contains 82 questions and takes about 20
+                  The self-assessment contains 82 questions and takes about 20
                   minutes
                 </span>
               </li>
@@ -119,7 +119,7 @@ const CompleteAccountScreen = () => {
                   />
                 </svg>
                 <span className="text-gray-700">
-                  Learning materials will be suggested based on your assessment
+                  Learning materials will be suggested based on your self-assessment
                 </span>
               </li>
             </ul>

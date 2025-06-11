@@ -224,7 +224,7 @@ export const calculateScores = (gradesArray, backendData = null) => {
         level: GRADE_LEVELS[grade]?.level || 0,
         grade,
         score: compData.totalScore,
-        label: GRADE_LEVELS[grade]?.label || "Not achieved",
+        label: GRADE_LEVELS[grade]?.label || "Not attempted",
         quizProgress: levelData,
       };
     });
@@ -443,7 +443,7 @@ export const getSubCompetencesForArea = (areaId) => {
 };
 
 export const getCompetenceLevelText = (grade) => {
-  return GRADE_LEVELS[grade]?.label || "Not achieved";
+  return GRADE_LEVELS[grade]?.label || "Not attempted";
 };
 
 export const translateLevelTerminology = (level) => {

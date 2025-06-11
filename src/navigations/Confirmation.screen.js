@@ -126,7 +126,7 @@ const ConfirmationScreen = () => {
           <div className="relative overflow-hidden">
             <div className="absolute -right-10 -top-8 w-24 h-24 bg-amber-200 rounded-full opacity-30 z-0"></div>
             <Link
-              to="/quest-begin"
+              to="/category-selection"
               className="w-full inline-block py-3 bg-black text-white font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300 text-center relative z-10"
             >
               {passed ? "Review Survey Results" : "Begin Survey"}

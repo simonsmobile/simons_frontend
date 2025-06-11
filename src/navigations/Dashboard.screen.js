@@ -530,7 +530,7 @@ const DashboardScreen = () => {
             onClick={handleRetakeAssessment}
             className="inline-block px-6 py-2 bg-amber-300 text-black font-medium rounded-md shadow-md hover:bg-amber-400 transition-colors duration-300"
           >
-            Take Assessment Again
+            Take Self-Assessment Again
           </button>
         </div>
       </main>
@@ -543,7 +543,7 @@ const DashboardScreen = () => {
               Confirm Action
             </h3>
             <p className="text-sm text-gray-600 mb-6">
-              Starting the assessment again will reset your current progress and
+              Starting the self-assessment again will reset your current progress and
               scores. Are you sure you want to continue?
             </p>
             <div className="flex justify-end space-x-3">

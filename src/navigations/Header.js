@@ -49,15 +49,10 @@ const Header = ({ title, showMenuButton = false, showSimonsText = false }) => {
       <div className="max-w-xl mx-auto px-4 py-3 flex justify-between items-center relative">
         <div className="flex items-center">
           <img
-            src={`${process.env.PUBLIC_URL}/images/Picturec.png`}
+            src={`${process.env.PUBLIC_URL}/images/resize-logo.png`}
             alt="SIMOnS Logo"
             className="h-8 w-auto mr-2"
           />
-          {showSimonsText && (
-            <h1 className="text-xl font-bold text-black hidden sm:block">
-              SIMOnS
-            </h1>
-          )}
           {!showSimonsText && title && (
             <h1 className="text-lg font-semibold text-center flex-1 absolute left-1/2 transform -translate-x-1/2">
               {title}

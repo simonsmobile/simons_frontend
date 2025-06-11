@@ -35,7 +35,7 @@ const InstructionsScreen = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <p className="text-gray-800 text-sm leading-relaxed">
-                The initial assessment contains a comprehensive set of 82 self-assessment questions. This test may take
+                The initial self-assessment contains a comprehensive set of 82 self-assessment questions. This test may take
                 about 20 minutes to complete. Therefore, you are advised to respond to all the questions with due attention
                 so that the app suggests you take necessary learning materials corresponding to the specific area of digital
                 competence you need to improve, based on your own self-assessment.
@@ -55,7 +55,7 @@ const InstructionsScreen = () => {
               <li className="p-4 flex items-center">
                 <div className="flex-shrink-0 w-8 h-8 bg-black text-white rounded-full flex items-center justify-center mr-3 text-sm">1</div>
                 <div>
-                  <p className="text-gray-700">Dedicate appropriate time and attention for the assessment.</p>
+                  <p className="text-gray-700">Dedicate appropriate time and attention for the self-assessment.</p>
                 </div>
               </li>
               <li className="p-4 flex items-center">

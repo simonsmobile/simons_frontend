@@ -225,7 +225,7 @@ const CategorySelectionScreen = () => {
               Select one area to start
             </h2>
             <p className="text-gray-600">
-              Choose a specific competence area or take the full assessment
+              Choose a specific competence area or take the full self-assessment
             </p>
           </div>
 
@@ -279,15 +279,37 @@ const CategorySelectionScreen = () => {
             onClick={handleFullAssessment}
             className="w-full py-3 bg-black text-white font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300"
           >
-            Take Full Assessment
+            Take Full Self-Assessment
           </button>
 
           <div className="mt-4 text-center">
             <p className="text-sm text-gray-600">
-              The full assessment contains all 82 questions and provides a
+              The full self-assessment contains all 82 questions and provides a
               complete evaluation of your digital competence
             </p>
           </div>
+        </div>
+        <div className="text-center mt-4 mb-2">
+          <Link
+            to="/quest-begin"
+            className="text-gray-600 text-sm hover:underline inline-flex items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-4 w-4 mr-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 5l-7 7 7 7"
+              />
+            </svg>
+            Check Progress Status
+          </Link>
         </div>
         <div className="text-center mt-4 mb-2">
           {checkAllCategoriesComplete() ? (
