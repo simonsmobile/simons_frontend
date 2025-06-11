@@ -1,50 +1,205 @@
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body {
-  background-color: var(--primary-bg) !important;
-  background-image: url('Background.png');
-  background-size: cover;
-  background-repeat: repeat-y;
-  background-position: center;
-
-  /* Fonts */
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.no-link {
-  text-decoration: none;
-}
-
+/* Global variables */
 :root {
-  --primary-bg: #3f62ca;
-  --primary-accent: #1F41BB;
-  --primary-accent2: #3a4d83;
-  --secondary-bg: #ffffff;
-  --secondary-accent: #e5e5e9;
-  --primary-font: #f1f2f6;
-  --secondary-font: #4b4c50;
-  --dark: #080808;
-  --light: #d3d3d3;
-  --success: #21baa0;
-  --info: #10a8c3;
-  --warning: #e9cb3c;
-  --danger: #e74c3c;
-  --shadow: #bdc3c7;
-  --highlight: #1fa5ed;
-  --highlight2: #2bd471;
-  --bg0: #d9dcf1;
-  --bg1: #f8f9ff;
-  --bg2: #7c7af5;
-  --bg3: #260115;
-
+  --primary-accent: #ffd54f;
+  --primary-black: #000000;
+  --primary-white: #ffffff;
 }
 
+/* Base styles */
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+  background-color: #f9fafb;
+}
 
+/* Custom component classes */
+@layer components {
+  /* Buttons */
+  .btn {
+    @apply px-4 py-2 rounded-md transition-colors duration-200 font-medium;
+  }
+  
+  .btn-primary {
+    @apply bg-black text-white hover:bg-gray-800;
+  }
+  
+  .btn-outline {
+    @apply bg-white text-black border border-black hover:bg-gray-100;
+  }
+  
+  .btn-accent {
+    @apply bg-accent text-black hover:bg-amber-400;
+  }
+  
+  /* Inputs */
+  .input {
+    @apply w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent;
+  }
+  
+  /* Cards */
+  .card {
+    @apply bg-white border border-gray-200 rounded-lg shadow-sm p-4;
+  }
+  
+  .card-title {
+    @apply text-lg font-semibold text-gray-900 mb-2;
+  }
+  
+  /* Headers */
+  .page-title {
+    @apply text-2xl font-bold text-gray-900 mb-2;
+  }
+  
+  .section-title {
+    @apply text-xl font-semibold text-gray-900 mb-4;
+  }
+  
+  /* Links */
+  .link {
+    @apply text-accent hover:text-amber-600 hover:underline;
+  }
+  
+  /* Form elements */
+  .form-group {
+    @apply mb-4;
+  }
+  
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 mb-1;
+  }
+  
+  /* Progress bars */
+  .progress-container {
+    @apply w-full bg-gray-200 rounded-full h-2.5 mb-4;
+  }
+  
+  .progress-bar {
+    @apply h-2.5 rounded-full bg-accent;
+  }
+  
+  /* Badges */
+  .badge {
+    @apply inline-block px-3 py-1 rounded-full text-xs font-medium;
+  }
+  
+  .badge-accent {
+    @apply bg-amber-100 text-amber-800;
+  }
+  
+  .badge-success {
+    @apply bg-green-100 text-green-800;
+  }
+  
+  .badge-error {
+    @apply bg-red-100 text-red-800;
+  }
+  
+  /* Loaders */
+  .loader {
+    @apply w-5 h-5 border-2 border-t-transparent rounded-full animate-spin;
+  }
+  
+  .loader-light {
+    @apply border-white;
+  }
+  
+  .loader-dark {
+    @apply border-gray-700;
+  }
+  
+  /* Layout containers */
+  .container-narrow {
+    @apply max-w-md mx-auto;
+  }
+  
+  .container-wide {
+    @apply max-w-3xl mx-auto;
+  }
+  
+  /* Responsive elements */
+  .mobile-only {
+    @apply sm:hidden;
+  }
+  
+  .desktop-only {
+    @apply hidden sm:block;
+  }
+}
+
+/* Legacy compatibility styles */
+.container {
+  @apply flex flex-col min-h-screen bg-white;
+}
+
+.top-nav {
+  @apply sticky top-0 z-10 bg-white shadow-sm px-4 py-3;
+}
+
+.button {
+  @apply px-4 py-2 rounded-md transition-colors duration-200 font-medium;
+}
+
+.login-button {
+  @apply bg-black text-white hover:bg-gray-800;
+}
+
+.register-button {
+  @apply bg-white text-black border border-black hover:bg-gray-100;
+}
+
+.input-field {
+  @apply w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.4s ease-out;
+}
+
+/* Video player styling */
+video::-webkit-media-controls-panel {
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+
+/* Accessibility */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

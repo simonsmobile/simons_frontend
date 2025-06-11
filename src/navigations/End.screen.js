@@ -1,179 +1,331 @@
-import React, { useEffect, useState } from 'react';
-import { useLocation, Link, useNavigate } from 'react-router-dom';
-import env from '../configs/env';
-import axios from 'axios';
+import React, { useEffect, useState, useRef } from "react";
+import { useLocation, Link, useNavigate } from "react-router-dom";
+import env from "../configs/env";
+import { useToast } from "../hooks/useToast";
+import axios from "axios";
 
 const EndScreen = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const { answers = [], questionnaire = [] } = location.state || {};
-  const [grades, setGrades ] = useState(['F', 'F', 'F', 'F', 'F']);
-  const [gradesType, setGradesType ] = useState([
-    '1.1',
-    '1.2',
-    '1.3',
-    '2.1',
-    '2.2',
-    '2.3',
-    '2.4',
-    '2.5',
-    '2.6',
-    '3.1',
-    '3.2',
-    '3.3',
-    '3.4',
-    '4.1',
-    '4.2',
-    '4.3',
-    '4.4',
-    '5.1',
-    '5.2',
-    '5.3',
-    '5.4'
+  const toast = useToast();
+  const {
+    answers = [],
+    questionnaire = [],
+    isPartialAssessment = false,
+    selectedCategory = null,
+  } = location.state || {};
+  
+  const [loading, setLoading] = useState(true);
+  const [processingComplete, setProcessingComplete] = useState(false);
+  const [categoryResults, setCategoryResults] = useState([]);
+  const hasSubmitted = useRef(false);
+
+  const [gradesType] = useState([
+    "1.1", "1.2", "1.3", "2.1", "2.2", "2.3", "2.4", "2.5", "2.6",
+    "3.1", "3.2", "3.3", "3.4", "4.1", "4.2", "4.3", "4.4",
+    "5.1", "5.2", "5.3", "5.4",
   ]);
-  const completedCount = answers.filter(answer => answer !== null).length;
 
-  const startQuestionnaire = () => {
-    navigate('/dashboard');
+  const completedCount = answers.filter((answer) => answer !== null).length;
+
+  const handleContinue = () => {
+    if (checkAllCategoriesComplete()) {
+        navigate("/dashboard");
+    } else {
+        navigate("/category-selection");
+    }
   };
-
-  const calculateMarks = async (qs, answers) => {
-    if (qs.length !== answers.length) {
-      console.error("Questionnaire and answers must have the same length!");
-      return;
-    }
   
-    let pointsArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-    let marks = [4*4, 4*4, 4*4, 4*4, 4*4, 4*4, 4*3, 4*4, 4*4, 4*4, 4*4, 4*4, 4*4, 4*4, 4*5, 4*3, 4*4, 4*4, 4*4, 4*3, 4*4];
-    let updatedGrades = ['F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F', 'F'];
-  
-    for (let i = 0; i < qs.length; i++) {
-      // Add 1 to each non-null answer, or replace null with 0
-      let answerValue = answers[i] !== null ? answers[i] + 1 : 0;
-      
-      // Get the point value from the questionnaire
-      let full = qs[i].points;
-  
-      // Add the answer value to the corresponding category in the pointsArray
-      if (full === 1.1) {
-        pointsArray[0] += answerValue;
-      } else if (full === 1.2) {
-        pointsArray[1] += answerValue;
-      } else if (full === 1.3) {
-        pointsArray[2] += answerValue;
-      } else if (full === 2.1) {
-        pointsArray[3] += answerValue;
-      } else if (full === 2.2) {
-        pointsArray[4] += answerValue;
-      } else if (full === 2.3) {
-        pointsArray[5] += answerValue;
-      } else if (full === 2.4) {
-        pointsArray[6] += answerValue;
-      } else if (full === 2.5) {
-        pointsArray[7] += answerValue;
-      } else if (full === 2.6) {
-        pointsArray[8] += answerValue;
-      } else if (full === 3.1) {
-        pointsArray[9] += answerValue;
-      } else if (full === 3.2) {
-        pointsArray[10] += answerValue;
-      } else if (full === 3.3) {
-        pointsArray[11] += answerValue;
-      } else if (full === 3.4) {
-        pointsArray[12] += answerValue;
-      } else if (full === 4.1) {
-        pointsArray[13] += answerValue;
-      } else if (full === 4.2) {
-        pointsArray[14] += answerValue;
-      } else if (full === 4.3) {
-        pointsArray[15] += answerValue;
-      } else if (full === 4.4) {
-        pointsArray[16] += answerValue;
-      } else if (full === 5.1) {
-        pointsArray[17] += answerValue;
-      } else if (full === 5.2) {
-        pointsArray[18] += answerValue;
-      } else if (full === 5.3) {
-        pointsArray[19] += answerValue;
-      } else if (full === 5.4) {
-        pointsArray[20] += answerValue;
-      } 
-    }
-
-    console.log(pointsArray)
-  
-    // Calculate the grade for each category
-    for (let i = 0; i < pointsArray.length; i++) {
-      let score = 100 * pointsArray[i] / marks[i];
-      console.log(score);
-      if (score >= 80) {
-        updatedGrades[i] = 'M';  
-        // if(i==0) updatedGrades[i] = 'B';
-      } else if (score < 80) {
-        updatedGrades[i] = 'B';  
-      }
-    }
-  
-    // Update the grades state
-    setGrades(updatedGrades);
-  
-    console.log("Points Array:", pointsArray);
-    console.log("Updated Grades:", updatedGrades);
-
-    // Update DB
-    await axios.post(`${env.SERVER_URL}/auth/student/${localStorage.getItem('username')}/tests`, { 
-      date: new Date().toISOString().split('T')[0],
-      questions: qs,
-      answers,
-      grades: updatedGrades,
-      points: pointsArray
-    });
-  
-    return updatedGrades; 
+  const checkAllCategoriesComplete = () => {
+    const completedCategories = JSON.parse(
+      localStorage.getItem("completedCategories") || "[]"
+    );
+    return [1, 2, 3, 4, 5].every((cat) => completedCategories.includes(cat));
   };
 
   useEffect(() => {
-    calculateMarks(questionnaire, answers);
+    const calculateAndSubmitMarks = async () => {
+        if (hasSubmitted.current) return;
+        
+        let localQuestionnaire, localAnswers;
+        
+        if (isPartialAssessment && !checkAllCategoriesComplete()) {
+            localQuestionnaire = questionnaire;
+            localAnswers = answers;
+        } else {
+            localQuestionnaire = env.QS_MAIN;
+            localAnswers = JSON.parse(localStorage.getItem("answers") || "[]");
+        }
+
+        if (localAnswers.length !== localQuestionnaire.length) {
+            console.error("Questionnaire and answers mismatch!");
+            setLoading(false);
+            setProcessingComplete(true);
+            return;
+        }
+
+        let pointsArray = Array(21).fill(0);
+        let questionCounts = Array(21).fill(0);
+        let updatedGrades = Array(21).fill("F");
+
+        for (let i = 0; i < localQuestionnaire.length; i++) {
+            let answerValue = localAnswers[i] !== null ? localAnswers[i] + 1 : 0;
+            let full = localQuestionnaire[i].points;
+            const index = gradesType.findIndex((grade) => grade === full.toString());
+            if (index !== -1) {
+                pointsArray[index] += answerValue;
+                questionCounts[index]++;
+            }
+        }
+
+        for (let i = 0; i < pointsArray.length; i++) {
+            if (questionCounts[i] > 0) {
+                let maxPoints = questionCounts[i] * 4;
+                let scorePercentage = (pointsArray[i] / maxPoints) * 100;
+                
+                if (scorePercentage >= 90) updatedGrades[i] = "C";
+                else if (scorePercentage >= 75) updatedGrades[i] = "M";
+                else if (scorePercentage >= 50) updatedGrades[i] = "B";
+                else updatedGrades[i] = "F";
+            }
+        }
+
+        if (isPartialAssessment) {
+            const categoryNumber = Math.floor(questionnaire[0].points);
+            const filteredResults = gradesType
+              .filter((grade) => grade.startsWith(categoryNumber.toString()))
+              .map((grade) => {
+                const gradeIndex = gradesType.findIndex((g) => g === grade);
+                return {
+                  grade,
+                  value: updatedGrades[gradeIndex],
+                };
+              });
+            setCategoryResults(filteredResults);
+            
+            const completedCategories = JSON.parse(localStorage.getItem("completedCategories") || "[]");
+            if (!completedCategories.includes(categoryNumber)) {
+                completedCategories.push(categoryNumber);
+                localStorage.setItem("completedCategories", JSON.stringify(completedCategories));
+            }
+        }
+
+        if (checkAllCategoriesComplete() || !isPartialAssessment) {
+            hasSubmitted.current = true;
+            try {
+                await axios.post(
+                    `${env.SERVER_URL}/auth/student/${localStorage.getItem("username")}/new_tests`,
+                    {
+                      type: 'pre-assessment',
+                      date: new Date().toISOString().split('T')[0],
+                      questions: localQuestionnaire.map((q, i) => ({
+                          ...q,
+                          selectedAnswer: localAnswers[i] !== null ? q.options[localAnswers[i]] : null,
+                      })),
+                      answers: localAnswers,
+                      grades: updatedGrades,
+                    }
+                );
+    
+                localStorage.setItem("passed", "Passed");
+                await axios.patch(
+                    `${env.SERVER_URL}/auth/student/${localStorage.getItem("username")}`,
+                    { status: "Passed" }
+                );
+            } catch(error) {
+                console.error("Error submitting pre-assessment:", error);
+                toast.error("Failed to save results. Please try again.");
+            }
+        }
+
+        setLoading(false);
+        setProcessingComplete(true);
+    };
+
+    calculateAndSubmitMarks();
   }, []);
 
+  const getSubcategoryName = (grade) => {
+    const subcategories = {
+      1.1: "Browsing, searching and filtering data",
+      1.2: "Evaluating data",
+      1.3: "Managing data",
+      2.1: "Interacting through digital technologies",
+      2.2: "Sharing information",
+      2.3: "Engaging in citizenship",
+      2.4: "Collaborating through digital technologies",
+      2.5: "Netiquette",
+      2.6: "Managing digital identity",
+      3.1: "Developing digital content",
+      3.2: "Integrating and re-elaborating digital content",
+      3.3: "Copyright and licenses",
+      3.4: "Programming",
+      4.1: "Protecting devices",
+      4.2: "Protecting personal data and privacy",
+      4.3: "Protecting health and well-being",
+      4.4: "Protecting the environment",
+      5.1: "Solving technical problems",
+      5.2: "Identifying needs and technological responses",
+      5.3: "Creatively using digital technologies",
+      5.4: "Identifying digital competence gaps",
+    };
+    return subcategories[grade] || grade;
+  };
+
+  const getGradeLabel = (grade) => {
+    switch (grade) {
+      case "C":
+        return "Level 2";
+      case "M":
+        return "Level 1";
+      case "B":
+        return "Level 1";
+      case "F":
+        return "Not Attempted";
+      default:
+        return "Unknown";
+    }
+  };
+
   return (
-    <div className="container">
-      <h1 className="title">Survey Completion</h1>
-      <div className="card-container">
-        <div className="google-button">
-          <div className="number">
-            {completedCount}
-          </div>
-        </div>
-        {/* <div className="card-content">
-          You have completed {completedCount} out of {questionnaire.length} questions!
-        </div> */}
-        <div className="card-content">
-          You have completed all questions!
+    <div className="flex flex-col min-h-screen bg-white">
+      <div className="w-full relative">
+        <div className="absolute top-0 right-0 w-2/3 h-32 bg-amber-300 rounded-bl-full"></div>
+      </div>
+
+      <div className="sticky top-0 z-10 bg-white shadow-sm px-4 py-3">
+        <h1 className="text-lg font-semibold text-center">
+          {isPartialAssessment
+            ? `${selectedCategory} Self-Assessment`
+            : "Self-Assessment"}
+        </h1>
+      </div>
+
+      <div className="flex-1 px-4 py-6 mt-12">
+        <div className="max-w-md mx-auto">
+          {loading ? (
+            <div className="flex flex-col items-center justify-center py-12">
+              <div className="w-20 h-20 border-4 border-t-accent border-gray-200 rounded-full animate-spin mb-6"></div>
+              <h2 className="text-xl font-medium text-gray-900 mb-2">
+                Processing Your Self-Assessment
+              </h2>
+              <p className="text-center text-gray-600">
+                Please wait while we analyze your responses.
+              </p>
+            </div>
+          ) : (
+            <div
+              className={`transition-opacity duration-500 ${
+                processingComplete ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              <div className="flex justify-center mb-6">
+                <div className="h-24 w-24 rounded-full bg-amber-100 flex items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-14 w-14 text-amber-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div className="text-center mb-8">
+                <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                  {checkAllCategoriesComplete()
+                    ? "Full Self-Assessment Complete!"
+                    : "Category Self-Assessment Complete!"}
+                </h2>
+                <p className="text-gray-600">
+                   You've successfully completed {completedCount} questions.
+                  {checkAllCategoriesComplete()
+                    ? "Your starting levels for all competences have been determined."
+                    : "You've successfully completed this category. Complete the others to finalize your self-assessment."}
+                </p>
+              </div>
+
+              <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-8">
+                <div className="grid">
+                  <div className="text-center p-3 bg-amber-50 rounded-lg">
+                    <span className="block text-2xl font-bold text-amber-600">
+                      {completedCount}
+                    </span>
+                    <span className="text-sm text-gray-600">
+                      Questions Answered in this Session
+                    </span>
+                  </div>
+                </div>
+              </div>
+              
+              {isPartialAssessment && categoryResults.length > 0 && (
+                <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-8">
+                  <h3 className="font-medium text-gray-900 mb-3">
+                    {selectedCategory} Results
+                  </h3>
+                  <div className="space-y-3">
+                    {categoryResults.map((result, idx) => (
+                      <div
+                        key={idx}
+                        className="flex items-center justify-between border-b border-gray-100 pb-2 last:border-b-0"
+                      >
+                        <p className="text-xs text-gray-600">
+                            {getSubcategoryName(result.grade)}
+                        </p>
+                        <span
+                          className={`px-2 py-1 rounded-full text-xs font-medium ${
+                            result.value === "C" ? "bg-green-100 text-green-800"
+                            : result.value === "M" ? "bg-blue-100 text-blue-800"
+                            : result.value === "B" ? "bg-amber-100 text-amber-800"
+                            : "bg-gray-100 text-gray-800"
+                          }`}
+                        >
+                          {getGradeLabel(result.value)}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              <div className="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-4 mb-8">
+                <h3 className="font-medium text-gray-900 mb-2">Next Steps</h3>
+                <p className="text-sm text-gray-800">
+                  {checkAllCategoriesComplete()
+                    ? "Your self-assessment is complete! You can now proceed to your dashboard to start the timed exercises."
+                    : "Continue to the next category to complete your self-assessment."}
+                </p>
+              </div>
+            </div>
+          )}
+
+          <button
+            onClick={handleContinue}
+            disabled={loading || !processingComplete}
+            className={`w-full py-3 font-medium rounded-md shadow-md transition-colors duration-300 ${
+              loading || !processingComplete
+                ? "bg-gray-200 text-gray-500 cursor-not-allowed"
+                : "bg-black text-white hover:bg-gray-800"
+            }`}
+          >
+            {loading
+              ? "Processing..."
+              : checkAllCategoriesComplete()
+              ? "Go to Dashboard"
+              : "Back to Categories"}
+          </button>
         </div>
       </div>
-      <br/>
-      {/* <div className="results-container">
-          <h3>Results</h3>
-          <div className="result-row">
-            {grades.map((result, index) => (
-              <div key={index} className="result-box">
-                <span className="result-letter">{result}</span>
-              </div>
-            ))}
-          </div>
-          <div className="caption-row">
-            {gradesType.map((category, index) => (
-              <div key={index} className="category-caption">
-                <span>{category}</span>
-              </div>
-            ))}
-          </div>
-      </div> */}
-      <div className="button-container">
-        <button onClick={startQuestionnaire} className="button button-long login-button no-underline">
-          Proceed to Dashboard
-        </button>
+
+      <div className="w-full relative min-h-16">
+        <div className="absolute bottom-0 left-0 w-24 h-24 bg-amber-200 rounded-tr-full opacity-50"></div>
       </div>
     </div>
   );

@@ -1,183 +1,359 @@
-import React, { useEffect, useState } from 'react';
-import { useLocation, Link, useNavigate } from 'react-router-dom';
-import env from '../configs/env';
-import axios from 'axios';
+import React, { useEffect, useState, useRef } from "react";
+import { useLocation, useNavigate, Link } from "react-router-dom";
+import env from "../configs/env";
+import axios from "axios";
+import {
+  calculateQuizScore,
+  generateQuizFeedback,
+  submitQuizResult,
+} from "../utils/scoring";
+
+import SCORING_CONFIG from "../configs/scoringConfig";
 
 const SubEndScreen = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const { answers = [], questionnaire = [], category, level, sub, subIndex } = location.state || {};
-  const [grades, setGrades ] = useState(['F', 'F', 'F', 'F', 'F']);
-  const [isPass, setPass] = useState(false);
-  const [loading, setLoading] = useState(false);
+  const {
+    answers = [],
+    questionnaire = [],
+    timeTaken = [],
+    category,
+    level,
+    sub,
+    subIndex,
+  } = location.state || {};
 
-  const [gradesType, setGradesType ] = useState([
-    'Information & Data Literacy',
-    'Com. & Collaboration',
-    'Digital Content Creation',
-    'Safety',
-    'Problem Solving'
-  ]);
-  const completedCount = answers.filter(answer => answer !== null).length;
-  console.log(answers)
-  console.log(questionnaire)
+  const [quizResult, setQuizResult] = useState(null);
+  const [feedback, setFeedback] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [processingComplete, setProcessingComplete] = useState(false);
+  const [newGrade, setNewGrade] = useState("F");
+  const hasSubmitted = useRef(false);
 
-  const correctCount = questionnaire.reduce((count, q, index) => {
-    const selectedOption = q.options[answers[index]]; // Get the selected option value
-    return selectedOption === q.answer ? count + 1 : count; // Increment count if correct
-  }, 0);
-  
-  const getIdByTitle = (title) => {
-    const item = env.QS_CAT.find((category) => category.title === title);
-    return item ? item.id : null; 
+  const levelNumber = level === "basic" ? 1 : 2;
+
+  const handleNavigation = (index, level, category, sub) => {
+    navigate("/study", { state: { index, level, category, sub } });
   };
 
   const startQuestionnaire = () => {
-    setLoading(true); // Show spinner
+    setLoading(true);
     setTimeout(() => {
-      localStorage.removeItem('sub_answers');
-      navigate('/dashboard');
-      setLoading(false); // Hide spinner after navigation
-    }, 5000);
+      localStorage.removeItem("sub_answers");
+      navigate("/dashboard");
+      setLoading(false);
+    }, 1000);
   };
 
-  const handleNavigation = (index, level, category, sub) => {
-    navigate('/study', { state: { index, level, category, sub } });
-  };
-
-  const retrievePrevious = async (qs, answers) => {
-    try {
-        const response = await fetch(`${env.SERVER_URL}/auth/student/${localStorage.getItem('username')}/tests`);
-        const data = await response.json();
-
-        if (data) {
-          const originalResults = data.firstTest?.grades || [];
-          const progressResults = data.lastTest?.grades || originalResults;
-
-          console.log("DATA",progressResults);
-
-          calculateMarks(qs, answers, progressResults);
-        }
-      } catch (error) {
-        console.error('Error fetching test data:', error);
-      }
-  }
-
-  const calculateMarks = async (qs, answers, prev) => {
-    console.log(qs);
-    console.log(answers);
-    // if (qs.length !== answers.length) {
-    //   console.error("Questionnaire and answers must have the same length!");
-    //   return;
-    // }
-  
-    let pointsArray = [0, 0, 0, 0, 0];
-    let marks = 4*qs.length;
-    let updatedGrades = prev || ['F', 'F', 'F', 'F', 'F'];
-    console.log('CURRENT', category)
-    let current = sub?getIdByTitle(sub.title):0
-    console.log(current)
-    let pointValue = 0;
-    console.log('CURRENT', current)
-    if(current||current==0) {
-      pointValue = pointsArray[current];
-    } 
-    console.log('CURRENT', current)
-  
-    
-    let score = (correctCount / completedCount);
-    
-    if (score == 1) {
-      setPass(true)
-      if(level=="basic"){
-        updatedGrades[current] = "M"
-        
-      } else if(level=="master") {
-        updatedGrades[current] = "C"
-      }
-    } 
-    console.log("F2", updatedGrades[current])
-    console.log("F2", current)
-      
-  
-    // Update the grades state
-    setGrades(updatedGrades);
-  
-    console.log("Points Array:", pointsArray);
-    console.log("Updated Grades:", updatedGrades);
-
-
-
-    // Update DB
-    await axios.post(`${env.SERVER_URL}/auth/student/${localStorage.getItem('username')}/tests`, { 
-      date: new Date().toISOString().split('T')[0],
-      questions: qs,
-      answers,
-      grades: updatedGrades,
-      points: pointsArray
+  const retakeQuiz = () => {
+    navigate("/sub-quest", {
+      state: {
+        index: subIndex,
+        level,
+        category,
+        sub,
+      },
     });
-  
-    return updatedGrades; 
+  };
+
+  const processQuizResults = async () => {
+    if (hasSubmitted.current) return;
+    hasSubmitted.current = true;
+
+    try {
+      const result = calculateQuizScore(answers, questionnaire, timeTaken);
+      setQuizResult(result);
+
+      const feedbackData = generateQuizFeedback(result, category, levelNumber);
+      setFeedback(feedbackData);
+
+      const { correctAnswers, totalQuestions } = result;
+      let grade = "F";
+      const accuracy = correctAnswers / totalQuestions;
+      
+      if (accuracy === 1) {
+        grade = levelNumber === 1 ? "M" : "C";
+      } else if (accuracy > 0.5) { 
+        grade = "B";
+      }
+
+      setNewGrade(grade);
+
+      await submitQuizToBackend(result, grade);
+
+      setLoading(false);
+      setTimeout(() => {
+        setProcessingComplete(true);
+      }, 500);
+    } catch (error) {
+      console.error("Error processing quiz results:", error);
+      setLoading(false);
+    }
+  };
+
+  const submitQuizToBackend = async (result, grade) => {
+    try {
+      const quizData = {
+        type: 'quiz',
+        newGrade: grade,
+        answers,
+        questions: questionnaire,
+        timeTaken,
+        level: levelNumber === 1 ? "basic" : "master",
+        competenceArea: sub?.category,
+        totalScore: result.totalScore,
+        baseScore: result.baseScore,
+        timeBonus: result.timeBonus,
+        perfectBonus: result.perfectBonus,
+        correctAnswers: result.correctAnswers,
+        accuracy: result.accuracy,
+        isPerfect: result.isPerfect,
+      };
+
+      await submitQuizResult(quizData);
+
+    } catch (error) {
+      console.error("Error updating backend score:", error);
+    }
   };
 
   useEffect(() => {
-    retrievePrevious(questionnaire, answers);
+    processQuizResults();
   }, []);
 
+  if (loading) {
+    return (
+      <div className="flex flex-col min-h-screen bg-white">
+        <div className="bg-white px-4 py-4 shadow-sm">
+          <div className="flex items-center">
+            <button onClick={() => navigate(-1)} className="text-gray-800">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            <h1 className="text-lg font-semibold text-center flex-1">
+              Processing Results
+            </h1>
+            <div className="w-6"></div>
+          </div>
+        </div>
+
+        <div className="flex-1 flex flex-col items-center justify-center py-12">
+          <div className="w-16 h-16 border-4 border-t-amber-400 border-gray-200 rounded-full animate-spin mb-6"></div>
+          <h2 className="text-xl font-medium text-gray-900 mb-2">
+            Calculating Your Score
+          </h2>
+          <p className="text-center text-gray-600">
+            Analysing your performance and time bonuses...
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  if (!quizResult || !feedback) {
+    return (
+      <div className="flex flex-col min-h-screen bg-white">
+        <div className="flex-1 flex items-center justify-center">
+          <p className="text-red-500">Error processing quiz results</p>
+        </div>
+      </div>
+    );
+  }
+
+  const {
+    correctAnswers,
+    totalQuestions,
+    totalScore,
+    baseScore,
+    timeBonus,
+    isPerfect,
+  } = quizResult;
+  const isSuccess = feedback.status === "success";
+
   return (
-    <div className="container">
-      <span className='simple-heading'>[{level.toLowerCase() === "basic" ? "Foundation / Intermediate" : "Advanced / Highly Specialized"}]</span>
-      <h1 className="title">{category}</h1>
-      {sub&&<small>{sub.category} - {sub.title}</small>}
-      
-      <br/>
-      <div className="results-container">
-          <h3>Results {isPass?<b className='ft-success'>- Passed</b>:<b className='ft-danger'>- Re Attempt</b>}</h3>
-          
-          <div className="card-container">
-            <div className="google-button">
-              <div className="number">
-                {correctCount}/{completedCount}
-              </div>
-            </div>
-            {/* <div className="card-content">
-              You have completed {completedCount} out of {questionnaire.length} questions!
-            </div> */}
-            <div className="card-content">
-              Correct Answers
-            </div>
-          </div>
-          <br></br>
-          <div className="card-container">
-            <div className="google-button">
-              <div className="number">
-                {completedCount-correctCount}/{completedCount}
-              </div>
-            </div>
-            {/* <div className="card-content">
-              You have completed {completedCount} out of {questionnaire.length} questions!
-            </div> */}
-            <div className="card-content">
-              Incorrect Answers
-            </div>
-          </div>
-      </div>
-      <div className="button-container">
-        {(!isPass)&&<button onClick={() => handleNavigation(subIndex, level, category, sub)} className="button button-long login-button no-underline">
-          Back to Learning
-        </button>}
-      </div>
-      <br></br>
-      <div className="button-container">
-        <button onClick={startQuestionnaire} className="button button-long login-button no-underline" disabled={loading}>
-        {loading ? (
-          <div className="loading-icon">
-            <div className="spinner"></div>
-          </div>
-        ) : 'Proceed to Dashboard'}
-      </button>
+    <div className="flex flex-col min-h-screen bg-white">
+      <div className="bg-white px-4 py-4 shadow-sm">
+        <div className="flex items-center">
+          <button onClick={() => navigate(-1)} className="text-gray-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+          <h1 className="text-lg font-semibold text-center flex-1">
+            Quiz Results
+          </h1>
+          <div className="w-6"></div>
+        </div>
       </div>
 
+      <div className="flex-1 px-4 py-6">
+        <div className="max-w-md mx-auto">
+          <div
+            className={`transition-opacity duration-500 ${
+              processingComplete ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <div className="mb-6">
+              <div className="flex items-center space-x-2 mb-2">
+                <div className="inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-medium">
+                  {levelNumber === 1 ? "Level 1" : "Level 2"}
+                </div>
+              </div>
+              <h2 className="text-xl font-bold text-gray-900 mb-1">
+                {category}
+              </h2>
+              {sub && <p className="text-gray-600 text-sm">{sub.title}</p>}
+            </div>
+
+            <div className="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden mb-6">
+              <div
+                className={`p-6 text-center ${
+                  isSuccess ? "bg-amber-50" : "bg-white"
+                }`}
+              >
+                <div
+                  className={`text-4xl mb-2 ${
+                    isSuccess ? "text-amber-500" : "text-gray-500"
+                  }`}
+                >
+                  {isSuccess ? "🎉" : "📚"}
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  {feedback.title}
+                </h3>
+                <p className="text-gray-600 mb-4">{feedback.message}</p>
+                <div className="text-lg font-semibold text-gray-800">
+                  You earned: +{totalScore} points
+                </div>
+              </div>
+
+              <div className="p-4 bg-gray-50">
+                <h4 className="font-medium text-gray-800 mb-3">
+                  Score Breakdown
+                </h4>
+                <div className="space-y-2 text-sm">
+                  <div className="flex justify-between">
+                    <span>
+                      Correct answers ({correctAnswers}/{totalQuestions})
+                    </span>
+                    <span className="font-medium">+{baseScore} pts</span>
+                  </div>
+                  {timeBonus > 0 && (
+                    <div className="flex justify-between text-amber-600">
+                      <span>Speed bonus</span>
+                      <span className="font-medium">+{timeBonus} pts</span>
+                    </div>
+                  )}
+                  {isPerfect && quizResult.perfectBonus > 0 && (
+                    <div className="flex justify-between text-purple-600">
+                      <span>Perfect score bonus</span>
+                      <span className="font-medium">
+                        +{quizResult.perfectBonus} pts
+                      </span>
+                    </div>
+                  )}
+                  <div className="border-t pt-2 flex justify-between font-semibold">
+                    <span>Total Score</span>
+                    <span>+{totalScore} pts</span>
+                  </div>
+                </div>
+              </div>
+
+              {!isSuccess && feedback.details && (
+                <div className="p-4 border-t">
+                  <h4 className="font-medium text-gray-800 mb-3">
+                    What went wrong?
+                  </h4>
+                  <div className="grid grid-cols-2 gap-4 text-sm">
+                    <div className="text-center p-3 bg-amber-50 rounded">
+                      <div className="text-2xl font-bold text-amber-600">
+                        {feedback.details.correct}
+                      </div>
+                      <div className="text-gray-600">Correct</div>
+                    </div>
+                    <div className="text-center p-3 bg-gray-50 rounded">
+                      <div className="text-2xl font-bold text-black">
+                        {feedback.details.incorrect}
+                      </div>
+                      <div className="text-gray-600">Incorrect</div>
+                    </div>
+                  </div>
+
+                  {feedback.details.pointsLost > 0 && (
+                    <div className="mt-3 p-3 bg-orange-50 rounded text-sm">
+                      <div className="font-medium text-orange-800">
+                        Missed Opportunity
+                      </div>
+                      <div className="text-orange-600">
+                        You could have earned {feedback.details.pointsLost} more
+                        points with correct answers
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+
+            <div className="space-y-3">
+              {!isSuccess && (
+                <>
+                  <button
+                    onClick={() =>
+                      handleNavigation(subIndex, level, category, sub)
+                    }
+                    className="w-full py-3 bg-amber-400 text-black font-medium rounded-md shadow-md hover:bg-amber-500 transition-colors duration-300"
+                  >
+                    Review Learning Materials
+                  </button>
+                  <button
+                    onClick={retakeQuiz}
+                    className="w-full py-3 bg-gray-600 text-white font-medium rounded-md shadow-md hover:bg-gray-700 transition-colors duration-300"
+                  >
+                    Retake Quiz
+                  </button>
+                </>
+              )}
+
+              <button
+                onClick={startQuestionnaire}
+                className="w-full py-3 bg-black text-white font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300"
+                disabled={loading}
+              >
+                {loading ? (
+                  <div className="flex justify-center items-center">
+                    <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                  </div>
+                ) : (
+                  "Return to Dashboard"
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
