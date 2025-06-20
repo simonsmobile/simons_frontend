@@ -21,6 +21,13 @@ const CategorySelectionScreen = () => {
     setCategories(updatedCategories);
   }, []);
 
+  const hasAnyCompletedCategories = () => {
+    const completedCategories = JSON.parse(
+      localStorage.getItem("completedCategories") || "[]"
+    );
+    return completedCategories.length > 0;
+  };
+
   const [categories, setCategories] = useState([
     {
       id: "1",
@@ -275,12 +282,23 @@ const CategorySelectionScreen = () => {
             ))}
           </div>
 
-          <button
-            onClick={handleFullAssessment}
-            className="w-full py-3 bg-black text-white font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300"
-          >
-            Take Full Self-Assessment
-          </button>
+          <div className="space-y-4">
+            <button
+              onClick={handleFullAssessment}
+              className="w-full py-3 bg-black text-white font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300"
+            >
+              Take Full Self-Assessment
+            </button>
+
+            {hasAnyCompletedCategories() && (
+              <button
+                onClick={() => navigate("/dashboard")}
+                className="w-full py-3 bg-amber-400 text-black font-medium rounded-md shadow-md hover:bg-amber-500 transition-colors duration-300"
+              >
+                Go to Dashboard
+              </button>
+            )}
+          </div>
 
           <div className="mt-4 text-center">
             <p className="text-sm text-gray-600">

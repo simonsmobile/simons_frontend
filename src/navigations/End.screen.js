@@ -14,28 +14,50 @@ const EndScreen = () => {
     isPartialAssessment = false,
     selectedCategory = null,
   } = location.state || {};
-  
+
   const [loading, setLoading] = useState(true);
   const [processingComplete, setProcessingComplete] = useState(false);
   const [categoryResults, setCategoryResults] = useState([]);
   const hasSubmitted = useRef(false);
 
   const [gradesType] = useState([
-    "1.1", "1.2", "1.3", "2.1", "2.2", "2.3", "2.4", "2.5", "2.6",
-    "3.1", "3.2", "3.3", "3.4", "4.1", "4.2", "4.3", "4.4",
-    "5.1", "5.2", "5.3", "5.4",
+    "1.1",
+    "1.2",
+    "1.3",
+    "2.1",
+    "2.2",
+    "2.3",
+    "2.4",
+    "2.5",
+    "2.6",
+    "3.1",
+    "3.2",
+    "3.3",
+    "3.4",
+    "4.1",
+    "4.2",
+    "4.3",
+    "4.4",
+    "5.1",
+    "5.2",
+    "5.3",
+    "5.4",
   ]);
 
   const completedCount = answers.filter((answer) => answer !== null).length;
 
   const handleContinue = () => {
     if (checkAllCategoriesComplete()) {
-        navigate("/dashboard");
+      navigate("/dashboard");
     } else {
-        navigate("/category-selection");
+      navigate("/category-selection");
     }
   };
-  
+
+  const goToDashboard = () => {
+    navigate("/dashboard");
+  };
+
   const checkAllCategoriesComplete = () => {
     const completedCategories = JSON.parse(
       localStorage.getItem("completedCategories") || "[]"
@@ -45,101 +67,138 @@ const EndScreen = () => {
 
   useEffect(() => {
     const calculateAndSubmitMarks = async () => {
-        if (hasSubmitted.current) return;
-        
-        let localQuestionnaire, localAnswers;
-        
-        if (isPartialAssessment && !checkAllCategoriesComplete()) {
-            localQuestionnaire = questionnaire;
-            localAnswers = answers;
-        } else {
-            localQuestionnaire = env.QS_MAIN;
-            localAnswers = JSON.parse(localStorage.getItem("answers") || "[]");
-        }
+      if (hasSubmitted.current) return;
 
-        if (localAnswers.length !== localQuestionnaire.length) {
-            console.error("Questionnaire and answers mismatch!");
-            setLoading(false);
-            setProcessingComplete(true);
-            return;
-        }
+      let localQuestionnaire, localAnswers;
 
-        let pointsArray = Array(21).fill(0);
-        let questionCounts = Array(21).fill(0);
-        let updatedGrades = Array(21).fill("F");
+      if (isPartialAssessment && !checkAllCategoriesComplete()) {
+        localQuestionnaire = questionnaire;
+        localAnswers = answers;
+      } else {
+        localQuestionnaire = env.QS_MAIN;
+        localAnswers = JSON.parse(localStorage.getItem("answers") || "[]");
+      }
 
-        for (let i = 0; i < localQuestionnaire.length; i++) {
-            let answerValue = localAnswers[i] !== null ? localAnswers[i] + 1 : 0;
-            let full = localQuestionnaire[i].points;
-            const index = gradesType.findIndex((grade) => grade === full.toString());
-            if (index !== -1) {
-                pointsArray[index] += answerValue;
-                questionCounts[index]++;
-            }
-        }
-
-        for (let i = 0; i < pointsArray.length; i++) {
-            if (questionCounts[i] > 0) {
-                let maxPoints = questionCounts[i] * 4;
-                let scorePercentage = (pointsArray[i] / maxPoints) * 100;
-                
-                if (scorePercentage >= 90) updatedGrades[i] = "C";
-                else if (scorePercentage >= 75) updatedGrades[i] = "M";
-                else if (scorePercentage >= 50) updatedGrades[i] = "B";
-                else updatedGrades[i] = "F";
-            }
-        }
-
-        if (isPartialAssessment) {
-            const categoryNumber = Math.floor(questionnaire[0].points);
-            const filteredResults = gradesType
-              .filter((grade) => grade.startsWith(categoryNumber.toString()))
-              .map((grade) => {
-                const gradeIndex = gradesType.findIndex((g) => g === grade);
-                return {
-                  grade,
-                  value: updatedGrades[gradeIndex],
-                };
-              });
-            setCategoryResults(filteredResults);
-            
-            const completedCategories = JSON.parse(localStorage.getItem("completedCategories") || "[]");
-            if (!completedCategories.includes(categoryNumber)) {
-                completedCategories.push(categoryNumber);
-                localStorage.setItem("completedCategories", JSON.stringify(completedCategories));
-            }
-        }
-
-        if (checkAllCategoriesComplete() || !isPartialAssessment) {
-            hasSubmitted.current = true;
-            try {
-                await axios.post(
-                    `${env.SERVER_URL}/auth/student/${localStorage.getItem("username")}/new_tests`,
-                    {
-                      type: 'pre-assessment',
-                      date: new Date().toISOString().split('T')[0],
-                      questions: localQuestionnaire.map((q, i) => ({
-                          ...q,
-                          selectedAnswer: localAnswers[i] !== null ? q.options[localAnswers[i]] : null,
-                      })),
-                      answers: localAnswers,
-                      grades: updatedGrades,
-                    }
-                );
-    
-                localStorage.setItem("passed", "Passed");
-                await axios.patch(
-                    `${env.SERVER_URL}/auth/student/${localStorage.getItem("username")}`,
-                    { status: "Passed" }
-                );
-            } catch(error) {
-                console.error("Error submitting pre-assessment:", error);
-                toast.error("Failed to save results. Please try again.");
-            }
-        }
-
+      if (localAnswers.length !== localQuestionnaire.length) {
+        console.error("Questionnaire and answers mismatch!");
         setLoading(false);
         setProcessingComplete(true);
+        return;
+      }
+
+      let pointsArray = Array(21).fill(0);
+      let questionCounts = Array(21).fill(0);
+      let updatedGrades = Array(21).fill("F");
+
+      for (let i = 0; i < localQuestionnaire.length; i++) {
+        let answerValue = localAnswers[i] !== null ? localAnswers[i] + 1 : 0;
+        let full = localQuestionnaire[i].points;
+        const index = gradesType.findIndex(
+          (grade) => grade === full.toString()
+        );
+        if (index !== -1) {
+          pointsArray[index] += answerValue;
+          questionCounts[index]++;
+        }
+      }
+
+      for (let i = 0; i < pointsArray.length; i++) {
+        if (questionCounts[i] > 0) {
+          let maxPoints = questionCounts[i] * 4;
+          let scorePercentage = (pointsArray[i] / maxPoints) * 100;
+
+          if (scorePercentage >= 90) updatedGrades[i] = "M";
+          else if (scorePercentage >= 75) updatedGrades[i] = "B";
+          else if (scorePercentage >= 50) updatedGrades[i] = "B";
+          else updatedGrades[i] = "F";
+        }
+      }
+
+      if (isPartialAssessment) {
+        const categoryNumber = Math.floor(questionnaire[0].points);
+        const filteredResults = gradesType
+          .filter((grade) => grade.startsWith(categoryNumber.toString()))
+          .map((grade) => {
+            const gradeIndex = gradesType.findIndex((g) => g === grade);
+            return {
+              grade,
+              value: updatedGrades[gradeIndex],
+            };
+          });
+        setCategoryResults(filteredResults);
+
+        const completedCategories = JSON.parse(
+          localStorage.getItem("completedCategories") || "[]"
+        );
+        if (!completedCategories.includes(categoryNumber)) {
+          completedCategories.push(categoryNumber);
+          localStorage.setItem(
+            "completedCategories",
+            JSON.stringify(completedCategories)
+          );
+        }
+
+        // Submit partial assessment data to backend
+        hasSubmitted.current = true;
+        try {
+          await axios.post(
+            `${env.SERVER_URL}/auth/student/${localStorage.getItem(
+              "username"
+            )}/new_tests`,
+            {
+              type: "pre-assessment-partial",
+              date: new Date().toISOString().split("T")[0],
+              category: categoryNumber,
+              questions: localQuestionnaire.map((q, i) => ({
+                ...q,
+                selectedAnswer:
+                  localAnswers[i] !== null ? q.options[localAnswers[i]] : null,
+              })),
+              answers: localAnswers,
+              grades: updatedGrades,
+            }
+          );
+        } catch (error) {
+          console.error("Error submitting partial assessment:", error);
+          toast.error("Failed to save results. Please try again.");
+        }
+      }
+
+      if (checkAllCategoriesComplete() || !isPartialAssessment) {
+        hasSubmitted.current = true;
+        try {
+          await axios.post(
+            `${env.SERVER_URL}/auth/student/${localStorage.getItem(
+              "username"
+            )}/new_tests`,
+            {
+              type: "pre-assessment",
+              date: new Date().toISOString().split("T")[0],
+              questions: localQuestionnaire.map((q, i) => ({
+                ...q,
+                selectedAnswer:
+                  localAnswers[i] !== null ? q.options[localAnswers[i]] : null,
+              })),
+              answers: localAnswers,
+              grades: updatedGrades,
+            }
+          );
+
+          localStorage.setItem("passed", "Passed");
+          await axios.patch(
+            `${env.SERVER_URL}/auth/student/${localStorage.getItem(
+              "username"
+            )}`,
+            { status: "Passed" }
+          );
+        } catch (error) {
+          console.error("Error submitting pre-assessment:", error);
+          toast.error("Failed to save results. Please try again.");
+        }
+      }
+
+      setLoading(false);
+      setProcessingComplete(true);
     };
 
     calculateAndSubmitMarks();
@@ -245,10 +304,10 @@ const EndScreen = () => {
                     : "Category Self-Assessment Complete!"}
                 </h2>
                 <p className="text-gray-600">
-                   You've successfully completed {completedCount} questions.
+                  You've successfully completed {completedCount} questions.
                   {checkAllCategoriesComplete()
                     ? "Your starting levels for all competences have been determined."
-                    : "You've successfully completed this category. Complete the others to finalize your self-assessment."}
+                    : "Complete the others to finalize your self-assessment."}
                 </p>
               </div>
 
@@ -264,7 +323,7 @@ const EndScreen = () => {
                   </div>
                 </div>
               </div>
-              
+
               {isPartialAssessment && categoryResults.length > 0 && (
                 <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-8">
                   <h3 className="font-medium text-gray-900 mb-3">
@@ -277,14 +336,17 @@ const EndScreen = () => {
                         className="flex items-center justify-between border-b border-gray-100 pb-2 last:border-b-0"
                       >
                         <p className="text-xs text-gray-600">
-                            {getSubcategoryName(result.grade)}
+                          {getSubcategoryName(result.grade)}
                         </p>
                         <span
                           className={`px-2 py-1 rounded-full text-xs font-medium ${
-                            result.value === "C" ? "bg-green-100 text-green-800"
-                            : result.value === "M" ? "bg-blue-100 text-blue-800"
-                            : result.value === "B" ? "bg-amber-100 text-amber-800"
-                            : "bg-gray-100 text-gray-800"
+                            result.value === "C"
+                              ? "bg-green-100 text-green-800"
+                              : result.value === "M"
+                              ? "bg-blue-100 text-blue-800"
+                              : result.value === "B"
+                              ? "bg-amber-100 text-amber-800"
+                              : "bg-gray-100 text-gray-800"
                           }`}
                         >
                           {getGradeLabel(result.value)}
@@ -306,21 +368,37 @@ const EndScreen = () => {
             </div>
           )}
 
-          <button
-            onClick={handleContinue}
-            disabled={loading || !processingComplete}
-            className={`w-full py-3 font-medium rounded-md shadow-md transition-colors duration-300 ${
-              loading || !processingComplete
-                ? "bg-gray-200 text-gray-500 cursor-not-allowed"
-                : "bg-black text-white hover:bg-gray-800"
-            }`}
-          >
-            {loading
-              ? "Processing..."
-              : checkAllCategoriesComplete()
-              ? "Go to Dashboard"
-              : "Back to Categories"}
-          </button>
+          <div className="space-y-3">
+            <button
+              onClick={handleContinue}
+              disabled={loading || !processingComplete}
+              className={`w-full py-3 font-medium rounded-md shadow-md transition-colors duration-300 ${
+                loading || !processingComplete
+                  ? "bg-gray-200 text-gray-500 cursor-not-allowed"
+                  : "bg-black text-white hover:bg-gray-800"
+              }`}
+            >
+              {loading
+                ? "Processing..."
+                : checkAllCategoriesComplete()
+                ? "Go to Dashboard"
+                : "Continue Other Categories"}
+            </button>
+
+            {isPartialAssessment && !checkAllCategoriesComplete() && (
+              <button
+                onClick={goToDashboard}
+                disabled={loading || !processingComplete}
+                className={`w-full py-3 font-medium rounded-md shadow-md transition-colors duration-300 ${
+                  loading || !processingComplete
+                    ? "bg-gray-200 text-gray-500 cursor-not-allowed"
+                    : "bg-amber-400 text-black hover:bg-amber-500"
+                }`}
+              >
+                Go to Dashboard
+              </button>
+            )}
+          </div>
         </div>
       </div>
 

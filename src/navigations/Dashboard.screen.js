@@ -22,6 +22,10 @@ import RisingStarBadge from "../assets/badges/RisingStarBadge";
 import SavvyMentorBadge from "../assets/badges/SavvyMentorBadge";
 import SimonsAdvocateBadge from "../assets/badges/SimonsAdvocateBadge";
 
+const getCompetenceArea = (point) => {
+  return Math.floor(parseFloat(point));
+};
+
 const DashboardScreen = () => {
   const navigate = useNavigate();
   const toast = useToast();
@@ -92,6 +96,22 @@ const DashboardScreen = () => {
 
   const navigateToStudy = (areaId, subCompetencePoint, levelNumber, status) => {
     if (status === "Locked") {
+      const competenceArea = getCompetenceArea(subCompetencePoint);
+      const completedCategories = JSON.parse(
+        localStorage.getItem("completedCategories") || "[]"
+      );
+      const isFullAssessmentDone = localStorage.getItem("passed") === "Passed";
+
+      if (
+        !isFullAssessmentDone &&
+        !completedCategories.includes(competenceArea)
+      ) {
+        toast.warning(
+          `Complete the self-assessment for this category first to unlock exercises.`,
+          "Area Locked"
+        );
+        return;
+      }
       return;
     }
 
@@ -124,6 +144,18 @@ const DashboardScreen = () => {
 
   const handleRetakeAssessment = () => {
     setShowConfirmationModal(true);
+  };
+
+  const hasIncompleteCategories = () => {
+    const completedCategories = JSON.parse(
+      localStorage.getItem("completedCategories") || "[]"
+    );
+    const isFullAssessmentDone = localStorage.getItem("passed") === "Passed";
+    const allCategories = [1, 2, 3, 4, 5];
+
+    if (isFullAssessmentDone) return false;
+
+    return allCategories.some((cat) => !completedCategories.includes(cat));
   };
 
   const confirmRetake = async () => {
@@ -215,7 +247,8 @@ const DashboardScreen = () => {
             Your digital competence dashboard
           </p>
           <p className="text-sm text-gray-600 mt-1">
-            Ready to level up? Take training exercises and quizzes to earn more points!
+            Ready to level up? Take training exercises and quizzes to earn more
+            points!
           </p>
         </div>
 
@@ -301,7 +334,11 @@ const DashboardScreen = () => {
               const isExpanded = expandedCategory === areaIndex;
               const subCompetences = getSubCompetencesForArea(area.id);
               const areaData = scores.areaScores.find((a) => a.id === area.id);
-              const levelDisplay = getAreaLevelDisplay(areaData, completedLevels, latestGrades);
+              const levelDisplay = getAreaLevelDisplay(
+                areaData,
+                completedLevels,
+                latestGrades
+              );
 
               return (
                 <div key={area.id}>
@@ -380,12 +417,14 @@ const DashboardScreen = () => {
                           const statusLevel1 = getGradeStatus(
                             grade,
                             1,
-                            quizProgress
+                            quizProgress,
+                            sub.point
                           );
                           const statusLevel2 = getGradeStatus(
                             grade,
                             2,
-                            quizProgress
+                            quizProgress,
+                            sub.point
                           );
 
                           const IconLevel1 = getIconForStatus(statusLevel1);
@@ -503,13 +542,22 @@ const DashboardScreen = () => {
           </div>
         </div>
 
-        <div className="text-center mt-8">
+        <div className="text-center flex flex-col space-y-3 mt-8">
           <button
             onClick={handleRetakeAssessment}
             className="px-6 py-2 bg-amber-300 text-black text-sm font-medium rounded-md shadow-md hover:bg-amber-400 transition-colors duration-300"
           >
             Take Self-Assessment Again
           </button>
+
+          {hasIncompleteCategories() && (
+            <button
+              onClick={() => navigate("/category-selection")}
+              className="px-6 py-2 bg-black text-white text-sm font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300"
+            >
+              Complete Other Categories
+            </button>
+          )}
         </div>
       </main>
       <BottomNav />
