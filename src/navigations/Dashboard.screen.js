@@ -211,8 +211,11 @@ const DashboardScreen = () => {
           <h2 className="text-2xl font-bold text-gray-900">
             Welcome, {userName}
           </h2>
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-gray-600 mt-1">
             Your digital competence dashboard
+          </p>
+          <p className="text-sm text-gray-600 mt-1">
+            Ready to level up? Take training exercises and quizzes to earn more points!
           </p>
         </div>
 
