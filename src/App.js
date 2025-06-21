@@ -21,6 +21,7 @@ import CategorySelectionScreen from './navigations/CategorySelection.screen';
 import ScoreScreen from './navigations/Score.screen';
 import ProfileScreen from './navigations/Profile.screen';
 import AboutScreen from './navigations/About.screen';
+import RankScreen from './navigations/Rank.screen';
 import TermsScreen from './navigations/Terms.screen';
 import PrivacyScreen from './navigations/Privacy.screen';
 import LanguageScreen from './navigations/Language.screen';
@@ -77,8 +78,7 @@ function App() {
           <Route path="/sub-end-screen" element={<ProtectedRoute><SubEndScreen /></ProtectedRoute>} />
           <Route path="/about" element={<ProtectedRoute><AboutScreen /></ProtectedRoute>} />
           <Route path="/language-settings" element={<ProtectedRoute><LanguageScreen /></ProtectedRoute>} />
-
-          {/* New Gamified Routes */}
+          <Route path="/rank" element={<ProtectedRoute><RankScreen /></ProtectedRoute>} />
           <Route path="/dashboard" element={<ProtectedRoute><DashboardScreen /></ProtectedRoute>} />
           <Route path="/score" element={<ProtectedRoute><ScoreScreen /></ProtectedRoute>} />
           <Route path="/profile" element={<ProtectedRoute><ProfileScreen /></ProtectedRoute>} />

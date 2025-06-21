@@ -170,6 +170,8 @@ const DashboardScreen = () => {
       localStorage.removeItem("passed");
       localStorage.removeItem("answers");
       localStorage.removeItem("completedCategories");
+      localStorage.removeItem("unlockedAvatars");
+      localStorage.removeItem("currentAvatar");
       for (let i = 1; i <= 5; i++) {
         localStorage.removeItem(`category_answers_${i}`);
       }
@@ -569,8 +571,9 @@ const DashboardScreen = () => {
               Confirm Action
             </h3>
             <p className="text-sm text-gray-600 mb-6">
-              This will delete all your existing test scores and progress,
-              allowing you to start the self-assessment from scratch. This
+              This will delete all your existing test scores and progress, reset
+              your leaderboard ranking to 0, and clear your unlocked avatars.
+              You'll be able to start the self-assessment from scratch. This
               action cannot be undone. Are you sure you want to continue?
             </p>
             <div className="flex justify-end space-x-3">
