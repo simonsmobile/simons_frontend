@@ -1,12 +1,13 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { FaChartBar, FaUserCircle, FaThLarge } from "react-icons/fa";
+import { FaChartBar, FaUserCircle, FaThLarge, FaTrophy } from "react-icons/fa";
 
 const BottomNav = () => {
   const location = useLocation();
   const navItems = [
     { path: "/dashboard", icon: FaThLarge, label: "Dashboard" },
     { path: "/score", icon: FaChartBar, label: "Score" },
+    { path: "/rank", icon: FaTrophy, label: "Rank" },
     { path: "/profile", icon: FaUserCircle, label: "Profile" },
   ];
 

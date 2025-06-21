@@ -16,30 +16,6 @@ export const COMPETENCE_AREAS = Object.keys(
 
 export const GRADE_LEVELS = SCORING_CONFIG.GRADE_SYSTEM;
 
-const GRADES_TYPE = [
-  "1.1",
-  "1.2",
-  "1.3",
-  "2.1",
-  "2.2",
-  "2.3",
-  "2.4",
-  "2.5",
-  "2.6",
-  "3.1",
-  "3.2",
-  "3.3",
-  "3.4",
-  "4.1",
-  "4.2",
-  "4.3",
-  "4.4",
-  "5.1",
-  "5.2",
-  "5.3",
-  "5.4",
-];
-
 export const calculateTimeBonus = (remainingSeconds) => {
   if (remainingSeconds <= 0) return 0;
   return Math.round(
@@ -144,30 +120,34 @@ export const getQuizScoresFromBackend = async () => {
 };
 
 export const submitQuizResult = async (quizData) => {
-  try {
-    const response = await fetch(
-      `${env.SERVER_URL}/auth/student/${localStorage.getItem(
-        "username"
-      )}/new_tests`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(quizData),
-      }
-    );
+  const username = localStorage.getItem("username");
 
-    if (response.ok) {
-      const result = await response.json();
-      return result;
-    } else {
-      throw new Error("Failed to submit quiz result");
-    }
-  } catch (error) {
-    console.error("Error submitting quiz result:", error);
-    throw error;
+  if (!username) {
+    throw new Error("No username found");
   }
+
+  const submissionData = {
+    ...quizData,
+    date: new Date().toISOString().split("T")[0],
+  };
+
+  const response = await fetch(
+    `${env.SERVER_URL}/auth/student/${username}/new_tests`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(submissionData),
+    }
+  );
+
+  if (!response.ok) {
+    const errorData = await response.json();
+    throw new Error(errorData.message || "Failed to submit quiz result");
+  }
+
+  return response.json();
 };
 
 export const calculateScores = (gradesArray, backendData = null) => {
@@ -341,7 +321,55 @@ export const generateQuizFeedback = (quizResult, competenceArea, level) => {
   };
 };
 
-export const getGradeStatus = (grade, levelNumber, quizProgress) => {
+export const getGradeStatus = (
+  grade,
+  levelNumber,
+  quizProgress,
+  competencePoint
+) => {
+  // First check if the category is unlocked
+  const completedCategories = JSON.parse(
+    localStorage.getItem("completedCategories") || "[]"
+  );
+  const isFullAssessmentDone = localStorage.getItem("passed") === "Passed";
+
+  // Map competence points to their areas (1-5)
+  const competenceToAreaMap = {
+    1.1: 1,
+    1.2: 1,
+    1.3: 1,
+    2.1: 2,
+    2.2: 2,
+    2.3: 2,
+    2.4: 2,
+    2.5: 2,
+    2.6: 2,
+    3.1: 3,
+    3.2: 3,
+    3.3: 3,
+    3.4: 3,
+    4.1: 4,
+    4.2: 4,
+    4.3: 4,
+    4.4: 4,
+    5.1: 5,
+    5.2: 5,
+    5.3: 5,
+    5.4: 5,
+  };
+
+  // Get the competence area for this specific competence point
+  const competenceArea = competenceToAreaMap[competencePoint];
+
+  // Check if this competence area is available
+  const isAreaAvailable =
+    isFullAssessmentDone || completedCategories.includes(competenceArea);
+
+  // If category is not unlocked, everything is locked
+  if (!isAreaAvailable) {
+    return "Locked";
+  }
+
   // Default to an empty structure if quizProgress is null/undefined to prevent errors
   const progress = quizProgress || {
     level1: { taken: false, perfected: false },
@@ -349,8 +377,8 @@ export const getGradeStatus = (grade, levelNumber, quizProgress) => {
   };
 
   if (levelNumber === 1) {
-    // Level 1 is "Completed" if it was perfected via a quiz OR the user got a 'C' grade in pre-assessment.
-    if (progress.level1?.perfected || grade === "C") {
+    // Level 1 is "Completed" if it was perfected via a quiz OR the user got a 'M' or 'C' grade in pre-assessment.
+    if (progress.level1?.perfected || grade === "M" || grade === "C") {
       return "Completed";
     }
     // If it's not perfected but has been taken, it's "Resume".
@@ -363,7 +391,8 @@ export const getGradeStatus = (grade, levelNumber, quizProgress) => {
 
   if (levelNumber === 2) {
     // First, check if Level 1 is complete. This is the condition to unlock Level 2.
-    const isLevel1Complete = progress.level1?.perfected || grade === "C";
+    const isLevel1Complete =
+      progress.level1?.perfected || grade === "M" || grade === "C";
     if (!isLevel1Complete) {
       return "Locked";
     }

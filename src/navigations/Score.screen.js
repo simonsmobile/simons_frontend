@@ -169,7 +169,7 @@ const ScoreScreen = () => {
           backdropColor: "transparent",
           color: "rgba(0, 0, 0, 0.6)",
           callback: function (value) {
-            return value + " pts";
+            return "";
           },
         },
         pointLabels: { font: { size: 10 }, color: "rgba(0, 0, 0, 0.8)" },

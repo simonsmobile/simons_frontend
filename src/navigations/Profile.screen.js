@@ -22,11 +22,17 @@ const ProfileScreen = () => {
   const [userData, setUserData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [currentUser, setCurrentUser] = useState(auth.currentUser);
+  const [currentAvatar, setCurrentAvatar] = useState(null);
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       setCurrentUser(user);
     });
+
+    const savedAvatar = localStorage.getItem("currentAvatar");
+    if (savedAvatar) {
+      setCurrentAvatar(JSON.parse(savedAvatar));
+    }
 
     const fetchUserData = async () => {
       setLoading(true);
@@ -95,7 +101,9 @@ const ProfileScreen = () => {
       <div className="flex-1 px-4 py-6 max-w-xl mx-auto w-full">
         <div className="flex flex-col items-center mb-8">
           <div className="w-24 h-24 rounded-full bg-amber-100 flex items-center justify-center mb-4 overflow-hidden border-2 border-amber-300 text-amber-700">
-            {photoURL ? (
+            {currentAvatar ? (
+              <span className="text-4xl">{currentAvatar.emoji}</span>
+            ) : photoURL ? (
               <img
                 src={photoURL}
                 alt="Profile"
