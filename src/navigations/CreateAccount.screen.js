@@ -43,7 +43,7 @@ const CreateAccount = () => {
     "University of Maia",
     "Università degli Studi della Campania Luigi Vanvitelli",
     "University of Eastern Finland",
-    "Vilnius College - Faculty of Technologies and Design",
+    "Vilniaus Kolegija/Higher Education Institution",
     "University of Patras",
   ];
 

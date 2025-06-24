@@ -263,7 +263,7 @@ const ScoreScreen = () => {
               />
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              Welcome to SimONS!
+              Welcome to SIMOnS!
             </h3>
             <p className="text-sm text-gray-600">
               Complete exercises to start earning points and unlock achievements
