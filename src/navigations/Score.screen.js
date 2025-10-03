@@ -29,6 +29,9 @@ import RisingStarBadge from "../assets/badges/RisingStarBadge";
 import SavvyMentorBadge from "../assets/badges/SavvyMentorBadge";
 import SimonsAdvocateBadge from "../assets/badges/SimonsAdvocateBadge";
 
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
+
 ChartJS.register(
   RadialLinearScale,
   PointElement,
@@ -49,6 +52,7 @@ const ScoreScreen = () => {
   const animationTimeoutRef = useRef(null);
   const [completedLevels, setCompletedLevels] = useState({});
   const [latestGrades, setLatestGrades] = useState([]);
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const fetchScores = async () => {
@@ -138,10 +142,10 @@ const ScoreScreen = () => {
   }
 
   const chartData = {
-    labels: scores.areaScores.map((area) => area.name),
+    labels: scores.areaScores.map((area) => t(area.name)),
     datasets: [
       {
-        label: "Points Earned",
+        label: " ",
         data: scores.areaScores.map((area) => area.score),
         backgroundColor: "rgba(251, 191, 36, 0.2)",
         borderColor: "rgba(217, 119, 6, 1)",
@@ -182,8 +186,8 @@ const ScoreScreen = () => {
         callbacks: {
           label: function (context) {
             let label = context.dataset.label || "";
-            if (label) label += ": ";
-            if (context.parsed.r !== null) label += context.parsed.r + " pts";
+           // if (label) label += ": ";
+            if (context.parsed.r !== null) label += context.parsed.r + " " + t('points');
             return label;
           },
         },
@@ -242,13 +246,13 @@ const ScoreScreen = () => {
             )}
             <div className="relative z-10">
               <h2 className="text-lg font-bold text-amber-600 mb-2">
-                {gamification.badge === 'advocate' ? "Congratulations!" : `Congratulations you achieved ${gamification.threshold} points!`}
+                {gamification.badge === 'advocate' ? t('congratulations') : t('congratulations_long', {points: gamification.threshold})}
               </h2>
               {renderBadge()}
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                {gamification.title}
+                {t(gamification.title)}
               </h3>
-              <p className="text-sm text-gray-600">{gamification.message}</p>
+              <p className="text-sm text-gray-600">{t(gamification.message)}</p>
             </div>
           </div>
         )}
@@ -272,12 +276,13 @@ const ScoreScreen = () => {
         )}
 
         <div className="text-center mb-6">
-          <p className="text-sm text-gray-500">Total score</p>
+          <p className="text-sm text-gray-500">{t('total_score')}</p>
           <p className="text-4xl font-bold text-gray-800">
-            {scores.totalScore} points
+            {t('total_points', {total_point: scores.totalScore})}
           </p>
           <p className="text-xs text-gray-400">
-            out of {scores.maxPossibleScore || 48650} possible points
+            {t('out_of_total_score', {total_point: scores.maxPossibleScore || 48650})}
+
           </p>
           <div className="mt-2 w-full bg-gray-200 rounded-full h-2">
             <div
@@ -297,7 +302,7 @@ const ScoreScreen = () => {
 
         <div>
           <h3 className="text-lg font-semibold text-gray-700 mb-4">
-            Competence areas
+            {t('competece_area_label')}
           </h3>
           <div className="space-y-3">
             {scores.areaScores.map((area, areaIndex) => {
@@ -321,14 +326,14 @@ const ScoreScreen = () => {
                       <div className="w-16 h-12 rounded-md bg-black flex flex-col items-center justify-center mr-4 flex-shrink-0">
                         <span className="text-white font-bold text-[10px] leading-tight text-center px-1">
                           {levelDisplay.includes("-") ? (
-                            <span className="block">{levelDisplay}</span>
+                            <span className="block">{t(levelDisplay)}</span>
                           ) : (
-                            levelDisplay
+                            t(levelDisplay)
                           )}
                         </span>
                       </div>
                       <div className="flex-1">
-                        <p className="font-medium text-gray-800">{area.name}</p>
+                        <p className="font-medium text-gray-800">{t(area.name)}</p>
                         <div className="flex items-center mt-1">
                           <div className="w-24 bg-gray-300 rounded-full h-2 mr-2">
                             <div
@@ -351,7 +356,7 @@ const ScoreScreen = () => {
                   {isExpanded && (
                     <div className="px-4 pt-2 pb-4 bg-amber-50 border-t border-gray-200">
                       <h4 className="text-sm font-semibold text-gray-600 mb-3 mt-2">
-                        Competences:
+                        {t('competences')}:
                       </h4>
                       <ul className="space-y-2">
                         {subCompetences.map((sub, subIndex) => {
@@ -382,6 +387,8 @@ const ScoreScreen = () => {
                             (quizProgress.level2 ? 1 : 0);
                           const progressPercent = (completedLevels / 2) * 100;
 
+                          console.log(completedLevels + ":" + progressPercent);
+
                           return (
                             <li
                               key={sub.point}
@@ -389,11 +396,12 @@ const ScoreScreen = () => {
                             >
                               <div className="flex-1 mr-2">
                                 <span className="text-gray-700 font-medium">
-                                  {competenceNumber}. {sub.title}
+                                  {competenceNumber}. {t(sub.title)}
                                 </span>
                                 <div className="flex items-center space-x-2 mt-1">
                                   <span className="text-xs text-gray-500">
-                                    {subScore} points earned
+                                    
+                                    {t('total_points', {total_point: subScore})}
                                   </span>
                                   <div className="w-16 bg-gray-200 rounded-full h-1">
                                     <div

@@ -1,0 +1,744 @@
+{
+  "assessment": {
+
+    "Question 1": {
+      "question": "Sei que diferentes motores de busca podem dar resultados diferentes, porque são influenciados por fatores comerciais.",
+      "options": [
+        "Não sei nada sobre isto / Nunca ouvi falar",
+        "Tenho apenas um entendimento limitado e preciso de mais explicações",
+        "Tenho um bom entendimento sobre isto",
+        "Domino totalmente este tema/assunto e poderia explicar a outros"
+      ]
+    },
+    "Question 2": {
+      "question": "Sei quais palavras usar para encontrar rapidamente o que procuro (por exemplo, pesquisar online ou dentro de um documento).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 3": {
+      "question": "Quando uso um motor de busca, consigo tirar proveito das suas funcionalidades avançadas.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 4": {
+      "question": "Sei como encontrar um website que já visitei anteriormente.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 5": {
+      "question": "Sei como diferenciar conteúdos promovidos de outros conteúdos que encontro ou recebo online (por exemplo, reconhecer um anúncio nas redes sociais ou motores de busca).",
+      "options": [
+        "Não sei nada sobre isto / Nunca ouvi falar",
+        "Tenho apenas um entendimento limitado e preciso de mais explicações",
+        "Tenho um bom entendimento sobre isto",
+        "Domino totalmente este tema/assunto e poderia explicar a outros"
+      ]
+    },
+    "Question 6": {
+      "question": "Sei como identificar o propósito de uma fonte de informação online (por exemplo, informar, influenciar, entreter ou vender).",
+      "options": [
+        "Não sei nada sobre isto / Nunca ouvi falar",
+        "Tenho apenas um entendimento limitado e preciso de mais explicações",
+        "Tenho um bom entendimento sobre isto",
+        "Domino totalmente este tema/assunto e poderia explicar a outros"
+      ]
+    },
+    "Question 7": {
+      "question": "Verifico criticamente se a informação que encontro online é fiável.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 8": {
+      "question": "Sei que alguma informação na Internet é falsa (por exemplo, notícias falsas).",
+      "options": [
+        "Não sei nada sobre isto / Nunca ouvi falar",
+        "Tenho apenas um entendimento limitado e preciso de mais explicações",
+        "Tenho um bom entendimento sobre isto",
+        "Domino totalmente este tema/assunto e poderia explicar a outros"
+      ]
+    },
+    "Question 9": {
+      "question": "Sei sobre diferentes meios de armazenamento (por exemplo, disco rígido interno ou externo, pen drive, cartão de memória).",
+      "options": [
+        "Não sei nada sobre isto / Nunca ouvi falar",
+        "Tenho apenas um entendimento limitado e preciso de mais explicações",
+        "Tenho um bom entendimento sobre isto",
+        "Domino totalmente este tema/assunto e poderia explicar a outros"
+      ]
+    },
+    "Question 10": {
+      "question": "Sei como organizar conteúdos digitais (por exemplo, documentos, imagens, vídeos) usando pastas ou etiquetas para os encontrar mais tarde.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 11": {
+      "question": "Sei como copiar e mover ficheiros (por exemplo, documentos, imagens, vídeos) entre pastas, dispositivos ou na nuvem.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 12": {
+      "question": "Sei como gerir e analisar dados usando software (por exemplo, ordenar, filtrar, fazer cálculos).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 13": {
+      "question": "Teste – Sei como enviar, responder e encaminhar e-mails.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 14": {
+      "question": "Sei que muitos serviços de comunicação e redes sociais são gratuitos porque são financiados por publicidade.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 15": {
+      "question": "Sei como usar funcionalidades avançadas de videoconferência (por exemplo, moderar, gravar áudio e vídeo).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 16": {
+      "question": "Sei quais ferramentas e serviços de comunicação (por exemplo, telefone, e-mail, videoconferência, mensagem de texto) são apropriados em diferentes circunstâncias.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 17": {
+      "question": "Estou aberto(a) a partilhar conteúdos digitais que considero interessantes e úteis para os outros.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 18": {
+      "question": "Sei como usar serviços na nuvem (por exemplo, Google Drive, DropBox, OneDrive) para partilhar os meus ficheiros.",
+      "options": [
+        "Nada",
+        "Pouco / muito pouco",
+        "Sim / Sim, sei / Sim, faço",
+        "Muito"
+      ]
+    },
+    "Question 19": {
+      "question": "Sei como alterar com quem partilho conteúdo (por exemplo, amigos, amigos de amigos, todos).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 20": {
+      "question": "Sei como referenciar a fonte de documentos (por exemplo, autor ou endereço web) que encontrei online.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 21": {
+      "question": "Sei como candidatar-me a um emprego usando uma plataforma digital (por exemplo, preencher um formulário, enviar CV e foto).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 22": {
+      "question": "Sei que muitos serviços públicos estão disponíveis na Internet (por exemplo, marcar uma consulta médica, submeter declaração de impostos, solicitar certidões de nascimento, casamento, residência e outros).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 23": {
+      "question": "Sei como pagar bens e serviços que compro online (por exemplo, transferência bancária, cartões de crédito/débito, outros sistemas de pagamento online).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 24": {
+      "question": "Para mim, é importante debater questões sociais ou políticas online (por exemplo, fóruns, sites de notícias, Facebook, Twitter).",
+      "options": [
+        "Nada",
+        "Pouco / muito pouco",
+        "Sim / Sim, faço / Sim, participo",
+        "Muito"
+      ]
+    },
+    "Question 25": {
+      "question": "Compreendo os benefícios da colaboração remota (por exemplo, redução do tempo de deslocação).",
+      "options": [
+        "Não sei nada sobre isto / Nunca ouvi falar",
+        "Tenho apenas um entendimento limitado e preciso de mais explicações",
+        "Tenho um bom entendimento sobre isto",
+        "Domino totalmente este tema/assunto e poderia explicar a outros"
+      ]
+    },
+    "Question 26": {
+      "question": "Sei como editar um documento online partilhado.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 27": {
+      "question": "Sei como convidar outros e dar permissões apropriadas para colaborar num documento partilhado.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 28": {
+      "question": "Estou ciente de que devo pedir permissão a alguém antes de publicar ou partilhar fotos dessa pessoa.",
+      "options": [
+        "Não sei nada sobre isto / Nunca ouvi falar",
+        "Tenho apenas um entendimento limitado e preciso de mais explicações",
+        "Tenho um bom entendimento sobre isto",
+        "Domino totalmente este tema/assunto e poderia explicar a outros"
+      ]
+    },
+    "Question 29": {
+      "question": "Sei como reconhecer mensagens e comportamentos online que atacam determinados grupos ou indivíduos (por exemplo, discurso de ódio).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 30": {
+      "question": "Consigo tomar as medidas corretas se alguém estiver a fazer algo errado online (por exemplo, comentário ofensivo, ameaças).",
+      "options": [
+        "Nada",
+        "Pouco / muito pouco",
+        "Sim / Sim, faço / Sim, intervenho",
+        "Muito"
+      ]
+    },
+    "Question 31": {
+      "question": "Sei como comportar-me online de acordo com a situação (por exemplo, formal vs informal).",
+      "options": [
+        "Nada",
+        "Pouco / muito pouco",
+        "Sim / Sim, sei / Sim, faço",
+        "Muito"
+      ]
+    },
+    "Question 32": {
+      "question": "Sei que a minha identidade digital é tudo o que me identifica em ambientes online (por exemplo, nomes de utilizador, gostos e publicações nas redes sociais, petições assinadas online).",
+      "options": [
+        "Não sei nada sobre isto / Nunca ouvi falar",
+        "Tenho apenas um entendimento limitado e preciso de mais explicações",
+        "Tenho um bom entendimento sobre isto",
+        "Domino totalmente este tema/assunto e poderia explicar a outros"
+      ]
+    },
+    "Question 33": {
+      "question": "Sei como criar um perfil em ambientes digitais para fins pessoais ou profissionais.",
+      "options": [
+        "Não sei nada sobre isto / Nunca ouvi falar",
+        "Tenho apenas um entendimento limitado e preciso de mais explicações",
+        "Tenho um bom entendimento sobre isto",
+        "Domino totalmente este tema/assunto e poderia explicar a outros"
+      ]
+    },
+    "Question 34": {
+      "question": "Sei que a UE introduziu o regulamento do Direito ao Esquecimento (ou seja, para remover informações privadas da Internet).",
+      "options": [
+        "Não sei nada sobre isto / Nunca ouvi falar",
+        "Tenho apenas um entendimento limitado e preciso de mais explicações",
+        "Tenho um bom entendimento sobre isto",
+        "Domino totalmente este tema/assunto e poderia explicar a outros"
+      ]
+    },
+    "Question 35": {
+      "question": "Sei como configurar as definições do meu navegador de Internet para impedir ou limitar cookies.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 36": {
+      "question": "Sei como criar e editar ficheiros de texto digitais (por exemplo, Word, OpenDocument, Google Docs).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 37": {
+      "question": "Sei como expressar-me criando conteúdos digitais na Internet (por exemplo, publicação de blog, vídeo no YouTube).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 38": {
+      "question": "Sei como produzir uma apresentação multimédia com texto, imagens, áudio e vídeo.",
+      "options": [
+        "Não sei nada sobre isto / Nunca ouvi falar",
+        "Tenho apenas um entendimento limitado e preciso de mais explicações",
+        "Tenho um bom entendimento sobre isto",
+        "Domino totalmente este tema/assunto e poderia explicar a outros"
+      ]
+    },
+    "Question 39": {
+      "question": "Para me expressar, tenho cuidado em escolher o tipo certo de mídia digital dependendo do público e do objetivo (por exemplo, usar redes sociais para promover um projeto).",
+      "options": [
+        "Nada",
+        "Pouco / muito pouco",
+        "Sim / Sim, faço / Sim, participo",
+        "Muito"
+      ]
+    },
+    "Question 40": {
+      "question": "Tenho interesse em criar novos conteúdos digitais misturando e modificando recursos digitais existentes (por exemplo, uma apresentação com fotos e uma banda sonora encontradas na Internet).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 41": {
+      "question": "Sei que algum conteúdo digital pode ser reutilizado e modificado legalmente (por exemplo, domínio público ou licenças Creative Commons).",
+      "options": [
+        "Não sei nada sobre isto / Nunca ouvi falar",
+        "Tenho apenas um entendimento limitado e preciso de mais explicações",
+        "Tenho um bom entendimento sobre isto",
+        "Domino totalmente este tema/assunto e poderia explicar a outros"
+      ]
+    },
+    "Question 42": {
+      "question": "Sei como editar ou fazer alterações em conteúdos digitais criados por outros (por exemplo, inserir texto numa imagem, editar um wiki).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 43": {
+      "question": "Sei como criar algo novo misturando diferentes tipos de conteúdos (por exemplo, texto e imagens).",
+      "options": [
+        "Nada",
+        "Pouco / muito pouco",
+        "Sim / Sim, faço / Sim, consigo",
+        "Muito"
+      ]
+    },
+    "Question 44": {
+      "question": "Tenho cuidado em seguir as regras sobre direitos de autor e licenças de conteúdos digitais que encontro.",
+      "options": [
+        "Nada",
+        "Pouco / muito pouco",
+        "Sim / Sim, faço / Sim, consigo",
+        "Muito"
+      ]
+    },
+    "Question 45": {
+      "question": "Sei que descarregar ou partilhar conteúdos digitais (por exemplo, música, software, filmes) pode ter consequências éticas ou legais.",
+      "options": [
+        "Nada",
+        "Pouco / muito pouco",
+        "Sim / Sim, faço / Sim, sei",
+        "Muito"
+      ]
+    },
+    "Question 46": {
+      "question": "Consigo detetar quando conteúdos digitais são disponibilizados ilegalmente (por exemplo, software, filmes, música, livros, TV).",
+      "options": [
+        "Não sei nada sobre isto / Nunca ouvi falar",
+        "Tenho apenas um entendimento limitado e preciso de mais explicações",
+        "Tenho um bom entendimento sobre isto",
+        "Domino totalmente este tema/assunto e poderia explicar a outros"
+      ]
+    },
+    "Question 47": {
+      "question": "Sei quais os diferentes tipos de licenças que se aplicam ao uso de conteúdos digitais (por exemplo, licenças Creative Commons).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 48": {
+      "question": "Tenho interesse em compreender como uma tarefa pode ser dividida em passos para ser automatizada, por exemplo em software ou por um robô.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 49": {
+      "question": "Sei que linguagens de programação (por exemplo, Python, Visual Basic, Java) são usadas para fornecer instruções a um dispositivo digital para executar uma tarefa.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 50": {
+      "question": "Consigo escrever scripts, macros e aplicações simples para automatizar a execução de uma tarefa.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 51": {
+      "question": "Sei que podem existir diferentes soluções algorítmicas para realizar uma tarefa computacional específica (por exemplo, ordenar e pesquisar).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 52": {
+      "question": "Compreendo os benefícios e também os riscos de segurança ao usar dispositivos ou sistemas conectados à Internet (por exemplo, relógios inteligentes, dispositivos de casa inteligente).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 53": {
+      "question": "Sei da importância de manter o sistema operativo, antivírus e outros softwares atualizados para prevenir problemas de segurança.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 54": {
+      "question": "Sei como configurar as definições de um firewall em diferentes dispositivos.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 55": {
+      "question": "Sei como recuperar informações digitais e outros conteúdos (por exemplo, fotos, contactos) a partir de um backup.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 56": {
+      "question": "Sei como restringir ou recusar acesso à minha localização geográfica.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 57": {
+      "question": "Sei como identificar mensagens de e-mail suspeitas que tentam obter os meus dados pessoais.",
+      "options": [
+        "Não sei nada sobre isto / Nunca ouvi falar",
+        "Tenho apenas um entendimento limitado e preciso de mais explicações",
+        "Tenho um bom entendimento sobre isto",
+        "Domino totalmente este tema/assunto e poderia explicar a outros"
+      ]
+    },
+    "Question 58": {
+      "question": "Sei como verificar se o site onde sou solicitado a fornecer dados pessoais é seguro (por exemplo, sites https, logótipo ou certificado de segurança).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 59": {
+      "question": "Sei quais dados pessoais não devo partilhar ou exibir online (por exemplo, nas redes sociais).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 60": {
+      "question": "Tenho cuidado em verificar as políticas de privacidade dos serviços digitais que utilizo.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 61": {
+      "question": "Estou consciente de que devo gerir o tempo que passo nos meus dispositivos digitais.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 62": {
+      "question": "Sei como me proteger de encontros e materiais indesejados ou maliciosos online (por exemplo, mensagens de spam, e-mails de roubo de identidade).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 63": {
+      "question": "Sei sobre ferramentas digitais que podem ajudar pessoas idosas ou com necessidades especiais.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 64": {
+      "question": "Procuro formas em que as tecnologias digitais podem ajudar-me a viver e consumir de forma mais amiga do ambiente.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 65": {
+      "question": "Sei que dispositivos digitais antigos e consumíveis (por exemplo, computadores, smartphones, baterias) devem ser descartados adequadamente para minimizar o seu impacto ambiental.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 66": {
+      "question": "Sei como reduzir o consumo de energia dos meus dispositivos (por exemplo, alterar definições, fechar apps, desligar Wi-Fi).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 67": {
+      "question": "Sei comportamentos “verdes” a seguir ao comprar ou usar dispositivos digitais (por exemplo, adquirir dispositivos com Eco-label, evitar imprimir arquivos desnecessários, não deixar carregadores ligados sem dispositivo).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 68": {
+      "question": "Quando enfrento um problema técnico, tento identificar o problema passo a passo.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 69": {
+      "question": "Sei algumas razões pelas quais um dispositivo digital pode falhar em conectar-se à Internet (por exemplo, senha Wi-Fi incorreta, modo avião ativado).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 70": {
+      "question": "Quando enfrento um problema técnico, consigo encontrar soluções na Internet.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 71": {
+      "question": "Consigo editar as configurações do sistema operativo dos meus dispositivos digitais para resolver problemas técnicos (por exemplo, parar/iniciar serviços automaticamente, modificar chaves de registo).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 72": {
+      "question": "Normalmente tento descobrir se existe uma solução tecnológica que possa ajudar-me a satisfazer uma necessidade pessoal ou profissional.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 73": {
+      "question": "Sei as principais funções dos dispositivos digitais mais comuns (computador, tablet, smartphone).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 74": {
+      "question": "Sei como selecionar a ferramenta, dispositivo ou serviço adequado para executar uma determinada tarefa (por exemplo, escolher um smartphone para as minhas necessidades, escolher uma ferramenta para videoconferência profissional).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 75": {
+      "question": "Sei soluções técnicas que podem melhorar o acesso e uso de ferramentas digitais, como tradução de língua, ampliação ou zoom e funcionalidade de texto-para-voz.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 76": {
+      "question": "Sei que a tecnologia digital pode ser usada como uma ferramenta poderosa para inovar processos e produtos.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 77": {
+      "question": "Estou disposto(a) a participar em desafios e concursos, com o objetivo de resolver problemas intelectuais, sociais ou práticos através de tecnologias digitais.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 78": {
+      "question": "Consigo usar ferramentas de dados (por exemplo, bases de dados, software de mineração e análise de dados) que gerem e organizem informação complexa para tomar decisões e resolver problemas.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 79": {
+      "question": "Estou disposto(a) a ajudar pessoas da minha comunidade a melhorar as suas competências digitais.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 80": {
+      "question": "Tenho curiosidade sobre novos dispositivos e aplicações digitais e gosto de experimentá-los sempre que encontro oportunidade.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 81": {
+      "question": "Sei como usar ferramentas de aprendizagem online para melhorar as minhas competências digitais (por exemplo, tutoriais em vídeo, cursos online).",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    },
+    "Question 82": {
+      "question": "Sei sobre novas tendências no mundo digital e como elas impactam a minha vida pessoal ou profissional.",
+      "options": [
+        "Não sei como fazer",
+        "Consigo fazer com ajuda",
+        "Consigo fazer sozinho(a)",
+        "Consigo fazer com confiança e, se necessário, posso apoiar/orientar outros"
+      ]
+    }
+
+  }
+}

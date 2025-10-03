@@ -1,0 +1,2215 @@
+{
+  "questions": {
+        "1.1 B1": {
+        "question": "Formuluojant informacijos poreikį, koks turėtų būti pirmas žingsnis?",
+        "options": [
+            "Nustatyti galimus šaltinius",
+            "Apibrėžti reikalingos informacijos tipą ir apimtį",
+            "Pasirinkti paieškos sistemą",
+            "Ieškoti vaizdų"
+        ],
+        "answer": "Apibrėžti reikalingos informacijos tipą ir apimtį"
+        },
+        "1.1 B2": {
+        "question": "Jeigu nesate tikri, kokios informacijos jums reikia, kuris būdas yra geriausias?",
+        "options": [
+            "Ieškoti visko",
+            "Susiaurinti temą generuojant pagrindines temas",
+            "Naudoti tik vieną paieškos sistemą",
+            "Pasikliauti pirmu rezultatu"
+        ],
+        "answer": "Susiaurinti temą generuojant pagrindines temas"
+        },
+        "1.1 B3": {
+        "question": "Koks yra pagrindinis Būlio operatorių naudojimo paieškos užklausose privalumas?",
+        "options": [
+            "Jie pateikia estetiškai patrauklesnius rezultatus",
+            "Jie padeda patikslinti arba išplėsti paieškos rezultatus",
+            "Jie pagreitina paieškos sistemos veikimą",
+            "Jie naudingi tik ekspertams"
+        ],
+        "answer": "Jie padeda patikslinti arba išplėsti paieškos rezultatus"
+        },
+        "1.1 B4": {
+        "question": "Kaip galima patikslinti paieškos rezultatus, kai atsiranda per daug nesusijusių elementų?",
+        "options": [
+            "Pridėti tikslesnius raktažodžius",
+            "Naudoti tik bendrus terminus",
+            "Ieškoti kita kalba",
+            "Ignoruoti pirmuosius rezultatus"
+        ],
+        "answer": "Pridėti tikslesnius raktažodžius"
+        },
+        "1.1 B5": {
+        "question": "Kam paprastai naudojama hipersaitas skaitmeninėje aplinkoje?",
+        "options": [
+            "Vaizdų rodymui",
+            "Nukreipimui į kitą tinklalapį ar šaltinį",
+            "Informacijos išsaugojimui vėlesniam naudojimui",
+            "Turinio blokavimui"
+        ],
+        "answer": "Nukreipimui į kitą tinklalapį ar šaltinį"
+        },
+        "1.1 B6": {
+        "question": "Ką svarbu apsvarstyti atnaujinant paieškos strategiją?",
+        "options": [
+            "Paieškos sistemos puslapio išdėstymą",
+            "Galimų šaltinių skaičių",
+            "Paieškos terminų patikslinimą remiantis naujais radiniais",
+            "Nesusijusių temų įtraukimą platesniems rezultatams"
+        ],
+        "answer": "Paieškos terminų patikslinimą remiantis naujais radiniais"
+        },
+        "1.1 M1": {
+        "question": "Kurį iš toliau pateiktų variantų galima laikyti NE informacijos poreikiu?",
+        "options": [
+            "Sužinoti istorinį įvykio priežastį",
+            "Pasirinkti šaltinį remiantis asmeniniu šališkumu",
+            "Ieškoti duomenų apie mokslinę temą",
+            "Suprasti paieškos tikslą"
+        ],
+        "answer": "Pasirinkti šaltinį remiantis asmeniniu šališkumu"
+        },
+        "1.1 M2": {
+        "question": "Jei norite iš paieškos pašalinti terminą, kurį Būlio operatorių reikėtų naudoti?",
+        "options": ["AND", "OR", "NOT", "WITH"],
+        "answer": "NOT"
+        },
+        "1.1 M3": {
+        "question": "Ką daryti, jei bandant pasiekti straipsnį atsiranda mokėjimo siena (paywall)?",
+        "options": [
+            "Nutraukti paiešką",
+            "Ieškoti nemokamos prieigos per institucinius prisijungimus ar alternatyvias duomenų bazes",
+            "Visiškai ignoruoti straipsnį",
+            "Pereiti prie kito rezultato"
+        ],
+        "answer": "Ieškoti nemokamos prieigos per institucinius prisijungimus ar alternatyvias duomenų bazes"
+        },
+        "1.1 M4": {
+        "question": "Kaip meniu ir naršymo juostos padeda naršyti skaitmeninį turinį?",
+        "options": [
+            "Jos paslepia nereikalingą turinį",
+            "Jos organizuoja turinio kategorijas, kad būtų lengva pasiekti",
+            "Jos sulėtina puslapio įkėlimo laiką",
+            "Jos automatiškai blokuoja reklamas"
+        ],
+        "answer": "Jos organizuoja turinio kategorijas, kad būtų lengva pasiekti"
+        },
+        "1.1 M5": {
+        "question": "Koks yra veiksmingas būdas pritaikyti paieškos strategiją laikui bėgant?",
+        "options": [
+            "Bandymų ir klaidų metodu remiantis rezultatais",
+            "Pasikliauti vienu šaltiniu visai informacijai",
+            "Įvertinti rezultatų kokybę ir atitinkamai pakoreguoti paieškos terminus",
+            "Niekada neatnaujinti paieškos strategijos"
+        ],
+        "answer": "Įvertinti rezultatų kokybę ir atitinkamai pakoreguoti paieškos terminus"
+        },
+        "1.1 M6": {
+        "question": "Kodėl svarbu reguliariai atnaujinti paieškos strategijas?",
+        "options": [
+            "Kad išvengtumėte pasikartojančių rezultatų",
+            "Kad būtumėte informuoti apie naujai prieinamus duomenis ir šaltinius",
+            "Kad išvengtumėte dėmesio blaškymo naršant",
+            "Kad sumažintumėte paieškos sistemos įkėlimo laiką"
+        ],
+        "answer": "Kad būtumėte informuoti apie naujai prieinamus duomenis ir šaltinius"
+        },
+        "1.2 B1": {
+        "question": "Kurį iš šių veiksnių galima laikyti patikimo šaltinio rodikliu?",
+        "options": [
+            "Jis dažnai dalijamas socialiniuose tinkluose",
+            "Jį paskelbė patikima organizacija arba ekspertas",
+            "Jame yra daug reklamų",
+            "Jis vizualiai patrauklus"
+        ],
+        "answer": "Jį paskelbė patikima organizacija arba ekspertas"
+        },
+        "1.2 B2": {
+        "question": "Kaip nustatyti, ar straipsnyje pateikta informacija yra atnaujinta?",
+        "options": [
+            "Patikrinti publikavimo datą",
+            "Pažiūrėti, kiek yra pasidalijimų ar „patinka“",
+            "Žiūrėti, ar jis rodomas pirmame paieškos rezultatų puslapyje",
+            "Ignoruoti autoriaus kvalifikaciją"
+        ],
+        "answer": "Patikrinti publikavimo datą"
+        },
+        "1.2 B3": {
+        "question": "Koks yra svarbus žingsnis kritiškai vertinant duomenis?",
+        "options": [
+            "Ignoruoti prieštaringą informaciją",
+            "Patikrinti, ar duomenų rinkimo metodas nėra šališkas",
+            "Naudoti duomenis iš nežinomų šaltinių",
+            "Teikti pirmenybę duomenims, kurie atitinka jūsų nuomonę"
+        ],
+        "answer": "Patikrinti, ar duomenų rinkimo metodas nėra šališkas"
+        },
+        "1.2 B4": {
+        "question": "Kaip reikėtų elgtis su prieštaringais duomenimis iš skirtingų šaltinių?",
+        "options": [
+            "Visiškai ignoruoti prieštaringus duomenis",
+            "Palyginti metodikas ir kiekvieno šaltinio kontekstą",
+            "Pasirinkti tą, kuris palaiko jūsų nuomonę",
+            "Susitelkti tik į naujausius duomenis"
+        ],
+        "answer": "Palyginti metodikas ir kiekvieno šaltinio kontekstą"
+        },
+        "1.2 B5": {
+        "question": "Koks yra geriausias būdas saugoti duomenis, kad vėliau būtų lengva juos rasti?",
+        "options": [
+            "Išsaugoti viską viename aplanke be struktūros",
+            "Naudoti aiškią organizacinę struktūrą su aplankais ir poaplankiais",
+            "Laikyti viską viename faile darbalaukyje",
+            "Saugoti atsitiktinai pavadintus failus"
+        ],
+        "answer": "Naudoti aiškią organizacinę struktūrą su aplankais ir poaplankiais"
+        },
+        "1.2 B6": {
+        "question": "Kaip debesų saugykla gali padėti valdant duomenis?",
+        "options": [
+            "Ji automatiškai kategorizuoja failus",
+            "Ji leidžia pasiekti duomenis iš kelių įrenginių",
+            "Ji riboja jūsų duomenų saugojimo talpą",
+            "Ji veikia tik neprisijungus prie interneto"
+        ],
+        "answer": "Ji leidžia pasiekti duomenis iš kelių įrenginių"
+        },
+        "1.2 M1": {
+        "question": "Kodėl svarbu kryžmiškai patikrinti informaciją iš kelių šaltinių?",
+        "options": [
+            "Kad gautumėte įvairių nuomonių",
+            "Kad užtikrintumėte nuoseklumą ir tikslumą tarp skirtingų šaltinių",
+            "Kad padidintumėte perskaitytų straipsnių skaičių",
+            "Kad pagreitintumėte tyrimo procesą"
+        ],
+        "answer": "Kad užtikrintumėte nuoseklumą ir tikslumą tarp skirtingų šaltinių"
+        },
+        "1.2 M2": {
+        "question": "Kaip galima patikrinti internete rastų duomenų tikslumą?",
+        "options": [
+            "Pasikliauti pirmu paieškos rezultatu",
+            "Patikrinti, ar duomenys cituojami kituose patikimuose šaltiniuose",
+            "Ieškoti tik vaizdų",
+            "Pasitikėti informacija be šaltinių"
+        ],
+        "answer": "Patikrinti, ar duomenys cituojami kituose patikimuose šaltiniuose"
+        },
+        "1.2 M3": {
+        "question": "Kas padeda užtikrinti, kad duomenys būtų tikslūs ir patikimi?",
+        "options": [
+            "Ekspertų atlikta recenzija",
+            "Didelis socialinių tinklų įsitraukimas",
+            "Aiškus formatavimas ir dizainas",
+            "Mokamas turinys iš influencerių"
+        ],
+        "answer": "Ekspertų atlikta recenzija"
+        },
+        "1.2 M4": {
+        "question": "Ką svarbiausia apsvarstyti interpretuojant duomenis kontekste?",
+        "options": [
+            "Ar duomenys atitinka populiarią nuomonę",
+            "Kaip duomenys buvo surinkti ir ką jie atspindi",
+            "Kaip duomenys atrodo pristatyme",
+            "Ar duomenys lengvai suprantami"
+        ],
+        "answer": "Kaip duomenys buvo surinkti ir ką jie atspindi"
+        },
+        "1.2 M5": {
+        "question": "Kaip galima naudoti metaduomenis duomenų organizacijai pagerinti?",
+        "options": [
+            "Žymint failus atitinkamais raktažodžiais",
+            "Kopijuojant failus į kelis aplankus",
+            "Ištrinant nereikalingus failus",
+            "Naudojant metaduomenis tik vaizdams"
+        ],
+        "answer": "Žymint failus atitinkamais raktažodžiais"
+        },
+        "1.2 M6": {
+        "question": "Koks yra failų sinchronizavimo įrankių privalumas?",
+        "options": [
+            "Jie padeda perduoti duomenis tarp nesusijusių įrenginių",
+            "Jie leidžia pasiekti atnaujintus failus keliuose įrenginiuose",
+            "Jie automatiškai ištrina senus failus",
+            "Jie organizuoja failus į tam tikrus formatus"
+        ],
+        "answer": "Jie leidžia pasiekti atnaujintus failus keliuose įrenginiuose"
+        },
+        "1.3 B1": {
+        "question": "Koks yra geriausias būdas saugoti duomenis, kad vėliau būtų lengva juos rasti?",
+        "options": [
+            "Išsaugoti viską viename aplanke be struktūros",
+            "Naudoti aiškią organizacinę struktūrą su aplankais ir poaplankiais",
+            "Laikyti viską viename faile darbalaukyje",
+            "Saugoti atsitiktinai pavadintus failus"
+        ],
+        "answer": "Naudoti aiškią organizacinę struktūrą su aplankais ir poaplankiais"
+        },
+        "1.3 B2": {
+        "question": "Kaip debesų saugykla gali padėti valdant duomenis?",
+        "options": [
+            "Ji automatiškai kategorizuoja failus",
+            "Ji leidžia pasiekti duomenis iš kelių įrenginių",
+            "Ji riboja jūsų duomenų saugojimo talpą",
+            "Ji veikia tik neprisijungus prie interneto"
+        ],
+        "answer": "Ji leidžia pasiekti duomenis iš kelių įrenginių"
+        },
+        "1.3 B3": {
+        "question": "Kuris iš šių būdų yra gera praktika pavadinant failus?",
+        "options": [
+            "Naudoti atsitiktines raides ir skaičius",
+            "Kurti aprašomuosius, nuoseklius failų pavadinimus, atspindinčius turinį",
+            "Vengti datų naudojimo failų pavadinimuose",
+            "Failus vadinti pagal svetainę, kurioje jie rasti"
+        ],
+        "answer": "Kurti aprašomuosius, nuoseklius failų pavadinimus, atspindinčius turinį"
+        },
+        "1.3 B4": {
+        "question": "Kurį iš šių pavyzdžių galima laikyti struktūruotos aplinkos naudojimu duomenims apdoroti?",
+        "options": [
+            "Sukurti skaičiuoklę duomenims organizuoti ir analizuoti",
+            "Failus išsaugoti atsitiktinėse kompiuterio vietose",
+            "Pasikliauti tik atmintimi informacijos saugojimui",
+            "Vesti fizines pastabas skaitmeniniam turiniui"
+        ],
+        "answer": "Sukurti skaičiuoklę duomenims organizuoti ir analizuoti"
+        },
+        "1.3 B5": {
+        "question": "Kuo gali padėti duomenų bazės valdant didelius duomenų kiekius?",
+        "options": [
+            "Sulėtinti duomenų analizės procesą",
+            "Efektyviai rūšiuoti, filtruoti ir analizuoti informaciją",
+            "Saugo tik tekstinius duomenis",
+            "Apriboja prieigą prie duomenų"
+        ],
+        "answer": "Efektyviai rūšiuoti, filtruoti ir analizuoti informaciją"
+        },
+        "1.3 B6": {
+        "question": "Kaip duomenų vizualizavimo įrankiai gali padėti apdorojant informaciją?",
+        "options": [
+            "Padarydami duomenis vizualiai patrauklesnius be konteksto",
+            "Padėdami atpažinti dėsningumus ir tendencijas dideliuose duomenų rinkiniuose",
+            "Supaprastindami duomenis be jokios analizės",
+            "Paslėpdami duomenis grafikuose"
+        ],
+        "answer": "Padėdami atpažinti dėsningumus ir tendencijas dideliuose duomenų rinkiniuose"
+        },
+        "1.3 M1": {
+        "question": "Kodėl svarbu reguliariai daryti atsargines duomenų kopijas?",
+        "options": [
+            "Kad sutaupytumėte saugojimo vietos",
+            "Kad neprarastumėte svarbios informacijos",
+            "Kad failai būtų išsibarstę po įrenginius",
+            "Kad išvengtumėte dažno duomenų naudojimo"
+        ],
+        "answer": "Kad neprarastumėte svarbios informacijos"
+        },
+        "1.3 M2": {
+        "question": "Kaip galima naudoti metaduomenis duomenų organizacijai pagerinti?",
+        "options": [
+            "Žymint failus atitinkamais raktažodžiais",
+            "Kopijuojant failus į kelis aplankus",
+            "Ištrinant nereikalingus failus",
+            "Naudojant metaduomenis tik vaizdams"
+        ],
+        "answer": "Žymint failus atitinkamais raktažodžiais"
+        },
+        "1.3 M3": {
+        "question": "Koks yra failų sinchronizavimo įrankių privalumas?",
+        "options": [
+            "Jie padeda perduoti duomenis tarp nesusijusių įrenginių",
+            "Jie leidžia pasiekti atnaujintus failus keliuose įrenginiuose",
+            "Jie automatiškai ištrina senus failus",
+            "Jie organizuoja failus į tam tikrus formatus"
+        ],
+        "answer": "Jie leidžia pasiekti atnaujintus failus keliuose įrenginiuose"
+        },
+        "1.3 M4": {
+        "question": "Kodėl svarbu taikyti nuoseklius metodus duomenų organizavimui ir apdorojimui?",
+        "options": [
+            "Kad užtikrintumėte savo išvadų tikslumą ir patikimumą",
+            "Kad sukurtumėte netvarkingą duomenų bazę",
+            "Kad būtų išvengta bendradarbiavimo projektuose",
+            "Kad procesas būtų lėtesnis"
+        ],
+        "answer": "Kad užtikrintumėte savo išvadų tikslumą ir patikimumą"
+        },
+        "1.3 M5": {
+        "question": "Koks yra vienas privalumas naudojant automatizavimo įrankius pasikartojančioms duomenų užduotims?",
+        "options": [
+            "Tai padidina klaidų riziką",
+            "Tai sutaupo laiko ir padidina tikslumą",
+            "Tai apsunkina analizės procesą",
+            "Tam reikia rankiniu būdu įvesti duomenis"
+        ],
+        "answer": "Tai sutaupo laiko ir padidina tikslumą"
+        },
+        "1.3 M6": {
+        "question": "Kaip geriausiai valdyti sudėtingus duomenų rinkinius, kad būtų lengva juos analizuoti?",
+        "options": [
+            "Naudoti kelias skaičiuokles jų nesusiejant",
+            "Struktūruoti duomenis duomenų bazėje ar skaičiuoklėje rūšiavimui ir filtravimui",
+            "Vengti bet kokių skaitmeninių įrankių",
+            "Saugo duomenis nestruktūrizuotuose formatuose, pvz., tekstiniuose failuose"
+        ],
+        "answer": "Struktūruoti duomenis duomenų bazėje ar skaičiuoklėje rūšiavimui ir filtravimui"
+        },
+
+        "2.1 B1": {
+        "question": "Kurį iš šių įrankių tinkamiausia naudoti siunčiant institucijos naujienlaiškį?",
+        "options": ["El. paštas", "Snapchat", "WhatsApp", "Instagram"],
+        "answer": "El. paštas"
+        },
+        "2.1 B2": {
+        "question": "Pasirinkite teisingą internetinių platformų ir jų pagrindinio naudojimo atitikmenį:",
+        "options": [
+            "Zoom: Vaizdo įrašų įrašymas",
+            "WhatsApp: Mikro-tinklaraštis",
+            "MS Teams: Nuotolinės pamokos",
+            "X: Momentiniai pranešimai"
+        ],
+        "answer": "MS Teams: Nuotolinės pamokos"
+        },
+        "2.1 B3": {
+        "question": "Bendraujant naudojant skaitmenines technologijas, būtina atkreipti dėmesį į _______ , kad užtikrintumėte, jog jūsų žinutė bus suprasta taip, kaip numatyta, ir kad išvengtumėte nesusipratimų.",
+        "options": ["Kontekstą", "Gramatiką", "Rašybą", "Kalbą"],
+        "answer": "Kontekstą"
+        },
+        "2.1 B4": {
+        "question": "Jūs dirbate prie projekto su komanda, kuriai reikia greito grįžtamojo ryšio. Kuris skaitmeninis įrankis tinkamiausias?",
+        "options": [
+            "El. paštas",
+            "Momentinės žinutės (pvz., Slack, Microsoft Teams, WhatsApp)",
+            "Socialiniai tinklai",
+            "Vaizdo konferencija"
+        ],
+        "answer": "Momentinės žinutės (pvz., Slack, Microsoft Teams, WhatsApp)"
+        },
+        "2.1 B5": {
+        "question": "Jūs informuojate dėstytoją apie praleistą terminą. Koks yra tinkamiausias būdas tai padaryti?",
+        "options": ["Trumpa žinutė", "Oficialus el. laiškas", "Įrašas socialiniuose tinkluose", "Skambutis telefonu"],
+        "answer": "Oficialus el. laiškas"
+        },
+        "2.1 B6": {
+        "question": "Jūs aptariate jautrią temą su kolega. Kurį metodą turėtumėte pasirinkti?",
+        "options": ["Grupinis pokalbis", "Vaizdo skambutis", "Viešas forumas", "Tiesioginė žinutė"],
+        "answer": "Vaizdo skambutis"
+        },
+        "2.1 M1": {
+        "question": "Įsivaizduokite, kad užsisakėte studento knygą internetinėje svetainėje, ir turite problemų sekdami užsakymą. Kuris sakinys (įvestis) būtų veiksmingiausias kreipiantis į virtualų asistentą (botą), kad jis patikrintų jūsų naujausią užsakymą?",
+        "options": [
+            "\"Look for my book.\"",
+            "\"Kur yra mano užsakymas?\"",
+            "\"Sekti užsakymą Nr. XD1035GH\"",
+            "\"Labas, man kažko reikia.\""
+        ],
+        "answer": "\"Sekti užsakymą Nr. XD1035GH\""
+        },
+        "2.1 M2": {
+        "question": "Bendraujant su generatyvinio DI platformomis (pvz., ChatGPT), koks yra tinkamiausias būdas formuluoti užklausą, kad gautumėte tikslius rezultatus?",
+        "options": ["Užduoti klausimus.", "Pateikti detalias instrukcijas.", "Duoti duomenų.", "Naudoti tik raktažodžius"],
+        "answer": "Pateikti detalias instrukcijas."
+        },
+        "2.1 M3": {
+        "question": "Kurį iš toliau pateiktų veiksnių būtina apsvarstyti pasirenkant tinkamą skaitmeninės komunikacijos įrankį akademiniam pristatymui?",
+        "options": [
+            "Įrankio spalvų schemą",
+            "Įrankio galimybes palaikyti multimediją ir ekrano dalijimąsi",
+            "Įrankio populiarumą tarp draugų",
+            "Įrankio integraciją su socialiniais tinklais"
+        ],
+        "answer": "Įrankio galimybes palaikyti multimediją ir ekrano dalijimąsi"
+        },
+        "2.1 M4": {
+        "question": "Jūsų paprašė pristatyti naują programinės įrangos funkciją kolegoms. Koks yra tinkamiausias komunikacijos būdas?",
+        "options": ["Neoficialus tinklaraščio įrašas", "Išsamus el. laiškas su priedais", "Tiesioginė demonstracija vaizdo skambučio metu", "Įrašyta vaizdo žinutė"],
+        "answer": "Tiesioginė demonstracija vaizdo skambučio metu"
+        },
+        "2.1 M5": {
+        "question": "Jūs esate klasės atstovas ir turite padaryti pranešimą, kuris liečia visus studentus. Koks komunikacijos kanalas yra efektyviausias?",
+        "options": ["Komandinė pokalbių programa", "Masinis el. laiškas", "Vaizdo konferencija", "WhatsApp grupė"],
+        "answer": "Masinis el. laiškas"
+        },
+        "2.1 M6": {
+        "question": "Jūs ir jūsų bendraklasiai kuriate projektą. Kuri iš šių platformų padėtų grupei sekti atliekamas užduotis?",
+        "options": ["Trello", "Discord", "Slack", "El. paštas"],
+        "answer": "Trello"
+        },
+
+        "2.2 B1": {
+        "question": "Kurį iš šių apibrėžimų geriausiai tinka terminui „duomenų dalijimasis“?",
+        "options": [
+            "Duomenų platinimas be jokių sąlygų",
+            "Bendradarbiavimas su kitais keičiantis duomenimis abipusei naudai",
+            "Duomenų aptarimas socialiniuose tinkluose",
+            "Tik žodinis duomenų aptarimas be failų dalijimosi"
+        ],
+        "answer": "Bendradarbiavimas su kitais keičiantis duomenimis abipusei naudai"
+        },
+        "2.2 B2": {
+        "question": "Jei internete randate infografiką ir norite ją pasidalinti socialiniuose tinkluose, ką turėtumėte padaryti?",
+        "options": [
+            "Paskelbti be jokių pakeitimų.",
+            "Įvertinti jos patikimumą ir nurodyti kūrėją.",
+            "Dalintis kaip savo kūriniu.",
+            "Dalintis tik jei prisimenate, kas ją sukūrė."
+        ],
+        "answer": "Įvertinti jos patikimumą ir nurodyti kūrėją."
+        },
+        "2.2 B3": {
+        "question": "Jei turite pasidalinti failu su bendraklasiais, kurio dydis yra apie 1,4 GB, kurią platformą pasirinksite?",
+        "options": ["El. paštas", "WhatsApp", "WeTransfer", "Messenger"],
+        "answer": "WeTransfer"
+        },
+        "2.2 B4": {
+        "question": "Pasirinkite teisingą teiginį apie programinės įrangos licencijas:",
+        "options": [
+            "Galiu atsisiųsti ir dalintis bet kokia programine įranga iš interneto",
+            "Visos įsigytos licencijos galioja visam laikui",
+            "Licencijos teisės dažniausiai priklauso nuo naudojimo tikslo ir vartotojų skaičiaus",
+            "Galiu atsisiųsti tik atvirojo kodo programinę įrangą"
+        ],
+        "answer": "Licencijos teisės dažniausiai priklauso nuo naudojimo tikslo ir vartotojų skaičiaus"
+        },
+        "2.2 B5": {
+        "question": "Kokia informacija svarbiausia cituojant internetinę knygą bibliografijoje?",
+        "options": [
+            "Autoriai ir svetainės nuoroda",
+            "Svetainės nuoroda",
+            "Autoriai, metai, pavadinimas, leidėjas ir svetainės nuoroda",
+            "Metai, puslapiai ir pavadinimas"
+        ],
+        "answer": "Autoriai, metai, pavadinimas, leidėjas ir svetainės nuoroda"
+        },
+        "2.2 B6": {
+        "question": "Kokius vaizdus galite dalintis internete?",
+        "options": [
+            "Bet kokius vaizdus iš Google Images",
+            "Tik vaizdus be autorių teisių",
+            "Bet kokius internetinius vaizdus",
+            "Tik vaizdus be autorių teisių arba su autoriaus leidimu"
+        ],
+        "answer": "Tik vaizdus be autorių teisių arba su autoriaus leidimu"
+        },
+
+        "2.2 M1": {
+        "question": "Radote įdomų paveikslėlį internete, kuris apsaugotas šia Creative Commons licencija. Kaip galite jį pakartotinai naudoti?",
+        "options": [
+            "Pakeisti paveikslėlio spalvas ir naudoti jį pristatyme, nurodant autorių ir CC logotipą",
+            "Atspausdinti paveikslėlį ant pakuotės su CC logotipu ir parduoti",
+            "Pasidalinti paveikslėliu socialiniuose tinkluose",
+            "Naudoti paveikslėlį savo profilyje"
+        ],
+        "answer": "Pakeisti paveikslėlio spalvas ir naudoti jį pristatyme, nurodant autorių ir CC logotipą"
+        },
+        "2.2 M2": {
+        "question": "Naudojant internete rastus vaizdus mokyklinėse užduotyse, koks yra tinkamiausias būdas nurodyti šaltinį?",
+        "options": [
+            "'Rasta internete'.",
+            "'Šaltinis: Google Images'.",
+            "'Vaizdas, kurį sukūrė [Autoriaus vardas], per [Svetainė]'.",
+            "Nuorodoms dalintis nereikia nurodyti šaltinio."
+        ],
+        "answer": "'Vaizdas, kurį sukūrė [Autoriaus vardas], per [Svetainė]'."
+        },
+        "2.2 M3": {
+        "question": "Toliau pateiktas straipsnis buvo rastas leidėjo svetainėje: Robertson, C. T. (2023). Defining News from an Audience Perspective at a Time of Crisis in the United States. Journalism Practice, 17(2), 374–390. https://doi.org/10.1080/17512786.2021.1919178. Kuris faktas apie šį straipsnį yra teisingas?",
+        "options": [
+            "Autorius: Robertson, pavadinimas: Journalism Practice, puslapiai: 374-390.",
+            "Autorius: Robertson, žurnalas: Journalism Practice, puslapiai: 374-390.",
+            "Autorius: C.T., tomas: 17, numeris: 2.",
+            "Pavadinimas: Journalism Practice, puslapiai: 374-390, leidėjas: doi.org"
+        ],
+        "answer": "Autorius: Robertson, žurnalas: Journalism Practice, puslapiai: 374-390."
+        },
+        "2.2 M4": {
+        "question": "Kokią muziką galima dalintis įraše socialiniuose tinkluose?",
+        "options": ["Bet kurią dainą", "Tik tas, kurias leidžia platforma", "Senas dainas", "Dainas, kurių atlikėjas mirė prieš 70 metų"],
+        "answer": "Dainas, kurių atlikėjas mirė prieš 70 metų"
+        },
+        "2.2 M5": {
+        "question": "Jei vykstate į Briuselį, kurio iš šių vaizdų negalite naudoti komerciniais tikslais bent iki 2076 metų?",
+        "options": [
+            "Nuotrauka, kurioje esu su draugais prie Atomiumo",
+            "Nuotrauka, kurioje einu gatve",
+            "Nuotrauka, kurioje esu su draugais Didžiojoje aikštėje (Grand Place)",
+            "Nuotrauka, kurioje mano draugas valgo šokoladą su jo sutikimu"
+        ],
+        "answer": "Nuotrauka, kurioje esu su draugais prie Atomiumo"
+        },
+        "2.2 M6": {
+        "question": "Kuris veiksmas nepažeidžia intelektinės nuosavybės teisių?",
+        "options": [
+            "Atsisiųsti ir naudoti viešojoje srityje esančias duomenų bazes",
+            "Skolinti slaptažodžius draugams, kad jie pasiektų mokamą turinį",
+            "Atsisiųsti programinę įrangą iš torrent svetainių",
+            "Įrašyti TV laidos dalis ir įkelti jas į YouTube"
+        ],
+        "answer": "Atsisiųsti ir naudoti viešojoje srityje esančias duomenų bazes"
+        },
+
+        "2.3 B1": {
+        "question": "Kuri iš šių skaitmeninių paslaugų dažnai naudojama universitetinėms įmokoms sumokėti?",
+        "options": ["Facebook", "WeTransfer", "Internetinė bankininkystė", "Instagram"],
+        "answer": "Internetinė bankininkystė"
+        },
+        "2.3 B2": {
+        "question": "Pasirinkite teisingą skaitmeninių paslaugų ir jų funkcijų atitikmenį.",
+        "options": [
+            "Vyriausybės svetainė: Viešosios informacijos ir paslaugų prieiga",
+            "Socialiniai tinklai: Pasirašyti ir palaikyti iniciatyvas",
+            "Internetinė peticija: Lankyti kursus ir įgyti naujų įgūdžių",
+            "E. mokymosi platforma: Dalyvauti diskusijose ir dalintis nuomonėmis"
+        ],
+        "answer": "Vyriausybės svetainė: Viešosios informacijos ir paslaugų prieiga"
+        },
+        "2.3 B3": {
+        "question": "Koks yra efektyviausias būdas susisiekti su universiteto studijų programos direktoriumi?",
+        "options": ["WhatsApp", "El. paštas", "Instagram", "Skambutis mobiliuoju telefonu"],
+        "answer": "El. paštas"
+        },
+        "2.3 B4": {
+        "question": "Kurį iš šių pavyzdžių galima laikyti skaitmeninių technologijų naudojimu pilietiniam įsitraukimui?",
+        "options": ["Apsipirkimas internetu", "Balsavimas per saugią internetinę platformą", "Filmų transliacija", "Naršymas socialiniuose tinkluose"],
+        "answer": "Balsavimas per saugią internetinę platformą"
+        },
+        "2.3 B5": {
+        "question": "Kokį vaidmenį socialinės medijos platformos atlieka pilietiniame įsitraukime?",
+        "options": [
+            "Jos skatina vartotojiškumą",
+            "Jos naudojamos informacijos sklaidai ir mobilizacijai",
+            "Jos trukdo viešosioms diskusijoms",
+            "Jos skirtos tik asmeniniams ryšiams"
+        ],
+        "answer": "Jos naudojamos informacijos sklaidai ir mobilizacijai"
+        },
+        "2.3 B6": {
+        "question": "Pasirinkite neteisingą skaitmeninės technologijos ir jos pilietinio įsitraukimo funkcijos atitikmenį:",
+        "options": [
+            "Internetinės peticijos: Viešosios paramos iniciatyvoms rinkimas",
+            "Socialinių tinklų kampanijos: Politinės partijos parašų rinkimas",
+            "E. valdžios paslaugos: Prieiga prie valdžios paslaugų",
+            "Sutelktinio finansavimo platformos: Lėšų rinkimas bendruomenės projektams"
+        ],
+        "answer": "Socialinių tinklų kampanijos: Politinės partijos parašų rinkimas"
+        },
+        "2.3 M1": {
+        "question": "Kuri skaitmeninė technologija gali padidinti skaidrumą ir atskaitomybę pilietiniame įsitraukime?",
+        "options": ["Virtuali realybė", "Blokų grandinė", "Papildyta realybė", "Fitneso sekimo įrenginiai"],
+        "answer": "Blokų grandinė"
+        },
+        "2.3 M2": {
+        "question": "Jums reikia parašyti esė apie studentų nuomonę dėl mobiliųjų telefonų naudojimo klasėje. Kuris iš šių įrankių tinkamiausias jų nuomonei surinkti?",
+        "options": ["Apklausa", "Skaičiuoklės", "Skambučiai mobiliuoju telefonu", "El. paštas"],
+        "answer": "Apklausa"
+        },
+        "2.3 M3": {
+        "question": "Kokios rizikos gali kilti, jei DI algoritmas prognozuoja jūsų pažymį tam tikrame dalyke? Pasirinkite tinkamiausią atsakymą.",
+        "options": [
+            "DI gali atgrasyti mane nuo studijų įpročių tobulinimo.",
+            "DI prognozės gali įvesti šališkumą ir paveikti, kaip mokytojai vertina bei palaiko studentus.",
+            "DI sistemos gali pakeisti mokytojo vaidmenį.",
+            "DI prognozių modeliai visada vertins mane neteisingai."
+        ],
+        "answer": "DI prognozės gali įvesti šališkumą ir paveikti, kaip mokytojai vertina bei palaiko studentus."
+        },
+        "2.3 M4": {
+        "question": "Pasirinkite teisingą sąvokos ir jos apibrėžimo atitikmenį:",
+        "options": [
+            "Skaitmeninė atskirtis: Skirtumas tarp tų, kurie turi prieigą prie skaitmeninių technologijų, ir tų, kurie neturi",
+            "E. dalyvavimas: Technologijos, skirtos pilietiniam įsitraukimui palengvinti",
+            "Pilietiniai duomenys: Skaitmeninių įrankių naudojimas valdžios dalyvavimui",
+            "Pilietinės technologijos: Duomenys, viešai prieinami skaidrumui ir analizei"
+        ],
+        "answer": "Skaitmeninė atskirtis: Skirtumas tarp tų, kurie turi prieigą prie skaitmeninių technologijų, ir tų, kurie neturi"
+        },
+        "2.3 M5": {
+        "question": "Bendruomenės organizacija nori didinti informuotumą apie vietos problemas naudodama skaitmeninius įrankius. Koks būdas yra efektyviausias?",
+        "options": [
+            "Sukurti svetainę su statine informacija",
+            "Pradėti interaktyvią socialinių tinklų kampaniją",
+            "Dalinti popierinius skrajutes",
+            "Surengti vienkartinį renginį be tęsinio"
+        ],
+        "answer": "Pradėti interaktyvią socialinių tinklų kampaniją"
+        },
+        "2.3 M6": {
+        "question": "Pasirinkite teisingą skaitmeninės technologijos ir jos naudos pilietiniam dalyvavimui atitikmenį:",
+        "options": [
+            "Socialinių tinklų platformos: Siūlo išteklius ir įrankius efektyviam pilietiniam įsitraukimui bei pažeidžiamųjų gynimui.",
+            "Internetinės balsavimo sistemos: Suteikia platformas marginalizuotų balsų stiprinimui.",
+            "Skaitmeninės advokacijos įrankiai: Skatina kolektyvinius veiksmus ir bendruomenės nuomonės rinkimą.",
+            "Pilietinės technologijų svetainės: Leidžia piliečiams teikti atsiliepimus ir diskutuoti realiu laiku."
+        ],
+        "answer": "Pilietinės technologijų svetainės: Leidžia piliečiams teikti atsiliepimus ir diskutuoti realiu laiku."
+        },
+
+
+        "2.4 B1": {
+        "question": "Kurį iš šių privalumų suteikia bendradarbiavimo įrankiai, tokie kaip Google Docs ar Sheets, dirbant grupiniuose projektuose?",
+        "options": ["Ribota prieiga", "Atnaujinimai realiu laiku", "Reikia brangios programinės įrangos", "Veikia tik neprisijungus"],
+        "answer": "Atnaujinimai realiu laiku"
+        },
+        "2.4 B2": {
+        "question": "Kurį iš šių įrankių galima naudoti grįžtamajam ryšiui iš bendraklasių surinkti?",
+        "options": ["Mentimeter", "Adobe Illustrator", "MS Sharepoint", "MS PowerPoint"],
+        "answer": "Mentimeter"
+        },
+        "2.4 B3": {
+        "question": "Įsivaizduokite, kad skelbiate įrašą Instagram apie artėjantį hakatoną jūsų universitete. Kurie grotažymės labiau tinka pritraukti kitus studentus į puslapį?",
+        "options": [
+            "#hackathon #university",
+            "#comevisit #events",
+            "#hackathon #[name of the university] #[name of the event and year]",
+            "#city #programming"
+        ],
+        "answer": "#hackathon #[name of the university] #[name of the event and year]"
+        },
+        "2.4 B4": {
+        "question": "Kurį teiginį geriausiai apibūdina bendrakūra (co-creation) skaitmeninių įrankių kontekste?",
+        "options": [
+            "Asmenys savarankiškai kuria turinį",
+            "Kelių suinteresuotųjų šalių bendradarbiavimas kuriant bendrus išteklius",
+            "Technologijų naudojimas asmeniniams projektams",
+            "Duomenų rinkimas be suinteresuotųjų šalių įsitraukimo"
+        ],
+        "answer": "Kelių suinteresuotųjų šalių bendradarbiavimas kuriant bendrus išteklius"
+        },
+        "2.4 B5": {
+        "question": "Kuo pirmiausia naudinga naudoti bendradarbiavimo platformas (pvz., Google Docs) bendrai kuriant žinias?",
+        "options": [
+            "Suteikia neribotą saugyklos vietą",
+            "Leidžia bendradarbiauti ir gauti grįžtamąjį ryšį realiu laiku",
+            "Pagerina duomenų privatumą",
+            "Nereikia interneto ryšio"
+        ],
+        "answer": "Leidžia bendradarbiauti ir gauti grįžtamąjį ryšį realiu laiku"
+        },
+        "2.4 B6": {
+        "question": "Pasirinkite teisingą skaitmeninių įrankių ir jų bendrakūros funkcijos atitikmenį:",
+        "options": [
+            "Bendradarbiavimo žemėlapių įrankiai: Įvairių visuomenės narių įžvalgų rinkimas",
+            "Sutelktinio darbo (crowdsourcing) platformos: Leidžia keliems naudotojams redaguoti ir atnaujinti informaciją",
+            "Vikiai: Duomenų ir idėjų erdvinis vizualizavimas",
+            "Internetinės apklausos įrankiai: Nuomonių ir duomenų rinkimas iš suinteresuotųjų šalių"
+        ],
+        "answer": "Internetinės apklausos įrankiai: Nuomonių ir duomenų rinkimas iš suinteresuotųjų šalių"
+        },
+        "2.4 M1": {
+        "question": "Kokia yra pagrindinė versijavimo programinės įrangos (pvz., Git) funkcija bendruose projektuose?",
+        "options": ["Redaguoti vaizdus", "Sekti dokumentų ir kodo pakeitimus", "Kurti pristatymus", "Tvarkyti el. laiškus"],
+        "answer": "Sekti dokumentų ir kodo pakeitimus"
+        },
+        "2.4 M2": {
+        "question": "Koks yra pagrindinis bendro kalendoriaus (pvz., Google Calendar) naudojimo tikslas bendradarbiavimo aplinkoje?",
+        "options": ["Sekti asmenines užduotis", "Dalintis terminais ir planuoti susitikimus", "Siųsti naujienlaiškius el. paštu", "Kurti užduočių sąrašus"],
+        "answer": "Dalintis terminais ir planuoti susitikimus"
+        },
+        "2.4 M3": {
+        "question": "Koks yra pagrindinis GitHub saugyklos (repository) tikslas?",
+        "options": ["Talpinti ir dalintis kodu", "Siųsti el. laiškus bendradarbiams", "Kurti pristatymus", "Talpinti svetainę"],
+        "answer": "Talpinti ir dalintis kodu"
+        },
+        "2.4 M4": {
+        "question": "Kam naudojama MS Word parinktis „track changes“ (sekti pakeitimus)?",
+        "options": [
+            "Sekti versijų istoriją",
+            "Sužinoti, kur ir kas atliko dokumento pakeitimus",
+            "Pažymėti klaidas",
+            "Pranešti apie problemas"
+        ],
+        "answer": "Sužinoti, kur ir kas atliko dokumento pakeitimus"
+        },
+        "2.4 M5": {
+        "question": "Tyrėjų komanda naudoja internetinę platformą duomenims iš dalyvių rinkti ir patys įsitraukia į analizę. Kuriuo metodu jie naudojasi?",
+        "options": ["Uždari tyrimo metodai", "Piliečių mokslas", "Tradicinės apklausos", "Duomenų gavyba"],
+        "answer": "Piliečių mokslas"
+        },
+        "2.4 M6": {
+        "question": "Kuris terminas apibūdina kito asmens kūrinio ar kodo pakartotinį naudojimą ir keitimą skaitmeninėje erdvėje?",
+        "options": ["Adaptacija", "Remiksavimas", "Apud", "Pakartotinis naudojimas"],
+        "answer": "Remiksavimas"
+        },
+
+        "2.5 B1": {
+        "question": "Kurį iš toliau pateiktų pavyzdžių galima laikyti gera el. pašto etiketo praktika?",
+        "options": [
+            "Naudoti vien didžiąsias raides",
+            "Per trumpą laiką siųsti daug laiškų",
+            "Įtraukti aiškią temos eilutę",
+            "Nepaisyti rašybos ir gramatikos"
+        ],
+        "answer": "Įtraukti aiškią temos eilutę"
+        },
+        "2.5 B2": {
+        "question": "Kaip reaguotumėte į asmeninį užsipuolimą ar provokaciją, pažeidžiančią moderuojamos internetinės grupės taisykles?",
+        "options": [
+            "Informuočiau moderatorių",
+            "Laukčiau, kol kiti nariai mane apgins",
+            "Bandyčiau įtikinti pažeidėją",
+            "Atsakyčiau įrašu reaguodamas į ataką"
+        ],
+        "answer": "Informuočiau moderatorių"
+        },
+        "2.5 B3": {
+        "question": "Ką reikėtų daryti gavus nepageidaujamą el. laišką?",
+        "options": ["Atsakyti atgal", "Perkelti į šiukšlinę", "Pažymėti kaip brukalą ir perkelti į šiukšlinę", "Atsisakyti prenumeratos"],
+        "answer": "Pažymėti kaip brukalą ir perkelti į šiukšlinę"
+        },
+        "2.5 B4": {
+        "question": "Vėluojate į nuotolinę paskaitą ir įsijungiate vaizdo skambutį paskaitos viduryje. Ką turėtumėte daryti?",
+        "options": [
+            "Įjungti kamerą ir pamoti dėstytojui",
+            "Įjungti mikrofoną ir pasakyti, kad atvykote",
+            "Paprašyti dėstytojo pakartoti medžiagą",
+            "Pažymėti savo dalyvavimą pokalbyje netrikdant paskaitos"
+        ],
+        "answer": "Pažymėti savo dalyvavimą pokalbyje netrikdant paskaitos"
+        },
+        "2.5 B5": {
+        "question": "Kokios gerosios praktikos rekomenduojamos dalyvaujant nuotolinėje paskaitoje?",
+        "options": [
+            "Išjungti kamerą ir visada būti nutildytam",
+            "Įjungti kamerą ir būti nutildytam, kai kalba kiti",
+            "Visada laikyti įjungtą mikrofoną",
+            "Naudoti įjungtą kamerą su suasmenintu fonu"
+        ],
+        "answer": "Įjungti kamerą ir būti nutildytam, kai kalba kiti"
+        },
+        "2.5 B6": {
+        "question": "Turite pertraukti dėstytoją nuotolinėje paskaitoje. Ką turėtumėte daryti?",
+        "options": [
+            "Naudoti „pakelti ranką“ funkciją ir palaukti savo eilės",
+            "Įjungti kamerą ir pakelti ranką",
+            "Įjungti mikrofoną ir paprašyti leidimo",
+            "Išsiųsti privačią žinutę dėstytojui"
+        ],
+        "answer": "Naudoti „pakelti ranką“ funkciją ir palaukti savo eilės"
+        },
+        "2.5 M1": {
+        "question": "Pristatant grupinį darbą bendraamžiams, kuri strategija būtų veiksmingiausia?",
+        "options": [
+            "Naudoti formalią kalbą ir ilgus paragrafus",
+            "Įtraukti vaizdines priemones ir glaustą kalbą",
+            "Vengti interaktyvių elementų",
+            "Akcentuoti tradicinius komunikacijos metodus"
+        ],
+        "answer": "Įtraukti vaizdines priemones ir glaustą kalbą"
+        },
+        "2.5 M2": {
+        "question": "Kas, pavyzdžiui, laikoma neapykantos kurstymu socialiniuose tinkluose?",
+        "options": [
+            "Tiesioginė ataka prieš institucijas",
+            "Įžeidinėjimai politinei partijai",
+            "Įžeidžiančios pravardės, kuriomis puolami žmonės dėl jų etninės kilmės",
+            "Įniršę komentarai apie futbolo rungtynes"
+        ],
+        "answer": "Įžeidžiančios pravardės, kuriomis puolami žmonės dėl jų etninės kilmės"
+        },
+        "2.5 M3": {
+        "question": "Kurį iš šių aspektų įtraukus akademinis pristatymas taptų labiau įtraukus?",
+        "options": ["Naudoti kuo daugiau spalvų", "Naudoti vaizdo subtitrus su sans-serif šriftais", "Kalbėti garsiai", "Rašyti didžiosiomis raidėmis"],
+        "answer": "Naudoti vaizdo subtitrus su sans-serif šriftais"
+        },
+        "2.5 M4": {
+        "question": "Jei socialiniuose tinkluose matote draugo įrašą, palaikantį bendraklasį, kuris neseniai atliko lyties kaitos procesą, koks būtų tinkamiausias būdas didinti sąmoningumą dėl lyčių įtraukties?",
+        "options": ["Nieko nedaryti – tai ne mano reikalas", "Atsakyti ir išreikšti nepritarimą", "Pamėgti ir palaikyti", "Pranešti apie tai savo dėstytojui"],
+        "answer": "Pamėgti ir palaikyti"
+        },
+        "2.5 M5": {
+        "question": "Baigėte rašto darbą sekmadienį ir nusprendėte išsiųsti jį dėstytojui el. paštu. Koks elgesys yra mandagiausias?",
+        "options": [
+            "Siųsti el. laišką nedelsiant",
+            "Išsaugoti juodraščiuose",
+            "Paklausti dėstytojo pokalbyje, ar galima siųsti",
+            "Automatiškai suplanuoti išsiuntimą pirmadienio rytui"
+        ],
+        "answer": "Automatiškai suplanuoti išsiuntimą pirmadienio rytui"
+        },
+        "2.5 M6": {
+        "question": "Norite suplanuoti virtualų susitikimą su dalyviais iš įvairių laiko juostų, tarp jų ir jaunesniais, ir vyresniais. Pastebite, kad vieni teikia pirmenybę vėlyviems vakarams, kiti – rytams. Ką darysite?",
+        "options": [
+            "Suplanuosiu laiką, kuris tinka man; kiti prisitaikys.",
+            "Pasiūlysiu kelis man tinkančius laikus ir naudosiu apklausą bendram laikui rasti.",
+            "Pasirinksiu ankstyviausią man patogų laiką ir po to informuosiu kitus.",
+            "Paprašysiu visų atsiųsti savo galimybes ir nuspręsiu pagal daugumą."
+        ],
+        "answer": "Pasiūlysiu kelis man tinkančius laikus ir naudosiu apklausą bendram laikui rasti."
+        },
+
+        "2.6 B1": {
+        "question": "Kurį iš šių veiksmų galima laikyti gera praktika valdant kelias skaitmenines tapatybes?",
+        "options": [
+            "Naudoti tą patį slaptažodį visoms paskyroms",
+            "Išlaikyti nuoseklią profilio informaciją skirtingose platformose",
+            "Reguliariai atnaujinti kiekvienos paskyros privatumo nustatymus",
+            "Ignoruoti saugumo įspėjimus"
+        ],
+        "answer": "Reguliariai atnaujinti kiekvienos paskyros privatumo nustatymus"
+        },
+        "2.6 B2": {
+        "question": "Kuri praktika yra veiksmingiausia valdant skaitmeninę tapatybę ir saugant savo reputaciją internete?",
+        "options": [
+            "Laisvai dalintis asmenine informacija socialiniuose tinkluose, kad prisijungčiau prie daugiau žmonių.",
+            "Reguliariai atnaujinti socialinių tinklų paskyrų privatumo nustatymus ir atsakingai vertinti savo įrašus",
+            "Naudoti tą patį slaptažodį keliose platformose, kad būtų patogiau prisijungti.",
+            "Ignoruoti komentarus ir atsiliepimus savo profiliuose, kad išvengčiau konfliktų."
+        ],
+        "answer": "Reguliariai atnaujinti socialinių tinklų paskyrų privatumo nustatymus ir atsakingai vertinti savo įrašus"
+        },
+        "2.6 B3": {
+        "question": "Kokia yra geriausia strategija valdant internete kuriamus duomenis, kad apsaugotumėte savo skaitmeninę tapatybę?",
+        "options": [
+            "Dažnai skelbti neatsižvelgiant į įrašų poveikį mano reputacijai.",
+            "Reguliariai peržiūrėti ir šalinti pasenusius ar neaktualius įrašus ir paskyras.",
+            "Leisti visoms programėlėms be apribojimų pasiekti mano socialinių tinklų paskyras.",
+            "Viešai dalintis jautria informacija, kad gaučiau pasitikėjimą ir patikimumą."
+        ],
+        "answer": "Reguliariai peržiūrėti ir šalinti pasenusius ar neaktualius įrašus ir paskyras."
+        },
+        "2.6 B4": {
+        "question": "Koks turinys socialiniuose tinkluose tiesiogiai kelia grėsmę asmens saugumui?",
+        "options": ["Netikros naujienos", "Neprašyta reklama", "Neprašyta asmeninė žinutė", "Priekabiavimas ir šantažas"],
+        "answer": "Priekabiavimas ir šantažas"
+        },
+        "2.6 B5": {
+        "question": "Ar tinkama dalintis socialiniuose tinkluose nuotrauka su nepilnamečiais (pvz., jaunesniais broliais ar pusbroliais)?",
+        "options": [
+            "Ne, niekada.",
+            "Taip, nes tai privati erdvė.",
+            "Taip, jei atsiklausiu jų tėvų.",
+            "Taip, tik jei nerodau jų atpažinti leidžiančių kūno dalių."
+        ],
+        "answer": "Taip, jei atsiklausiu jų tėvų."
+        },
+        "2.6 B6": {
+        "question": "Kreipiatės dėl naujo darbo ir pastebite, kad jūsų socialinių tinklų profiliai yra vieši. Kai kurie įrašai gali neatitikti jūsų profesionalaus įvaizdžio. Ką darysite?",
+        "options": [
+            "Nieko nekeisiu; darbdavys neturėtų vertinti pagal asmeninius įrašus.",
+            "Peržiūrėsiu ir atnaujinsiu privatumo nustatymus, kad apribočiau, kas gali matyti mano įrašus.",
+            "Ištrinsiu visus įrašus nuo pastarųjų penkerių metų.",
+            "Sukursiu atskirą profesinę paskyrą darbo ryšiams."
+        ],
+        "answer": "Peržiūrėsiu ir atnaujinsiu privatumo nustatymus, kad apribočiau, kas gali matyti mano įrašus."
+        },
+        "2.6 M1": {
+        "question": "Koks yra vienas būdų apsaugoti asmens duomenis kuriant paskyras internete?",
+        "options": ["Naudoti lengvai įsimenamus slaptažodžius", "Dalintis slaptažodžiu su draugais", "Įjungti dviejų veiksnių autentifikavimą", "Nenaudoti privatumo nustatymų"],
+        "answer": "Įjungti dviejų veiksnių autentifikavimą"
+        },
+        "2.6 M2": {
+        "question": "Kaip užkirsti kelią mobiliosioms programėlėms rinkti likutinius (rezidualinius) duomenis iš jūsų įrenginio?",
+        "options": ["Išjungti geolokaciją ir programėlių sekimą", "Įjungti mikrofoną", "Išjungti kamerą", "Įjungti „lėktuvo“ režimą"],
+        "answer": "Išjungti geolokaciją ir programėlių sekimą"
+        },
+        "2.6 M3": {
+        "question": "Kokią meta-informaciją technologijų įmonės gali gauti iš asmenukės, padarytos jūsų telefonu?",
+        "options": ["Vardas", "Vieta", "Vieta, amžius, lytis, asmenybės bruožai, paieškos istorija ir bendri interesai", "Vardas ir telefono numeris"],
+        "answer": "Vieta, amžius, lytis, asmenybės bruožai, paieškos istorija ir bendri interesai"
+        },
+        "2.6 M4": {
+        "question": "Ką turėtumėte daryti, jei kas nors pavogė jūsų tapatybę internete (pvz., socialinio tinklo profilį)?",
+        "options": ["Bandytis derėtis su tuo asmeniu.", "Kreiptis į vietos institucijas", "Pranešti platformai apie pažeidimą ir pakeisti visus slaptažodžius.", "Sukurti kitą profilį."],
+        "answer": "Pranešti platformai apie pažeidimą ir pakeisti visus slaptažodžius."
+        },
+        "2.6 M5": {
+        "question": "Oficialus būdas pranešti apie bet kokius duomenų pažeidimus yra kreiptis į:",
+        "options": [
+            "Vietos institucijas",
+            "Nacionalinę duomenų apsaugos instituciją (DPA)",
+            "Gynybos ministeriją",
+            "Savivaldybę"
+        ],
+        "answer": "Nacionalinę duomenų apsaugos instituciją (DPA)"
+        },
+        "2.6 M6": {
+        "question": "Pagal BDAR, kiek laiko organizacija gali saugoti jūsų asmens duomenis?",
+        "options": ["Kiek tik nori", "Kiek įmanoma trumpiausią laiką", "3 metus", "Kol aš nurodysiu pašalinti"],
+        "answer": "Kiek įmanoma trumpiausią laiką"
+        },
+
+
+        "3.1 B1": {
+        "question": "Kas yra skaitmeninimas?",
+        "options": [
+            "Analoginės informacijos pavertimas skaitmenine",
+            "Vaizdų pavertimas vektoriais",
+            "Didelių failų fiksavimas",
+            "Skaitmeninė transformacija"
+        ],
+        "answer": "Analoginės informacijos pavertimas skaitmenine"
+        },
+        "3.1 B2": {
+        "question": "Kas yra skaitmeninis turinys?",
+        "options": [
+            "Fiziniai produktai, parduodami internetu",
+            "Bet kokia internete kuriama ir dalijama medija, pvz., tekstas, vaizdai ar vaizdo įrašai",
+            "Reklamos popieriuje",
+            "Nė vienas iš aukščiau pateiktų"
+        ],
+        "answer": "Bet kokia internete kuriama ir dalijama medija, pvz., tekstas, vaizdai ar vaizdo įrašai"
+        },
+        "3.1 B3": {
+        "question": "Kokius elementus gali turėti skaitmeninis turinys?",
+        "options": [
+            "El. knygos, tinklaraščiai, straipsniai ir naujienlaiškiai",
+            "Tinklalaidės, muzika ir garso knygos",
+            "Vaizdo įrašai, filmai, TV laidos ir tiesioginės transliacijos",
+            "Visi atsakymai teisingi"
+        ],
+        "answer": "Visi atsakymai teisingi"
+        },
+        "3.1 B4": {
+        "question": "Kuris įrankis dažniausiai naudojamas grafiniam dizainui?",
+        "options": ["Microsoft Excel", "Canva", "Microsoft PowerPoint", "Notepad"],
+        "answer": "Canva"
+        },
+        "3.1 B5": {
+        "question": "Kas yra „HTML“?",
+        "options": [
+            "Programavimo kalba",
+            "Kalba, skirta kurti interneto puslapius",
+            "Grafinio dizaino programa",
+            "Vaizdų redagavimo programinė įranga"
+        ],
+        "answer": "Kalba, skirta kurti interneto puslapius"
+        },
+        "3.1 B6": {
+        "question": "Kuriuos iš šių galima laikyti socialinių tinklų platformomis?",
+        "options": ["Instagram", "TikTok", "Facebook", "Visos"],
+        "answer": "Visos"
+        },
+        "3.1 M1": {
+        "question": "Kokius šešis elementus galima sujungti, kad sukurtumėte multimediją?",
+        "options": [
+            "Spalva, hipertekstas, vaizdai, muzika, įgarsinimas ir vaizdo įrašas",
+            "Garsas, hipertekstas, vaizdai, spalva, muzika ir animacija",
+            "Tekstas, nuorodos, animacija, vaizdo įrašas, garso efektas ir animacija",
+            "Garsas, vaizdai, animacija, hipertekstas, tekstas ir vaizdo įrašas"
+        ],
+        "answer": "Garsas, vaizdai, animacija, hipertekstas, tekstas ir vaizdo įrašas"
+        },
+        "3.1 M2": {
+        "question": "Kokia pažangi technika naudojama optimizuoti skaitmeninį turinį paieškos sistemoms, suprantant naudotojo ketinimą ir pasitelkiant semantinius raktažodžius?",
+        "options": [
+            "Raktažodžių „kimšimas“",
+            "LSI (latentinė semantinė indeksacija)",
+            "Atgalinių nuorodų kūrimas",
+            "Metažymių optimizavimas"
+        ],
+        "answer": "LSI (latentinė semantinė indeksacija)"
+        },
+        "3.1 M3": {
+        "question": "Kuri programinė įranga dažnai naudojama interaktyviai multimedijai kurti?",
+        "options": [
+            "Adobe Animate (anksčiau Flash)",
+            "Adobe Illustrator",
+            "Adobe After Effects",
+            "Adobe Photoshop"
+        ],
+        "answer": "Adobe Animate (anksčiau Flash)"
+        },
+        "3.1 M4": {
+        "question": "Kokia yra SEO (paieškos sistemų optimizavimo) svarba skaitmeniniame turinyje?",
+        "options": [
+            "Tai padeda turiniui geriau pasiekti tikslinę auditoriją",
+            "Neturi jokios reikšmės",
+            "Pagerina tik turinio išvaizdą",
+            "Mažina turinio populiarumą"
+        ],
+        "answer": "Tai padeda turiniui geriau pasiekti tikslinę auditoriją"
+        },
+        "3.1 M5": {
+        "question": "Kas yra „reaguojantis (responsive) dizainas“?",
+        "options": [
+            "Dizainas, kuris automatiškai prisitaiko prie skirtingų įrenginių",
+            "Dizainas, skirtas tik kompiuteriams",
+            "Tik teksto dizainas",
+            "Dizainas, kuris nesikeičia"
+        ],
+        "answer": "Dizainas, kuris automatiškai prisitaiko prie skirtingų įrenginių"
+        },
+        "3.1 M6": {
+        "question": "Kokia yra pagrindinė turinio valdymo sistemos (CMS) funkcija kuriant skaitmeninį turinį?",
+        "options": [
+            "Stebėti naudotojų įsitraukimo rodiklius",
+            "Palengvinti skaitmeninio turinio kūrimą, redagavimą ir publikavimą",
+            "Analizuoti konkurentus",
+            "Kurti tik socialinių tinklų įrašus"
+        ],
+        "answer": "Palengvinti skaitmeninio turinio kūrimą, redagavimą ir publikavimą"
+        },
+
+        "3.2 B1": {
+        "question": "Ar svarbu analizuoti, kuriai auditorijai skirtas jūsų skaitmeninis turinys?",
+        "options": ["Taip", "Ne"],
+        "answer": "Taip"
+        },
+        "3.2 B2": {
+        "question": "Kuris iš šių įrankių dažniausiai naudojamas DI sugeneruotiems vaizdams ar menui kurti?",
+        "options": [
+            "Tekstų rengyklė",
+            "Skaičiuoklės programa",
+            "Generatyviniai priešiški tinklai (GAN)",
+            "Vaizdo redagavimo programinė įranga"
+        ],
+        "answer": "Generatyviniai priešiški tinklai (GAN)"
+        },
+        "3.2 B3": {
+        "question": "Ar šis teiginys teisingas ar klaidingas? Dalijimasis skaitmeniniu turiniu internete nesuteikia galimybės gauti momentinį grįžtamąjį ryšį apie tai, kas buvo paskelbta.",
+        "options": ["Teisinga", "Klaidinga"],
+        "answer": "Klaidinga"
+        },
+        "3.2 B4": {
+        "question": "Ar šis teiginys teisingas ar klaidingas? Kuo daugiau turite įsitraukimo su savo auditorija, tuo daugiau matomumo gauna jūsų turinys.",
+        "options": ["Teisinga", "Klaidinga"],
+        "answer": "Teisinga"
+        },
+        "3.2 B5": {
+        "question": "Ar šis teiginys teisingas ar klaidingas? Tik turinys turi tikslinę auditoriją.",
+        "options": ["Teisinga", "Klaidinga"],
+        "answer": "Klaidinga"
+        },
+        "3.2 B6": {
+        "question": "Kas gali sudaryti jūsų turinio tikslinę grupę?",
+        "options": [
+            "Jauna auditorija",
+            "Žmonės, besilaikantys konservatyvaus požiūrio",
+            "Vyresnio amžiaus žmonės",
+            "Visi atsakymai teisingi"
+        ],
+        "answer": "Visi atsakymai teisingi"
+        },
+        "3.2 M1": {
+        "question": "Koks yra pagrindinis subtitrų pridėjimo prie vaizdo pristatymų privalumas?",
+        "options": [
+            "Padidinti vaizdo raišką",
+            "Pagerinti prieinamumą klausos negalią turintiems žiūrovams",
+            "Sumažinti failo dydį",
+            "Pagerinti vaizdo įkėlimo greitį"
+        ],
+        "answer": "Pagerinti prieinamumą klausos negalią turintiems žiūrovams"
+        },
+        "3.2 M2": {
+        "question": "Norite sukurti infografiką apie gimstamumą savo šalyje. Kuri iš šių yra internetinė duomenų vizualizacijos platforma?",
+        "options": ["Flourish", "Canva", "Microsoft PowerPoint", "Google Forms"],
+        "answer": "Flourish"
+        },
+        "3.2 M3": {
+        "question": "Kodėl svarbu integruoti istorijų žemėlapius (story maps) į skaitmeninį turinį?",
+        "options": [
+            "Žemėlapių integravimas į pasakojimą leidžia padaryti turinį interaktyvų ir padidinti įsitraukimą",
+            "Istorijų žemėlapiai padeda sudėtingas temas perteikti paprastu būdu.",
+            "Informacijos atvaizdavimas žemėlapiuose yra vizualus ir pasiekia platesnę auditoriją.",
+            "Visi atsakymai teisingi"
+        ],
+        "answer": "Visi atsakymai teisingi"
+        },
+        "3.2 M4": {
+        "question": "Užbaikite sakinį: Nustatykite skaitmeninius įrankius, kurie padėtų jūsų skaitmeninį turinį padaryti…",
+        "options": [
+            "prieinamesnį tik jaunajai tikslinei grupei.",
+            "labiau įtraukiu ir prieinamu bei įgyti pagrindinį supratimą apie „sąžiningo naudojimo“ (fair use) gairas autorių teisėse ir licencijose.",
+            "labai sudėtingu ir kompleksišku."
+        ],
+        "answer": "labiau įtraukiu ir prieinamu bei įgyti pagrindinį supratimą apie „sąžiningo naudojimo“ (fair use) gairas autorių teisėse ir licencijose."
+        },
+        "3.2 M5": {
+        "question": "Kokie yra pagrindiniai tinklaraščio turėjimo privalumai?",
+        "options": [
+            "galite pasirinkti publikavimo stilių: dažnį, apimtį, temą ir kitus parametrus.",
+            "galite jį paslėpti arba padaryti viešą",
+            "Visi atsakymai teisingi"
+        ],
+        "answer": "Visi atsakymai teisingi"
+        },
+        "3.2 M6": {
+        "question": "Kurį iš žemiau pateiktų teiginių geriausiai apibūdina pagrindinį žingsnį integruojant aparatinės įrangos jutiklius su skaitmeninėmis technologijomis, kuriant išmanųjį namų įrenginį?",
+        "options": [
+            "Užtikrinti, kad įrenginys turėtų sudėtingą naudotojo sąsają",
+            "Parinkti tinkamus jutiklius atitinkamiems duomenims rinkti",
+            "Riboti jungiamumo galimybes siekiant sumažinti išlaidas",
+            "Sukurti įrenginį, kurį būtų galima valdyti tik rankiniu būdu"
+        ],
+        "answer": "Parinkti tinkamus jutiklius atitinkamiems duomenims rinkti"
+        },
+
+
+        "3.3 B1": {
+        "question": "Programinė įranga saugoma autorių teisių, todėl kas yra neteisėta?",
+        "options": [
+            "Pirkti programinę įrangą iš atsisiuntimų svetainės",
+            "Daryti kopijas ir dalinti šeimai bei draugams",
+            "Abu teiginiai"
+        ],
+        "answer": "Daryti kopijas ir dalinti šeimai bei draugams"
+        },
+        "3.3 B2": {
+        "question": "Kurie iš toliau pateiktų pavyzdžių galėtų būti „sąžiningo naudojimo“ (Fair Use) atvejai?",
+        "options": [
+            "Cituoti naujos knygos ištraukas tinklaraštyje, pateikiant nuomonės apžvalgą",
+            "Instagram modelio nuotrauką nustatyti kaip savo profilio nuotrauką pažinčių programėlėje",
+            "Leisti autorių teisių saugomą dainą jūsų YouTube kulinarinio kanalo vaizdo įrašo fone",
+            "Naudoti autorių teisių saugomas nuotraukas publikuotame moksliniame straipsnyje nenurodant šaltinio"
+        ],
+        "answer": [
+            "Cituoti naujos knygos ištraukas tinklaraštyje, pateikiant nuomonės apžvalgą"
+        ]
+        },
+        "3.3 B3": {
+        "question": "Kas yra „Creative Commons“ licencija?",
+        "options": [
+            "Programinės įrangos licencijos tipas, leidžiantis laisvai dalintis atvirojo kodo kodu",
+            "Autorių teisių licencija, leidžianti kūrėjams nurodyti, kaip kiti gali naudoti jų kūrinius",
+            "Priemonė užtikrinti, kad visi kūriniai būtų naudojami tik komerciniais tikslais",
+            "Būdas apeiti autorių teisių apribojimus ir laisvai naudoti bet kokį kūrinį"
+        ],
+        "answer": "Autorių teisių licencija, leidžianti kūrėjams nurodyti, kaip kiti gali naudoti jų kūrinius"
+        },
+        "3.3 B4": {
+        "question": "Ką svarbu įvertinti įtraukiant DI sugeneruotą turinį į savo darbą?",
+        "options": [
+            "Užtikrinti, kad turinį visada galima naudoti nemokamai",
+            "Aiškiai nurodyti DI sugeneruoto turinio šaltinį",
+            "Naudoti turinį be jokio redagavimo",
+            "Nepaisyti autorių teisių įstatymų"
+        ],
+        "answer": "Aiškiai nurodyti DI sugeneruoto turinio šaltinį"
+        },
+        "3.3 B5": {
+        "question": "Kurį iš šių pavyzdžių galima laikyti autorių teisių saugomu kūriniu?",
+        "options": ["Matematinė formulė", "Fotografija", "Verslo idėja", "Įmonės logotipas"],
+        "answer": "Fotografija"
+        },
+        "3.3 B6": {
+        "question": "Jei norite naudoti autorių teisių saugomą kūrinį, ką turėtumėte daryti?",
+        "options": [
+            "Šiek tiek jį pakeisti",
+            "Gauti autorių teisių savininko leidimą",
+            "Naudoti nemokamai, jei tai asmeniniam naudojimui",
+            "Cituoti šaltinį ir laisvai naudoti"
+        ],
+        "answer": "Gauti autorių teisių savininko leidimą"
+        },
+        "3.3 M1": {
+        "question": "Kuri teisinė doktrina leidžia ribotai naudoti autorių teisių saugomus kūrinius be leidimo tam tikromis aplinkybėmis, pvz., komentarui ar kritikai?",
+        "options": ["Skaitmeninio tūkstantmečio autorių teisių aktas (DMCA)", "Sąžiningas naudojimas (Fair Use)", "Viešasis domenas", "Moralinės teisės"],
+        "answer": "Sąžiningas naudojimas (Fair Use)"
+        },
+        "3.3 M2": {
+        "question": "Kurį iš šių pavyzdžių galima laikyti „copyleft“ licencijavimu programinės įrangos kūrime?",
+        "options": ["Apache License 2.0", "MIT License", "GNU General Public License (GPL)", "Creative Commons Zero (CC0)"],
+        "answer": "GNU General Public License (GPL)"
+        },
+        "3.3 M3": {
+        "question": "Teksto ir duomenų gavybos (TDM) kontekste, kuris ES direktyvos aktas palengvina teisėtą duomenų išgavimą iš autorių teisių saugomų medžiagų moksliniams tyrimams be aiškaus leidimo ir kokia sąlyga?",
+        "options": [
+            "DSM direktyva (2019/790), leidžianti mokslinių tyrimų organizacijoms atlikti teksto ir duomenų gavybą moksliniams tyrimams",
+            "Duomenų bazių direktyva, jei duomenų bazė yra viešai prieinama",
+            "Autorių teisių direktyva, jei taikoma išimtis moksliniams tyrimams",
+            "InfoSoc direktyva, jei autorių teisių turėtojui suteikiamas pagrįstas atlygis"
+        ],
+        "answer": "DSM direktyva (2019/790), leidžianti mokslinių tyrimų organizacijoms atlikti teksto ir duomenų gavybą moksliniams tyrimams"
+        },
+        "3.3 M4": {
+        "question": "Kiek laiko galioja autorių teisės?",
+        "options": ["10 metų", "Kūrėjo gyvenimo trukmė ir dar 70 metų po mirties", "Amžinai", "5 metai po sukūrimo"],
+        "answer": "Kūrėjo gyvenimo trukmė ir dar 70 metų po mirties"
+        },
+        "3.3 M5": {
+        "question": "Internete mačiau nuotrauką su žyma „Creative Commons“. Ar tai reiškia, kad galiu ją naudoti nepažeisdamas autorių teisių?",
+        "options": [
+            "Taip, tai tas pats, kas viešasis domenas",
+            "Taip, jei ją naudosite taip, kaip numatyta Creative Commons licencijoje",
+            "Ne, Creative Commons nepanaikina autorių teisių, tad pažeidžiate",
+            "Taip, jei sumokėsite už Creative Commons naudojimą"
+        ],
+        "answer": "Taip, jei ją naudosite taip, kaip numatyta Creative Commons licencijoje"
+        },
+        "3.3 M6": {
+        "question": "Pasiskolinau draugės telefoną ir nufotografavau Snapchat kadrą, kur ji pozuoja su mano šunimi. Kas turi nuotraukos autorių teises?",
+        "options": [
+            "Draugė, nes ji yra nuotraukoje",
+            "Jūs, nes jūs nufotografavote",
+            "Jūs, nes tai jūsų šuo",
+            "Draugė, nes nuotrauka jos telefone",
+            "Snapchat, nes naudojote jų programėlę",
+            "Jūsų šuo, nes akivaizdžiai jis žvaigždė"
+        ],
+        "answer": "Jūs, nes jūs nufotografavote"
+        },
+
+        "3.4 B1": {
+        "question": "Kas yra algoritmas?",
+        "options": ["Instrukcijų ar taisyklių rinkinys", "Vabzdžių rūšis", "Kompiuterinis žaidimas"],
+        "answer": "Instrukcijų ar taisyklių rinkinys"
+        },
+        "3.4 B2": {
+        "question": "Kodėl reikia algoritmą išversti į kodą?",
+        "options": ["Kad būtų galima paversti istorija", "Kad žmonės galėtų jį skaityti", "Kad kompiuteris galėtų jį suprasti"],
+        "answer": "Kad kompiuteris galėtų jį suprasti"
+        },
+        "3.4 B3": {
+        "question": "Kurio iš šių bruožų geram algoritmui nebūdinga?",
+        "options": ["Tikslus", "Dviprasmiškas", "Baigtinis žingsnių skaičius", "Loginė vykdymo eiga"],
+        "answer": "Dviprasmiškas"
+        },
+        "3.4 B4": {
+        "question": "Kurį iš šių elementų būtina turėti kuriant kompiuterinę programą?",
+        "options": [
+            "Tik grafiką",
+            "Instrukcijų seką, sukurtą problemai išspręsti",
+            "Tik kompiuterinę įrangą",
+            "Tik tekstą"
+        ],
+        "answer": "Instrukcijų seką, sukurtą problemai išspręsti"
+        },
+        "3.4 B5": {
+        "question": "Kokia yra pagrindinė „if“ sakinimo (sąlygos) funkcija programavimo kalboje?",
+        "options": [
+            "Vykdyti veiksmą, jei sąlyga teisinga",
+            "Tik spausdinti tekstą",
+            "Kurti grafiką",
+            "Vykdyti tik matematines operacijas"
+        ],
+        "answer": "Vykdyti veiksmą, jei sąlyga teisinga"
+        },
+        "3.4 B6": {
+        "question": "Kaip galima išspręsti problemą naudojant programavimo kalbą?",
+        "options": [
+            "Rašant žinutes",
+            "Sukuriant algoritmą, aprašantį žingsnius iki sprendimo",
+            "Rašant tik tekstus",
+            "Piešiant tik diagramas"
+        ],
+        "answer": "Sukuriant algoritmą, aprašantį žingsnius iki sprendimo"
+        },
+        "3.4 M1": {
+        "question": "Kurie algoritminės struktūros elementai pateikti teisinga tvarka:",
+        "options": [
+            "Dalinys (Body), Antraštė (Header), Aprašas (Declaration) ir Pabaiga (Terminator)",
+            "Antraštė, Dalinys, Aprašas ir Pabaiga",
+            "Antraštė, Aprašas, Dalinys ir Pabaiga",
+            "Aprašas, Dalinys, Antraštė ir Pabaiga"
+        ],
+        "answer": "Antraštė, Aprašas, Dalinys ir Pabaiga"
+        },
+        "3.4 M2": {
+        "question": "Kaip matuoti algoritmo efektyvumą?",
+        "options": ["Procesorius ir atmintis", "Laikas ir atminties sąnaudos", "Sudėtingumas ir talpa", "Duomenys ir atmintis"],
+        "answer": "Laikas ir atminties sąnaudos"
+        },
+        "3.4 M3": {
+        "question": "Įvesties, išvesties, aritmetinės operacijos ir kintamojo priskyrimo sakiniai yra kurios struktūros pavyzdžiai:",
+        "options": ["Ciklas", "Masyvas", "Kartojimas", "Nuosekli", "Pasirinkimas"],
+        "answer": "Nuosekli"
+        },
+        "3.4 M4": {
+        "question": "Koks yra pagrindinis objektinio programavimo principas?",
+        "options": [
+            "Algoritmų kūrimas",
+            "Kodo rašymas tik viename faile",
+            "Duomenų ir funkcijų organizavimas į objektus",
+            "Naudoti tik tekstinius failus"
+        ],
+        "answer": "Duomenų ir funkcijų organizavimas į objektus"
+        },
+        "3.4 M5": {
+        "question": "Kaip „funkcija“ gali pagerinti programos struktūrą?",
+        "options": [
+            "Mažina kodo skaidymą",
+            "Sukuria nereikalingas operacijas",
+            "Skatina pakartotinį kodo naudojimą",
+            "Didina kodo sudėtingumą"
+        ],
+        "answer": "Skatina pakartotinį kodo naudojimą"
+        },
+        "3.4 M6": {
+        "question": "Kokia „derinimo“ (debugging) proceso svarba programavime?",
+        "options": ["Rašyti kodą be klaidų", "Rasti ir taisyti klaidas", "Tik organizuoti kodą", "Optimizuoti kodą"],
+        "answer": "Rasti ir taisyti klaidas"
+        },
+
+
+        "4.1 B1": {
+        "question": "Kurį iš toliau pateiktų būdų yra saugiausia naudoti, kad apsaugotumėte savo įrenginį nuo kenkėjiškų programų?",
+        "options": [
+            "Atsisiųsti programėles iš bet kurios svetainės",
+            "Įdiegti antivirusinę programą ir ją nuolat atnaujinti",
+            "Spausti iškylančius (pop-up) skelbimus",
+            "Ignoruoti programinės įrangos atnaujinimus"
+        ],
+        "answer": "Įdiegti antivirusinę programą ir ją nuolat atnaujinti"
+        },
+        "4.1 B2": {
+        "question": "Kas yra kenkėjiška programa (malware)?",
+        "options": [
+            "Programinė įranga, kuri automatiškai atnaujina programas",
+            "Virusas ar žalinga programa",
+            "Ugniasienė, kuri apsaugo įrenginius",
+            "Asmeninių failų atsarginė kopija"
+        ],
+        "answer": "Virusas ar žalinga programa"
+        },
+        "4.1 B3": {
+        "question": "Kokia gera praktika siekiant apsaugoti asmens duomenis internete?",
+        "options": [
+            "Dalintis slaptažodžiais tik su patikimais žmonėmis",
+            "Naudoti tą patį slaptažodį visoms paskyroms",
+            "Įjungti dviejų veiksnių autentifikavimą",
+            "Slaptažodžius saugoti tekstiniame faile"
+        ],
+        "answer": "Įjungti dviejų veiksnių autentifikavimą"
+        },
+        "4.1 B4": {
+        "question": "Kurį iš toliau pateiktų metodų galima naudoti apsaugoti elektroninius įrenginius nuo neteisėtos prieigos?",
+        "options": [
+            "Išjungti „Wi-Fi“",
+            "Naudoti stiprų slaptažodį",
+            "Reguliariai trinti laikinus failus",
+            "Uždaryti visas atidarytas programas"
+        ],
+        "answer": "Naudoti stiprų slaptažodį"
+        },
+        "4.1 B5": {
+        "question": "Ką reiškia naršyklės adreso juostoje esanti spynelė?",
+        "options": [
+            "Kad svetainė yra saugi ir apsaugota",
+            "Kad svetainėje yra konfidencialios informacijos",
+            "Kad svetainę patikrino institucijos",
+            "Kad svetainėje vyksta priežiūros darbai"
+        ],
+        "answer": "Kad svetainė yra saugi ir apsaugota"
+        },
+        "4.1 B6": {
+        "question": "Kokia dažna rizika naudojantis neapsaugotais viešais „Wi-Fi“ tinklais?",
+        "options": [
+            "Lėtesni atsisiuntimai",
+            "Neteisėta prieiga prie asmens duomenų",
+            "Tinklo paslaugų sutrikimai",
+            "Greičiau išsikraunanti baterija"
+        ],
+        "answer": "Neteisėta prieiga prie asmens duomenų"
+        },
+        "4.1 M1": {
+        "question": "Kurie iš toliau pateiktų būdų padeda apsaugoti įrenginį nuo neteisėtos prieigos?",
+        "options": [
+            "Palikti jį be priežiūros viešose vietose",
+            "Naudoti stiprų, unikalų slaptažodį arba biometrinę apsaugą",
+            "Išjungti visas saugumo funkcijas",
+            "Dalintis slaptažodžiu su draugais"
+        ],
+        "answer": "Naudoti stiprų, unikalų slaptažodį arba biometrinę apsaugą"
+        },
+        "4.1 M2": {
+        "question": "Kuo skiriasi „žmogus viduryje“ (MITM) ataka nuo fišingo?",
+        "options": [
+            "Fišingas naudoja kenkėjiškas programas, o „žmogus viduryje“ – ne",
+            "„Žmogus viduryje“ perima komunikaciją, o fišingas apgauna naudotoją",
+            "Fišingas taikosi tik į mobiliuosius įrenginius",
+            "„Žmogus viduryje“ reikalauja fizinės prieigos prie įrenginio"
+        ],
+        "answer": "„Žmogus viduryje“ perima komunikaciją, o fišingas apgauna naudotoją"
+        },
+        "4.1 M3": {
+        "question": "Kaip SSL sertifikatas apsaugo ryšį internete?",
+        "options": [
+            "Jis užšifruoja ryšį tarp naršyklės ir serverio",
+            "Jis tikrina svetainės įkėlimo greitį",
+            "Jis stebi, ar svetainėje nėra kenkėjiškų programų",
+            "Jis patvirtina naudotojų tapatybę"
+        ],
+        "answer": "Jis užšifruoja ryšį tarp naršyklės ir serverio"
+        },
+        "4.1 M4": {
+        "question": "Kuo skiriasi VPN nuo ugniasienės?",
+        "options": [
+            "VPN šifruoja srautą, o ugniasienė jį stebi ir filtruoja",
+            "VPN blokuoja išorines atakas, o ugniasienė šifruoja ryšį",
+            "VPN naudojamas tik įmonių tinkluose, o ugniasienė – privatiems naudotojams",
+            "VPN saugo nuo kenkėjiškų programų, o ugniasienė – nuo duomenų vagystės"
+        ],
+        "answer": "VPN šifruoja srautą, o ugniasienė jį stebi ir filtruoja"
+        },
+
+        "4.2 B1": {
+        "question": "Kaip galite apsaugoti asmens duomenis naudodamiesi socialiniais tinklais?",
+        "options": [
+            "Kiekviename įraše žymėti savo buvimo vietą",
+            "Visoms paskyroms naudoti tą patį slaptažodį",
+            "Reguliuoti privatumo nustatymus, kad apribotumėte, kas mato jūsų informaciją",
+            "Priimti visų siunčiamas draugų užklausas"
+        ],
+        "answer": "Reguliuoti privatumo nustatymus, kad apribotumėte, kas mato jūsų informaciją"
+        },
+        "4.2 B2": {
+        "question": "Kas geriausiai apibūdina, kaip įmonės naudoja asmens duomenis pagal savo privatumo politiką?",
+        "options": [
+            "Jie naudoja duomenis tik pardavimui trečiosioms šalims",
+            "Jie niekada nesaugo jokių asmens duomenų",
+            "Jie renka, saugo ir kartais dalijasi asmens duomenimis pagal naudotojo sutartį",
+            "Jie ištrina asmens duomenis po vieno mėnesio"
+        ],
+        "answer": "Jie renka, saugo ir kartais dalijasi asmens duomenimis pagal naudotojo sutartį"
+        },
+        "4.2 B3": {
+        "question": "Kas yra asmens duomenys, leidžiantys identifikuoti asmenį (PII)?",
+        "options": [
+            "Bet kokia informacija, kuria dalijamasi socialiniuose tinkluose",
+            "Informacija, pagal kurią galima identifikuoti asmenį",
+            "Bendrieji duomenys apie interneto naudojimą",
+            "Duomenys, saugomi naršyklės slapukuose"
+        ],
+        "answer": "Informacija, pagal kurią galima identifikuoti asmenį"
+        },
+        "4.2 B4": {
+        "question": "Kodėl svarbu perskaityti paslaugos privatumo politiką?",
+        "options": [
+            "Kad pagerintumėte interneto greitį",
+            "Kad pasiektumėte paslėptas paslaugos funkcijas",
+            "Kad gautumėte labiau suasmenintas reklamas",
+            "Kad suprastumėte, kaip renkami ir naudojami jūsų duomenys"
+        ],
+        "answer": "Kad suprastumėte, kaip renkami ir naudojami jūsų duomenys"
+        },
+        "4.2 B5": {
+        "question": "Kas iš toliau pateiktų gali padėti apsaugoti jūsų privatumą naudojantis skaitmeninėmis paslaugomis?",
+        "options": [
+            "Išjungti dviejų veiksnių autentifikavimą",
+            "Reguliariai valyti naršymo istoriją",
+            "Dalintis asmenine informacija nepatikrinus šaltinio",
+            "Priimti visas leidimų užklausas jų neperžiūrint"
+        ],
+        "answer": "Reguliariai valyti naršymo istoriją"
+        },
+        "4.2 B6": {
+        "question": "Kokia dažna privatumo rizika naudojantis socialiniais tinklais?",
+        "options": [
+            "Gauti per daug draugų užklausų",
+            "Viešai dalintis per daug asmeninės informacijos",
+            "Prarasti senus įrašus",
+            "Sekti nepageidaujamas paskyras"
+        ],
+        "answer": "Viešai dalintis per daug asmeninės informacijos"
+        },
+        "4.2 M1": {
+        "question": "Kuris kriptografinis protokolas plačiai naudojamas užtikrinti saugų ryšį kompiuterių tinkle?",
+        "options": ["HTTP", "FTP", "SSL/TLS", "IMAP"],
+        "answer": "SSL/TLS"
+        },
+        "4.2 M2": {
+        "question": "Koks yra pagrindinis šifravimo tikslas siunčiant asmens duomenis internetu?",
+        "options": [
+            "Padidinti interneto greitį",
+            "Apsaugoti duomenis nuo neteisėtos prieigos",
+            "Įgalinti nepageidaujamą duomenų dalijimąsi su trečiosiomis šalimis",
+            "Laikyti duomenis debesijos paslaugose"
+        ],
+        "answer": "Apsaugoti duomenis nuo neteisėtos prieigos"
+        },
+        "4.2 M3": {
+        "question": "Kaip Bendrasis duomenų apsaugos reglamentas (BDAR) daro įtaką asmens duomenų naudojimui skaitmeninėse paslaugose?",
+        "options": [
+            "Reikalauja, kad įmonės gautų aiškų sutikimą prieš rinkdamos asmens duomenis",
+            "Leidžia įmonėms laisvai dalintis naudotojų duomenimis be sutikimo",
+            "Taikomas tik finansų institucijoms",
+            "Draudžia įmonėms naudoti bet kokius asmens duomenis"
+        ],
+        "answer": "Reikalauja, kad įmonės gautų aiškų sutikimą prieš rinkdamos asmens duomenis"
+        },
+        "4.2 M4": {
+        "question": "Ką turėtumėte daryti, jei gaunate el. laišką, kuriame prašoma asmens duomenų, bet nesate tikri dėl jo patikimumo?",
+        "options": [
+            "Nedelsiant atsakyti ir pateikti prašomą informaciją",
+            "Sekti el. laiške pateiktą nuorodą",
+            "Patikrinti siuntėjo patikimumą prieš dalinantis bet kokia informacija",
+            "Persiųsti laišką draugams"
+        ],
+        "answer": "Patikrinti siuntėjo patikimumą prieš dalinantis bet kokia informacija"
+        },
+        "4.2 M5": {
+        "question": "Kaip paslaugos privatumo politikos supratimas gali padėti apsisaugoti nuo duomenų netinkamo naudojimo?",
+        "options": [
+            "Leis išjungti saugumo funkcijas",
+            "Informuos, kaip įmonė renka, saugo ir dalijasi jūsų duomenimis",
+            "Suteiks prieigą prie visų vidinių paslaugos duomenų",
+            "Neleis atnaujinti privatumo nustatymų"
+        ],
+        "answer": "Informuos, kaip įmonė renka, saugo ir dalijasi jūsų duomenimis"
+        },
+        "4.2 M6": {
+        "question": "Kuria iš toliau pateiktų saugumo funkcijų skaitmeninės paslaugos dažnai saugo asmens duomenis?",
+        "options": [
+            "Automatiškai dalijasi naudotojų duomenimis su reklamos teikėjais",
+            "Dviejų veiksnių autentifikavimu (2FA)",
+            "Viešai rodo visą naudotojų informaciją",
+            "Leidžia naudotojams naudoti silpnus slaptažodžius"
+        ],
+        "answer": "Dviejų veiksnių autentifikavimu (2FA)"
+        },
+
+
+        "4.3 B1": {
+        "question": "Kaip galite sumažinti skaitmeninių įrenginių naudojimo poveikį sveikatai ir gerovei?",
+        "options": [
+            "Nuolat naudoti įrenginį be pertraukų",
+            "Nustatyti ekrano laiko ribas ir daryti reguliarias pertraukas",
+            "Laikyti įrenginį arti akių",
+            "Naudoti įrenginius tik tamsiuose kambariuose"
+        ],
+        "answer": "Nustatyti ekrano laiko ribas ir daryti reguliarias pertraukas"
+        },
+        "4.3 B2": {
+        "question": "Kokia yra viena pagrindinių fizinės sveikatos rizikų ilgai naudojant skaitmeninius įrenginius?",
+        "options": [
+            "Padidėjęs kūrybiškumas",
+            "Akių nuovargis",
+            "Pagerėjusi miego kokybė",
+            "Padidėjusi raumenų jėga"
+        ],
+        "answer": "Akių nuovargis"
+        },
+        "4.3 B3": {
+        "question": "Kuri iš toliau pateiktų priemonių gali padėti užkirsti kelią patyčioms internete?",
+        "options": [
+            "Susipažinti su privatumo nustatymais socialiniuose tinkluose",
+            "Dalintis slaptažodžiais su draugais",
+            "Išjungti internetą gavus žalingą žinutę",
+            "Ignoruoti visą internetinę sąveiką"
+        ],
+        "answer": "Susipažinti su privatumo nustatymais socialiniuose tinkluose"
+        },
+        "4.3 B4": {
+        "question": "Kaip sumažinti su technologijomis susijusio streso riziką?",
+        "options": [
+            "Naudoti skaitmeninius įrenginius be pertraukų",
+            "Technologijas naudoti tik dieną",
+            "Sukurti skaitmeninę rutiną su reguliariomis pertraukomis ir „atsijungimo“ laiku",
+            "Kiek įmanoma mažiau naudoti el. paštą"
+        ],
+        "answer": "Sukurti skaitmeninę rutiną su reguliariomis pertraukomis ir „atsijungimo“ laiku"
+        },
+        "4.3 B5": {
+        "question": "Kurie iš šių įrankių gali padėti saugoti psichologinę gerovę naudojant skaitmenines technologijas?",
+        "options": [
+            "Mėlynos šviesos filtrų naudojimas",
+            "Ekrano raiškos didinimas",
+            "Brangesnių įrenginių pirkimas",
+            "Išjungti programėlių pranešimus poilsio valandomis"
+        ],
+        "answer": "Išjungti programėlių pranešimus poilsio valandomis"
+        },
+        "4.3 B6": {
+        "question": "Kuri iš šių skaitmeninių technologijų ypač veiksmingai skatina žmonių su negalia socialinę įtrauktį?",
+        "options": [
+            "Virtualioji realybė",
+            "Balso atpažinimo programinė įranga",
+            "Dirbtinis intelektas finansų srityje",
+            "Pramogų programėlės"
+        ],
+        "answer": "Balso atpažinimo programinė įranga"
+        },
+        "4.3 M1": {
+        "question": "Koks dažnas patyčių internete požymis, į kurį reikėtų atkreipti dėmesį skaitmeninėje aplinkoje?",
+        "options": [
+            "Teigiami atsiliepimai apie įrašus socialiniuose tinkluose",
+            "Pasikartojantys neigiami komentarai ar grasinimai",
+            "Kvietimai į internetines mokymosi grupes",
+            "Švietimo išteklių dalijimasis"
+        ],
+        "answer": "Pasikartojantys neigiami komentarai ar grasinimai"
+        },
+        "4.3 M2": {
+        "question": "Kodėl informuotumas apie privatumo ir saugumo nustatymus socialinėse platformose svarbus psichinei sveikatai?",
+        "options": [
+            "Tai užtikrina, kad jūsų informaciją matys tik patvirtinti kontaktai",
+            "Tai padeda išvengti informacijos pertekliaus",
+            "Tai padeda išvengti tapatybės vagystės",
+            "Tai mažina nerimą dėl nepageidaujamų sąveikų ir skatina vidinę ramybę"
+        ],
+        "answer": "Tai mažina nerimą dėl nepageidaujamų sąveikų ir skatina vidinę ramybę"
+        },
+        "4.3 M3": {
+        "question": "Kurį teiginį geriausiai apibūdina, kaip skaitmeninė kompetencija gali prisidėti prie psichinės ir socialinės gerovės?",
+        "options": [
+            "Ji leidžia greičiau naršyti internete",
+            "Ji padeda atpažinti ir vengti internetinių rizikų, pvz., dezinformacijos ar žalingo turinio",
+            "Ji leidžia nuolat bendrauti socialiniuose tinkluose be emocinių pasekmių",
+            "Ji užtikrina, kad visas internetinis turinys būtų filtruojamas ir saugus"
+        ],
+        "answer": "Ji padeda atpažinti ir vengti internetinių rizikų, pvz., dezinformacijos ar žalingo turinio"
+        },
+        "4.3 M4": {
+        "question": "Koks veiksmas gali padėti kurti saugią ir įtraukią skaitmeninę aplinką kitiems?",
+        "options": [
+            "Viešai dalintis draugų asmenine informacija",
+            "Pranešti apie netinkamą turinį ar elgesį",
+            "Vengti bendrauti su nepažįstamaisiais",
+            "Ignoruoti neigiamas žinutes, kad išvengtumėte konflikto"
+        ],
+        "answer": "Pranešti apie netinkamą turinį ar elgesį"
+        },
+        "4.3 M5": {
+        "question": "Koks, remiantis keliais tyrimais, yra ilgalaikio socialinių tinklų naudojimo poveikis psichinei sveikatai?",
+        "options": [
+            "Gali pagerinti savivertę",
+            "Gerina socialinius įgūdžius",
+            "Gali padidinti depresijos ir nerimo riziką",
+            "Mažina vienišumą virtualiose sąveikose"
+        ],
+        "answer": "Gali padidinti depresijos ir nerimo riziką"
+        },
+        "4.3 M6": {
+        "question": "Kaip skaitmeninės technologijos gali skatinti socialinę įtrauktį pažeidžiamoms grupėms?",
+        "options": [
+            "Leisdamos plačiau viešinti jų pažeidžiamumus",
+            "Suteikdamos saugias platformas palaikymui ir bendravimui su kitais",
+            "Ribodamos prieigą prie socialinių tinklų dėl saugumo",
+            "Leisdamos bendrauti tik specialistams"
+        ],
+        "answer": "Suteikdamos saugias platformas palaikymui ir bendravimui su kitais"
+        },
+
+        "4.4 B1": {
+        "question": "Kuri iš toliau pateiktų praktikų padeda saugoti aplinką?",
+        "options": [
+            "Netinkamai šalinti elektronines atliekas",
+            "Naudoti energiškai efektyvius įrenginius ir perdirbti seną elektroniką",
+            "Dažnai pirkti naujus įrenginius",
+            "Nepaisyti programinės įrangos atnaujinimų taupant energiją"
+        ],
+        "answer": "Naudoti energiškai efektyvius įrenginius ir perdirbti seną elektroniką"
+        },
+        "4.4 B2": {
+        "question": "Kas iš toliau pateiktų prisideda prie skaitmeninių technologijų poveikio aplinkai?",
+        "options": [
+            "Duomenų saugojimas asmeniniuose kietuosiuose diskuose",
+            "Programinė įranga su automatiniu atnaujinimu",
+            "Įrenginių įkrovimas saulės energija",
+            "Didelis duomenų centrų energijos suvartojimas"
+        ],
+        "answer": "Didelis duomenų centrų energijos suvartojimas"
+        },
+        "4.4 B3": {
+        "question": "Ką reiškia terminas „skaitmeninis anglies pėdsakas“?",
+        "options": [
+            "Energija, reikalinga fiziniams serveriams veikti",
+            "Bendras šiltnamio efektą sukeliančių dujų kiekis, kylantis dėl skaitmeninės veiklos",
+            "Kiek duomenų įrenginys gali saugoti anglies pagrindu",
+            "Skaitmeninių įrenginių, kuriuos turi žmogus, skaičius"
+        ],
+        "answer": "Bendras šiltnamio efektą sukeliančių dujų kiekis, kylantis dėl skaitmeninės veiklos"
+        },
+        "4.4 B4": {
+        "question": "Kuri praktika padeda mažinti elektroninių atliekų (e-atliekų) kiekį?",
+        "options": [
+            "Reguliariai keisti senesnius įrenginius naujais",
+            "Perdirbti ar paaukoti senus elektroninius įrenginius",
+            "Mesti senus įrenginius į bendrą šiukšlių konteinerį",
+            "Naudoti tik vienkartines baterijas"
+        ],
+        "answer": "Perdirbti ar paaukoti senus elektroninius įrenginius"
+        },
+        "4.4 B5": {
+        "question": "Kuris skaitmeninių technologijų komponentas daro didžiausią poveikį aplinkai?",
+        "options": [
+            "Duomenų centrų suvartojama energija",
+            "Išmaniojo telefono ekrano raiška",
+            "Kietojo disko talpa",
+            "Naudotojo sąsajos dizainas"
+        ],
+        "answer": "Duomenų centrų suvartojama energija"
+        },
+        "4.4 B6": {
+        "question": "Kaip asmenys gali sumažinti savo skaitmeninį anglies pėdsaką?",
+        "options": [
+            "Vienu metu naudoti kelis įrenginius",
+            "Išjungti įrenginius, kai jie nenaudojami",
+            "Dažnai atnaujinti į naujausius modelius",
+            "Ištrinti nenaudojamas programėles"
+        ],
+        "answer": "Išjungti įrenginius, kai jie nenaudojami"
+        },
+        "4.4 M1": {
+        "question": "Kokia praktika gali padėti sumažinti elektroninių atliekų poveikį aplinkai?",
+        "options": [
+            "Dažnai keisti elektroninius įrenginius",
+            "Mesti elektroniką į įprastus šiukšlių konteinerius",
+            "Tinkamai perdirbti seną elektroniką",
+            "Laikyti senus įrenginius stalčiuose"
+        ],
+        "answer": "Tinkamai perdirbti seną elektroniką"
+        },
+        "4.4 M2": {
+        "question": "Koks yra pagrindinis aplinkosaugos rūpestis dėl skaitmeninių įrenginių gamybos?",
+        "options": [
+            "Didelis energijos suvartojimas eksploatuojant",
+            "Gamyboje naudojamų retųjų mineralų išgavimas",
+            "Trumpas įrenginių tarnavimo laikas",
+            "Perdirbamų pakuočių naudojimas"
+        ],
+        "answer": "Gamyboje naudojamų retųjų mineralų išgavimas"
+        },
+        "4.4 M3": {
+        "question": "Kuri strategija gali sumažinti programinės įrangos kūrimo poveikį aplinkai?",
+        "options": [
+            "Kurti sudėtingesnes programėles",
+            "Optimizuoti kodą energiniam efektyvumui",
+            "Reikalauti dažnų aparatinės įrangos atnaujinimų",
+            "Didinti naudotojų skaičių"
+        ],
+        "answer": "Optimizuoti kodą energiniam efektyvumui"
+        },
+        "4.4 M4": {
+        "question": "Kaip puslaidininkių gamyba veikia aplinką?",
+        "options": [
+            "Sukuria didelius e-atliekų kiekius",
+            "Gamybai reikia didelių vandens ir energijos kiekių",
+            "Didina perdirbimo kaštus",
+            "Mažina retųjų žemių metalų paklausą"
+        ],
+        "answer": "Gamybai reikia didelių vandens ir energijos kiekių"
+        },
+        "4.4 M5": {
+        "question": "Kas yra svarbiausias veiksnys vertinant skaitmeninių paslaugų aplinkos tvarumą?",
+        "options": [
+            "Platformos naudotojų skaičius",
+            "Pagrindinės infrastruktūros energinis efektyvumas",
+            "Vartotojų įrenginių atminties kiekis",
+            "Naudojamo interneto ryšio tipas"
+        ],
+        "answer": "Pagrindinės infrastruktūros energinis efektyvumas"
+        },
+        "4.4 M6": {
+        "question": "Kuri iš toliau pateiktų skaitmeninių praktikų gali didinti poveikį aplinkai?",
+        "options": [
+            "Naudoti debesų saugyklą, maitinamą atsinaujinančia energija",
+            "Diegti energiją taupančias funkcijas programinėje įrangoje",
+            "Laikyti didelius kiekius nenaudojamų duomenų internetiniuose serveriuose",
+            "Eksploatuoti duomenų centrus su energiškai efektyviomis aušinimo sistemomis"
+        ],
+        "answer": "Laikyti didelius kiekius nenaudojamų duomenų internetiniuose serveriuose"
+        },
+
+
+        "5.1 B1": {
+        "question": "Koks yra pirmasis žingsnis šalinant gedimą įrenginyje, kuris neįsijungia?",
+        "options": [
+            "Pakeisti bateriją",
+            "Patikrinti maitinimo šaltinį",
+            "Atstatyti (reset) įrenginį",
+            "Atnaujinti programinę įrangą"
+        ],
+        "answer": "Patikrinti maitinimo šaltinį"
+        },
+        "5.1 B2": {
+        "question": "Ką pirmiausia turėtumėte daryti, kai įrenginys neveikia taip, kaip tikėtasi?",
+        "options": [
+            "Panikuoti ir skambinti techninei pagalbai",
+            "Stebėti problemą ir užsirašyti visus klaidos pranešimus",
+            "Iš naujo paleisti įrenginį neįvertinus problemos"
+        ],
+        "answer": "Stebėti problemą ir užsirašyti visus klaidos pranešimus"
+        },
+        "5.1 B3": {
+        "question": "Kas iš toliau pateiktų dažnai sukelia įrenginio perkaitimą?",
+        "options": [
+            "Per daug veikiančių programų",
+            "Išsikrovusi baterija",
+            "Didelio greičio internetas",
+            "Pasenusi programinė įranga"
+        ],
+        "answer": "Per daug veikiančių programų"
+        },
+        "5.1 B4": {
+        "question": "Įrenginiui užstrigus įkėlimo ekrane, problemai išspręsti gali reikėti gamyklinių nuostatų atstatymo.",
+        "options": ["Teisinga", "Klaidinga"],
+        "answer": "Teisinga"
+        },
+        "5.1 B5": {
+        "question": "Patiriant programinės įrangos nesklandumus, pirmasis žingsnis – patikrinti ______ atnaujinimus, nes juose dažnai yra klaidų taisymai.",
+        "options": ["Aparatinės įrangos", "Ekrano", "Programinės įrangos", "Programėlės"],
+        "answer": "Programinės įrangos"
+        },
+        "5.1 B6": {
+        "question": "Kuris įrankis gali padėti diagnozuoti tinklo problemas?",
+        "options": [
+            "Užduočių tvarkytuvė (Task Manager)",
+            "Įrenginių tvarkytuvė (Device Manager)",
+            "Komandų eilutė (Command Prompt)",
+            "Valdymo skydas (Control Panel)"
+        ],
+        "answer": "Komandų eilutė (Command Prompt)"
+        },
+        "5.1 M1": {
+        "question": "Negalite pasiekti svetainės, o kiti įrenginiai tame pačiame tinkle gali. Koks logiškiausias kitas žingsnis?",
+        "options": [
+            "Iš naujo paleisti maršrutizatorių",
+            "Išvalyti naršyklės talpyklą",
+            "Iš naujo įdiegti operacinę sistemą",
+            "Patikrinti dėl kenkėjiškų programų"
+        ],
+        "answer": "Išvalyti naršyklės talpyklą"
+        },
+        "5.1 M2": {
+        "question": "Kuria komanda tikrinamas mazgo pasiekiamumas tinkle?",
+        "options": ["ipconfig", "ping", "tracert", "netstat"],
+        "answer": "ping"
+        },
+        "5.1 M3": {
+        "question": "Diagnostikuojant programos atsitiktinius strigimus, kurie žurnalai yra naudingiausi?",
+        "options": [
+            "Event Viewer (Windows) arba Konsolės žurnalai (Mac)",
+            "Įrenginių tvarkytuvės žurnalai",
+            "Disko veiklos žurnalai",
+            "Ekrano ryškumo žurnalai"
+        ],
+        "answer": "Event Viewer (Windows) arba Konsolės žurnalai (Mac)"
+        },
+        "5.1 M4": {
+        "question": "Kurio iš toliau pateiktų variantų TIKĖTINIAUSIAI nesukelia „Wi-Fi“ ryšio problemų?",
+        "options": [
+            "Kitų įrenginių trikdžiai tinkle",
+            "Neteisingai įvestas slaptažodis",
+            "Išjungtas Ethernet lizdas",
+            "Pasenusi maršrutizatoriaus programinė įranga (firmware)"
+        ],
+        "answer": "Išjungtas Ethernet lizdas"
+        },
+        "5.1 M5": {
+        "question": "Jei sistema rodo klaidą „No Bootable Device Found“, koks tikėtiniausias priežasties variantas?",
+        "options": [
+            "Atsijungęs (neprijungtas) standusis diskas",
+            "Programinės įrangos konfliktas",
+            "Žema baterijos įkrova",
+            "Pasenusi operacinė sistema"
+        ],
+        "answer": "Atsijungęs (neprijungtas) standusis diskas"
+        },
+        "5.1 M6": {
+        "question": "Susidūrus su „mėlynu mirties ekranu“ (BSOD) Windows sistemoje, koks yra svarbiausias pirmasis žingsnis?",
+        "options": [
+            "Užsirašyti ekrane rodomą klaidos kodą",
+            "Iškart švariai perinstaliuoti operacinę sistemą",
+            "Nedelsiant pakeisti aparatinę įrangą"
+        ],
+        "answer": "Užsirašyti ekrane rodomą klaidos kodą"
+        },
+
+        "5.2 B1": {
+        "question": "Kuris iš šių skaitmeninių įrankių geriausiai padėtų naudotojui, kurio rankų judrumas ribotas?",
+        "options": [
+            "Tradicinė klaviatūra",
+            "Jutiklinis ekranas",
+            "Balso atpažinimo programinė įranga",
+            "Pelė su dideliu jautrumu"
+        ],
+        "answer": "Balso atpažinimo programinė įranga"
+        },
+        "5.2 B2": {
+        "question": "Ar šis teiginys teisingas ar klaidingas? „Ekrano skaitytuvai skirti padėti naudotojams, turintiems ribotą judrumą, garsiai perskaitydami ekrano turinį.“",
+        "options": ["Teisinga", "Klaidinga"],
+        "answer": "Klaidinga"
+        },
+        "5.2 B3": {
+        "question": "Kuri funkcija gali padėti regos sutrikimų turintiems naudotojams efektyviau naudotis skaitmeniniais įrankiais?",
+        "options": [
+            "Naktinis režimas",
+            "Ekrano skaitytuvo funkcija",
+            "Aukštos klasės procesorius (CPU)"
+        ],
+        "answer": "Ekrano skaitytuvo funkcija"
+        },
+        "5.2 B4": {
+        "question": "Jei norite užtikrinti, kad jūsų skaitmeninėje darbo aplinkoje įjungtos reikiamos prieinamumo parinktys, nuo ko reikėtų pradėti?",
+        "options": [
+            "Atnaujinti operacinę sistemą",
+            "Patikrinti įrenginio prieinamumo nustatymus",
+            "Išjungti visas sistemos žinutes",
+            "Padidinti ekrano ryškumą"
+        ],
+        "answer": "Patikrinti įrenginio prieinamumo nustatymus"
+        },
+        "5.2 B5": {
+        "question": "Ar šis teiginys teisingas ar klaidingas? „Tamsusis režimas gali sumažinti akių įtampą kai kuriems naudotojams.“",
+        "options": ["Teisinga", "Klaidinga"],
+        "answer": "Teisinga"
+        },
+        "5.2 B6": {
+        "question": "Kurį apibrėžimą geriausiai atitinka platforma, palengvinanti nekomercinius sandorius, pvz., aukojimą ar dovanojimą?",
+        "options": [
+            "El. komercijos svetainė",
+            "Socialinių tinklų platforma",
+            "Sutelktinio finansavimo (crowdfunding) svetainė",
+            "Internetinė prekyvietė"
+        ],
+        "answer": "Sutelktinio finansavimo (crowdfunding) svetainė"
+        },
+        "5.2 M1": {
+        "question": "Internetinių sandorių kontekste, koks yra pagrindinis blokų grandinės (blockchain) technologijos vaidmuo didinant saugumą?",
+        "options": [
+            "Ji centralizuoja naudotojų duomenis, kad būtų lengviau juos pasiekti.",
+            "Ji sukuria viešą, nekeičiamą visų sandorių registrą (ledger).",
+            "Ji pagreitina sandorius panaikindama tikrinimo veiksmus.",
+            "Ji leidžia neribotai saugoti duomenis be kaštų."
+        ],
+        "answer": "Ji sukuria viešą, nekeičiamą visų sandorių registrą (ledger)."
+        },
+        "5.2 M2": {
+        "question": "Į ką paprastai orientuojasi UX pritaikymas pažangiose skaitmeninėse aplinkose?",
+        "options": [
+            "Aparatinės įrangos suderinamumą",
+            "Naudotojų darbo eigų ir prieinamumo gerinimą pagal konkrečius poreikius",
+            "Galimų įrankio parinkčių kiekio mažinimą"
+        ],
+        "answer": "Naudotojų darbo eigų ir prieinamumo gerinimą pagal konkrečius poreikius"
+        },
+        "5.2 M3": {
+        "question": "Jei asmeniui, turinčiam spalvų aklumą, reikia atskirti spalvas tinklalapyje, kuris nustatymas būtų naudingiausias?",
+        "options": [
+            "Sumažinti ekrano ryškumą",
+            "Įjungti didelio kontrasto arba spalvų korekcijos parinktis prieinamumo nustatymuose",
+            "Naudoti rašiklį (stylus) teksto paryškinimui",
+            "Atnaujinti naršyklę"
+        ],
+        "answer": "Įjungti didelio kontrasto arba spalvų korekcijos parinktis prieinamumo nustatymuose"
+        },
+        "5.2 M4": {
+        "question": "Teisinga ar klaidinga? „Adaptuojamos klaviatūros gali būti pritaikytos riboto judrumo naudotojams, pvz., padidinant klavišų dydį ar naudojant numanomąjį rašymą (predictive text).“",
+        "options": ["Teisinga", "Klaidinga"],
+        "answer": "Teisinga"
+        },
+        "5.2 M5": {
+        "question": "Kuris skaitmeninis įrankis geriausiai padėtų naudotojui, kuriam dėl regos sutrikimų sunku skaityti smulkų tekstą ekrane?",
+        "options": [
+            "Balsas-į-tekstą programinė įranga",
+            "Ekrano didintuvas arba mastelio didinimo funkcija",
+            "Didelio kontrasto režimas",
+            "Klaviatūra su dideliais simboliais"
+        ],
+        "answer": "Ekrano didintuvas arba mastelio didinimo funkcija"
+        },
+        "5.2 M6": {
+        "question": "Teisinga ar klaidinga? „Didelio kontrasto režimas pagerina prieinamumą visiems naudotojams, nepriklausomai nuo regos sutrikimų.“",
+        "options": ["Teisinga", "Klaidinga"],
+        "answer": "Klaidinga"
+        },
+
+
+        "5.3 B1": {
+        "question": "Kuris skaitmeninis įrankis būtų veiksmingiausias idėjoms generuoti bendrai ir realiuoju laiku?",
+        "options": [
+            "Tekstų rengyklė",
+            "Skaičiuoklės programa",
+            "Internetinis minčių žemėlapių kūrimo įrankis",
+            "Nuotraukų redagavimo programa"
+        ],
+        "answer": "Internetinis minčių žemėlapių kūrimo įrankis"
+        },
+        "5.3 B2": {
+        "question": "Kuri daiktų interneto (IoT) technologija dažnai naudojama optimizuoti energijos suvartojimą išmaniuose namuose?",
+        "options": [
+            "Išmanieji termostatai",
+            "Virtualiosios realybės ausinės",
+            "„Bluetooth“ garsiakalbiai",
+            "Fitneso sekimo įrenginiai"
+        ],
+        "answer": "Išmanieji termostatai"
+        },
+        "5.3 B3": {
+        "question": "Kurį iš šių įrenginių galima laikyti IoT įrenginiu?",
+        "options": [
+            "Stacionarus kompiuteris",
+            "Išmanusis šaldytuvas",
+            "Tradicinis žadintuvas",
+            "Atverčiamas telefonas (flip phone)"
+        ],
+        "answer": "Išmanusis šaldytuvas"
+        },
+        "5.3 B4": {
+        "question": "Kuris įrankis tinkamiausias pristatymui kurti?",
+        "options": ["Microsoft Excel", "Canva", "Zoom"],
+        "answer": "Canva"
+        },
+        "5.3 B5": {
+        "question": "Teisinga ar klaidinga? „Internetiniai idėjų generavimo įrankiai neleidžia bendradarbiauti ir tinka tik individualiam darbui.“",
+        "options": ["Teisinga", "Klaidinga"],
+        "answer": "Klaidinga"
+        },
+        "5.3 B6": {
+        "question": "Kurie iš toliau pateiktų skaitmeninių įrankių yra veiksmingiausi greitai sukurti prototipą ir patikrinti naujo produkto idėją startuolio aplinkoje?",
+        "options": [
+            "Tekstų rengimo programinė įranga",
+            "Projektų valdymo įrankiai",
+            "3D spausdinimo technologija",
+            "Socialinių tinklų analizė"
+        ],
+        "answer": "3D spausdinimo technologija"
+        },
+        "5.3 M1": {
+        "question": "Kuri platforma pirmiausia žinoma dėl išsamių įrankių, skirtų kurti ir valdyti IoT programas, įskaitant įrenginių valdymą, duomenų analizę ir saugumo funkcijas?",
+        "options": [
+            "AWS IoT Core",
+            "Microsoft Word",
+            "Adobe Photoshop",
+            "Salesforce CRM"
+        ],
+        "answer": "AWS IoT Core"
+        },
+        "5.3 M2": {
+        "question": "Kurie iš toliau pateiktų skaitmeninių įrankių labiausiai padeda valdyti ir vykdyti projektų planus, kad idėja virstų konkrečiais veiksmais?",
+        "options": [
+            "Grafinio dizaino programinė įranga",
+            "Debesijos pagrindu veikiantys projektų valdymo įrankiai",
+            "Tinklaraščių platformos",
+            "El. pašto rinkodaros paslaugos"
+        ],
+        "answer": "Debesijos pagrindu veikiantys projektų valdymo įrankiai"
+        },
+        "5.3 M3": {
+        "question": "Kokie įrankių deriniai greičiausiai bus veiksmingiausi bendradarbiaujant kūrybiniam problemų sprendimui programinės įrangos projekte?",
+        "options": [
+            "Užduočių valdymo įrankis ir bendradarbiavimo kodavimo platforma (pvz., GitHub)",
+            "El. paštas ir neprisijungęs kalendorius",
+            "Tradicinė failų saugykla ir skaičiuoklės programa",
+            "Užrašų programėlė ir socialiniai tinklai"
+        ],
+        "answer": "Užduočių valdymo įrankis ir bendradarbiavimo kodavimo platforma (pvz., GitHub)"
+        },
+        "5.3 M4": {
+        "question": "Kuri iš žemiau pateiktų aplinkybių yra svarbiausia, kuriant skaitmeninę platformą bendruomenės išteklių dalijimuisi, kad būtų užtikrintas naudotojų pasitikėjimas ir įsitraukimas?",
+        "options": [
+            "Aukštos kokybės grafika ir sąsajos dizainas",
+            "Tvirtos duomenų privatumo politikos ir skaidrūs naudotojo susitarimai",
+            "Integracija su socialiniais tinklais rinkodarai",
+            "Sudėtingi naudotojų registracijos procesai"
+        ],
+        "answer": "Tvirtos duomenų privatumo politikos ir skaidrūs naudotojo susitarimai"
+        },
+        "5.3 M5": {
+        "question": "Kokios technologijos gali būti naudojamos naujoviškų produktų idėjoms prototipuoti ir testuoti?",
+        "options": [
+            "3D modeliavimo programinė įranga, pvz., Blender",
+            "Virtualiosios realybės aplinkos",
+            "DI pagrįsti generatyvinio projektavimo įrankiai",
+            "Visi aukščiau pateikti"
+        ],
+        "answer": "Visi aukščiau pateikti"
+        },
+        "5.3 M6": {
+        "question": "Kuri iš šių praktikų bendradarbiavimo problemų sprendimo aplinkoje yra veiksmingiausia, skatinant skirtingas perspektyvas ir didinant komandos kūrybiškumą?",
+        "options": [
+            "Nustatyti griežtą hierarchiją priimant sprendimus",
+            "Reguliariai rengti idėjų generavimo sesijas be vertinimo",
+            "Dalyvauti leisti tik srities ekspertams",
+            "Skatinti atvirą dialogą ir taikyti dizaino mąstysenos metodikas"
+        ],
+        "answer": "Skatinti atvirą dialogą ir taikyti dizaino mąstysenos metodikas"
+        },
+
+        "5.4 B1": {
+        "question": "Kurį iš toliau pateiktų žingsnių būtina atlikti pirmiausia, siekiant nustatyti savo skaitmeninių kompetencijų spragas?",
+        "options": [
+            "Prašyti kitų atsiliepimų",
+            "Įsivertinti turimus įgūdžius",
+            "Laikyti sertifikavimo egzaminą",
+            "Koncentruotis tik į naujausias technologijas"
+        ],
+        "answer": "Įsivertinti turimus įgūdžius"
+        },
+        "5.4 B2": {
+        "question": "Teisybė ar melas? Skaitmeninių kompetencijų spragų nustatymas aktualus tik technologinėms pareigoms.",
+        "options": ["Teisinga", "Klaidinga"],
+        "answer": "Klaidinga"
+        },
+        "5.4 B3": {
+        "question": "Kas yra kibernetinis saugumas?",
+        "options": [
+            "Supratimas apie internetines grėsmes ir apsaugos priemones",
+            "Gebėjimas naudoti interneto įrankius turiniui kurti",
+            "Patikimos informacijos atpažinimas iš skaitmeninių šaltinių"
+        ],
+        "answer": "Supratimas apie internetines grėsmes ir apsaugos priemones"
+        },
+        "5.4 B4": {
+        "question": "Koks yra skaitmeninių kompetencijų spragų nustatymo tikslas?",
+        "options": [
+            "Neatsilikti nuo kitų įgūdžių",
+            "Būti atnaujintam pagal besivystančias technologijas",
+            "Užbaigti privalomas sertifikacijas",
+            "Visiškai vengti technologijų"
+        ],
+        "answer": "Būti atnaujintam pagal besivystančias technologijas"
+        },
+        "5.4 B5": {
+        "question": "Padedant kam nors nustatyti jų skaitmeninių kompetencijų spragas, koks požiūris yra geriausias?",
+        "options": [
+            "Daryti prielaidą, kad jam nereikia pagalbos su pagrindiniais įgūdžiais",
+            "Paklausti apie konkrečias skaitmenines užduotis ir iššūkius",
+            "Pateikti sąrašą skaitmeninių užduočių atlikti vienam",
+            "Vengti bet kokio grįžtamojo ryšio ir fokusuotis tik į techninius įgūdžius"
+        ],
+        "answer": "Paklausti apie konkrečias skaitmenines užduotis ir iššūkius"
+        },
+        "5.4 B6": {
+        "question": "Teisybė ar melas? Kai nustatote savo skaitmeninių kompetencijų spragas, kitas žingsnis – iškart pradėti pažangias mokymo programas neatsižvelgiant į bazinius įgūdžius.",
+        "options": ["Teisinga", "Klaidinga"],
+        "answer": "Klaidinga"
+        },
+        "5.4 M1": {
+        "question": "Kurį iš toliau pateiktų veiksmų veiksmingiausia atlikti pirmiausia, norint nustatyti savo skaitmeninių kompetencijų spragas?",
+        "options": [
+            "Daryti prielaidą, kad jūsų įgūdžiai tinka visoms užduotims.",
+            "Naudoti savęs vertinimo įrankį, pvz., Skaitmeninių kompetencijų sistemą (DigComp)",
+            "Laukti, kol kas nors nurodys jūsų silpnybes."
+        ],
+        "answer": "Naudoti savęs vertinimo įrankį, pvz., Skaitmeninių kompetencijų sistemą (DigComp)"
+        },
+        "5.4 M2": {
+        "question": "Koks būdas rekomenduojamas, norint sekti skaitmenines tendencijas?",
+        "options": [
+            "Reguliariai dalyvauti konferencijose, internetiniuose kursuose ir seminaruose",
+            "Remtis vien ankstesne patirtimi",
+            "Vengti socialinių tinklų ir skaitmeninių naujienų",
+            "Laukti, kol darbdavys suteiks privalomus mokymus"
+        ],
+        "answer": "Reguliariai dalyvauti konferencijose, internetiniuose kursuose ir seminaruose"
+        },
+        "5.4 M3": {
+        "question": "Teisybė ar melas? Padėti kitiems skaitmeninių kompetencijų srityje reiškia įvertinti jų gebėjimus ir skatinti nuolatinį įgūdžių tobulinimą.",
+        "options": ["Teisinga", "Klaidinga"],
+        "answer": "Teisinga"
+        },
+        "5.4 M4": {
+        "question": "Kurį iš toliau pateiktų požiūrių apibūdina būdas nuolat stebėti ir gerinti savo skaitmenines kompetencijas?",
+        "options": [
+            "Naudoti tik nemokamus, bazinius kursus",
+            "Nustatyti tikslus, rinkti grįžtamąjį ryšį ir periodiškai vertinti pažangą",
+            "Pasikliauti neformaliomis žiniomis iš kolegų",
+            "Kasdien atlikti tas pačias rutininės užduotis be pokyčių"
+        ],
+        "answer": "Nustatyti tikslus, rinkti grįžtamąjį ryšį ir periodiškai vertinti pažangą"
+        },
+        "5.4 M5": {
+        "question": "Padedant kolegai gerinti skaitmenines kompetencijas, ko reikėtų vengti?",
+        "options": [
+            "Siūlyti struktūruoto mokymosi išteklius",
+            "Nustatyti aiškius mokymosi tikslus",
+            "Leisti praleisti bazinius įgūdžius",
+            "Skatinti reguliarias grįžtamojo ryšio sesijas"
+        ],
+        "answer": "Leisti praleisti bazinius įgūdžius"
+        },
+        "5.4 M6": {
+        "question": "Kurie iš toliau pateiktų teiginių nėra teisingi?",
+        "options": [
+            "Internetiniai kursai suteikia struktūrą specifiniams įgūdžiams ugdyti",
+            "Skaitmeninis mentorius teikia personalizuotus patarimus ir įžvalgas apie stiprybes/silpnybes",
+            "Prenumeruojant industrines naujienas žinios nuolat atnaujinamos",
+            "Skaitmeninis mentorius nuolat atnaujina žinias naujausia informacija"
+        ],
+        "answer": "Skaitmeninis mentorius nuolat atnaujina žinias naujausia informacija"
+        }
+    }
+}

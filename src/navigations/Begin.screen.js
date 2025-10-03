@@ -2,15 +2,19 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import env from "../configs/env";
 import CategoryTooltip from "../components/CategoryTooltip";
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
 
 const BeginScreen = () => {
   const navigate = useNavigate();
+  
   const [questionnaire, setQuestionnaire] = useState(env.QS_MAIN);
   const [survey, setSurvey] = useState(false);
   const [completedCount, setCompletedCount] = useState(0);
   const [completedCategories, setCompletedCategories] = useState([]);
   const [totalCategories] = useState(5);
   const totalQuestions = 82;
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const savedAnswers = localStorage.getItem("answers");
@@ -167,7 +171,7 @@ const BeginScreen = () => {
             </svg>
           </Link>
           <h1 className="text-lg font-semibold text-center flex-1">
-            Assessment Status
+            {t('assessment_status')}
           </h1>
         </div>
       </div>
@@ -178,12 +182,12 @@ const BeginScreen = () => {
             <div className="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
               <div className="p-5 border-b border-gray-200">
                 <h2 className="text-lg font-medium text-gray-900">
-                  Your Progress
+                  {t('your_progress')}
                 </h2>
                 <p className="text-sm text-gray-600 mt-1">
                   {completedCount > 0
-                    ? `You've completed ${completedCount} out of ${totalQuestions} questions`
-                    : "Start your assessment to track progress"}
+                    ? t('you_have_completed', {completedCount, totalQuestions})
+                    : t('start_assessment')}
                 </p>
               </div>
 
@@ -192,7 +196,7 @@ const BeginScreen = () => {
                   <div className="flex mb-2 items-center justify-between">
                     <div>
                       <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-amber-800 bg-amber-100">
-                        Progress
+                        {t('progress')}
                       </span>
                     </div>
                     <div className="text-right">
@@ -227,7 +231,7 @@ const BeginScreen = () => {
                   </span>
                 </div>
                 <div className="flex-1">
-                  <p className="text-gray-700">Total Available Questions</p>
+                  <p className="text-gray-700">{t('total_available_questions')}</p>
                 </div>
               </div>
             )}
@@ -241,7 +245,7 @@ const BeginScreen = () => {
                     </span>
                   </div>
                   <div className="flex-1">
-                    <p className="text-gray-700">Remaining Questions</p>
+                    <p className="text-gray-700">{t('remaining_questions')}</p>
                   </div>
                 </div>
 
@@ -252,7 +256,7 @@ const BeginScreen = () => {
                     </span>
                   </div>
                   <div className="flex-1">
-                    <p className="text-gray-700">Completed Questions</p>
+                    <p className="text-gray-700">{t('completed_questions')}</p>
                   </div>
                 </div>
               </>
@@ -277,7 +281,7 @@ const BeginScreen = () => {
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
-              <span>Assessment by Category</span>
+              <span>{t('assessment_by_category')}</span>
             </button>
 
             <button
@@ -285,8 +289,8 @@ const BeginScreen = () => {
               className="w-full py-3 bg-black text-white font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300 focus:outline-none relative z-10"
             >
               {completedCount > 0
-                ? "Continue Full Assessment"
-                : "Start Full Assessment"}
+                ? t('continue_full')
+                : t('start_full')}
             </button>
           </div>
           <div className="text-center mt-4 text-sm text-gray-600">
@@ -306,8 +310,8 @@ const BeginScreen = () => {
                 />
               </svg>
               <p>
-                Estimated time:{" "}
-                {Math.ceil((totalQuestions - completedCount) * 0.25)} minutes
+                {t('estimated_time')}:{" "}
+                {Math.ceil((totalQuestions - completedCount) * 0.25)} {t('minutes')}
               </p>
             </div>
           </div>

@@ -2,6 +2,11 @@ import { FaPlay, FaLock, FaCheckCircle, FaRedo } from "react-icons/fa";
 import SCORING_CONFIG from "../configs/scoringConfig";
 import env from "../configs/env";
 
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
+
+
+
 export const COMPETENCE_AREAS = Object.keys(
   SCORING_CONFIG.COMPETENCE_AREAS
 ).map((id) => ({
@@ -290,7 +295,7 @@ export const generateQuizFeedback = (quizResult, competenceArea, level) => {
     return {
       status: "success",
       title: level === 1 ? "Way to go!" : "Excellent work!",
-      message: `Perfect score! You earned +${totalScore} points`,
+      message: `Perfect score!`,
     };
   }
 
@@ -411,6 +416,7 @@ export const getGradeStatus = (
 };
 
 export const getAreaLevelDisplay = (areaData, completedLevels, grades) => {
+
   if (!areaData?.points || !completedLevels || !grades) return "Not Started";
 
   const GRADES_TYPE = [
@@ -498,51 +504,50 @@ export const getIconForStatus = (status) => {
 export const getSubCompetenceDetails = (point) => {
   const details = {
     1.1: {
-      title:
-        "Browsing, searching and filtering data, information and digital content",
+      title: "competence_details.1_1.title",
       icon: "search",
     },
     1.2: {
-      title: "Evaluating data, information and digital content",
+      title: "competence_details.1_2.title",
       icon: "check-circle",
     },
     1.3: {
-      title: "Managing data, information and digital content",
+      title: "competence_details.1_3.title",
       icon: "database",
     },
-    2.1: { title: "Interacting through digital technologies", icon: "users" },
+    2.1: { title: "competence_details.2_1.title", icon: "users" },
     2.2: {
-      title: "Sharing information and content through digital technologies",
+      title: "competence_details.2_2.title",
       icon: "share-2",
     },
     2.3: {
-      title: "Engaging in citizenship through digital technologies",
+      title: "competence_details.2_3.title",
       icon: "flag",
     },
     2.4: {
-      title: "Collaborating through digital technologies",
+      title: "competence_details.2_4.title",
       icon: "briefcase",
     },
-    2.5: { title: "Netiquette", icon: "message-square" },
-    2.6: { title: "Managing digital identity", icon: "user-check" },
-    3.1: { title: "Developing digital content", icon: "edit" },
+    2.5: { title: "competence_details.2_5.title", icon: "message-square" },
+    2.6: { title: "competence_details.2_6.title", icon: "user-check" },
+    3.1: { title: "competence_details.3_1.title", icon: "edit" },
     3.2: {
-      title: "Integrating and re-elaborating digital content",
+      title: "competence_details.3_2.title",
       icon: "git-merge",
     },
-    3.3: { title: "Copyright and licenses", icon: "copy" },
-    3.4: { title: "Programming", icon: "code" },
-    4.1: { title: "Protecting devices", icon: "smartphone" },
-    4.2: { title: "Protecting personal data and privacy", icon: "shield" },
-    4.3: { title: "Protecting health and well-being", icon: "heart" },
-    4.4: { title: "Protecting the environment", icon: "leaf" },
-    5.1: { title: "Solving technical problems", icon: "tool" },
+    3.3: { title: "competence_details.3_3.title", icon: "copy" },
+    3.4: { title: "competence_details.3_4.title", icon: "code" },
+    4.1: { title: "competence_details.4_1.title", icon: "smartphone" },
+    4.2: { title: "competence_details.4_2.title", icon: "shield" },
+    4.3: { title: "competence_details.4_3.title", icon: "heart" },
+    4.4: { title: "competence_details.4_4.title", icon: "leaf" },
+    5.1: { title: "competence_details.5_1.title", icon: "tool" },
     5.2: {
-      title: "Identifying needs and technological responses",
+      title: "competence_details.5_2.title",
       icon: "target",
     },
-    5.3: { title: "Creatively using digital technologies", icon: "cpu" },
-    5.4: { title: "Identifying digital competence gaps", icon: "search" },
+    5.3: { title: "competence_details.5_3.title", icon: "cpu" },
+    5.4: { title: "competence_details.5_4.title", icon: "search" },
   };
   return details[point] || { title: "Unknown Competence", icon: "help-circle" };
 };
@@ -568,7 +573,7 @@ export const translateLevelTerminology = (level) => {
       lowerLevel === "foundation" ||
       lowerLevel === "intermediate"
     ) {
-      return "Level 1";
+      return "level_1";
     }
     if (
       lowerLevel === "master" ||

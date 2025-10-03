@@ -1419,7 +1419,7 @@ const env = {
 
   QS_SAMPLE2: [
     {
-      title: "Question 1",
+      title: "1.1 B1",
       question:
         "When articulating an information need, what should be your first step?",
       options: [
@@ -1434,7 +1434,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 2",
+      title: "1.1 B2",
       question:
         "If you are unsure of what information you need, which is the best approach?",
       options: [
@@ -1449,7 +1449,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 3",
+      title: "1.1 B3",
       question:
         "What is the main benefit of using Boolean operators in search queries?",
       options: [
@@ -1464,7 +1464,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 4",
+      title: "1.1 B4",
       question:
         "How can you refine your search results when too many unrelated items appear?",
       options: [
@@ -1479,7 +1479,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 5",
+      title: "1.1 B5",
       question:
         "What is a hyperlink typically used for in digital environments?",
       options: [
@@ -1494,7 +1494,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 6",
+      title: "1.1 B6",
       question:
         "What should be a key consideration when updating a search strategy?",
       options: [
@@ -1509,7 +1509,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 7",
+      title: "1.1 M1",
       question: "Which of the following is NOT an information need?",
       options: [
         "Finding out the cause of a historical event",
@@ -1523,7 +1523,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 8",
+      title: "1.1 M2",
       question:
         "If you want to exclude a term from your search, which Boolean operator should you use?",
       options: ["AND", "OR", "NOT", "WITH"],
@@ -1533,7 +1533,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 9",
+      title: "1.1 M3",
       question:
         "If you encounter a paywall when trying to access an article, what should you do?",
       options: [
@@ -1549,7 +1549,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 10",
+      title: "1.1 M4",
       question:
         "How do menus and navigation bars assist in digital content browsing?",
       options: [
@@ -1564,7 +1564,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 11",
+      title: "1.1 M5",
       question:
         "What’s an effective way to adapt your search strategy over time?",
       options: [
@@ -1580,7 +1580,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 12",
+      title: "1.1 M6",
       question: "Why is it important to update search strategies regularly?",
       options: [
         "To avoid repetition of results",
@@ -1594,7 +1594,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 13",
+      title: "1.2 B1",
       question:
         "Which of the following factors indicates that a source is credible?",
       options: [
@@ -1609,7 +1609,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 14",
+      title: "1.2 B2",
       question:
         "How can you determine whether information in an article is up to date?",
       options: [
@@ -1624,7 +1624,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 15",
+      title: "1.2 B3",
       question: "What is an important step in critically evaluating data?",
       options: [
         "Ignoring contradictory information",
@@ -1638,7 +1638,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 16",
+      title: "1.2 B4",
       question:
         "How should you approach conflicting data from different sources?",
       options: [
@@ -1653,7 +1653,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 17",
+      title: "1.2 B5",
       question: "What is the best way to store data for easy retrieval later?",
       options: [
         "Save it all in one folder without categorization",
@@ -1668,7 +1668,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 18",
+      title: "1.2 B6",
       question: "How can cloud storage help with managing data?",
       options: [
         "It automatically categorizes files",
@@ -1682,7 +1682,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 19",
+      title: "1.2 M1",
       question:
         "Why is it important to cross-check information from multiple sources?",
       options: [
@@ -1697,7 +1697,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 20",
+      title: "I.2 M2",
       question: "How can you verify the accuracy of data found online?",
       options: [
         "By relying on the first search result",
@@ -1711,7 +1711,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 21",
+      title: "1.2 M3",
       question:
         "Which of the following helps ensure data is accurate and reliable?",
       options: [
@@ -1726,7 +1726,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 22",
+      title: "1.2 M4",
       question:
         "What is a key consideration when interpreting data in context?",
       options: [
@@ -1741,7 +1741,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 23",
+      title: "1.2 M5",
       question: "How can you add metadata to improve data organization?",
       options: [
         "By tagging files with relevant keywords",
@@ -1755,7 +1755,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 24",
+      title: "1.2 M6",
       question: "What is a benefit of using file synchronization tools?",
       options: [
         "They help transfer data between unrelated devices",
@@ -1769,7 +1769,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 25",
+      title: "1.3 B1",
       question: "What is the best way to store data for easy retrieval later?",
       options: [
         "Save it all in one folder without categorization",
@@ -1784,7 +1784,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 26",
+      title: "1.3 B2",
       question: "How can cloud storage help with managing data?",
       options: [
         "It automatically categorizes files",
@@ -1798,7 +1798,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 27",
+      title: "1.3 B3",
       question: "Which of the following is a good practice for file naming?",
       options: [
         "Use random letters and numbers",
@@ -1812,7 +1812,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 28",
+      title: "1.3 B4",
       question:
         "Which of the following is an example of using a structured environment to process data?",
       options: [
@@ -1827,7 +1827,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 29",
+      title: "1.3 B5",
       question:
         "What can databases help you do when managing large amounts of data?",
       options: [
@@ -1842,7 +1842,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 30",
+      title: "1.3 B6",
       question:
         "How can data visualization tools assist in processing information?",
       options: [
@@ -1857,7 +1857,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 31",
+      title: "1.3 M1",
       question: "Why is it important to back up your data regularly?",
       options: [
         "To save storage space",
@@ -1871,7 +1871,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 32",
+      title: "1.3 M2",
       question: "How can you add metadata to improve data organization?",
       options: [
         "By tagging files with relevant keywords",
@@ -1885,7 +1885,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 33",
+      title: "1.3 M3",
       question: "What is a benefit of using file synchronization tools?",
       options: [
         "They help transfer data between unrelated devices",
@@ -1899,7 +1899,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 34",
+      title: "1.3 M4",
       question:
         "Why is it important to apply consistent methods for organizing and processing data?",
       options: [
@@ -1914,7 +1914,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 35",
+      title: "1.3 M5",
       question:
         "What is one advantage of using automation tools for repetitive data tasks?",
       options: [
@@ -1929,7 +1929,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 36",
+      title: "1.3 M6",
       question: "How can you best manage complex datasets for easy analysis?",
       options: [
         "Use multiple spreadsheets without linking them",
@@ -1944,7 +1944,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 1",
+      title: "2.1 B1",
       question:
         "Which of the following tools is more appropriate to send an institutional newsletter?",
       options: ["Email", "Snapchat", "WhatsApp", "Instagram"],
@@ -1954,7 +1954,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 2",
+      title: "2.1 B2",
       question:
         "Select the correct matching of the following online platforms with their primary use:",
       options: [
@@ -1969,7 +1969,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 3",
+      title: "2.1 B3",
       question:
         "When communicating through digital technologies, it is essential to be aware of _______ to ensure that your message is received as intended and to avoid misunderstandings.",
       options: ["Context", "Grammar", "Spelling", "Language"],
@@ -1979,7 +1979,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 4",
+      title: "2.1 B4",
       question:
         "You are collaborating on a project with a team that needs quick feedback. Which digital tool is most appropriate?",
       options: [
@@ -1994,7 +1994,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 5",
+      title: "2.1 B5",
       question:
         "You are notifying your tutor about a missed deadline. What is the most appropriate way to communicate this?",
       options: [
@@ -2009,7 +2009,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 6",
+      title: "2.1 B6",
       question:
         "You are discussing a sensitive topic with a colleague. Which method should you choose?",
       options: ["Group chat", "Video call", "Public forum", "Direct message"],
@@ -2019,7 +2019,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 7",
+      title: "2.1 M1",
       question:
         "Imagine you ordered a student’s book online on a website, and you are having trouble tracking the order. Which sentence (input) would be the most effective way of asking a virtual assistant (bot) to look for your latest order?",
       options: [
@@ -2034,7 +2034,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 8",
+      title: "2.1 M2",
       question:
         "When interacting with generative AI platforms (e.g., ChatGPT), what is the most appropriate way of writing the input to obtain accurate results?",
       options: [
@@ -2049,7 +2049,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 9",
+      title: "2.1 M3",
       question:
         "Which of the following is a key factor in choosing the appropriate digital communication tool for an academic presentation?",
       options: [
@@ -2064,7 +2064,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 10",
+      title: "2.1 M4",
       question:
         "You are asked to present a new software feature to a group of colleagues. What is the most appropriate method of communication?",
       options: [
@@ -2079,7 +2079,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 11",
+      title: "2.1 M5",
       question:
         "You are the class representative and need to make an announcement that affects all students. Which communication channel is most effective?",
       options: [
@@ -2094,7 +2094,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 12",
+      title: "2.1 M6",
       question:
         "You and your classmates are developing a project for a curricular unit. Which of the following platforms would help your group keep track of the ongoing tasks?",
       options: ["Trello", "Discord", "Slack", "Email"],
@@ -3662,6 +3662,10 @@ const env = {
       type: "3.4",
       level: "master",
     },
+
+
+
+
     {
       title: "4.1 B1",
       question:
@@ -3736,20 +3740,20 @@ const env = {
       type: "4.1",
       level: "basic",
     },
-    // {
-    //     title: "4.1 B7",
-    //     question: "Which of the following is a common risk when using unsecured public Wi-Fi networks?",
-    //     options: [
-    //         "Slower downloads",
-    //         "Unauthorized access to personal data",
-    //         "Network service interruptions",
-    //         "Faster battery drain"
-    //     ],
-    //     answer: "Unauthorized access to personal data",
-    //     points: 1.0,
-    //     type: "4.1",
-    //     level: "basic"
-    // },
+    {
+      title: "4.1 B6",
+      question: "Which of the following is a common risk when using unsecured public Wi-Fi networks?",
+      options: [
+          "Slower downloads",
+          "Unauthorized access to personal data",
+          "Network service interruptions",
+          "Faster battery drain"
+      ],
+      answer: "Unauthorized access to personal data",
+      points: 1.0,
+      type: "4.1",
+      level: "basic"
+    },
     {
       title: "4.1 M1",
       question:
@@ -5362,7 +5366,7 @@ const env = {
       level: "basic",
     },
     {
-      text: "Identify  apply  and adapt effective strategies to prevent health risks and protect physical and psychological well-being when using digital technologies. Implement and evaluate appropriate measures to safeguard yourself and others from online dangers while promoting responsible digital engagement. Develop innovative solutions to complex challenges related to digital well-being  safety  and social inclusion  contributing to advancements in this field.",
+      text: "Identify apply and adapt effective strategies to prevent health risks and protect physical and psychological well-being when using digital technologies. Implement and evaluate appropriate measures to safeguard yourself and others from online dangers while promoting responsible digital engagement. Develop innovative solutions to complex challenges related to digital well-being  safety  and social inclusion  contributing to advancements in this field.",
       links: [],
       type: "4.3",
       level: "master",

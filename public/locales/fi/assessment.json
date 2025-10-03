@@ -1,0 +1,746 @@
+{
+  "assessment": {
+
+        "Question 1": {
+            "question": "Tiedän, että eri hakukoneet voivat antaa erilaisia hakutuloksia, koska niihin vaikuttavat kaupalliset tekijät.",
+            "options": [
+            "En tiedä tästä mitään / En ole koskaan kuullut tästä",
+            "Minulla on vain rajallinen ymmärrys tästä ja tarvitsen lisää selityksiä",
+            "Ymmärrän tämän hyvin",
+            "Hallitsen tämän aiheen täysin ja voisin selittää sen muille"
+            ]
+        },
+        "Question 2": {
+            "question": "Tiedän, mitä sanoja käyttää löytääkseni nopeasti sen mitä tarvitsen (esim. verkosta tai dokumentista).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 3": {
+            "question": "Osaan hyödyntää hakukoneen lisäominaisuuksia.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 4": {
+            "question": "Tiedän, kuinka löytää verkkosivun, jolla olen käynyt aiemmin.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 5": {
+            "question": "Tiedän, kuinka erottaa mainosmuotoinen sisältö muusta verkossa löytämästäni tai saamastani sisällöstä (esim. mainos sosiaalisessa mediassa tai hakukoneessa).",
+            "options": [
+            "En tiedä tästä mitään / En ole koskaan kuullut tästä",
+            "Minulla on vain rajallinen ymmärrys tästä ja tarvitsen lisää selityksiä",
+            "Ymmärrän tämän hyvin",
+            "Hallitsen tämän aiheen täysin ja voisin selittää sen muille"
+            ]
+        },
+        "Question 6": {
+            "question": "Tiedän, kuinka tunnistaa verkkolähteen tarkoituksen (esim. tiedottaa, vaikuttaa, viihdyttää tai myydä).",
+            "options": [
+            "En tiedä tästä mitään / En ole koskaan kuullut tästä",
+            "Minulla on vain rajallinen ymmärrys tästä ja tarvitsen lisää selityksiä",
+            "Ymmärrän tämän hyvin",
+            "Hallitsen tämän aiheen täysin ja voisin selittää sen muille"
+            ]
+        },
+        "Question 7": {
+            "question": "Tarkistan kriittisesti, onko löytämäni tieto luotettavaa.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 8": {
+            "question": "Tiedän, että osa internetin tiedosta on virheellistä (esim. valeuutiset).",
+            "options": [
+            "En tiedä tästä mitään / En ole koskaan kuullut tästä",
+            "Minulla on vain rajallinen ymmärrys tästä ja tarvitsen lisää selityksiä",
+            "Ymmärrän tämän hyvin",
+            "Hallitsen tämän aiheen täysin ja voisin selittää sen muille"
+            ]
+        },
+        "Question 9": {
+            "question": "Tiedän erilaisista tallennusmedioista (esim. sisäinen tai ulkoinen kiintolevy, USB-muisti, muistitikku, muistikortti).",
+            "options": [
+            "En tiedä tästä mitään / En ole koskaan kuullut tästä",
+            "Minulla on vain rajallinen ymmärrys tästä ja tarvitsen lisää selityksiä",
+            "Ymmärrän tämän hyvin",
+            "Hallitsen tämän aiheen täysin ja voisin selittää sen muille"
+            ]
+        },
+        "Question 10": {
+            "question": "Tiedän, kuinka järjestää digitaalista sisältöä (esim. dokumentit, kuvat, videot) kansioiden tai tunnisteiden avulla, jotta löydän ne myöhemmin.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 11": {
+            "question": "Tiedän, kuinka kopioida ja siirtää tiedostoja (esim. dokumentit, kuvat, videot) kansioiden, laitteiden tai pilvipalvelun välillä.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 12": {
+            "question": "Tiedän, kuinka hallita ja analysoida dataa ohjelmistoilla (esim. lajittelu, suodatus, laskutoimitukset).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 13": {
+            "question": "Tiedän, kuinka lähettää, vastata ja välittää sähköposteja.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 14": {
+            "question": "Tiedän, että monet viestintäpalvelut ja sosiaalisen median palvelut ovat maksuttomia, koska ne rahoitetaan mainonnalla.",
+            "options": [
+            "En tiedä tästä mitään / En ole koskaan kuullut tästä",
+            "Minulla on vain rajallinen ymmärrys tästä ja tarvitsen lisää selityksiä",
+            "Ymmärrän tämän hyvin",
+            "Hallitsen tämän aiheen täysin ja voisin selittää sen muille"
+            ]
+        },
+        "Question 15": {
+            "question": "Tiedän, kuinka käyttää videoneuvottelujen lisäominaisuuksia (esim. moderoiminen, äänen ja videon tallennus).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 16": {
+            "question": "Tiedän, mitkä viestintävälineet ja -palvelut (esim. puhelin, sähköposti, videoneuvottelu, tekstiviesti) sopivat eri tilanteisiin.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 17": {
+            "question": "Olen valmis jakamaan digitaalista sisältöä, jonka ajattelen olevan kiinnostavaa ja hyödyllistä muille.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 18": {
+            "question": "Tiedän, kuinka käyttää pilvipalveluja (esim. Google Drive, Dropbox ja OneDrive) tiedostojeni jakamiseen.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 19": {
+            "question": "Tiedän, kuinka muuttaa sitä, kenen kanssa jaan sisältöä (esim. ystävät, ystävien ystävät, kaikki).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 20": {
+            "question": "Tiedän, kuinka viitata verkosta löytämiini dokumentteihin (esim. tekijä tai verkkosivun osoite).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+
+        "Question 21": {
+            "question": "Tiedän, kuinka hakea työpaikkaa digitaalisen alustan kautta (esim. täyttää lomake, ladata CV ja kuva).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 22": {
+            "question": "Tiedän, että monet julkiset palvelut ovat saatavilla verkossa (esim. lääkäriajan varaaminen, veroilmoituksen tekeminen, syntymä-, avioliitto-, asuin- ja muiden todistusten pyytäminen).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 23": {
+            "question": "Tiedän, kuinka maksaa verkosta ostamiani tuotteita ja palveluja (esim. suoraveloitus, luotto-/pankkikortti, muut verkkomaksujärjestelmät).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 24": {
+            "question": "Minulle on tärkeää keskustella sosiaalisista tai poliittisista aiheista verkossa (esim. keskustelufoorumit, uutissivustot, Facebook, Twitter).",
+            "options": [
+            "Ei lainkaan",
+            "Vain vähän / hyvin vähän",
+            "Kyllä",
+            "Erittäin paljon"
+            ]
+        },
+        "Question 25": {
+            "question": "Ymmärrän etäyhteistyön hyödyt (esim. vähentyneet työmatkat).",
+            "options": [
+            "En tiedä tästä mitään / En ole koskaan kuullut tästä",
+            "Minulla on vain rajallinen ymmärrys tästä ja tarvitsen lisää selityksiä",
+            "Ymmärrän tämän hyvin",
+            "Hallitsen tämän aiheen täysin ja voisin selittää sen muille"
+            ]
+        },
+        "Question 26": {
+            "question": "Tiedän, kuinka muokata jaettua verkkodokumenttia.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 27": {
+            "question": "Tiedän, kuinka kutsua muita ja antaa heille asianmukaiset oikeudet jaetun dokumentin muokkaamiseen.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 28": {
+            "question": "Olen tietoinen, että minun tulisi pyytää henkilön lupa ennen kuin julkaisen tai jaan hänestä otettuja kuvia.",
+            "options": [
+            "En tiedä tästä mitään / En ole koskaan kuullut tästä",
+            "Minulla on vain rajallinen ymmärrys tästä ja tarvitsen lisää selityksiä",
+            "Ymmärrän tämän hyvin",
+            "Hallitsen tämän aiheen täysin ja voisin selittää sen muille"
+            ]
+        },
+        "Question 29": {
+            "question": "Tiedän, kuinka tunnistaa verkkoviestit ja käyttäytymisen, jotka kohdistuvat tiettyihin ryhmiin tai yksilöihin (esim. vihapuhe).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 30": {
+            "question": "Osaan toimia oikein, jos joku käyttäytyy väärin verkossa (esim. loukkaava kommentti, uhkailu).",
+            "options": [
+            "Ei lainkaan",
+            "Vain vähän / hyvin vähän",
+            "Kyllä",
+            "Erittäin paljon"
+            ]
+        },
+        "Question 31": {
+            "question": "Tiedän, kuinka käyttäytyä verkossa tilanteen mukaan (esim. virallinen vs. epävirallinen).",
+            "options": [
+            "Ei lainkaan",
+            "Vain vähän / hyvin vähän",
+            "Kyllä",
+            "Erittäin paljon"
+            ]
+        },
+        "Question 32": {
+            "question": "Tiedän, että digitaalinen identiteettini on kaikki, mikä tunnistaa minut verkossa (esim. käyttäjätunnukset, tykkäykset ja julkaisut sosiaalisessa mediassa, netissä allekirjoitetut adressit).",
+            "options": [
+            "En tiedä tästä mitään / En ole koskaan kuullut tästä",
+            "Minulla on vain rajallinen ymmärrys tästä ja tarvitsen lisää selityksiä",
+            "Ymmärrän tämän hyvin",
+            "Hallitsen tämän aiheen täysin ja voisin selittää sen muille"
+            ]
+        },
+        "Question 33": {
+            "question": "Tiedän, kuinka luoda profiilin digitaalisissa ympäristöissä henkilökohtaisiin tai ammatillisiin tarkoituksiin.",
+            "options": [
+            "En tiedä tästä mitään / En ole koskaan kuullut tästä",
+            "Minulla on vain rajallinen ymmärrys tästä ja tarvitsen lisää selityksiä",
+            "Ymmärrän tämän hyvin",
+            "Hallitsen tämän aiheen täysin ja voisin selittää sen muille"
+            ]
+        },
+        "Question 34": {
+            "question": "Tiedän, että EU on ottanut käyttöön oikeuden tulla unohdetuksi (oikeus saada omia henkilötietoja poistettua internetistä).",
+            "options": [
+            "En tiedä tästä mitään / En ole koskaan kuullut tästä",
+            "Minulla on vain rajallinen ymmärrys tästä ja tarvitsen lisää selityksiä",
+            "Ymmärrän tämän hyvin",
+            "Hallitsen tämän aiheen täysin ja voisin selittää sen muille"
+            ]
+        },
+        "Question 35": {
+            "question": "Tiedän, kuinka muuttaa selaimeni asetuksia evästeiden estämiseksi tai rajoittamiseksi.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 36": {
+            "question": "Tiedän, kuinka luoda ja muokata digitaalisia tekstitiedostoja (esim. Word, OpenDocument, Google Docs).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 37": {
+            "question": "Tiedän, kuinka ilmaista itseäni luomalla digitaalista sisältöä verkkoon (esim. blogikirjoitus, video YouTubessa).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 38": {
+            "question": "Tiedän, kuinka tuottaa multimediasisältöä sisältävä esitys (teksti, kuvat, ääni ja video).",
+            "options": [
+            "En tiedä tästä mitään / En ole koskaan kuullut tästä",
+            "Minulla on vain rajallinen ymmärrys tästä ja tarvitsen lisää selityksiä",
+            "Ymmärrän tämän hyvin",
+            "Hallitsen tämän aiheen täysin ja voisin selittää sen muille"
+            ]
+        },
+        "Question 39": {
+            "question": "Kun ilmaisen itseäni, huolehdin oikean digitaalisen median valinnasta yleisön ja tavoitteeni mukaan (esim. sosiaalisen median käyttö projektin mainostamiseen).",
+            "options": [
+            "Ei lainkaan",
+            "Vain vähän / hyvin vähän",
+            "Kyllä",
+            "Erittäin paljon"
+            ]
+        },
+        "Question 40": {
+            "question": "Haluan luoda uutta digitaalista sisältöä yhdistelemällä ja muokkaamalla olemassa olevia digitaalisia resursseja (esim. esitys, jossa on verkosta löydettyjä kuvia ja taustamusiikkia).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+
+        "Question 41": {
+            "question": "Tiedän, että joitakin digitaalisia sisältöjä voidaan käyttää uudelleen ja muokata laillisesti (esim. public domain tai Creative Commons -lisenssit).",
+            "options": [
+            "En tiedä tästä mitään / En ole koskaan kuullut tästä",
+            "Minulla on vain rajallinen ymmärrys tästä ja tarvitsen lisää selityksiä",
+            "Ymmärrän tämän hyvin",
+            "Hallitsen tämän aiheen täysin ja voisin selittää sen muille"
+            ]
+        },
+        "Question 42": {
+            "question": "Tiedän, kuinka muokata tai tehdä muutoksia muiden luomaan digitaaliseen sisältöön (esim. lisätä tekstiä kuvaan, muokata wikiä).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 43": {
+            "question": "Tiedän, kuinka luoda jotakin uutta yhdistelemällä eri sisältötyyppejä (esim. tekstiä ja kuvia).",
+            "options": [
+            "Ei lainkaan",
+            "Vain vähän / hyvin vähän",
+            "Kyllä",
+            "Erittäin paljon"
+            ]
+        },
+        "Question 44": {
+            "question": "Huolehdin siitä, että noudatan löytämäni digitaalisen sisällön tekijänoikeuksia ja lisenssisääntöjä.",
+            "options": [
+            "Ei lainkaan",
+            "Vain vähän / hyvin vähän",
+            "Kyllä",
+            "Erittäin paljon"
+            ]
+        },
+        "Question 45": {
+            "question": "Tiedän, että digitaalisen sisällön (esim. musiikki, ohjelmistot, elokuvat) lataamisella tai jakamisella voi olla eettisiä tai oikeudellisia seurauksia.",
+            "options": [
+            "Ei lainkaan",
+            "Vain vähän / hyvin vähän",
+            "Kyllä",
+            "Erittäin paljon"
+            ]
+        },
+        "Question 46": {
+            "question": "Osaan tunnistaa, milloin digitaalinen sisältö on saatavilla laittomasti (esim. ohjelmistot, elokuvat, musiikki, kirjat, TV).",
+            "options": [
+            "En tiedä tästä mitään / En ole koskaan kuullut tästä",
+            "Minulla on vain rajallinen ymmärrys tästä ja tarvitsen lisää selityksiä",
+            "Ymmärrän tämän hyvin",
+            "Hallitsen tämän aiheen täysin ja voisin selittää sen muille"
+            ]
+        },
+        "Question 47": {
+            "question": "Tiedän, millaisia erilaisia lisenssejä digitaalisen sisällön käyttöön voi liittyä (esim. Creative Commons -lisenssit).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 48": {
+            "question": "Olen kiinnostunut ymmärtämään, kuinka tehtävä voidaan pilkkoa vaiheisiin, jotta se voidaan automatisoida esimerkiksi ohjelmistossa tai robotilla.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 49": {
+            "question": "Tiedän, että ohjelmointikieliä (esim. Python, Visual Basic, Java) käytetään antamaan digitaaliselle laitteelle ohjeita tehtävän suorittamiseksi.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 50": {
+            "question": "Osaan kirjoittaa skriptejä, makroja ja yksinkertaisia sovelluksia tehtävän suorittamisen automatisoimiseksi.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 51": {
+            "question": "Tiedän, että samaan laskennalliseen tehtävään voi olla useita erilaisia algoritmisia ratkaisuja (esim. lajittelu ja haku).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 52": {
+            "question": "Ymmärrän Internetiin kytkettyjen laitteiden ja järjestelmien (esim. älykellot, älykodit) käytön hyödyt ja myös turvallisuusriskit.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 53": {
+            "question": "Tiedän, kuinka tärkeää on pitää käyttöjärjestelmä, virustorjunta ja muut ohjelmistot ajan tasalla tietoturvaongelmien ehkäisemiseksi.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 54": {
+            "question": "Tiedän, kuinka määrittää palomuurin asetukset eri laitteilla.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 55": {
+            "question": "Tiedän, kuinka palauttaa digitaalisia tietoja ja muuta sisältöä (esim. valokuvia, yhteystietoja) varmuuskopiosta.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 56": {
+            "question": "Tiedän, kuinka rajoittaa tai estää pääsyn sijaintitietoihini.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 57": {
+            "question": "Tiedän, kuinka tunnistaa epäilyttävät sähköpostiviestit, jotka yrittävät saada henkilökohtaisia tietojani.",
+            "options": [
+            "En tiedä tästä mitään / En ole koskaan kuullut tästä",
+            "Minulla on vain rajallinen ymmärrys tästä ja tarvitsen lisää selityksiä",
+            "Ymmärrän tämän hyvin",
+            "Hallitsen tämän aiheen täysin ja voisin selittää sen muille"
+            ]
+        },
+        "Question 58": {
+            "question": "Tiedän, kuinka tarkistaa, että verkkosivusto, jossa minua pyydetään antamaan henkilötietoja, on turvallinen (esim. https-sivustot, turvalogo tai -sertifikaatti).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 59": {
+            "question": "Tiedän, mitä henkilötietoja en saa jakaa tai julkaista verkossa (esim. sosiaalisessa mediassa).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 60": {
+            "question": "Olen huolellinen tarkistaessani käyttämieni digitaalisten palveluiden tietosuojakäytännöt.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+
+        "Question 61": {
+            "question": "Olen tietoinen siitä, että minun tulisi hallita digitaalisiin laitteisiini käyttämääni aikaa.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 62": {
+            "question": "Tiedän, kuinka suojautua ei-toivotuilta ja haitallisilta verkossa tapahtuvilta kohtaamisilta ja materiaaleilta (esim. roskapostiviestit, henkilöllisyyden varastamiseen tähtäävät sähköpostit).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 63": {
+            "question": "Tiedän digitaalisista työkaluista, jotka voivat auttaa ikääntyneitä ihmisiä tai erityistarpeisia henkilöitä.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 64": {
+            "question": "Etsin tapoja, joilla digitaaliset teknologiat voisivat auttaa minua elämään ja kuluttamaan ympäristöystävällisemmin.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 65": {
+            "question": "Tiedän, että vanhat digitaaliset laitteet ja tarvikkeet (esim. tietokoneet, älypuhelimet, paristot) tulee hävittää asianmukaisesti niiden ympäristövaikutusten minimoimiseksi.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 66": {
+            "question": "Tiedän, miten voin vähentää laitteideni energiankulutusta (esim. muuttamalla asetuksia, sulkemalla sovelluksia, sammuttamalla Wi-Fin).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 67": {
+            "question": "Tunnen ”vihreät” toimintatavat digitaalisten laitteiden hankinnassa ja käytössä (esim. ekomerkittyjen laitteiden ostaminen, tarpeettoman tulostamisen välttäminen, latureiden irrottaminen, kun laite ei ole kiinni).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 68": {
+            "question": "Kun kohtaan teknisen ongelman, yritän vaiheittain tunnistaa ongelman syyn.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 69": {
+            "question": "Tiedän joitakin syitä, miksi digitaalinen laite ei ehkä yhdistä verkkoon (esim. väärä Wi-Fi-salasana, lentotila päällä).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 70": {
+            "question": "Kun kohtaan teknisen ongelman, pystyn löytämään ratkaisuja Internetistä.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 71": {
+            "question": "Pystyn muokkaamaan digitaalisten laitteideni käyttöjärjestelmän asetuksia teknisten ongelmien ratkaisemiseksi (esim. palveluiden automaattinen pysäytys/käynnistys, rekisteriavainten muuttaminen).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 72": {
+            "question": "Yritän yleensä selvittää, onko olemassa teknologista ratkaisua, joka voisi auttaa minua henkilökohtaisen tai ammatillisen tarpeen täyttämisessä.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 73": {
+            "question": "Tiedän yleisimpien digitaalisten laitteiden (tietokone, tabletti, älypuhelin) päätoiminnot.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 74": {
+            "question": "Tiedän, kuinka valita oikea työkalu, laite tai palvelu tietyn tehtävän suorittamiseen (esim. omaan tarpeeseen sopiva älypuhelin, sopiva työkalu ammatilliseen videopuheluun).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 75": {
+            "question": "Tiedän teknisiä ratkaisuja, jotka parantavat digitaalisten työkalujen saavutettavuutta ja käyttöä, kuten konekäännös, suurennus/zoom ja tekstistä puheeksi -toiminnot.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 76": {
+            "question": "Tiedän, että digitaalista teknologiaa voidaan käyttää tehokkaana välineenä prosessien ja tuotteiden innovointiin.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 77": {
+            "question": "Olen halukas osallistumaan haasteisiin ja kilpailuihin, joiden tavoitteena on ratkaista älyllisiä, sosiaalisia tai käytännön ongelmia digitaalisten teknologioiden avulla.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 78": {
+            "question": "Osaan käyttää datatyökaluja (esim. tietokannat, data-louhinta ja analyysiohjelmistot), jotka hallitsevat ja jäsentävät monimutkaista informaatiota päätöksenteon ja ongelmanratkaisun tueksi.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 79": {
+            "question": "Olen halukas auttamaan yhteisöni ihmisiä parantamaan heidän digitaalisia taitojaan.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 80": {
+            "question": "Olen utelias uusia digitaalisia laitteita ja sovelluksia kohtaan ja kokeilen niitä mielelläni aina kun siihen tulee tilaisuus.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 81": {
+            "question": "Tiedän, kuinka käyttää verkko-oppimisen työkaluja digitaalisten taitojeni kehittämiseksi (esim. videotutoriaalit, verkkokurssit).",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        },
+        "Question 82": {
+            "question": "Tiedän digitaalisen maailman uusista trendeistä ja niiden vaikutuksista henkilökohtaiseen tai ammatilliseen elämääni.",
+            "options": [
+            "En osaa tehdä tätä",
+            "Osaan tehdä tämän avustettuna",
+            "Osaan tehdä tämän itse",
+            "Osaan tehdä tämän varmasti ja voin tarvittaessa tukea/opastaa muita"
+            ]
+        }
+    }
+}

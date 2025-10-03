@@ -1,0 +1,2290 @@
+{
+  "questions": {
+    "1.1 B1": {
+        "question": "Kun määrittelet tiedontarvetta, mikä on ensimmäinen vaihe?",
+        "options": [
+        "Tunnistaa mahdolliset lähteet",
+        "Määritellä tarvittavan tiedon tyyppi ja laajuus",
+        "Valita hakukone",
+        "Etsiä kuvia"
+        ],
+        "answer": "Määritellä tarvittavan tiedon tyyppi ja laajuus"
+    },
+    "1.1 B2": {
+        "question": "Jos et ole varma, mitä tietoa tarvitset, mikä on paras lähestymistapa?",
+        "options": [
+        "Hakea kaikkea mahdollista",
+        "Rajata aihetta ideoimalla keskeisiä teemoja",
+        "Käyttää vain yhtä hakukonetta",
+        "Luottaa ensimmäiseen hakutulokseen"
+        ],
+        "answer": "Rajata aihetta ideoimalla keskeisiä teemoja"
+    },
+    "1.1 B3": {
+        "question": "Mikä on tärkein hyöty Boolen operaattoreiden käytöstä hakukyselyissä?",
+        "options": [
+        "Ne tekevät tuloksista visuaalisesti houkuttelevampia",
+        "Ne auttavat tarkentamaan tai laajentamaan hakutuloksia",
+        "Ne nopeuttavat hakukoneen toimintaa",
+        "Ne ovat hyödyllisiä vain asiantuntijoille"
+        ],
+        "answer": "Ne auttavat tarkentamaan tai laajentamaan hakutuloksia"
+    },
+    "1.1 B4": {
+        "question": "Miten voit tarkentaa hakutuloksia, jos saat liikaa asiaankuulumattomia osumia?",
+        "options": [
+        "Lisätä tarkempia hakusanoja",
+        "Käyttää vain yleisiä termejä",
+        "Hakea eri kielellä",
+        "Ohittaa ensimmäiset tulokset"
+        ],
+        "answer": "Lisätä tarkempia hakusanoja"
+    },
+    "1.1 B5": {
+        "question": "Mihin hyperlinkkiä yleensä käytetään digitaalisissa ympäristöissä?",
+        "options": [
+        "Kuvien näyttämiseen",
+        "Ohjaamaan toiselle verkkosivulle tai lähteeseen",
+        "Tiedon tallentamiseen myöhempää käyttöä varten",
+        "Sisällön estämiseen"
+        ],
+        "answer": "Ohjaamaan toiselle verkkosivulle tai lähteeseen"
+    },
+    "1.1 B6": {
+        "question": "Mikä tulisi olla keskeinen huomio, kun päivität hakustrategiaa?",
+        "options": [
+        "Hakukoneen sivun ulkoasu",
+        "Lähteiden määrä",
+        "Hakutermien tarkentaminen uusien löydösten perusteella",
+        "Asiaankuulumattomien aiheiden sisällyttäminen laajemman tuloksen saamiseksi"
+        ],
+        "answer": "Hakutermien tarkentaminen uusien löydösten perusteella"
+    },
+    "1.1 M1": {
+        "question": "Mikä seuraavista EI ole tiedontarve?",
+        "options": [
+        "Selvittää historiallisen tapahtuman syy",
+        "Valita lähde henkilökohtaisten ennakkoluulojen perusteella",
+        "Etsiä tietoa tieteellisestä aiheesta",
+        "Ymmärtää haun tarkoitus"
+        ],
+        "answer": "Valita lähde henkilökohtaisten ennakkoluulojen perusteella"
+    },
+    "1.1 M2": {
+        "question": "Jos haluat sulkea termin pois haustasi, mitä Boolen operaattoria tulisi käyttää?",
+        "options": ["AND", "OR", "NOT", "WITH"],
+        "answer": "NOT"
+    },
+    "1.1 M3": {
+        "question": "Jos kohtaat maksumuurin yrittäessäsi päästä artikkeliin, mitä sinun tulisi tehdä?",
+        "options": [
+        "Luopua hausta",
+        "Etsiä ilmaista pääsyä esimerkiksi instituution kirjautumisella tai vaihtoehtoisista tietokannoista",
+        "Ohittaa artikkeli kokonaan",
+        "Siirtyä seuraavaan tulokseen"
+        ],
+        "answer": "Etsiä ilmaista pääsyä esimerkiksi instituution kirjautumisella tai vaihtoehtoisista tietokannoista"
+    },
+    "1.1 M4": {
+        "question": "Miten valikot ja navigointipalkit auttavat digitaalisen sisällön selaamisessa?",
+        "options": [
+        "Ne piilottavat epäolennaisen sisällön",
+        "Ne järjestävät sisältöluokat helpommin saavutettaviksi",
+        "Ne hidastavat sivun latautumista",
+        "Ne suodattavat automaattisesti mainokset pois"
+        ],
+        "answer": "Ne järjestävät sisältöluokat helpommin saavutettaviksi"
+    },
+    "1.1 M5": {
+        "question": "Mikä on tehokas tapa mukauttaa hakustrategiaasi ajan myötä?",
+        "options": [
+        "Kokeilla ja erehtyä hakutulosten kanssa",
+        "Luottaa yhteen lähteeseen kaiken tiedon saamiseksi",
+        "Arvioida tulosten laatua ja mukauttaa hakusanoja sen mukaan",
+        "Välttää hakustrategioiden päivittämistä haun alettua"
+        ],
+        "answer": "Arvioida tulosten laatua ja mukauttaa hakusanoja sen mukaan"
+    },
+    "1.1 M6": {
+        "question": "Miksi on tärkeää päivittää hakustrategioita säännöllisesti?",
+        "options": [
+        "Välttääksesi tulosten toistumisen",
+        "Pysyäksesi ajan tasalla uusista lähteistä ja tiedoista",
+        "Välttääksesi häiriöitä selauksen aikana",
+        "Lyhentääksesi hakukoneen latausaikoja"
+        ],
+        "answer": "Pysyäksesi ajan tasalla uusista lähteistä ja tiedoista"
+    },
+    "1.2 B1": {
+        "question": "Mikä seuraavista tekijöistä osoittaa, että lähde on luotettava?",
+        "options": [
+        "Sitä jaetaan usein sosiaalisessa mediassa",
+        "Sen on julkaissut arvostettu organisaatio tai asiantuntija",
+        "Siinä on paljon mainoksia",
+        "Se on visuaalisesti houkutteleva"
+        ],
+        "answer": "Sen on julkaissut arvostettu organisaatio tai asiantuntija"
+    },
+    "1.2 B2": {
+        "question": "Miten voit varmistaa, että artikkelissa oleva tieto on ajan tasalla?",
+        "options": [
+        "Tarkistaa julkaisupäivän",
+        "Katsoa tykkäysten tai jakojen määrää",
+        "Katsoa, näkyykö se hakutulosten ensimmäisellä sivulla",
+        "Jättää huomiotta kirjoittajan pätevyyden"
+        ],
+        "answer": "Tarkistaa julkaisupäivän"
+    },
+    "1.2 B3": {
+        "question": "Mikä on tärkeä vaihe datan kriittisessä arvioinnissa?",
+        "options": [
+        "Vastakkaisten tietojen huomiotta jättäminen",
+        "Tutkia mahdollisia vinoumia datan keruumenetelmässä",
+        "Käyttää tuntemattomia lähteitä",
+        "Painottaa dataa, joka vahvistaa omaa mielipidettä"
+        ],
+        "answer": "Tutkia mahdollisia vinoumia datan keruumenetelmässä"
+    },
+
+    "1.2 B4": {
+    "question": "Kuinka sinun tulisi lähestyä ristiriitaisia tietoja eri lähteistä?",
+    "options": [
+        "Jättää ristiriitaiset tiedot kokonaan huomiotta",
+        "Verrata kunkin lähteen menetelmiä ja kontekstia",
+        "Valita se, joka tukee omaa näkemystäsi",
+        "Keskittyä vain uusimpiin tietoihin"
+    ],
+    "answer": "Verrata kunkin lähteen menetelmiä ja kontekstia"
+    },
+    "1.2 B5": {
+    "question": "Mikä on paras tapa tallentaa tietoja, jotta ne löytyvät helposti myöhemmin?",
+    "options": [
+        "Tallentaa kaikki yhteen kansioon ilman järjestelyä",
+        "Käyttää selkeää kansio- ja alakansiorakennetta",
+        "Säilyttää kaikki yhdessä tiedostossa työpöydällä",
+        "Tallentaa tiedot satunnaisesti ilman tiedostonimiä"
+    ],
+    "answer": "Käyttää selkeää kansio- ja alakansiorakennetta"
+    },
+    "1.2 B6": {
+    "question": "Miten pilvitallennus voi auttaa tiedon hallinnassa?",
+    "options": [
+        "Se luokittelee tiedostot automaattisesti",
+        "Se mahdollistaa tiedon käytön useilta laitteilta",
+        "Se rajoittaa tallennuskapasiteettia",
+        "Se toimii vain offline-tilassa"
+    ],
+    "answer": "Se mahdollistaa tiedon käytön useilta laitteilta"
+    },
+    "1.2 M1": {
+    "question": "Miksi on tärkeää tarkistaa tiedot useista eri lähteistä?",
+    "options": [
+        "Saadakseen erilaisia mielipiteitä",
+        "Varmistaakseen tietojen yhdenmukaisuuden ja tarkkuuden eri lähteiden välillä",
+        "Lisätäkseen luettujen artikkelien määrää",
+        "Nopeuttaakseen tutkimusprosessia"
+    ],
+    "answer": "Varmistaakseen tietojen yhdenmukaisuuden ja tarkkuuden eri lähteiden välillä"
+    },
+    "1.2 M2": {
+    "question": "Kuinka voit varmistaa verkosta löytyvien tietojen paikkansapitävyyden?",
+    "options": [
+        "Luottamalla ensimmäiseen hakutulokseen",
+        "Tarkistamalla, viitataanko tietoihin muissa luotettavissa lähteissä",
+        "Etsimällä vain visuaalisia materiaaleja",
+        "Luottamalla tietoihin ilman lähteitä"
+    ],
+    "answer": "Tarkistamalla, viitataanko tietoihin muissa luotettavissa lähteissä"
+    },
+    "1.2 M3": {
+    "question": "Mikä seuraavista auttaa varmistamaan, että tieto on tarkkaa ja luotettavaa?",
+    "options": [
+        "Asiantuntijoiden tekemä vertaisarviointi",
+        "Korkea suosio sosiaalisessa mediassa",
+        "Selkeä muotoilu ja ulkoasu",
+        "Maksettu sisältö vaikuttajilta"
+    ],
+    "answer": "Asiantuntijoiden tekemä vertaisarviointi"
+    },
+    "1.2 M4": {
+    "question": "Mikä on keskeinen huomio, kun tulkitset tietoja kontekstissa?",
+    "options": [
+        "Vastaavatko tiedot yleistä mielipidettä",
+        "Miten tiedot on kerätty ja mitä ne edustavat",
+        "Miltä tiedot näyttävät esityksessä",
+        "Onko tiedot helppo ymmärtää"
+    ],
+    "answer": "Miten tiedot on kerätty ja mitä ne edustavat"
+    },
+    "1.2 M5": {
+    "question": "Kuinka voit lisätä metadataa parantaaksesi tiedon järjestämistä?",
+    "options": [
+        "Merkitsemällä tiedostot olennaisilla avainsanoilla",
+        "Kopioimalla tiedostoja useisiin kansioihin",
+        "Poistamalla tarpeettomat tiedostot",
+        "Käyttämällä metadataa vain kuviin"
+    ],
+    "answer": "Merkitsemällä tiedostot olennaisilla avainsanoilla"
+    },
+    "1.2 M6": {
+    "question": "Mikä on tiedostojen synkronointityökalujen hyöty?",
+    "options": [
+        "Ne auttavat siirtämään tietoja toisistaan riippumattomien laitteiden välillä",
+        "Ne mahdollistavat päivitettyjen tiedostojen käytön useilla laitteilla",
+        "Ne poistavat vanhat tiedostot automaattisesti",
+        "Ne järjestävät tiedostot tietyntyyppisiin formaatteihin"
+    ],
+    "answer": "Ne mahdollistavat päivitettyjen tiedostojen käytön useilla laitteilla"
+    },
+    "1.3 B1": {
+    "question": "Mikä on paras tapa tallentaa tietoja, jotta ne löytyvät helposti myöhemmin?",
+    "options": [
+        "Tallentaa kaikki yhteen kansioon ilman järjestelyä",
+        "Käyttää selkeää kansio- ja alakansiorakennetta",
+        "Säilyttää kaikki yhdessä tiedostossa työpöydällä",
+        "Tallentaa tiedot satunnaisesti ilman tiedostonimiä"
+    ],
+    "answer": "Käyttää selkeää kansio- ja alakansiorakennetta"
+    },
+    "1.3 B2": {
+    "question": "Miten pilvitallennus voi auttaa tiedon hallinnassa?",
+    "options": [
+        "Se luokittelee tiedostot automaattisesti",
+        "Se mahdollistaa tiedon käytön useilta laitteilta",
+        "Se rajoittaa tallennuskapasiteettia",
+        "Se toimii vain offline-tilassa"
+    ],
+    "answer": "Se mahdollistaa tiedon käytön useilta laitteilta"
+    },
+    "1.3 B3": {
+    "question": "Mikä seuraavista on hyvä käytäntö tiedostojen nimeämisessä?",
+    "options": [
+        "Käyttää satunnaisia kirjaimia ja numeroita",
+        "Luoda kuvailevat ja yhtenäiset tiedostonimet, jotka heijastavat sisältöä",
+        "Välttää päivämäärien käyttöä tiedostonimissä",
+        "Nimetä tiedostot sen verkkosivun mukaan, josta ne löytyivät"
+    ],
+    "answer": "Luoda kuvailevat ja yhtenäiset tiedostonimet, jotka heijastavat sisältöä"
+    },
+    "1.3 B4": {
+    "question": "Mikä seuraavista on esimerkki rakenteisen ympäristön käytöstä tiedon käsittelyssä?",
+    "options": [
+        "Taulukkolaskentaohjelman käyttäminen tietojen järjestämiseen ja analysointiin",
+        "Tiedostojen tallentaminen satunnaisiin sijainteihin tietokoneella",
+        "Luottaa vain muistiin tiedon säilyttämisessä",
+        "Pitää fyysisiä muistiinpanoja digitaalisesta sisällöstä"
+    ],
+    "answer": "Taulukkolaskentaohjelman käyttäminen tietojen järjestämiseen ja analysointiin"
+    },
+    "1.3 B5": {
+    "question": "Miten tietokannat voivat auttaa hallitsemaan suuria tietomääriä?",
+    "options": [
+        "Hidastamalla tiedon analysointia",
+        "Lajittelemalla, suodattamalla ja analysoimalla tietoa tehokkaasti",
+        "Tallentamalla vain tekstipohjaista tietoa",
+        "Rajoittamalla pääsyä tietoihin"
+    ],
+    "answer": "Lajittelemalla, suodattamalla ja analysoimalla tietoa tehokkaasti"
+    },
+    "1.3 B6": {
+    "question": "Miten tiedon visualisointityökalut voivat auttaa tiedon käsittelyssä?",
+    "options": [
+        "Tekemällä tiedoista vain visuaalisesti houkuttelevampia ilman kontekstia",
+        "Auttaa tunnistamaan kaavoja ja trendejä suurista tietoaineistoista",
+        "Yksinkertaistamalla tiedot ilman analyysiä",
+        "Piilottamalla tietoa kaavioiden taakse"
+    ],
+    "answer": "Auttaa tunnistamaan kaavoja ja trendejä suurista tietoaineistoista"
+    },
+    "1.3 M1": {
+    "question": "Miksi on tärkeää varmuuskopioida tietoja säännöllisesti?",
+    "options": [
+        "Tallennustilan säästämiseksi",
+        "Jotta tärkeää tietoa ei menetetä",
+        "Jotta tiedostot pysyvät hajallaan eri laitteilla",
+        "Jotta tietoja ei tarvitse käyttää usein"
+    ],
+    "answer": "Jotta tärkeää tietoa ei menetetä"
+    },
+    "1.3 M2": {
+    "question": "Kuinka voit lisätä metadataa parantaaksesi tiedon järjestämistä?",
+    "options": [
+        "Merkitsemällä tiedostot olennaisilla avainsanoilla",
+        "Kopioimalla tiedostoja useisiin kansioihin",
+        "Poistamalla tarpeettomat tiedostot",
+        "Käyttämällä metadataa vain kuviin"
+    ],
+    "answer": "Merkitsemällä tiedostot olennaisilla avainsanoilla"
+    },
+    "1.3 M3": {
+    "question": "Mikä on tiedostojen synkronointityökalujen hyöty?",
+    "options": [
+        "Ne auttavat siirtämään tietoja toisistaan riippumattomien laitteiden välillä",
+        "Ne mahdollistavat päivitettyjen tiedostojen käytön useilla laitteilla",
+        "Ne poistavat vanhat tiedostot automaattisesti",
+        "Ne järjestävät tiedostot tietyntyyppisiin formaatteihin"
+    ],
+    "answer": "Ne mahdollistavat päivitettyjen tiedostojen käytön useilla laitteilla"
+    },
+    "1.3 M4": {
+    "question": "Miksi on tärkeää käyttää johdonmukaisia menetelmiä tiedon järjestämisessä ja käsittelyssä?",
+    "options": [
+        "Jotta havainnot olisivat tarkkoja ja luotettavia",
+        "Luoakseen epäjärjestelmällisen tietokannan",
+        "Estääkseen yhteistyön projekteissa",
+        "Hidastaakseen prosessia"
+    ],
+    "answer": "Jotta havainnot olisivat tarkkoja ja luotettavia"
+    },
+    "1.3 M5": {
+    "question": "Mikä on yksi etu automaatiotyökalujen käytössä toistuvissa tietotehtävissä?",
+    "options": [
+        "Se lisää virheiden riskiä",
+        "Se säästää aikaa ja parantaa tarkkuutta",
+        "Se monimutkaistaa analyysiprosessia",
+        "Se vaatii manuaalista tiedonsyöttöä"
+    ],
+    "answer": "Se säästää aikaa ja parantaa tarkkuutta"
+    },
+    "1.3 M6": {
+    "question": "Miten voit parhaiten hallita monimutkaisia tietoaineistoja helpottaaksesi analyysia?",
+    "options": [
+        "Käyttää useita taulukkolaskentatiedostoja ilman linkitystä",
+        "Rakentaa tiedot tietokantaan tai taulukkolaskentaan lajittelua ja suodatusta varten",
+        "Välttää kaikkien digitaalisten työkalujen käyttöä",
+        "Tallentaa tiedot rakenteettomissa muodoissa, kuten tekstitiedostoissa"
+    ],
+    "answer": "Rakentaa tiedot tietokantaan tai taulukkolaskentaan lajittelua ja suodatusta varten"
+    },
+
+    "2.1 B1": {
+    "question": "Mikä seuraavista työkaluista sopii parhaiten oppilaitoksen uutiskirjeen lähettämiseen?",
+    "options": ["Sähköposti", "Snapchat", "WhatsApp", "Instagram"],
+    "answer": "Sähköposti"
+    },
+    "2.1 B2": {
+    "question": "Valitse oikea vastaavuus seuraavien verkkoalustojen ja niiden ensisijaisen käytön välillä:",
+    "options": [
+        "Zoom: Videoiden tallentaminen",
+        "WhatsApp: Mikrobloggaus",
+        "MS Teams: Verkkotunnit",
+        "X: Pikaviestintä"
+    ],
+    "answer": "MS Teams: Verkkotunnit"
+    },
+    "2.1 B3": {
+    "question": "Kun viestit digitaalisilla teknologioilla, on tärkeää olla tietoinen _______ varmistaaksesi, että viestisi ymmärretään oikein ja väärinkäsityksiä vältetään.",
+    "options": ["Konteksti", "Kielioppi", "Oikeinkirjoitus", "Kieli"],
+    "answer": "Konteksti"
+    },
+    "2.1 B4": {
+    "question": "Teet yhteistyötä projektissa tiimin kanssa, joka tarvitsee nopeaa palautetta. Mikä digitaalinen työkalu on sopivin?",
+    "options": [
+        "Sähköposti",
+        "Pikaviestintä (esim. Slack, Microsoft Teams, WhatsApp)",
+        "Sosiaalinen media",
+        "Videoneuvottelu"
+    ],
+    "answer": "Pikaviestintä (esim. Slack, Microsoft Teams, WhatsApp)"
+    },
+    "2.1 B5": {
+    "question": "Ilmoitat opettajalle myöhästyneestä määräajasta. Mikä on sopivin tapa viestiä tästä?",
+    "options": ["Tekstiviesti", "Virallinen sähköposti", "Sosiaalisen median julkaisu", "Puhelinsoitto"],
+    "answer": "Virallinen sähköposti"
+    },
+    "2.1 B6": {
+    "question": "Keskustelet arkaluonteisesta aiheesta kollegan kanssa. Minkä viestintämenetelmän sinun tulisi valita?",
+    "options": ["Ryhmäkeskustelu", "Videopuhelu", "Julkinen foorumi", "Yksityisviesti"],
+    "answer": "Videopuhelu"
+    },
+    "2.1 M1": {
+    "question": "Tilasit opiskelijan kirjan verkkosivustolta ja sinulla on ongelmia tilauksen seuraamisessa. Mikä seuraavista syötteistä olisi tehokkain tapa pyytää virtuaaliavustajaa (bottia) etsimään viimeisin tilauksesi?",
+    "options": [
+        "\"Etsi kirjani.\"",
+        "\"Missä tilaukseni on?\"",
+        "\"Seuraa tilausta nro XD1035GH\"",
+        "\"Hei, tarvitsen jotain.\""
+    ],
+    "answer": "\"Seuraa tilausta nro XD1035GH\""
+    },
+    "2.1 M2": {
+    "question": "Kun käytät generatiivisia tekoälyalustoja (esim. ChatGPT), mikä on sopivin tapa kirjoittaa syöte saadaksesi tarkkoja tuloksia?",
+    "options": ["Kysymysten esittäminen.", "Yksityiskohtaisten ohjeiden antaminen.", "Tietojen antaminen.", "Vain avainsanojen käyttäminen"],
+    "answer": "Yksityiskohtaisten ohjeiden antaminen."
+    },
+    "2.1 M3": {
+    "question": "Mikä seuraavista on keskeinen tekijä sopivan digitaalisen viestintävälineen valinnassa akateemista esitystä varten?",
+    "options": [
+        "Työkalun värimaailma",
+        "Työkalun kyky tukea multimediaa ja näytön jakamista",
+        "Työkalun suosio ystävieni keskuudessa",
+        "Työkalun integrointi sosiaaliseen mediaan"
+    ],
+    "answer": "Työkalun kyky tukea multimediaa ja näytön jakamista"
+    },
+    "2.1 M4": {
+    "question": "Sinua pyydetään esittelemään uusi ohjelmisto-ominaisuus kollegoille. Mikä on sopivin viestintämenetelmä?",
+    "options": ["Epävirallinen blogikirjoitus", "Yksityiskohtainen sähköposti liitteineen", "Live-demo videopuhelun kautta", "Nauhoitettu videoviesti"],
+    "answer": "Live-demo videopuhelun kautta"
+    },
+    "2.1 M5": {
+    "question": "Olet luokan edustaja ja sinun täytyy tehdä ilmoitus, joka koskee kaikkia opiskelijoita. Mikä viestintäkanava on tehokkain?",
+    "options": ["Tiimin keskustelusovellus", "Sähköpostijakelu", "Videoneuvottelu", "WhatsApp-ryhmä"],
+    "answer": "Sähköpostijakelu"
+    },
+    "2.1 M6": {
+    "question": "Sinä ja luokkatoverisi kehitätte projektia kurssille. Mikä seuraavista alustoista auttaisi parhaiten ryhmääsi seuraamaan meneillään olevia tehtäviä?",
+    "options": ["Trello", "Discord", "Slack", "Sähköposti"],
+    "answer": "Trello"
+    },
+    "2.2 B1": {
+    "question": "Mikä seuraavista määrittelee parhaiten 'tiedon jakamisen'?",
+    "options": [
+        "Tietojen jakaminen ilman ehtoja",
+        "Yhteistyö muiden kanssa tiedon vaihtamiseksi molemminpuolisen hyödyn saavuttamiseksi",
+        "Tietojen keskustelu sosiaalisessa mediassa",
+        "Tietojen käsittely vain suullisesti ilman tiedostojen jakamista"
+    ],
+    "answer": "Yhteistyö muiden kanssa tiedon vaihtamiseksi molemminpuolisen hyödyn saavuttamiseksi"
+    },
+    "2.2 B2": {
+    "question": "Jos löydät verkosta infograafin ja haluat jakaa sen sosiaalisessa mediassa, mitä sinun tulisi tehdä?",
+    "options": [
+        "Julkaista se sellaisenaan.",
+        "Arvioida sen luotettavuus ja mainita tekijä.",
+        "Jakaa se omissa nimissäsi.",
+        "Jakaa se vain, jos muistat kuka sen teki."
+    ],
+    "answer": "Arvioida sen luotettavuus ja mainita tekijä."
+    },
+    "2.2 B3": {
+    "question": "Sinun täytyy jakaa tiedosto luokkatovereillesi ja sen koko on noin 1,4 Gt. Mitä alustaa käyttäisit?",
+    "options": ["Sähköposti", "WhatsApp", "WeTransfer", "Messenger"],
+    "answer": "WeTransfer"
+    },
+    "2.2 B4": {
+    "question": "Valitse oikea väite ohjelmistolisensoinnista:",
+    "options": [
+        "Voin ladata ja jakaa mitä tahansa ohjelmistoja verkosta",
+        "Kaikki ostetut lisenssit ovat elinikäisiä",
+        "Lisenssioikeudet riippuvat yleensä käyttötarkoituksesta ja käyttäjien määrästä",
+        "Voin ladata vain avoimen lähdekoodin ohjelmistoja"
+    ],
+    "answer": "Lisenssioikeudet riippuvat yleensä käyttötarkoituksesta ja käyttäjien määrästä"
+    },
+    "2.2 B5": {
+    "question": "Mikä tieto on tärkeää, kun viittaat verkkokirjaan lähdeluettelossa?",
+    "options": [
+        "Tekijät ja verkkosivun linkki",
+        "Verkkosivun linkki",
+        "Tekijät, vuosi, nimi, kustantaja ja verkkosivun linkki",
+        "Vuosi, sivut ja nimi"
+    ],
+    "answer": "Tekijät, vuosi, nimi, kustantaja ja verkkosivun linkki"
+    },
+    "2.2 B6": {
+    "question": "Mitä kuvia voit jakaa verkossa?",
+    "options": [
+        "Mitä tahansa kuvia Google Kuvista",
+        "Vain tekijänoikeudesta vapaita kuvia",
+        "Mitä tahansa kuvia internetistä",
+        "Vain tekijänoikeudesta vapaita tai tekijän luvalla jaettuja kuvia"
+    ],
+    "answer": "Vain tekijänoikeudesta vapaita tai tekijän luvalla jaettuja kuvia"
+    },
+    "2.2 M1": {
+    "question": "Löysit verkosta mielenkiintoisen kuvan, jota suojaa seuraava Creative Commons -lisenssi. Kuinka voit käyttää sitä uudelleen?",
+    "options": [
+        "Muokata kuvan värejä ja käyttää sitä esityksessä mainiten tekijän ja CC-logon",
+        "Tulostaa kuva pakkaukseen CC-logolla ja myydä sitä",
+        "Jakaa kuva sosiaalisessa mediassa",
+        "Käyttää kuvaa profiilikuvana"
+    ],
+    "answer": "Muokata kuvan värejä ja käyttää sitä esityksessä mainiten tekijän ja CC-logon"
+    },
+    "2.2 M2": {
+    "question": "Kun käytät verkosta löydettyjä kuvia koulutehtävissä, mikä on hyväksyttävin tapa merkitä lähde?",
+    "options": [
+        "'Löytyi netistä'.",
+        "'Lähde: Google Kuvat'.",
+        "'Kuva: [Tekijän nimi] lähteestä [Verkkosivusto]'.",
+        "Lähdettä ei tarvitse mainita jaetuissa linkeissä."
+    ],
+    "answer": "'Kuva: [Tekijän nimi] lähteestä [Verkkosivusto]'."
+    },
+    "2.2 M3": {
+    "question": "Seuraava artikkeli löytyi kustantajan verkkosivustolta: Robertson, C. T. (2023). Defining News from an Audience Perspective at a Time of Crisis in the United States. Journalism Practice, 17(2), 374–390. https://doi.org/10.1080/17512786.2021.1919178. Mikä väite artikkelista on oikea?",
+    "options": [
+        "Tekijä: Robertson, nimi: Journalism Practice, sivut: 374–390.",
+        "Tekijä: Robertson, lehti: Journalism Practice, sivut: 374–390.",
+        "Tekijä: C.T., volyymi: 17, numero: 2.",
+        "Nimi: Journalism Practice, sivut: 374–390, kustantaja: doi.org"
+    ],
+    "answer": "Tekijä: Robertson, lehti: Journalism Practice, sivut: 374–390."
+    },
+    "2.2 M4": {
+    "question": "Mitä musiikkia voi jakaa julkaisussa sosiaalisessa mediassa?",
+    "options": ["Mitä tahansa kappaletta", "Vain alustan sallimia kappaleita", "Vanhat kappaleet", "Kappaleet, joiden esittäjän kuolemasta on kulunut 70 vuotta"],
+    "answer": "Kappaleet, joiden esittäjän kuolemasta on kulunut 70 vuotta"
+    },
+    "2.2 M5": {
+    "question": "Jos menet Brysseliin, mitä seuraavista kuvista et voi jakaa verkossa kaupalliseen käyttöön ainakaan vuoteen 2076 asti?",
+    "options": [
+        "Kuva minusta ja ystävistäni Atomiumin edessä",
+        "Kuva minusta kävelemässä kaduilla",
+        "Kuva minusta ja ystävistäni Grand Placen aukiolla",
+        "Kuva ystävästäni syömässä suklaata hänen luvallaan"
+    ],
+    "answer": "Kuva minusta ja ystävistäni Atomiumin edessä"
+    },
+    "2.2 M6": {
+    "question": "Mikä toiminta ei riko immateriaalioikeuksia?",
+    "options": [
+        "Ladata ja käyttää public domain -tietokantoja",
+        "Jakaa salasanoja ystäville maksulliseen sisältöön pääsemiseksi",
+        "Ladata ohjelmistoja torrent-sivustoilta",
+        "Tallentaa osia televisio-ohjelmasta ja ladata se YouTubeen"
+    ],
+    "answer": "Ladata ja käyttää public domain -tietokantoja"
+    },
+
+
+    "2.3 B1": {
+    "question": "Mikä seuraavista on digitaalinen palvelu, jota käytetään usein yliopistomaksujen maksamiseen?",
+    "options": ["Facebook", "WeTransfer", "Verkkopankki", "Instagram"],
+    "answer": "Verkkopankki"
+    },
+    "2.3 B2": {
+    "question": "Valitse oikea vastaavuus digitaalisten palvelujen ja niiden sopivimman toiminnon välillä.",
+    "options": [
+        "Valtion verkkosivusto: Julkisen tiedon ja palvelujen käyttö",
+        "Sosiaalinen media: Allekirjoittaa ja tukea kansalaisaloitteita",
+        "Verkkoaddressi: Suorittaa kursseja ja hankkia uusia taitoja",
+        "Verkko-oppimisympäristö: Osallistua keskusteluihin ja jakaa mielipiteitä"
+    ],
+    "answer": "Valtion verkkosivusto: Julkisen tiedon ja palvelujen käyttö"
+    },
+    "2.3 B3": {
+    "question": "Mikä on tehokkain tapa ottaa yhteyttä koulutusohjelmasi johtajaan?",
+    "options": ["WhatsApp", "Sähköposti", "Instagram", "Puhelinsoitto"],
+    "answer": "Sähköposti"
+    },
+    "2.3 B4": {
+    "question": "Mikä seuraavista on esimerkki digitaalisen teknologian käytöstä kansalaisosallistumisessa?",
+    "options": [
+        "Verkko-ostokset",
+        "Äänestäminen turvallisella verkkopalvelulla",
+        "Elokuvien suoratoisto",
+        "Sosiaalisen median selailu"
+    ],
+    "answer": "Äänestäminen turvallisella verkkopalvelulla"
+    },
+    "2.3 B5": {
+    "question": "Mikä rooli sosiaalisen median alustoilla on kansalaisosallistumisessa?",
+    "options": [
+        "Ne edistävät kulutusta",
+        "Ne toimivat tiedonvälityksen ja mobilisoinnin välineenä",
+        "Ne haittaavat julkista keskustelua",
+        "Ne on tarkoitettu vain henkilökohtaisiin yhteyksiin"
+    ],
+    "answer": "Ne toimivat tiedonvälityksen ja mobilisoinnin välineenä"
+    },
+    "2.3 B6": {
+    "question": "Valitse väärä vastaavuus digitaalisen teknologian ja sen kansalaisosallistumista tukevan toiminnon välillä:",
+    "options": [
+        "Verkkoaddressit: Julkisen tuen kerääminen asioille",
+        "Sosiaalisen median kampanjat: Allekirjoitusten kerääminen poliittiselle puolueelle",
+        "Sähköiset viranomaispalvelut: Julkisten palvelujen käyttö",
+        "Joukkorahoitusalustat: Varainkeruu yhteisöhankkeille"
+    ],
+    "answer": "Sosiaalisen median kampanjat: Allekirjoitusten kerääminen poliittiselle puolueelle"
+    },
+    "2.3 M1": {
+    "question": "Mikä digitaalinen teknologia voi lisätä läpinäkyvyyttä ja vastuullisuutta kansalaisosallistumisessa?",
+    "options": ["Virtuaalitodellisuus", "Lohkoketju", "Lisätty todellisuus", "Aktiivisuusrannekkeet"],
+    "answer": "Lohkoketju"
+    },
+    "2.3 M2": {
+    "question": "Sinun tulee kirjoittaa essee opiskelijoiden näkemyksistä matkapuhelinten käytöstä luokassa. Mikä seuraavista välineistä on sopivin mielipiteiden keräämiseen?",
+    "options": ["Kysely", "Taulukkolaskenta", "Puhelut", "Sähköposti"],
+    "answer": "Kysely"
+    },
+    "2.3 M3": {
+    "question": "Mitä riskejä liittyy siihen, että tekoälyalgoritmi ennustaa arvosanasi tietyssä opintojaksossa? Valitse sopivin vastaus.",
+    "options": [
+        "Tekoäly voi lannistaa jatkamaan opiskelutottumusten parantamista.",
+        "Tekoälyn ennusteet voivat tuoda mukanaan biasia ja vaikuttaa siihen, miten opettajat näkevät ja tukevat opiskelijoita.",
+        "Tekoälyjärjestelmät voivat korvata opettajan roolin.",
+        "Tekoälyn mallit arvioivat minut aina väärin."
+    ],
+    "answer": "Tekoälyn ennusteet voivat tuoda mukanaan biasia ja vaikuttaa siihen, miten opettajat näkevät ja tukevat opiskelijoita."
+    },
+    "2.3 M4": {
+    "question": "Valitse oikea vastaavuus käsitteen ja sen määritelmän välillä:",
+    "options": [
+        "Digikuilu: Ero niiden välillä, joilla on pääsy digitaalisiin teknologioihin, ja niiden, joilla ei ole",
+        "E-osallistuminen: Teknologiat, jotka on suunniteltu edistämään kansalaisosallistumista",
+        "Civic Data: Digityökalujen käyttö julkiseen päätöksentekoon osallistumiseen",
+        "Civic Tech: Julkisesti saataville asetetut tiedot läpinäkyvyyttä ja analyysiä varten"
+    ],
+    "answer": "Digikuilu: Ero niiden välillä, joilla on pääsy digitaalisiin teknologioihin, ja niiden, joilla ei ole"
+    },
+    "2.3 M5": {
+    "question": "Yhteisöjärjestö haluaa lisätä tietoisuutta paikallisista asioista digitaalisia työkaluja käyttäen. Mikä lähestymistapa on tehokkain?",
+    "options": [
+        "Verkkosivusto, jossa on staattista tietoa",
+        "Vuorovaikutteisen sosiaalisen median kampanjan käynnistäminen",
+        "Paperiesitteiden jakaminen",
+        "Yhden tapahtuman järjestäminen ilman seurantaa"
+    ],
+    "answer": "Vuorovaikutteisen sosiaalisen median kampanjan käynnistäminen"
+    },
+    "2.3 M6": {
+    "question": "Valitse oikea vastaavuus digitaalisen teknologian ja sen osallistuvaa kansalaisuutta edistävän ominaisuuden tai hyödyn välillä:",
+    "options": [
+        "Sosiaalisen median alustat: Tarjoavat resursseja ja työkaluja vaikuttamistyöhön haavoittuvimpien puolesta.",
+        "Verkkoäänestysjärjestelmät: Tarjoavat alustoja marginalisoitujen äänien vahvistamiseen.",
+        "Digitaalisen vaikuttamisen työkalut: Mahdollistavat yhteistoiminnan ja yhteisön palautteen keräämisen.",
+        "Civic tech -verkkosivustot: Mahdollistavat reaaliaikaisen palautteen ja keskustelun kansalaisten kesken."
+    ],
+    "answer": "Civic tech -verkkosivustot: Mahdollistavat reaaliaikaisen palautteen ja keskustelun kansalaisten kesken."
+    },
+
+    "2.4 B1": {
+    "question": "Mikä seuraavista on ryhmäprojektissa käytettävien yhteiskäyttöisten työkalujen (kuten Google Docs tai Sheets) etu?",
+    "options": [
+        "Rajoitettu pääsy",
+        "Reaaliaikaiset päivitykset",
+        "Vaatii kallista ohjelmistoa",
+        "Toimii vain offline-tilassa"
+    ],
+    "answer": "Reaaliaikaiset päivitykset"
+    },
+    "2.4 B2": {
+    "question": "Mikä seuraavista työkaluista auttaa keräämään palautetta luokkatovereilta?",
+    "options": ["Mentimeter", "Adobe Illustrator", "MS SharePoint", "MS PowerPoint"],
+    "answer": "Mentimeter"
+    },
+    "2.4 B3": {
+    "question": "Julkaiset Instagramissa postauksen yliopistosi tulevasta hackathonista. Mitkä hashtagit ovat sopivimmat houkuttelemaan muita opiskelijoita sivulle?",
+    "options": [
+        "#hackathon #university",
+        "#comevisit #events",
+        "#hackathon #[yliopiston nimi] #[tapahtuman nimi ja vuosi]",
+        "#city #programming"
+    ],
+    "answer": "#hackathon #[yliopiston nimi] #[tapahtuman nimi ja vuosi]"
+    },
+    "2.4 B4": {
+    "question": "Mikä seuraavista kuvaa parhaiten yhteisluontia (co-creation) digitaalisten työkalujen kontekstissa?",
+    "options": [
+        "Yksilöt tuottavat sisältöä itsenäisesti",
+        "Useiden sidosryhmien yhteistyö yhteisten resurssien luomiseksi",
+        "Teknologian käyttö vain henkilökohtaisiin projekteihin",
+        "Tiedon kerääminen ilman sidosryhmien panosta"
+    ],
+    "answer": "Useiden sidosryhmien yhteistyö yhteisten resurssien luomiseksi"
+    },
+    "2.4 B5": {
+    "question": "Mikä on keskeinen hyöty yhteiskäyttöisten alustojen (kuten Google Docs) käytöstä tiedon yhteisrakentamisessa?",
+    "options": [
+        "Mahdollistaa rajattoman tallennustilan",
+        "Mahdollistaa reaaliaikaisen yhteistyön ja palautteen",
+        "Parantaa tietosuojaa",
+        "Ei vaadi internet-yhteyttä"
+    ],
+    "answer": "Mahdollistaa reaaliaikaisen yhteistyön ja palautteen"
+    },
+    "2.4 B6": {
+    "question": "Valitse oikea vastaavuus digitaalisen työkalun ja sen yhteisluontia tukevan toiminnon välillä:",
+    "options": [
+        "Yhteisölliset kartoitustyökalut: Erilaisten näkemysten kerääminen yleisöltä",
+        "Joukkouttamisalustat: Mahdollistavat useiden käyttäjien yhteismuokkauksen",
+        "Wikit: Datan ja ideoiden tilallinen visualisointi",
+        "Verkkokyselytyökalut: Mielipiteiden ja datan keruu sidosryhmiltä"
+    ],
+    "answer": "Verkkokyselytyökalut: Mielipiteiden ja datan keruu sidosryhmiltä"
+    },
+    "2.4 M1": {
+    "question": "Mikä on versionhallinnan (kuten Git) ensisijainen tehtävä yhteistyöprojekteissa?",
+    "options": [
+        "Kuvien muokkaaminen",
+        "Muutosten seuraaminen dokumenteissa ja koodissa",
+        "Esitysten laatiminen",
+        "Sähköpostien hallinta"
+    ],
+    "answer": "Muutosten seuraaminen dokumenteissa ja koodissa"
+    },
+    "2.4 M2": {
+    "question": "Mikä on yhteisessä työskentelyssä jaetun kalenterin (kuten Google Calendar) päätarkoitus?",
+    "options": [
+        "Henkilökohtaisten tehtävien seuranta",
+        "Määräaikojen jakaminen ja kokousten aikataulutus",
+        "Sähköpostiuutiskirjeiden lähetys",
+        "Tehtävälistojen luominen"
+    ],
+    "answer": "Määräaikojen jakaminen ja kokousten aikataulutus"
+    },
+    "2.4 M3": {
+    "question": "Mikä on GitHub-repositorion ensisijainen tarkoitus?",
+    "options": [
+        "Koodin tallentaminen ja jakaminen",
+        "Sähköpostien lähetys yhteistyökumppaneille",
+        "Esitysten tekeminen",
+        "Verkkosivun isännöinti"
+    ],
+    "answer": "Koodin tallentaminen ja jakaminen"
+    },
+    "2.4 M4": {
+    "question": "Mihin MS Wordin 'Seuranta' (Track Changes) -toimintoa käytetään?",
+    "options": [
+        "Versionhistorian ylläpitämiseen",
+        "Sen näkemiseen, missä ja kuka on tehnyt dokumenttiin muutoksia",
+        "Virheiden merkitsemiseen",
+        "Ongelmien raportointiin"
+    ],
+    "answer": "Sen näkemiseen, missä ja kuka on tehnyt dokumenttiin muutoksia"
+    },
+    "2.4 M5": {
+    "question": "Tutkimusryhmä kerää dataa osallistujilta verkkoalustan kautta ja osallistuu itse analyysiin. Mitä lähestymistapaa he käyttävät?",
+    "options": [
+        "Suljetut tutkimusmenetelmät",
+        "Kansalaistiede",
+        "Perinteiset kyselyt",
+        "Datalouhinta"
+    ],
+    "answer": "Kansalaistiede"
+    },
+    "2.4 M6": {
+    "question": "Mikä termi kuvaa toisen henkilön luomuksen tai koodin uudelleenkäyttöä ja muokkaamista digitaalisessa ympäristössä?",
+    "options": ["Sovitus", "Remiksaus", "Apud", "Uudelleenkäyttö"],
+    "answer": "Remiksaus"
+    },
+
+
+"2.5 B1": {
+  "question": "Mikä seuraavista on esimerkki hyvästä netiketistä sähköpostiviestinnässä?",
+  "options": [
+    "Kirjoittaa vain isolla kirjaimilla",
+    "Lähettää useita sähköposteja lyhyessä ajassa",
+    "Sisällyttää selkeä aihe",
+    "Jättää oikeinkirjoitus ja kielioppi huomiotta"
+  ],
+  "answer": "Sisällyttää selkeä aihe"
+},
+"2.5 B2": {
+  "question": "Kuinka vastaisit henkilökohtaiseen hyökkäykseen tai provokaatioon, joka rikkoo sääntöjä verkossa moderoidussa keskusteluryhmässä?",
+  "options": [
+    "Ilmoittaisin asiasta moderaattorille",
+    "Odottaisin muiden jäsenten puolustavan minua",
+    "Yrittäisin järkeillä loukkaajan kanssa",
+    "Julkaisisin vastauksen hyökkäykseen"
+  ],
+  "answer": "Ilmoittaisin asiasta moderaattorille"
+},
+"2.5 B3": {
+  "question": "Mitä tulisi tehdä saadessasi ei-toivotun sähköpostin?",
+  "options": [
+    "Vastata siihen",
+    "Siirtää se roskakoriin",
+    "Merkitä roskapostiksi ja siirtää roskakoriin",
+    "Peruuttaa tilaus"
+  ],
+  "answer": "Merkitä roskapostiksi ja siirtää roskakoriin"
+},
+"2.5 B4": {
+  "question": "Olet myöhässä verkkotunnilta ja liityt videopuheluun kesken oppitunnin. Mitä sinun tulisi tehdä?",
+  "options": [
+    "Kytkeä kamera päälle ja vilkuttaa opettajalle",
+    "Kytkeä mikrofoni päälle ja ilmoittaa saapuneesi",
+    "Pyytää opettajaa kertomaan yhteenvedon",
+    "Ilmoittaa läsnäolosta chatissa keskeyttämättä opetusta"
+  ],
+  "answer": "Ilmoittaa läsnäolosta chatissa keskeyttämättä opetusta"
+},
+"2.5 B5": {
+  "question": "Mitkä ovat suositellut käytännöt etäopetukseen osallistumisessa?",
+  "options": [
+    "Kamera pois päältä ja mikrofoni mykistettynä koko ajan",
+    "Kamera päällä ja mikrofoni mykistettynä, kun joku muu puhuu",
+    "Mikrofoni päällä koko ajan",
+    "Kamera päällä käyttäen personoituja taustoja"
+  ],
+  "answer": "Kamera päällä ja mikrofoni mykistettynä, kun joku muu puhuu"
+},
+"2.5 B6": {
+  "question": "Sinun täytyy keskeyttää opettaja verkkotunnilla. Mitä sinun tulisi tehdä?",
+  "options": [
+    "Käyttää kädennosto-toimintoa ja odottaa vuoroani",
+    "Kytkeä kameran päälle ja nostaa käsi",
+    "Käyttää mikrofonia ja pyytää lupaa",
+    "Lähettää opettajalle yksityisviesti"
+  ],
+  "answer": "Käyttää kädennosto-toimintoa ja odottaa vuoroani"
+},
+"2.5 M1": {
+  "question": "Kun esität ryhmätyötä vertaisillesi, mikä seuraavista strategioista on tehokkain?",
+  "options": [
+    "Käyttää muodollista kieltä ja pitkiä kappaleita",
+    "Sisällyttää visuaalisia elementtejä ja tiivistä kieltä",
+    "Välttää interaktiivisia elementtejä",
+    "Korostaa perinteisiä viestintämenetelmiä"
+  ],
+  "answer": "Sisällyttää visuaalisia elementtejä ja tiivistä kieltä"
+},
+"2.5 M2": {
+  "question": "Mikä esimerkiksi katsotaan vihapuheeksi sosiaalisessa mediassa?",
+  "options": [
+    "Suora hyökkäys instituutioita vastaan",
+    "Poliittisen puolueen loukkaaminen",
+    "Solvaavat ilmaukset, joilla hyökätään ihmisten etnisyyden perusteella",
+    "Vihainen kommentti jalkapallo-ottelusta"
+  ],
+  "answer": "Solvaavat ilmaukset, joilla hyökätään ihmisten etnisyyden perusteella"
+},
+"2.5 M3": {
+  "question": "Mikä seuraavista tekijöistä tekee akateemisesta esityksestä osallistavamman?",
+  "options": [
+    "Lisäämällä mahdollisimman monta väriä",
+    "Käyttämällä videotekstejä sans-serif -fonteilla",
+    "Puhumalla kovalla äänellä",
+    "Kirjoittamalla sanoja kokonaan isoilla kirjaimilla"
+  ],
+  "answer": "Käyttämällä videotekstejä sans-serif -fonteilla"
+},
+"2.5 M4": {
+  "question": "Näet ystäväsi julkaisun sosiaalisessa mediassa, jossa hän tukee luokkatoveriaan, joka on hiljattain käynyt läpi sukupuolenkorjauksen. Mikä olisi sopivin tapa lisätä tietoisuutta sukupuolen inklusiivisuudesta?",
+  "options": [
+    "En tee mitään, ei kuulu minulle.",
+    "Vastata ja sanoa, että olen eri mieltä",
+    "Tykkään ja tuen heitä",
+    "Ilmoitan opettajalle"
+  ],
+  "answer": "Tykkään ja tuen heitä"
+},
+"2.5 M5": {
+  "question": "Olet saanut valmiiksi kirjallisen tehtävän sunnuntaina ja päätät lähettää sen opettajalle sähköpostilla. Mikä on kohteliain tapa toimia?",
+  "options": [
+    "Lähettää sähköpostin heti",
+    "Tallentaa luonnoksiin",
+    "Kysyä opettajalta chatissa, voiko sen lähettää",
+    "Ajastaa sähköposti lähetettäväksi maanantaiaamuna"
+  ],
+  "answer": "Ajastaa sähköposti lähetettäväksi maanantaiaamuna"
+},
+"2.5 M6": {
+  "question": "Haluat järjestää virtuaalikokouksen osallistujille eri aikavyöhykkeiltä, joihin kuuluu sekä nuorempia että vanhempia henkilöitä. Huomaat, että osa suosii myöhäisillan kokouksia ja osa aamua. Mitä sinun tulisi tehdä?",
+  "options": [
+    "Asettaa kokousaika, joka sopii minulle; muiden on sopeuduttava.",
+    "Ehdottaa muutamaa sopivaa aikaa ja käyttää äänestystä yhteisen ajan löytämiseksi.",
+    "Valita itselle sopivin aikaisin aika ja ilmoittaa muille myöhemmin.",
+    "Pyytää kaikkia lähettämään aikataulunsa ja valita enemmistön perusteella."
+  ],
+  "answer": "Ehdottaa muutamaa sopivaa aikaa ja käyttää äänestystä yhteisen ajan löytämiseksi."
+},
+
+"2.6 B1": {
+  "question": "Mikä seuraavista on hyvä käytäntö useiden digitaalisten identiteettien hallinnassa?",
+  "options": [
+    "Käyttää samaa salasanaa kaikissa tileissä",
+    "Pitää profiilitiedot samoina eri alustoilla",
+    "Päivittää säännöllisesti yksityisyysasetukset jokaisella tilillä",
+    "Jättää huomiotta tietoturvahälytykset"
+  ],
+  "answer": "Päivittää säännöllisesti yksityisyysasetukset jokaisella tilillä"
+},
+"2.6 B2": {
+  "question": "Mikä seuraavista käytännöistä on tehokkain digitaalisen identiteetin hallintaan ja verkkomaineen suojaamiseen?",
+  "options": [
+    "Jakaa henkilökohtaisia tietoja vapaasti sosiaalisessa mediassa saadakseen enemmän kontakteja.",
+    "Päivittää säännöllisesti yksityisyysasetukset ja olla tarkkana julkaisemansa sisällön suhteen.",
+    "Käyttää samaa salasanaa useilla alustoilla helppouden vuoksi.",
+    "Ignoroida kommentit ja palaute profiileissa välttääkseen konflikteja."
+  ],
+  "answer": "Päivittää säännöllisesti yksityisyysasetukset ja olla tarkkana julkaisemansa sisällön suhteen."
+},
+"2.6 B3": {
+  "question": "Mikä on paras strategia hallita verkossa tuottamiasi tietoja digitaalisen identiteetin suojaamiseksi?",
+  "options": [
+    "Julkaista usein miettimättä vaikutusta maineeseen.",
+    "Arvioida ja poistaa säännöllisesti vanhentuneet tai epäolennaiset julkaisut ja tilit.",
+    "Antaa kaikkien sovellusten käyttää sosiaalisen median tilejä ilman rajoituksia.",
+    "Jakaa arkaluonteista tietoa julkisesti saadakseen luottamusta."
+  ],
+  "answer": "Arvioida ja poistaa säännöllisesti vanhentuneet tai epäolennaiset julkaisut ja tilit."
+},
+"2.6 B4": {
+  "question": "Mikä sisältö uhkaa suoraan henkilökohtaista turvallisuutta sosiaalisessa mediassa?",
+  "options": [
+    "Valeuutiset",
+    "Ei-toivottu mainonta",
+    "Ei-toivottu yksityisviesti",
+    "Häirintä ja kiristäminen"
+  ],
+  "answer": "Häirintä ja kiristäminen"
+},
+"2.6 B5": {
+  "question": "Onko sopivaa jakaa kuva alaikäisistä (esim. sisaruksista tai serkuista) sosiaalisessa mediassa?",
+  "options": [
+    "Ei koskaan.",
+    "Kyllä, koska se on yksityinen tila.",
+    "Kyllä, jos kysyn vanhemmilta luvan.",
+    "Kyllä, jos en näytä tunnistettavia piirteitä."
+  ],
+  "answer": "Kyllä, jos kysyn vanhemmilta luvan."
+},
+"2.6 B6": {
+  "question": "Haet uutta työpaikkaa ja huomaat, että sosiaalisen median profiilisi ovat julkisia. Sinulla on julkaisuja, jotka eivät ehkä tue ammattikuvaasi. Mitä sinun tulisi tehdä?",
+  "options": [
+    "Jättää kaiken ennalleen; työnantajan ei pitäisi arvioida henkilökohtaisten postausten perusteella.",
+    "Arvioida ja päivittää yksityisyysasetukset rajoittaaksesi, kuka näkee julkaisut.",
+    "Poistaa kaikki julkaisut viimeisen viiden vuoden ajalta.",
+    "Luoda erillinen ammatillinen tili työasioita varten."
+  ],
+  "answer": "Arvioida ja päivittää yksityisyysasetukset rajoittaaksesi, kuka näkee julkaisut."
+},
+"2.6 M1": {
+  "question": "Mikä on yksi tapa suojata henkilötietojasi luodessasi verkkotilejä?",
+  "options": [
+    "Käyttää helposti muistettavia salasanoja",
+    "Jakaa salasanasi ystävien kanssa",
+    "Ottaa käyttöön kaksivaiheinen tunnistautuminen",
+    "Välttää yksityisyysasetusten käyttöä"
+  ],
+  "answer": "Ottaa käyttöön kaksivaiheinen tunnistautuminen"
+},
+"2.6 M2": {
+  "question": "Kuinka estät mobiilisovelluksia keräämästä ylimääräistä dataa laitteestasi?",
+  "options": [
+    "Poistamalla sijainnin ja sovellusseurannan käytöstä",
+    "Aktivoimalla mikrofonin",
+    "Sammuttamalla kameran",
+    "Valitsemalla lentokonetilan"
+  ],
+  "answer": "Poistamalla sijainnin ja sovellusseurannan käytöstä"
+},
+"2.6 M3": {
+  "question": "Mitä metatietoja teknologiayritykset voivat kerätä kännykällä otetusta selfiestä?",
+  "options": [
+    "Nimi",
+    "Sijainti",
+    "Sijainti, ikä, sukupuoli, persoonallisuuspiirteet, hakuhistoria ja yleiset kiinnostuksen kohteet",
+    "Nimi ja puhelinnumero"
+  ],
+  "answer": "Sijainti, ikä, sukupuoli, persoonallisuuspiirteet, hakuhistoria ja yleiset kiinnostuksen kohteet"
+},
+"2.6 M4": {
+  "question": "Mitä sinun tulisi tehdä, jos joku varastaa verkkohenkilöllisyytesi (esim. sosiaalisen median profiilin)?",
+  "options": [
+    "Yrittää neuvotella henkilön kanssa",
+    "Ottaa yhteyttä viranomaisiin",
+    "Ilmoittaa asiasta alustalle ja vaihtaa kaikki salasanat",
+    "Luoda uusi profiili"
+  ],
+  "answer": "Ilmoittaa asiasta alustalle ja vaihtaa kaikki salasanat"
+},
+"2.6 M5": {
+  "question": "Virallinen tapa raportoida henkilötietojen väärinkäytöstä on ottaa yhteyttä:",
+  "options": [
+    "Paikallisiin viranomaisiin",
+    "Kansalliseen tietosuojaviranomaiseen (DPA)",
+    "Puolustusministeriöön",
+    "Kaupungintalolle"
+  ],
+  "answer": "Kansalliseen tietosuojaviranomaiseen (DPA)"
+},
+"2.6 M6": {
+  "question": "GDPR:n mukaan kuinka kauan organisaatio saa säilyttää henkilötietojasi?",
+  "options": [
+    "Niin kauan kuin he haluavat",
+    "Lyhimmän mahdollisen ajan",
+    "Kolme vuotta",
+    "Kunnes pyydän poistamaan ne"
+  ],
+  "answer": "Lyhimmän mahdollisen ajan"
+},
+
+"3.1 B1": {
+  "question": "Mitä on digitointi?",
+  "options": [
+    "Analogisen tiedon muuntamista digitaaliseksi",
+    "Kuvien muuntamista vektoreiksi",
+    "Suurten tiedostojen kaappaamista",
+    "Digitaalinen transformaatio"
+  ],
+  "answer": "Analogisen tiedon muuntamista digitaaliseksi"
+},
+"3.1 B2": {
+  "question": "Mitä on digitaalinen sisältö?",
+  "options": [
+    "Verkossa myytävät fyysiset tuotteet",
+    "Mikä tahansa verkossa luotu ja jaettu media, kuten teksti, kuvat tai videot",
+    "Paperipohjaiset mainokset",
+    "Ei mikään yllä olevista"
+  ],
+  "answer": "Mikä tahansa verkossa luotu ja jaettu media, kuten teksti, kuvat tai videot"
+},
+"3.1 B3": {
+  "question": "Mitä elementtejä digitaalinen sisältö voi sisältää?",
+  "options": [
+    "E-kirjat, blogit, artikkelit ja uutiskirjeet",
+    "Podcastit, musiikki ja äänikirjat",
+    "Videot, elokuvat, TV-ohjelmat ja livestriimit",
+    "Kaikki vastaukset ovat oikein"
+  ],
+  "answer": "Kaikki vastaukset ovat oikein"
+},
+"3.1 B4": {
+  "question": "Mikä työkalu on yleisimmin käytössä graafisessa suunnittelussa?",
+  "options": ["Microsoft Excel", "Canva", "Microsoft PowerPoint", "Muistio"],
+  "answer": "Canva"
+},
+"3.1 B5": {
+  "question": "Mitä on ”HTML”?",
+  "options": [
+    "Ohjelmointikieli",
+    "Kieli verkkosivujen luomiseen",
+    "Graafisen suunnittelun ohjelma",
+    "Kuvanmuokkausohjelma"
+  ],
+  "answer": "Kieli verkkosivujen luomiseen"
+},
+"3.1 B6": {
+  "question": "Mitkä alustat ovat sosiaalisen median alustoja?",
+  "options": ["Instagram", "TikTok", "Facebook", "Kaikki"],
+  "answer": "Kaikki"
+},
+"3.1 M1": {
+  "question": "Mitkä kuusi elementtiä voidaan yhdistää multimedian luomiseksi?",
+  "options": [
+    "Väri, hyperteksti, kuvat, musiikki, juonto ja video",
+    "Ääni, hyperteksti, kuvat, väri, musiikki ja animointi",
+    "Teksti, linkit, animointi, video, äänitehoste ja animointi",
+    "Ääni, kuvat, animointi, hyperteksti, teksti ja video"
+  ],
+  "answer": "Ääni, kuvat, animointi, hyperteksti, teksti ja video"
+},
+"3.1 M2": {
+  "question": "Mitä edistynyttä tekniikkaa käytetään digitaalisen sisällön hakukoneoptimointiin käyttäjätarkoituksen ymmärtämisen ja semanttisten avainsanojen hyödyntämisen avulla?",
+  "options": [
+    "Avainsanojen ylitäyttäminen (keyword stuffing)",
+    "LSI (Latent Semantic Indexing)",
+    "Takaisinkytkentöjen (backlink) rakentaminen",
+    "Metatunnisteiden optimointi"
+  ],
+  "answer": "LSI (Latent Semantic Indexing)"
+},
+"3.1 M3": {
+  "question": "Mitä ohjelmistoa käytetään yleisesti interaktiivisen multimedian luomiseen?",
+  "options": [
+    "Adobe Animate (entinen Flash)",
+    "Adobe Illustrator",
+    "Adobe After Effects",
+    "Adobe Photoshop"
+  ],
+  "answer": "Adobe Animate (entinen Flash)"
+},
+"3.1 M4": {
+  "question": "Miksi SEO (hakukoneoptimointi) on tärkeää digitaalisessa sisällössä?",
+  "options": [
+    "Se auttaa sisällön tavoittamaan kohdeyleisön paremmin",
+    "Sillä ei ole merkitystä",
+    "Se parantaa vain sisällön ulkoasua",
+    "Se vähentää sisällön suosiota"
+  ],
+  "answer": "Se auttaa sisällön tavoittamaan kohdeyleisön paremmin"
+},
+"3.1 M5": {
+  "question": "Mitä on ”responsiivinen suunnittelu”?",
+  "options": [
+    "Suunnittelu, joka mukautuu automaattisesti eri laitteille",
+    "Vain tietokoneille tarkoitettu suunnittelu",
+    "Pelkkä tekstin suunnittelu",
+    "Suunnittelu, joka ei muutu"
+  ],
+  "answer": "Suunnittelu, joka mukautuu automaattisesti eri laitteille"
+},
+"3.1 M6": {
+  "question": "Mikä on sisällönhallintajärjestelmän (CMS) ensisijainen tehtävä digitaalisen sisällön tuotannossa?",
+  "options": [
+    "Käyttäjien sitoutumismetriikoiden seuranta",
+    "Helpottaa digitaalisen sisällön luontia, muokkausta ja julkaisemista",
+    "Kilpailijoiden analysointi",
+    "Vain sosiaalisen median julkaisujen luominen"
+  ],
+  "answer": "Helpottaa digitaalisen sisällön luontia, muokkausta ja julkaisemista"
+},
+
+"3.2 B1": {
+  "question": "Onko tärkeää analysoida, mille yleisölle digitaalinen sisältösi on suunnattu?",
+  "options": ["Kyllä", "Ei"],
+  "answer": "Kyllä"
+},
+"3.2 B2": {
+  "question": "Mitä seuraavista käytetään yleisesti tekoälyn tuottamien kuvien tai taiteen luomiseen?",
+  "options": [
+    "Tekstinkäsittelyohjelma",
+    "Taulukkolaskentaohjelma",
+    "Generative Adversarial Networks (GANs) -verkot",
+    "Videoeditointiohjelma"
+  ],
+  "answer": "Generative Adversarial Networks (GANs) -verkot"
+},
+"3.2 B3": {
+  "question": "Onko seuraava väite tosi vai epätosi? Digitaalisen sisällön jakaminen verkossa ei mahdollista välitöntä palautetta julkaistusta sisällöstä.",
+  "options": ["Tosi", "Epätosi"],
+  "answer": "Epätosi"
+},
+"3.2 B4": {
+  "question": "Onko seuraava väite tosi vai epätosi? Mitä enemmän vuorovaikutusta yleisösi kanssa on, sitä enemmän sisältösi saa näkyvyyttä.",
+  "options": ["Tosi", "Epätosi"],
+  "answer": "Tosi"
+},
+"3.2 B5": {
+  "question": "Onko seuraava väite tosi vai epätosi? Vain sisällöllä on kohdeyleisö.",
+  "options": ["Tosi", "Epätosi"],
+  "answer": "Epätosi"
+},
+"3.2 B6": {
+  "question": "Keistä sisältösi kohderyhmä voi koostua?",
+  "options": [
+    "Nuoresta yleisöstä",
+    "Konservatiivisesti elämään suhtautuvista ihmisistä",
+    "Ikääntyneistä ihmisistä",
+    "Kaikki vastaukset ovat oikein"
+  ],
+  "answer": "Kaikki vastaukset ovat oikein"
+},
+"3.2 M1": {
+  "question": "Mikä on tekstitysten lisäämisen ensisijainen hyöty videoesityksiin?",
+  "options": [
+    "Lisätä videon tarkkuutta",
+    "Parantaa saavutettavuutta kuulovammaisille katsojille",
+    "Pienentää tiedostokokoa",
+    "Nopeuttaa videon latautumista"
+  ],
+  "answer": "Parantaa saavutettavuutta kuulovammaisille katsojille"
+},
+"3.2 M2": {
+  "question": "Haluat tehdä infografiikan maasi syntyvyydestä. Mikä seuraavista on verkkoalusta datan visualisointiin?",
+  "options": ["Flourish", "Canva", "Microsoft PowerPoint", "Google Forms"],
+  "answer": "Flourish"
+},
+"3.2 M3": {
+  "question": "Miksi tarinakarttojen (story maps) integrointi digitaaliseen sisältöön on tärkeää?",
+  "options": [
+    "Karttojen liittäminen tarinaan tekee sisällöstä interaktiivista ja voi lisätä sitoutumista",
+    "Tarinakartat auttavat välittämään monimutkaisia aiheita ymmärrettävästi.",
+    "Kartoitettu tieto on visuaalista ja tavoittaa laajemman yleisön.",
+    "Kaikki vastaukset ovat oikein"
+  ],
+  "answer": "Kaikki vastaukset ovat oikein"
+},
+"3.2 M4": {
+  "question": "Täydennä lause: Tunnista digitaaliset työkalut, joiden avulla sisältösi on…",
+  "options": [
+    "vain nuorelle kohderyhmälle paremmin saavutettavaa.",
+    "entistä inklusiivisempaa ja saavutettavampaa sekä opit perusasiat ’fair use’ -ohjeista tekijänoikeuksissa ja lisensoinnissa.",
+    "erittäin hienostunutta ja monimutkaista."
+  ],
+  "answer": "entistä inklusiivisempaa ja saavutettavampaa sekä opit perusasiat ’fair use’ -ohjeista tekijänoikeuksissa ja lisensoinnissa."
+},
+"3.2 M5": {
+  "question": "Mitä keskeisiä etuja blogin pitämisessä on?",
+  "options": [
+    "Voit valita julkaisutavan: tiheyden, pituuden, aiheen ja muut parametrit.",
+    "Voit pitää sen piilossa tai tehdä julkiseksi",
+    "Kaikki vastaukset ovat oikein"
+  ],
+  "answer": "Kaikki vastaukset ovat oikein"
+},
+"3.2 M6": {
+  "question": "Mikä seuraavista kuvaa parhaiten keskeistä vaihetta, kun yhdistät laitteistoantureita digitaalisiin teknologioihin älykotilaitteen luomiseksi?",
+  "options": [
+    "Varmistaa, että laitteessa on monimutkainen käyttöliittymä",
+    "Valita tarkoituksenmukaiset anturit oleellisen datan keräämiseksi",
+    "Rajoittaa yhteyksiä kustannusten pienentämiseksi",
+    "Suunnitella laite toimimaan vain manuaalisesti"
+  ],
+  "answer": "Valita tarkoituksenmukaiset anturit oleellisen datan keräämiseksi"
+},
+
+ "3.3 B1": {
+  "question": "Ohjelmistoa suojaa tekijänoikeus. Mikä seuraavista on laitonta?",
+  "options": [
+    "Ostaa ohjelmisto lataussivustolta",
+    "Tehdä kopioita ja antaa niitä perheelle ja ystäville",
+    "Molemmat väitteet"
+  ],
+  "answer": "Tehdä kopioita ja antaa niitä perheelle ja ystäville"
+},
+"3.3 B2": {
+  "question": "Mikä seuraavista on esimerkki fair use -käytöstä?",
+  "options": [
+    "Uuden kirjan katkelmien julkaiseminen blogissa siihen liittyvän mielipidekirjan yhteydessä",
+    "Instagram-mallin kuvan asettaminen profiilikuvaksesi deittisovelluksessa",
+    "Tekijänoikeudella suojatun kappaleen soittaminen taustalla videollasi YouTuben ruoanlaittokanavalla",
+    "Tekijänoikeudella suojatun kuvan käyttäminen julkaistussa tutkimusartikkelissa ilman asianmukaista viittausta"
+  ],
+  "answer": [
+    "Uuden kirjan katkelmien julkaiseminen blogissa siihen liittyvän mielipidekirjan yhteydessä"
+  ]
+},
+"3.3 B3": {
+  "question": "Mikä on Creative Commons -lisenssi?",
+  "options": [
+    "Ohjelmistolisenssi, joka sallii avoimen lähdekoodin vapaamuotoisen jakamisen",
+    "Tekijänoikeuslisenssi, jonka avulla tekijät voivat määritellä, miten heidän teostaan saa käyttää",
+    "Työkalu, joka varmistaa, että kaikki luovat teokset käytetään vain kaupallisesti",
+    "Keino kiertää tekijänoikeudet ja käyttää mitä tahansa teosta vapaasti"
+  ],
+  "answer": "Tekijänoikeuslisenssi, jonka avulla tekijät voivat määritellä, miten heidän teostaan saa käyttää"
+},
+"3.3 B4": {
+  "question": "Mikä on tärkeä huomio sisällyttäessäsi tekoälyn tuottamaa sisältöä omaan työhösi?",
+  "options": [
+    "Varmistaa, että sisältö on aina maksutta käytettävissä",
+    "Lähteen selkeä ilmoittaminen (attribuutio) tekoälyn tuottamalle sisällölle",
+    "Sisällön käyttäminen ilman mitään muokkauksia",
+    "Tekijänoikeuslakien sivuuttaminen"
+  ],
+  "answer": "Lähteen selkeä ilmoittaminen (attribuutio) tekoälyn tuottamalle sisällölle"
+},
+"3.3 B5": {
+  "question": "Mikä seuraavista on esimerkki tekijänoikeudella suojatusta teoksesta?",
+  "options": ["Matemaattinen kaava", "Valokuva", "Liikeidea", "Yrityksen logo"],
+  "answer": "Valokuva"
+},
+"3.3 B6": {
+  "question": "Jos haluat käyttää tekijänoikeudella suojattua teosta, mitä sinun tulisi tehdä?",
+  "options": [
+    "Muokata sitä hieman",
+    "Pyytää lupa tekijänoikeuden haltijalta",
+    "Käyttää sitä ilmaiseksi, jos käyttö on henkilökohtaista",
+    "Viitata lähteeseen ja käyttää vapaasti"
+  ],
+  "answer": "Pyytää lupa tekijänoikeuden haltijalta"
+},
+"3.3 M1": {
+  "question": "Mikä seuraavista oikeusperiaatteista sallii tekijänoikeudella suojatun materiaalin rajoitetun käytön ilman lupaa tietyissä tapauksissa, kuten kommentoinnissa tai kritiikissä?",
+  "options": [
+    "Digital Millennium Copyright Act (DMCA)",
+    "Fair Use",
+    "Public Domain",
+    "Moraaliset oikeudet (Moral Rights)"
+  ],
+  "answer": "Fair Use"
+},
+"3.3 M2": {
+  "question": "Mikä seuraavista on esimerkki ”copyleft”-lisensoinnista ohjelmistokehityksessä?",
+  "options": ["Apache License 2.0", "MIT License", "GNU General Public License (GPL)", "Creative Commons Zero (CC0)"],
+  "answer": "GNU General Public License (GPL)"
+},
+"3.3 M3": {
+  "question": "Teksti- ja datanlouhinnan (TDM) yhteydessä mikä EU-direktiivi mahdollistaa tekijänoikeudella suojatun aineiston laillisen louhinnan tutkimustarkoituksiin ilman nimenomaista lupaa ja millä edellytyksellä?",
+  "options": [
+    "DSM-direktiivi (2019/790), joka sallii tutkimusorganisaatioiden tehdä teksti- ja datanlouhintaa tieteellistä tutkimusta varten",
+    "Tietokantadirektiivi, jos tietokanta on julkisesti saatavilla",
+    "Tekijänoikeusdirektiivi, jos tieteellistä tutkimusta koskeva poikkeus sovelletaan",
+    "InfoSoc-direktiivi, jos tekijänoikeuden haltijalle maksetaan kohtuullinen korvaus"
+  ],
+  "answer": "DSM-direktiivi (2019/790), joka sallii tutkimusorganisaatioiden tehdä teksti- ja datanlouhintaa tieteellistä tutkimusta varten"
+},
+"3.3 M4": {
+  "question": "Kuinka kauan tekijänoikeus kestää?",
+  "options": ["10 vuotta", "Tekijän elinikä + 70 vuotta", "Ikuisesti", "5 vuotta luomisesta"],
+  "answer": "Tekijän elinikä + 70 vuotta"
+},
+"3.3 M5": {
+  "question": "Näin verkossa kuvan, jossa luki ”Creative Commons”. Tarkoittaako se, että voin käyttää kuvaa rikkomatta tekijänoikeuksia?",
+  "options": [
+    "Kyllä, se on sama kuin Public Domain",
+    "Kyllä, kunhan käytät sitä kyseisen Creative Commons -lisenssin ehtojen mukaisesti",
+    "Ei, Creative Commons ei poista tekijänoikeutta, joten rikot oikeuksia",
+    "Kyllä, kunhan maksat Creative Commonsin käytöstä"
+  ],
+  "answer": "Kyllä, kunhan käytät sitä kyseisen Creative Commons -lisenssin ehtojen mukaisesti"
+},
+"3.3 M6": {
+  "question": "Lainasin ystäväni puhelinta ja otin Snapchatiin kuvan, jossa hän poseeraa koirani kanssa. Kuka omistaa kuvan tekijänoikeuden?",
+  "options": [
+    "Ystäväsi, koska hän on kuvassa",
+    "Sinä, koska otit kuvan",
+    "Sinä, koska koira on sinun",
+    "Ystäväsi, koska kuva on hänen puhelimellaan",
+    "Snapchat, koska käytit heidän sovellustaan kuvan ottamiseen",
+    "Koira, koska se on kuvassa tähti"
+  ],
+  "answer": "Sinä, koska otit kuvan"
+},
+"3.4 B1": {
+  "question": "Mikä on algoritmi?",
+  "options": ["Joukko ohjeita tai sääntöjä", "Eräänlainen hyönteinen", "Tietokonepeli"],
+  "answer": "Joukko ohjeita tai sääntöjä"
+},
+"3.4 B2": {
+  "question": "Miksi algoritmi täytyy muuntaa koodiksi?",
+  "options": [
+    "Jotta siitä voidaan tehdä tarina",
+    "Jotta ihmiset voivat lukea sen",
+    "Jotta tietokone voi ymmärtää sen"
+  ],
+  "answer": "Jotta tietokone voi ymmärtää sen"
+},
+"3.4 B3": {
+  "question": "Mikä seuraavista ei ole hyvän algoritmin ominaisuus?",
+  "options": ["Tarkka", "Moniselitteinen", "Lopullinen askelten määrä", "Looginen ohjausvirta"],
+  "answer": "Moniselitteinen"
+},
+"3.4 B4": {
+  "question": "Mikä seuraavista on olennainen elementti tietokoneohjelman luomisessa?",
+  "options": [
+    "Pelkkä grafiikka",
+    "Ongelman ratkaisemiseen suunniteltu ohjeiden sarja",
+    "Pelkkä tietokoneen laitteisto",
+    "Pelkkä teksti"
+  ],
+  "answer": "Ongelman ratkaisemiseen suunniteltu ohjeiden sarja"
+},
+"3.4 B5": {
+  "question": "Mikä on ”if”-lauseen päätehtävä ohjelmointikielessä?",
+  "options": [
+    "Suorittaa toiminto, jos ehto on tosi",
+    "Tulostaa vain tekstiä",
+    "Luoda grafiikkaa",
+    "Suorittaa vain matemaattisia operaatioita"
+  ],
+  "answer": "Suorittaa toiminto, jos ehto on tosi"
+},
+"3.4 B6": {
+  "question": "Kuinka voit ratkaista ongelman ohjelmointikieltä käyttäen?",
+  "options": [
+    "Kirjoittamalla viestejä",
+    "Laaditsemalla algoritmin, joka kuvaa ratkaisun vaiheet",
+    "Kirjoittamalla vain tekstiä",
+    "Piirtämällä vain kaavioita"
+  ],
+  "answer": "Laaditsemalla algoritmin, joka kuvaa ratkaisun vaiheet"
+},
+"3.4 M1": {
+  "question": "Mikä on algoritmin rakenteen oikea järjestys:",
+  "options": [
+    "Runko, Otsikko, Määrittely ja Lopetus",
+    "Otsikko, Runko, Määrittely ja Lopetus",
+    "Otsikko, Määrittely, Runko ja Lopetus",
+    "Määrittely, Runko, Otsikko ja Lopetus"
+  ],
+  "answer": "Otsikko, Määrittely, Runko ja Lopetus"
+},
+"3.4 M2": {
+  "question": "Miten algoritmin tehokkuutta voidaan mitata?",
+  "options": ["Suoritin ja muisti", "Aika ja tila", "Monimutkaisuus ja kapasiteetti", "Data ja tila"],
+  "answer": "Aika ja tila"
+},
+"3.4 M3": {
+  "question": "Syöte-, tuloste-, aritmeettinen operaatio- ja muuttujan sijoituslauseet ovat esimerkkejä minkä tyyppisestä rakenteesta:",
+  "options": ["Silmukka", "Taulukko", "Toisto", "Peräkkäinen", "Valinta"],
+  "answer": "Peräkkäinen"
+},
+"3.4 M4": {
+  "question": "Mikä on olio-ohjelmoinnin ensisijainen periaate?",
+  "options": [
+    "Algoritmien laatiminen",
+    "Koodin kirjoittaminen vain yhteen tiedostoon",
+    "Datan ja toimintojen järjestäminen olioihin",
+    "Vain tekstitiedostojen käyttäminen"
+  ],
+  "answer": "Datan ja toimintojen järjestäminen olioihin"
+},
+"3.4 M5": {
+  "question": "Miten ”funktio” voi parantaa ohjelman rakennetta?",
+  "options": [
+    "Se vähentää koodin pilkkomista",
+    "Se luo tarpeettomia operaatioita",
+    "Se edistää koodin uudelleenkäyttöä",
+    "Se lisää koodin monimutkaisuutta"
+  ],
+  "answer": "Se edistää koodin uudelleenkäyttöä"
+},
+"3.4 M6": {
+  "question": "Mikä on debuggaus-prosessin merkitys ohjelmoinnissa?",
+  "options": ["Koodin kirjoittaminen ilman virheitä", "Virheiden etsiminen ja korjaaminen", "Koodin pelkkä järjestely", "Koodin optimointi"],
+  "answer": "Virheiden etsiminen ja korjaaminen"
+},
+
+"4.1 B1": {
+  "question": "Mikä seuraavista on turvallisin tapa suojata laite haittaohjelmilta?",
+  "options": [
+    "Sovellusten lataaminen miltä tahansa verkkosivulta",
+    "Asentaa virustorjuntaohjelma ja pitää se ajan tasalla",
+    "Ponnahdusmainosten klikkaaminen",
+    "Ohjelmistopäivitysten sivuuttaminen"
+  ],
+  "answer": "Asentaa virustorjuntaohjelma ja pitää se ajan tasalla"
+},
+"4.1 B2": {
+  "question": "Mitä haittaohjelma (malware) on?",
+  "options": [
+    "Ohjelmisto, joka päivittää ohjelmat automaattisesti",
+    "Virus tai muu vahingollinen ohjelma",
+    "Laitepalomuuri, joka suojaa laitteita",
+    "Henkilökohtaisten tiedostojen varmuuskopio"
+  ],
+  "answer": "Virus tai muu vahingollinen ohjelma"
+},
+"4.1 B3": {
+  "question": "Mikä on hyvä käytäntö henkilötietojen suojaamiseksi verkossa?",
+  "options": [
+    "Jakaa salasanat vain luotettujen ihmisten kanssa",
+    "Käyttää samaa salasanaa kaikissa palveluissa",
+    "Ottaa käyttöön kaksivaiheinen todennus",
+    "Tallentaa salasanat tekstitiedostoon"
+  ],
+  "answer": "Ottaa käyttöön kaksivaiheinen todennus"
+},
+"4.1 B4": {
+  "question": "Mikä seuraavista suojaa sähköisiä laitteita luvattomalta käytöltä?",
+  "options": [
+    "Wi-Fin poistaminen käytöstä",
+    "Vahvan salasanan käyttäminen",
+    "Väliaikaistiedostojen säännöllinen poistaminen",
+    "Kaikkien avoinna olevien sovellusten sulkeminen"
+  ],
+  "answer": "Vahvan salasanan käyttäminen"
+},
+"4.1 B5": {
+  "question": "Mitä lukkokuvake verkkoselaimen osoiterivillä yleensä tarkoittaa?",
+  "options": [
+    "Että verkkosivusto on suojattu ja yhteys on turvattu",
+    "Että sivusto sisältää luottamuksellista tietoa",
+    "Että verkkosivusto on viranomaisten varmentama",
+    "Että verkkosivusto on huollossa"
+  ],
+  "answer": "Että verkkosivusto on suojattu ja yhteys on turvattu"
+},
+"4.1 B6": {
+  "question": "Mikä seuraavista on tyypillinen riski käytettäessä suojaamattomia julkisia Wi-Fi-verkkoja?",
+  "options": [
+    "Hitaammat lataukset",
+    "Luvaton pääsy henkilötietoihin",
+    "Verkkopalvelun katkokset",
+    "Akun nopeampi kuluminen"
+  ],
+  "answer": "Luvaton pääsy henkilötietoihin"
+},
+"4.1 M1": {
+  "question": "Mikä seuraavista tavoista auttaa suojaamaan laitettasi luvattomalta käytöltä?",
+  "options": [
+    "Jättää laite valvomatta julkisissa tiloissa",
+    "Käyttää vahvaa, yksilöllistä salasanaa tai biometrisiä tunnisteita",
+    "Poistaa kaikki suojausominaisuudet käytöstä",
+    "Jakaa salasana ystävien kanssa"
+  ],
+  "answer": "Käyttää vahvaa, yksilöllistä salasanaa tai biometrisiä tunnisteita"
+},
+"4.1 M2": {
+  "question": "Mikä on pääero Man-in-the-Middle-hyökkäyksen ja phishing-huijauksen välillä?",
+  "options": [
+    "Phishing käyttää haittaohjelmaa, kun taas Man-in-the-Middle ei",
+    "Man-in-the-Middle sieppaa viestintää, phishing huijaa käyttäjää",
+    "Phishing kohdistuu vain mobiililaitteisiin",
+    "Man-in-the-Middle vaatii fyysisen pääsyn laitteeseen"
+  ],
+  "answer": "Man-in-the-Middle sieppaa viestintää, phishing huijaa käyttäjää"
+},
+"4.1 M3": {
+  "question": "Miten SSL-sertifikaatti suojaa verkkoviestintää?",
+  "options": [
+    "Se salaa selaimen ja palvelimen välisen yhteyden",
+    "Se tarkistaa verkkosivun latausnopeuden",
+    "Se valvoo sivuston haittaohjelmia",
+    "Se varmentaa käyttäjien henkilöllisyyden"
+  ],
+  "answer": "Se salaa selaimen ja palvelimen välisen yhteyden"
+},
+"4.1 M4": {
+  "question": "Mikä ero on VPN:n ja palomuurin välillä?",
+  "options": [
+    "VPN salaa liikenteen, palomuuri valvoo ja suodattaa sitä",
+    "VPN estää ulkoiset hyökkäykset, palomuuri salaa viestinnän",
+    "VPN on vain yritysverkoille, palomuuri yksityiskäyttöön",
+    "VPN estää haittaohjelmat, palomuuri estää tietovarkaudet"
+  ],
+  "answer": "VPN salaa liikenteen, palomuuri valvoo ja suodattaa sitä"
+},
+"4.2 B1": {
+  "question": "Miten voit suojata henkilötietojasi sosiaalista mediaa käyttäessäsi?",
+  "options": [
+    "Jakaa sijaintisi jokaisessa julkaisussa",
+    "Käyttää samaa salasanaa kaikissa palveluissa",
+    "Säätää yksityisyysasetuksia rajaamaan, kuka näkee tietosi",
+    "Hyväksyä kaikki kaveripyynnöt"
+  ],
+  "answer": "Säätää yksityisyysasetuksia rajaamaan, kuka näkee tietosi"
+},
+"4.2 B2": {
+  "question": "Mikä seuraavista kuvaa parhaiten, miten yritykset käyttävät henkilötietoja tietosuojakäytäntönsä puitteissa?",
+  "options": [
+    "Ne käyttävät tietoja vain myydäkseen niitä kolmansille osapuolille",
+    "Ne eivät koskaan tallenna mitään henkilötietoja",
+    "Ne keräävät, tallentavat ja joskus jakavat henkilötietoja käyttäjäsopimuksen perusteella",
+    "Ne poistavat henkilötiedot kuukauden kuluttua"
+  ],
+  "answer": "Ne keräävät, tallentavat ja joskus jakavat henkilötietoja käyttäjäsopimuksen perusteella"
+},
+"4.2 B3": {
+  "question": "Mitä tarkoittaa henkilön yksilöivä tieto (PII, Personally Identifiable Information)?",
+  "options": [
+    "Mikä tahansa sosiaalisessa mediassa jaettu tieto",
+    "Tiedot, joiden avulla yksittäinen henkilö voidaan tunnistaa",
+    "Yleiset tiedot internetin käytöstä",
+    "Selaimen evästeisiin tallennettu data"
+  ],
+  "answer": "Tiedot, joiden avulla yksittäinen henkilö voidaan tunnistaa"
+},
+"4.2 B4": {
+  "question": "Miksi palvelun tietosuojakäytäntö on tärkeää lukea?",
+  "options": [
+    "Nopeuttaaksesi internetyhteyttä",
+    "Päästäksesi palvelun piilotettuihin ominaisuuksiin",
+    "Saadaksesi personoidumpia mainoksia",
+    "Ymmärtääksesi, miten tietojasi kerätään ja käytetään"
+  ],
+  "answer": "Ymmärtääksesi, miten tietojasi kerätään ja käytetään"
+},
+"4.2 B5": {
+  "question": "Mikä seuraavista auttaa suojaamaan yksityisyyttäsi digipalveluja käyttäessäsi?",
+  "options": [
+    "Kaksivaiheisen todennuksen poistaminen käytöstä",
+    "Selaushistorian säännöllinen tyhjentäminen",
+    "Henkilötietojen jakaminen lähdettä varmistamatta",
+    "Kaikkien käyttöoikeuksien hyväksyminen ilman tarkastelua"
+  ],
+  "answer": "Selaushistorian säännöllinen tyhjentäminen"
+},
+"4.2 B6": {
+  "question": "Mikä on yleinen yksityisyysriski sosiaalisen median käytössä?",
+  "options": [
+    "Liian monta kaveripyyntöä",
+    "Liian henkilökohtaisten tietojen jakaminen julkisesti",
+    "Vanhat julkaisut katoavat",
+    "Ei-toivottujen tilien seuraaminen"
+  ],
+  "answer": "Liian henkilökohtaisten tietojen jakaminen julkisesti"
+},
+"4.2 M1": {
+  "question": "Mikä salausteknologiaprotokolla on laajasti käytössä turvallisen verkkoviestinnän varmistamiseksi?",
+  "options": ["HTTP", "FTP", "SSL/TLS", "IMAP"],
+  "answer": "SSL/TLS"
+},
+"4.2 M2": {
+  "question": "Mikä on salauksen päätarkoitus henkilötietoja verkossa lähettäessä?",
+  "options": [
+    "Lisätä internetin nopeutta",
+    "Suojata dataa luvattomalta käytöltä",
+    "Mahdollistaa ei-toivottu tiedonjako kolmansille osapuolille",
+    "Tallentaa dataa pilvipalveluihin"
+  ],
+  "answer": "Suojata dataa luvattomalta käytöltä"
+},
+"4.2 M3": {
+  "question": "Miten yleinen tietosuoja-asetus (GDPR) vaikuttaa henkilötietojen käyttöön digipalveluissa?",
+  "options": [
+    "Se edellyttää nimenomaisen suostumuksen hankkimista ennen henkilötietojen keruuta",
+    "Se sallii tietojen vapaan jakamisen ilman suostumusta",
+    "Se koskee vain rahoituslaitoksia",
+    "Se kieltää kaiken henkilötietojen käytön yrityksissä"
+  ],
+  "answer": "Se edellyttää nimenomaisen suostumuksen hankkimista ennen henkilötietojen keruuta"
+},
+"4.2 M4": {
+  "question": "Mitä tulee tehdä, jos saat sähköpostin, jossa pyydetään henkilötietoja, mutta et ole varma viestin aitoudesta?",
+  "options": [
+    "Vastata heti ja antaa pyydetyt tiedot",
+    "Avata viestissä oleva linkki",
+    "Varmistaa lähettäjän aitous ennen tietojen jakamista",
+    "Välittää viesti ystäville"
+  ],
+  "answer": "Varmistaa lähettäjän aitous ennen tietojen jakamista"
+},
+"4.2 M5": {
+  "question": "Miten tietosuojakäytännön ymmärtäminen voi auttaa suojautumaan tietojen väärinkäytöltä?",
+  "options": [
+    "Mahdollistamalla suojausominaisuuksien poistamisen käytöstä",
+    "Kertomalla, miten yritys kerää, säilyttää ja jakaa tietojasi",
+    "Antamalla pääsyn palvelun sisäiseen dataan",
+    "Estämällä yksityisyysasetusten päivittämisen"
+  ],
+  "answer": "Kertomalla, miten yritys kerää, säilyttää ja jakaa tietojasi"
+},
+"4.2 M6": {
+  "question": "Mikä seuraavista on yleinen turvallisuusominaisuus, jota digipalvelut käyttävät henkilötietojen suojaamiseen?",
+  "options": [
+    "Käyttäjädatan automaattinen jakaminen mainostajille",
+    "Kaksivaiheinen todennus (2FA)",
+    "Kaikkien käyttäjätietojen julkinen näyttäminen",
+    "Heikkojen salasanojen salliminen"
+  ],
+  "answer": "Kaksivaiheinen todennus (2FA)"
+},
+
+  "4.3 B1": {
+  "question": "Miten voit minimoida digilaitteiden käytön vaikutuksia terveyteesi ja hyvinvointiisi?",
+  "options": [
+    "Käyttämällä laitetta yhtäjaksoisesti ilman taukoja",
+    "Asettamalla näyttöajan rajoja ja pitämällä säännöllisiä taukoja",
+    "Pitamällä laitetta aivan silmien lähellä",
+    "Käyttämällä laitteita vain pimeissä huoneissa"
+  ],
+  "answer": "Asettamalla näyttöajan rajoja ja pitämällä säännöllisiä taukoja"
+},
+"4.3 B2": {
+  "question": "Mikä seuraavista on yksi tärkeimmistä fyysisen terveyden riskeistä, kun digilaitteita käytetään pitkiä aikoja?",
+  "options": [
+    "Luovuuden lisääntyminen",
+    "Silmien rasitus",
+    "Unenlaadun paraneminen",
+    "Lihasvoiman kasvu"
+  ],
+  "answer": "Silmien rasitus"
+},
+"4.3 B3": {
+  "question": "Mikä seuraavista toimenpiteistä voi auttaa ehkäisemään nettikiusaamista?",
+  "options": [
+    "Olla tietoinen sosiaalisen median yksityisyysasetuksista",
+    "Jakaa salasanat ystävien kanssa",
+    "Katkaista internet-yhteys, kun saa vahingollisen viestin",
+    "Ohittaa kaikki verkkovuorovaikutukset"
+  ],
+  "answer": "Olla tietoinen sosiaalisen median yksityisyysasetuksista"
+},
+"4.3 B4": {
+  "question": "Miten voi vähentää teknologian käyttöön liittyvää stressiä?",
+  "options": [
+    "Käyttää digilaitteita ilman taukoja",
+    "Käyttää teknologiaa vain päiväsaikaan",
+    "Luoda digitaalinen rutiini, johon sisältyy säännöllisiä taukoja ja offline-aikaa",
+    "Vähentää sähköpostin käyttöä minimiin"
+  ],
+  "answer": "Luoda digitaalinen rutiini, johon sisältyy säännöllisiä taukoja ja offline-aikaa"
+},
+"4.3 B5": {
+  "question": "Mikä seuraavista työkaluista voi auttaa suojaamaan psyykkistä hyvinvointia digitaaliteknologiaa käytettäessä?",
+  "options": [
+    "Sinivalosuodattimien käyttäminen",
+    "Näytön tarkkuuden kasvattaminen",
+    "Kalliimpien laitteiden ostaminen",
+    "Sovellusilmoitusten poistaminen käytöstä lepoaikoina"
+  ],
+  "answer": "Sovellusilmoitusten poistaminen käytöstä lepoaikoina"
+},
+"4.3 B6": {
+  "question": "Mikä seuraavista digitaaliteknologioista edistää erityisen tehokkaasti vammaisten henkilöiden sosiaalista osallisuutta?",
+  "options": [
+    "Virtuaalitodellisuus",
+    "Puheentunnistusohjelmisto",
+    "Tekoäly rahoitusalalle",
+    "Viihdesovellukset"
+  ],
+  "answer": "Puheentunnistusohjelmisto"
+},
+"4.3 M1": {
+  "question": "Mikä on yleinen merkki nettikiusaamisesta, johon digitaalisissa ympäristöissä tulisi kiinnittää huomiota?",
+  "options": [
+    "Positiivinen palaute sosiaalisen median julkaisuista",
+    "Toistuvat negatiiviset kommentit tai uhkaukset",
+    "Kutsut verkkopienryhmäopintoihin",
+    "Oppimateriaalien jakaminen"
+  ],
+  "answer": "Toistuvat negatiiviset kommentit tai uhkaukset"
+},
+"4.3 M2": {
+  "question": "Miksi yksityisyys- ja suojausasetusten tuntemus sosiaalisen median alustoilla on tärkeää mielenterveyden kannalta?",
+  "options": [
+    "Se varmistaa, että vain hyväksytyt kontaktit näkevät tietosi",
+    "Se estää informaatiotulvan",
+    "Se estää henkilöllisyysvarkaudet",
+    "Se vähentää ei-toivottujen vuorovaikutusten aiheuttamaa ahdistusta ja edistää mielenrauhaa"
+  ],
+  "answer": "Se vähentää ei-toivottujen vuorovaikutusten aiheuttamaa ahdistusta ja edistää mielenrauhaa"
+},
+"4.3 M3": {
+  "question": "Mikä seuraavista kuvaa parhaiten, miten digiosaaminen voi tukea psyykkistä ja sosiaalista hyvinvointia?",
+  "options": [
+    "Mahdollistaa nopeamman internet-selailun",
+    "Auttaa tunnistamaan ja välttämään verkon riskejä, kuten misinformaatiota tai haitallista sisältöä",
+    "Mahdollistaa jatkuvan somen käytön ilman emotionaalisia seurauksia",
+    "Varmistaa, että kaikki verkkosisältö on suodatettua ja turvallista"
+  ],
+  "answer": "Auttaa tunnistamaan ja välttämään verkon riskejä, kuten misinformaatiota tai haitallista sisältöä"
+},
+"4.3 M4": {
+  "question": "Mikä toimenpide auttaa luomaan muille turvallisen ja inklusiivisen digitaalisen ympäristön?",
+  "options": [
+    "Ystävien henkilötietojen jakaminen julkisilla alustoilla",
+    "Sopimattoman sisällön tai käytöksen raportoiminen",
+    "Vuorovaikutuksen välttäminen tuntemattomien kanssa",
+    "Negatiivisten viestien sivuuttaminen konfliktin välttämiseksi"
+  ],
+  "answer": "Sopimattoman sisällön tai käytöksen raportoiminen"
+},
+"4.3 M5": {
+  "question": "Mikä on useiden tutkimusten mukaan pitkittyneen sosiaalisen median käytön vaikutus mielenterveyteen?",
+  "options": [
+    "Se voi parantaa itsetuntoa",
+    "Se parantaa sosiaalisia taitoja",
+    "Se voi lisätä masennuksen ja ahdistuksen riskiä",
+    "Se vähentää yksinäisyyttä virtuaalisessa vuorovaikutuksessa"
+  ],
+  "answer": "Se voi lisätä masennuksen ja ahdistuksen riskiä"
+},
+"4.3 M6": {
+  "question": "Miten digiteknologiat voivat edistää haavoittuvien ryhmien sosiaalista osallisuutta?",
+  "options": [
+    "Mahdollistamalla heidän haavoittuvuuksiensa laajemman julkisen esilletuon",
+    "Tarjoamalla turvallisia alustoja tuelle ja viestinnälle muiden kanssa",
+    "Rajaamalla pääsyn sosiaalisiin verkostoihin turvallisuussyistä",
+    "Sallimalla vuorovaikutuksen vain ammattilaisten kanssa"
+  ],
+  "answer": "Tarjoamalla turvallisia alustoja tuelle ja viestinnälle muiden kanssa"
+},
+"4.4 B1": {
+  "question": "Mikä seuraavista käytännöistä auttaa suojelemaan ympäristöä?",
+  "options": [
+    "Sähköromun hävittäminen epäasianmukaisesti",
+    "Energiatehokkaiden laitteiden käyttäminen ja vanhojen elektroniikkojen kierrättäminen",
+    "Uusien laitteiden ostaminen usein",
+    "Ohjelmistopäivitysten ohittaminen sähkön säästämiseksi"
+  ],
+  "answer": "Energiatehokkaiden laitteiden käyttäminen ja vanhojen elektroniikkojen kierrättäminen"
+},
+"4.4 B2": {
+  "question": "Mikä seuraavista lisää digitaalisten teknologioiden ympäristövaikutuksia?",
+  "options": [
+    "Datan tallentaminen omille kiintolevyille",
+    "Automaattisesti päivittyvien ohjelmistojen käyttö",
+    "Laitteiden lataaminen aurinkoenergialla",
+    "Datakeskusten korkea energiankulutus"
+  ],
+  "answer": "Datakeskusten korkea energiankulutus"
+},
+"4.4 B3": {
+  "question": "Mitä tarkoittaa 'digitaalinen hiilijalanjälki'?",
+  "options": [
+    "Fyysisten palvelimien käyttämiseen vaadittua energiaa",
+    "Digitaalisen toiminnan aiheuttamia kokonaiskasvihuonekaasupäästöjä",
+    "Se, kuinka paljon laite voi tallentaa dataa hiilelle",
+    "Henkilön omistamien digitaalisten laitteiden lukumäärää"
+  ],
+  "answer": "Digitaalisen toiminnan aiheuttamia kokonaiskasvihuonekaasupäästöjä"
+},
+"4.4 B4": {
+  "question": "Mikä seuraavista käytännöistä vähentää sähköromua (e-waste)?",
+  "options": [
+    "Vanhentuneiden laitteiden säännöllinen korvaaminen uusilla",
+    "Vanhojen elektroniikkalaitteiden kierrättäminen tai lahjoittaminen",
+    "Vanhat laitteet roskikseen",
+    "Vain kertakäyttöisten paristojen käyttäminen"
+  ],
+  "answer": "Vanhojen elektroniikkalaitteiden kierrättäminen tai lahjoittaminen"
+},
+"4.4 B5": {
+  "question": "Mikä digitaalisen teknologian osa-alue aiheuttaa suurimman ympäristövaikutuksen?",
+  "options": [
+    "Datakeskusten energiankulutus",
+    "Älypuhelimen näytön tarkkuus",
+    "Kiintolevyn tallennuskapasiteetti",
+    "Käyttöliittymien visuaalinen suunnittelu"
+  ],
+  "answer": "Datakeskusten energiankulutus"
+},
+"4.4 B6": {
+  "question": "Miten yksilöt voivat pienentää digitaalista hiilijalanjälkeään?",
+  "options": [
+    "Käyttämällä useita laitteita samanaikaisesti",
+    "Sammuttamalla laitteet, kun ne eivät ole käytössä",
+    "Päivittämällä usein uusimpiin malleihin",
+    "Poistamalla käyttämättömät sovellukset"
+  ],
+  "answer": "Sammuttamalla laitteet, kun ne eivät ole käytössä"
+},
+"4.4 M1": {
+  "question": "Mikä käytäntö auttaa minimoimaan sähköromun ympäristövaikutuksia?",
+  "options": [
+    "Elektroniikkalaitteiden tiheä vaihtaminen",
+    "Elektroniikan hävittäminen tavalliseen sekajätteeseen",
+    "Vanhentuneen elektroniikan asianmukainen kierrätys",
+    "Vanhojen laitteiden säilyttäminen laatikoissa"
+  ],
+  "answer": "Vanhentuneen elektroniikan asianmukainen kierrätys"
+},
+"4.4 M2": {
+  "question": "Mikä on suurin ympäristöhuoli digitaalisten laitteiden valmistuksessa?",
+  "options": [
+    "Korkea energiankulutus käytön aikana",
+    "Valmistuksessa käytettävien harvinaisten mineraalien louhinta",
+    "Laitteiden lyhyt käyttöikä",
+    "Kierrätettävien pakkausmateriaalien käyttö"
+  ],
+  "answer": "Valmistuksessa käytettävien harvinaisten mineraalien louhinta"
+},
+"4.4 M3": {
+  "question": "Mikä seuraavista strategioista voi pienentää ohjelmistokehityksen ympäristövaikutuksia?",
+  "options": [
+    "Kehittää entistä monimutkaisempia sovelluksia",
+    "Optimoida koodi energiatehokkaaksi",
+    "Edellyttää tiheitä laitteistopäivityksiä",
+    "Lisätä käyttäjien määrää"
+  ],
+  "answer": "Optimoida koodi energiatehokkaaksi"
+},
+"4.4 M4": {
+  "question": "Miten puolijohteiden valmistus vaikuttaa ympäristöön?",
+  "options": [
+    "Se tuottaa runsaasti sähköromua",
+    "Se vaatii suuria määriä vettä ja energiaa",
+    "Se lisää kierrätyskustannuksia",
+    "Se vähentää harvinaisten maametallien kysyntää"
+  ],
+  "answer": "Se vaatii suuria määriä vettä ja energiaa"
+},
+"4.4 M5": {
+  "question": "Mikä on keskeinen tekijä digitaalisten palveluiden ympäristökestävyydessä?",
+  "options": [
+    "Alustan käyttäjämäärä",
+    "Taustalla olevan infrastruktuurin energiatehokkuus",
+    "Käyttäjälaitteiden muistimäärä",
+    "Käytetty internet-yhteystyyppi"
+  ],
+  "answer": "Taustalla olevan infrastruktuurin energiatehokkuus"
+},
+"4.4 M6": {
+  "question": "Mikä seuraavista digitaalisista käytännöistä voi lisätä ympäristövaikutuksia?",
+  "options": [
+    "Uusiutuvalla energialla toimivan pilvitallennuksen käyttö",
+    "Energiasäästöominaisuuksien toteuttaminen ohjelmistoihin",
+    "Suurten käyttämättömien datamäärien säilyttäminen verkossa",
+    "Datakeskusten energiatehokkaiden jäähdytysratkaisujen hyödyntäminen"
+  ],
+  "answer": "Suurten käyttämättömien datamäärien säilyttäminen verkossa"
+},
+
+    "5.1 B1": {
+        "question": "Mikä on ensimmäinen askel vianetsinnässä, jos laite ei käynnisty?",
+        "options": [
+        "Vaihda akku",
+        "Tarkista virtalähde",
+        "Tee tehdasasetusten palautus",
+        "Päivitä ohjelmisto"
+        ],
+        "answer": "Tarkista virtalähde"
+    },
+    "5.1 B2": {
+        "question": "Mitä sinun tulisi tehdä ensin, kun laite ei toimi odotetusti?",
+        "options": [
+        "Panikoida ja soittaa tukeen",
+        "Havainnoida ongelmaa ja kirjata virheilmoitukset",
+        "Käynnistää laite uudelleen ilman tarkistuksia"
+        ],
+        "answer": "Havainnoida ongelmaa ja kirjata virheilmoitukset"
+    },
+    "5.1 B3": {
+        "question": "Mikä seuraavista on yleinen syy laitteen ylikuumenemiseen?",
+        "options": [
+        "Liian monta sovellusta käynnissä",
+        "Heikko akku",
+        "Nopea internet-yhteys",
+        "Vanhentunut ohjelmisto"
+        ],
+        "answer": "Liian monta sovellusta käynnissä"
+    },
+    "5.1 B4": {
+        "question": "Laite, joka jumittuu latausnäyttöön, voi vaatia tehdasasetusten palautuksen ongelman ratkaisemiseksi.",
+        "options": ["Tosi", "Epätosi"],
+        "answer": "Tosi"
+    },
+    "5.1 B5": {
+        "question": "Kun kohtaat ongelmia ohjelmiston kanssa, ensimmäinen askel on tarkistaa ______-päivitykset, koska ne sisältävät usein korjauksia.",
+        "options": ["Laitteisto", "Näyttö", "Ohjelmisto", "Sovellus"],
+        "answer": "Ohjelmisto"
+    },
+    "5.1 B6": {
+        "question": "Mikä työkalu auttaa diagnosoimaan verkkoyhteysongelmia?",
+        "options": [
+        "Tehtävienhallinta",
+        "Laitehallinta",
+        "Komentokehote",
+        "Ohjauspaneeli"
+        ],
+        "answer": "Komentokehote"
+    },
+    "5.1 M1": {
+        "question": "Et pääse yhdelle verkkosivulle, mutta muut saman verkon laitteet pääsevät. Mikä on loogisin seuraava askel?",
+        "options": [
+        "Käynnistä reititin uudelleen",
+        "Tyhjennä selaimen välimuisti",
+        "Asenna käyttöjärjestelmä uudelleen",
+        "Tarkista haittaohjelmat"
+        ],
+        "answer": "Tyhjennä selaimen välimuisti"
+    },
+    "5.1 M2": {
+        "question": "Millä komennolla testataan isännän tavoitettavuutta verkossa?",
+        "options": ["ipconfig", "ping", "tracert", "netstat"],
+        "answer": "ping"
+    },
+    "5.1 M3": {
+        "question": "Sovellus kaatuu satunnaisesti. Mitkä lokit ovat hyödyllisimmät vianmääritykseen?",
+        "options": [
+        "Tapahtumienvalvonta (Windows) tai Console Logs (Mac)",
+        "Laitehallinnan lokit",
+        "Levytoiminnan lokit",
+        "Näytön kirkkaus -lokit"
+        ],
+        "answer": "Tapahtumienvalvonta (Windows) tai Console Logs (Mac)"
+    },
+    "5.1 M4": {
+        "question": "Mikä seuraavista EI ole todennäköinen syy Wi-Fi-yhteysongelmaan?",
+        "options": [
+        "Muiden laitteiden aiheuttamat häiriöt",
+        "Väärin syötetty salasana",
+        "Poiskytketty Ethernet-portti",
+        "Vanhentunut reitittimen laiteohjelmisto"
+        ],
+        "answer": "Poiskytketty Ethernet-portti"
+    },
+    "5.1 M5": {
+        "question": "Jos järjestelmä ilmoittaa ”No Bootable Device Found”, mikä on todennäköisin syy?",
+        "options": [
+        "Irtikytketty kiintolevy",
+        "Ohjelmistokonflikti",
+        "Heikko akun varaus",
+        "Vanhentunut käyttöjärjestelmä"
+        ],
+        "answer": "Irtikytketty kiintolevy"
+    },
+    "5.1 M6": {
+        "question": "Kun kohtaat Windowsin sinisen kuolemanruudun (BSOD), mikä on kriittisin ensimmäinen toimenpide?",
+        "options": [
+        "Kirjaa ylös näytöllä näkyvä virhekoodi",
+        "Tee puhdas käyttöjärjestelmän uudelleenasennus",
+        "Vaihda laitteisto välittömästi"
+        ],
+        "answer": "Kirjaa ylös näytöllä näkyvä virhekoodi"
+    },
+
+    "5.2 B1": {
+        "question": "Mikä seuraavista digitaalisista työkaluista tukee parhaiten käyttäjää, jonka käsien motoriikka on rajoittunut?",
+        "options": [
+        "Perinteinen näppäimistö",
+        "Kosketusnäyttö",
+        "Puheentunnistusohjelmisto",
+        "Hiiri erittäin herkällä asetuksella"
+        ],
+        "answer": "Puheentunnistusohjelmisto"
+    },
+    "5.2 B2": {
+        "question": "Onko seuraava väite tosi vai epätosi? ”Ruudunlukuohjelmat on suunniteltu auttamaan rajoittuneesta liikkuvuudesta kärsiviä lukemalla näytön sisällön ääneen.”",
+        "options": ["Tosi", "Epätosi"],
+        "answer": "Epätosi"
+    },
+    "5.2 B3": {
+        "question": "Mikä ominaisuus auttaa näkörajoitteisia käyttämään digitaalisia työkaluja tehokkaammin?",
+        "options": [
+        "Yötila",
+        "Ruudunlukuominaisuus",
+        "Suorituskykyinen suoritin"
+        ],
+        "answer": "Ruudunlukuominaisuus"
+    },
+    "5.2 B4": {
+        "question": "Mistä kannattaa aloittaa, jos haluat varmistaa oikeat saavutettavuusasetukset digitaalisessa työympäristössäsi?",
+        "options": [
+        "Päivitä käyttöjärjestelmä",
+        "Tarkista laitteen saavutettavuusasetukset",
+        "Poista kaikki järjestelmäilmoitukset",
+        "Lisää näytön kirkkautta"
+        ],
+        "answer": "Tarkista laitteen saavutettavuusasetukset"
+    },
+    "5.2 B5": {
+        "question": "Onko seuraava väite tosi vai epätosi? ”Tumman tilan käyttö voi vähentää joidenkin käyttäjien silmien rasitusta.”",
+        "options": ["Tosi", "Epätosi"],
+        "answer": "Tosi"
+    },
+    "5.2 B6": {
+        "question": "Mikä seuraavista kuvaa parhaiten alustaa, joka mahdollistaa ei-kaupalliset siirrot, kuten lahjoittamisen tai antamisen?",
+        "options": [
+        "Verkkokauppa",
+        "Sosiaalisen median alusta",
+        "Joukkorahoitussivusto",
+        "Verkkomarkkinapaikka"
+        ],
+        "answer": "Joukkorahoitussivusto"
+    },
+    "5.2 M1": {
+        "question": "Mikä on lohkoketjuteknologian ensisijainen rooli transaktion turvallisuuden parantamisessa verkossa?",
+        "options": [
+        "Se keskittää käyttäjätiedot helpompaa pääsyä varten.",
+        "Se luo julkisen, muuttumattoman pääkirjan kaikista tapahtumista.",
+        "Se nopeuttaa tapahtumia poistamalla varmistusvaiheet.",
+        "Se mahdollistaa rajattoman tietovarastoinnin ilman kustannuksia."
+        ],
+        "answer": "Se luo julkisen, muuttumattoman pääkirjan kaikista tapahtumista."
+    },
+    "5.2 M2": {
+        "question": "Mihin UX-räätälöinti tyypillisesti keskittyy kehittyneissä digitaalisissa ympäristöissä?",
+        "options": [
+        "Laitteistoyhteensopivuuteen",
+        "Käyttöprosessien ja saavutettavuuden parantamiseen yksilöllisten mieltymysten mukaan",
+        "Työkalun vaihtoehtojen vähentämiseen"
+        ],
+        "answer": "Käyttöprosessien ja saavutettavuuden parantamiseen yksilöllisten mieltymysten mukaan"
+    },
+    "5.2 M3": {
+        "question": "Jos värisokea käyttäjä tarvitsee erottaa värejä verkkosivulla, mikä asetusmuutos auttaa parhaiten?",
+        "options": [
+        "Laske näytön kirkkautta",
+        "Ota saavutettavuusasetuksista käyttöön suuri kontrasti tai värikorjaus",
+        "Käytä kynää tekstin korostamiseen",
+        "Päivitä selain"
+        ],
+        "answer": "Ota saavutettavuusasetuksista käyttöön suuri kontrasti tai värikorjaus"
+    },
+    "5.2 M4": {
+        "question": "Onko seuraava väite tosi vai epätosi? ”Mukautettavat näppäimistöt voidaan säätää tukemaan heikentynyttä motoriikkaa, esimerkiksi suurentamalla näppäimiä tai käyttämällä ennakoivaa tekstiä.”",
+        "options": ["Tosi", "Epätosi"],
+        "answer": "Tosi"
+    },
+    "5.2 M5": {
+        "question": "Mikä työkalu tukee parhaiten käyttäjää, jolla on vaikeuksia lukea pientä tekstiä näytöltä näkörajoitteen vuoksi?",
+        "options": [
+        "Puheesta tekstiksi -ohjelma",
+        "Näytönsuurennus tai zoomaus",
+        "Suuri kontrasti -tila",
+        "Suurifonttinen näppäimistö"
+        ],
+        "answer": "Näytönsuurennus tai zoomaus"
+    },
+    "5.2 M6": {
+        "question": "Onko seuraava väite tosi vai epätosi? ”Suuren kontrastin tila parantaa saavutettavuutta kaikille käyttäjille riippumatta näkörajoitteista.”",
+        "options": ["Tosi", "Epätosi"],
+        "answer": "Epätosi"
+    },
+
+    "5.3 B1": {
+        "question": "Mikä digitaalinen työkalu on tehokkain ideoiden yhteiseen aivoriiheen reaaliajassa?",
+        "options": [
+        "Tekstinkäsittelyohjelma",
+        "Taulukkolaskentaohjelma",
+        "Verkkopohjainen miellekarttatyökalu",
+        "Kuvankäsittelyohjelma"
+        ],
+        "answer": "Verkkopohjainen miellekarttatyökalu"
+    },
+    "5.3 B2": {
+        "question": "Mikä IoT-teknologiaa hyödyntävä ratkaisu on yleinen energian kulutuksen optimointiin älykodeissa?",
+        "options": [
+        "Älytermostaatit",
+        "VR-lasit",
+        "Bluetooth-kaiuttimet",
+        "Aktiivisuusrannekkeet"
+        ],
+        "answer": "Älytermostaatit"
+    },
+    "5.3 B3": {
+        "question": "Mikä seuraavista on esimerkki IoT-laitteesta?",
+        "options": [
+        "Pöytätietokone",
+        "Älyjääkaappi",
+        "Perinteinen herätyskello",
+        "Simpukkapuhelin"
+        ],
+        "answer": "Älyjääkaappi"
+    },
+    "5.3 B4": {
+        "question": "Mikä työkalu sopii parhaiten esityksen suunnitteluun?",
+        "options": ["Microsoft Excel", "Canva", "Zoom"],
+        "answer": "Canva"
+    },
+    "5.3 B5": {
+        "question": "Onko seuraava väite tosi vai epätosi? ”Verkkopohjaiset aivoriihityökalut eivät mahdollista yhteistoiminnallista panosta ja soveltuvat vain yksintyöskentelyyn.”",
+        "options": ["Tosi", "Epätosi"],
+        "answer": "Epätosi"
+    },
+    "5.3 B6": {
+        "question": "Mikä seuraavista digitaalisista työkaluista on tehokkain tuotteen nopeaan prototyyppaukseen ja validointiin startup-ympäristössä?",
+        "options": [
+        "Tekstinkäsittelyohjelma",
+        "Projektinhallintatyökalut",
+        "3D-tulostustekniikka",
+        "Sosiaalisen median analytiikka"
+        ],
+        "answer": "3D-tulostustekniikka"
+    },
+    "5.3 M1": {
+        "question": "Mikä alusta tunnetaan erityisesti kattavista työkaluista IoT-sovellusten rakentamiseen ja hallintaan (laitteiden hallinta, data-analytiikka, tietoturva)?",
+        "options": [
+        "AWS IoT Core",
+        "Microsoft Word",
+        "Adobe Photoshop",
+        "Salesforce CRM"
+        ],
+        "answer": "AWS IoT Core"
+    },
+    "5.3 M2": {
+        "question": "Mikä digitaalinen työkalu tukee parhaiten projektisuunnitelmien hallintaa ja idean viemistä konkreettisiksi toimenpiteiksi?",
+        "options": [
+        "Grafiikkaohjelmisto",
+        "Pilvipohjaiset projektinhallintatyökalut",
+        "Blogialustat",
+        "Sähköpostimarkkinointipalvelut"
+        ],
+        "answer": "Pilvipohjaiset projektinhallintatyökalut"
+    },
+    "5.3 M3": {
+        "question": "Mikä kombinaatio on yleensä tehokkain luovassa, yhteistoiminnallisessa ohjelmistokehitysongelman ratkaisussa?",
+        "options": [
+        "Tehtävienhallintatyökalu ja yhteiskehitysalusta (kuten GitHub)",
+        "Sähköposti ja offline-kalenteri",
+        "Perinteinen tiedostotallennus ja taulukkolaskenta",
+        "Muistiinpanosovellus ja sosiaalinen media"
+        ],
+        "answer": "Tehtävienhallintatyökalu ja yhteiskehitysalusta (kuten GitHub)"
+    },
+    "5.3 M4": {
+        "question": "Suunnittelet digitaalista alustaa yhteisön resurssien jakamiseen. Mikä seuraavista on tärkeintä käyttäjien luottamuksen ja sitoutumisen varmistamiseksi?",
+        "options": [
+        "Huippuluokan grafiikat ja käyttöliittymä",
+        "Vahvat tietosuojakäytännöt ja läpinäkyvät käyttöehdot",
+        "Some-integraatiot markkinointiin",
+        "Monimutkainen rekisteröitymisprosessi"
+        ],
+        "answer": "Vahvat tietosuojakäytännöt ja läpinäkyvät käyttöehdot"
+    },
+    "5.3 M5": {
+        "question": "Millä teknologioilla voidaan prototypoida ja testata innovatiivisia tuoteideoita?",
+        "options": [
+        "3D-mallinnusohjelmat (esim. Blender)",
+        "Virtuaalitodellisuusympäristöt",
+        "Tekoälypohjaiset generatiivisen suunnittelun työkalut",
+        "Kaikki edellä mainitut"
+        ],
+        "answer": "Kaikki edellä mainitut"
+    },
+    "5.3 M6": {
+        "question": "Mikä käytäntö edistää parhaiten monipuolisia näkökulmia ja tiimin luovuutta yhteisöllisessä ongelmanratkaisussa?",
+        "options": [
+        "Tiukka hierarkia päätöksenteossa",
+        "Säännölliset aivoriihisessiot ilman arviointia",
+        "Osallistuminen vain asiantuntijoille",
+        "Avoin vuoropuhelu ja design thinking -menetelmien käyttö"
+        ],
+        "answer": "Avoin vuoropuhelu ja design thinking -menetelmien käyttö"
+    },
+
+    "5.4 B1": {
+        "question": "Mikä seuraavista on ratkaiseva ensimmäinen askel omien digitaalisten osaamisvajeiden tunnistamisessa?",
+        "options": [
+        "Palaute muilta",
+        "Oman osaamisen itsearviointi",
+        "Sertifiointikokeen suorittaminen",
+        "Keskittyminen vain uusiin teknologioihin"
+        ],
+        "answer": "Oman osaamisen itsearviointi"
+    },
+    "5.4 B2": {
+        "question": "Onko seuraava väite tosi vai epätosi? Digitaalisten osaamisvajeiden tunnistaminen koskee vain teknologiapainotteisia rooleja.",
+        "options": ["Tosi", "Epätosi"],
+        "answer": "Epätosi"
+    },
+    "5.4 B3": {
+        "question": "Mitä on kyberturvallisuus?",
+        "options": [
+        "Verkko-uhkien ymmärtämistä ja suojatoimia",
+        "Kykyä käyttää verkko-työkaluja sisällöntuotantoon",
+        "Luotettavan tiedon tunnistamista digitaalisesta lähteestä"
+        ],
+        "answer": "Verkko-uhkien ymmärtämistä ja suojatoimia"
+    },
+    "5.4 B4": {
+        "question": "Mikä on digitaalisten osaamisvajeiden tunnistamisen tarkoitus?",
+        "options": [
+        "Pysytellä muiden tasolla",
+        "Pysyä ajan tasalla kehittyvän teknologian mukana",
+        "Suorittaa pakolliset todistukset",
+        "Välttää teknologian käyttöä"
+        ],
+        "answer": "Pysyä ajan tasalla kehittyvän teknologian mukana"
+    },
+    "5.4 B5": {
+        "question": "Mikä on paras tapa auttaa toista tunnistamaan omat digitaalisen osaamisen kehityskohteet?",
+        "options": [
+        "Oletetaan, ettei perustaidoissa tarvita apua",
+        "Kysy hänen konkreettisista digitehtävistään ja haasteistaan",
+        "Annetaan lista digitehtäviä tehtäväksi yksin",
+        "Vältetään palautetta ja keskitytään vain tekniikkaan"
+        ],
+        "answer": "Kysy hänen konkreettisista digitehtävistään ja haasteistaan"
+    },
+    "5.4 B6": {
+        "question": "Onko seuraava väite tosi vai epätosi? Kun olet tunnistanut osaamisvajeet, seuraava askel on siirtyä suoraan edistyneisiin koulutuksiin ilman perustaitojen huomiointia.",
+        "options": ["Tosi", "Epätosi"],
+        "answer": "Epätosi"
+    },
+    "5.4 M1": {
+        "question": "Mikä on tehokkain ensimmäinen askel omien digitaalisten osaamisvajeiden tunnistamiseen?",
+        "options": [
+        "Oleta, että taitosi riittävät kaikkeen.",
+        "Käytä itsearviointityökalua, kuten DigComp-viitekehystä",
+        "Odota, että joku muu osoittaa heikkoutesi."
+        ],
+        "answer": "Käytä itsearviointityökalua, kuten DigComp-viitekehystä"
+    },
+    "5.4 M2": {
+        "question": "Miten on suositeltavaa pysyä ajan tasalla digitrendeistä?",
+        "options": [
+        "Osallistumalla säännöllisesti konferensseihin, verkkokursseille ja webinaareihin",
+        "Luottamalla vain aiempaan kokemukseen",
+        "Välttämällä sosiaalista mediaa ja digiuutisia",
+        "Odottaa työnantajan pakollisia koulutuksia"
+        ],
+        "answer": "Osallistumalla säännöllisesti konferensseihin, verkkokursseille ja webinaareihin"
+    },
+    "5.4 M3": {
+        "question": "Onko seuraava väite tosi vai epätosi? Toisten tukeminen digiosaamisessa edellyttää heidän taitojensa arviointia ja jatkuvan kehittymisen rohkaisemista.",
+        "options": ["Tosi", "Epätosi"],
+        "answer": "Tosi"
+    },
+    "5.4 M4": {
+        "question": "Mikä kuvaa lähestymistapaa oman digiosaamisen seuraamiseen ja kehittämiseen ajan mittaan?",
+        "options": [
+        "Käytä vain ilmaisia perustason kursseja",
+        "Aseta tavoitteet, pyydä palautetta ja arvioi edistymistä säännöllisesti",
+        "Nojaa kollegoiden epäviralliseen tietoon",
+        "Tee samoja rutiinitehtäviä päivittäin muuttamatta mitään"
+        ],
+        "answer": "Aseta tavoitteet, pyydä palautetta ja arvioi edistymistä säännöllisesti"
+    },
+    "5.4 M5": {
+        "question": "Mitä tulisi välttää kollegaa auttaessa hänen digiosaamisensa kehittämisessä?",
+        "options": [
+        "Tarjota rakenteisia oppimissisältöjä",
+        "Asettaa selkeät oppimistavoitteet",
+        "Antaa ohittaa perustaidot",
+        "Kannustaa säännölliseen palautteeseen"
+        ],
+        "answer": "Antaa ohittaa perustaidot"
+    },
+    "5.4 M6": {
+        "question": "Mikä seuraavista ei pidä paikkaansa?",
+        "options": [
+        "Verkkokurssit tarjoavat rakenteen tiettyjen taitojen kehittämiseen",
+        "Digimentori antaa henkilökohtaista neuvontaa ja näkemyksiä vahvuuksista/heikkouksista",
+        "Toimialauutisten tilaus pitää tiedot ajantasaisina",
+        "Digimentori pitää tiedot ajantasaisina ajankohtaisilla uutisilla"
+        ],
+        "answer": "Digimentori pitää tiedot ajantasaisina ajankohtaisilla uutisilla"
+    }
+}
+}

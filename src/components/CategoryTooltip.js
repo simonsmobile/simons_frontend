@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
 
 const AutoCyclingTooltip = ({
   children,
@@ -13,6 +15,7 @@ const AutoCyclingTooltip = ({
   const [position, setPosition] = useState({ top: 0, left: 0 });
   const tooltipRef = useRef(null);
   const elementRef = useRef(null);
+  const {t} = useTranslation();
 
   const updatePosition = () => {
     if (elementRef.current && tooltipRef.current) {
@@ -83,6 +86,9 @@ const CategoryTooltip = ({
   const intervalRef = useRef(null);
   const timeoutRef = useRef(null);
 
+    const {t} = useTranslation();
+
+
   useEffect(() => {
     if (!isManualHover) {
       intervalRef.current = setInterval(() => {
@@ -148,17 +154,18 @@ const CategoryTooltip = ({
   return (
     <div className="mb-6">
       <h3 className="text-lg font-medium text-gray-900 mb-5">
-        Category Progress
+        {t('category_progress')}
       </h3>
       <div className="grid grid-cols-5 gap-2">
         {categories.map((category, index) => {
           const isCompleted = completedCategories.includes(category.id);
           const shouldShowTooltip = getTooltipIndex() === index;
+          const indexPlusOne = index + 1;
 
           return (
             <AutoCyclingTooltip
               key={category.id}
-              content={categoryNames[index]}
+              content={ t('competence_areas.'+indexPlusOne+'.name')}
               index={index}
               totalItems={categories.length}
               isHovered={shouldShowTooltip}
@@ -187,9 +194,8 @@ const CategoryTooltip = ({
         })}
       </div>
       <div className="mt-2 text-sm text-gray-600 text-center">
-        <span className="font-medium">{completedCategories.length}</span> of{" "}
-        <span className="font-medium">{categories.length}</span> categories
-        completed
+        <span className="font-medium">{completedCategories.length}</span> {t('of')} {" "}
+        <span className="font-medium">{categories.length}</span> {t('categories_completed')}
       </div>
     </div>
   );

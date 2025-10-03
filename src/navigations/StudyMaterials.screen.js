@@ -5,7 +5,13 @@ import { FaChevronLeft } from "react-icons/fa";
 import { MdOutlineQuiz } from "react-icons/md";
 import ReactPlayer from "react-player";
 
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
+
+
+
 const StudyMaterialsScreen = () => {
+  const { t, i18n } = useTranslation();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -15,7 +21,12 @@ const StudyMaterialsScreen = () => {
   const subCategoryIdentifier = sub?.category;
 
   const currentLevelIdentifier = level === "basic" ? "basic" : "master";
+  const languageIdentiifer = i18n.language;
 
+ // console.log(subCategoryIdentifier + "->" + currentLevelIdentifier);
+  const translatedMaterialIdentifier = "learning_material." + subCategoryIdentifier + "." + currentLevelIdentifier;
+  console.log(translatedMaterialIdentifier);
+  // console.log(languageIdentiifer);
   const getMaterial = (material, levelId, typeId) => {
     if (!material || !Array.isArray(material)) {
       console.warn("LEARNING_MATERIAL is not available or not an array");
@@ -45,14 +56,17 @@ const StudyMaterialsScreen = () => {
   });
 
   const videoSrc = subCategoryIdentifier
-    ? `${process.env.PUBLIC_URL}/videos/${subCategoryIdentifier}-${currentLevelIdentifier}.mp4`
+    ? `${process.env.PUBLIC_URL}/videos/${i18n.language}/${subCategoryIdentifier}-${currentLevelIdentifier}.mp4`
     : null;
+  // console.log(videoSrc);
   const urls = learning_material?.links || [];
-  const textContent =
-    learning_material?.text || "No description available for this section.";
-  const displayLevel = level === "basic" ? "Level 1" : "Level 2";
-  const displayTitle = category || "Study Material";
-  const subTitle = sub ? `${sub.title}` : "";
+  //const textContent =
+   // learning_material?.text || "No description available for this section.";
+  const translatedTextContent = t(learning_material.id);
+  //  t(learning_material.type.level) || "No description available for this section.";
+  const displayLevel = level === "basic" ? t('level_1') : t('level_2');
+  const displayTitle = t(category) || t('study_material');
+  const subTitle = sub ? `${t(sub.title)}` : "";
 
   const handleTakeTest = () => {
     navigate("/sub-quest", { state: { index, level, category, sub, grade } });
@@ -159,7 +173,7 @@ const StudyMaterialsScreen = () => {
               className="flex items-center justify-center px-4 py-3 bg-gray-200 text-gray-800 font-medium rounded-md hover:bg-gray-300 transition-colors duration-300 text-sm"
             >
               <FaChevronLeft className="mr-2" />
-              Return to Dashboard
+              {t('return_to_dashboard')}
             </button>
             <button
               onClick={handleTakeTest}
@@ -167,23 +181,23 @@ const StudyMaterialsScreen = () => {
               className="flex items-center justify-center px-4 py-3 bg-amber-400 text-black font-medium rounded-md shadow-md hover:bg-amber-500 transition-colors duration-300 text-sm disabled:bg-gray-300 disabled:cursor-not-allowed"
             >
               <MdOutlineQuiz className="mr-2 text-lg" />
-              {isCompleted ? "Quiz Completed" : "Take the Quiz"}
+              {isCompleted ? t('quiz_completed') : t('take_the_quiz')}
             </button>
           </div>
 
           <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 md:p-6 mb-6">
             <h3 className="text-base font-semibold text-gray-800 mb-3">
-              Learning Materials
+              {t('learning_materials')}
             </h3>
             <div className="prose prose-sm max-w-none text-gray-600 leading-relaxed">
-              <p>{textContent}</p>
+              <p>{t(translatedMaterialIdentifier)}</p>
             </div>
           </div>
-
+          
           {urls?.length > 0 && (
             <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 md:p-6 mb-8">
               <h3 className="text-base font-semibold text-gray-800 mb-3">
-                Additional Resources
+                {t('additional_resources')}
               </h3>
               <ul className="space-y-2">
                 {urls.map((url, idx) => (

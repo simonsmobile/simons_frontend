@@ -3,9 +3,12 @@ import { useLocation, useNavigate, Link } from "react-router-dom";
 import env from "../configs/env";
 import { translateLevelTerminology } from '../utils/scoring';
 import axios from "axios";
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
 
 const QuestionnaireScreen = () => {
   const location = useLocation();
+  const { t, i18n } = useTranslation(["ui", "questions", "assessment"]);
   const { questionnaire, selectedCategory, isPartialAssessment } =
     location.state || {
       questionnaire: [],
@@ -281,8 +284,11 @@ const QuestionnaireScreen = () => {
   };
 
   const currentQuestion = questionnaire[currentQuestionIndex];
+  //console.log(currentQuestion);
   const selectedAnswerIndex = answers[currentQuestionIndex];
-
+  const translatedCategories = t("competence_areas" , { returnObjects: true });
+  const translatedQuestion = t("assessment." + currentQuestion.title, {ns: "assessment", returnObjects: true });
+  //console.log(translatedQuestion);
   const progressPercentage =
     ((currentQuestionIndex + 1) / questionnaire.length) * 100;
 
@@ -290,15 +296,15 @@ const QuestionnaireScreen = () => {
     const pointsPrefix = Math.floor(points);
     switch (pointsPrefix) {
       case 1:
-        return "Information & Data Literacy";
+        return translatedCategories[1].name;
       case 2:
-        return "Communication & Collaboration";
+        return translatedCategories[2].name;
       case 3:
-        return "Digital Content Creation";
+        return translatedCategories[3].name;
       case 4:
-        return "Safety";
+        return translatedCategories[4].name;
       case 5:
-        return "Problem Solving";
+        return translatedCategories[5].name;
       default:
         return "General";
     }
@@ -306,27 +312,27 @@ const QuestionnaireScreen = () => {
 
   const getQuestionSubcategory = (points) => {
     const categories = {
-      1.1: "Browsing, searching and filtering data",
-      1.2: "Evaluating data",
-      1.3: "Managing data",
-      2.1: "Interacting through digital technologies",
-      2.2: "Sharing information",
-      2.3: "Engaging in citizenship",
-      2.4: "Collaborating through digital technologies",
-      2.5: "Netiquette",
-      2.6: "Managing digital identity",
-      3.1: "Developing digital content",
-      3.2: "Integrating and re-elaborating digital content",
-      3.3: "Copyright and licenses",
-      3.4: "Programming",
-      4.1: "Protecting devices",
-      4.2: "Protecting personal data and privacy",
-      4.3: "Protecting health and well-being",
-      4.4: "Protecting the environment",
-      5.1: "Solving technical problems",
-      5.2: "Identifying needs and technological responses",
-      5.3: "Creatively using digital technologies",
-      5.4: "Identifying digital competence gaps",
+      1.1: t('competence_details_short.1_1.title'),
+      1.2: t('competence_details_short.1_2.title'),
+      1.3: t('competence_details_short.1_3.title'),
+      2.1: t('competence_details_short.2_1.title'),
+      2.2: t('competence_details_short.2_2.title'),
+      2.3: t('competence_details_short.2_3.title'),
+      2.4: t('competence_details_short.2_4.title'),
+      2.5: t('competence_details_short.2_5.title'),
+      2.6: t('competence_details_short.2_6.title'),
+      3.1: t('competence_details_short.3_1.title'),
+      3.2: t('competence_details_short.3_2.title'),
+      3.3: t('competence_details_short.3_3.title'),
+      3.4: t('competence_details_short.3_4.title'),
+      4.1: t('competence_details_short.4_1.title'),
+      4.2: t('competence_details_short.4_2.title'),
+      4.3: t('competence_details_short.4_3.title'),
+      4.4: t('competence_details_short.4_4.title'),
+      5.1: t('competence_details_short.5_1.title'),
+      5.2: t('competence_details_short.5_2.title'),
+      5.3: t('competence_details_short.5_3.title'),
+      5.4: t('competence_details_short.5_4.title'),
     };
 
     return categories[points] || "";
@@ -367,9 +373,9 @@ const QuestionnaireScreen = () => {
             </svg>
           </Link>
           <div className="text-center flex-1">
-            <span className="text-sm text-gray-500">Question</span>
+            <span className="text-sm text-gray-500">{t('question')}</span>
             <h1 className="text-lg font-semibold">
-              {currentQuestionIndex + 1} of {questionnaire.length}
+              {currentQuestionIndex + 1} {t('of')} {questionnaire.length}
             </h1>
           </div>
         </div>
@@ -389,10 +395,10 @@ const QuestionnaireScreen = () => {
 
           <div className="mb-8">
             <h2 className="text-xl font-medium text-gray-900 mb-2">
-              {currentQuestion.question}
+              {translatedQuestion.question}
             </h2>
             <p className="text-sm text-gray-600">
-              Select the option that best describes your level of competence
+              {t('self_assessment_instruction')}
             </p>
           </div>
 
@@ -418,7 +424,7 @@ const QuestionnaireScreen = () => {
                     />
                   </div>
                   <div className="ml-3 text-sm">
-                    <span className="font-medium text-gray-800">{option}</span>
+                    <span className="font-medium text-gray-800">{translatedQuestion.options[index]}</span>
                   </div>
                 </label>
               </div>
@@ -436,7 +442,7 @@ const QuestionnaireScreen = () => {
                   : "bg-white border border-gray-300 text-gray-700 hover:bg-gray-50"
               }`}
             >
-              Back
+              {t('back')}
             </button>
 
             {currentQuestionIndex < questionnaire.length - 1 ? (
@@ -449,7 +455,7 @@ const QuestionnaireScreen = () => {
                     : "bg-black text-white hover:bg-gray-800"
                 }`}
               >
-                Next
+                {t('next')}
               </button>
             ) : (
               <button
@@ -461,7 +467,7 @@ const QuestionnaireScreen = () => {
                     : "bg-black text-white hover:bg-gray-800"
                 }`}
               >
-                {isPartialAssessment ? "Complete" : "Finish"}
+                {isPartialAssessment ? t('complete') : t('finish')}
               </button>
             )}
           </div>

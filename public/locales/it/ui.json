@@ -1,0 +1,502 @@
+{
+  "welcome_message": "Benvenuto, ",
+  "logout": "Esci", 
+  "dashboard": "Cruscotto",
+  "progress_tracker": "Tracciatore di progresso",
+  "dashboard_info": "Il tuo cruscotto delle competenze digitali",
+  "points": "punti",
+  "dashboard_greeting": "Pronto a migliorare? Completa esercizi e quiz per guadagnare più punti",
+  "view_score": "Visualizza punteggio",
+  "competence_overview": "Panoramica delle competenze",
+  "training_exercises": "Esercizi di formazione",
+  "competences": "Competenze",
+  "level_1": "Livello 1",
+  "level_2": "Livello 2",
+  "not_attempted": "Non iniziato", 
+  "take_sa_again": "Rifai l'autovalutazione",
+  "complete_other_categories": "Completa le altre categorie",
+  "confirm_action": "Conferma azione",
+  "confirm_action_text": "Questo eliminerà tutti i tuoi punteggi e progressi esistenti, resetterà la tua posizione in classifica a 0 e cancellerà gli avatar sbloccati. Potrai iniziare l'autovalutazione da zero. Questa azione non può essere annullata. Sei sicuro di voler continuare?",
+  "cancel": "Annulla",
+  "confirm_and_reset": "Conferma e resetta",
+  "placement": "Classifica",
+  "Completed": "Completato",
+  "Locked": "Bloccato", 
+  "Resume": "Riprendi",
+  "Play": "Gioca",
+  "digital_skills_progress": "Progresso nelle competenze digitali",
+  "keep_it_up": "Continua così!",
+  "digital_skills_elite_performer": "Esecutore d'élite delle competenze digitali",
+  "incredible_achievement": "Incredibile risultato raggiungendo 45.000 punti, vicino al punteggio massimo! La tua padronanza quasi perfetta ti posiziona come innovatore digitale.",
+  "digital_skills_advanced_achiever": "Realizzatore avanzato delle competenze digitali",
+  "excellent_work": "Eccellente lavoro raggiungendo 30.000 punti! La tua competenza avanzata dimostra preparazione per compiti accademici complessi e stage.",
+  "digital_skills_rising_star": "Stella nascente delle competenze digitali",
+  "great_job": "Ottimo lavoro raggiungendo 15.000 punti! Hai fatto progressi significativi costruendo una solida base per il successo accademico e professionale.",
+
+  "not_started": "Non iniziato",
+  "level": "Livello",
+
+  "Dashboard": "Cruscotto",
+  "Score": "Punteggio", 
+  "Rank": "Classifica",
+  "Profile": "Profilo",
+
+  "competece_area_label": "Aree di competenza",
+  "points_earned": "punti guadagnati",
+  "total_score": "Punteggio totale",
+  "out_of": "su",
+  "total_points": "{{total_point, number}} punti",
+  "possible_points": " punti possibili",
+  "out_of_total_score": "su {{total_point, number}} punti possibili",
+
+  "congratulations": "Congratulazioni!",
+  "congratulations_long": "Congratulazioni, hai raggiunto {{points, number}} punti!",
+
+  "leaderboard": "Classifica",
+  "your_rank": "La tua posizione",
+  "you": "Tu", 
+  "rank": "Classifica",
+  "avatars": "Avatar",
+  "unlock_avatars": "Sblocca avatar speciali guadagnando punti! Punti attuali:",
+  "bronze": "Bronzo",
+  "silver": "Argento",
+  "gold": "Oro",
+  "diamond": "Diamante",
+  "you_still_need": "Hai ancora bisogno di {{scoresToGo, number}} punti",
+  "avatar_threshold": "{{avatarThreshold, number}} punti", 
+  "avatar_points": "{{user_score, number}}",
+  "unlock_now": "Sblocca ora",
+  "unlocked": "Sbloccato",
+
+  "assessment_status": "Stato dell'autovalutazione",
+  "your_progress": "Il tuo progresso",
+  "progress": "Progresso",
+  "total_available_questions": "Domande disponibili totali",
+  "remaining_questions": "Domande rimanenti",
+  "completed_questions": "Domande completate",
+  "assessment_by_category": "Autovalutazione per categoria",
+  "estimated_time": "Tempo stimato",
+  "minutes": "minuti",
+  "start_assessment": "Inizia la tua autovalutazione per monitorare i progressi",
+  "you_have_completed": "Hai completato {{completedCount}} su {{totalQuestions}} domande",
+  "continue_full": "Continua Autovalutazione Completa",
+  "start_full": "Inizia Autovalutazione Completa",
+  "categories_completed": "categorie completate",
+  "category_progress": "Progresso categoria",
+
+  "go_to_dashboard": "Vai al Cruscotto",
+  "check_progress": "Controlla lo stato dei progressi",
+  "full_assessment_explanation": "L'autovalutazione completa contiene tutte le 82 domande e fornisce una valutazione completa delle tue competenze digitali",
+  "select_one_area": "Seleziona un'area per iniziare",
+  "select_area_explanation": "Scegli una specifica area di competenza o completa l'autovalutazione completa",
+  "self_assessment": "Autovalutazione",
+  "self_assessment_instruction": "Seleziona l'opzione che meglio descrive il tuo livello di competenza",
+
+  "general_settings": "Impostazioni generali",
+  "app_information": "Informazioni",
+  "change_password": "Cambia password",
+  "language": "Lingua",
+  "about_app": "Informazioni sull'app SIMOnS",
+  "terms": "Termini e condizioni",
+  "privacy_policy": "Privacy Policy",
+
+  "lang_settings": "Impostazioni lingua",
+  "select_lang": "Seleziona lingua",
+  "select_lang_message": "Scegli la lingua per l'interfaccia dell'applicazione.",
+  "confirm_selection": "Conferma selezione",
+
+  "forgot_password": "Password dimenticata",
+  "forgot_your_password": "Hai dimenticato la password?",
+  "forgot_password_text": "Inserisci la tua email qui sotto e ti invieremo un codice di verifica per resettare la password.",
+  "email": "Indirizzo email",
+  "email_instruction": "Inserisci la tua email",
+  "send_code": "Invia codice di verifica",
+  "remember_password": "Ricordi la password?",
+  "back_to_login": "Torna al login",
+  "code_sent": "Abbiamo inviato un codice di verifica a {{email}}",
+  "enter_verification": "Inserisci codice di verifica",
+  "verify_code": "Verifica codice",
+  "code_was_sent": "Il codice è stato inviato alla tua email",
+  "failed_to_send": "Invio del codice fallito",
+  "invalid_code": "Codice non valido",
+
+  "login": "Accedi",
+  "welcome_simons": "Benvenuto in SIMOnS!",
+  "password": "Password",
+  "or": "O",
+  "login_with_google": "Accedi con Google",
+  "dont_have_account": "Non hai un account?",
+  "signup": "Registrati",
+
+  "did_not_receive": "Non hai ricevuto il codice?", 
+  "resend_code": "Reinvia codice",
+  "resend_in_seconds": "Reinvia codice tra {{seconds}} secondi",
+
+  "app_explanation": "Uno strumento di auto-riflessione basato sul Quadro Europeo delle Competenze Digitali per i cittadini",
+
+  "sign_with_google": "Registrati con Google",
+
+  "firstname": "Nome",
+  "lastname": "Cognome",
+  "dob": "Data di nascita",
+  "gender": "Seleziona genere",
+  "country": "Seleziona Paese",
+  "university": "Seleziona Università (Opzionale)",
+  "repeat_password": "Conferma Password",
+
+  "male": "Maschio",
+  "female": "Femmina",
+  "other": "Altro",
+
+  "already_account": "Hai già un account?",
+  "join_us": "Unisciti a noi!",
+  "create_account": "Crea Account",
+
+  "study_material": "Materiale di studio",
+  "learning_materials": "Materiale didattico",
+  "return_to_dashboard": "Torna al Cruscotto",
+  "additional_resources": "Risorse aggiuntive",
+  "quiz_completed": "Quiz completato",
+  "take_the_quiz": "Fai il quiz",
+
+  "Level 2": "Livello 2",
+  "Level 1": "Livello 1",
+  "Level 1-2": "Livello 1-2",
+  "question": "Domanda",
+  "of": "di",
+  "base": "Base",
+  "time_running_out": "Tempo in scadenza! {{timeRemaining}} secondi rimanenti",
+  "time_up": "Tempo scaduto! Passiamo alla domanda successiva...",
+  "back": "Indietro",
+  "next": "Avanti",
+  "finish": "Termina",
+  "scoring_info": "Informazioni sul punteggio",
+  "correct_answer": "Risposta corretta: {{basePoints}} punti",
+  "speed_bonus": "Bonus velocità: fino a 50 punti",
+  "perfect_run": "Bonus run perfetta: Punti aggiuntivi per tutte le risposte corrette",
+
+  "processing_results": "Elaborazione risultati",
+  "calculating_score": "Calcolo del tuo punteggio",
+  "quiz_results": "Risultati quiz",
+  "analyzing": "Analizzando le tue prestazioni e i bonus tempo...",
+  "error_processing": "Errore nell'elaborazione dei risultati del quiz",
+  "Try again...": "Riprova...",
+  "Almost there!": "Quasi fatto...",
+  "Excellent work!": "Ottimo lavoro!",
+  "you_earned": "Hai guadagnato: +{{totalScore}} punti",
+  "score_breakdown": "Dettaglio punteggio",
+  "correct_answers": "Risposte corrette",
+  "speed_bonus_earned": "Bonus velocità",
+  "perfect_score_bonus": "Bonus punteggio perfetto",
+  "what_went_wrong": "Cosa è andato storto?",
+  "correct": "Corretto",
+  "incorrect": "Errato",
+  "missed_opportunity": "Opportunità mancata",
+  "missed_explanation": "Avresti potuto guadagnare altri {{lostOpportunity}} punti con risposte corrette",
+  "review_material": "Rivedi materiali didattici",
+  "retake_quiz": "Rifai il quiz",
+  "You answered 0/3 correctly": "Hai risposto correttamente a 0/3",
+  "You answered 1/3 correctly": "Hai risposto correttamente a 1/3",
+  "You answered 2/3 correctly": "Hai risposto correttamente a 2/3",
+  "You answered 3/3 correctly": "Hai risposto correttamente a 3/3",
+  "Perfect score!": "Punteggio perfetto!",
+
+  "questions_answered": "Domande risposte in questa sessione",
+  "succesfully_completed_questions": "Hai completato con successo {{completedCount}} domande.",
+  "complete_others": "Completa le altre per finalizzare la tua autovalutazione.",
+  "starting_level_determined": "I tuoi livelli iniziali per tutte le competenze sono stati determinati.",
+  "category_completed": "Autovalutazione per questa categoria completata!",
+  "full_completed": "Autovalutazione completa completata!",
+  "processing_selfassessment": "Elaborazione della tua autovalutazione",
+  "please_wait": "Attendere mentre analizziamo le tue risposte.",
+  "results": "Risultati",
+  "continue_to_other": "Continua con le altre categorie",
+  "next_steps": "Prossimi passi",
+  "self_assessment_complete": "La tua autovalutazione è completa! Puoi ora procedere al tuo cruscotto per iniziare gli esercizi a tempo.",
+  "continue_to_next": "Continua alla prossima categoria per completare la tua autovalutazione.",
+  "complete": "Completa",
+
+  "privacy": {
+    "intro": "Questa Informativa sulla Privacy descrive come SIMOnS – Student Improvement and Monitoring of Online Skills, un'app educativa finanziata dall'Unione Europea nell'ambito del progetto Erasmus+ (2023-1-PT01-KA220-HED-000160187) per migliorare le competenze digitali degli studenti universitari, raccoglie, utilizza e protegge i tuoi dati personali in conformità al Regolamento Generale sulla Protezione dei Dati (GDPR). La raccolta dei dati è stata approvata dal comitato etico dell'Università di Maia (approvazione n.288/2025). Questa politica può subire aggiornamenti, che saranno notificati tramite app o email.",
+    
+    "title.data_collected": "Dati raccolti",
+    "content.data_collected.p1": "Dati personali: Email, data di nascita, genere, università (opzionale), password o dati account Google (email e profilo base) per la registrazione.",
+    "content.data_collected.p2": "Dati non personali: Risposte anonime al questionario di autovalutazione, punteggi degli esercizi, visualizzazioni dei video didattici e informazioni sul dispositivo (es. indirizzo IP, tipo di dispositivo).",
+    
+    "title.data_usage": "Uso dei dati",
+    "content.data_usage.p1": "Creare e gestire account.",
+    "content.data_usage.p2": "Fornire contenuti educativi personalizzati e feedback sulle competenze.",
+    "content.data_usage.p3": "Analizzare l'utilizzo (pseudonimizzato) per migliorare l'app e supportare i risultati del progetto Erasmus+ (report, articoli di ricerca e eventi di diffusione).",
+    "content.data_usage.p4": "Garantire la conformità al GDPR.",
+
+    "title.data_sharing": "Condivisione dei dati",
+    "intro.data_sharing": "I dati raccolti non saranno venduti o affittati a scopo commerciale. I dati possono essere condivisi con:",
+    "content.data_sharing.p1": "Partner Erasmus+ (anonimizzati) per ricerca e reportistica.",
+    "content.data_sharing.p2": "Fornitori di servizi (es. cloud) e servizi di terze parti (es. registrazione Google) sotto stretta riservatezza e conformemente alle loro politiche sulla privacy. Per maggiori informazioni sui servizi utilizzati, contattare il team.",
+    
+    "title.data_security": "Sicurezza dei dati",
+    "content.data_security.p1": "I dati sono criptati e l'accesso richiede autenticazione multifattoriale da parte dei membri del team per garantire protezione e sicurezza dei dati, anche se nessun sistema è completamente sicuro.",
+
+    "title.data_retention": "Conservazione dei dati",
+    "content.data_retention.p1": "I dati sono memorizzati sui server dei partner del progetto e sui server Maiêutica (Microsoft OneDrive). I dati sono conservati per la durata del progetto Erasmus+ e fino a 3 anni per valutazione, salvo richiesta di cancellazione.",
+
+    "title.user_rights": "Diritti dell'utente",
+    "intro.user_rights": "Ai sensi del GDPR, gli utenti possono:",
+    "content.user_rights.p1": "Accedere, correggere o eliminare i dati.",
+    "content.user_rights.p2": "Limitare o opporsi al trattamento.",
+    "content.user_rights.p3": "Richiedere la portabilità dei dati.",
+
+    "title_contact": "Contatto",
+    "contact_us": "Contattaci per esercitare i tuoi diritti.",
+
+    "approval": "Utilizzando l'app SIMOnS, accetti questa Informativa sulla Privacy."
+  },
+
+  "back_to_profile": "Torna al Profilo",
+  "about_simons_app": "Informazioni sull'app SIMOnS",
+  "about_the_app": "Informazioni su questa applicazione",
+  "about.p1": "SIMOnS (Student Improvement and Monitoring of Online Skills) è uno strumento di auto-riflessione progettato per aiutare gli utenti a valutare e migliorare le proprie competenze digitali basandosi sul Quadro Europeo delle Competenze Digitali per i cittadini (DigComp).",
+  "about.p2": "Attraverso questionari di autovalutazione e materiali didattici mirati, SIMOnS mira a permettere agli utenti di identificare punti di forza e aree di miglioramento nel mondo digitale.",
+
+  "competence_areas": {
+    "1": {
+      "name": "Alfabetizzazione informativa e dei dati",
+      "description": "Navigare, cercare, filtrare, valutare e gestire i dati"
+    },
+    "2": {
+      "name": "Comunicazione e collaborazione",
+      "description": "Interagire, condividere e collaborare attraverso tecnologie digitali"
+    },
+    "3": {
+      "name": "Creazione di contenuti digitali",
+      "description": "Sviluppare, integrare e rielaborare contenuti digitali"
+    },
+    "4": {
+      "name": "Sicurezza",
+      "description": "Protezione dei dispositivi, dei dati personali, della salute e dell'ambiente"
+    },
+    "5": {
+      "name": "Risoluzione dei problemi",
+      "description": "Risoluzione di problemi tecnici e identificazione dei bisogni"
+    }
+  },
+
+  "competence_details": {
+    "1_1": {
+      "title": "Navigazione, ricerca e filtraggio di dati, informazioni e contenuti digitali"
+    },
+    "1_2": {
+      "title": "Valutazione di dati, informazioni e contenuti digitali"
+    },
+    "1_3": {
+      "title": "Gestione di dati, informazioni e contenuti digitali"
+    },
+    "2_1": {
+      "title": "Interazione tramite tecnologie digitali"
+    },
+    "2_2": {
+      "title": "Condivisione di informazioni e contenuti tramite tecnologie digitali"
+    },
+    "2_3": {
+      "title": "Partecipazione alla cittadinanza tramite tecnologie digitali"
+    },
+    "2_4": {
+      "title": "Collaborazione tramite tecnologie digitali"
+    },
+    "2_5": {
+      "title": "Netiquette"
+    },
+    "2_6": {
+      "title": "Gestione dell'identità digitale"
+    },
+    "3_1": {
+      "title": "Sviluppo di contenuti digitali"
+    },
+    "3_2": {
+      "title": "Integrazione e rielaborazione dei contenuti digitali"
+    },
+    "3_3": {
+      "title": "Copyright e licenze"
+    },
+    "3_4": {
+      "title": "Programmazione"
+    },
+    "4_1": {
+      "title": "Protezione di dispositivi e contenuti digitali"
+    },
+    "4_2": {
+      "title": "Protezione dei dati personali e della privacy"
+    },
+    "4_3": {
+      "title": "Protezione della salute e del benessere"
+    },
+    "4_4": {
+      "title": "Protezione dell'ambiente"
+    },
+    "5_1": {
+      "title": "Risoluzione di problemi tecnici"
+    },
+    "5_2": {
+      "title": "Identificazione dei bisogni e delle risposte tecnologiche"
+    },
+    "5_3": {
+      "title": "Uso creativo delle tecnologie digitali"
+    },
+    "5_4": {
+      "title": "Identificazione delle lacune nelle competenze digitali"
+    }
+  },
+
+  "competence_details_short": {
+    "1_1": {
+      "title": "Navigazione, ricerca e filtraggio dati"
+    },
+    "1_2": {
+      "title": "Valutazione dati"
+    },
+    "1_3": {
+      "title": "Gestione dati"
+    },
+    "2_1": {
+      "title": "Interazione tramite tecnologie digitali"
+    },
+    "2_2": {
+      "title": "Condivisione informazioni"
+    },
+    "2_3": {
+      "title": "Partecipazione alla cittadinanza"
+    },
+    "2_4": {
+      "title": "Collaborazione tramite tecnologie digitali"
+    },
+    "2_5": {
+      "title": "Netiquette"
+    },
+    "2_6": {
+      "title": "Gestione identità digitale"
+    },
+    "3_1": {
+      "title": "Sviluppo contenuti digitali"
+    },
+    "3_2": {
+      "title": "Integrazione e rielaborazione contenuti digitali"
+    },
+    "3_3": {
+      "title": "Copyright e licenze"
+    },
+    "3_4": {
+      "title": "Programmazione"
+    },
+    "4_1": {
+      "title": "Protezione dispositivi"
+    },
+    "4_2": {
+      "title": "Protezione dati personali e privacy"
+    },
+    "4_3": {
+      "title": "Protezione salute e benessere"
+    },
+    "4_4": {
+      "title": "Protezione ambiente"
+    },
+    "5_1": {
+      "title": "Risoluzione problemi tecnici"
+    },
+    "5_2": {
+      "title": "Identificazione bisogni e risposte tecnologiche"
+    },
+    "5_3": {
+      "title": "Uso creativo delle tecnologie digitali"
+    },
+    "5_4": {
+      "title": "Identificazione lacune competenze digitali"
+    }
+  },
+
+  "learning_material": {
+    "1.1": {
+      "basic": "Impara a formulare le esigenze informative e a cercare efficacemente nei database accademici e nei motori di ricerca, utilizzando operatori booleani e affinando le strategie di ricerca per accedere a contenuti digitali rilevanti.",
+      "master": "Padroneggia tecniche avanzate di ricerca utilizzando database accademici e specializzati. Esplora repository di ricerca, applica filtri sui metadati e ottimizza le ricerche per ottenere contenuti di alta qualità e peer-reviewed."
+    },
+    "1.2": {
+      "basic": "Sviluppa capacità di pensiero critico per valutare la credibilità delle informazioni. Impara a identificare fonti affidabili, verificare le date di pubblicazione, controllare i bias e confrontare metodologie per garantire l’accuratezza dell’interpretazione dei dati.",
+      "master": "Applica tecniche di valutazione approfondite, includendo il confronto tra più fonti, l’analisi dei metodi di ricerca e la priorizzazione dei dati peer-reviewed. Migliora l’integrità della ricerca utilizzando metadati e organizzazione sistematica dei file."
+    },
+    "1.3": {
+      "basic": "Impara a organizzare i file digitali in modo efficiente con cartelle strutturate e convenzioni di denominazione chiare. Usa lo storage cloud per accedere ai dati ovunque e strumenti di visualizzazione dei dati per migliorare la comprensione e aumentare l’impatto della ricerca.",
+      "master": "Implementa le migliori pratiche per la gestione dei dati digitali, includendo backup regolari, etichettatura dei metadati e automazione delle attività ripetitive. Usa database e strumenti avanzati per un’organizzazione della ricerca senza soluzione di continuità."
+    },
+    "2.1": {
+      "basic": "Impara a usare diverse tecnologie digitali per interagire con compagni o insegnanti in ambienti istituzionali o privati, e a scegliere gli strumenti di comunicazione più appropriati per un dato contesto.",
+      "master": "Impara a interagire con strumenti di Intelligenza Artificiale e a scegliere la piattaforma di comunicazione più adatta a diverse situazioni, specialmente per lavori collaborativi."
+    },
+    "2.2": {
+      "basic": "Impara a usare strumenti e tecnologie digitali per condividere dati, informazioni e contenuti digitali con altri. Comprendendo le regole di condivisione e l’attribuzione corretta, puoi migliorare il lavoro collaborativo.",
+      "master": "Impara a condividere correttamente dati e informazioni online utilizzando gli strumenti giusti e comprendendo copyright e tipi di licenze."
+    },
+    "2.3": {
+      "basic": "Impara a partecipare alla società tramite servizi digitali pubblici e privati. Cerca opportunità di auto-empowerment e cittadinanza partecipativa usando tecnologie digitali appropriate.",
+      "master": "Impara a impegnarti come cittadino digitale comprendendo tecnologie come blockchain e AI. Usa sondaggi per raccogliere prospettive diverse e mobilitare comunità sui social media."
+    },
+    "2.4": {
+      "basic": "Impara a usare strumenti digitali per il lavoro collaborativo e per la co-costruzione e co-creazione di dati, risorse e conoscenze.",
+      "master": "Impara a migliorare il lavoro di gruppo attraverso la collaborazione online, tenendo traccia delle modifiche ai file condivisi. Migliora la creatività remixando contenuti altrui e contribuendo alla co-creazione della conoscenza."
+    },
+    "2.5": {
+      "basic": "Sii consapevole delle norme comportamentali nell’uso delle tecnologie digitali per interagire con altri.",
+      "master": "Impara ad adattare le strategie comunicative al pubblico specifico, rispettando diversità culturale e generazionale negli ambienti digitali."
+    },
+    "2.6": {
+      "basic": "Impara a creare e gestire identità digitali multiple proteggendo la tua reputazione e prestando attenzione alle pubblicazioni sui social media.",
+      "master": "Impara a proteggere le identità digitali usando autenticazioni sicure e gestendo correttamente i dati prodotti online su diverse piattaforme, strumenti e servizi."
+    },
+    "3.1": {
+      "basic": "Impara a creare, modificare e migliorare contenuti digitali integrando diversi media come testi, immagini e audio, utilizzando vari strumenti digitali.",
+      "master": "Impara a progettare, sviluppare e ottimizzare contenuti digitali complessi, integrando multimedia, elementi interattivi e strumenti di visualizzazione dei dati."
+    },
+    "3.2": {
+      "basic": "Seleziona modi per modificare, perfezionare, migliorare e integrare informazioni semplici per creare nuovi contenuti.",
+      "master": "Analizza criticamente, trasforma e innova i contenuti digitali integrando diversi formati multimediali, tecniche avanzate di editing ed elementi basati sui dati. Applica competenze creative e tecniche per migliorare i materiali digitali garantendo originalità, accessibilità ed eticità."
+    },
+    "3.3": {
+      "basic": "Specifica regole di copyright e licenze applicabili a dati e contenuti digitali. Impara a usare e condividere contenuti digitali legalmente, verificando termini, condizioni e licenze come Creative Commons.",
+      "master": "Scegli le regole di copyright e licenza più appropriate per dati e contenuti digitali. Impara a elaborare strategie adatte, includendo licenze dei contenuti, per condividere e proteggere le tue creazioni."
+    },
+    "3.4": {
+      "basic": "Elenca semplici istruzioni per un sistema informatico per risolvere un problema o eseguire un compito specifico.",
+      "master": "Impara a sviluppare soluzioni per problemi complessi con più fattori interagenti, pianificando e creando istruzioni per far eseguire compiti a un sistema informatico in modo efficiente."
+    },
+    "4.1": {
+      "basic": "Riconosci e applica strategie fondamentali per proteggere dispositivi e contenuti digitali, valutando rischi e minacce comuni online. Adotta misure di sicurezza standard e verifica regolarmente la protezione.",
+      "master": "Seleziona protezioni adeguate valutando minacce online. Sviluppa soluzioni a problemi complessi di cybersecurity implementando misure di sicurezza, gestione dei rischi e protezione della privacy. Padroneggia la sicurezza digitale e guida altri nella protezione dei dati."
+    },
+    "4.2": {
+      "basic": "Identifica e applica metodi base per proteggere dati personali e privacy online, condividendo responsabilmente informazioni personali. Comprendi dichiarazioni di privacy standard e prassi sicure.",
+      "master": "Applica e valuta metodi appropriati per proteggere dati e privacy, minimizzando rischi. Analizza politiche sulla privacy, sviluppa soluzioni per problemi complessi di protezione dei dati e guida altri nella tutela della privacy digitale."
+    },
+    "4.3": {
+      "basic": "Identifica strategie base per prevenire rischi per la salute e proteggere il benessere fisico e psicologico durante l’uso di tecnologie digitali. Scegli misure adeguate e esplora tecnologie che promuovono inclusione e benessere sociale.",
+      "master": "Identifica, applica e adatta strategie efficaci per prevenire rischi per la salute e proteggere il benessere fisico e psicologico. Implementa e valuta misure per salvaguardare te stesso e altri, promuovendo un impegno digitale responsabile. Sviluppa soluzioni innovative per sfide complesse di benessere digitale, sicurezza e inclusione sociale."
+    },
+    "4.4": {
+      "basic": "Identifica gli impatti ambientali base delle tecnologie digitali e del loro utilizzo. Esplora strategie per mitigare l’impatto ambientale.",
+      "master": "Identifica e implementa strategie efficaci per ridurre l’impatto ambientale delle tecnologie digitali. Sviluppa soluzioni innovative per sfide complesse di sostenibilità e guida altri nella protezione ambientale."
+    },
+    "5.1": {
+      "basic": "Impara a identificare e risolvere problemi tecnici semplici durante l’uso di dispositivi e ambienti digitali.",
+      "master": "Impara a valutare problemi tecnici complessi e a creare soluzioni per risolverli."
+    },
+    "5.2": {
+      "basic": "Impara a valutare bisogni e a identificare, selezionare e usare strumenti digitali e metodi tecnologici per risolvere problemi, personalizzando ambienti digitali secondo necessità.",
+      "master": "Impara a valutare i bisogni, scegliere gli strumenti digitali più appropriati e sviluppare soluzioni tecnologiche per soddisfarli."
+    },
+    "5.3": {
+      "basic": "Impara a usare strumenti digitali per creare conoscenza e innovare processi e prodotti.",
+      "master": "Partecipa a comunità e interagisci con i tuoi pari per comprendere e risolvere problemi concettuali in ambienti digitali."
+    },
+    "5.4": {
+      "basic": "Comprendi dove migliorare le tue competenze digitali e come supportare altri nello sviluppo delle loro competenze.",
+      "master": "Cerca opportunità di auto-sviluppo, tieniti aggiornato sull’evoluzione digitale e guida altri nell’identificazione delle lacune delle competenze digitali."
+    }
+  }
+}

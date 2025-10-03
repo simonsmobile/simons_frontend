@@ -1,0 +1,440 @@
+{
+  "welcome_message": "Sveiki, ",
+  "logout": "Atsijungti", 
+  "dashboard": "Prietaisų skydelis",
+  "progress_tracker": "Pažangos stebėjimas",
+  "dashboard_info": "Jūsų skaitmeninių kompetencijų prietaisų skydelis",
+  "points": "taškai",
+  "dashboard_greeting": "Pasiruošę pakilti į aukštesnį lygį? Atlikite mokymo pratimus ir viktorinas, kad gautumėte daugiau taškų",
+  "view_score": "Peržiūrėti rezultatą",
+  "competence_overview": "Kompetencijų apžvalga",
+  "training_exercises": "Mokymo pratimai",
+  "competences": "Kompetencijos",
+  "level_1": "1 lygis",
+  "level_2": "2 lygis",
+  "not_attempted": "Nepradėta", 
+  "take_sa_again": "Atlikti savęs vertinimą dar kartą",
+  "complete_other_categories": "Užbaikite kitas kategorijas",
+  "confirm_action": "Patvirtinti veiksmą",
+  "confirm_action_text": "Tai ištrins visus jūsų esamus testų rezultatus ir pažangą, nustatys jūsų lyderių lentelės reitingą į 0 ir išvalys atrakintus avatarus. Galėsite pradėti savęs vertinimą iš naujo. Šio veiksmo negalima atšaukti. Ar tikrai norite tęsti?",
+  "cancel": "Atšaukti",
+  "confirm_and_reset": "Patvirtinti ir iš naujo nustatyti",
+  "placement": "Įvertinimas",
+  "Completed": "Užbaigta",
+  "Locked": "Užrakinta", 
+  "Resume": "Tęsti",
+  "Play": "Pradėti",
+  "digital_skills_progress": "Skaitmeninių įgūdžių pažanga",
+  "keep_it_up" : "Taip ir toliau!",
+  "digital_skills_elite_performer": "Skaitmeninių įgūdžių elitas",
+  "incredible_achievement" : "Neįtikėtinas pasiekimas surinkus 45 000 taškų, beveik maksimalų rezultatą! Jūsų beveik tobulas meistriškumas parodo jus kaip skaitmeninį novatorių.",
+  "digital_skills_advanced_achiever": "Pažengęs skaitmeninių įgūdžių pasiekėjas",
+  "excellent_work": "Puikus darbas pasiekus 30 000 taškų! Jūsų pažengęs meistriškumas parodo pasirengimą sudėtingoms akademinėms užduotims ir praktikoms.",
+  "digital_skills_rising_star" : "Kylančia skaitmeninių įgūdžių žvaigždė",
+  "great_job" : "Puikus darbas pasiekus 15 000 taškų! Jūs padarėte didelę pažangą kurdami tvirtą pagrindą akademinei ir profesinei sėkmei.",
+
+  "not_started": "Nepradėta",
+  "level" : "Lygis",
+
+  "Dashboard": "Prietaisų skydelis",
+  "Score": "Rezultatas", 
+  "Rank": "Reitingas",
+  "Profile": "Profilis",
+
+  "competece_area_label": "Kompetencijų sritys",
+  "points_earned": "surinkti taškai",
+  "total_score": "Bendras rezultatas",
+  "out_of": "iš",
+  "total_points" : "{{total_point, number}} taškų",
+  "possible_points": " galimi taškai",
+  "out_of_total_score" : "iš {{total_point, number}} galimų taškų",
+
+  "congratulations": "Sveikiname!",
+  "congratulations_long": "Sveikiname, jūs surinkote {{points, number}} taškų!",
+
+  "leaderboard": "Lyderių lentelė",
+  "your_rank": "Jūsų reitingas",
+  "you": "Jūs", 
+  "rank": "Reitingas",
+  "avatars": "Avatarai",
+  "unlock_avatars": "Atrakinkite specialius avatarus uždirbdami taškų! Dabartiniai taškai:",
+  "bronze": "Bronza",
+  "silver": "Sidabras",
+  "gold": "Auksas",
+  "diamond": "Deimantas",
+  "you_still_need": "Jums dar reikia {{scoresToGo, number}} taškų",
+  "avatar_threshold": "{{avatarThreshold, number}} taškų", 
+  "avatar_points" : "{{user_score, number}}",
+  "unlock_now" : "Atrakinti dabar",
+  "unlocked" : "Atrakinta",
+
+  "assessment_status" : "Vertinimo būsena",
+  "your_progress" : "Jūsų pažanga",
+  "progress" : "Pažanga",
+  "total_available_questions" : "Iš viso klausimų",
+  "remaining_questions" : "Likę klausimai",
+  "completed_questions" : "Užbaigti klausimai",
+  "assessment_by_category" : "Vertinimas pagal kategoriją",
+  "estimated_time": "Numatytas laikas",
+  "minutes" : "minutės",
+  "start_assessment" : "Pradėkite savo vertinimą, kad stebėtumėte pažangą",
+  "you_have_completed" :"Jūs užbaigėte {{completedCount}} iš {{totalQuestions}} klausimų",
+  "continue_full" : "Tęsti pilną vertinimą",
+  "start_full" : "Pradėti pilną vertinimą",
+  "categories_completed" : "užbaigtos kategorijos",
+  "category_progress" : "Kategorijos pažanga",
+
+  "go_to_dashboard" : "Eiti į prietaisų skydelį",
+  "check_progress" : "Patikrinti pažangą",
+  "full_assessment_explanation" : "Pilnas savęs vertinimas apima visus 82 klausimus ir suteikia išsamų jūsų skaitmeninių kompetencijų įvertinimą",
+  "select_one_area"  : "Pasirinkite vieną sritį pradėti",
+  "select_area_explanation" : "Pasirinkite konkrečią kompetencijų sritį arba atlikite pilną savęs vertinimą",
+  "self_assessment"  : "Savęs vertinimas",
+  "self_assessment_instruction" : "Pasirinkite variantą, kuris geriausiai atspindi jūsų kompetencijos lygį",
+
+  "general_settings": "Bendrieji nustatymai",
+  "app_information": "Informacija",
+  "change_password": "Keisti slaptažodį",
+  "language": "Kalba",
+  "about_app": "Apie SIMOnS programėlę",
+  "terms": "Taisyklės ir sąlygos",
+  "privacy_policy": "Privatumo politika",
+
+  "lang_settings": "Kalbos nustatymai",
+  "select_lang": "Pasirinkite kalbą",
+  "select_lang_message": "Pasirinkite programėlės sąsajos kalbą.",
+  "confirm_selection": "Patvirtinti pasirinkimą",
+
+  "forgot_password": "Pamiršote slaptažodį",
+  "forgot_your_password": "Pamiršote slaptažodį?",
+  "forgot_password_text": "Įveskite savo el. paštą ir mes atsiųsime patvirtinimo kodą slaptažodžiui atkurti.",
+  "email": "El. pašto adresas",
+  "email_instruction": "Įveskite savo el. paštą",
+  "send_code": "Siųsti patvirtinimo kodą",
+  "remember_password": "Prisiminti slaptažodį?",
+  "back_to_login": "Grįžti į prisijungimą",
+  "code_sent": "Mes išsiuntėme patvirtinimo kodą į {{email}}",
+  "enter_verification": "Įveskite patvirtinimo kodą",
+  "verify_code": "Patvirtinti kodą",
+  "code_was_sent": "Kodas buvo išsiųstas į jūsų el. paštą",
+  "failed_to_send": "Nepavyko išsiųsti kodo",
+  "invalid_code": "Neteisingas kodas",
+
+  "login": "Prisijungti",
+  "welcome_simons": "Sveiki atvykę į SIMOnS!",
+  "password": "Slaptažodis",
+  "or": "ARBA",
+  "login_with_google": "Prisijungti su Google",
+  "dont_have_account": "Neturite paskyros?",
+  "signup" : "Registruotis",
+
+  "did_not_receive": "Negavote kodo?", 
+  "resend_code": "Siųsti kodą iš naujo",
+  "resend_in_seconds": "Pakartotinai siųsti kodą po {{seconds}}s",
+
+  "app_explanation": "Savirefleksijos įrankis pagal Europos skaitmeninių kompetencijų sistemą piliečiams",
+
+  "sign_with_google": "Registruotis su Google",
+
+  "firstname": "Vardas",
+  "lastname": "Pavardė",
+  "dob": "Gimimo data",
+  "gender": "Pasirinkite lytį",
+  "country": "Pasirinkite šalį",
+  "university": "Pasirinkite universitetą (nebūtina)",
+  "repeat_password": "Patvirtinti slaptažodį",
+
+  "male": "Vyras",
+  "female": "Moteris",
+  "other": "Kita",
+
+  "already_account": "Jau turite paskyrą?",
+  "join_us": "Prisijunkite prie mūsų!",
+  "create_account": "Sukurti paskyrą",
+
+  "study_material" : "Mokomoji medžiaga",
+  "learning_materials" : "Mokymosi medžiaga",
+  "return_to_dashboard": "Grįžti į prietaisų skydelį",
+  "additional_resources" : "Papildomi šaltiniai",
+  "quiz_completed" : "Viktorina užbaigta",
+  "take_the_quiz" : "Atlikti viktoriną",
+
+  "Level 2": "2 lygis",
+  "Level 1": "1 lygis",
+  "Level 1-2": "1-2 lygiai",
+  "question": "Klausimas",
+  "of": "iš",
+  "base": "Pagrindas",
+  "time_running_out": "Laikas baigiasi! Liko {{timeRemaining}} sekundžių",
+  "time_up": "Laikas baigėsi! Perėjimas prie kito klausimo...",
+  "back": "Atgal",
+  "next": "Kitas",
+  "finish": "Baigti",
+  "scoring_info": "Vertinimo informacija",
+  "correct_answer": "Teisingas atsakymas: {{basePoints}} taškų",
+  "speed_bonus": "Greitumo premija: iki 50 taškų",
+  "perfect_run": "Tobulos serijos premija: papildomi taškai už visus teisingus atsakymus",
+
+  "processing_results": "Apdorojami rezultatai",
+  "calculating_score": "Skaičiuojamas jūsų rezultatas",
+  "quiz_results": "Viktorinos rezultatai",
+  "analyzing": "Analizuojamas jūsų pasirodymas ir laiko premijos...",
+  "error_processing": "Klaida apdorojant viktorinos rezultatus",
+  "Try again..." : "Bandykite dar kartą...",
+  "Almost there!": "Beveik pavyko!",
+  "Excellent work!" : "Puikus darbas!",
+  "you_earned": "Jūs uždirbote: +{{totalScore}} taškų",
+  "score_breakdown": "Rezultato detalizacija",
+  "correct_answers": "Teisingi atsakymai",
+  "speed_bonus_earned": "Greitumo premija",
+  "perfect_score_bonus": "Tobulo rezultato premija",
+  "what_went_wrong": "Kas nepavyko?",
+  "correct": "Teisinga",
+  "incorrect": "Neteisinga",
+  "missed_opportunity": "Praleista galimybė",
+  "missed_explanation": "Jūs galėjote gauti dar {{lostOpportunity}} taškų už teisingus atsakymus",
+  "review_material": "Peržiūrėti mokymosi medžiagą",
+  "retake_quiz": "Atlikti viktoriną dar kartą",
+  "You answered 0/3 correctly": "Jūs teisingai atsakėte į 0/3",
+  "You answered 1/3 correctly": "Jūs teisingai atsakėte į 1/3",
+  "You answered 2/3 correctly": "Jūs teisingai atsakėte į 2/3",
+  "You answered 3/3 correctly": "Jūs teisingai atsakėte į 3/3",
+  "Perfect score!" : "Tobulas rezultatas!",
+
+  "questions_answered": " Klausimai atsakyti šioje sesijoje",
+  "succesfully_completed_questions":"Jūs sėkmingai užbaigėte {{completedCount}} klausimų.",
+  "complete_others": "Užbaikite likusius, kad galutinai atliktumėte savęs vertinimą.",
+  "starting_level_determined":"Jūsų pradiniai visų kompetencijų lygiai nustatyti.",
+  "category_completed" : "Šios kategorijos savęs vertinimas užbaigtas!", 
+  "full_completed" : "Pilnas savęs vertinimas užbaigtas!",
+  "processing_selfassessment" : "Apdorojamas jūsų savęs vertinimas",
+  "please_wait" : "Palaukite, kol analizuosime jūsų atsakymus.",
+  "results": "Rezultatai",
+  "continue_to_other" : "Tęsti kitas kategorijas",
+  "next_steps": "Kiti žingsniai",
+  "self_assessment_complete": "Jūsų savęs vertinimas baigtas! Dabar galite pereiti prie prietaisų skydelio ir pradėti laiko ribotus pratimus.",
+  "continue_to_next" : "Tęskite prie kitos kategorijos, kad užbaigtumėte savęs vertinimą.",
+
+  "complete" : "Užbaigti", 
+
+  "privacy": {
+    "intro": "Ši privatumo politika apibrėžia, kaip SIMOnS – Student Improvement and Monitoring of Online Skills, Europos Sąjungos finansuojama Erasmus+ projekto (2023-1-PT01-KA220-HED-000160187) mokomoji mobilioji programėlė, skirta aukštojo mokslo studentų skaitmeninių įgūdžių tobulinimui, renka, naudoja ir apsaugo jūsų asmens duomenis laikantis Bendrojo duomenų apsaugos reglamento (BDAR). Duomenų rinkimą patvirtino Maia universiteto etikos komitetas (patvirtinimo Nr.288/2025). Ši politika gali būti atnaujinama, apie ką bus pranešta programėlėje arba el. paštu.",
+
+    "title.data_collected": "Renkami duomenys",
+    "content.data_collected.p1" : "Asmens duomenys: el. paštas, gimimo data, lytis, universitetas (neprivaloma), slaptažodis arba Google paskyros duomenys (el. paštas ir pagrindinis profilis) registracijai.",
+    "content.data_collected.p2" : "Neasmeniniai duomenys: savęs vertinimo apklausos atsakymai (anonimiški), pratimų rezultatai, mokomųjų vaizdo įrašų peržiūros ir įrenginio informacija (pvz., IP adresas, įrenginio tipas).",
+    
+    "title.data_usage": "Duomenų naudojimas",
+    "content.data_usage.p1" : "Paskyrų kūrimui ir valdymui.",
+    "content.data_usage.p2" : "Asmeninio mokomojo turinio ir įgūdžių grįžtamojo ryšio teikimui.",
+    "content.data_usage.p3" : "Naudojimo analizavimui (pseudonimizuotam), kad būtų pagerinta programėlė ir paremti Erasmus+ projekto rezultatai (ataskaitos, moksliniai straipsniai ir sklaidos renginiai).",
+    "content.data_usage.p4" : "Užtikrinti BDAR laikymąsi.",
+
+    "title.data_sharing": "Duomenų dalijimasis",
+    "intro.data_sharing": "Surinkti duomenys nebus parduodami ar nuomojami komerciniais tikslais. Duomenys gali būti dalijami su:",
+    "content.data_sharing.p1" : "Erasmus+ partneriais (anonimizuotais) moksliniams tyrimams ir ataskaitoms.",
+    "content.data_sharing.p2" : "Paslaugų teikėjais (pvz., debesų paslaugomis) ir trečiųjų šalių paslaugomis (pvz., Google prisijungimu) pagal griežtą konfidencialumą ir taikomas išorines privatumo politikas. Norėdami gauti daugiau informacijos apie visas naudojamas paslaugas, susisiekite su komanda.",
+    
+    "title.data_security": "Duomenų saugumas",
+    "content.data_security.p1" :"Duomenys yra užšifruoti, o prieiga reikalauja kelių veiksnių autentifikavimo komandos nariams, siekiant užtikrinti duomenų apsaugą, nors jokia sistema nėra visiškai saugi.",
+
+    "title.data_retention": "Duomenų saugojimas",
+    "content.data_retention.p1" :"Duomenys saugomi projekto partnerių serveriuose ir Maiêutica serveriuose (Microsoft OneDrive). Duomenys saugomi projekto Erasmus+ trukmę ir iki 3 metų vertinimo tikslais, nebent paprašoma juos ištrinti.",
+
+    "title.user_rights": "Vartotojų teisės",
+    "intro.user_rights": "Pagal BDAR vartotojai gali:",
+    "content.user_rights.p1" : "Pasiekti, ištaisyti arba ištrinti duomenis.",
+    "content.user_rights.p2" : "Apriboti arba nesutikti dėl tvarkymo.",
+    "content.user_rights.p3" : "Prašyti duomenų perkeliamumo.",
+
+    "title_contact": "Kontaktai",
+    "contact_us": "Susisiekite su mumis, kad pasinaudotumėte savo teisėmis.",
+
+    "approval": "Naudodami SIMOnS programėlę, jūs sutinkate su šia privatumo politika."
+  },
+
+  "back_to_profile" : "Grįžti į profilį",
+
+  "about_simons_app" :"Apie SIMOnS programėlę",
+  "about_the_app" : "Apie šią programėlę",
+  "about.p1" :"SIMOnS (Student Improvement and Monitoring of Online Skills) yra savirefleksijos įrankis, skirtas padėti vartotojams įsivertinti ir tobulinti savo skaitmenines kompetencijas pagal Europos skaitmeninių kompetencijų sistemą (DigComp).",
+  "about.p2" :"Per savęs vertinimo klausimynus ir tikslinę mokomąją medžiagą SIMOnS siekia suteikti vartotojams galimybę identifikuoti savo stiprybes ir tobulintinas sritis skaitmeniniame pasaulyje.",
+
+  "competence_areas": {
+    "1": {
+      "name": "Informacijos ir duomenų raštingumas",
+      "description": "Naršymas, paieška, filtravimas, vertinimas ir duomenų tvarkymas"
+    },
+    "2": {
+      "name": "Komunikacija ir bendradarbiavimas",
+      "description": "Bendravimas, dalijimasis, bendradarbiavimas naudojant skaitmenines technologijas"
+    },
+    "3": {
+      "name": "Skaitmeninio turinio kūrimas",
+      "description": "Skaitmeninio turinio kūrimas, integravimas ir perdirbimas"
+    },
+    "4": {
+      "name": "Saugumas",
+      "description": "Įrenginių, asmens duomenų, sveikatos ir aplinkos apsauga"
+    },
+    "5": {
+      "name": "Problemų sprendimas",
+      "description": "Techninių problemų sprendimas ir poreikių identifikavimas"
+    }
+  },
+
+  "competence_details": {
+    "1_1": { "title": "Naršymas, paieška ir duomenų, informacijos bei skaitmeninio turinio filtravimas" },
+    "1_2": { "title": "Duomenų, informacijos ir skaitmeninio turinio vertinimas" },
+    "1_3": { "title": "Duomenų, informacijos ir skaitmeninio turinio tvarkymas" },
+    "2_1": { "title": "Bendravimas naudojant skaitmenines technologijas" },
+    "2_2": { "title": "Informacijos ir turinio dalijimasis skaitmeninėmis technologijomis" },
+    "2_3": { "title": "Pilietinis dalyvavimas naudojant skaitmenines technologijas" },
+    "2_4": { "title": "Bendradarbiavimas naudojant skaitmenines technologijas" },
+    "2_5": { "title": "Tinklo etiketas" },
+    "2_6": { "title": "Skaitmeninės tapatybės valdymas" },
+    "3_1": { "title": "Skaitmeninio turinio kūrimas" },
+    "3_2": { "title": "Skaitmeninio turinio integravimas ir perdirbimas" },
+    "3_3": { "title": "Autorinės teisės ir licencijos" },
+    "3_4": { "title": "Programavimas" },
+    "4_1": { "title": "Įrenginių ir skaitmeninio turinio apsauga" },
+    "4_2": { "title": "Asmens duomenų ir privatumo apsauga" },
+    "4_3": { "title": "Sveikatos ir gerovės apsauga" },
+    "4_4": { "title": "Aplinkos apsauga" },
+    "5_1": { "title": "Techninių problemų sprendimas" },
+    "5_2": { "title": "Poreikių ir technologinių sprendimų identifikavimas" },
+    "5_3": { "title": "Kūrybiškas skaitmeninių technologijų naudojimas" },
+    "5_4": { "title": "Skaitmeninių kompetencijų spragų identifikavimas" }
+  },
+
+  "competence_details_short": {
+    "1_1": { "title": "Naršymas, paieška ir duomenų filtravimas" },
+    "1_2": { "title": "Duomenų vertinimas" },
+    "1_3": { "title": "Duomenų tvarkymas" },
+    "2_1": { "title": "Bendravimas skaitmeninėmis technologijomis" },
+    "2_2": { "title": "Informacijos dalijimasis" },
+    "2_3": { "title": "Pilietinis dalyvavimas" },
+    "2_4": { "title": "Bendradarbiavimas skaitmeninėmis technologijomis" },
+    "2_5": { "title": "Tinklo etiketas" },
+    "2_6": { "title": "Skaitmeninės tapatybės valdymas" },
+    "3_1": { "title": "Skaitmeninio turinio kūrimas" },
+    "3_2": { "title": "Turinio integravimas ir perdirbimas" },
+    "3_3": { "title": "Autorinės teisės ir licencijos" },
+    "3_4": { "title": "Programavimas" },
+    "4_1": { "title": "Įrenginių apsauga" },
+    "4_2": { "title": "Asmens duomenų ir privatumo apsauga" },
+    "4_3": { "title": "Sveikatos ir gerovės apsauga" },
+    "4_4": { "title": "Aplinkos apsauga" },
+    "5_1": { "title": "Techninių problemų sprendimas" },
+    "5_2": { "title": "Poreikių ir technologinių sprendimų identifikavimas" },
+    "5_3": { "title": "Kūrybiškas technologijų naudojimas" },
+    "5_4": { "title": "Kompetencijų spragų nustatymas" }
+  },
+
+  "learning_material": {
+    "1.1": {
+      "basic" : "Išmokite tiksliai formuluoti informacijos poreikius ir efektyviai ieškoti akademinėse duomenų bazėse bei paieškos sistemose, naudodami Būlio operatorius ir patobulindami paieškos strategijas, kad rastumėte tinkamą turinį.",
+      "master": "Įvaldykite pažangias paieškos technikas naudojant akademines ir specializuotas duomenų bazes. Naudokite tyrimų saugyklas, taikykite metaduomenų filtravimą ir optimizuokite paieškas, kad gautumėte aukštos kokybės, recenzuotą turinį."
+    },
+
+    "1.2": {
+      "basic": "Lavinkite kritinį mąstymą vertindami informacijos patikimumą. Išmokite atpažinti patikimus šaltinius, tikrinti publikacijų datas, nustatyti šališkumą ir palyginti metodikas, kad užtikrintumėte duomenų tikslumą.",
+      "master": "Taikykite gilesnius vertinimo metodus, įskaitant kelių šaltinių kryžminį tikrinimą, tyrimo metodų analizę ir recenzuotų duomenų prioritetą. Naudokite metaduomenis ir sistemingą failų tvarkymą, kad padidintumėte tyrimų patikimumą."
+    },
+
+    "1.3": {
+      "basic": "Išmokite efektyviai tvarkyti skaitmeninius failus naudodami struktūruotas aplankų sistemas ir aiškius pavadinimus. Naudokite debesų saugyklą duomenims pasiekti visur ir taikykite duomenų vizualizavimo įrankius, kad geriau suprastumėte informaciją.",
+      "master": "Įgyvendinkite geriausias skaitmeninių duomenų valdymo praktikas: reguliarius atsarginius kopijavimus, metaduomenų žymėjimą ir automatizavimą pasikartojantiems darbams. Naudokite duomenų bazes ir pažangius įrankius tyrimams organizuoti."
+    },
+    
+    "2.1": {
+      "basic": "Išmokite naudoti įvairias skaitmenines technologijas bendrauti su bendraamžiais ar dėstytojais instituciniame ar privačiame kontekste ir pasirinkti tinkamiausias komunikacijos priemones konkrečiai situacijai.",
+      "master": "Išmokite bendrauti su dirbtinio intelekto įrankiais ir pasirinkti tinkamiausią komunikacijos platformą įvairioms situacijoms, ypač bendradarbiavimo darbams."
+    },
+
+    "2.2": {
+      "basic": "Išmokite naudoti skaitmeninius įrankius ir technologijas duomenims, informacijai bei skaitmeniniam turiniui dalintis su kitais. Suprasdami dalinimosi taisykles ir tinkamą šaltinių nurodymą, pagerinsite bendradarbiavimo lygį.",
+      "master": "Išmokite tinkamai dalintis duomenimis ir informacija internetu, naudodami tinkamus įrankius bei suprasdami autorines teises ir licencijų tipus."
+    },
+
+    "2.3": {
+      "basic": "Išmokite dalyvauti visuomenėje naudojant viešąsias ir privačias skaitmenines paslaugas. Ieškokite galimybių stiprinti savo įgalinimą ir dalyvauti pilietinėje veikloje naudojant tinkamas skaitmenines technologijas.",
+      "master": "Išmokite būti aktyviu piliečiu skaitmeninėje erdvėje, suprasdami blokų grandinės ir DI technologijas. Naudokite apklausas nuomonėms rinkti ir burkite bendruomenes socialiniuose tinkluose."
+    },
+
+    "2.4": {
+      "basic": "Išmokite naudoti skaitmeninius įrankius ir technologijas bendram darbui, duomenų, išteklių ir žinių bendrai kūrybai.",
+      "master": "Išmokite pagerinti grupinį darbą bendradarbiaujant internetu ir sekti pakeitimus bendruose failuose. Lavinkite kūrybiškumą perdirbdami kitų turinį ir prisidėkite prie bendro žinių kūrimo."
+    },
+
+    "2.5": {
+      "basic": "Sužinokite elgesio normas naudojantis skaitmeninėmis technologijomis bendraujant su kitais.",
+      "master": "Išmokite pritaikyti komunikacijos strategijas konkrečiai auditorijai bei būti įtraukiu ir pagarbiu kultūrinei bei kartų įvairovei skaitmeninėje aplinkoje."
+    },
+
+    "2.6": {
+      "basic": "Išmokite kurti ir valdyti kelias skaitmenines tapatybes, saugoti savo reputaciją ir atsakingai publikuoti socialiniuose tinkluose.",
+      "master": "Išmokite apsaugoti savo skaitmenines tapatybes naudodami saugų autentifikavimą ir tinkamai tvarkydami internete kuriamus duomenis skirtingose platformose bei paslaugose."
+    },
+
+    "3.1": {
+      "basic": "Išmokite kurti, keisti ir tobulinti skaitmeninį turinį, integruojant skirtingus medijos formatus – tekstą, paveikslėlius, garsą – naudojant įvairius skaitmeninius įrankius.",
+      "master": "Išmokite kurti, plėtoti ir optimizuoti sudėtingą skaitmeninį turinį, integruojant multimediją, interaktyvius elementus ir duomenų vizualizaciją."
+    },
+
+    "3.2": {
+      "basic": "Pasirinkite būdus, kaip modifikuoti, patobulinti ir integruoti paprastą informaciją, kad sukurtumėte naują turinį.",
+      "master": "Kritiškai analizuokite, transformuokite ir kurkite naują skaitmeninį turinį, integruodami įvairius multimedijos formatus, pažangius redagavimo metodus ir duomenimis grįstus elementus. Taikykite kūrybinius ir techninius įgūdžius, užtikrindami originalumą, prieinamumą ir etišką pakartotinį naudojimą."
+    },
+
+    "3.3": {
+      "basic": "Sužinokite aiškias autorių teisių ir licencijų taisykles, taikomas duomenims, informacijai ir turiniui. Išmokite naudoti ir dalintis turiniu teisėtai, tikrindami naudojimo sąlygas ir licencijų schemas, pvz., Creative Commons. Žinokite, kaip atpažinti autorinių teisių apribojimus.",
+      "master": "Pasirinkite tinkamiausias autorių teisių ir licencijų taisykles turiniui. Išmokite kurti tinkamą strategiją, įskaitant licencijavimą, kad apsaugotumėte savo originalius darbus."
+    },
+
+    "3.4": {
+      "basic": "Surašykite paprastas instrukcijas kompiuterinei sistemai, kad išspręstumėte problemą arba atliktumėte užduotį.",
+      "master": "Išmokite kurti sprendimus sudėtingoms problemoms, kuriose yra daug tarpusavyje susijusių veiksnių, planuodami ir rašydami instrukcijas kompiuterinėms sistemoms užduotims efektyviai vykdyti."
+    },
+
+    "4.1": {
+      "basic": "Atpažinkite ir taikykite pagrindines strategijas apsaugant įrenginius ir turinį nuo įprastų rizikų internete. Įgyvendinkite standartines saugumo priemones, testus ir praktikas, kad užtikrintumėte skaitmeninį saugumą.",
+      "master": "Pasirinkite tinkamas apsaugos priemones įrenginiams ir turiniui, įvertindami internetines grėsmes. Kurkite sprendimus sudėtingiems kibernetinio saugumo klausimams, taikydami rizikos valdymą ir privatumo apsaugą. Įvaldykite skaitmeninį saugumą ir padėkite kitiems apsaugoti jų duomenis."
+    },
+
+    "4.2": {
+      "basic": "Atpažinkite ir taikykite pagrindinius metodus asmens duomenų ir privatumo apsaugai skaitmeninėje aplinkoje. Atsakingai dalinkitės asmens duomenimis, laikydamiesi standartinių praktikų ir mažindami riziką sau bei kitiems.",
+      "master": "Taikykite pažangius metodus asmens duomenų ir privatumo apsaugai skaitmeninėje aplinkoje. Analizuokite privatumo politikas ir kurkite sprendimus sudėtingiems duomenų apsaugos iššūkiams. Siūlykite naujoviškus metodus duomenų saugumui ir padėkite kitiems saugoti privatumą."
+    },
+
+    "4.3": {
+      "basic": "Atpažinkite ir taikykite pagrindines strategijas sveikatai ir gerovei saugoti naudojantis skaitmeninėmis technologijomis. Rinkitės priemones apsisaugoti nuo galimų rizikų. Tyrinėkite technologijas, kurios skatina socialinę gerovę ir įtrauktį.",
+      "master": "Taikykite ir pritaikykite efektyvias strategijas, kad apsaugotumėte fizinę ir psichologinę gerovę. Įgyvendinkite priemones apsaugai nuo internetinių pavojų ir prisidėkite prie atsakingo skaitmeninio įsitraukimo. Kurkite naujus sprendimus sudėtingiems gerovės ir įtraukties iššūkiams."
+    },
+
+    "4.4": {
+      "basic": "Atpažinkite pagrindinį skaitmeninių technologijų poveikį aplinkai. Įvardykite įprastus būdus, kaip technologijos veikia aplinką. Aptarkite strategijas, mažinančias šį poveikį.",
+      "master": "Įgyvendinkite veiksmingas strategijas, mažinančias skaitmeninių technologijų poveikį aplinkai. Kurkite naujoviškus sprendimus tvariam technologijų naudojimui ir padėkite kitiems taikyti aplinką tausojančias praktikas."
+    },
+
+    "5.1": {
+      "basic": "Išmokite atpažinti ir išspręsti paprastas technines problemas naudojantis įrenginiais ir skaitmeninėmis aplinkomis.",
+      "master": "Išmokite vertinti technines problemas ir kurti sprendimus sudėtingoms techninėms situacijoms."
+    },
+
+    "5.2": {
+      "basic": "Išmokite įvertinti poreikius, identifikuoti, pasirinkti ir naudoti skaitmeninius įrankius bei technologinius metodus problemoms spręsti. Pritaikykite aplinkas prie asmeninių ar institucinių poreikių, atsižvelgdami į prieinamumą.",
+      "master": "Išmokite įvertinti poreikius, pasirinkti tinkamiausius skaitmeninius įrankius ir kurti technologinius sprendimus jiems patenkinti."
+    },
+
+    "5.3": {
+      "basic": "Išmokite naudoti skaitmeninius įrankius ir technologijas žinioms kurti ir procesams bei produktams tobulinti.",
+      "master": "Įsitraukite į bendruomenes ir bendradarbiaukite su bendraamžiais spręsdami konceptualias problemas skaitmeninėje aplinkoje."
+    },
+
+    "5.4": {
+      "basic": "Supraskite, kur reikia tobulinti savo skaitmenines kompetencijas. Išmokite padėti kitiems plėtoti jų skaitmeninius įgūdžius.",
+      "master": "Išmokite ieškoti saviugdos galimybių ir neatsilikti nuo skaitmeninės pažangos. Taikykite žinias akademinei pažangai ir padėkite kitiems nustatyti kompetencijų spragas."
+    }
+  }
+}

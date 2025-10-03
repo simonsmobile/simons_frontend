@@ -1,0 +1,2227 @@
+{
+  "questions": {
+    "1.1 B1": {
+      "question": "Quando si articola un bisogno informativo, qual è il primo passo da compiere?",
+      "options": [
+        "Identificare possibili fonti",
+        "Definire il tipo e l’ambito delle informazioni richieste",
+        "Scegliere un motore di ricerca",
+        "Cercare immagini"
+      ],
+      "answer": "Definire il tipo e l’ambito delle informazioni richieste"
+    },
+    "1.1 B2": {
+      "question": "Se non sei sicuro di quali informazioni ti servano, qual è l’approccio migliore?",
+      "options": [
+        "Cercare tutto",
+        "Restringere il focus facendo brainstorming sui temi chiave",
+        "Usare un solo motore di ricerca",
+        "Affidarsi al primo risultato"
+      ],
+      "answer": "Restringere il focus facendo brainstorming sui temi chiave"
+    },
+    "1.1 B3": {
+      "question": "Qual è il principale vantaggio dell’utilizzo degli operatori booleani nelle query di ricerca?",
+      "options": [
+        "Producono risultati più esteticamente gradevoli",
+        "Aiutano a perfezionare o ampliare i risultati della ricerca",
+        "Velocizzano le prestazioni del motore di ricerca",
+        "Sono utili solo per esperti"
+      ],
+      "answer": "Aiutano a perfezionare o ampliare i risultati della ricerca"
+    },
+    "1.1 B4": {
+      "question": "Come puoi perfezionare i risultati della ricerca quando compaiono troppi elementi non pertinenti?",
+      "options": [
+        "Aggiungere parole chiave più specifiche",
+        "Usare solo termini generici",
+        "Cercare in un’altra lingua",
+        "Ignorare i primi risultati"
+      ],
+      "answer": "Aggiungere parole chiave più specifiche"
+    },
+    "1.1 B5": {
+      "question": "A cosa serve tipicamente un collegamento ipertestuale negli ambienti digitali?",
+      "options": [
+        "Visualizzare immagini",
+        "Reindirizzare a un’altra pagina web o fonte",
+        "Salvare informazioni per un uso successivo",
+        "Impedire l’accesso ai contenuti"
+      ],
+      "answer": "Reindirizzare a un’altra pagina web o fonte"
+    },
+    "1.1 B6": {
+      "question": "Quale dovrebbe essere una considerazione chiave nell’aggiornare una strategia di ricerca?",
+      "options": [
+        "Il layout della pagina del motore di ricerca",
+        "Il numero di fonti disponibili",
+        "Il perfezionamento dei termini di ricerca in base a nuove scoperte",
+        "L’inclusione di argomenti non correlati per ampliare i risultati"
+      ],
+      "answer": "Il perfezionamento dei termini di ricerca in base a nuove scoperte"
+    },
+    "1.1 M1": {
+      "question": "Quale delle seguenti NON è un bisogno informativo?",
+      "options": [
+        "Scoprire la causa di un evento storico",
+        "Scegliere una fonte basandosi su un pregiudizio personale",
+        "Cercare dati su un argomento scientifico",
+        "Comprendere lo scopo di una ricerca"
+      ],
+      "answer": "Scegliere una fonte basandosi su un pregiudizio personale"
+    },
+    "1.1 M2": {
+      "question": "Se vuoi escludere un termine dalla tua ricerca, quale operatore booleano dovresti usare?",
+      "options": ["AND", "OR", "NOT", "WITH"],
+      "answer": "NOT"
+    },
+    "1.1 M3": {
+      "question": "Se ti imbatti in un paywall cercando di accedere a un articolo, cosa dovresti fare?",
+      "options": [
+        "Abbandonare la ricerca",
+        "Cercare accesso gratuito tramite login istituzionali o database alternativi",
+        "Ignorare completamente l’articolo",
+        "Passare al risultato successivo"
+      ],
+      "answer": "Cercare accesso gratuito tramite login istituzionali o database alternativi"
+    },
+    "1.1 M4": {
+      "question": "In che modo menu e barre di navigazione aiutano nella navigazione dei contenuti digitali?",
+      "options": [
+        "Nascondono contenuti irrilevanti",
+        "Organizzano le categorie di contenuto per un facile accesso",
+        "Rallentano i tempi di caricamento della pagina",
+        "Filtrano automaticamente le pubblicità"
+      ],
+      "answer": "Organizzano le categorie di contenuto per un facile accesso"
+    },
+    "1.1 M5": {
+      "question": "Qual è un modo efficace per adattare la tua strategia di ricerca nel tempo?",
+      "options": [
+        "Usare il metodo per tentativi ed errori con i risultati di ricerca",
+        "Affidarsi a un’unica fonte per tutte le informazioni necessarie",
+        "Valutare la qualità dei risultati e modificare di conseguenza i termini di ricerca",
+        "Evitare di aggiornare le strategie di ricerca una volta iniziato"
+      ],
+      "answer": "Valutare la qualità dei risultati e modificare di conseguenza i termini di ricerca"
+    },
+    "1.1 M6": {
+      "question": "Perché è importante aggiornare regolarmente le strategie di ricerca?",
+      "options": [
+        "Per evitare la ripetizione dei risultati",
+        "Per restare informati sui dati e le fonti appena disponibili",
+        "Per prevenire distrazioni durante la navigazione",
+        "Per ridurre i tempi di caricamento del motore di ricerca"
+      ],
+      "answer": "Per restare informati sui dati e le fonti appena disponibili"
+    },
+    "1.2 B1": {
+      "question": "Quale dei seguenti fattori indica che una fonte è affidabile?",
+      "options": [
+        "È frequentemente condivisa sui social media",
+        "È pubblicata da un’organizzazione o esperto rinomato",
+        "Include molte pubblicità",
+        "È visivamente accattivante"
+      ],
+      "answer": "È pubblicata da un’organizzazione o esperto rinomato"
+    },
+    "1.2 B2": {
+      "question": "Come puoi determinare se le informazioni in un articolo sono aggiornate?",
+      "options": [
+        "Controllare la data di pubblicazione",
+        "Guardare il numero di like o condivisioni",
+        "Vedere se appare nella prima pagina dei risultati di ricerca",
+        "Ignorare le credenziali dell’autore"
+      ],
+      "answer": "Controllare la data di pubblicazione"
+    },
+    "1.2 B3": {
+      "question": "Qual è un passo importante nella valutazione critica dei dati?",
+      "options": [
+        "Ignorare informazioni contraddittorie",
+        "Verificare la presenza di bias nel metodo di raccolta dei dati",
+        "Usare dati provenienti da fonti sconosciute",
+        "Dare priorità ai dati che confermano la propria opinione"
+      ],
+      "answer": "Verificare la presenza di bias nel metodo di raccolta dei dati"
+    },
+    "1.2 B4": {
+      "question": "Come dovresti affrontare dati contrastanti provenienti da fonti diverse?",
+      "options": [
+        "Ignorare completamente i dati contrastanti",
+        "Confrontare metodologie e contesto di ciascuna fonte",
+        "Scegliere quello che supporta il tuo punto di vista",
+        "Concentrarsi solo sui dati più recenti"
+      ],
+      "answer": "Confrontare metodologie e contesto di ciascuna fonte"
+    },
+    "1.2 B5": {
+      "question": "Qual è il modo migliore per archiviare i dati e recuperarli facilmente in seguito?",
+      "options": [
+        "Salvarli tutti in una cartella senza categorizzazione",
+        "Usare una struttura organizzativa chiara con cartelle e sottocartelle",
+        "Tenere tutto in un unico file sul desktop",
+        "Archiviare i dati in modo casuale senza nominare i file"
+      ],
+      "answer": "Usare una struttura organizzativa chiara con cartelle e sottocartelle"
+    },
+    "1.2 B6": {
+      "question": "In che modo l’archiviazione cloud può aiutare nella gestione dei dati?",
+      "options": [
+        "Classifica automaticamente i file",
+        "Consente l’accesso ai dati da più dispositivi",
+        "Limita la capacità di archiviazione dei dati",
+        "Funziona solo offline"
+      ],
+      "answer": "Consente l’accesso ai dati da più dispositivi"
+    },
+    "1.2 M1": {
+      "question": "Perché è importante verificare le informazioni da più fonti?",
+      "options": [
+        "Per ottenere una varietà di opinioni",
+        "Per garantire coerenza e accuratezza tra fonti diverse",
+        "Per aumentare il numero di articoli letti",
+        "Per velocizzare il processo di ricerca"
+      ],
+      "answer": "Per garantire coerenza e accuratezza tra fonti diverse"
+    },
+    "1.2 M2": {
+      "question": "Come puoi verificare l’accuratezza dei dati trovati online?",
+      "options": [
+        "Affidandoti al primo risultato di ricerca",
+        "Controllando se i dati sono citati in altre fonti autorevoli",
+        "Cercando solo contenuti visivi",
+        "Fidandoti di informazioni senza fonti"
+      ],
+      "answer": "Controllando se i dati sono citati in altre fonti autorevoli"
+    },
+    "1.2 M3": {
+      "question": "Quale delle seguenti opzioni contribuisce a garantire che i dati siano accurati e affidabili?",
+      "options": [
+        "Revisione tra pari da parte di esperti del settore",
+        "Alto coinvolgimento sui social media",
+        "Formattazione e design chiari",
+        "Contenuti sponsorizzati da influencer"
+      ],
+      "answer": "Revisione tra pari da parte di esperti del settore"
+    },
+    "1.2 M4": {
+      "question": "Qual è un aspetto chiave nell’interpretazione dei dati nel loro contesto?",
+      "options": [
+        "Se i dati si allineano con l’opinione popolare",
+        "Come sono stati raccolti i dati e cosa rappresentano",
+        "Come appaiono i dati in una presentazione",
+        "Se i dati sono facili da comprendere"
+      ],
+      "answer": "Come sono stati raccolti i dati e cosa rappresentano"
+    },
+    "1.2 M5": {
+      "question": "Come puoi aggiungere metadati per migliorare l’organizzazione dei dati?",
+      "options": [
+        "Etichettando i file con parole chiave pertinenti",
+        "Copiando i file in più cartelle",
+        "Eliminando file non necessari",
+        "Usando i metadati solo per le immagini"
+      ],
+      "answer": "Etichettando i file con parole chiave pertinenti"
+    },
+    "1.2 M6": {
+      "question": "Qual è un vantaggio nell’utilizzo di strumenti di sincronizzazione dei file?",
+      "options": [
+        "Aiutano a trasferire dati tra dispositivi non correlati",
+        "Consentono l’accesso a file aggiornati su più dispositivi",
+        "Rimuovono automaticamente i file vecchi",
+        "Organizzano i file in formati specifici"
+      ],
+      "answer": "Consentono l’accesso a file aggiornati su più dispositivi"
+    },
+    "1.3 B1": {
+      "question": "Qual è il modo migliore per archiviare i dati e recuperarli facilmente in seguito?",
+      "options": [
+        "Salvarli tutti in una cartella senza categorizzazione",
+        "Usare una struttura organizzativa chiara con cartelle e sottocartelle",
+        "Tenere tutto in un unico file sul desktop",
+        "Archiviare i dati in modo casuale senza nominare i file"
+      ],
+      "answer": "Usare una struttura organizzativa chiara con cartelle e sottocartelle"
+    },
+    "1.3 B2": {
+      "question": "In che modo l’archiviazione cloud può aiutare nella gestione dei dati?",
+      "options": [
+        "Classifica automaticamente i file",
+        "Consente l’accesso ai dati da più dispositivi",
+        "Limita la capacità di archiviazione dei dati",
+        "Funziona solo offline"
+      ],
+      "answer": "Consente l’accesso ai dati da più dispositivi"
+    },
+    "1.3 B3": {
+      "question": "Quale delle seguenti è una buona pratica per la denominazione dei file?",
+      "options": [
+        "Usare lettere e numeri casuali",
+        "Creare nomi di file descrittivi e coerenti che riflettano il contenuto",
+        "Evitare di usare date nei nomi dei file",
+        "Nominare i file in base al sito web da cui provengono"
+      ],
+      "answer": "Creare nomi di file descrittivi e coerenti che riflettano il contenuto"
+    },
+    "1.3 B4": {
+      "question": "Quale delle seguenti è un esempio di utilizzo di un ambiente strutturato per elaborare i dati?",
+      "options": [
+        "Creare un foglio di calcolo per organizzare e analizzare i dati",
+        "Salvare i file in posizioni casuali sul computer",
+        "Affidarsi solo alla memoria per conservare le informazioni",
+        "Tenere appunti cartacei per contenuti digitali"
+      ],
+      "answer": "Creare un foglio di calcolo per organizzare e analizzare i dati"
+    },
+    "1.3 B5": {
+      "question": "In che modo i database possono aiutarti nella gestione di grandi quantità di dati?",
+      "options": [
+        "Rallentare il processo di analisi dei dati",
+        "Ordinare, filtrare e analizzare le informazioni in modo efficiente",
+        "Archiviare solo dati testuali",
+        "Limitare l’accesso ai dati"
+      ],
+      "answer": "Ordinare, filtrare e analizzare le informazioni in modo efficiente"
+    },
+    "1.3 B6": {
+      "question": "In che modo gli strumenti di visualizzazione dei dati possono aiutare nell’elaborazione delle informazioni?",
+      "options": [
+        "Rendendo i dati più attraenti visivamente senza contesto",
+        "Aiutando a identificare modelli e tendenze in grandi insiemi di dati",
+        "Semplificando i dati senza alcuna analisi",
+        "Nascondendo i dati dietro i grafici"
+      ],
+      "answer": "Aiutando a identificare modelli e tendenze in grandi insiemi di dati"
+    },
+    "1.3 M1": {
+      "question": "Perché è importante fare regolarmente il backup dei propri dati?",
+      "options": [
+        "Per risparmiare spazio di archiviazione",
+        "Per assicurarsi di non perdere informazioni importanti",
+        "Per mantenere i file sparsi su più dispositivi",
+        "Per evitare di accedere frequentemente ai propri dati"
+      ],
+      "answer": "Per assicurarsi di non perdere informazioni importanti"
+    },
+    "1.3 M2": {
+      "question": "Come puoi aggiungere metadati per migliorare l’organizzazione dei dati?",
+      "options": [
+        "Etichettando i file con parole chiave pertinenti",
+        "Copiando i file in più cartelle",
+        "Eliminando file non necessari",
+        "Usando i metadati solo per le immagini"
+      ],
+      "answer": "Etichettando i file con parole chiave pertinenti"
+    },
+    "1.3 M3": {
+      "question": "Qual è un vantaggio nell’utilizzo di strumenti di sincronizzazione dei file?",
+      "options": [
+        "Aiutano a trasferire dati tra dispositivi non correlati",
+        "Consentono l’accesso a file aggiornati su più dispositivi",
+        "Rimuovono automaticamente i file vecchi",
+        "Organizzano i file in formati specifici"
+      ],
+      "answer": "Consentono l’accesso a file aggiornati su più dispositivi"
+    },
+    "1.3 M4": {
+      "question": "Perché è importante applicare metodi coerenti per organizzare ed elaborare i dati?",
+      "options": [
+        "Per garantire l’accuratezza e l’affidabilità dei tuoi risultati",
+        "Per creare un database disorganizzato",
+        "Per impedire la collaborazione nei progetti",
+        "Per rendere il processo più lento"
+      ],
+      "answer": "Per garantire l’accuratezza e l’affidabilità dei tuoi risultati"
+    },
+    "1.3 M5": {
+      "question": "Qual è un vantaggio nell’utilizzare strumenti di automazione per compiti ripetitivi sui dati?",
+      "options": [
+        "Aumenta il rischio di errori",
+        "Fa risparmiare tempo e migliora l’accuratezza",
+        "Complica il processo di analisi",
+        "Richiede l’inserimento manuale dei dati"
+      ],
+      "answer": "Fa risparmiare tempo e migliora l’accuratezza"
+    },
+    "1.3 M6": {
+      "question": "Come puoi gestire al meglio dataset complessi per un’analisi semplice?",
+      "options": [
+        "Usare più fogli di calcolo senza collegarli",
+        "Strutturare i dati in un database o foglio di calcolo per ordinare e filtrare",
+        "Evitare di usare strumenti digitali",
+        "Archiviare i dati in formati non strutturati come i file di testo"
+      ],
+      "answer": "Strutturare i dati in un database o foglio di calcolo per ordinare e filtrare"
+    },
+
+    "2.1 B1": {
+    "question": "Quale dei seguenti strumenti è più appropriato per inviare una newsletter istituzionale?",
+    "options": ["Email", "Snapchat", "WhatsApp", "Instagram"],
+    "answer": "Email"
+  },
+  "2.1 B2": {
+    "question": "Seleziona l’abbinamento corretto delle seguenti piattaforme online con il loro uso principale:",
+    "options": [
+      "Zoom: Registrare video",
+      "WhatsApp: Micro-blogging",
+      "MS Teams: Lezioni online",
+      "X: Messaggistica istantanea"
+    ],
+    "answer": "MS Teams: Lezioni online"
+  },
+  "2.1 B3": {
+    "question": "Quando comunichi attraverso le tecnologie digitali, è essenziale essere consapevoli del _______ per assicurarsi che il messaggio sia ricevuto come previsto ed evitare fraintendimenti.",
+    "options": ["Contesto", "Grammatica", "Ortografia", "Lingua"],
+    "answer": "Contesto"
+  },
+  "2.1 B4": {
+    "question": "Stai collaborando a un progetto con un team che necessita di feedback rapido. Quale strumento digitale è più appropriato?",
+    "options": [
+      "Email",
+      "Messaggistica istantanea (es. Slack, Microsoft Teams, WhatsApp)",
+      "Social Media",
+      "Videoconferenza"
+    ],
+    "answer": "Messaggistica istantanea (es. Slack, Microsoft Teams, WhatsApp)"
+  },
+  "2.1 B5": {
+    "question": "Stai informando il tuo tutor di una scadenza mancata. Qual è il modo più appropriato per comunicare questo?",
+    "options": ["Messaggio di testo", "Email formale", "Post sui social media", "Telefonata"],
+    "answer": "Email formale"
+  },
+  "2.1 B6": {
+    "question": "Stai discutendo un argomento sensibile con un collega. Quale metodo dovresti scegliere?",
+    "options": ["Chat di gruppo", "Videochiamata", "Forum pubblico", "Messaggio diretto"],
+    "answer": "Videochiamata"
+  },
+  "2.1 M1": {
+    "question": "Immagina di aver ordinato un libro per studenti online su un sito web e di avere difficoltà a tracciare l’ordine. Quale frase (input) sarebbe il modo più efficace per chiedere a un assistente virtuale (bot) di cercare il tuo ultimo ordine?",
+    "options": [
+      "\"Cerca il mio libro.\"",
+      "\"Dov’è il mio ordine?\"",
+      "\"Traccia l’ordine n. XD1035GH\"",
+      "\"Ciao, ho bisogno di qualcosa.\""
+    ],
+    "answer": "\"Traccia l’ordine n. XD1035GH\""
+  },
+  "2.1 M2": {
+    "question": "Quando interagisci con piattaforme di intelligenza artificiale generativa (es. ChatGPT), qual è il modo più appropriato di scrivere l’input per ottenere risultati accurati?",
+    "options": ["Fare domande.", "Fornire istruzioni dettagliate.", "Dare dati.", "Usare solo parole chiave"],
+    "answer": "Fornire istruzioni dettagliate."
+  },
+  "2.1 M3": {
+    "question": "Quale dei seguenti è un fattore chiave nella scelta dello strumento di comunicazione digitale appropriato per una presentazione accademica?",
+    "options": [
+      "Lo schema di colori dello strumento",
+      "La capacità dello strumento di supportare multimedia e condivisione dello schermo",
+      "La popolarità dello strumento tra i miei amici",
+      "L’integrazione dello strumento con i social media"
+    ],
+    "answer": "La capacità dello strumento di supportare multimedia e condivisione dello schermo"
+  },
+  "2.1 M4": {
+    "question": "Ti viene chiesto di presentare una nuova funzionalità software a un gruppo di colleghi. Qual è il metodo di comunicazione più appropriato?",
+    "options": ["Un post informale sul blog", "Una email dettagliata con allegati", "Una demo dal vivo tramite videochiamata", "Un messaggio video registrato"],
+    "answer": "Una demo dal vivo tramite videochiamata"
+  },
+  "2.1 M5": {
+    "question": "Sei il rappresentante di classe e devi fare un annuncio che riguarda tutti gli studenti. Quale canale di comunicazione è più efficace?",
+    "options": ["App di chat del team", "Invio massivo di email", "Videoconferenza", "Gruppo WhatsApp"],
+    "answer": "Invio massivo di email"
+  },
+  "2.1 M6": {
+    "question": "Tu e i tuoi compagni state sviluppando un progetto per un’unità curricolare. Quale delle seguenti piattaforme aiuterebbe il tuo gruppo a tenere traccia delle attività in corso?",
+    "options": ["Trello", "Discord", "Slack", "Email"],
+    "answer": "Trello"
+  },
+
+  "2.2 B1": {
+    "question": "Quale delle seguenti definisce meglio la 'condivisione dei dati'?",
+    "options": [
+      "Distribuire dati senza alcuna condizione",
+      "Collaborare con altri per scambiare dati a beneficio reciproco",
+      "Discutere di dati sui social media",
+      "Parlare solo verbalmente dei dati senza condividere file"
+    ],
+    "answer": "Collaborare con altri per scambiare dati a beneficio reciproco"
+  },
+  "2.2 B2": {
+    "question": "Se trovi un’infografica online e vuoi condividerla sui social media, cosa dovresti fare?",
+    "options": [
+      "Pubblicarla senza modifiche.",
+      "Valutarne la credibilità e includere l’attribuzione all’autore.",
+      "Condividerla come se fosse tua.",
+      "Condividerla solo se ricordi chi l’ha creata."
+    ],
+    "answer": "Valutarne la credibilità e includere l’attribuzione all’autore."
+  },
+  "2.2 B3": {
+    "question": "Supponi di dover condividere un file con i tuoi compagni che pesa circa 1,4 GB, quale piattaforma useresti?",
+    "options": ["Email", "WhatsApp", "WeTransfer", "Messenger"],
+    "answer": "WeTransfer"
+  },
+  "2.2 B4": {
+    "question": "Seleziona la risposta più corretta riguardo le licenze software:",
+    "options": [
+      "Posso scaricare e condividere qualsiasi software che trovo online",
+      "Tutte le licenze acquistate sono a vita",
+      "I diritti di licenza dipendono solitamente dallo scopo d’uso e dal numero di utenti",
+      "Posso scaricare solo software open-source"
+    ],
+    "answer": "I diritti di licenza dipendono solitamente dallo scopo d’uso e dal numero di utenti"
+  },
+  "2.2 B5": {
+    "question": "Quali informazioni sono importanti quando si cita un libro online nelle referenze bibliografiche?",
+    "options": [
+      "Autori e link al sito web",
+      "Link al sito web",
+      "Autori, anno, titolo, editore e link al sito web",
+      "Anno, pagine e titolo"
+    ],
+    "answer": "Autori, anno, titolo, editore e link al sito web"
+  },
+  "2.2 B6": {
+    "question": "Quali immagini puoi condividere online?",
+    "options": [
+      "Qualsiasi immagine da Google Immagini",
+      "Solo immagini senza copyright",
+      "Qualsiasi immagine da Internet",
+      "Solo immagini senza copyright o autorizzate dagli autori."
+    ],
+    "answer": "Solo immagini senza copyright o autorizzate dagli autori."
+  },
+"2.2 M1": {
+    "question": "Hai trovato un’immagine interessante online che è protetta dalla seguente licenza Creative Commons. Come puoi riutilizzarla?",
+    "options": [
+      "Modificare i colori dell’immagine e usarla in una presentazione, mostrando l’autore e il logo CC",
+      "Stampare l’immagine su una confezione con il logo CC e venderla",
+      "Condividere l’immagine sui social media",
+      "Usare l’immagine sul mio profilo"
+    ],
+    "answer": "Modificare i colori dell’immagine e usarla in una presentazione, mostrando l’autore e il logo CC"
+  },
+  "2.2 M2": {
+    "question": "Quando usi immagini in compiti scolastici trovate online, qual è il modo più corretto per dare attribuzione?",
+    "options": [
+      "'Trovata online'.",
+      "'Fonte: Google Immagini'.",
+      "'Immagine di [Nome Autore] via [Sito Web]'.",
+      "Non è necessaria alcuna attribuzione per i link condivisi."
+    ],
+    "answer": "'Immagine di [Nome Autore] via [Sito Web]'."
+  },
+  "2.2 M3": {
+    "question": "Il seguente articolo è stato trovato sul sito web di un editore: Robertson, C. T. (2023). Defining News from an Audience Perspective at a Time of Crisis in the United States. Journalism Practice, 17(2), 374–390. https://doi.org/10.1080/17512786.2021.1919178. Quale informazione riguardo questo articolo è corretta?",
+    "options": [
+      "Autore: Robertson, titolo: Journalism Practice, pagine: 374-390.",
+      "Autore: Robertson, rivista: Journalism Practice, pagine: 374-390.",
+      "Autore: C.T., volume: 17, numero: 2.",
+      "Titolo: Journalism Practice, pagine: 374-390, editore: doi.org"
+    ],
+    "answer": "Autore: Robertson, rivista: Journalism Practice, pagine: 374-390."
+  },
+  "2.2 M4": {
+    "question": "Quale musica può essere condivisa in una pubblicazione sui social media?",
+    "options": ["Qualsiasi canzone", "Solo quelle consentite dalla piattaforma", "Canzoni vecchie", "Canzoni in cui l’artista è morto da 70 anni"],
+    "answer": "Canzoni in cui l’artista è morto da 70 anni"
+  },
+  "2.2 M5": {
+    "question": "Se vai a Bruxelles, quale delle seguenti immagini non puoi condividere online per uso commerciale, almeno fino al 2076?",
+    "options": [
+      "Una foto di me e i miei amici all’Atomium",
+      "Una foto di me che cammino per le strade",
+      "Una foto di me e i miei amici alla Grand Place",
+      "Una foto del mio amico che mangia cioccolato con il suo consenso"
+    ],
+    "answer": "Una foto di me e i miei amici all’Atomium"
+  },
+  "2.2 M6": {
+    "question": "Quale azione non viola i diritti di proprietà intellettuale?",
+    "options": [
+      "Scaricare e utilizzare database di pubblico dominio",
+      "Prestare le password agli amici per accedere a contenuti a pagamento",
+      "Scaricare software da siti torrent",
+      "Registrare parti di un programma TV e caricarlo su YouTube."
+    ],
+    "answer": "Scaricare e utilizzare database di pubblico dominio"
+  },
+
+  "2.3 B1": {
+    "question": "Quale dei seguenti è un servizio digitale spesso utilizzato per pagare le tasse universitarie?",
+    "options": ["Facebook", "WeTransfer", "Home banking", "Instagram"],
+    "answer": "Home banking"
+  },
+  "2.3 B2": {
+    "question": "Seleziona l’abbinamento corretto dei servizi digitali con la funzione più appropriata.",
+    "options": [
+      "Sito web governativo: Accedere a informazioni e servizi pubblici",
+      "Social media: Firmare e sostenere cause",
+      "Petizione online: Seguire corsi e acquisire nuove competenze",
+      "Piattaforma di e-learning: Partecipare a discussioni e condividere opinioni"
+    ],
+    "answer": "Sito web governativo: Accedere a informazioni e servizi pubblici"
+  },
+  "2.3 B3": {
+    "question": "Qual è il modo più efficace per contattare il direttore del tuo corso di laurea?",
+    "options": ["WhatsApp", "Email", "Instagram", "Chiamata al cellulare"],
+    "answer": "Email"
+  },
+  "2.3 B4": {
+    "question": "Quale delle seguenti è un esempio di utilizzo della tecnologia digitale per partecipare all’impegno civico?",
+    "options": ["Fare acquisti online", "Votare tramite una piattaforma online sicura", "Guardare film in streaming", "Scorrere i social media"],
+    "answer": "Votare tramite una piattaforma online sicura"
+  },
+  "2.3 B5": {
+    "question": "Qual è il ruolo delle piattaforme di social media nell’impegno civico?",
+    "options": [
+      "Promuovono il consumismo",
+      "Servono come strumento di diffusione delle informazioni e mobilitazione",
+      "Ostacolano il discorso pubblico",
+      "Servono solo per connessioni personali"
+    ],
+    "answer": "Servono come strumento di diffusione delle informazioni e mobilitazione"
+  },
+  "2.3 B6": {
+    "question": "Seleziona la coppia errata tra tecnologia digitale e funzione di partecipazione civica:",
+    "options": [
+      "Petizioni online: Raccogliere sostegno pubblico per cause",
+      "Campagne sui social media: Raccogliere firme per un partito politico",
+      "Servizi di e-Government: Accedere ai servizi governativi",
+      "Piattaforme di crowdfunding: Raccolta fondi per progetti comunitari"
+    ],
+    "answer": "Campagne sui social media: Raccogliere firme per un partito politico"
+  },
+  "2.3 M1": {
+    "question": "Quale tecnologia digitale può migliorare la trasparenza e la responsabilità nell’impegno civico?",
+    "options": ["Realtà virtuale", "Blockchain", "Realtà aumentata", "Fitness tracker"],
+    "answer": "Blockchain"
+  },
+  "2.3 M2": {
+    "question": "Devi scrivere un saggio sulle opinioni degli studenti riguardo l’uso dei telefoni cellulari in classe. Quale degli strumenti seguenti sarebbe più appropriato per raccogliere le loro opinioni?",
+    "options": ["Sondaggio", "Fogli di calcolo", "Chiamate da cellulare", "Email"],
+    "answer": "Sondaggio"
+  },
+  "2.3 M3": {
+    "question": "Quali potrebbero essere i rischi di avere un algoritmo di IA che prevede il tuo voto in una determinata unità curricolare? Scegli la risposta più appropriata.",
+    "options": [
+      "L’IA potrebbe scoraggiarmi dal continuare a migliorare le mie abitudini di studio.",
+      "Le previsioni dell’IA potrebbero introdurre bias, influenzando il modo in cui gli insegnanti vedono e supportano gli studenti.",
+      "I sistemi di IA possono sostituire il ruolo dell’insegnante.",
+      "I modelli predittivi di IA sbaglierebbero sempre la mia valutazione."
+    ],
+    "answer": "Le previsioni dell’IA potrebbero introdurre bias, influenzando il modo in cui gli insegnanti vedono e supportano gli studenti."
+  },
+  "2.3 M4": {
+    "question": "Seleziona l’abbinamento corretto tra il concetto e la sua definizione:",
+    "options": [
+      "Divario digitale: Il divario tra chi ha accesso alle tecnologie digitali e chi non lo ha",
+      "E-partecipazione: Tecnologie progettate per facilitare l’impegno civico",
+      "Dati civici: L’uso di strumenti digitali per la partecipazione pubblica alla governance",
+      "Civic Tech: Dati resi pubblicamente disponibili per trasparenza e analisi"
+    ],
+    "answer": "Divario digitale: Il divario tra chi ha accesso alle tecnologie digitali e chi non lo ha"
+  },
+  "2.3 M5": {
+    "question": "Un’organizzazione comunitaria vuole aumentare la consapevolezza sui problemi locali utilizzando strumenti digitali. Quale approccio è più efficace?",
+    "options": [
+      "Creare un sito web con informazioni statiche",
+      "Lanciare una campagna interattiva sui social media",
+      "Distribuire volantini cartacei",
+      "Organizzare un solo evento senza seguito"
+    ],
+    "answer": "Lanciare una campagna interattiva sui social media"
+  },
+  "2.3 M6": {
+    "question": "Seleziona l’abbinamento corretto tra la tecnologia digitale e la sua caratteristica o beneficio rilevante nella promozione della cittadinanza partecipativa:",
+    "options": [
+      "Piattaforme di social media: Offrono risorse e strumenti per un efficace impegno civico a sostegno dei più vulnerabili.",
+      "Sistemi di voto online: Forniscono piattaforme per amplificare le voci emarginate.",
+      "Strumenti di advocacy digitale: Facilitano l’azione collettiva e raccolgono input dalla comunità.",
+      "Siti web di civic tech: Consentono feedback e discussioni in tempo reale tra i cittadini."
+    ],
+    "answer": "Siti web di civic tech: Consentono feedback e discussioni in tempo reale tra i cittadini."
+  },
+
+  "2.4 B1": {
+    "question": "Quale dei seguenti è un vantaggio dell’utilizzo di strumenti collaborativi come Google Docs o Sheets per i progetti di gruppo?",
+    "options": ["Accesso limitato", "Aggiornamenti in tempo reale", "Richiede software costoso", "Funziona solo offline"],
+    "answer": "Aggiornamenti in tempo reale"
+  },
+  "2.4 B2": {
+    "question": "Quale dei seguenti strumenti può aiutare a raccogliere feedback dai tuoi compagni?",
+    "options": ["Mentimeter", "Adobe Illustrator", "MS Sharepoint", "MS PowerPoint"],
+    "answer": "Mentimeter"
+  },
+  "2.4 B3": {
+    "question": "Immagina di pubblicare un post su Instagram riguardo a un prossimo hackathon nella tua università. Quali hashtag sono più appropriati per attirare altri studenti?",
+    "options": [
+      "#hackathon #university",
+      "#comevisit #events",
+      "#hackathon #[nome dell’università] #[nome dell’evento e anno]",
+      "#city #programming"
+    ],
+    "answer": "#hackathon #[nome dell’università] #[nome dell’evento e anno]"
+  },
+  "2.4 B4": {
+    "question": "Quale delle seguenti descrive meglio la co-creazione nel contesto degli strumenti digitali?",
+    "options": [
+      "Individui che creano contenuti indipendentemente",
+      "Collaborazione tra più parti interessate per creare risorse condivise",
+      "Usare la tecnologia per progetti personali",
+      "Raccogliere dati senza input degli stakeholder"
+    ],
+    "answer": "Collaborazione tra più parti interessate per creare risorse condivise"
+  },
+  "2.4 B5": {
+    "question": "Qual è un vantaggio principale dell’uso di piattaforme collaborative come Google Docs per la co-costruzione della conoscenza?",
+    "options": [
+      "Consente spazio di archiviazione illimitato",
+      "Permette collaborazione e feedback in tempo reale",
+      "Migliora la privacy dei dati",
+      "Non richiede connessione internet"
+    ],
+    "answer": "Permette collaborazione e feedback in tempo reale"
+  },
+  "2.4 B6": {
+    "question": "Seleziona l’abbinamento corretto tra strumenti digitali e funzione di co-creazione:",
+    "options": [
+      "Strumenti di mappatura collaborativa: Raccogliere input diversi dal pubblico",
+      "Piattaforme di crowdsourcing: Consentire a più utenti di modificare e aggiornare informazioni",
+      "Wiki: Visualizzare dati e idee spazialmente",
+      "Strumenti di sondaggi online: Raccogliere opinioni e dati dagli stakeholder"
+    ],
+    "answer": "Strumenti di sondaggi online: Raccogliere opinioni e dati dagli stakeholder"
+  },
+  "2.4 M1": {
+    "question": "Qual è la funzione principale di un software di controllo versione come Git nei progetti collaborativi?",
+    "options": ["Modificare immagini", "Tracciare le modifiche a documenti e codice", "Creare presentazioni", "Gestire email"],
+    "answer": "Tracciare le modifiche a documenti e codice"
+  },
+  "2.4 M2": {
+    "question": "In un contesto collaborativo, qual è lo scopo principale dell’uso di un calendario condiviso come Google Calendar?",
+    "options": ["Tenere traccia delle attività personali", "Condividere scadenze e pianificare riunioni", "Inviare newsletter", "Creare liste di cose da fare"],
+    "answer": "Condividere scadenze e pianificare riunioni"
+  },
+  "2.4 M3": {
+    "question": "Qual è lo scopo principale di un repository su GitHub?",
+    "options": ["Archiviare e condividere codice", "Inviare email ai collaboratori", "Creare presentazioni", "Ospitare un sito web"],
+    "answer": "Archiviare e condividere codice"
+  },
+  "2.4 M4": {
+    "question": "Qual è lo scopo dell’opzione 'Revisioni' su MS Word?",
+    "options": [
+      "Tenere traccia della cronologia delle versioni",
+      "Sapere dove e chi ha effettuato modifiche al documento",
+      "Segnalare eventuali errori",
+      "Segnalare problemi"
+    ],
+    "answer": "Sapere dove e chi ha effettuato modifiche al documento"
+  },
+  "2.4 M5": {
+    "question": "Un team di ricerca utilizza una piattaforma online per raccogliere dati dai partecipanti e includere se stesso nell’analisi. Quale approccio sta usando?",
+    "options": ["Metodi di ricerca chiusi", "Citizen science", "Sondaggi tradizionali", "Data mining"],
+    "answer": "Citizen science"
+  },
+  "2.4 M6": {
+    "question": "Quale termine definisce il riutilizzo e la modifica della creazione o del codice di qualcun altro nel mondo digitale?",
+    "options": ["Adattamento", "Remixing", "Apud", "Riutilizzo"],
+    "answer": "Remixing"
+  },
+
+  "2.5 B1": {
+    "question": "Quale dei seguenti è un esempio di buona netiquette nella comunicazione via email?",
+    "options": [
+      "Usare tutte lettere maiuscole",
+      "Inviare più email in un breve periodo di tempo",
+      "Includere un oggetto chiaro",
+      "Ignorare ortografia e grammatica"
+    ],
+    "answer": "Includere un oggetto chiaro"
+  },
+  "2.5 B2": {
+    "question": "Come risponderesti a un attacco personale o a una provocazione che viola le regole di un gruppo di discussione online moderato?",
+    "options": [
+      "Informare il moderatore",
+      "Aspettare che altri membri vengano in mia difesa",
+      "Provare a ragionare con l’autore dell’attacco",
+      "Pubblicare qualcosa in reazione all’attacco"
+    ],
+    "answer": "Informare il moderatore"
+  },
+  "2.5 B3": {
+    "question": "Cosa dovresti fare quando ricevi un’email indesiderata?",
+    "options": ["Rispondere", "Spostarla nel cestino", "Segnarla come spam e spostarla nel cestino", "Disiscriverti"],
+    "answer": "Segnarla come spam e spostarla nel cestino"
+  },
+  "2.5 B4": {
+    "question": "Sei in ritardo per una lezione online ed entri nella videoconferenza a sessione già iniziata. Cosa dovresti fare?",
+    "options": [
+      "Accendere la videocamera e salutare l’insegnante",
+      "Accendere il microfono e dire che sei arrivato",
+      "Chiedere all’insegnante di fare un riepilogo",
+      "Segnalare la tua presenza in chat senza interrompere"
+    ],
+    "answer": "Segnalare la tua presenza in chat senza interrompere"
+  },
+  "2.5 B5": {
+    "question": "Quali buone pratiche sono raccomandate per seguire una lezione a distanza?",
+    "options": [
+      "Tenere la videocamera spenta e restare sempre in silenzio",
+      "Accendere la videocamera e restare in silenzio quando parla qualcun altro",
+      "Tenere sempre acceso il microfono",
+      "Accendere la videocamera usando sfondi personalizzati"
+    ],
+    "answer": "Accendere la videocamera e restare in silenzio quando parla qualcun altro"
+  },
+  "2.5 B6": {
+    "question": "Devi interrompere il tuo insegnante durante una lezione online, cosa dovresti fare?",
+    "options": [
+      "Usare la funzione alza mano e aspettare il tuo turno",
+      "Accendere la videocamera e alzare la mano",
+      "Usare il microfono e chiedere il permesso",
+      "Inviare un messaggio privato all’insegnante"
+    ],
+    "answer": "Usare la funzione alza mano e aspettare il tuo turno"
+  },
+  "2.5 M1": {
+    "question": "Quando presenti un lavoro di gruppo ai tuoi compagni, quale delle seguenti strategie potrebbe essere più efficace?",
+    "options": [
+      "Usare un linguaggio formale e paragrafi lunghi",
+      "Incorporare elementi visivi e un linguaggio conciso",
+      "Evitare elementi interattivi",
+      "Enfatizzare i metodi di comunicazione tradizionali"
+    ],
+    "answer": "Incorporare elementi visivi e un linguaggio conciso"
+  },
+  "2.5 M2": {
+    "question": "Cosa è considerato un discorso d’odio sui social media?",
+    "options": [
+      "Attacco diretto contro istituzioni",
+      "Insultare un partito politico",
+      "Insulti usati per attaccare persone in base alla loro etnia",
+      "Commenti arrabbiati su una partita di calcio"
+    ],
+    "answer": "Insulti usati per attaccare persone in base alla loro etnia"
+  },
+  "2.5 M3": {
+    "question": "Quale dei seguenti aspetti renderebbe una presentazione accademica più inclusiva?",
+    "options": [
+      "Aggiungere più colori possibile",
+      "Usare sottotitoli video con caratteri sans-serif",
+      "Parlare ad alta voce",
+      "Scrivere parole in maiuscolo"
+    ],
+    "answer": "Usare sottotitoli video con caratteri sans-serif"
+  },
+  "2.5 M4": {
+    "question": "Supponendo che tu veda un post di un tuo amico sui social media a sostegno di un compagno che ha recentemente fatto coming out con un nuovo genere. Quale sarebbe l’approccio più appropriato per aumentare la consapevolezza sull’inclusione di genere?",
+    "options": ["Non fare nulla, non è affar mio.", "Rispondere e dire che non sei d’accordo", "Mettere like e sostenerli", "Segnalare all’insegnante"],
+    "answer": "Mettere like e sostenerli"
+  },
+  "2.5 M5": {
+    "question": "Hai terminato un elaborato di domenica e decidi di inviarlo al tuo insegnante via email. Qual è il comportamento più educato?",
+    "options": [
+      "Inviare subito l’email",
+      "Salvare la bozza",
+      "Chiedere all’insegnante in chat se puoi inviarla",
+      "Programmare automaticamente l’invio dell’email per lunedì mattina"
+    ],
+    "answer": "Programmare automaticamente l’invio dell’email per lunedì mattina"
+  },
+  "2.5 M6": {
+    "question": "Vuoi programmare una riunione virtuale con partecipanti di diversi fusi orari, includendo sia giovani che anziani. Noti che alcuni preferiscono incontri serali e altri al mattino. Cosa dovresti fare?",
+    "options": [
+      "Programmare l’incontro in un orario che funzioni per te; gli altri si adatteranno.",
+      "Proporre alcune opzioni di orario che ti si addicono e usare un sondaggio per trovare un consenso.",
+      "Scegliere l’orario più comodo per te e informare gli altri in seguito.",
+      "Far inviare a tutti la loro disponibilità e poi decidere in base alla maggioranza."
+    ],
+    "answer": "Proporre alcune opzioni di orario che ti si addicono e usare un sondaggio per trovare un consenso."
+  },
+
+  "2.6 B1": {
+    "question": "Quale delle seguenti è una buona pratica per gestire più identità digitali?",
+    "options": [
+      "Usare la stessa password per tutti gli account",
+      "Mantenere le informazioni del profilo coerenti su tutte le piattaforme",
+      "Aggiornare regolarmente le impostazioni della privacy di ciascun account",
+      "Ignorare gli avvisi di sicurezza"
+    ],
+    "answer": "Aggiornare regolarmente le impostazioni della privacy di ciascun account"
+  },
+  "2.6 B2": {
+    "question": "Quale delle seguenti pratiche è più efficace per gestire la tua identità digitale e proteggere la tua reputazione online?",
+    "options": [
+      "Condividere liberamente informazioni personali sui social media per connettersi con più persone.",
+      "Aggiornare regolarmente le impostazioni della privacy sui social media ed essere consapevoli di ciò che pubblico",
+      "Usare la stessa password su più piattaforme per un accesso più semplice.",
+      "Ignorare commenti e feedback sui miei profili online per evitare confronti."
+    ],
+    "answer": "Aggiornare regolarmente le impostazioni della privacy sui social media ed essere consapevoli di ciò che pubblico"
+  },
+  "2.6 B3": {
+    "question": "Qual è la strategia migliore per gestire i dati che produci online e proteggere la tua identità digitale?",
+    "options": [
+      "Pubblicare frequentemente senza considerare l’impatto sulal reputazione.",
+      "Rivedere regolarmente ed eliminare post e account obsoleti o irrilevanti.",
+      "Consentire a tutte le app di accedere ai miei account social senza restrizioni.",
+      "Condividere informazioni sensibili pubblicamente per ottenere fiducia e credibilità."
+    ],
+    "answer": "Rivedere regolarmente ed eliminare post e account obsoleti o irrilevanti."
+  },
+  "2.6 B4": {
+    "question": "Quale contenuto minaccia direttamente la sicurezza personale sui social media?",
+    "options": ["Fake news", "Pubblicità indesiderata", "Messaggio diretto indesiderato", "Molestie e ricatti"],
+    "answer": "Molestie e ricatti"
+  },
+  "2.6 B5": {
+    "question": "È appropriato condividere una foto con minori (es. fratelli o cugini minorenni) sui social media?",
+    "options": [
+      "No, mai.",
+      "Sì, perché è uno spazio privato.",
+      "Sì, purché chieda il permesso ai loro genitori.",
+      "Sì, solo se non mostro parti del corpo che li rendono riconoscibili."
+    ],
+    "answer": "Sì, purché chieda il permesso ai loro genitori."
+  },
+  "2.6 B6": {
+    "question": "Stai facendo domanda per un nuovo lavoro e ti rendi conto che i tuoi profili social sono pubblici. Alcuni post potrebbero non essere in linea con la tua immagine professionale. Cosa dovresti fare?",
+    "options": [
+      "Lasciare tutto com’è; il datore non dovrebbe giudicarti in base ai post personali.",
+      "Rivedere e aggiornare le impostazioni della privacy per limitare chi può vedere i miei post.",
+      "Cancellare tutti i post degli ultimi cinque anni.",
+      "Creare un account professionale separato per connessioni lavorative."
+    ],
+    "answer": "Rivedere e aggiornare le impostazioni della privacy per limitare chi può vedere i miei post."
+  },
+  "2.6 M1": {
+    "question": "Qual è un modo per proteggere i tuoi dati personali quando crei account online?",
+    "options": [
+      "Usare password facili da ricordare",
+      "Condividere la password con amici",
+      "Abilitare l’autenticazione a due fattori",
+      "Evitare di usare le impostazioni di privacy"
+    ],
+    "answer": "Abilitare l’autenticazione a due fattori"
+  },
+  "2.6 M2": {
+    "question": "Come eviteresti che le app mobili raccolgano dati residui dal tuo dispositivo?",
+    "options": ["Disattivando geolocalizzazione e tracciamento app", "Abilitando il microfono", "Spegnendo la fotocamera", "Scegliendo la modalità aereo"],
+    "answer": "Disattivando geolocalizzazione e tracciamento app"
+  },
+  "2.6 M3": {
+    "question": "Quali metadati possono essere raccolti dalle aziende tecnologiche da un selfie scattato con il tuo smartphone?",
+    "options": ["Nome", "Posizione", "Posizione, età, genere, tratti di personalità, cronologia ricerche e interessi generali", "Nome e numero di telefono"],
+    "answer": "Posizione, età, genere, tratti di personalità, cronologia ricerche e interessi generali"
+  },
+  "2.6 M4": {
+    "question": "Cosa dovresti fare se qualcuno ruba la tua identità online (es. profilo social)?",
+    "options": [
+      "Cercare di negoziare con la persona che l’ha rubata.",
+      "Contattare le autorità locali",
+      "Segnalare il problema alla piattaforma e cambiare tutte le password.",
+      "Creare un altro profilo."
+    ],
+    "answer": "Segnalare il problema alla piattaforma e cambiare tutte le password."
+  },
+  "2.6 M5": {
+    "question": "Un modo ufficiale per segnalare eventuali violazioni relative ai tuoi dati è contattare:",
+    "options": [
+      "Le autorità locali",
+      "La tua Autorità nazionale per la protezione dei dati (DPA)",
+      "Il Ministero della Difesa",
+      "Il comune"
+    ],
+    "answer": "La tua Autorità nazionale per la protezione dei dati (DPA)"
+  },
+  "2.6 M6": {
+    "question": "Secondo il GDPR, per quanto tempo un’organizzazione può conservare i tuoi dati personali?",
+    "options": ["Per tutto il tempo che desidera", "Per il minor tempo possibile", "Per 3 anni", "Finché non chiedo di rimuoverli"],
+    "answer": "Per il minor tempo possibile"
+  },
+
+  "3.1 B1": {
+    "question": "Che cosa significa digitalizzare?",
+    "options": [
+      "Convertire informazioni analogiche in digitali",
+      "Convertire immagini in vettori",
+      "Acquisire file di grandi dimensioni",
+      "Trasformazione digitale"
+    ],
+    "answer": "Convertire informazioni analogiche in digitali"
+  },
+  "3.1 B2": {
+    "question": "Che cos’è un contenuto digitale?",
+    "options": [
+      "Prodotti fisici venduti online",
+      "Qualsiasi forma di media creata e condivisa online, come testi, immagini o video",
+      "Pubblicità su carta",
+      "Nessuna delle precedenti"
+    ],
+    "answer": "Qualsiasi forma di media creata e condivisa online, come testi, immagini o video"
+  },
+  "3.1 B3": {
+    "question": "Quali elementi può contenere un contenuto digitale?",
+    "options": [
+      "E-book, blog, articoli e newsletter",
+      "Podcast, musica e audiolibri",
+      "Video, film, programmi TV e dirette streaming",
+      "Tutte le risposte sono corrette"
+    ],
+    "answer": "Tutte le risposte sono corrette"
+  },
+  "3.1 B4": {
+    "question": "Quale strumento è più comunemente utilizzato per la grafica?",
+    "options": ["Microsoft Excel", "Canva", "Microsoft PowerPoint", "Notepad"],
+    "answer": "Canva"
+  },
+  "3.1 B5": {
+    "question": "Che cos’è l’'HTML'?",
+    "options": [
+      "Un linguaggio di programmazione",
+      "Un linguaggio per creare pagine web",
+      "Un programma di grafica",
+      "Un software di fotoritocco"
+    ],
+    "answer": "Un linguaggio per creare pagine web"
+  },
+  "3.1 B6": {
+    "question": "Quali piattaforme sono social media?",
+    "options": ["Instagram", "TikTok", "Facebook", "Tutte"],
+    "answer": "Tutte"
+  },
+  "3.1 M1": {
+    "question": "Quali sei elementi possono essere combinati per creare contenuti multimediali?",
+    "options": [
+      "Colore, ipertesto, immagini, musica, voice-over e video",
+      "Audio, ipertesto, immagini, colore, musica e animazione",
+      "Testo, link, animazione, video, effetti sonori e animazione",
+      "Audio, immagini, animazione, ipertesto, testo e video"
+    ],
+    "answer": "Audio, immagini, animazione, ipertesto, testo e video"
+  },
+  "3.1 M2": {
+    "question": "Quale tecnica avanzata viene usata per ottimizzare i contenuti digitali per i motori di ricerca, comprendendo l’intento degli utenti e sfruttando le parole chiave semantiche?",
+    "options": [
+      "Keyword stuffing",
+      "LSI (Latent Semantic Indexing)",
+      "Creazione di backlink",
+      "Ottimizzazione dei meta tag"
+    ],
+    "answer": "LSI (Latent Semantic Indexing)"
+  },
+  "3.1 M3": {
+    "question": "Quale software è comunemente usato per creare contenuti multimediali interattivi?",
+    "options": [
+      "Adobe Animate (ex Flash)",
+      "Adobe Illustrator",
+      "Adobe After Effects",
+      "Adobe Photoshop"
+    ],
+    "answer": "Adobe Animate (ex Flash)"
+  },
+  "3.1 M4": {
+    "question": "Qual è l’importanza della SEO (Search Engine Optimization) nei contenuti digitali?",
+    "options": [
+      "Aiuta i contenuti a raggiungere meglio il pubblico di riferimento",
+      "Non ha alcuna importanza",
+      "Migliora solo l’aspetto del contenuto",
+      "Riduce la popolarità del contenuto"
+    ],
+    "answer": "Aiuta i contenuti a raggiungere meglio il pubblico di riferimento"
+  },
+  "3.1 M5": {
+    "question": "Che cos’è il 'responsive design'?",
+    "options": [
+      "Un design che si adatta automaticamente ai diversi dispositivi",
+      "Un design pensato solo per computer",
+      "Solo design testuale",
+      "Un design che non cambia"
+    ],
+    "answer": "Un design che si adatta automaticamente ai diversi dispositivi"
+  },
+  "3.1 M6": {
+    "question": "Nel contesto della creazione di contenuti digitali, qual è la funzione principale di un Content Management System (CMS)?",
+    "options": [
+      "Monitorare le metriche di coinvolgimento degli utenti",
+      "Facilitare la creazione, modifica e pubblicazione di contenuti digitali",
+      "Analizzare i concorrenti",
+      "Creare solo post per social media"
+    ],
+    "answer": "Facilitare la creazione, modifica e pubblicazione di contenuti digitali"
+  },
+
+  "3.2 B1": {
+    "question": "È importante analizzare a quale pubblico è rivolto il tuo contenuto digitale?",
+    "options": ["Sì", "No"],
+    "answer": "Sì"
+  },
+  "3.2 B2": {
+    "question": "Quale dei seguenti strumenti è comunemente utilizzato per creare immagini o opere d’arte generate dall’IA?",
+    "options": [
+      "Word Processor",
+      "Foglio di calcolo",
+      "Generative Adversarial Networks (GANs)",
+      "Software di montaggio video"
+    ],
+    "answer": "Generative Adversarial Networks (GANs)"
+  },
+  "3.2 B3": {
+    "question": "La seguente frase è vera o falsa? Condividere contenuti digitali online non offre la possibilità di ricevere feedback immediato su ciò che è stato pubblicato.",
+    "options": ["Vero", "Falso"],
+    "answer": "Falso"
+  },
+  "3.2 B4": {
+    "question": "La seguente frase è vera o falsa? Più interazione hai con il tuo pubblico, maggiore sarà la visibilità dei tuoi contenuti.",
+    "options": ["Vero", "Falso"],
+    "answer": "Vero"
+  },
+  "3.2 B5": {
+    "question": "La seguente frase è vera o falsa? Solo i contenuti hanno un pubblico target.",
+    "options": ["Vero", "Falso"],
+    "answer": "Falso"
+  },
+  "3.2 B6": {
+    "question": "Chi può far parte del tuo gruppo target di contenuti?",
+    "options": [
+      "Un pubblico giovane",
+      "Persone con un approccio conservatore alla vita",
+      "Persone anziane",
+      "Tutte le risposte sono corrette"
+    ],
+    "answer": "Tutte le risposte sono corrette"
+  },
+  "3.2 M1": {
+    "question": "Qual è il principale vantaggio di aggiungere i sottotitoli a presentazioni video?",
+    "options": [
+      "Aumentare la risoluzione del video",
+      "Migliorare l’accessibilità per le persone non udenti",
+      "Ridurre la dimensione del file",
+      "Velocizzare il caricamento del video"
+    ],
+    "answer": "Migliorare l’accessibilità per le persone non udenti"
+  },
+  "3.2 M2": {
+    "question": "Vuoi realizzare un’infografica sul tasso di natalità nel tuo Paese. Quale delle seguenti è una piattaforma online di visualizzazione dati?",
+    "options": ["Flourish", "Canva", "Microsoft PowerPoint", "Google Forms"],
+    "answer": "Flourish"
+  },
+  "3.2 M3": {
+    "question": "Perché è importante integrare le story maps nei contenuti digitali?",
+    "options": [
+      "L’integrazione delle mappe in una storia consente di rendere i contenuti interattivi e aumentare il coinvolgimento",
+      "Le story maps possono aiutare a spiegare argomenti complessi in modo semplice.",
+      "La mappatura delle informazioni è visiva e i risultati raggiungono un pubblico più ampio.",
+      "Tutte le risposte sono corrette"
+    ],
+    "answer": "Tutte le risposte sono corrette"
+  },
+  "3.2 M4": {
+    "question": "Completa la frase: Identifica strumenti digitali che aiutino a rendere i tuoi contenuti…..",
+    "options": [
+      "più accessibili solo al pubblico giovane.",
+      "più inclusivi e accessibili e ad acquisire una comprensione di base delle linee guida sul 'fair use' in copyright e licenze.",
+      "altamente sofisticati e complessi."
+    ],
+    "answer": "più inclusivi e accessibili e ad acquisire una comprensione di base delle linee guida sul 'fair use' in copyright e licenze."
+  },
+  "3.2 M5": {
+    "question": "Quali sono i principali vantaggi di avere un blog?",
+    "options": [
+      "Puoi scegliere il tuo stile di pubblicazione: frequenza, lunghezza, argomento e altri parametri.",
+      "Puoi nasconderlo o renderlo pubblico",
+      "Tutte le risposte sono corrette"
+    ],
+    "answer": "Tutte le risposte sono corrette"
+  },
+  "3.2 M6": {
+    "question": "Quale delle seguenti descrive meglio un passaggio fondamentale nell’integrare sensori hardware con tecnologie digitali per creare un dispositivo smart home?",
+    "options": [
+      "Garantire che il dispositivo abbia un’interfaccia utente complessa",
+      "Selezionare sensori appropriati per raccogliere dati pertinenti",
+      "Limitare le opzioni di connettività per ridurre i costi",
+      "Progettare il dispositivo per essere usato solo manualmente"
+    ],
+    "answer": "Selezionare sensori appropriati per raccogliere dati pertinenti"
+  },
+  "3.3 B1": {
+    "question": "Il software è protetto dal diritto d’autore, il che rende illegale cosa?",
+    "options": [
+      "Acquistare il software da un sito di download",
+      "Fare copie da dare a familiari e amici",
+      "Entrambe le affermazioni"
+    ],
+    "answer": "Fare copie da dare a familiari e amici"
+  },
+  "3.3 B2": {
+    "question": "Quali delle seguenti potrebbero essere esempi di Fair Use?",
+    "options": [
+      "Pubblicare citazioni da un nuovo libro su un blog con un articolo di opinione che lo recensisce",
+      "Impostare la foto di una modella di Instagram come immagine del profilo su un’app di incontri",
+      "Riprodurre una canzone protetta da copyright come sottofondo in un video sul tuo canale YouTube di cucina",
+      "Usare immagini protette da copyright in una tua ricerca pubblicata senza riferimento"
+    ],
+    "answer": ["Pubblicare citazioni da un nuovo libro su un blog con un articolo di opinione che lo recensisce"]
+  },
+  "3.3 B3": {
+    "question": "Che cos’è una licenza Creative Commons?",
+    "options": [
+      "Un tipo di licenza software che permette la condivisione gratuita di codice open-source",
+      "Una licenza di copyright che consente ai creatori di specificare come gli altri possono usare il loro lavoro",
+      "Uno strumento per garantire che tutte le opere creative siano usate solo a fini commerciali",
+      "Un metodo per aggirare le restrizioni sul copyright e usare liberamente qualsiasi opera"
+    ],
+    "answer": "Una licenza di copyright che consente ai creatori di specificare come gli altri possono usare il loro lavoro"
+  },
+  "3.3 B4": {
+    "question": "Quale considerazione è importante quando si incorpora contenuto generato da IA nel proprio lavoro?",
+    "options": [
+      "Assicurarsi che il contenuto sia sempre gratuito",
+      "Attribuire chiaramente la fonte del contenuto generato dall’IA",
+      "Usare il contenuto senza alcuna modifica",
+      "Ignorare le leggi sul copyright"
+    ],
+    "answer": "Attribuire chiaramente la fonte del contenuto generato dall’IA"
+  },
+  "3.3 B5": {
+    "question": "Quale dei seguenti è un esempio di opera protetta da copyright?",
+    "options": ["Una formula matematica", "Una fotografia", "Un’idea di business", "Un logo aziendale"],
+    "answer": "Una fotografia"
+  },
+  "3.3 B6": {
+    "question": "Se vuoi utilizzare un’opera protetta da copyright, cosa dovresti fare?",
+    "options": [
+      "Modificarla leggermente",
+      "Ottenere il permesso dal titolare del copyright",
+      "Usarla gratuitamente se è per uso personale",
+      "Citare la fonte e usarla liberamente"
+    ],
+    "answer": "Ottenere il permesso dal titolare del copyright"
+  },
+  "3.3 M1": {
+    "question": "Quale delle seguenti dottrine legali consente un uso limitato delle opere protette da copyright senza permesso in circostanze specifiche, come commento o critica?",
+    "options": [
+      "Digital Millennium Copyright Act (DMCA)",
+      "Fair Use",
+      "Pubblico dominio",
+      "Diritti morali"
+    ],
+    "answer": "Fair Use"
+  },
+  "3.3 M2": {
+    "question": "Quale delle seguenti è un esempio di licenza 'copyleft' nello sviluppo software?",
+    "options": [
+      "Licenza Apache 2.0",
+      "Licenza MIT",
+      "GNU General Public License (GPL)",
+      "Creative Commons Zero (CC0)"
+    ],
+    "answer": "GNU General Public License (GPL)"
+  },
+  "3.3 M3": {
+    "question": "Nel contesto del text and data mining (TDM), quale direttiva dell’UE facilita l’estrazione legale di dati da materiali protetti da copyright a fini di ricerca senza permesso esplicito, e a quale condizione?",
+    "options": [
+      "La Direttiva DSM (2019/790), che consente il text and data mining da parte di organizzazioni di ricerca per scopi scientifici",
+      "La Direttiva Database, a condizione che il database sia pubblico",
+      "La Direttiva sul Copyright, a condizione che venga applicata un’eccezione per la ricerca scientifica",
+      "La Direttiva InfoSoc, a condizione che sia corrisposto un equo compenso al titolare del copyright"
+    ],
+    "answer": "La Direttiva DSM (2019/790), che consente il text and data mining da parte di organizzazioni di ricerca per scopi scientifici"
+  },
+  "3.3 M4": {
+    "question": "Quanto dura un copyright?",
+    "options": ["10 anni", "La vita dell’autore più 70 anni", "Per sempre", "5 anni dalla creazione"],
+    "answer": "La vita dell’autore più 70 anni"
+  },
+  "3.3 M5": {
+    "question": "Ho visto un’immagine online contrassegnata come 'Creative Commons'. Significa che posso usarla senza violare il copyright?",
+    "options": [
+      "Sì, è la stessa cosa del Pubblico Dominio",
+      "Sì, purché la usi nel modo indicato dalla licenza Creative Commons",
+      "No, Creative Commons non elimina il copyright, quindi stai violando",
+      "Sì, purché tu paghi per usare la Creative Commons"
+    ],
+    "answer": "Sì, purché la usi nel modo indicato dalla licenza Creative Commons"
+  },
+  "3.3 M6": {
+    "question": "Ho preso in prestito il telefono di un’amica e ho fatto uno Snapchat mentre posava con il mio cane. Chi possiede il copyright della foto?",
+    "options": [
+      "La tua amica, poiché è lei nella foto",
+      "Tu, poiché sei tu ad averla scattata",
+      "Tu, perché è il tuo cane",
+      "La tua amica, poiché è sul suo telefono",
+      "Snapchat, poiché hai usato la loro app per scattare la foto",
+      "Il tuo cane, perché è ovviamente la star della foto"
+    ],
+    "answer": "Tu, poiché sei tu ad averla scattata"
+  },
+
+  "3.4 B1": {
+    "question": "Che cos’è un algoritmo?",
+    "options": ["Un insieme di istruzioni o regole", "Un tipo di insetto", "Un videogioco"],
+    "answer": "Un insieme di istruzioni o regole"
+  },
+  "3.4 B2": {
+    "question": "Perché è necessario tradurre un algoritmo in codice?",
+    "options": ["Per trasformarlo in una storia", "Perché le persone possano leggerlo", "Perché un computer possa capirlo"],
+    "answer": "Perché un computer possa capirlo"
+  },
+  "3.4 B3": {
+    "question": "Quale delle seguenti NON è una caratteristica di un buon algoritmo?",
+    "options": ["Preciso", "Ambiguo", "Numero finito di passaggi", "Flusso logico di controllo"],
+    "answer": "Ambiguo"
+  },
+  "3.4 B4": {
+    "question": "Quale dei seguenti elementi è essenziale per creare un programma informatico?",
+    "options": [
+      "Solo grafica",
+      "Una sequenza di istruzioni progettate per risolvere un problema",
+      "Solo hardware",
+      "Solo testo"
+    ],
+    "answer": "Una sequenza di istruzioni progettate per risolvere un problema"
+  },
+  "3.4 B5": {
+    "question": "Qual è la funzione principale di un'istruzione 'if' in un linguaggio di programmazione?",
+    "options": [
+      "Eseguire un’azione se la condizione è vera",
+      "Stampare solo del testo",
+      "Creare grafica",
+      "Eseguire solo operazioni matematiche"
+    ],
+    "answer": "Eseguire un’azione se la condizione è vera"
+  },
+  "3.4 B6": {
+    "question": "Come puoi risolvere un problema usando un linguaggio di programmazione?",
+    "options": [
+      "Scrivendo messaggi",
+      "Creando un algoritmo che descrive i passaggi per la soluzione",
+      "Scrivendo solo testi",
+      "Disegnando solo diagrammi"
+    ],
+    "answer": "Creando un algoritmo che descrive i passaggi per la soluzione"
+  },
+  "3.4 M1": {
+    "question": "Qual è la struttura algoritmica nell’ordine corretto:",
+    "options": [
+      "Corpo, Intestazione, Dichiarazione e Terminatore",
+      "Intestazione, Corpo, Dichiarazione e Terminatore",
+      "Intestazione, Dichiarazione, Corpo e Terminatore",
+      "Dichiarazione, Corpo, Intestazione e Terminatore"
+    ],
+    "answer": "Intestazione, Dichiarazione, Corpo e Terminatore"
+  },
+  "3.4 M2": {
+    "question": "Come puoi misurare l’efficienza di un algoritmo?",
+    "options": ["Processore e memoria", "Tempo e spazio", "Complessità e capacità", "Dati e spazio"],
+    "answer": "Tempo e spazio"
+  },
+  "3.4 M3": {
+    "question": "Input, output, operazioni aritmetiche e assegnazioni di variabili sono esempi di quale tipo di struttura:",
+    "options": ["Ciclo", "Array", "Ripetizione", "Sequenziale", "Selezione"],
+    "answer": "Sequenziale"
+  },
+  "3.4 M4": {
+    "question": "Qual è il principio fondamentale della programmazione orientata agli oggetti?",
+    "options": [
+      "Creare algoritmi",
+      "Scrivere codice in un solo file",
+      "Organizzare dati e funzioni in oggetti",
+      "Usare solo file di testo"
+    ],
+    "answer": "Organizzare dati e funzioni in oggetti"
+  },
+  "3.4 M5": {
+    "question": "Come può una 'funzione' migliorare la struttura di un programma?",
+    "options": [
+      "Riduce la decomposizione del codice",
+      "Crea operazioni inutili",
+      "Favorisce il riuso del codice",
+      "Aumenta la complessità del codice"
+    ],
+    "answer": "Favorisce il riuso del codice"
+  },
+  "3.4 M6": {
+    "question": "Qual è l’importanza del processo di 'debugging' nella programmazione?",
+    "options": [
+      "Scrivere codice senza errori",
+      "Individuare e correggere errori",
+      "Solo organizzare il codice",
+      "Ottimizzare il codice"
+    ],
+    "answer": "Individuare e correggere errori"
+  },
+
+  "4.1 B1": {
+    "question": "Quale dei seguenti è il modo più sicuro per proteggere il tuo dispositivo dai malware?",
+    "options": [
+      "Scaricare app da qualsiasi sito",
+      "Installare un antivirus e mantenerlo aggiornato",
+      "Cliccare sui pop-up pubblicitari",
+      "Ignorare gli aggiornamenti software"
+    ],
+    "answer": "Installare un antivirus e mantenerlo aggiornato"
+  },
+  "4.1 B2": {
+    "question": "Che cos’è un malware?",
+    "options": [
+      "Software che aggiorna automaticamente i programmi",
+      "Un virus o un programma dannoso",
+      "Un firewall che protegge i dispositivi",
+      "Un backup dei file personali"
+    ],
+    "answer": "Un virus o un programma dannoso"
+  },
+  "4.1 B3": {
+    "question": "Qual è una buona pratica per mantenere sicuri i dati personali online?",
+    "options": [
+      "Condividere le password solo con persone fidate",
+      "Usare la stessa password per tutti gli account",
+      "Abilitare l’autenticazione a due fattori",
+      "Salvare le password in un file di testo"
+    ],
+    "answer": "Abilitare l’autenticazione a due fattori"
+  },
+  "4.1 B4": {
+    "question": "Quale dei seguenti è un metodo per proteggere i dispositivi elettronici da accessi non autorizzati?",
+    "options": [
+      "Disattivare il Wi-Fi",
+      "Usare una password sicura",
+      "Cancellare regolarmente i file temporanei",
+      "Chiudere tutte le applicazioni aperte"
+    ],
+    "answer": "Usare una password sicura"
+  },
+"4.1 B5": {
+    "question": "Cosa indica la presenza di un lucchetto nella barra degli indirizzi di un browser web?",
+    "options": [
+        "Che il sito web è sicuro e protetto",
+        "Che il sito contiene informazioni riservate",
+        "Che il sito web è stato verificato dalle autorità",
+        "Che il sito web è in manutenzione"
+    ],
+    "answer": "Che il sito web è sicuro e protetto"
+},
+"4.1 B6": {
+    "question": "Quale dei seguenti è un rischio comune quando si utilizzano reti Wi-Fi pubbliche non protette?",
+    "options": [
+        "Download più lenti",
+        "Accesso non autorizzato ai dati personali",
+        "Interruzioni del servizio di rete",
+        "Scaricamento rapido della batteria"
+    ],
+    "answer": "Accesso non autorizzato ai dati personali"
+},
+"4.1 M1": {
+    "question": "Quale dei seguenti metodi può aiutare a proteggere il tuo dispositivo da accessi non autorizzati?",
+    "options": [
+        "Lasciarlo incustodito in luoghi pubblici",
+        "Usare una password forte e unica o la sicurezza biometrica",
+        "Disabilitare tutte le funzionalità di sicurezza",
+        "Condividere la password con gli amici"
+    ],
+    "answer": "Usare una password forte e unica o la sicurezza biometrica"
+},
+"4.1 M2": {
+    "question": "Qual è la principale differenza tra un attacco man-in-the-middle e un attacco di phishing?",
+    "options": [
+        "Il phishing utilizza malware, mentre il man-in-the-middle no",
+        "Il man-in-the-middle intercetta le comunicazioni, il phishing inganna l'utente",
+        "Il phishing mira solo ai dispositivi mobili",
+        "Il man-in-the-middle richiede accesso fisico al dispositivo"
+    ],
+    "answer": "Il man-in-the-middle intercetta le comunicazioni, il phishing inganna l'utente"
+},
+"4.1 M3": {
+    "question": "Come protegge le comunicazioni online un certificato SSL?",
+    "options": [
+        "Cripta la connessione tra il browser e il server",
+        "Controlla la velocità di caricamento del sito",
+        "Monitora la presenza di malware sul sito",
+        "Verifica l'identità degli utenti"
+    ],
+    "answer": "Cripta la connessione tra il browser e il server"
+},
+"4.1 M4": {
+    "question": "Qual è la differenza tra una VPN e un firewall?",
+    "options": [
+        "La VPN cripta il traffico, il firewall lo monitora e filtra",
+        "La VPN blocca attacchi esterni, il firewall cripta le comunicazioni",
+        "La VPN è usata solo nelle reti aziendali, il firewall per utenti privati",
+        "La VPN previene malware, il firewall previene furti di dati"
+    ],
+    "answer": "La VPN cripta il traffico, il firewall lo monitora e filtra"
+},
+"4.2 B1": {
+    "question": "Come puoi proteggere i tuoi dati personali quando usi i social media?",
+    "options": [
+        "Condividendo la tua posizione in ogni post",
+        "Usando la stessa password per tutti gli account",
+        "Regolando le impostazioni sulla privacy per limitare chi può vedere le tue informazioni",
+        "Accettando richieste di amicizia da tutti"
+    ],
+    "answer": "Regolando le impostazioni sulla privacy per limitare chi può vedere le tue informazioni"
+},
+"4.2 B2": {
+    "question": "Quale delle seguenti descrive meglio come le aziende usano i dati personali secondo la loro politica sulla privacy?",
+    "options": [
+        "Usano i dati solo per venderli a terze parti",
+        "Non memorizzano mai dati personali",
+        "Raccolgono, archiviano e talvolta condividono dati personali secondo l'accordo con l'utente",
+        "Eliminano i dati personali dopo un mese"
+    ],
+    "answer": "Raccolgono, archiviano e talvolta condividono dati personali secondo l'accordo con l'utente"
+},
+"4.2 B3": {
+    "question": "Cosa sono le informazioni personalmente identificabili (PII)?",
+    "options": [
+        "Qualsiasi informazione condivisa sui social media",
+        "Informazioni che possono essere usate per identificare un individuo",
+        "Dati generali sull'uso di internet",
+        "Dati memorizzati nei cookie del browser"
+    ],
+    "answer": "Informazioni che possono essere usate per identificare un individuo"
+},
+"4.2 B4": {
+    "question": "Perché è importante leggere l'informativa sulla privacy di un servizio?",
+    "options": [
+        "Per migliorare la velocità di internet",
+        "Per accedere a funzionalità nascoste del servizio",
+        "Per ricevere pubblicità più personalizzate",
+        "Per capire come vengono raccolti e usati i tuoi dati"
+    ],
+    "answer": "Per capire come vengono raccolti e usati i tuoi dati"
+},
+"4.2 B5": {
+    "question": "Quale dei seguenti può aiutare a proteggere la tua privacy quando utilizzi servizi digitali?",
+    "options": [
+        "Disabilitare l'autenticazione a due fattori",
+        "Cancellare regolarmente la cronologia di navigazione",
+        "Condividere informazioni personali senza verificarne la fonte",
+        "Accettare tutte le autorizzazioni senza controllare"
+    ],
+    "answer": "Cancellare regolarmente la cronologia di navigazione"
+},
+"4.2 B6": {
+    "question": "Qual è un rischio comune per la privacy quando si usano i social media?",
+    "options": [
+        "Ricevere troppe richieste di amicizia",
+        "Condividere troppe informazioni personali pubblicamente",
+        "Perdere vecchi post",
+        "Seguire account indesiderati"
+    ],
+    "answer": "Condividere troppe informazioni personali pubblicamente"
+},
+"4.2 M1": {
+    "question": "Quale protocollo crittografico è ampiamente usato per garantire comunicazioni sicure su una rete informatica?",
+    "options": ["HTTP", "FTP", "SSL/TLS", "IMAP"],
+    "answer": "SSL/TLS"
+},
+"4.2 M2": {
+    "question": "Qual è lo scopo principale della crittografia quando si inviano dati personali online?",
+    "options": [
+        "Aumentare la velocità di internet",
+        "Proteggere i dati da accessi non autorizzati",
+        "Consentire la condivisione non desiderata con terze parti",
+        "Memorizzare dati su servizi cloud"
+    ],
+    "answer": "Proteggere i dati da accessi non autorizzati"
+},
+"4.2 M3": {
+    "question": "Come influisce il Regolamento Generale sulla Protezione dei Dati (GDPR) sull'uso dei dati personali da parte dei servizi digitali?",
+    "options": [
+        "Richiede alle aziende di ottenere il consenso esplicito prima di raccogliere dati personali",
+        "Permette alle aziende di condividere liberamente i dati degli utenti senza consenso",
+        "Si applica solo alle istituzioni finanziarie",
+        "Limita l'uso di qualsiasi dato personale da parte delle aziende"
+    ],
+    "answer": "Richiede alle aziende di ottenere il consenso esplicito prima di raccogliere dati personali"
+},
+"4.2 M4": {
+    "question": "Cosa dovresti fare se ricevi un'email che chiede informazioni personali ma non sei sicuro della sua legittimità?",
+    "options": [
+        "Rispondere immediatamente con le informazioni richieste",
+        "Seguire il link presente nell'e-mail",
+        "Verificare l'autenticità del mittente prima di condividere informazioni",
+        "Inoltrare l'email agli amici"
+    ],
+    "answer": "Verificare l'autenticità del mittente prima di condividere informazioni"
+},
+"4.2 M5": {
+    "question": "Come può aiutare la comprensione dell'informativa sulla privacy di un servizio a proteggerti dall'uso improprio dei dati?",
+    "options": [
+        "Consentendoti di disattivare le funzionalità di sicurezza",
+        "Informandoti su come l'azienda raccoglie, conserva e condivide i tuoi dati",
+        "Dandoti accesso a tutti i dati interni del servizio",
+        "Impedendoti di aggiornare le impostazioni sulla privacy"
+    ],
+    "answer": "Informandoti su come l'azienda raccoglie, conserva e condivide i tuoi dati"
+},
+"4.2 M6": {
+    "question": "Quale delle seguenti è una funzione di sicurezza comune utilizzata dai servizi digitali per proteggere i dati personali?",
+    "options": [
+        "Condividere automaticamente i dati degli utenti con gli inserzionisti",
+        "Autenticazione a due fattori (2FA)",
+        "Mostrare pubblicamente tutte le informazioni dell'utente",
+        "Consentire agli utenti di usare password deboli"
+    ],
+    "answer": "Autenticazione a due fattori (2FA)"
+ },
+"4.3 B1": {
+    "question": "Come puoi ridurre al minimo l'impatto dell'uso dei dispositivi digitali sulla tua salute e benessere?",
+    "options": [
+        "Usare il dispositivo continuamente senza pause",
+        "Impostare limiti di tempo sullo schermo e fare pause regolari",
+        "Tenere il dispositivo vicino agli occhi",
+        "Usare dispositivi solo in stanze buie"
+    ],
+    "answer": "Impostare limiti di tempo sullo schermo e fare pause regolari"
+},
+"4.3 B2": {
+    "question": "Qual è uno dei principali rischi fisici legati all'uso prolungato dei dispositivi digitali?",
+    "options": [
+        "Aumento della creatività",
+        "Affaticamento visivo",
+        "Miglioramento della qualità del sonno",
+        "Aumento della forza muscolare"
+    ],
+    "answer": "Affaticamento visivo"
+},
+"4.3 B3": {
+    "question": "Quale delle seguenti misure può aiutare a prevenire il cyberbullismo?",
+    "options": [
+        "Essere consapevoli delle impostazioni sulla privacy sui social media",
+        "Condividere le password con gli amici",
+        "Spegnere internet quando si riceve un messaggio dannoso",
+        "Ignorare tutte le interazioni online"
+    ],
+    "answer": "Essere consapevoli delle impostazioni sulla privacy sui social media"
+},
+"4.3 B4": {
+    "question": "Come si può ridurre il rischio di stress legato alla tecnologia?",
+    "options": [
+        "Usare dispositivi digitali senza fare pause",
+        "Usare la tecnologia solo durante il giorno",
+        "Creare una routine digitale che includa pause regolari e tempo offline",
+        "Ridurre al minimo l'uso delle email"
+    ],
+    "answer": "Creare una routine digitale che includa pause regolari e tempo offline"
+},
+"4.3 B5": {
+    "question": "Quale dei seguenti strumenti può aiutare a proteggere il benessere psicologico nell'uso delle tecnologie digitali?",
+    "options": [
+        "Usare filtri per la luce blu",
+        "Aumentare la risoluzione dello schermo",
+        "Acquistare dispositivi più costosi",
+        "Disattivare le notifiche delle app durante le ore di riposo"
+    ],
+    "answer": "Disattivare le notifiche delle app durante le ore di riposo"
+},
+"4.3 B6": {
+    "question": "Quale delle seguenti tecnologie digitali è particolarmente efficace nel promuovere l'inclusione sociale per le persone con disabilità?",
+    "options": [
+        "Realtà virtuale",
+        "Software di riconoscimento vocale",
+        "Intelligenza artificiale per la finanza",
+        "App di intrattenimento"
+    ],
+    "answer": "Software di riconoscimento vocale"
+},
+"4.3 M1": {
+    "question": "Qual è un segnale comune di cyberbullismo di cui bisogna essere consapevoli negli ambienti digitali?",
+    "options": [
+        "Feedback positivo sui post sui social media",
+        "Commenti negativi o minacce ripetute",
+        "Inviti a gruppi di studio online",
+        "Condivisione di risorse educative"
+    ],
+    "answer": "Commenti negativi o minacce ripetute"
+},
+"4.3 M2": {
+    "question": "Perché la consapevolezza delle impostazioni di privacy e sicurezza sui social è importante per la salute mentale?",
+    "options": [
+        "Assicura che solo i contatti approvati vedano le tue informazioni",
+        "Previene il sovraccarico di informazioni",
+        "Previene il furto d'identità",
+        "Riduce l'ansia causata da interazioni indesiderate e favorisce la tranquillità mentale"
+    ],
+    "answer": "Riduce l'ansia causata da interazioni indesiderate e favorisce la tranquillità mentale"
+},
+"4.3 M3": {
+    "question": "Quale delle seguenti descrive meglio come la competenza digitale può contribuire al benessere mentale e sociale?",
+    "options": [
+        "Permette agli utenti di navigare su internet più velocemente",
+        "Aiuta le persone a riconoscere e evitare rischi online, come disinformazione o contenuti dannosi",
+        "Permette interazioni continue sui social media senza conseguenze emotive",
+        "Garantisce che tutti i contenuti online siano filtrati e sicuri da accedere"
+    ],
+    "answer": "Aiuta le persone a riconoscere e evitare rischi online, come disinformazione o contenuti dannosi"
+},
+"4.3 M4": {
+    "question": "Quale azione può contribuire a creare un ambiente digitale sicuro e inclusivo per gli altri?",
+    "options": [
+        "Condividere informazioni personali degli amici su piattaforme pubbliche",
+        "Segnalare contenuti o comportamenti inappropriati",
+        "Evitare di interagire con sconosciuti",
+        "Ignorare messaggi negativi per evitare conflitti"
+    ],
+    "answer": "Segnalare contenuti o comportamenti inappropriati"
+},
+"4.3 M5": {
+    "question": "Qual è l'effetto dell'uso prolungato dei social media sulla salute mentale, secondo diversi studi?",
+    "options": [
+        "Può portare a una migliore autostima",
+        "Migliora le capacità sociali",
+        "Può aumentare il rischio di depressione e ansia",
+        "Riduce la solitudine nelle interazioni virtuali"
+    ],
+    "answer": "Può aumentare il rischio di depressione e ansia"
+},
+"4.3 M6": {
+    "question": "Come le tecnologie digitali possono promuovere l'inclusione sociale per gruppi vulnerabili?",
+    "options": [
+        "Consentendo maggiore esposizione pubblica delle loro vulnerabilità",
+        "Fornendo piattaforme sicure per supporto e comunicazione con altri",
+        "Limitando l'accesso ai social network per motivi di sicurezza",
+        "Consentendo solo ai professionisti di interagire con questi gruppi"
+    ],
+    "answer": "Fornendo piattaforme sicure per supporto e comunicazione con altri"
+},
+"4.4 B1": {
+    "question": "Quale delle seguenti pratiche aiuta a proteggere l'ambiente?",
+    "options": [
+        "Smaltire in modo improprio i rifiuti elettronici",
+        "Usare dispositivi a basso consumo energetico e riciclare vecchi elettronici",
+        "Acquistare nuovi dispositivi frequentemente",
+        "Ignorare aggiornamenti software per risparmiare energia"
+    ],
+    "answer": "Usare dispositivi a basso consumo energetico e riciclare vecchi elettronici"
+},
+"4.4 B2": {
+    "question": "Quale dei seguenti contribuisce all'impatto ambientale delle tecnologie digitali?",
+    "options": [
+        "Memorizzare dati su hard disk personali",
+        "Usare software con aggiornamenti automatici",
+        "Ricaricare i dispositivi con energia solare",
+        "Alto consumo energetico dei data center"
+    ],
+    "answer": "Alto consumo energetico dei data center"
+},
+"4.4 B3": {
+    "question": "A cosa si riferisce il termine 'impronta di carbonio digitale'?",
+    "options": [
+        "All'energia necessaria per far funzionare server fisici",
+        "Alle emissioni totali di gas serra causate dalle attività digitali",
+        "Alla quantità di dati che un dispositivo può immagazzinare sul carbonio",
+        "Al numero di dispositivi digitali posseduti da una persona"
+    ],
+    "answer": "Alle emissioni totali di gas serra causate dalle attività digitali"
+},
+"4.4 B4": {
+    "question": "Quale delle seguenti pratiche aiuta a ridurre i rifiuti elettronici?",
+    "options": [
+        "Sostituire regolarmente dispositivi più vecchi",
+        "Riciclare o donare vecchi dispositivi elettronici",
+        "Gettare vecchi dispositivi nel cestino",
+        "Usare solo batterie usa e getta"
+    ],
+    "answer": "Riciclare o donare vecchi dispositivi elettronici"
+},
+"4.4 B5": {
+    "question": "Quale componente della tecnologia digitale ha il maggiore impatto ambientale?",
+    "options": [
+        "L'energia consumata dai data center",
+        "La risoluzione dello schermo di uno smartphone",
+        "La capacità di archiviazione di un hard disk",
+        "Il design delle interfacce utente"
+    ],
+    "answer": "L'energia consumata dai data center"
+},
+"4.4 B6": {
+    "question": "Come possono gli individui ridurre la propria impronta di carbonio digitale?",
+    "options": [
+        "Usando più dispositivi contemporaneamente",
+        "Spegnendo i dispositivi quando non in uso",
+        "Aggiornando frequentemente ai modelli più recenti",
+        "Eliminando le app inutilizzate"
+    ],
+    "answer": "Spegnendo i dispositivi quando non in uso"
+},
+"4.4 M1": {
+    "question": "Quale pratica può aiutare a minimizzare l'impatto ambientale dei rifiuti elettronici?",
+    "options": [
+        "Sostituire frequentemente i dispositivi elettronici",
+        "Smaltire i dispositivi elettronici nei normali cestini",
+        "Riciclare correttamente i vecchi dispositivi elettronici",
+        "Conservare vecchi dispositivi nei cassetti"
+    ],
+    "answer": "Riciclare correttamente i vecchi dispositivi elettronici"
+},
+"4.4 M2": {
+    "question": "Qual è la principale preoccupazione ambientale riguardo alla produzione di dispositivi digitali?",
+    "options": [
+        "Alto consumo energetico durante l'uso",
+        "Estrazione di minerali rari usati nella produzione",
+        "Breve durata dei dispositivi",
+        "Uso di materiali di imballaggio riciclabili"
+    ],
+    "answer": "Estrazione di minerali rari usati nella produzione"
+},
+"4.4 M3": {
+    "question": "Quale delle seguenti strategie può ridurre l'impatto ambientale dello sviluppo software?",
+    "options": [
+        "Sviluppare applicazioni più complesse",
+        "Ottimizzare il codice per l'efficienza energetica",
+        "Richiedere frequenti aggiornamenti hardware",
+        "Aumentare il numero di utenti"
+    ],
+    "answer": "Ottimizzare il codice per l'efficienza energetica"
+},
+"4.4 M4": {
+    "question": "Come impatta sull'ambiente la produzione di semiconduttori?",
+    "options": [
+        "Genera quantità significative di rifiuti elettronici",
+        "Richiede grandi quantità di acqua ed energia per la produzione",
+        "Aumenta i costi di riciclo",
+        "Riduce la domanda di minerali rari"
+    ],
+    "answer": "Richiede grandi quantità di acqua ed energia per la produzione"
+},
+"4.4 M5": {
+    "question": "Quale dei seguenti è un fattore chiave per la sostenibilità ambientale dei servizi digitali?",
+    "options": [
+        "Il numero di utenti sulla piattaforma",
+        "L'efficienza energetica dell'infrastruttura sottostante",
+        "La quantità di memoria nei dispositivi degli utenti",
+        "Il tipo di connessione internet utilizzata"
+    ],
+    "answer": "L'efficienza energetica dell'infrastruttura sottostante"
+},
+"4.4 M6": {
+    "question": "Quale delle seguenti pratiche digitali potrebbe portare a un maggiore impatto ambientale?",
+    "options": [
+        "Usare archiviazione cloud alimentata da energia rinnovabile",
+        "Implementare funzioni di risparmio energetico nel software",
+        "Conservare grandi quantità di dati inutilizzati su server online",
+        "Gestire data center con sistemi di raffreddamento a basso consumo energetico"
+    ],
+    "answer": "Conservare grandi quantità di dati inutilizzati su server online"
+ },
+"5.1 B1": {
+    "question": "Qual è il primo passo per risolvere un dispositivo che non si accende?",
+    "options": [
+        "Sostituire la batteria",
+        "Controllare l'alimentazione",
+        "Resettare il dispositivo",
+        "Aggiornare il software"
+    ],
+    "answer": "Controllare l'alimentazione"
+},
+"5.1 B2": {
+    "question": "Cosa dovresti fare per primo quando un dispositivo non funziona come previsto?",
+    "options": [
+        "Andare nel panico e chiamare l'assistenza tecnica",
+        "Osservare il problema e annotare eventuali messaggi di errore",
+        "Riavviare il dispositivo senza controllare il problema"
+    ],
+    "answer": "Osservare il problema e annotare eventuali messaggi di errore"
+},
+"5.1 B3": {
+    "question": "Quale dei seguenti è una causa comune del surriscaldamento di un dispositivo?",
+    "options": [
+        "Troppi programmi in esecuzione",
+        "Batteria scarica",
+        "Internet ad alta velocità",
+        "Software obsoleto"
+    ],
+    "answer": "Troppi programmi in esecuzione"
+},
+"5.1 B4": {
+    "question": "Un dispositivo bloccato sulla schermata di caricamento potrebbe richiedere un reset di fabbrica per risolvere il problema.",
+    "options": ["Vero", "Falso"],
+    "answer": "Vero"
+},
+"5.1 B5": {
+    "question": "Quando si riscontrano problemi con il software, il primo passo è verificare gli aggiornamenti ______, poiché spesso contengono correzioni di bug.",
+    "options": ["Hardware", "Schermo", "Software", "App"],
+    "answer": "Software"
+},
+"5.1 B6": {
+    "question": "Quale strumento può aiutare a diagnosticare problemi di rete?",
+    "options": [
+        "Task Manager",
+        "Gestione dispositivi",
+        "Prompt dei comandi",
+        "Pannello di controllo"
+    ],
+    "answer": "Prompt dei comandi"
+},
+"5.1 M1": {
+    "question": "Non riesci ad accedere a un sito web, mentre altri dispositivi sulla stessa rete sì. Qual è il passo più logico successivo?",
+    "options": [
+        "Riavviare il router",
+        "Cancellare la cache del browser",
+        "Reinstallare il sistema operativo",
+        "Controllare la presenza di malware"
+    ],
+    "answer": "Cancellare la cache del browser"
+},
+"5.1 M2": {
+    "question": "Quale dei seguenti comandi viene usato per testare la raggiungibilità di un host in una rete?",
+    "options": ["ipconfig", "ping", "tracert", "netstat"],
+    "answer": "ping"
+},
+"5.1 M3": {
+    "question": "Quando si diagnostica un'applicazione che si chiude in modo casuale, quali registri sono più utili?",
+    "options": [
+        "Visualizzatore eventi (Windows) o Console Logs (Mac)",
+        "Registri di Gestione dispositivi",
+        "Registri attività disco",
+        "Registri luminosità dello schermo"
+    ],
+    "answer": "Visualizzatore eventi (Windows) o Console Logs (Mac)"
+},
+"5.1 M4": {
+    "question": "Quale dei seguenti NON è una probabile causa di problemi di connettività Wi-Fi?",
+    "options": [
+        "Interferenze di rete da altri dispositivi",
+        "Inserimento errato della password",
+        "Porta Ethernet disabilitata",
+        "Firmware del router obsoleto"
+    ],
+    "answer": "Porta Ethernet disabilitata"
+},
+"5.1 M5": {
+    "question": "Se il sistema mostra l'errore 'Nessun dispositivo avviabile trovato', qual è la causa più probabile?",
+    "options": [
+        "Hard disk scollegato",
+        "Conflitto software",
+        "Batteria scarica",
+        "Sistema operativo obsoleto"
+    ],
+    "answer": "Hard disk scollegato"
+},
+"5.1 M6": {
+    "question": "Quando si verifica una 'blue screen of death' (BSOD) su Windows, qual è il passo critico iniziale?",
+    "options": [
+        "Annotare il codice di errore visualizzato sullo schermo",
+        "Eseguire una reinstallazione pulita del sistema operativo",
+        "Sostituire immediatamente l'hardware"
+    ],
+    "answer": "Annotare il codice di errore visualizzato sullo schermo"
+},
+"5.2 B1": {
+    "question": "Quale dei seguenti strumenti digitali supporterebbe meglio un utente con mobilità limitata delle mani?",
+    "options": [
+        "Tastiera tradizionale",
+        "Touch screen",
+        "Software di riconoscimento vocale",
+        "Mouse con impostazioni di alta sensibilità"
+    ],
+    "answer": "Software di riconoscimento vocale"
+},
+"5.2 B2": {
+    "question": "Vero o Falso? “I lettori di schermo sono progettati per aiutare gli utenti con mobilità limitata leggendo ad alta voce i contenuti sullo schermo.”",
+    "options": ["Vero", "Falso"],
+    "answer": "Falso"
+},
+"5.2 B3": {
+    "question": "Quale funzione può aiutare gli utenti con disabilità visive a utilizzare strumenti digitali più efficacemente?",
+    "options": [
+        "Modalità notturna",
+        "Funzionalità di lettura dello schermo",
+        "CPU ad alte prestazioni"
+    ],
+    "answer": "Funzionalità di lettura dello schermo"
+},
+"5.2 B4": {
+    "question": "Se vuoi assicurarti che il tuo spazio digitale abbia le opzioni di accessibilità corrette abilitate, da dove dovresti iniziare?",
+    "options": [
+        "Aggiornare il sistema operativo",
+        "Controllare le impostazioni di accessibilità sul dispositivo",
+        "Disabilitare tutte le notifiche di sistema",
+        "Aumentare la luminosità dello schermo"
+    ],
+    "answer": "Controllare le impostazioni di accessibilità sul dispositivo"
+},
+"5.2 B5": {
+    "question": "Vero o Falso? “Usare la modalità scura su un dispositivo può ridurre l'affaticamento visivo per alcuni utenti.”",
+    "options": ["Vero", "Falso"],
+    "answer": "Vero"
+},
+"5.2 B6": {
+    "question": "Quale delle seguenti descrive meglio una piattaforma che facilita transazioni non commerciali come donazioni o regali?",
+    "options": [
+        "Sito di e-commerce",
+        "Piattaforma di social media",
+        "Sito di crowdfunding",
+        "Marketplace online"
+    ],
+    "answer": "Sito di crowdfunding"
+},
+"5.2 M1": {
+    "question": "Nel contesto delle transazioni online, qual è la funzione principale della tecnologia blockchain nel migliorare la sicurezza delle transazioni?",
+    "options": [
+        "Centralizza i dati degli utenti per un accesso più semplice.",
+        "Crea un registro pubblico che registra tutte le transazioni in modo immutabile.",
+        "Aumenta la velocità delle transazioni eliminando i passaggi di verifica.",
+        "Permette l'archiviazione illimitata dei dati senza costi."
+    ],
+    "answer": "Crea un registro pubblico che registra tutte le transazioni in modo immutabile."
+},
+"5.2 M2": {
+    "question": "Su cosa si concentra tipicamente la personalizzazione UX negli ambienti digitali avanzati?",
+    "options": [
+        "Compatibilità hardware",
+        "Migliorare i flussi di lavoro e l'accessibilità in base alle preferenze specifiche dell'utente",
+        "Ridurre il numero di opzioni disponibili in uno strumento"
+    ],
+    "answer": "Migliorare i flussi di lavoro e l'accessibilità in base alle preferenze specifiche dell'utente"
+},
+"5.2 M3": {
+    "question": "Se una persona con daltonismo deve distinguere i colori su una pagina web, quale regolazione sarebbe più utile?",
+    "options": [
+        "Abbassare la luminosità dello schermo",
+        "Abilitare opzioni ad alto contrasto o correzione dei colori nelle impostazioni di accessibilità",
+        "Usare uno stilo per evidenziare il testo",
+        "Aggiornare il browser"
+    ],
+    "answer": "Abilitare opzioni ad alto contrasto o correzione dei colori nelle impostazioni di accessibilità"
+},
+"5.2 M4": {
+    "question": "Vero o Falso? “Le tastiere adattive possono essere personalizzate per supportare utenti con mobilità limitata, ad esempio ingrandendo le dimensioni dei tasti o usando il testo predittivo.”",
+    "options": ["Vero", "Falso"],
+    "answer": "Vero"
+},
+"5.2 M5": {
+    "question": "Quale strumento digitale supporterebbe meglio un utente che ha difficoltà a leggere caratteri piccoli sugli schermi a causa di problemi visivi?",
+    "options": [
+        "Software voce-testo",
+        "Ingranditore dello schermo o funzione zoom",
+        "Modalità ad alto contrasto",
+        "Tastiera con caratteri grandi"
+    ],
+    "answer": "Ingranditore dello schermo o funzione zoom"
+},
+"5.2 M6": {
+    "question": "Vero o Falso? “L'uso della modalità ad alto contrasto migliora l'accessibilità per tutti gli utenti, indipendentemente dalle disabilità visive.”",
+    "options": ["Vero", "Falso"],
+    "answer": "Falso"
+ },
+"5.3 B1": {
+    "question": "Quale strumento digitale sarebbe più efficace per il brainstorming collaborativo in tempo reale?",
+    "options": [
+        "Un elaboratore di testi",
+        "Un'applicazione per fogli di calcolo",
+        "Uno strumento di mind-mapping online",
+        "Un programma di fotoritocco"
+    ],
+    "answer": "Uno strumento di mind-mapping online"
+},
+"5.3 B2": {
+    "question": "Quale tecnologia IoT viene comunemente utilizzata per ottimizzare il consumo energetico nelle case intelligenti?",
+    "options": [
+        "Termostati intelligenti",
+        "Visori per realtà virtuale",
+        "Altoparlanti Bluetooth",
+        "Fitness tracker"
+    ],
+    "answer": "Termostati intelligenti"
+},
+"5.3 B3": {
+    "question": "Quale dei seguenti dispositivi è un esempio di dispositivo IoT?",
+    "options": [
+        "Computer desktop",
+        "Frigorifero intelligente",
+        "Sveglia tradizionale",
+        "Telefono a conchiglia"
+    ],
+    "answer": "Frigorifero intelligente"
+},
+"5.3 B4": {
+    "question": "Quale strumento sarebbe più adatto per progettare una presentazione?",
+    "options": ["Microsoft Excel", "Canva", "Zoom"],
+    "answer": "Canva"
+},
+"5.3 B5": {
+    "question": "Vero o Falso? “Gli strumenti online per il brainstorming non consentono contributi collaborativi e sono utili solo per lavoro individuale.”",
+    "options": ["Vero", "Falso"],
+    "answer": "Falso"
+},
+"5.3 B6": {
+    "question": "Quale dei seguenti strumenti digitali è più efficace per prototipare e validare rapidamente una nuova idea di prodotto in un ambiente startup?",
+    "options": [
+        "Software di elaborazione testi",
+        "Strumenti di gestione progetti",
+        "Tecnologia di stampa 3D",
+        "Analisi dei social media"
+    ],
+    "answer": "Tecnologia di stampa 3D"
+},
+"5.3 M1": {
+    "question": "Quale delle seguenti piattaforme è principalmente nota per fornire strumenti completi per costruire e gestire applicazioni IoT, inclusi gestione dei dispositivi, analisi dei dati e funzionalità di sicurezza?",
+    "options": [
+        "AWS IoT Core",
+        "Microsoft Word",
+        "Adobe Photoshop",
+        "Salesforce CRM"
+    ],
+    "answer": "AWS IoT Core"
+},
+"5.3 M2": {
+    "question": "Quale dei seguenti strumenti digitali è più utile per gestire ed eseguire piani di progetto per trasformare un'idea in passi concreti?",
+    "options": [
+        "Software di grafica",
+        "Strumenti di gestione progetti basati su cloud",
+        "Piattaforme di blogging",
+        "Servizi di email marketing"
+    ],
+    "answer": "Strumenti di gestione progetti basati su cloud"
+},
+"5.3 M3": {
+    "question": "Per la risoluzione collaborativa e creativa di problemi su un progetto software, quale combinazione di strumenti è probabilmente la più efficace?",
+    "options": [
+        "Strumento di gestione attività e piattaforma di codifica collaborativa (come GitHub)",
+        "Email e calendario offline",
+        "Archiviazione tradizionale e software per fogli di calcolo",
+        "App per prendere appunti e social media"
+    ],
+    "answer": "Strumento di gestione attività e piattaforma di codifica collaborativa (come GitHub)"
+},
+"5.3 M4": {
+    "question": "Quando si progetta una piattaforma digitale per la condivisione di risorse comunitarie, quale considerazione è più cruciale per garantire fiducia e coinvolgimento degli utenti?",
+    "options": [
+        "Grafica di alta qualità e design dell'interfaccia",
+        "Politiche robuste sulla privacy dei dati e accordi utente trasparenti",
+        "Integrazione con i social media per il marketing",
+        "Procedure di registrazione complesse"
+    ],
+    "answer": "Politiche robuste sulla privacy dei dati e accordi utente trasparenti"
+},
+"5.3 M5": {
+    "question": "Quali delle seguenti tecnologie possono essere utilizzate per prototipare e testare idee di prodotto innovative?",
+    "options": [
+        "Software di modellazione 3D come Blender",
+        "Ambientazioni di realtà virtuale",
+        "Strumenti di design generativo basati su AI",
+        "Tutte le precedenti"
+    ],
+    "answer": "Tutte le precedenti"
+},
+"5.3 M6": {
+    "question": "In un ambiente di problem-solving collaborativo, quale delle seguenti pratiche è più efficace per favorire prospettive diverse e aumentare la creatività del team?",
+    "options": [
+        "Stabilire una gerarchia rigida nelle decisioni",
+        "Condurre sessioni regolari di brainstorming senza valutazione",
+        "Limitare la partecipazione solo agli esperti",
+        "Incoraggiare un dialogo aperto e usare metodologie di design thinking"
+    ],
+    "answer": "Incoraggiare un dialogo aperto e usare metodologie di design thinking"
+},
+"5.4 B1": {
+    "question": "Quale dei seguenti è un primo passo cruciale per identificare le proprie lacune di competenza digitale?",
+    "options": [
+        "Chiedere feedback agli altri",
+        "Autovalutazione delle competenze attuali",
+        "Sostenere un esame di certificazione",
+        "Concentrarsi solo sulle tecnologie emergenti"
+    ],
+    "answer": "Autovalutazione delle competenze attuali"
+},
+"5.4 B2": {
+    "question": "Vero o Falso? Identificare le lacune di competenza digitale è rilevante solo per ruoli focalizzati sulla tecnologia.",
+    "options": ["Vero", "Falso"],
+    "answer": "Falso"
+},
+"5.4 B3": {
+    "question": "Cos'è la cybersecurity?",
+    "options": [
+        "Comprendere le minacce online e le misure di protezione",
+        "Capacità di utilizzare strumenti online per creare contenuti",
+        "Riconoscere informazioni affidabili da fonti digitali"
+    ],
+    "answer": "Comprendere le minacce online e le misure di protezione"
+},
+"5.4 B4": {
+    "question": "Qual è lo scopo di identificare le lacune di competenza digitale?",
+    "options": [
+        "Per stare al passo con le competenze degli altri",
+        "Per restare aggiornati con le tecnologie in evoluzione",
+        "Per completare certificazioni obbligatorie",
+        "Per evitare di usare la tecnologia del tutto"
+    ],
+    "answer": "Per restare aggiornati con le tecnologie in evoluzione"
+},
+"5.4 B5": {
+    "question": "Quando si aiuta qualcuno a identificare le proprie lacune di competenza digitale, quale approccio è il migliore?",
+    "options": [
+        "Supporre che non abbiano bisogno di assistenza con le competenze digitali di base",
+        "Chiedere dei compiti digitali specifici e delle sfide che affrontano",
+        "Fornire loro un elenco di compiti digitali da completare da soli",
+        "Evitare qualsiasi feedback e concentrarsi solo sulle competenze tecniche"
+    ],
+    "answer": "Chiedere dei compiti digitali specifici e delle sfide che affrontano"
+},
+"5.4 B6": {
+    "question": "Vero o Falso? Una volta identificate le lacune di competenza digitale, il passo successivo è iniziare immediatamente programmi di formazione avanzata senza considerare le competenze di base.",
+    "options": ["Vero", "Falso"],
+    "answer": "Falso"
+},
+"5.4 M1": {
+    "question": "Quale dei seguenti è il passo più efficace per identificare le proprie lacune di competenza digitale?",
+    "options": [
+        "Supporre che le proprie competenze siano sufficienti per tutti i compiti.",
+        "Usare uno strumento di autovalutazione come il Digital Competence Framework (DigComp)",
+        "Aspettare che qualcuno indichi le proprie debolezze."
+    ],
+    "answer": "Usare uno strumento di autovalutazione come il Digital Competence Framework (DigComp)"
+},
+"5.4 M2": {
+    "question": "Qual è un modo consigliato per restare aggiornati sulle tendenze digitali?",
+    "options": [
+        "Partecipare regolarmente a conferenze, corsi online e webinar",
+        "Fare affidamento solo sull'esperienza passata",
+        "Evitare social media e notizie digitali",
+        "Aspettare che i datori di lavoro forniscano formazione obbligatoria"
+    ],
+    "answer": "Partecipare regolarmente a conferenze, corsi online e webinar"
+},
+"5.4 M3": {
+    "question": "Vero o Falso? Supportare gli altri nelle competenze digitali comporta valutare le loro abilità e incoraggiare lo sviluppo continuo delle competenze.",
+    "options": ["Vero", "Falso"],
+    "answer": "Vero"
+},
+"5.4 M4": {
+    "question": "Quale dei seguenti descrive un approccio per monitorare e migliorare le proprie competenze digitali nel tempo?",
+    "options": [
+        "Usare solo corsi base gratuiti",
+        "Identificare obiettivi, cercare feedback e valutare periodicamente i progressi",
+        "Fare affidamento su conoscenze informali dai colleghi",
+        "Seguire le stesse attività quotidiane senza cambiamenti"
+    ],
+    "answer": "Identificare obiettivi, cercare feedback e valutare periodicamente i progressi"
+},
+"5.4 M5": {
+    "question": "Per aiutare un collega a migliorare le competenze digitali, cosa dovrebbe essere evitato?",
+    "options": [
+        "Offrire risorse per l'apprendimento strutturato",
+        "Stabilire obiettivi di apprendimento chiari",
+        "Permettere di saltare le competenze di base",
+        "Incoraggiare sessioni regolari di feedback"
+    ],
+    "answer": "Permettere di saltare le competenze di base"
+},
+"5.4 M6": {
+    "question": "Quale dei seguenti NON è corretto?",
+    "options": [
+        "I corsi online forniscono struttura per sviluppare competenze specifiche",
+        "Un mentore digitale fornisce consigli personalizzati sui punti di forza/debolezza",
+        "L'abbonamento a notizie di settore mantiene aggiornata la conoscenza con aggiornamenti attuali",
+        "Il mentore digitale mantiene aggiornata la conoscenza con aggiornamenti attuali"
+    ],
+    "answer": "Il mentore digitale mantiene aggiornata la conoscenza con aggiornamenti attuali"
+}
+}
+}

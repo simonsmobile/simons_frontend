@@ -1,8 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
 
 const AboutScreen = () => {
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
+  
 
   return (
     <div className="flex flex-col min-h-screen bg-white">
@@ -32,7 +36,7 @@ const AboutScreen = () => {
             </svg>
           </button>
           <h1 className="text-lg font-semibold text-center flex-1">
-            About SIMOnS
+            {t('about_simons_app')}
           </h1>
           <div className="w-6"></div>
         </div>
@@ -41,19 +45,14 @@ const AboutScreen = () => {
       <div className="flex-1 px-4 py-6 mt-4">
         <div className="max-w-xl mx-auto bg-white p-6 rounded-lg shadow border border-gray-200">
           <h2 className="text-xl font-bold text-gray-900 mb-4">
-            About This Application
+            {t('about_the_app')}
           </h2>
           <div className="prose prose-sm max-w-none text-gray-700 space-y-4">
             <p>
-              SIMOnS (Student Improvement and Monitoring of Online Skills) is a
-              self-reflection tool designed to help users assess and enhance
-              their digital competencies based on the European Digital
-              Competence Framework for Citizens (DigComp).
+              {t('about.p1')}
             </p>
             <p>
-              Through self-assessment questionnaires and targeted learning
-              materials, SIMOnS aims to empower users to identify their
-              strengths and areas for improvement in the digital world.
+              {t('about.p2')}
             </p>
           </div>
           <div className="mt-8 text-center">
@@ -61,7 +60,7 @@ const AboutScreen = () => {
               onClick={() => navigate("/profile")}
               className="px-6 py-2 bg-black text-white font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300 text-sm"
             >
-              Back to Profile
+              {t('back_to_profile')}
             </button>
           </div>
         </div>
