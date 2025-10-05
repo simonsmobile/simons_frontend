@@ -107,7 +107,7 @@ const ForgotPasswordScreen = () => {
 
       if (response.ok) {
         setSent(true);
-        generateOTP();
+        // generateOTP();
         toast.success(t('code_was_sent'));
 
         setTimeout(() => {
@@ -169,7 +169,7 @@ const ForgotPasswordScreen = () => {
       });
 
       if (response.ok) {
-        generateOTP();
+        // generateOTP();
         setInputOTP(["", "", "", "", ""]);
         if (inputRefs.current[0]) {
           inputRefs.current[0].focus();
