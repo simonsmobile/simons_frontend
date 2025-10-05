@@ -58,7 +58,7 @@ const StudyMaterialsScreen = () => {
   const videoSrc = subCategoryIdentifier
     ? `${process.env.PUBLIC_URL}/videos/${i18n.language}/${subCategoryIdentifier}-${currentLevelIdentifier}.mp4`
     : null;
-  console.log(videoSrc);
+  // console.log(videoSrc);
   const urls = learning_material?.links || [];
   //const textContent =
    // learning_material?.text || "No description available for this section.";
