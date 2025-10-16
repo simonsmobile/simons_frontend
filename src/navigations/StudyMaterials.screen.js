@@ -21,11 +21,11 @@ const StudyMaterialsScreen = () => {
   const subCategoryIdentifier = sub?.category;
 
   const currentLevelIdentifier = level === "basic" ? "basic" : "master";
-  const languageIdentiifer = i18n.language;
+  const languageIdentifer = i18n.language;
 
  // console.log(subCategoryIdentifier + "->" + currentLevelIdentifier);
   const translatedMaterialIdentifier = "learning_material." + subCategoryIdentifier + "." + currentLevelIdentifier;
-  console.log(translatedMaterialIdentifier);
+  //console.log(translatedMaterialIdentifier);
   // console.log(languageIdentiifer);
   const getMaterial = (material, levelId, typeId) => {
     if (!material || !Array.isArray(material)) {
@@ -55,10 +55,6 @@ const StudyMaterialsScreen = () => {
     );
   });
 
-  const videoSrc = subCategoryIdentifier
-    ? `${process.env.PUBLIC_URL}/videos/${i18n.language}/${subCategoryIdentifier}-${currentLevelIdentifier}.mp4`
-    : null;
-  // console.log(videoSrc);
   const urls = learning_material?.links || [];
   //const textContent =
    // learning_material?.text || "No description available for this section.";
@@ -67,6 +63,12 @@ const StudyMaterialsScreen = () => {
   const displayLevel = level === "basic" ? t('level_1') : t('level_2');
   const displayTitle = t(category) || t('study_material');
   const subTitle = sub ? `${t(sub.title)}` : "";
+  const lang = i18n.resolvedLanguage ?? i18n.language?.split('-')[0] ?? 'en';
+// ${i18n.language}
+  const videoSrc = subCategoryIdentifier
+    ? `${process.env.PUBLIC_URL}/videos/${lang}/${subCategoryIdentifier}-${currentLevelIdentifier}.mp4`
+    : null;
+  // console.log(videoSrc);
 
   const handleTakeTest = () => {
     navigate("/sub-quest", { state: { index, level, category, sub, grade } });

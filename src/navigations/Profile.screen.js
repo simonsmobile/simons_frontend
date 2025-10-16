@@ -21,7 +21,7 @@ import {
 
 const ProfileScreen = () => {
   const navigate = useNavigate();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [userData, setUserData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [currentUser, setCurrentUser] = useState(auth.currentUser);
@@ -166,6 +166,7 @@ const ProfileScreen = () => {
                   <FaChevronRight className="w-4 h-4 text-gray-400" />
                 </li>
               </Link>
+              {/*
               <Link to="/terms" className="block hover:bg-gray-50">
                 <li className="px-4 py-3 flex justify-between items-center cursor-pointer">
                   <div className="flex items-center">
@@ -175,6 +176,7 @@ const ProfileScreen = () => {
                   <FaChevronRight className="w-4 h-4 text-gray-400" />
                 </li>
               </Link>
+                */}
               <Link to="/privacy" className="block hover:bg-gray-50">
                 <li className="px-4 py-3 flex justify-between items-center cursor-pointer">
                   <div className="flex items-center">

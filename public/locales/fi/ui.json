@@ -14,7 +14,7 @@
   "level_2": "Taso 2",
   "not_attempted": "Ei aloitettu", 
   "take_sa_again": "Tee itsearvio uudelleen",
-  "complete_other_categories": "Suorita muut kategoriat",
+  "complete_other_categories": "Suorita muut aihealueet",
   "confirm_action": "Vahvista toiminto",
   "confirm_action_text": "Tämä poistaa kaikki nykyiset testituloksesi ja edistymisesi, nollaa sijoituksesi tulostaulussa ja poistaa avatarisi. Voit aloittaa itsearvioinnin alusta. Tätä toimintoa ei voi peruuttaa. Haluatko varmasti jatkaa?",
   "cancel": "Peruuta",
@@ -73,15 +73,15 @@
   "total_available_questions" : "Saatavilla olevat kysymykset",
   "remaining_questions" : "Jäljellä olevat kysymykset",
   "completed_questions" : "Vastatut kysymykset",
-  "assessment_by_category" : "Itsearviointi kategoria kerrallaan",
+  "assessment_by_category" : "Itsearviointi aihealue kerrallaan",
   "estimated_time": "Arvioitu suoritusaika",
   "minutes" : "minuuttia",
   "start_assessment" : "Aloita itsearvio nähdäksesi edistymisesi",
   "you_have_completed" :"Olet suorittanut {{completedCount}} / {{totalQuestions}} kysymystä",
 "continue_full" : "Jatka itsearviointia",
 "start_full" : "Aloita täydellinen itsearviointi",
-"categories_completed" : "kategoriaa suoritettu",
-"category_progress" : "Kategorioiden edistyminen",
+"categories_completed" : "aihealue suoritettu",
+"category_progress" : "Aihealueiden edistyminen",
 
 "go_to_dashboard" : "Siirry työpöydälle",
 "check_progress" : "Tarkista edistymisesi tilanne",
@@ -503,123 +503,5 @@
     }
   },
 
-  "questions": {
-    "4.2 M1": {
-      "question": "Mikä salausprotokolla on laajasti käytössä turvallisen tietoliikenteen varmistamiseksi tietoverkossa?",
-      "options": ["HTTP", "FTP", "SSL/TLS", "IMAP"],
-      "answer": "SSL/TLS"
-    },
-    "4.2 M2": {
-      "question": "Mikä on salauksen päätarkoitus, kun henkilötietoja lähetetään verkossa?",
-      "options": [
-        "Nopeuttaa internet-yhteyttä",
-        "Suojata tiedot luvattomalta käytöltä",
-        "Mahdollistaa ei-toivottu tiedon jakaminen kolmansille osapuolille",
-        "Tallentaa tiedot pilvipalveluihin"
-      ],
-      "answer": "Suojata tiedot luvattomalta käytöltä"
-    },
-    "4.2 M3": {
-      "question": "Miten yleinen tietosuoja-asetus (GDPR) vaikuttaa henkilötietojen käyttöön digitaalisissa palveluissa?",
-      "options": [
-        "Se edellyttää, että yritykset saavat nimenomaisen suostumuksen ennen henkilötietojen keräämistä",
-        "Se sallii yritysten jakaa käyttäjätietoja vapaasti ilman suostumusta",
-        "Se koskee vain rahoituslaitoksia",
-        "Se estää yrityksiä käyttämästä mitään henkilötietoja"
-      ],
-      "answer": "Se edellyttää, että yritykset saavat nimenomaisen suostumuksen ennen henkilötietojen keräämistä"
-    },
-    "4.2 M4": {
-      "question": "Mitä sinun tulisi tehdä, jos saat sähköpostin, jossa pyydetään henkilötietoja, mutta olet epävarma sen aitoudesta?",
-      "options": [
-        "Vastaa heti pyydetyillä tiedoilla",
-        "Seuraa sähköpostissa olevaa linkkiä",
-        "Varmista lähettäjän aitous ennen kuin jaat mitään tietoja",
-        "Lähetä sähköposti eteenpäin ystävillesi"
-      ],
-      "answer": "Varmista lähettäjän aitous ennen kuin jaat mitään tietoja"
-    },
-    "4.2 M5": {
-      "question": "Miten palvelun tietosuojakäytännön ymmärtäminen voi auttaa sinua suojaamaan itseäsi tietojen väärinkäytöltä?",
-      "options": [
-        "Antamalla sinulle mahdollisuuden poistaa tietoturvaominaisuuksia käytöstä",
-        "Antamalla tietoa siitä, miten yritys kerää, tallentaa ja jakaa tietojasi",
-        "Antamalla sinulle pääsyn kaikkiin palvelun sisäisiin tietoihin",
-        "Estämällä sinua päivittämästä tietosuoja-asetuksiasi"
-      ],
-      "answer": "Antamalla tietoa siitä, miten yritys kerää, tallentaa ja jakaa tietojasi"
-    },
-    "4.2 M6": {
-      "question": "Mikä seuraavista on yleinen digitaalisissa palveluissa käytetty tietoturvaominaisuus henkilötietojen suojaamiseksi?",
-      "options": [
-        "Käyttäjätietojen jakaminen automaattisesti mainostajille",
-        "Kaksivaiheinen tunnistautuminen (2FA)",
-        "Kaikkien käyttäjätietojen julkinen näyttäminen",
-        "Salliminen heikkojen salasanojen käyttöön"
-      ],
-      "answer": "Kaksivaiheinen tunnistautuminen (2FA)"
-    },
-
-    "4.3 B1": {
-      "question": "Miten voit minimoida digitaalisten laitteiden käytön vaikutukset terveyteesi ja hyvinvointiisi?",
-      "options": [
-        "Käyttämällä laitetta tauotta ilman taukoja",
-        "Asettamalla ruutuajan rajoituksia ja pitämällä säännöllisiä taukoja",
-        "Pitelemällä laitetta hyvin lähellä silmiä",
-        "Käyttämällä laitteita vain pimeissä huoneissa"
-      ],
-      "answer": "Asettamalla ruutuajan rajoituksia ja pitämällä säännöllisiä taukoja"
-    },
-    "4.3 B2": {
-      "question": "Mikä on yksi merkittävimmistä fyysisen terveyden riskeistä, kun digitaalisia laitteita käytetään pitkiä aikoja?",
-      "options": [
-        "Luovuuden lisääntyminen",
-        "Silmien rasitus",
-        "Parantunut unenlaatu",
-        "Lihasvoiman lisääntyminen"
-      ],
-      "answer": "Silmien rasitus"
-    },
-    "4.3 B3": {
-      "question": "Mikä seuraavista toimista voi auttaa ehkäisemään nettikiusaamista?",
-      "options": [
-        "Olemalla tietoinen sosiaalisen median yksityisyysasetuksista",
-        "Jakamalla salasanat ystävien kanssa",
-        "Katkaisemalla internet-yhteys vahingollisen viestin saatuaan",
-        "Jättämällä kaikki verkkovuorovaikutukset huomiotta"
-      ],
-      "answer": "Olemalla tietoinen sosiaalisen median yksityisyysasetuksista"
-    },
-    "4.3 B4": {
-      "question": "Miten voi vähentää teknologian käyttöön liittyvää stressiä?",
-      "options": [
-        "Käyttämällä digilaitteita ilman taukoja",
-        "Käyttämällä teknologiaa vain päiväsaikaan",
-        "Luomalla digitaalisen rutiinin, joka sisältää säännöllisiä taukoja ja offline-aikaa",
-        "Vähentämällä sähköpostin käyttöä"
-      ],
-      "answer": "Luomalla digitaalisen rutiinin, joka sisältää säännöllisiä taukoja ja offline-aikaa"
-    },
-    "4.3 B5": {
-      "question": "Mikä seuraavista työkaluista voi auttaa suojaamaan psyykkistä hyvinvointia digitaalisia teknologioita käytettäessä?",
-      "options": [
-        "Sinivalosuodattimien käyttäminen",
-        "Näytön tarkkuuden suurentaminen",
-        "Kalliimpien laitteiden ostaminen",
-        "Sovellusilmoitusten poistaminen käytöstä lepoaikoina"
-      ],
-      "answer": "Sovellusilmoitusten poistaminen käytöstä lepoaikoina"
-    },
-    "4.3 B6": {
-      "question": "Mikä seuraavista digitaalisista teknologioista on erityisen tehokas edistämään sosiaalista osallisuutta vammaisten ihmisten kohdalla?",
-      "options": [
-        "Virtuaalitodellisuus",
-        "Puheentunnistusohjelmisto",
-        "Tekoäly talouspalveluissa",
-        "Viihdesovellukset"
-      ],
-      "answer": "Puheentunnistusohjelmisto"
-    }
-
-  }
+  "selectLabel" : "Valitse kieli"
 }

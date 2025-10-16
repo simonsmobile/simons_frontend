@@ -50,16 +50,7 @@
       ],
       "answer": "Redirecting to another webpage or source"
     },
-    "1.1 B6": {
-      "question": "What should be a key consideration when updating a search strategy?",
-      "options": [
-        "The layout of the search engine page",
-        "The number of sources available",
-        "The refinement of search terms based on new findings",
-        "The inclusion of unrelated topics for broader results"
-      ],
-      "answer": "The refinement of search terms based on new findings"
-    },
+
     "1.1 M1": {
       "question": "Which of the following is NOT an information need?",
       "options": [
@@ -105,16 +96,7 @@
       ],
       "answer": "Evaluate the quality of results and adjust search terms accordingly"
     },
-    "1.1 M6": {
-      "question": "Why is it important to update search strategies regularly?",
-      "options": [
-        "To avoid repetition of results",
-        "To stay informed about newly available data and sources",
-        "To prevent distractions during browsing",
-        "To reduce search engine loading times"
-      ],
-      "answer": "To stay informed about newly available data and sources"
-    },
+
     "1.2 B1": {
       "question": "Which of the following factors indicates that a source is credible?",
       "options": [
@@ -155,26 +137,18 @@
       ],
       "answer": "Compare the methodologies and context of each source"
     },
-    "1.2 B5": {
-      "question": "What is the best way to store data for easy retrieval later?",
-      "options": [
-        "Save it all in one folder without categorization",
-        "Use a clear organizational structure with folders and subfolders",
-        "Keep everything in one file on your desktop",
-        "Store data randomly without naming files"
-      ],
-      "answer": "Use a clear organizational structure with folders and subfolders"
-    },
-    "1.2 B6": {
-      "question": "How can cloud storage help with managing data?",
-      "options": [
-        "It automatically categorizes files",
-        "It allows access to data from multiple devices",
-        "It limits your data storage capacity",
-        "It only works offline"
-      ],
-      "answer": "It allows access to data from multiple devices"
-    },
+
+    "1.2 B5": { 
+      "question": "What is a potential sign that an online source may not be credible?", 
+      "options": [ 
+        "It contains few hyperlinks", 
+        "It lacks citations or references to original data", 
+        "It includes a conclusion", 
+        "It is hosted on a well-known website" 
+      ], 
+      "answer": "It lacks citations or references to original data" 
+    }, 
+
     "1.2 M1": {
       "question": "Why is it important to cross-check information from multiple sources?",
       "options": [
@@ -215,26 +189,18 @@
       ],
       "answer": "How the data was collected and what it represents"
     },
-    "1.2 M5": {
-      "question": "How can you add metadata to improve data organization?",
-      "options": [
-        "By tagging files with relevant keywords",
-        "By copying files into multiple folders",
-        "By deleting unnecessary files",
-        "By only using metadata for images"
-      ],
-      "answer": "By tagging files with relevant keywords"
-    },
-    "1.2 M6": {
-      "question": "What is a benefit of using file synchronization tools?",
-      "options": [
-        "They help transfer data between unrelated devices",
-        "They allow access to updated files across multiple devices",
-        "They automatically remove old files",
-        "They organize files into specific formats"
-      ],
-      "answer": "They allow access to updated files across multiple devices"
-    },
+
+    "1.2 M5": { 
+      "question": "Which is a key step in evaluating the reliability of a source? ",
+      "options": [ 
+        "Focusing only on sources that agree with your viewpoint", 
+        "Considering the author’s qualifications and biases", 
+        "Checking the length of the article", 
+        "Avoiding peer-reviewed content" 
+      ], 
+      "answer": "Considering the author’s qualifications and biases" 
+    }, 
+
     "1.3 B1": {
       "question": "What is the best way to store data for easy retrieval later?",
       "options": [
@@ -285,16 +251,7 @@
       ],
       "answer": "Sort, filter, and analyze information efficiently"
     },
-    "1.3 B6": {
-      "question": "How can data visualization tools assist in processing information?",
-      "options": [
-        "By making data more visually appealing without context",
-        "By helping to identify patterns and trends in large datasets",
-        "By simplifying data without any analysis",
-        "By hiding data behind charts"
-      ],
-      "answer": "By helping to identify patterns and trends in large datasets"
-    },
+
     "1.3 M1": {
       "question": "Why is it important to back up your data regularly?",
       "options": [
@@ -345,18 +302,6 @@
       ],
       "answer": "It saves time and improves accuracy"
     },
-    "1.3 M6": {
-      "question": "How can you best manage complex datasets for easy analysis?",
-      "options": [
-        "Use multiple spreadsheets without linking them",
-        "Structure the data in a database or spreadsheet for sorting and filtering",
-        "Avoid using any digital tools",
-        "Store the data in unstructured formats like text files"
-      ],
-      "answer": "Structure the data in a database or spreadsheet for sorting and filtering"
-    },
-
-
 
     "2.1 B1": {
       "question": "Which of the following tools is more appropriate to send an institutional newsletter?",
@@ -393,11 +338,7 @@
       "options": ["Text message", "Formal email", "Social media post", "Phone call"],
       "answer": "Formal email"
     },
-    "2.1 B6": {
-      "question": "You are discussing a sensitive topic with a colleague. Which method should you choose?",
-      "options": ["Group chat", "Video call", "Public forum", "Direct message"],
-      "answer": "Video call"
-    },
+
     "2.1 M1": {
       "question": "Imagine you ordered a student’s book online on a website, and you are having trouble tracking the order. Which sentence (input) would be the most effective way of asking a virtual assistant (bot) to look for your latest order?",
       "options": [
@@ -433,11 +374,7 @@
       "options": ["Team chat application", "Email blast", "Video conference", "WhatsApp Group"],
       "answer": "Email blast"
     },
-    "2.1 M6": {
-      "question": "You and your classmates are developing a project for a curricular unit. Which of the following platforms would help your group keep track of the ongoing tasks?",
-      "options": ["Trello", "Discord", "Slack", "Email"],
-      "answer": "Trello"
-    },
+
 
     "2.2 B1": {
       "question": "Which of the following best defines 'data sharing'?",
@@ -484,16 +421,7 @@
       ],
       "answer": "Authors, year, title, publisher and website link"
     },
-    "2.2 B6": {
-      "question": "Which images can you share online?",
-      "options": [
-        "Any images from Google Images",
-        "Only copyright free pictures",
-        "Any images from the Internet",
-        "Only copyright-free images or images authorised by the authors."
-      ],
-      "answer": "Only copyright-free images or images authorised by the authors."
-    },
+
     "2.2 M1": {
       "question": "You found an interesting picture online which is protected by the following creative commons license. How can you reuse it?",
       "options": [
@@ -539,16 +467,7 @@
       ],
       "answer": "A picture of me and my friends at the Atomium"
     },
-    "2.2 M6": {
-      "question": "Which action does not violate intellectual property rights?",
-      "options": [
-        "Download and use public domain databases",
-        "Lending passwords to friends to access paid content",
-        "Download software from torrent websites",
-        "Record parts of a TV show and upload it on YouTube."
-      ],
-      "answer": "Download and use public domain databases"
-    },
+
 
     "2.3 B1": {
       "question": "Which of the following is a digital service often used for paying university fees?",
@@ -585,16 +504,7 @@
       ],
       "answer": "They serve as a tool for information dissemination and mobilization"
     },
-    "2.3 B6": {
-      "question": "Select the incorrect matching pair of the digital technology with its civic engagement function:",
-      "options": [
-        "Online petitions: Gathering public support for causes",
-        "Social media campaigns: Collecting signatures for a political party",
-        "E-Government services: Accessing government services",
-        "Crowdfunding platforms: Fundraising for community projects"
-      ],
-      "answer": "Social media campaigns: Collecting signatures for a political party"
-    },
+
     "2.3 M1": {
       "question": "Which digital technology can enhance transparency and accountability in civic engagement?",
       "options": ["Virtual reality", "Blockchain", "Augmented reality", "Fitness trackers"],
@@ -635,16 +545,7 @@
       ],
       "answer": "Launching an interactive social media campaign"
     },
-    "2.3 M6": {
-      "question": "Select the correct matching of the digital technology with its relevant feature or benefit in promoting participatory citizenship:",
-      "options": [
-        "Social media platforms: Offer resources and tools for effective civic engagement to advocate for the most vulnerable.",
-        "Online voting systems: Provide platforms for amplifying marginalised voices.",
-        "Digital advocacy tools: Facilitate collective action and gather community input.",
-        "Civic tech websites: Enable real-time feedback and discussions among citizens."
-      ],
-      "answer": "Civic tech websites: Enable real-time feedback and discussions among citizens."
-    },
+
 
     "2.4 B1": {
       "question": "Which of the following is a benefit of using collaborative tools like Google Docs or Sheets for group projects?",
@@ -686,16 +587,7 @@
       ],
       "answer": "It enables real-time collaboration and feedback"
     },
-    "2.4 B6": {
-      "question": "Select the correct matching of the digital tools with its co-creation function:",
-      "options": [
-        "Collaborative mapping tools: Gathering diverse input from the public",
-        "Crowdsourcing platforms: Allowing multiple users to edit and update information",
-        "Wikis: Visualising data and ideas spatially",
-        "Online survey tools: Collecting opinions and data from stakeholders"
-      ],
-      "answer": "Online survey tools: Collecting opinions and data from stakeholders"
-    },
+
     "2.4 M1": {
       "question": "What is the primary function of version control software like Git in collaborative projects?",
       "options": ["To edit images", "To track changes in documents and code", "To create presentations", "To manage emails"],
@@ -725,11 +617,6 @@
       "question": "A research team is using an online platform to collect data from participants and include themselves in the analysis. What approach are they using?",
       "options": ["Closed research methods", "Citizen science", "Traditional surveys", "Data mining"],
       "answer": "Citizen science"
-    },
-    "2.4 M6": {
-      "question": "Which term defines reusing and changing someone else’s creation or code in the digital world?",
-      "options": ["Adaptation", "Remixing", "Apud", "Reusing"],
-      "answer": "Remixing"
     },
 
     "2.5 B1": {
@@ -777,16 +664,7 @@
       ],
       "answer": "Turn the camera on and stay on mute when someone else is speaking"
     },
-    "2.5 B6": {
-      "question": "You need to interrupt your teacher in an online class, what should you do?",
-      "options": [
-        "Use the raise hand feature and wait for my turn",
-        "Turn the camera on and raise my hand",
-        "Use the microphone and ask for permission",
-        "Send a private message to the teacher"
-      ],
-      "answer": "Use the raise hand feature and wait for my turn"
-    },
+
     "2.5 M1": {
       "question": "When presenting a group work to your peers, which of the following strategies might be most effective?",
       "options": [
@@ -826,16 +704,6 @@
         "Automatically schedule to send the email on Monday morning"
       ],
       "answer": "Automatically schedule to send the email on Monday morning"
-    },
-    "2.5 M6": {
-      "question": "You want to schedule a virtual meeting with participants from various time zones, including both younger and older individuals. You notice that some prefer late-night meetings while others prefer mornings. What should you do?",
-      "options": [
-        "Schedule the meeting at a time that works for you; others can adjust.",
-        "Propose a few time options that suit you and use a poll to find a consensus on the best time.",
-        "Choose the earliest time that suits your convenience and inform others afterward.",
-        "Have everyone send their availability and then decide based on majority preference."
-      ],
-      "answer": "Propose a few time options that suit you and use a poll to find a consensus on the best time."
     },
 
     "2.6 B1": {
@@ -883,16 +751,7 @@
       ],
       "answer": "Yes, as long as I ask their parents."
     },
-    "2.6 B6": {
-      "question": "You’re applying for a new job and realise that your social media profiles are public. You have some posts that may not align with your professional image. What should you do?",
-      "options": [
-        "Leave everything as it is; the employer shouldn’t judge you based on personal posts.",
-        "Review and update your privacy settings to restrict who can see your posts.",
-        "Delete all posts from the last five years.",
-        "Create a separate professional account for job-related connections."
-      ],
-      "answer": "Review and update your privacy settings to restrict who can see your posts."
-    },
+
     "2.6 M1": {
       "question": "What is one way to protect your personal data when creating online accounts?",
       "options": ["Using easy-to-remember passwords", "Sharing your password with friends", "Enabling two-factor authentication", "Avoiding the use of privacy settings"],
@@ -923,14 +782,6 @@
       ],
       "answer": "Your national Data Protection Authority (DPA)"
     },
-    "2.6 M6": {
-      "question": "According to the GDPR, for how long can a given organisation store your personal data?",
-      "options": ["For as long as they wish", "For the shortest time possible", "For 3 years", "Until I tell them to remove"],
-      "answer": "For the shortest time possible"
-    },
-
-
-
 
     "3.1 B1": {
       "question": "What is digitizing?",
@@ -977,11 +828,7 @@
       ],
       "answer": "A language for creating web pages"
     },
-    "3.1 B6": {
-      "question": "Which platforms are social media platforms?",
-      "options": ["Instagram", "TikTok", "Facebook", "All"],
-      "answer": "All"
-    },
+
     "3.1 M1": {
       "question": "What six elements can be combined to create multimedia?",
       "options": [
@@ -1032,16 +879,6 @@
       ],
       "answer": "A design that automatically adapts to different devices"
     },
-    "3.1 M6": {
-      "question": "In the context of digital content creation, what is the primary function of a content management system (CMS)?",
-      "options": [
-        "To track user engagement metrics",
-        "To facilitate the creation, editing, and publishing of digital content",
-        "To analyse competitors",
-        "To create social media posts only"
-      ],
-      "answer": "To facilitate the creation, editing, and publishing of digital content"
-    },
 
     "3.2 B1": {
       "question": "Is it important to analyse which audience your digital content is aimed at?",
@@ -1073,16 +910,7 @@
       "options": ["True", "False"],
       "answer": "False"
     },
-    "3.2 B6": {
-      "question": "Who might make up your content target group?",
-      "options": [
-        "A young audience",
-        "People with a conservative approach to life",
-        "Elderly people",
-        "All answers are correct"
-      ],
-      "answer": "All answers are correct"
-    },
+
     "3.2 M1": {
       "question": "What is the primary benefit of adding captions to video presentations?",
       "options": [
@@ -1126,16 +954,7 @@
       ],
       "answer": "All answers are correct"
     },
-    "3.2 M6": {
-      "question": "Which of the following best describes a key step in integrating hardware sensors with digital technologies to create a smart home device?",
-      "options": [
-        "Ensuring the device has a complex user interface",
-        "Selecting appropriate sensors to collect relevant data",
-        "Limiting connectivity options to reduce costs",
-        "Designing the device to be operated only manually"
-      ],
-      "answer": "Selecting appropriate sensors to collect relevant data"
-    },
+
 
     "3.3 B1": {
       "question": "Software is protected by copyright which makes it illegal to what?",
@@ -1183,16 +1002,7 @@
       "options": ["A mathematical formula", "A photograph", "A business idea", "A company logo"],
       "answer": "A photograph"
     },
-    "3.3 B6": {
-      "question": "If you want to use a copyrighted work, what should you do?",
-      "options": [
-        "Modify it slightly",
-        "Get permission from the copyright owner",
-        "Use it for free if it's for personal use",
-        "Cite the source and use it freely"
-      ],
-      "answer": "Get permission from the copyright owner"
-    },
+
     "3.3 M1": {
       "question": "Which of the following legal doctrines allows limited use of copyrighted works without permission under specific circumstances, such as commentary or criticism?",
       "options": ["Digital Millennium Copyright Act (DMCA)", "Fair Use", "Public Domain", "Moral Rights"],
@@ -1228,18 +1038,7 @@
       ],
       "answer": "Yes, as long as you use it the way the Creative Commons license says"
     },
-    "3.3 M6": {
-      "question": "I borrowed my friend’s phone and took a Snapchat of her posing with my dog. Who owns the copyright on the pic?",
-      "options": [
-        "Your friend, since she’s the one in the picture",
-        "You do, since you took the pic",
-        "You do, because it’s your dog",
-        "Your friend, since it’s on her phone",
-        "Snapchat, since you were using their app to take the pic",
-        "Your dog, because he’s obviously the star of the picture"
-      ],
-      "answer": "You do, since you took the pic"
-    },
+
     "3.4 B1": {
       "question": "What is an algorithm?",
       "options": ["A set of instructions or rules", "A type of insect", "A computer game"],
@@ -1275,16 +1074,7 @@
       ],
       "answer": "To perform an action if the condition is true"
     },
-    "3.4 B6": {
-      "question": "How can you solve a problem using a programming language?",
-      "options": [
-        "By writing messages",
-        "By creating an algorithm that describes the steps to the solution",
-        "By only writing texts",
-        "By only drawing diagrams"
-      ],
-      "answer": "By creating an algorithm that describes the steps to the solution"
-    },
+
     "3.4 M1": {
       "question": "Which is the algorithmic structure in proper order:",
       "options": [
@@ -1324,11 +1114,6 @@
         "It increases code complexity"
       ],
       "answer": "It encourages code reuse"
-    },
-    "3.4 M6": {
-      "question": "What is the significance of the 'debugging' process in programming?",
-      "options": ["Writing code without errors", "Finding and fixing errors", "Only organizing code", "Optimizing code"],
-      "answer": "Finding and fixing errors"
     },
 
     "4.1 B1": {
@@ -1381,16 +1166,7 @@
         ],
         "answer": "That the website is secure and protected"
     },
-    "4.1 B6": {
-        "question": "Which of the following is a common risk when using unsecured public Wi-Fi networks?",
-        "options": [
-        "Slower downloads",
-        "Unauthorized access to personal data",
-        "Network service interruptions",
-        "Faster battery drain"
-        ],
-        "answer": "Unauthorized access to personal data"
-    },
+
     "4.1 M1": {
         "question": "Which of the following methods can help protect your device from unauthorized access?",
         "options": [
@@ -1481,16 +1257,7 @@
         ],
         "answer": "Regularly clearing your browsing history"
     },
-    "4.2 B6": {
-        "question": "What is a common privacy risk when using social media?",
-        "options": [
-        "Receiving too many friend requests",
-        "Sharing too much personal information publicly",
-        "Losing old posts",
-        "Following unwanted accounts"
-        ],
-        "answer": "Sharing too much personal information publicly"
-    },
+
     "4.2 M1": {
         "question": "Which cryptographic protocol is widely used to ensure secure communication over a computer network?",
         "options": ["HTTP", "FTP", "SSL/TLS", "IMAP"],
@@ -1536,16 +1303,7 @@
         ],
         "answer": "By informing you about how the company collects, stores, and shares your data"
     },
-    "4.2 M6": {
-        "question": "Which of the following is a common security feature used by digital services to protect personal data?",
-        "options": [
-        "Automatically sharing user data with advertisers",
-        "Two-factor authentication (2FA)",
-        "Publicly displaying all user information",
-        "Allowing users to use weak passwords"
-        ],
-        "answer": "Two-factor authentication (2FA)"
-    },
+
     "4.3 B1": {
         "question": "How can you minimize the impact of digital device usage on your health and well-being?",
         "options": [
@@ -1596,16 +1354,7 @@
         ],
         "answer": "Turning off app notifications during rest hours"
     },
-    "4.3 B6": {
-        "question": "Which of the following digital technologies is particularly effective in promoting social inclusion for people with disabilities?",
-        "options": [
-        "Virtual reality",
-        "Voice recognition software",
-        "Artificial intelligence for finance",
-        "Entertainment apps"
-        ],
-        "answer": "Voice recognition software"
-    },
+
     "4.3 M1": {
         "question": "What is a common sign of cyberbullying that one should be aware of in digital environments?",
         "options": [
@@ -1656,16 +1405,7 @@
         ],
         "answer": "It can increase the risk of depression and anxiety"
     },
-    "4.3 M6": {
-        "question": "How can digital technologies promote social inclusion for vulnerable groups?",
-        "options": [
-        "By allowing greater public exposure of their vulnerabilities",
-        "By providing safe platforms for support and communication with others",
-        "By limiting access to social networks for security reasons",
-        "By allowing only professionals to interact with these groups"
-        ],
-        "answer": "By providing safe platforms for support and communication with others"
-    },
+
     "4.4 B1": {
         "question": "Which of the following practices helps in protecting the environment?",
         "options": [
@@ -1716,16 +1456,7 @@
         ],
         "answer": "The energy consumed by data centers"
     },
-    "4.4 B6": {
-        "question": "How can individuals reduce their digital carbon footprint?",
-        "options": [
-        "Using multiple devices at once",
-        "Turning off devices when not in use",
-        "Frequently upgrading to the latest models",
-        "Deleting unused apps"
-        ],
-        "answer": "Turning off devices when not in use"
-    },
+
     "4.4 M1": {
         "question": "What practice can help minimize the environmental impact of electronic waste?",
         "options": [
@@ -1776,16 +1507,6 @@
         ],
         "answer": "The energy efficiency of the underlying infrastructure"
     },
-    "4.4 M6": {
-        "question": "Which of the following digital practices could lead to higher environmental impact?",
-        "options": [
-        "Using cloud storage powered by renewable energy",
-        "Implementing energy-saving features in software",
-        "Keeping large amounts of unused data in online servers",
-        "Running data centers on energy-efficient cooling systems"
-        ],
-        "answer": "Keeping large amounts of unused data in online servers"
-    },
 
     "5.1 B1": {
         "question": "What is the first step in troubleshooting a device that won’t turn on?",
@@ -1826,16 +1547,7 @@
         "options": ["Hardware", "Screen", "Software", "App"],
         "answer": "Software"
     },
-    "5.1 B6": {
-        "question": "What tool can help diagnose network issues?",
-        "options": [
-        "Task Manager",
-        "Device Manager",
-        "Command Prompt",
-        "Control Panel"
-        ],
-        "answer": "Command Prompt"
-    },
+
     "5.1 M1": {
         "question": "You are unable to access a website, and other devices on the same network can. What is the most logical next step?",
         "options": [
@@ -1881,15 +1593,6 @@
         ],
         "answer": "A disconnected hard drive"
     },
-    "5.1 M6": {
-        "question": "When encountering a 'blue screen of death' (BSOD) on Windows, what is the most critical first step?",
-        "options": [
-        "Note down the error code displayed on the screen",
-        "Perform a clean reinstallation of the operating system",
-        "Replace the hardware immediately"
-        ],
-        "answer": "Note down the error code displayed on the screen"
-    },
 
     "5.2 B1": {
         "question": "Which of the following digital tools would best support a user with limited mobility in their hands?",
@@ -1930,16 +1633,7 @@
         "options": ["True", "False"],
         "answer": "True"
     },
-    "5.2 B6": {
-        "question": "Which of the following best describes a platform that facilitates non-commercial transactions like donating or gifting?",
-        "options": [
-        "E-commerce Website",
-        "Social Media Platform",
-        "Crowdfunding Site",
-        "Online Marketplace"
-        ],
-        "answer": "Crowdfunding Site"
-    },
+
     "5.2 M1": {
         "question": "In the context of online transactions, what is the primary function of blockchain technology in enhancing transaction security?",
         "options": [
@@ -1984,11 +1678,7 @@
         ],
         "answer": "A screen magnifier or zoom function"
     },
-    "5.2 M6": {
-        "question": "True or False? “Using high-contrast mode improves accessibility for all users, regardless of visual impairments.”",
-        "options": ["True", "False"],
-        "answer": "False"
-    },
+
 
     "5.3 B1": {
         "question": "Which digital tool would be most effective for brainstorming ideas collaboratively in real-time?",
@@ -2030,16 +1720,7 @@
         "options": ["True", "False"],
         "answer": "False"
     },
-    "5.3 B6": {
-        "question": "Which of the following digital tools is most effective for prototyping and validating a new product idea quickly in a startup environment?",
-        "options": [
-        "Word Processing Software",
-        "Project Management Tools",
-        "3D Printing Technology",
-        "Social Media Analytics"
-        ],
-        "answer": "3D Printing Technology"
-    },
+
     "5.3 M1": {
         "question": "Which of the following platforms is primarily known for providing comprehensive tools for building and managing IoT applications, including device management, data analytics, and security features?",
         "options": [
@@ -2090,16 +1771,7 @@
         ],
         "answer": "All of the above"
     },
-    "5.3 M6": {
-        "question": "In a collaborative problem-solving environment, which of the following practices is most effective for fostering diverse perspectives and enhancing team creativity?",
-        "options": [
-        "Establishing a strict hierarchy in decision-making",
-        "Conducting regular brainstorming sessions without evaluation",
-        "Limiting participation to only subject matter experts",
-        "Encouraging open dialogue and using design thinking methodologies"
-        ],
-        "answer": "Encouraging open dialogue and using design thinking methodologies"
-    },
+
 
     "5.4 B1": {
         "question": "Which of the following is a crucial first step in identifying your digital competence gaps?",
@@ -2145,11 +1817,7 @@
         ],
         "answer": "Ask about their specific digital tasks and challenges"
     },
-    "5.4 B6": {
-        "question": "True or False? Once you’ve identified your digital competence gaps, the next step is to immediately start advanced training programs without considering basic skills.",
-        "options": ["True", "False"],
-        "answer": "False"
-    },
+
     "5.4 M1": {
         "question": "Which of the following is the most effective first step in identifying your digital competence gaps?",
         "options": [
@@ -2193,16 +1861,7 @@
         "Encouraging regular feedback sessions"
         ],
         "answer": "Allowing them to skip foundational skills"
-    },
-    "5.4 M6": {
-        "question": "Which of the following is not true?",
-        "options": [
-        "Online courses provide structure for developing specific skills",
-        "Digital mentor provides personalised advice and insights on strengths/weaknesses",
-        "Industry news subscription keeps knowledge fresh with current updates",
-        "Digital mentor keeps knowledge fresh with current updates"
-        ],
-        "answer": "Digital mentor keeps knowledge fresh with current updates"
     }
+
     }
 }

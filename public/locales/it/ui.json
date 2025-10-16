@@ -1,22 +1,22 @@
 {
-  "welcome_message": "Benvenuto, ",
+  "welcome_message": "Benvenuto/a",
   "logout": "Esci", 
   "dashboard": "Cruscotto",
-  "progress_tracker": "Tracciatore di progresso",
+  "progress_tracker": "Indicatore di avanzamento",
   "dashboard_info": "Il tuo cruscotto delle competenze digitali",
   "points": "punti",
-  "dashboard_greeting": "Pronto a migliorare? Completa esercizi e quiz per guadagnare più punti",
-  "view_score": "Visualizza punteggio",
+  "dashboard_greeting": "Pronto a migliorare le tue competenze? Completa gli esercizi e i quiz per guadagnare più punti",
+  "view_score": "Visualizza il tuo punteggio",
   "competence_overview": "Panoramica delle competenze",
-  "training_exercises": "Esercizi di formazione",
+  "training_exercises": "Esercizi",
   "competences": "Competenze",
   "level_1": "Livello 1",
   "level_2": "Livello 2",
   "not_attempted": "Non iniziato", 
-  "take_sa_again": "Rifai l'autovalutazione",
+  "take_sa_again": "Cancella tutto e rifai l'autovalutazione",
   "complete_other_categories": "Completa le altre categorie",
   "confirm_action": "Conferma azione",
-  "confirm_action_text": "Questo eliminerà tutti i tuoi punteggi e progressi esistenti, resetterà la tua posizione in classifica a 0 e cancellerà gli avatar sbloccati. Potrai iniziare l'autovalutazione da zero. Questa azione non può essere annullata. Sei sicuro di voler continuare?",
+  "confirm_action_text": "ATTENZIONE: Questo eliminerà tutti i tuoi punteggi e progressi esistenti, resetterà la tua posizione in classifica a 0 e cancellerà gli avatar sbloccati. Potrai iniziare l'autovalutazione da zero. Questa azione non può essere annullata. Sei sicuro di voler continuare?",
   "cancel": "Annulla",
   "confirm_and_reset": "Conferma e resetta",
   "placement": "Classifica",
@@ -26,12 +26,12 @@
   "Play": "Gioca",
   "digital_skills_progress": "Progresso nelle competenze digitali",
   "keep_it_up": "Continua così!",
-  "digital_skills_elite_performer": "Esecutore d'élite delle competenze digitali",
-  "incredible_achievement": "Incredibile risultato raggiungendo 45.000 punti, vicino al punteggio massimo! La tua padronanza quasi perfetta ti posiziona come innovatore digitale.",
-  "digital_skills_advanced_achiever": "Realizzatore avanzato delle competenze digitali",
-  "excellent_work": "Eccellente lavoro raggiungendo 30.000 punti! La tua competenza avanzata dimostra preparazione per compiti accademici complessi e stage.",
+  "digital_skills_elite_performer": "Specialista delle competenze digitali",
+  "incredible_achievement": "Incredibile risultato hai raggiunto 45.000 punti, sei vicino/a al punteggio massimo! La tua padronanza quasi perfetta ti posiziona come innovatore digitale.",
+  "digital_skills_advanced_achiever": "Esperto delle competenze digitali",
+  "excellent_work": "Eccellente lavoro, hai raggiunto 30.000 punti! La tua competenza avanzata dimostra preparazione per compiti accademici complessi e stage.",
   "digital_skills_rising_star": "Stella nascente delle competenze digitali",
-  "great_job": "Ottimo lavoro raggiungendo 15.000 punti! Hai fatto progressi significativi costruendo una solida base per il successo accademico e professionale.",
+  "great_job": "Ottimo lavoro, hai raggiunto 15.000 punti! Hai fatto progressi significativi e stai costruendo una solida base per il successo accademico e professionale.",
 
   "not_started": "Non iniziato",
   "level": "Livello",
@@ -46,7 +46,7 @@
   "total_score": "Punteggio totale",
   "out_of": "su",
   "total_points": "{{total_point, number}} punti",
-  "possible_points": " punti possibili",
+  "possible_points": "punti possibili",
   "out_of_total_score": "su {{total_point, number}} punti possibili",
 
   "congratulations": "Congratulazioni!",
@@ -85,7 +85,7 @@
   "category_progress": "Progresso categoria",
 
   "go_to_dashboard": "Vai al Cruscotto",
-  "check_progress": "Controlla lo stato dei progressi",
+  "check_progress": "Controlla lo stato dei tuoi progressi",
   "full_assessment_explanation": "L'autovalutazione completa contiene tutte le 82 domande e fornisce una valutazione completa delle tue competenze digitali",
   "select_one_area": "Seleziona un'area per iniziare",
   "select_area_explanation": "Scegli una specifica area di competenza o completa l'autovalutazione completa",
@@ -102,12 +102,12 @@
 
   "lang_settings": "Impostazioni lingua",
   "select_lang": "Seleziona lingua",
-  "select_lang_message": "Scegli la lingua per l'interfaccia dell'applicazione.",
+  "select_lang_message": "Scegli la lingua per l'interfaccia dell'applicazione",
   "confirm_selection": "Conferma selezione",
 
   "forgot_password": "Password dimenticata",
   "forgot_your_password": "Hai dimenticato la password?",
-  "forgot_password_text": "Inserisci la tua email qui sotto e ti invieremo un codice di verifica per resettare la password.",
+  "forgot_password_text": "Inserisci la tua email qui sotto e ti invieremo un codice di verifica per resettare la password",
   "email": "Indirizzo email",
   "email_instruction": "Inserisci la tua email",
   "send_code": "Invia codice di verifica",
@@ -121,9 +121,9 @@
   "invalid_code": "Codice non valido",
 
   "login": "Accedi",
-  "welcome_simons": "Benvenuto in SIMOnS!",
+  "welcome_simons": "Benvenuto/a in SIMOnS!",
   "password": "Password",
-  "or": "O",
+  "or": "o",
   "login_with_google": "Accedi con Google",
   "dont_have_account": "Non hai un account?",
   "signup": "Registrati",
@@ -139,14 +139,14 @@
   "firstname": "Nome",
   "lastname": "Cognome",
   "dob": "Data di nascita",
-  "gender": "Seleziona genere",
+  "gender": "Seleziona il tuo sesso",
   "country": "Seleziona Paese",
-  "university": "Seleziona Università (Opzionale)",
+  "university": "Seleziona la tua Università (Opzionale)",
   "repeat_password": "Conferma Password",
 
   "male": "Maschio",
   "female": "Femmina",
-  "other": "Altro",
+  "other": "Preferisco non rispondere",
 
   "already_account": "Hai già un account?",
   "join_us": "Unisciti a noi!",
@@ -156,8 +156,8 @@
   "learning_materials": "Materiale didattico",
   "return_to_dashboard": "Torna al Cruscotto",
   "additional_resources": "Risorse aggiuntive",
-  "quiz_completed": "Quiz completato",
-  "take_the_quiz": "Fai il quiz",
+  "quiz_completed": "Test completato",
+  "take_the_quiz": "Fai il test",
 
   "Level 2": "Livello 2",
   "Level 1": "Livello 1",
@@ -177,9 +177,9 @@
 
   "processing_results": "Elaborazione risultati",
   "calculating_score": "Calcolo del tuo punteggio",
-  "quiz_results": "Risultati quiz",
+  "quiz_results": "Risultati test",
   "analyzing": "Analizzando le tue prestazioni e i bonus tempo...",
-  "error_processing": "Errore nell'elaborazione dei risultati del quiz",
+  "error_processing": "Errore nell'elaborazione dei risultati del test",
   "Try again...": "Riprova...",
   "Almost there!": "Quasi fatto...",
   "Excellent work!": "Ottimo lavoro!",
@@ -194,7 +194,7 @@
   "missed_opportunity": "Opportunità mancata",
   "missed_explanation": "Avresti potuto guadagnare altri {{lostOpportunity}} punti con risposte corrette",
   "review_material": "Rivedi materiali didattici",
-  "retake_quiz": "Rifai il quiz",
+  "retake_quiz": "Rifai il test",
   "You answered 0/3 correctly": "Hai risposto correttamente a 0/3",
   "You answered 1/3 correctly": "Hai risposto correttamente a 1/3",
   "You answered 2/3 correctly": "Hai risposto correttamente a 2/3",
@@ -202,48 +202,48 @@
   "Perfect score!": "Punteggio perfetto!",
 
   "questions_answered": "Domande risposte in questa sessione",
-  "succesfully_completed_questions": "Hai completato con successo {{completedCount}} domande.",
-  "complete_others": "Completa le altre per finalizzare la tua autovalutazione.",
-  "starting_level_determined": "I tuoi livelli iniziali per tutte le competenze sono stati determinati.",
+  "succesfully_completed_questions": "Hai completato con successo {{completedCount}} domande",
+  "complete_others": "Completa le altre per finalizzare la tua autovalutazione",
+  "starting_level_determined": "I tuoi livelli iniziali per tutte le competenze sono stati determinati",
   "category_completed": "Autovalutazione per questa categoria completata!",
-  "full_completed": "Autovalutazione completa completata!",
+  "full_completed": "Autovalutazione completata!",
   "processing_selfassessment": "Elaborazione della tua autovalutazione",
-  "please_wait": "Attendere mentre analizziamo le tue risposte.",
+  "please_wait": "Attendere mentre analizziamo le tue risposte",
   "results": "Risultati",
   "continue_to_other": "Continua con le altre categorie",
   "next_steps": "Prossimi passi",
-  "self_assessment_complete": "La tua autovalutazione è completa! Puoi ora procedere al tuo cruscotto per iniziare gli esercizi a tempo.",
-  "continue_to_next": "Continua alla prossima categoria per completare la tua autovalutazione.",
+  "self_assessment_complete": "La tua autovalutazione è completa! Puoi ora procedere al tuo cruscotto per iniziare il tuo percorso di apprendimento",
+  "continue_to_next": "Continua alla prossima categoria per completare la tua autovalutazione",
   "complete": "Completa",
 
   "privacy": {
-    "intro": "Questa Informativa sulla Privacy descrive come SIMOnS – Student Improvement and Monitoring of Online Skills, un'app educativa finanziata dall'Unione Europea nell'ambito del progetto Erasmus+ (2023-1-PT01-KA220-HED-000160187) per migliorare le competenze digitali degli studenti universitari, raccoglie, utilizza e protegge i tuoi dati personali in conformità al Regolamento Generale sulla Protezione dei Dati (GDPR). La raccolta dei dati è stata approvata dal comitato etico dell'Università di Maia (approvazione n.288/2025). Questa politica può subire aggiornamenti, che saranno notificati tramite app o email.",
+    "intro": "Questa Informativa sulla Privacy descrive come SIMOnS – Student Improvement and Monitoring of Online Skills, un'app educativa finanziata dall'Unione Europea nell'ambito del progetto Erasmus+ (2023-1-PT01-KA220-HED-000160187) per migliorare le competenze digitali degli studenti universitari, raccoglie, utilizza e protegge i tuoi dati personali in conformità al Regolamento Generale sulla Protezione dei Dati (GDPR). La raccolta dei dati è stata approvata dal comitato etico dell'Università UMAIA - Portogallo (approvazione n.288/2025). Questa politica può subire aggiornamenti, che saranno notificati tramite app o email.",
     
     "title.data_collected": "Dati raccolti",
-    "content.data_collected.p1": "Dati personali: Email, data di nascita, genere, università (opzionale), password o dati account Google (email e profilo base) per la registrazione.",
-    "content.data_collected.p2": "Dati non personali: Risposte anonime al questionario di autovalutazione, punteggi degli esercizi, visualizzazioni dei video didattici e informazioni sul dispositivo (es. indirizzo IP, tipo di dispositivo).",
+    "content.data_collected.p1": "Dati personali: Email, data di nascita, sesso, università (opzionale), password o dati account Google (email e profilo base) per la registrazione.",
+    "content.data_collected.p2": "Dati non personali: Risposte anonime al questionario di autovalutazione, punteggi al test, visualizzazioni dei video didattici e informazioni sul dispositivo (es. indirizzo IP, tipo di dispositivo).",
     
     "title.data_usage": "Uso dei dati",
-    "content.data_usage.p1": "Creare e gestire account.",
-    "content.data_usage.p2": "Fornire contenuti educativi personalizzati e feedback sulle competenze.",
+    "content.data_usage.p1": "Creare e gestire account",
+    "content.data_usage.p2": "Fornire contenuti educativi personalizzati e feedback sulle proprie competenze",
     "content.data_usage.p3": "Analizzare l'utilizzo (pseudonimizzato) per migliorare l'app e supportare i risultati del progetto Erasmus+ (report, articoli di ricerca e eventi di diffusione).",
-    "content.data_usage.p4": "Garantire la conformità al GDPR.",
+    "content.data_usage.p4": "Garantire la conformità al GDPR",
 
     "title.data_sharing": "Condivisione dei dati",
-    "intro.data_sharing": "I dati raccolti non saranno venduti o affittati a scopo commerciale. I dati possono essere condivisi con:",
-    "content.data_sharing.p1": "Partner Erasmus+ (anonimizzati) per ricerca e reportistica.",
+    "intro.data_sharing": "I dati raccolti non saranno venduti o trasferiti a scopo commerciale. I dati possono essere condivisi con:",
+    "content.data_sharing.p1": "Partner Erasmus+ (anonimizzati) per ricerca e stesura report",
     "content.data_sharing.p2": "Fornitori di servizi (es. cloud) e servizi di terze parti (es. registrazione Google) sotto stretta riservatezza e conformemente alle loro politiche sulla privacy. Per maggiori informazioni sui servizi utilizzati, contattare il team.",
     
     "title.data_security": "Sicurezza dei dati",
     "content.data_security.p1": "I dati sono criptati e l'accesso richiede autenticazione multifattoriale da parte dei membri del team per garantire protezione e sicurezza dei dati, anche se nessun sistema è completamente sicuro.",
 
     "title.data_retention": "Conservazione dei dati",
-    "content.data_retention.p1": "I dati sono memorizzati sui server dei partner del progetto e sui server Maiêutica (Microsoft OneDrive). I dati sono conservati per la durata del progetto Erasmus+ e fino a 3 anni per valutazione, salvo richiesta di cancellazione.",
+    "content.data_retention.p1": "I dati sono memorizzati sui server dei partner del progetto e sui server dell'Università UMAIA -Portogallo (Microsoft OneDrive). I dati sono conservati per la durata del progetto Erasmus+ e fino a 3 anni per valutazione, salvo richiesta di cancellazione.",
 
     "title.user_rights": "Diritti dell'utente",
     "intro.user_rights": "Ai sensi del GDPR, gli utenti possono:",
     "content.user_rights.p1": "Accedere, correggere o eliminare i dati.",
-    "content.user_rights.p2": "Limitare o opporsi al trattamento.",
+    "content.user_rights.p2": "Limitare o opporsi al trattamento dei dati.",
     "content.user_rights.p3": "Richiedere la portabilità dei dati.",
 
     "title_contact": "Contatto",
@@ -256,7 +256,7 @@
   "about_simons_app": "Informazioni sull'app SIMOnS",
   "about_the_app": "Informazioni su questa applicazione",
   "about.p1": "SIMOnS (Student Improvement and Monitoring of Online Skills) è uno strumento di auto-riflessione progettato per aiutare gli utenti a valutare e migliorare le proprie competenze digitali basandosi sul Quadro Europeo delle Competenze Digitali per i cittadini (DigComp).",
-  "about.p2": "Attraverso questionari di autovalutazione e materiali didattici mirati, SIMOnS mira a permettere agli utenti di identificare punti di forza e aree di miglioramento nel mondo digitale.",
+  "about.p2": "Attraverso questionari di autovalutazione e materiali didattici mirati, SIMOnS mira a permettere agli utenti di identificare i propri punti di forza e le aree di miglioramento nelle competenze sul mondo digitale.",
 
   "competence_areas": {
     "1": {
@@ -415,7 +415,7 @@
 
   "learning_material": {
     "1.1": {
-      "basic": "Impara a formulare le esigenze informative e a cercare efficacemente nei database accademici e nei motori di ricerca, utilizzando operatori booleani e affinando le strategie di ricerca per accedere a contenuti digitali rilevanti.",
+      "basic": "Impara a identificare le esigenze informative e a cercare efficacemente nei database accademici e nei motori di ricerca, utilizzando operatori booleani e affinando le strategie di ricerca per accedere a contenuti digitali rilevanti.",
       "master": "Padroneggia tecniche avanzate di ricerca utilizzando database accademici e specializzati. Esplora repository di ricerca, applica filtri sui metadati e ottimizza le ricerche per ottenere contenuti di alta qualità e peer-reviewed."
     },
     "1.2": {
@@ -423,8 +423,8 @@
       "master": "Applica tecniche di valutazione approfondite, includendo il confronto tra più fonti, l’analisi dei metodi di ricerca e la priorizzazione dei dati peer-reviewed. Migliora l’integrità della ricerca utilizzando metadati e organizzazione sistematica dei file."
     },
     "1.3": {
-      "basic": "Impara a organizzare i file digitali in modo efficiente con cartelle strutturate e convenzioni di denominazione chiare. Usa lo storage cloud per accedere ai dati ovunque e strumenti di visualizzazione dei dati per migliorare la comprensione e aumentare l’impatto della ricerca.",
-      "master": "Implementa le migliori pratiche per la gestione dei dati digitali, includendo backup regolari, etichettatura dei metadati e automazione delle attività ripetitive. Usa database e strumenti avanzati per un’organizzazione della ricerca senza soluzione di continuità."
+      "basic": "Impara a organizzare i file digitali in modo efficiente con cartelle strutturate e metodi di denominazione chiari. Usa i sistemi cloud per accedere ai dati ovunque e strumenti di visualizzazione dei dati per migliorare la comprensione e aumentare l’impatto della ricerca.",
+      "master": "Implementa le migliori pratiche per la gestione dei dati digitali, includendo backup regolari, etichettatura dei metadati e automazione delle attività ripetitive. Usa database e strumenti avanzati per un’organizzazione della ricerca senza errori."
     },
     "2.1": {
       "basic": "Impara a usare diverse tecnologie digitali per interagire con compagni o insegnanti in ambienti istituzionali o privati, e a scegliere gli strumenti di comunicazione più appropriati per un dato contesto.",
@@ -498,5 +498,8 @@
       "basic": "Comprendi dove migliorare le tue competenze digitali e come supportare altri nello sviluppo delle loro competenze.",
       "master": "Cerca opportunità di auto-sviluppo, tieniti aggiornato sull’evoluzione digitale e guida altri nell’identificazione delle lacune delle competenze digitali."
     }
-  }
+  }, 
+
+  "selectLabel" : "Seleziona la lingua"
+
 }

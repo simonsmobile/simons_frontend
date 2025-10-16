@@ -2,11 +2,17 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import '../i18n'; // Ensure i18n is initialized
+import LanguageSwitcher from '../components/LanguageSwitcher';
 
 const WelcomeScreen = () => {
   const navigate = useNavigate();
   const [redirectRoute, setRedirectRoute] = useState("/landing");
   const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    // Aseta <html lang> kun kieli vaihtuu (sekä ensimmäisellä renderillä)
+    document.documentElement.lang = i18n.resolvedLanguage || i18n.language || 'en';
+  }, [i18n.resolvedLanguage, i18n.language]);
 
   useEffect(() => {
     const changeRoute = () => {
@@ -23,11 +29,19 @@ const WelcomeScreen = () => {
     changeRoute();
   }, [navigate]);
 
+  //console.log("language: " + i18n.language);          // 'en-US' (pyydetty)
+  //console.log("resolved language: " + i18n.resolvedLanguage);  // 'en'
+  
   return (
     <div className="flex flex-col items-center justify-between min-h-screen bg-white px-4 py-8">
       <div className="w-full max-w-md">
         <div className="relative mb-8">
           <div className="absolute top-0 right-0 w-3/4 h-40 bg-amber-300 rounded-bl-full -z-10"></div>
+
+          {/* Kielenvaihdin oikeassa yläkulmassa */}
+          <div className="absolute top-3 right-3">
+            <LanguageSwitcher />
+          </div>
 
           <div className="flex justify-center pt-12">
             <div className="bg-white rounded-full p-3 shadow-md">

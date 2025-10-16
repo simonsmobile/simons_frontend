@@ -14,11 +14,25 @@ i18next
   .init({
     // Fallback language in case detection fails.
     fallbackLng: 'en',
+
+    supportedLngs: ['en','fi','pt','lt','el','it'],
+    load: 'currentOnly',              // 'en-US' -> 'en'
+    nonExplicitSupportedLngs: true,   // hyväksy 'en-*' kun 'en' on tuettu
+    lowerCaseLng: true,               // normalisoi (esim. 'EN-us' -> 'en-us')
+    cleanCode: true,                  // siistii koodin (en-US -> en-US, fi-FI -> fi-FI)
+    returnNull: false,
+
     ns: ["ui", "questions", "assessment"],         // käytössä olevat namespaces
     defaultNS: "ui",               // oletus jos et anna erikseen
     // Configuration for your backend (adjust the path according to your folder structure).
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json',
+    },
+
+    detection: {
+      order: ['querystring','localStorage','navigator','htmlTag','path','subdomain'],
+      lookupQuerystring: 'lng',
+      caches: ['localStorage'],
     },
 
     // Debugging can be enabled during development.
