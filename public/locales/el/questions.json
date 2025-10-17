@@ -50,16 +50,7 @@
       ],
       "answer": "Για ανακατεύθυνση σε άλλη ιστοσελίδα ή πηγή"
     },
-    "1.1 B6": {
-      "question": "Ποια θα πρέπει να είναι βασική παράμετρος όταν ενημερώνεις μια στρατηγική αναζήτησης;",
-      "options": [
-        "Η διάταξη της σελίδας της μηχανής αναζήτησης",
-        "Ο αριθμός των διαθέσιμων πηγών",
-        "Η βελτίωση των όρων αναζήτησης με βάση νέα ευρήματα",
-        "Η προσθήκη άσχετων θεμάτων για πιο ευρεία αποτελέσματα"
-      ],
-      "answer": "Η βελτίωση των όρων αναζήτησης με βάση νέα ευρήματα"
-    },
+
     "1.1 M1": {
       "question": "Ποιο από τα παρακάτω ΔΕΝ αποτελεί ανάγκη πληροφόρησης;",
       "options": [
@@ -105,16 +96,7 @@
       ],
       "answer": "Να αξιολογείς την ποιότητα των αποτελεσμάτων και να προσαρμόζεις αντίστοιχα τους όρους"
     },
-    "1.1 M6": {
-      "question": "Γιατί είναι σημαντικό να ενημερώνονται τακτικά οι στρατηγικές αναζήτησης;",
-      "options": [
-        "Για να αποφευχθεί η επανάληψη αποτελεσμάτων",
-        "Για να ενημερώνεσαι για νέα διαθέσιμα δεδομένα και πηγές",
-        "Για να αποφύγεις τους περισπασμούς κατά την περιήγηση",
-        "Για να μειώσεις τους χρόνους φόρτωσης της μηχανής αναζήτησης"
-      ],
-      "answer": "Για να ενημερώνεσαι για νέα διαθέσιμα δεδομένα και πηγές"
-    },
+
     "1.2 B1": {
       "question": "Ποιος από τους παρακάτω παράγοντες δείχνει ότι μια πηγή είναι αξιόπιστη;",
       "options": [
@@ -165,16 +147,7 @@
       ],
       "answer": "Να χρησιμοποιείς σαφή δομή με φακέλους και υποφακέλους"
     },
-    "1.2 B6": {
-      "question": "Πώς βοηθά η αποθήκευση στο cloud στη διαχείριση δεδομένων;",
-      "options": [
-        "Κατηγοριοποιεί αυτόματα τα αρχεία",
-        "Επιτρέπει πρόσβαση στα δεδομένα από πολλές συσκευές",
-        "Περιορίζει τη χωρητικότητα αποθήκευσης",
-        "Λειτουργεί μόνο εκτός σύνδεσης"
-      ],
-      "answer": "Επιτρέπει πρόσβαση στα δεδομένα από πολλές συσκευές"
-    },
+
     "1.2 M1": {
       "question": "Γιατί είναι σημαντικό να διασταυρώνεις πληροφορίες από πολλαπλές π-sources;",
       "options": [
@@ -225,16 +198,7 @@
       ],
       "answer": "Με την ετικετοποίηση (tagging) αρχείων με σχετικές λέξεις-κλειδιά"
     },
-    "1.2 M6": {
-      "question": "Ποιο είναι ένα πλεονέκτημα της χρήσης εργαλείων συγχρονισμού αρχείων;",
-      "options": [
-        "Βοηθούν στη μεταφορά δεδομένων μεταξύ άσχετων συσκευών",
-        "Επιτρέπουν πρόσβαση σε ενημερωμένα αρχεία από πολλές συσκευές",
-        "Αφαιρούν αυτόματα παλιά αρχεία",
-        "Οργανώνουν τα αρχεία σε συγκεκριμένες μορφές"
-      ],
-      "answer": "Επιτρέπουν πρόσβαση σε ενημερωμένα αρχεία από πολλές συσκευές"
-    },
+
 
     "1.3 B1": {
     "question": "Ποιος είναι ο καλύτερος τρόπος αποθήκευσης δεδομένων για εύκολη ανάκτηση αργότερα;",
@@ -286,16 +250,7 @@
     ],
     "answer": "Να ταξινομούν, να φιλτράρουν και να αναλύουν πληροφορίες αποδοτικά"
     },
-    "1.3 B6": {
-    "question": "Πώς βοηθούν τα εργαλεία οπτικοποίησης δεδομένων στην επεξεργασία πληροφοριών;",
-    "options": [
-        "Κάνοντας τα δεδομένα πιο καλαίσθητα χωρίς πλαίσιο",
-        "Βοηθώντας στον εντοπισμό προτύπων και τάσεων σε μεγάλα σύνολα δεδομένων",
-        "Απλοποιώντας τα δεδομένα χωρίς καμία ανάλυση",
-        "Κρύβοντας τα δεδομένα πίσω από διαγράμματα"
-    ],
-    "answer": "Βοηθώντας στον εντοπισμό προτύπων και τάσεων σε μεγάλα σύνολα δεδομένων"
-    },
+
     "1.3 M1": {
     "question": "Γιατί είναι σημαντικό να δημιουργείς τακτικά αντίγραφα ασφαλείας των δεδομένων σου;",
     "options": [
@@ -346,392 +301,325 @@
     ],
     "answer": "Εξοικονομεί χρόνο και βελτιώνει την ακρίβεια"
     },
-    "1.3 M6": {
-    "question": "Πώς μπορείς να διαχειριστείς καλύτερα σύνθετα σύνολα δεδομένων για εύκολη ανάλυση;",
-    "options": [
-        "Χρησιμοποιώντας πολλαπλά υπολογιστικά φύλλα χωρίς σύνδεση μεταξύ τους",
-        "Δομώντας τα δεδομένα σε βάση δεδομένων ή υπολογιστικό φύλλο για ταξινόμηση και φιλτράρισμα",
-        "Αποφεύγοντας κάθε ψηφιακό εργαλείο",
-        "Αποθηκεύοντας τα δεδομένα σε μη δομημένες μορφές όπως αρχεία κειμένου"
-    ],
-    "answer": "Δομώντας τα δεδομένα σε βάση δεδομένων ή υπολογιστικό φύλλο για ταξινόμηση και φιλτράρισμα"
-    },
 
 
 
-    "2.1 B1": {
-      "question": "Which of the following tools is more appropriate to send an institutional newsletter?",
-      "options": ["Email", "Snapchat", "WhatsApp", "Instagram"],
-      "answer": "Email"
-    },
-    "2.1 B2": {
-      "question": "Select the correct matching of the following online platforms with their primary use:",
-      "options": [
-        "Zoom: Record videos",
-        "WhatsApp: Micro-blogging",
-        "MS Teams: Online classes",
-        "X: Instant messaging"
-      ],
-      "answer": "MS Teams: Online classes"
-    },
-    "2.1 B3": {
-      "question": "When communicating through digital technologies, it is essential to be aware of _______ to ensure that your message is received as intended and to avoid misunderstandings.",
-      "options": ["Context", "Grammar", "Spelling", "Language"],
-      "answer": "Context"
-    },
-    "2.1 B4": {
-      "question": "You are collaborating on a project with a team that needs quick feedback. Which digital tool is most appropriate?",
-      "options": [
-        "Email",
-        "Instant Messaging (e.g., Slack, Microsoft Teams, WhatsApp)",
-        "Social Media",
-        "Video Conference"
-      ],
-      "answer": "Instant Messaging (e.g., Slack, Microsoft Teams, WhatsApp)"
-    },
-    "2.1 B5": {
-      "question": "You are notifying your tutor about a missed deadline. What is the most appropriate way to communicate this?",
-      "options": ["Text message", "Formal email", "Social media post", "Phone call"],
-      "answer": "Formal email"
-    },
-    "2.1 B6": {
-      "question": "You are discussing a sensitive topic with a colleague. Which method should you choose?",
-      "options": ["Group chat", "Video call", "Public forum", "Direct message"],
-      "answer": "Video call"
-    },
-    "2.1 M1": {
-      "question": "Imagine you ordered a student’s book online on a website, and you are having trouble tracking the order. Which sentence (input) would be the most effective way of asking a virtual assistant (bot) to look for your latest order?",
-      "options": [
-        "\"Look for my book.\"",
-        "\"Where is my order?\"",
-        "\"Track down order no. XD1035GH\"",
-        "\"Hello, I need something.\""
-      ],
-      "answer": "\"Track down order no. XD1035GH\""
-    },
-    "2.1 M2": {
-      "question": "When interacting with generative AI platforms (e.g., ChatGPT), what is the most appropriate way of writing the input to obtain accurate results?",
-      "options": ["Asking questions.", "Providing detailed instructions.", "Giving data.", "Using only keywords"],
-      "answer": "Providing detailed instructions."
-    },
-    "2.1 M3": {
-      "question": "Which of the following is a key factor in choosing the appropriate digital communication tool for an academic presentation?",
-      "options": [
-        "The colour scheme of the tool",
-        "The tool’s ability to support multimedia and screen sharing",
-        "The tool’s popularity among my friends",
-        "The tool’s integration with social media"
-      ],
-      "answer": "The tool’s ability to support multimedia and screen sharing"
-    },
-    "2.1 M4": {
-      "question": "You are asked to present a new software feature to a group of colleagues. What is the most appropriate method of communication?",
-      "options": ["An informal blog post", "A detailed email with attachments", "A live demo via video call", "A recorded video message"],
-      "answer": "A live demo via video call"
-    },
-    "2.1 M5": {
-      "question": "You are the class representative and need to make an announcement that affects all students. Which communication channel is most effective?",
-      "options": ["Team chat application", "Email blast", "Video conference", "WhatsApp Group"],
-      "answer": "Email blast"
-    },
-    "2.1 M6": {
-      "question": "You and your classmates are developing a project for a curricular unit. Which of the following platforms would help your group keep track of the ongoing tasks?",
-      "options": ["Trello", "Discord", "Slack", "Email"],
-      "answer": "Trello"
-    },
 
-    "2.2 B1": {
-      "question": "Which of the following best defines 'data sharing'?",
-      "options": [
-        "Distributing data without any conditions",
-        "Collaborating with others to exchange data for mutual benefit",
-        "Discussing data on social media",
-        "Only discussing data verbally without sharing files"
-      ],
-      "answer": "Collaborating with others to exchange data for mutual benefit"
-    },
-    "2.2 B2": {
-      "question": "If you come across an infographic online and want to share it on social media, what should you do?",
-      "options": [
-        "Post it without any changes.",
-        "Appraise its credibility and include attribution to the creator.",
-        "Share it as your own.",
-        "Only share it if you remember who created it."
-      ],
-      "answer": "Appraise its credibility and include attribution to the creator."
-    },
-    "2.2 B3": {
-      "question": "Suppose you need to share a file with your classmates which has approximately 1.4GB, which platform would you use?",
-      "options": ["Email", "WhatsApp", "WeTransfer", "Messenger"],
-      "answer": "WeTransfer"
-    },
-    "2.2 B4": {
-      "question": "Select the most correct answer about software licensing:",
-      "options": [
-        "I can download and share any software I find online",
-        "All purchased licenses are for lifetime use",
-        "Licensing rights usually depend on the purpose of usage and number of users",
-        "I can only download open-source software"
-      ],
-      "answer": "Licensing rights usually depend on the purpose of usage and number of users"
-    },
-    "2.2 B5": {
-      "question": "Which information is important when citing an online book in the bibliographic references?",
-      "options": [
-        "Authors and website link",
-        "Website link",
-        "Authors, year, title, publisher and website link",
-        "Year, pages and title"
-      ],
-      "answer": "Authors, year, title, publisher and website link"
-    },
-    "2.2 B6": {
-      "question": "Which images can you share online?",
-      "options": [
-        "Any images from Google Images",
-        "Only copyright free pictures",
-        "Any images from the Internet",
-        "Only copyright-free images or images authorised by the authors."
-      ],
-      "answer": "Only copyright-free images or images authorised by the authors."
-    },
-    "2.2 M1": {
-      "question": "You found an interesting picture online which is protected by the following creative commons license. How can you reuse it?",
-      "options": [
-        "Modify the colours of the picture and use it in a presentation, displaying the author and CC logo",
-        "Printing the picture on a package with the CC logo and sell it",
-        "Share the picture on social media",
-        "Use the picture on my profile"
-      ],
-      "answer": "Modify the colours of the picture and use it in a presentation, displaying the author and CC logo"
-    },
-    "2.2 M2": {
-      "question": "When using images in school tasks that you found online, which is the most acceptable way to give attribution?",
-      "options": [
-        "'Found it online'.",
-        "'Source: Google Images'.",
-        "'Image by [Author Name] via [Website]'.",
-        "No attribution is needed for shared links."
-      ],
-      "answer": "'Image by [Author Name] via [Website]'."
-    },
-    "2.2 M3": {
-      "question": "The following paper was found on a publisher’s website: Robertson, C. T. (2023). Defining News from an Audience Perspective at a Time of Crisis in the United States. Journalism Practice, 17(2), 374–390. https://doi.org/10.1080/17512786.2021.1919178. Which facts regarding this article is correct?",
-      "options": [
-        "Author: Robertson, title: Journalism Practice, pages: 374-390.",
-        "Author: Robertson, journal: Journalism Practice, pages: 374-390.",
-        "Author: C.T., volume: 17, issue: 2.",
-        "Title: Journalism Practice, pages: 374-390, publisher: doi.org"
-      ],
-      "answer": "Author: Robertson, journal: Journalism Practice, pages: 374-390."
-    },
-    "2.2 M4": {
-      "question": "Which music can be shared in a publication on social media?",
-      "options": ["Any song", "Only the ones allowed by the platform", "Old songs", "Songs in which the artist has died 70 years ago"],
-      "answer": "Songs in which the artist has died 70 years ago"
-    },
-    "2.2 M5": {
-      "question": "If you go to Brussels, which of the following images can you not share online for commercial use, at least until 2076?",
-      "options": [
-        "A picture of me and my friends at the Atomium",
-        "A picture of me walking down the streets",
-        "A picture of me and my friends at the Grand Place",
-        "A picture of my friend eating chocolate with their consent"
-      ],
-      "answer": "A picture of me and my friends at the Atomium"
-    },
-    "2.2 M6": {
-      "question": "Which action does not violate intellectual property rights?",
-      "options": [
-        "Download and use public domain databases",
-        "Lending passwords to friends to access paid content",
-        "Download software from torrent websites",
-        "Record parts of a TV show and upload it on YouTube."
-      ],
-      "answer": "Download and use public domain databases"
-    },
+        "2.1 B1": {
+          "question": "Ποιο από τα παρακάτω εργαλεία είναι πιο κατάλληλο για την αποστολή ενός ιδρυματικού ενημερωτικού δελτίου;",
+          "options": ["Email", "Snapchat", "WhatsApp", "Instagram"],
+          "answer": "Email"
+        },
+        "2.1 B2": {
+          "question": "Επίλεξε τη σωστή αντιστοίχιση των παρακάτω διαδικτυακών πλατφορμών με την κύρια χρήση τους:",
+          "options": [
+            "Zoom: Εγγραφή βίντεο",
+            "WhatsApp: Μικρο-ιστολόγηση",
+            "MS Teams: Διαδικτυακά μαθήματα",
+            "X: Άμεσα μηνύματα"
+          ],
+          "answer": "MS Teams: Διαδικτυακά μαθήματα"
+        },
+        "2.1 B3": {
+          "question": "Όταν επικοινωνείς μέσω ψηφιακών τεχνολογιών, είναι σημαντικό να γνωρίζεις το _______ ώστε το μήνυμά σου να γίνει κατανοητό όπως το εννοείς και να αποφευχθούν παρεξηγήσεις.",
+          "options": ["Πλαίσιο", "Γραμματική", "Ορθογραφία", "Γλώσσα"],
+          "answer": "Πλαίσιο"
+        },
+        "2.1 B4": {
+          "question": "Συνεργάζεσαι σε ένα έργο με μια ομάδα που χρειάζεται γρήγορη ανατροφοδότηση. Ποιο ψηφιακό εργαλείο είναι το πιο κατάλληλο;",
+          "options": [
+            "Email",
+            "Άμεσα μηνύματα (π.χ. Slack, Microsoft Teams, WhatsApp)",
+            "Κοινωνικά δίκτυα",
+            "Βιντεοδιάσκεψη"
+          ],
+          "answer": "Άμεσα μηνύματα (π.χ. Slack, Microsoft Teams, WhatsApp)"
+        },
+        "2.1 B5": {
+          "question": "Πρέπει να ενημερώσεις τον καθηγητή σου ότι έχασες μια προθεσμία. Ποιος είναι ο πιο κατάλληλος τρόπος επικοινωνίας;",
+          "options": ["Μήνυμα κειμένου", "Επίσημο email", "Ανάρτηση στα μέσα κοινωνικής δικτύωσης", "Τηλεφωνική κλήση"],
+          "answer": "Επίσημο email"
+        },
 
-    "2.3 B1": {
-        "question": "Ποια από τις παρακάτω είναι ψηφιακή υπηρεσία που χρησιμοποιείται συχνά για την πληρωμή πανεπιστημιακών τελών;",
-        "options": ["Facebook", "WeTransfer", "Online banking", "Instagram"],
-        "answer": "Online banking"
+        "2.1 M1": {
+          "question": "Φαντάσου ότι παρήγγειλες ένα φοιτητικό βιβλίο διαδικτυακά και έχεις πρόβλημα να παρακολουθήσεις την παραγγελία. Ποια από τις παρακάτω προτάσεις (εισαγωγές) θα ήταν ο πιο αποτελεσματικός τρόπος να ζητήσεις από έναν εικονικό βοηθό (bot) να ελέγξει την τελευταία σου παραγγελία;",
+          "options": [
+            "\"Βρες το βιβλίο μου.\"",
+            "\"Πού είναι η παραγγελία μου;\"",
+            "\"Εντόπισε την παραγγελία αριθ. XD1035GH\"",
+            "\"Γεια, χρειάζομαι κάτι.\""
+          ],
+          "answer": "\"Εντόπισε την παραγγελία αριθ. XD1035GH\""
+        },
+        "2.1 M2": {
+          "question": "Όταν αλληλεπιδράς με πλατφόρμες γενετικής τεχνητής νοημοσύνης (π.χ. ChatGPT), ποιος είναι ο πιο κατάλληλος τρόπος γραφής της εισόδου για να λάβεις ακριβή αποτελέσματα;",
+          "options": ["Κάνοντας ερωτήσεις.", "Παρέχοντας λεπτομερείς οδηγίες.", "Δίνοντας δεδομένα.", "Χρησιμοποιώντας μόνο λέξεις-κλειδιά."],
+          "answer": "Παρέχοντας λεπτομερείς οδηγίες."
+        },
+        "2.1 M3": {
+          "question": "Ποιος από τους παρακάτω είναι βασικός παράγοντας για την επιλογή του κατάλληλου ψηφιακού εργαλείου επικοινωνίας για μια ακαδημαϊκή παρουσίαση;",
+          "options": [
+            "Ο χρωματικός σχεδιασμός του εργαλείου",
+            "Η δυνατότητα του εργαλείου να υποστηρίζει πολυμέσα και κοινή χρήση οθόνης",
+            "Η δημοτικότητά του μεταξύ των φίλων μου",
+            "Η ενσωμάτωσή του με τα μέσα κοινωνικής δικτύωσης"
+          ],
+          "answer": "Η δυνατότητα του εργαλείου να υποστηρίζει πολυμέσα και κοινή χρήση οθόνης"
+        },
+        "2.1 M4": {
+          "question": "Σου ζητείται να παρουσιάσεις μια νέα λειτουργία λογισμικού σε μια ομάδα συναδέλφων. Ποιος είναι ο πιο κατάλληλος τρόπος επικοινωνίας;",
+          "options": ["Ένα ανεπίσημο blog post", "Ένα λεπτομερές email με συνημμένα", "Μια ζωντανή επίδειξη μέσω βιντεοκλήσης", "Ένα ηχογραφημένο βίντεο μήνυμα"],
+          "answer": "Μια ζωντανή επίδειξη μέσω βιντεοκλήσης"
+        },
+        "2.1 M5": {
+          "question": "Είσαι εκπρόσωπος της τάξης και πρέπει να κάνεις μια ανακοίνωση που αφορά όλους τους φοιτητές. Ποιο κανάλι επικοινωνίας είναι πιο αποτελεσματικό;",
+          "options": ["Εφαρμογή ομαδικής συνομιλίας", "Μαζικό email", "Βιντεοδιάσκεψη", "Ομάδα WhatsApp"],
+          "answer": "Μαζικό email"
+        },
+
+
+        "2.2 B1": {
+          "question": "Ποια από τις παρακάτω επιλογές ορίζει καλύτερα την έννοια της «κοινής χρήσης δεδομένων»;",
+          "options": [
+            "Διανομή δεδομένων χωρίς προϋποθέσεις",
+            "Συνεργασία με άλλους για ανταλλαγή δεδομένων προς αμοιβαίο όφελος",
+            "Συζήτηση δεδομένων στα μέσα κοινωνικής δικτύωσης",
+            "Μόνο προφορική συζήτηση δεδομένων χωρίς κοινή χρήση αρχείων"
+          ],
+          "answer": "Συνεργασία με άλλους για ανταλλαγή δεδομένων προς αμοιβαίο όφελος"
+        },
+        "2.2 B2": {
+          "question": "Αν συναντήσεις ένα infographic στο διαδίκτυο και θέλεις να το μοιραστείς στα μέσα κοινωνικής δικτύωσης, τι πρέπει να κάνεις;",
+          "options": [
+            "Να το δημοσιεύσεις χωρίς αλλαγές.",
+            "Να ελέγξεις την αξιοπιστία του και να συμπεριλάβεις αναφορά στον δημιουργό.",
+            "Να το μοιραστείς ως δικό σου.",
+            "Να το μοιραστείς μόνο αν θυμάσαι ποιος το δημιούργησε."
+          ],
+          "answer": "Να ελέγξεις την αξιοπιστία του και να συμπεριλάβεις αναφορά στον δημιουργό."
+        },
+        "2.2 B3": {
+          "question": "Αν χρειάζεται να μοιραστείς ένα αρχείο με τους συμμαθητές σου που έχει μέγεθος περίπου 1.4GB, ποια πλατφόρμα θα χρησιμοποιήσεις;",
+          "options": ["Email", "WhatsApp", "WeTransfer", "Messenger"],
+          "answer": "WeTransfer"
+        },
+        "2.2 B4": {
+          "question": "Επίλεξε τη σωστότερη απάντηση σχετικά με την αδειοδότηση λογισμικού:",
+          "options": [
+            "Μπορώ να κατεβάσω και να μοιραστώ οποιοδήποτε λογισμικό βρίσκω στο διαδίκτυο",
+            "Όλες οι αγορασμένες άδειες ισχύουν εφ’ όρου ζωής",
+            "Τα δικαιώματα άδειας συνήθως εξαρτώνται από τον σκοπό χρήσης και τον αριθμό των χρηστών",
+            "Μπορώ να κατεβάζω μόνο λογισμικό ανοιχτού κώδικα"
+          ],
+          "answer": "Τα δικαιώματα άδειας συνήθως εξαρτώνται από τον σκοπό χρήσης και τον αριθμό των χρηστών"
+        },
+        "2.2 B5": {
+          "question": "Ποιες πληροφορίες είναι σημαντικές όταν αναφέρεις ένα διαδικτυακό βιβλίο στις βιβλιογραφικές αναφορές;",
+          "options": [
+            "Συγγραφείς και σύνδεσμος ιστοσελίδας",
+            "Σύνδεσμος ιστοσελίδας",
+            "Συγγραφείς, έτος, τίτλος, εκδότης και σύνδεσμος ιστοσελίδας",
+            "Έτος, σελίδες και τίτλος"
+          ],
+          "answer": "Συγγραφείς, έτος, τίτλος, εκδότης και σύνδεσμος ιστοσελίδας"
+        },
+
+        "2.2 M1": {
+          "question": "Βρήκατε μια ενδιαφέρουσα φωτογραφία στο διαδίκτυο, η οποία προστατεύεται από την άδεια Creative Commons BY-SA. Πώς μπορείτε να την επαναχρησιμοποιήσετε;",
+          "options": [
+            "Να αλλάξεις τα χρώματα της εικόνας και να τη χρησιμοποιήσεις σε μια παρουσίαση, αναφέροντας τον δημιουργό και το λογότυπο CC",
+            "Να τυπώσεις την εικόνα σε μια συσκευασία με το λογότυπο CC και να την πουλήσεις",
+            "Να τη μοιραστείς στα μέσα κοινωνικής δικτύωσης",
+            "Να τη χρησιμοποιήσεις ως φωτογραφία προφίλ"
+          ],
+          "answer": "Να αλλάξεις τα χρώματα της εικόνας και να τη χρησιμοποιήσεις σε μια παρουσίαση, αναφέροντας τον δημιουργό και το λογότυπο CC"
+        },
+        "2.2 M2": {
+          "question": "Όταν χρησιμοποιείς εικόνες σε σχολικές εργασίες που βρήκες στο διαδίκτυο, ποιος είναι ο πιο αποδεκτός τρόπος αναφοράς;",
+          "options": [
+            "'Το βρήκα στο διαδίκτυο'.",
+            "'Πηγή: Google Images'.",
+            "'Εικόνα από [Όνομα Δημιουργού] μέσω [Ιστοσελίδα]'.",
+            "Δεν χρειάζεται αναφορά για κοινόχρηστους συνδέσμους."
+          ],
+          "answer": "'Εικόνα από [Όνομα Δημιουργού] μέσω [Ιστοσελίδα]'."
+        },
+        "2.2 M3": {
+          "question": "Το ακόλουθο άρθρο βρέθηκε στην ιστοσελίδα ενός εκδότη: Robertson, C. T. (2023). Defining News from an Audience Perspective at a Time of Crisis in the United States. Journalism Practice, 17(2), 374–390. https://doi.org/10.1080/17512786.2021.1919178. Ποια από τις παρακάτω πληροφορίες είναι σωστή;",
+          "options": [
+            "Συγγραφέας: Robertson, τίτλος: Journalism Practice, σελίδες: 374-390.",
+            "Συγγραφέας: Robertson, περιοδικό: Journalism Practice, σελίδες: 374-390.",
+            "Συγγραφέας: C.T., τόμος: 17, τεύχος: 2.",
+            "Τίτλος: Journalism Practice, σελίδες: 374-390, εκδότης: doi.org"
+          ],
+          "answer": "Συγγραφέας: Robertson, περιοδικό: Journalism Practice, σελίδες: 374-390."
+        },
+        "2.2 M4": {
+          "question": "Ποια μουσική μπορεί να κοινοποιηθεί σε δημοσίευση στα μέσα κοινωνικής δικτύωσης;",
+          "options": ["Οποιοδήποτε τραγούδι", "Μόνο αυτά που επιτρέπονται από την πλατφόρμα", "Παλιά τραγούδια", "Τραγούδια των οποίων ο καλλιτέχνης έχει πεθάνει πριν από 70 χρόνια"],
+          "answer": "Τραγούδια των οποίων ο καλλιτέχνης έχει πεθάνει πριν από 70 χρόνια"
+        },
+        "2.2 M5": {
+          "question": "Αν πας στις Βρυξέλλες, ποια από τις παρακάτω φωτογραφίες δεν μπορείς να κοινοποιήσεις διαδικτυακά για εμπορική χρήση, τουλάχιστον μέχρι το 2076;",
+          "options": [
+            "Μια φωτογραφία μου με φίλους στο Atomium",
+            "Μια φωτογραφία μου να περπατώ στον δρόμο",
+            "Μια φωτογραφία μου με φίλους στην Grand Place",
+            "Μια φωτογραφία του φίλου μου που τρώει σοκολάτα με τη συγκατάθεσή του"
+          ],
+          "answer": "Μια φωτογραφία μου με φίλους στο Atomium"
+        },
+
+        "2.3 B1": {
+          "question": "Ποια από τις παρακάτω είναι ψηφιακή υπηρεσία που χρησιμοποιείται συχνά για την πληρωμή πανεπιστημιακών τελών;",
+          "options": ["Facebook", "WeTransfer", "Ηλεκτρονική τραπεζική (Online banking)", "Instagram"],
+          "answer": "Ηλεκτρονική τραπεζική (Online banking)"
         },
         "2.3 B2": {
-        "question": "Επίλεξε τη σωστή αντιστοίχιση των ψηφιακών υπηρεσιών με την πιο κατάλληλη λειτουργία τους.",
-        "options": [
-            "Government website: Access public information and services",
-            "Social media: Sign and support causes",
-            "Online petition: Take courses and acquire new skills",
-            "E-learning platform: Engage in discussions and share opinions"
-        ],
-        "answer": "Government website: Access public information and services"
+          "question": "Επίλεξε τη σωστή αντιστοίχιση των ψηφιακών υπηρεσιών με την πιο κατάλληλη λειτουργία τους.",
+          "options": [
+            "Ιστοσελίδα κυβέρνησης: Πρόσβαση σε δημόσιες πληροφορίες και υπηρεσίες",
+            "Κοινωνικά δίκτυα: Υπογραφή και υποστήριξη κοινωνικών αιτημάτων",
+            "Διαδικτυακή αίτηση (petition): Παρακολούθηση μαθημάτων και απόκτηση νέων δεξιοτήτων",
+            "Πλατφόρμα ηλεκτρονικής μάθησης: Συμμετοχή σε συζητήσεις και ανταλλαγή απόψεων"
+          ],
+          "answer": "Ιστοσελίδα κυβέρνησης: Πρόσβαση σε δημόσιες πληροφορίες και υπηρεσίες"
         },
         "2.3 B3": {
-        "question": "Ποιος είναι ο πιο αποτελεσματικός τρόπος επικοινωνίας με τον/την διευθυντή/ντρια του προγράμματος σπουδών σου;",
-        "options": ["WhatsApp", "Email", "Instagram", "Mobile call"],
-        "answer": "Email"
+          "question": "Ποιος είναι ο πιο αποτελεσματικός τρόπος επικοινωνίας με τον/την διευθυντή/ντρια του προγράμματος σπουδών σου;",
+          "options": ["WhatsApp", "Email", "Instagram", "Τηλεφωνική κλήση"],
+          "answer": "Email"
         },
         "2.3 B4": {
-        "question": "Ποιο από τα παρακάτω αποτελεί παράδειγμα χρήσης ψηφιακής τεχνολογίας για συμμετοχή στα κοινά;",
-        "options": ["Αγορές online", "Ψήφος μέσω ασφαλούς διαδικτυακής πλατφόρμας", "Streaming ταινιών", "Σκόλλινγκ στα κοινωνικά δίκτυα"],
-        "answer": "Ψήφος μέσω ασφαλούς διαδικτυακής πλατφόρμας"
+          "question": "Ποιο από τα παρακάτω αποτελεί παράδειγμα χρήσης ψηφιακής τεχνολογίας για συμμετοχή στα κοινά;",
+          "options": ["Αγορές στο διαδίκτυο", "Ψήφος μέσω ασφαλούς διαδικτυακής πλατφόρμας", "Streaming ταινιών", "Σκόλλινγκ στα κοινωνικά δίκτυα"],
+          "answer": "Ψήφος μέσω ασφαλούς διαδικτυακής πλατφόρμας"
         },
         "2.3 B5": {
-        "question": "Τι ρόλο παίζουν οι πλατφόρμες κοινωνικών δικτύων στη συμμετοχή στα κοινά;",
-        "options": [
+          "question": "Τι ρόλο παίζουν οι πλατφόρμες κοινωνικών δικτύων στη συμμετοχή στα κοινά;",
+          "options": [
             "Προωθούν την καταναλωτική συμπεριφορά",
             "Αποτελούν εργαλείο διάχυσης πληροφορίας και κινητοποίησης",
             "Εμποδίζουν τον δημόσιο διάλογο",
             "Είναι μόνο για προσωπικές επαφές"
-        ],
-        "answer": "Αποτελούν εργαλείο διάχυσης πληροφορίας και κινητοποίησης"
+          ],
+          "answer": "Αποτελούν εργαλείο διάχυσης πληροφορίας και κινητοποίησης"
         },
-        "2.3 B6": {
-        "question": "Επίλεξε το λανθασμένο ζεύγος αντιστοίχισης ψηφιακής τεχνολογίας με λειτουργία συμμετοχής στα κοινά:",
-        "options": [
-            "Online petitions: Gathering public support for causes",
-            "Social media campaigns: Collecting signatures for a political party",
-            "E-Government services: Accessing government services",
-            "Crowdfunding platforms: Fundraising for community projects"
-        ],
-        "answer": "Social media campaigns: Collecting signatures for a political party"
-        },
+
         "2.3 M1": {
-        "question": "Ποια ψηφιακή τεχνολογία μπορεί να ενισχύσει τη διαφάνεια και τη λογοδοσία στη συμμετοχή στα κοινά;",
-        "options": ["Virtual reality", "Blockchain", "Augmented reality", "Fitness trackers"],
-        "answer": "Blockchain"
+          "question": "Ποια ψηφιακή τεχνολογία μπορεί να ενισχύσει τη διαφάνεια και τη λογοδοσία στη συμμετοχή στα κοινά;",
+          "options": ["Εικονική πραγματικότητα (Virtual reality)", "Blockchain", "Επαυξημένη πραγματικότητα (Augmented reality)", "Συσκευές παρακολούθησης φυσικής κατάστασης"],
+          "answer": "Blockchain"
         },
         "2.3 M2": {
-        "question": "Πρέπει να γράψεις μια εργασία για τις απόψεις των φοιτητών σχετικά με τη χρήση κινητών στην τάξη. Ποιο από τα παρακάτω εργαλεία είναι το πιο κατάλληλο για τη συλλογή των απόψεών τους;",
-        "options": ["Survey", "Spreadsheets", "Mobile calls", "Email"],
-        "answer": "Survey"
+          "question": "Πρέπει να γράψεις μια εργασία για τις απόψεις των φοιτητών σχετικά με τη χρήση κινητών στην τάξη. Ποιο από τα παρακάτω εργαλεία είναι το πιο κατάλληλο για τη συλλογή των απόψεών τους;",
+          "options": ["Ερωτηματολόγιο (Survey)", "Υπολογιστικά φύλλα", "Τηλεφωνικές κλήσεις", "Email"],
+          "answer": "Ερωτηματολόγιο (Survey)"
         },
         "2.3 M3": {
-        "question": "Ποιοι θα μπορούσαν να είναι οι κίνδυνοι από έναν αλγόριθμο ΤΝ που προβλέπει τον βαθμό σου σε μια διδακτική ενότητα; Επίλεξε την πιο κατάλληλη απάντηση.",
-        "options": [
+          "question": "Ποιοι θα μπορούσαν να είναι οι κίνδυνοι από έναν αλγόριθμο ΤΝ που προβλέπει τον βαθμό σου σε μια διδακτική ενότητα; Επίλεξε την πιο κατάλληλη απάντηση.",
+          "options": [
             "Η ΤΝ μπορεί να με αποθαρρύνει να συνεχίσω να βελτιώνω τις μελέτες μου.",
             "Οι προβλέψεις ΤΝ μπορεί να εισάγουν προκατάληψη, επηρεάζοντας τον τρόπο που οι διδάσκοντες βλέπουν και υποστηρίζουν τους φοιτητές.",
             "Τα συστήματα ΤΝ μπορούν να αντικαταστήσουν τον ρόλο του διδάσκοντα.",
             "Τα μοντέλα πρόβλεψης ΤΝ θα με βαθμολογούν πάντα λάθος."
-        ],
-        "answer": "Οι προβλέψεις ΤΝ μπορεί να εισάγουν προκατάληψη, επηρεάζοντας τον τρόπο που οι διδάσκοντες βλέπουν και υποστηρίζουν τους φοιτητές."
+          ],
+          "answer": "Οι προβλέψεις ΤΝ μπορεί να εισάγουν προκατάληψη, επηρεάζοντας τον τρόπο που οι διδάσκοντες βλέπουν και υποστηρίζουν τους φοιτητές."
         },
         "2.3 M4": {
-        "question": "Επίλεξε τη σωστή αντιστοίχιση ανάμεσα στην έννοια και τον ορισμό της:",
-        "options": [
-            "Digital divide: The gap between those who have access to digital technologies and those who do not",
-            "E-participation: Technologies designed to facilitate civic engagement",
-            "Civic Data: The use of digital tools for public participation in governance",
-            "Civic Tech: Data that is made publicly available for transparency and analysis"
-        ],
-        "answer": "Digital divide: The gap between those who have access to digital technologies and those who do not"
+          "question": "Επίλεξε τη σωστή αντιστοίχιση ανάμεσα στην έννοια και τον ορισμό της:",
+          "options": [
+            "Ψηφιακό χάσμα (Digital divide): Το χάσμα μεταξύ αυτών που έχουν πρόσβαση στις ψηφιακές τεχνολογίες και αυτών που δεν έχουν",
+            "Ηλεκτρονική συμμετοχή (E-participation): Τεχνολογίες σχεδιασμένες για τη διευκόλυνση της συμμετοχής στα κοινά",
+            "Δεδομένα πολιτών (Civic Data): Η χρήση ψηφιακών εργαλείων για δημόσια συμμετοχή στη διακυβέρνηση",
+            "Civic Tech: Δεδομένα που είναι δημόσια διαθέσιμα για λόγους διαφάνειας και ανάλυσης"
+          ],
+          "answer": "Ψηφιακό χάσμα (Digital divide): Το χάσμα μεταξύ αυτών που έχουν πρόσβαση στις ψηφιακές τεχνολογίες και αυτών που δεν έχουν"
         },
         "2.3 M5": {
-        "question": "Ένας κοινοτικός οργανισμός θέλει να αυξήσει την ευαισθητοποίηση για τοπικά ζητήματα με ψηφιακά εργαλεία. Ποια προσέγγιση είναι πιο αποτελεσματική;",
-        "options": [
+          "question": "Ένας κοινοτικός οργανισμός θέλει να αυξήσει την ευαισθητοποίηση για τοπικά ζητήματα με ψηφιακά εργαλεία. Ποια προσέγγιση είναι πιο αποτελεσματική;",
+          "options": [
             "Δημιουργία ιστοσελίδας με στατικές πληροφορίες",
             "Έναρξη διαδραστικής καμπάνιας στα κοινωνικά δίκτυα",
             "Αποστολή έντυπων φυλλαδίων",
             "Διοργάνωση ενός μόνο γεγονότος χωρίς συνέχεια"
-        ],
-        "answer": "Έναρξη διαδραστικής καμπάνιας στα κοινωνικά δίκτυα"
-        },
-        "2.3 M6": {
-        "question": "Επίλεξε τη σωστή αντιστοίχιση ψηφιακής τεχνολογίας με σχετικό χαρακτηριστικό/όφελος στην προώθηση της συμμετοχικής ιδιότητας του πολίτη:",
-        "options": [
-            "Social media platforms: Offer resources and tools for effective civic engagement to advocate for the most vulnerable.",
-            "Online voting systems: Provide platforms for amplifying marginalised voices.",
-            "Digital advocacy tools: Facilitate collective action and gather community input.",
-            "Civic tech websites: Enable real-time feedback and discussions among citizens."
-        ],
-        "answer": "Civic tech websites: Enable real-time feedback and discussions among citizens."
+          ],
+          "answer": "Έναρξη διαδραστικής καμπάνιας στα κοινωνικά δίκτυα"
         },
 
+
         "2.4 B1": {
-        "question": "Ποιο από τα παρακάτω είναι πλεονέκτημα χρήσης συνεργατικών εργαλείων όπως τα Google Docs ή Sheets για ομαδικά έργα;",
-        "options": ["Περιορισμένη πρόσβαση", "Ενημερώσεις σε πραγματικό χρόνο", "Απαιτεί ακριβό λογισμικό", "Λειτουργεί μόνο εκτός σύνδεσης"],
-        "answer": "Ενημερώσεις σε πραγματικό χρόνο"
+          "question": "Ποιο από τα παρακάτω είναι πλεονέκτημα χρήσης συνεργατικών εργαλείων όπως τα Google Docs ή Sheets για ομαδικά έργα;",
+          "options": ["Περιορισμένη πρόσβαση", "Ενημερώσεις σε πραγματικό χρόνο", "Απαιτεί ακριβό λογισμικό", "Λειτουργεί μόνο εκτός σύνδεσης"],
+          "answer": "Ενημερώσεις σε πραγματικό χρόνο"
         },
         "2.4 B2": {
-        "question": "Ποιο από τα παρακάτω εργαλεία μπορεί να βοηθήσει στη συλλογή ανατροφοδότησης από συμμαθητές σου;",
-        "options": ["Mentimeter", "Adobe Illustrator", "MS Sharepoint", "MS PowerPoint"],
-        "answer": "Mentimeter"
+          "question": "Ποιο από τα παρακάτω εργαλεία μπορεί να βοηθήσει στη συλλογή ανατροφοδότησης από συμμαθητές σου;",
+          "options": ["Mentimeter", "Adobe Illustrator", "MS SharePoint", "MS PowerPoint"],
+          "answer": "Mentimeter"
         },
         "2.4 B3": {
-        "question": "Φαντάσου ότι δημοσιεύεις ανάρτηση στο Instagram για έναν επερχόμενο hackathon στο πανεπιστήμιό σου. Ποια hashtags είναι πιο κατάλληλα για να προσελκύσεις άλλους φοιτητές στη σελίδα;",
-        "options": [
+          "question": "Φαντάσου ότι δημοσιεύεις ανάρτηση στο Instagram για έναν επερχόμενο hackathon στο πανεπιστήμιό σου. Ποια hashtags είναι πιο κατάλληλα για να προσελκύσεις άλλους φοιτητές στη σελίδα;",
+          "options": [
             "#hackathon #university",
             "#comevisit #events",
-            "#hackathon #[name of the university] #[name of the event and year]",
+            "#hackathon #[όνομα_πανεπιστημίου] #[όνομα_εκδήλωσης_και_έτος]",
             "#city #programming"
-        ],
-        "answer": "#hackathon #[name of the university] #[name of the event and year]"
+          ],
+          "answer": "#hackathon #[όνομα_πανεπιστημίου] #[όνομα_εκδήλωσης_και_έτος]"
         },
         "2.4 B4": {
-        "question": "Ποια από τις παρακάτω επιλογές περιγράφει καλύτερα τη συν-δημιουργία (co-creation) στο πλαίσιο ψηφιακών εργαλείων;",
-        "options": [
+          "question": "Ποια από τις παρακάτω επιλογές περιγράφει καλύτερα τη συν-δημιουργία (co-creation) στο πλαίσιο ψηφιακών εργαλείων;",
+          "options": [
             "Άτομα που δημιουργούν περιεχόμενο ανεξάρτητα",
             "Συνεργασία πολλών εμπλεκομένων για δημιουργία κοινών πόρων",
             "Χρήση τεχνολογίας για προσωπικά έργα",
             "Συλλογή δεδομένων χωρίς εισροή από ενδιαφερόμενους"
-        ],
-        "answer": "Συνεργασία πολλών εμπλεκομένων για δημιουργία κοινών πόρων"
+          ],
+          "answer": "Συνεργασία πολλών εμπλεκομένων για δημιουργία κοινών πόρων"
         },
         "2.4 B5": {
-        "question": "Ποιο είναι το κύριο όφελος χρήσης συνεργατικών πλατφορμών όπως τα Google Docs για συν-κατασκευή γνώσης;",
-        "options": [
+          "question": "Ποιο είναι το κύριο όφελος χρήσης συνεργατικών πλατφορμών όπως τα Google Docs για συν-κατασκευή γνώσης;",
+          "options": [
             "Παρέχει απεριόριστο χώρο αποθήκευσης",
             "Επιτρέπει συνεργασία και ανατροφοδότηση σε πραγματικό χρόνο",
             "Ενισχύει την ιδιωτικότητα δεδομένων",
             "Δεν απαιτεί σύνδεση στο διαδίκτυο"
-        ],
-        "answer": "Επιτρέπει συνεργασία και ανατροφοδότηση σε πραγματικό χρόνο"
+          ],
+          "answer": "Επιτρέπει συνεργασία και ανατροφοδότηση σε πραγματικό χρόνο"
         },
-        "2.4 B6": {
-        "question": "Επίλεξε τη σωστή αντιστοίχιση ψηφιακού εργαλείου με λειτουργία συν-δημιουργίας:",
-        "options": [
-            "Collaborative mapping tools: Gathering diverse input from the public",
-            "Crowdsourcing platforms: Allowing multiple users to edit and update information",
-            "Wikis: Visualising data and ideas spatially",
-            "Online survey tools: Collecting opinions and data from stakeholders"
-        ],
-        "answer": "Online survey tools: Collecting opinions and data from stakeholders"
-        },
+
         "2.4 M1": {
-        "question": "Ποια είναι η κύρια λειτουργία λογισμικού ελέγχου εκδόσεων όπως το Git σε συνεργατικά έργα;",
-        "options": ["Επεξεργασία εικόνων", "Παρακολούθηση αλλαγών σε έγγραφα και κώδικα", "Δημιουργία παρουσιάσεων", "Διαχείριση email"],
-        "answer": "Παρακολούθηση αλλαγών σε έγγραφα και κώδικα"
+          "question": "Ποια είναι η κύρια λειτουργία λογισμικού ελέγχου εκδόσεων όπως το Git σε συνεργατικά έργα;",
+          "options": ["Επεξεργασία εικόνων", "Παρακολούθηση αλλαγών σε έγγραφα και κώδικα", "Δημιουργία παρουσιάσεων", "Διαχείριση email"],
+          "answer": "Παρακολούθηση αλλαγών σε έγγραφα και κώδικα"
         },
         "2.4 M2": {
-        "question": "Σε συνεργατικό πλαίσιο, ποιος είναι ο κύριος σκοπός χρήσης κοινόχρηστου ημερολογίου όπως το Google Calendar;",
-        "options": ["Παρακολούθηση προσωπικών εργασιών", "Κοινή χρήση προθεσμιών και προγραμματισμός συναντήσεων", "Αποστολή ενημερωτικών email", "Δημιουργία λιστών εργασιών"],
-        "answer": "Κοινή χρήση προθεσμιών και προγραμματισμός συναντήσεων"
+          "question": "Σε συνεργατικό πλαίσιο, ποιος είναι ο κύριος σκοπός χρήσης κοινόχρηστου ημερολογίου όπως το Google Calendar;",
+          "options": ["Παρακολούθηση προσωπικών εργασιών", "Κοινή χρήση προθεσμιών και προγραμματισμός συναντήσεων", "Αποστολή ενημερωτικών email", "Δημιουργία λιστών εργασιών"],
+          "answer": "Κοινή χρήση προθεσμιών και προγραμματισμός συναντήσεων"
         },
         "2.4 M3": {
-        "question": "Ποιος είναι ο κύριος σκοπός ενός repository στο GitHub;",
-        "options": ["Αποθήκευση και κοινή χρήση κώδικα", "Αποστολή email σε συνεργάτες", "Δημιουργία παρουσιάσεων", "Φιλοξενία ιστοσελίδας"],
-        "answer": "Αποθήκευση και κοινή χρήση κώδικα"
+          "question": "Ποιος είναι ο κύριος σκοπός ενός αποθετηρίου (repository) στο GitHub;",
+          "options": ["Αποθήκευση και κοινή χρήση κώδικα", "Αποστολή email σε συνεργάτες", "Δημιουργία παρουσιάσεων", "Φιλοξενία ιστοσελίδας"],
+          "answer": "Αποθήκευση και κοινή χρήση κώδικα"
         },
         "2.4 M4": {
-        "question": "Ποιος είναι ο σκοπός της επιλογής 'track changes' στο MS Word;",
-        "options": [
+          "question": "Ποιος είναι ο σκοπός της επιλογής 'Track Changes' στο MS Word;",
+          "options": [
             "Παρακολούθηση ιστορικού εκδόσεων",
-            "Γνώση του πού και ποιος έκανε αλλαγές στο έγγραφο",
+            "Καταγραφή του ποιος και πού έκανε αλλαγές στο έγγραφο",
             "Επισημείωση σφαλμάτων",
             "Αναφορά προβλημάτων"
-        ],
-        "answer": "Γνώση του πού και ποιος έκανε αλλαγές στο έγγραφο"
+          ],
+          "answer": "Καταγραφή του ποιος και πού έκανε αλλαγές στο έγγραφο"
         },
         "2.4 M5": {
-        "question": "Μια ερευνητική ομάδα χρησιμοποιεί διαδικτυακή πλατφόρμα για συλλογή δεδομένων από συμμετέχοντες και συμμετέχει η ίδια στην ανάλυση. Ποια προσέγγιση χρησιμοποιεί;",
-        "options": ["Κλειστές μεθόδοι έρευνας", "Citizen science", "Παραδοσιακά ερωτηματολόγια", "Εξόρυξη δεδομένων"],
-        "answer": "Citizen science"
+          "question": "Μια ερευνητική ομάδα χρησιμοποιεί διαδικτυακή πλατφόρμα για συλλογή δεδομένων από συμμετέχοντες και συμμετέχει η ίδια στην ανάλυση. Ποια προσέγγιση χρησιμοποιεί;",
+          "options": ["Κλειστές μεθόδοι έρευνας", "Επιστήμη πολιτών (Citizen science)", "Παραδοσιακά ερωτηματολόγια", "Εξόρυξη δεδομένων"],
+          "answer": "Επιστήμη πολιτών (Citizen science)"
         },
-        "2.4 M6": {
-        "question": "Ποιος όρος ορίζει την επαναχρησιμοποίηση και αλλαγή δημιουργίας ή κώδικα κάποιου άλλου στον ψηφιακό κόσμο;",
-        "options": ["Adaptation", "Remixing", "Apud", "Reusing"],
-        "answer": "Remixing"
-        },
+
 
         "2.5 B1": {
             "question": "Ποιο από τα παρακάτω αποτελεί παράδειγμα καλής διαδικτυακής εθιμοτυπίας (netiquette) σε επικοινωνία μέσω email;",
@@ -778,16 +666,7 @@
             ],
             "answer": "Να έχεις ανοιχτή την κάμερα και σε σίγαση όταν μιλάει κάποιος άλλος"
             },
-            "2.5 B6": {
-            "question": "Χρειάζεται να διακόψεις τον/την δάσκαλο/α σε online μάθημα· τι πρέπει να κάνεις;",
-            "options": [
-                "Να χρησιμοποιήσεις τη λειτουργία «σήκωμα χεριού» και να περιμένεις τη σειρά σου",
-                "Να ανοίξεις την κάμερα και να σηκώσεις το χέρι",
-                "Να χρησιμοποιήσεις το μικρόφωνο και να ζητήσεις άδεια",
-                "Να στείλεις ιδιωτικό μήνυμα στον/στην δάσκαλο/α"
-            ],
-            "answer": "Να χρησιμοποιήσεις τη λειτουργία «σήκωμα χεριού» και να περιμένεις τη σειρά σου"
-            },
+
             "2.5 M1": {
             "question": "Όταν παρουσιάζεις ομαδική εργασία στους συμφοιτητές σου, ποια στρατηγική είναι πιο αποτελεσματική;",
             "options": [
@@ -828,16 +707,7 @@
             ],
             "answer": "Να προγραμματίσεις αυτόματα την αποστολή για το πρωί της Δευτέρας"
             },
-            "2.5 M6": {
-            "question": "Θέλεις να προγραμματίσεις ψηφιακή συνάντηση με συμμετέχοντες από διάφορες ζώνες ώρας, νέους και μεγαλύτερους. Κάποιοι προτιμούν αργά το βράδυ, άλλοι πρωί. Τι πρέπει να κάνεις;",
-            "options": [
-                "Να ορίσεις την ώρα που σε βολεύει· οι άλλοι θα προσαρμοστούν.",
-                "Να προτείνεις μερικές ώρες που σε βολεύουν και να χρησιμοποιήσεις ψηφοφορία για συναίνεση στην καλύτερη ώρα.",
-                "Να επιλέξεις την πιο νωρίς ώρα που σε βολεύει και να ενημερώσεις τους άλλους μετά.",
-                "Να ζητήσεις από όλους τη διαθεσιμότητά τους και μετά να αποφασίσεις με βάση την πλειοψηφία."
-            ],
-            "answer": "Να προτείνεις μερικές ώρες που σε βολεύουν και να χρησιμοποιήσεις ψηφοφορία για συναίνεση στην καλύτερη ώρα."
-            },
+
 
             "2.6 B1": {
             "question": "Ποια από τις παρακάτω είναι καλή πρακτική για τη διαχείριση πολλαπλών ψηφιακών ταυτοτήτων;",
@@ -880,20 +750,11 @@
                 "Όχι, ποτέ.",
                 "Ναι, γιατί είναι ιδιωτικός χώρος.",
                 "Ναι, αρκεί να ζητήσω άδεια από τους γονείς τους.",
-                "Ναι, μόνο αν δεν φαίνονται μέρη του σώματος που επιτρέπουν αναγνώριση."
+                "Ναι, αν δεν εμφανίζω αναγνωρίσιμα χαρακτηριστικά και ζητήσω άδεια για τη δημοσίευση της φωτογραφίας."
             ],
-            "answer": "Ναι, αρκεί να ζητήσω άδεια από τους γονείς τους."
+            "answer": "Ναι, αν δεν εμφανίζω αναγνωρίσιμα χαρακτηριστικά και ζητήσω άδεια για τη δημοσίευση της φωτογραφίας."
             },
-            "2.6 B6": {
-            "question": "Κάνεις αίτηση για νέα δουλειά και συνειδητοποιείς ότι τα προφίλ σου στα κοινωνικά δίκτυα είναι δημόσια. Κάποιες αναρτήσεις ίσως δεν ταιριάζουν με την επαγγελματική σου εικόνα. Τι πρέπει να κάνεις;",
-            "options": [
-                "Να τα αφήσεις όλα όπως είναι· ο εργοδότης δεν πρέπει να σε κρίνει από προσωπικές αναρτήσεις.",
-                "Να ελέγξεις και να ενημερώσεις τις ρυθμίσεις απορρήτου ώστε να περιοριστεί ποιος βλέπει τις αναρτήσεις.",
-                "Να διαγράψεις όλες τις αναρτήσεις των τελευταίων πέντε ετών.",
-                "Να δημιουργήσεις ξεχωριστό επαγγελματικό λογαριασμό για επαγγελματικές επαφές."
-            ],
-            "answer": "Να ελέγξεις και να ενημερώσεις τις ρυθμίσεις απορρήτου ώστε να περιοριστεί ποιος βλέπει τις αναρτήσεις."
-            },
+
             "2.6 M1": {
             "question": "Ποιος είναι ένας τρόπος προστασίας προσωπικών δεδομένων όταν δημιουργείς online λογαριασμούς;",
             "options": ["Χρήση εύκολων κωδικών", "Κοινοποίηση κωδικού με φίλους", "Ενεργοποίηση ελέγχου ταυτότητας δύο παραγόντων (2FA)", "Αποφυγή χρήσης ρυθμίσεων απορρήτου"],
@@ -924,11 +785,7 @@
             ],
             "answer": "Την εθνική σου Αρχή Προστασίας Δεδομένων (DPA)"
             },
-            "2.6 M6": {
-            "question": "Σύμφωνα με τον GDPR, για πόσο χρόνο μπορεί ένας οργανισμός να αποθηκεύει τα προσωπικά σου δεδομένα;",
-            "options": ["Όσο θέλει", "Για το συντομότερο δυνατό διάστημα", "Για 3 χρόνια", "Μέχρι να τους ζητήσω να τα αφαιρέσουν"],
-            "answer": "Για το συντομότερο δυνατό διάστημα"
-            },
+
 
             "3.1 B1": {
             "question": "Τι είναι η ψηφιοποίηση (digitizing);",
@@ -975,11 +832,7 @@
             ],
             "answer": "Γλώσσα για τη δημιουργία ιστοσελίδων"
             },
-            "3.1 B6": {
-            "question": "Ποιες πλατφόρμες είναι πλατφόρμες κοινωνικών δικτύων;",
-            "options": ["Instagram", "TikTok", "Facebook", "Όλες"],
-            "answer": "Όλες"
-            },
+
             "3.1 M1": {
             "question": "Ποια έξι στοιχεία μπορούν να συνδυαστούν για τη δημιουργία πολυμέσων;",
             "options": [
@@ -1030,16 +883,7 @@
             ],
             "answer": "Σχεδίαση που προσαρμόζεται αυτόματα σε διαφορετικές συσκευές"
             },
-            "3.1 M6": {
-            "question": "Στο πλαίσιο δημιουργίας ψηφιακού περιεχομένου, ποια είναι η κύρια λειτουργία ενός συστήματος διαχείρισης περιεχομένου (CMS);",
-            "options": [
-                "Παρακολούθηση δεικτών αλληλεπίδρασης χρηστών",
-                "Διευκόλυνση της δημιουργίας, επεξεργασίας και δημοσίευσης ψηφιακού περιεχομένου",
-                "Ανάλυση ανταγωνιστών",
-                "Δημιουργία μόνο αναρτήσεων για κοινωνικά δίκτυα"
-            ],
-            "answer": "Διευκόλυνση της δημιουργίας, επεξεργασίας και δημοσίευσης ψηφιακού περιεχομένου"
-            },
+
 
             "3.2 B1": {
             "question": "Είναι σημαντικό να αναλύεις σε ποιο κοινό απευθύνεται το ψηφιακό σου περιεχόμενο;",
@@ -1071,16 +915,7 @@
             "options": ["Σωστό", "Λάθος"],
             "answer": "Λάθος"
             },
-            "3.2 B6": {
-            "question": "Από ποιους μπορεί να αποτελείται η ομάδα-στόχος του περιεχομένου σου;",
-            "options": [
-                "Νεανικό κοινό",
-                "Άτομα με συντηρητική στάση ζωής",
-                "Ηλικιωμένοι",
-                "Όλες οι απαντήσεις είναι σωστές"
-            ],
-            "answer": "Όλες οι απαντήσεις είναι σωστές"
-            },
+
             "3.2 M1": {
             "question": "Ποιο είναι το βασικό όφελος από την προσθήκη υποτίτλων σε βιντεοπαρουσιάσεις;",
             "options": [
@@ -1124,16 +959,7 @@
             ],
             "answer": "Όλες οι απαντήσεις είναι σωστές"
             },
-            "3.2 M6": {
-            "question": "Ποια από τις ακόλουθες επιλογές περιγράφει καλύτερα ένα βασικό βήμα για την ενσωμάτωση αισθητήρων υλικού με ψηφιακές τεχνολογίες ώστε να δημιουργηθεί μια έξυπνη οικιακή συσκευή;",
-            "options": [
-                "Διασφάλιση ότι η συσκευή έχει περίπλοκο περιβάλλον χρήστη",
-                "Επιλογή κατάλληλων αισθητήρων για τη συλλογή σχετικών δεδομένων",
-                "Περιορισμός των επιλογών συνδεσιμότητας για μείωση κόστους",
-                "Σχεδιασμός συσκευής που λειτουργεί μόνο χειροκίνητα"
-            ],
-            "answer": "Επιλογή κατάλληλων αισθητήρων για τη συλλογή σχετικών δεδομένων"
-            },
+
 
             "3.3 B1": {
             "question": "Το λογισμικό προστατεύεται από πνευματικά δικαιώματα, κάτι που καθιστά παράνομο τι;",
@@ -1181,26 +1007,18 @@
             "options": ["Ένας μαθηματικός τύπος", "Μια φωτογραφία", "Μια επιχειρηματική ιδέα", "Ένα εταιρικό λογότυπο"],
             "answer": "Μια φωτογραφία"
             },
-            "3.3 B6": {
-            "question": "Αν θέλεις να χρησιμοποιήσεις έργο που προστατεύεται από πνευματικά δικαιώματα, τι πρέπει να κάνεις;",
-            "options": [
-                "Να το τροποποιήσεις ελαφρώς",
-                "Να λάβεις άδεια από τον κάτοχο των δικαιωμάτων",
-                "Να το χρησιμοποιήσεις δωρεάν αν είναι για προσωπική χρήση",
-                "Να παραθέσεις την πηγή και να το χρησιμοποιήσεις ελεύθερα"
-            ],
-            "answer": "Να λάβεις άδεια από τον κάτοχο των δικαιωμάτων"
-            },
+
             "3.3 M1": {
-            "question": "Ποια από τις ακόλουθες νομικές αρχές επιτρέπει περιορισμένη χρήση έργων με πνευματικά δικαιώματα χωρίς άδεια υπό συγκεκριμένες περιστάσεις, όπως σχολιασμός ή κριτική;",
-            "options": ["Digital Millennium Copyright Act (DMCA)", "Fair Use", "Public Domain", "Moral Rights"],
-            "answer": "Fair Use"
+              "question": "Ποια από τις ακόλουθες νομικές αρχές επιτρέπει τη **περιορισμένη χρήση έργων που προστατεύονται από πνευματικά δικαιώματα** χωρίς άδεια, υπό συγκεκριμένες περιστάσεις όπως σχολιασμός ή κριτική;",
+              "options": ["Νόμος Ψηφιακής Χιλιετίας για τα Πνευματικά Δικαιώματα (DMCA)", "Δίκαιη Χρήση (Fair Use)", "Δημόσιος Τομέας (Public Domain)", "Ηθικά Δικαιώματα (Moral Rights)"],
+              "answer": "Δίκαιη Χρήση (Fair Use)"
             },
             "3.3 M2": {
-            "question": "Ποιο από τα παρακάτω είναι παράδειγμα άδειας «copyleft» στην ανάπτυξη λογισμικού;",
-            "options": ["Apache License 2.0", "MIT License", "GNU General Public License (GPL)", "Creative Commons Zero (CC0)"],
-            "answer": "GNU General Public License (GPL)"
+              "question": "Ποιο από τα παρακάτω αποτελεί παράδειγμα άδειας τύπου «copyleft» στην ανάπτυξη λογισμικού;",
+              "options": ["Άδεια Apache 2.0", "Άδεια MIT", "Γενική Δημόσια Άδεια GNU (GPL)", "Creative Commons Zero (CC0)"],
+              "answer": "Γενική Δημόσια Άδεια GNU (GPL)"
             },
+
             "3.3 M3": {
             "question": "Στο πλαίσιο του text and data mining (TDM), ποια οδηγία της ΕΕ διευκολύνει τη νόμιμη εξαγωγή δεδομένων από υλικό που προστατεύεται από πνευματικά δικαιώματα για ερευνητικούς σκοπούς χωρίς ρητή άδεια, και υπό ποια προϋπόθεση;",
             "options": [
@@ -1226,18 +1044,7 @@
             ],
             "answer": "Ναι, εφόσον τη χρησιμοποιήσεις σύμφωνα με τους όρους της άδειας Creative Commons"
             },
-            "3.3 M6": {
-            "question": "Δανείστηκα το κινητό της φίλης μου και τράβηξα ένα Snapchat με εκείνη να ποζάρει με τον σκύλο μου. Ποιος έχει τα πνευματικά δικαιώματα στη φωτογραφία;",
-            "options": [
-                "Η φίλη σου, επειδή είναι στη φωτογραφία",
-                "Εσύ, επειδή τράβηξες τη φωτογραφία",
-                "Εσύ, επειδή είναι ο σκύλος σου",
-                "Η φίλη σου, επειδή είναι στο δικό της τηλέφωνο",
-                "Το Snapchat, επειδή χρησιμοποίησες την εφαρμογή του",
-                "Ο σκύλος σου, γιατί είναι προφανώς ο σταρ της φωτογραφίας"
-            ],
-            "answer": "Εσύ, επειδή τράβηξες τη φωτογραφία"
-            },
+
             "3.4 B1": {
             "question": "Τι είναι ένας αλγόριθμος;",
             "options": ["Ένα σύνολο οδηγιών ή κανόνων", "Ένας τύπος εντόμου", "Ένα ηλεκτρονικό παιχνίδι"],
@@ -1273,25 +1080,16 @@
             ],
             "answer": "Να εκτελεί μια ενέργεια όταν η συνθήκη είναι αληθής"
             },
-            "3.4 B6": {
-            "question": "Πώς μπορείς να λύσεις ένα πρόβλημα χρησιμοποιώντας γλώσσα προγραμματισμού;",
-            "options": [
-                "Γράφοντας μηνύματα",
-                "Δημιουργώντας έναν αλγόριθμο που περιγράφει τα βήματα της λύσης",
-                "Γράφοντας μόνο κείμενα",
-                "Σχεδιάζοντας μόνο διαγράμματα"
-            ],
-            "answer": "Δημιουργώντας έναν αλγόριθμο που περιγράφει τα βήματα της λύσης"
-            },
+
             "3.4 M1": {
-            "question": "Ποια είναι η σωστή σειρά δομής αλγορίθμου:",
-            "options": [
-                "Body, Header, Declaration and Terminator",
-                "Header, Body, Declaration and Terminator",
-                "Header, Declaration, Body and Terminator",
-                "Declaration, Body, Header and Terminator"
-            ],
-            "answer": "Header, Declaration, Body and Terminator"
+              "question": "Ποια είναι η σωστή σειρά δομής ενός αλγορίθμου;",
+              "options": [
+                "Κύριο μέρος, Επικεφαλίδα, Δηλώσεις και Τερματισμός",
+                "Επικεφαλίδα, Κύριο μέρος, Δηλώσεις και Τερματισμός",
+                "Επικεφαλίδα, Δηλώσεις, Κύριο μέρος και Τερματισμός",
+                "Δηλώσεις, Κύριο μέρος, Επικεφαλίδα και Τερματισμός"
+              ],
+              "answer": "Επικεφαλίδα, Δηλώσεις, Κύριο μέρος και Τερματισμός"
             },
             "3.4 M2": {
             "question": "Πώς μπορείς να μετρήσεις την αποδοτικότητα ενός αλγορίθμου;",
@@ -1323,11 +1121,7 @@
             ],
             "answer": "Ενθαρρύνει την επαναχρησιμοποίηση κώδικα"
             },
-            "3.4 M6": {
-            "question": "Ποια είναι η σημασία της διαδικασίας «debugging» στον προγραμματισμό;",
-            "options": ["Γραφή κώδικα χωρίς σφάλματα", "Εντοπισμός και διόρθωση σφαλμάτων", "Μόνο οργάνωση κώδικα", "Βελτιστοποίηση κώδικα"],
-            "answer": "Εντοπισμός και διόρθωση σφαλμάτων"
-            },
+
 
             "4.1 B1": {
             "question": "Ποιος από τους παρακάτω είναι ο πιο ασφαλής τρόπος προστασίας της συσκευής σου από κακόβουλο λογισμικό;",
@@ -1379,16 +1173,7 @@
             ],
             "answer": "Ότι ο ιστότοπος είναι ασφαλής και προστατευμένος"
             },
-            "4.1 B6": {
-            "question": "Ποιος από τους παρακάτω είναι ένας κοινός κίνδυνος κατά τη χρήση μη ασφαλών δημόσιων δικτύων Wi-Fi;",
-            "options": [
-                "Πιο αργές λήψεις",
-                "Μη εξουσιοδοτημένη πρόσβαση σε προσωπικά δεδομένα",
-                "Διακοπές υπηρεσίας δικτύου",
-                "Ταχύτερη κατανάλωση μπαταρίας"
-            ],
-            "answer": "Μη εξουσιοδοτημένη πρόσβαση σε προσωπικά δεδομένα"
-            },
+
             "4.1 M1": {
             "question": "Ποια από τις παρακάτω μεθόδους μπορεί να βοηθήσει στην προστασία της συσκευής σου από μη εξουσιοδοτημένη πρόσβαση;",
             "options": [
@@ -1479,16 +1264,7 @@
             ],
             "answer": "Τακτικός καθαρισμός του ιστορικού περιήγησης"
             },
-            "4.2 B6": {
-            "question": "Ποιος είναι ένας κοινός κίνδυνος ιδιωτικότητας κατά τη χρήση κοινωνικών δικτύων;",
-            "options": [
-                "Λήψη υπερβολικών αιτημάτων φιλίας",
-                "Δημόσια κοινοποίηση υπερβολικά πολλών προσωπικών πληροφοριών",
-                "Απώλεια παλιών αναρτήσεων",
-                "Παρακολούθηση ανεπιθύμητων λογαριασμών"
-            ],
-            "answer": "Δημόσια κοινοποίηση υπερβολικά πολλών προσωπικών πληροφοριών"
-            },
+
             "4.2 M1": {
             "question": "Ποιο κρυπτογραφικό πρωτόκολλο χρησιμοποιείται ευρέως για την ασφαλή επικοινωνία σε δίκτυα υπολογιστών;",
             "options": ["HTTP", "FTP", "SSL/TLS", "IMAP"],
@@ -1534,16 +1310,7 @@
             ],
             "answer": "Ενημερώνοντάς σε για το πώς η εταιρεία συλλέγει, αποθηκεύει και κοινοποιεί τα δεδομένα σου"
             },
-            "4.2 M6": {
-            "question": "Ποια από τις παρακάτω είναι μια κοινή λειτουργία ασφαλείας που χρησιμοποιούν οι ψηφιακές υπηρεσίες για την προστασία προσωπικών δεδομένων;",
-            "options": [
-                "Αυτόματη κοινοποίηση δεδομένων χρηστών σε διαφημιστές",
-                "Έλεγχος ταυτότητας δύο παραγόντων (2FA)",
-                "Δημόσια εμφάνιση όλων των πληροφοριών χρηστών",
-                "Δυνατότητα χρήσης αδύναμων κωδικών από τους χρήστες"
-            ],
-            "answer": "Έλεγχος ταυτότητας δύο παραγόντων (2FA)"
-            },
+
 
             "4.3 B1": {
             "question": "Πώς μπορείς να ελαχιστοποιήσεις τον αντίκτυπο της χρήσης ψηφιακών συσκευών στην υγεία και την ευημερία σου;",
@@ -1595,16 +1362,7 @@
             ],
             "answer": "Απενεργοποίηση ειδοποιήσεων εφαρμογών κατά τις ώρες ανάπαυσης"
             },
-            "4.3 B6": {
-            "question": "Ποια από τις παρακάτω ψηφιακές τεχνολογίες είναι ιδιαίτερα αποτελεσματική στην προώθηση της κοινωνικής ένταξης για άτομα με αναπηρίες;",
-            "options": [
-                "Εικονική πραγματικότητα",
-                "Λογισμικό αναγνώρισης φωνής",
-                "Τεχνητή νοημοσύνη για τη χρηματοοικονομική",
-                "Εφαρμογές ψυχαγωγίας"
-            ],
-            "answer": "Λογισμικό αναγνώρισης φωνής"
-            },
+
             "4.3 M1": {
             "question": "Ποιο είναι ένα κοινό σημάδι διαδικτυακού εκφοβισμού που πρέπει να προσέχει κανείς στα ψηφιακά περιβάλλοντα;",
             "options": [
@@ -1655,16 +1413,7 @@
             ],
             "answer": "Μπορεί να αυξήσει τον κίνδυνο κατάθλιψης και άγχους"
             },
-            "4.3 M6": {
-            "question": "Πώς μπορούν οι ψηφιακές τεχνολογίες να προάγουν την κοινωνική ένταξη για ευάλωτες ομάδες;",
-            "options": [
-                "Με το να επιτρέπουν μεγαλύτερη δημόσια έκθεση των ευαλωτοτήτων τους",
-                "Με την παροχή ασφαλών πλατφορμών για υποστήριξη και επικοινωνία με άλλους",
-                "Με τον περιορισμό πρόσβασης στα κοινωνικά δίκτυα για λόγους ασφάλειας",
-                "Με το να επιτρέπουν αλληλεπίδραση μόνο σε επαγγελματίες"
-            ],
-            "answer": "Με την παροχή ασφαλών πλατφορμών για υποστήριξη και επικοινωνία με άλλους"
-            },
+
             "4.4 B1": {
             "question": "Ποια από τις παρακάτω πρακτικές βοηθά στην προστασία του περιβάλλοντος;",
             "options": [
@@ -1715,16 +1464,7 @@
             ],
             "answer": "Η ενέργεια που καταναλώνουν τα κέντρα δεδομένων"
             },
-            "4.4 B6": {
-            "question": "Πώς μπορούν τα άτομα να μειώσουν το ψηφιακό τους αποτύπωμα άνθρακα;",
-            "options": [
-                "Χρησιμοποιώντας πολλαπλές συσκευές ταυτόχρονα",
-                "Κλείνοντας τις συσκευές όταν δεν χρησιμοποιούνται",
-                "Συχνές αναβαθμίσεις στα πιο πρόσφατα μοντέλα",
-                "Διαγραφή αχρησιμοποίητων εφαρμογών"
-            ],
-            "answer": "Κλείνοντας τις συσκευές όταν δεν χρησιμοποιούνται"
-            },
+
             "4.4 M1": {
             "question": "Ποια πρακτική μπορεί να ελαχιστοποιήσει τον περιβαλλοντικό αντίκτυπο των ηλεκτρονικών αποβλήτων;",
             "options": [
@@ -1775,16 +1515,7 @@
             ],
             "answer": "Η ενεργειακή αποδοτικότητα της υποκείμενης υποδομής"
             },
-            "4.4 M6": {
-            "question": "Ποια από τις παρακάτω ψηφιακές πρακτικές μπορεί να οδηγήσει σε υψηλότερο περιβαλλοντικό αντίκτυπο;",
-            "options": [
-                "Χρήση cloud αποθήκευσης που τροφοδοτείται από ανανεώσιμες πηγές",
-                "Υλοποίηση λειτουργιών εξοικονόμησης ενέργειας στο λογισμικό",
-                "Διατήρηση μεγάλων ποσοτήτων αχρησιμοποίητων δεδομένων σε online διακομιστές",
-                "Λειτουργία κέντρων δεδομένων με ενεργειακά αποδοτικά συστήματα ψύξης"
-            ],
-            "answer": "Διατήρηση μεγάλων ποσοτήτων αχρησιμοποίητων δεδομένων σε online διακομιστές"
-            },
+
 
             "5.1 B1": {
             "question": "Ποιο είναι το πρώτο βήμα για την αντιμετώπιση προβλήματος σε συσκευή που δεν ανάβει;",
@@ -1825,16 +1556,7 @@
             "options": ["Υλικού", "Οθόνης", "Λογισμικού", "Εφαρμογών"],
             "answer": "Λογισμικού"
             },
-            "5.1 B6": {
-            "question": "Ποιο εργαλείο μπορεί να βοηθήσει στη διάγνωση προβλημάτων δικτύου;",
-            "options": [
-                "Διαχείριση Εργασιών (Task Manager)",
-                "Διαχείριση Συσκευών (Device Manager)",
-                "Γραμμή Εντολών (Command Prompt)",
-                "Πίνακας Ελέγχου (Control Panel)"
-            ],
-            "answer": "Γραμμή Εντολών (Command Prompt)"
-            },
+
             "5.1 M1": {
             "question": "Δεν μπορείς να ανοίξεις έναν ιστότοπο, ενώ άλλες συσκευές στο ίδιο δίκτυο μπορούν. Ποιο είναι το πιο λογικό επόμενο βήμα;",
             "options": [
@@ -1880,15 +1602,7 @@
             ],
             "answer": "Αποσυνδεδεμένος σκληρός δίσκος"
             },
-            "5.1 M6": {
-            "question": "Όταν εμφανίζεται «μπλε οθόνη θανάτου» (BSOD) στα Windows, ποιο είναι το πιο κρίσιμο πρώτο βήμα;",
-            "options": [
-                "Καταγραφή του κωδικού σφάλματος που εμφανίζεται στην οθόνη",
-                "Καθαρή επανεγκατάσταση του λειτουργικού συστήματος",
-                "Άμεση αντικατάσταση του υλικού"
-            ],
-            "answer": "Καταγραφή του κωδικού σφάλματος που εμφανίζεται στην οθόνη"
-            },
+
 
             "5.2 B1": {
             "question": "Ποιο από τα παρακάτω ψηφιακά εργαλεία θα υποστήριζε καλύτερα έναν χρήστη με περιορισμένη κινητικότητα στα χέρια;",
@@ -1929,16 +1643,7 @@
             "options": ["Σωστό", "Λάθος"],
             "answer": "Σωστό"
             },
-            "5.2 B6": {
-            "question": "Ποιο από τα παρακάτω περιγράφει καλύτερα μια πλατφόρμα που διευκολύνει μη εμπορικές συναλλαγές, όπως δωρεές ή προσφορές;",
-            "options": [
-                "Ιστότοπος ηλεκτρονικού εμπορίου (E-commerce)",
-                "Πλατφόρμα κοινωνικής δικτύωσης",
-                "Ιστότοπος crowdfunding",
-                "Ηλεκτρονική αγορά (Marketplace)"
-            ],
-            "answer": "Ιστότοπος crowdfunding"
-            },
+
             "5.2 M1": {
             "question": "Στο πλαίσιο των online συναλλαγών, ποια είναι η κύρια λειτουργία της τεχνολογίας blockchain στην ενίσχυση της ασφάλειας;",
             "options": [
@@ -1983,11 +1688,6 @@
             ],
             "answer": "Μεγεθυντής οθόνης ή λειτουργία ζουμ"
             },
-            "5.2 M6": {
-            "question": "Σωστό ή Λάθος; «Η χρήση λειτουργίας υψηλής αντίθεσης βελτιώνει την προσβασιμότητα για όλους τους χρήστες, ανεξαρτήτως προβλημάτων όρασης.»",
-            "options": ["Σωστό", "Λάθος"],
-            "answer": "Λάθος"
-            },
 
             "5.3 B1": {
             "question": "Ποιο ψηφιακό εργαλείο είναι πιο αποτελεσματικό για καταιγισμό ιδεών (brainstorming) σε πραγματικό χρόνο με συνεργασία;",
@@ -2029,16 +1729,7 @@
             "options": ["Σωστό", "Λάθος"],
             "answer": "Λάθος"
             },
-            "5.3 B6": {
-            "question": "Ποιο από τα ακόλουθα ψηφιακά εργαλεία είναι πιο αποτελεσματικό για γρήγορο πρωτοτυποποίηση και επικύρωση νέας ιδέας προϊόντος σε περιβάλλον νεοφυούς επιχείρησης;",
-            "options": [
-                "Λογισμικό επεξεργασίας κειμένου",
-                "Εργαλεία διαχείρισης έργων",
-                "Τεχνολογία τρισδιάστατης εκτύπωσης (3D printing)",
-                "Αναλύσεις μέσων κοινωνικής δικτύωσης"
-            ],
-            "answer": "Τεχνολογία τρισδιάστατης εκτύπωσης (3D printing)"
-            },
+
             "5.3 M1": {
             "question": "Ποια από τις παρακάτω πλατφόρμες είναι γνωστή κυρίως για την παροχή ολοκληρωμένων εργαλείων δημιουργίας και διαχείρισης εφαρμογών IoT, συμπεριλαμβανομένης διαχείρισης συσκευών, ανάλυσης δεδομένων και λειτουργιών ασφαλείας;",
             "options": [
@@ -2089,16 +1780,7 @@
             ],
             "answer": "Όλα τα παραπάνω"
             },
-            "5.3 M6": {
-            "question": "Σε περιβάλλον συνεργατικής επίλυσης προβλημάτων, ποια από τις παρακάτω πρακτικές είναι πιο αποτελεσματική για την ενίσχυση ποικίλων οπτικών και της δημιουργικότητας της ομάδας;",
-            "options": [
-                "Καθιέρωση αυστηρής ιεραρχίας στη λήψη αποφάσεων",
-                "Τακτικές συνεδρίες brainstorming χωρίς αξιολόγηση",
-                "Περιορισμός συμμετοχής μόνο σε ειδικούς θέματος",
-                "Ενθάρρυνση ανοικτού διαλόγου και χρήση μεθοδολογιών design thinking"
-            ],
-            "answer": "Ενθάρρυνση ανοικτού διαλόγου και χρήση μεθοδολογιών design thinking"
-            },
+
 
             "5.4 B1": {
             "question": "Ποιο από τα παρακάτω είναι κρίσιμο πρώτο βήμα για τον εντοπισμό των κενών στις ψηφιακές σου δεξιότητες;",
@@ -2144,11 +1826,7 @@
             ],
             "answer": "Να ρωτήσεις για τις συγκεκριμένες ψηφιακές εργασίες και προκλήσεις του"
             },
-            "5.4 B6": {
-            "question": "Σωστό ή Λάθος; Μόλις εντοπίσεις τα κενά στις ψηφιακές σου δεξιότητες, το επόμενο βήμα είναι να ξεκινήσεις αμέσως προχωρημένα προγράμματα κατάρτισης χωρίς να λάβεις υπόψη τις βασικές δεξιότητες.",
-            "options": ["Σωστό", "Λάθος"],
-            "answer": "Λάθος"
-            },
+
             "5.4 M1": {
             "question": "Ποιο από τα παρακάτω είναι το πιο αποτελεσματικό πρώτο βήμα για τον εντοπισμό των κενών στις ψηφιακές σου δεξιότητες;",
             "options": [
@@ -2192,16 +1870,6 @@
                 "Ενθάρρυνση τακτικών συνεδριών ανατροφοδότησης"
             ],
             "answer": "Να του επιτρέπεται να παραλείψει τις βασικές δεξιότητες"
-            },
-            "5.4 M6": {
-            "question": "Ποιο από τα παρακάτω δεν είναι αληθές;",
-            "options": [
-                "Τα διαδικτυακά μαθήματα παρέχουν δομή για την ανάπτυξη συγκεκριμένων δεξιοτήτων",
-                "Ο ψηφιακός μέντορας παρέχει εξατομικευμένες συμβουλές και ιδέες για δυνατά/αδύνατα σημεία",
-                "Η συνδρομή σε ειδησεογραφικές πηγές του κλάδου διατηρεί τη γνώση επίκαιρη με τρέχουσες ενημερώσεις",
-                "Ο ψηφιακός μέντορας διατηρεί τη γνώση επίκαιρη με τρέχουσες ενημερώσεις"
-            ],
-            "answer": "Ο ψηφιακός μέντορας διατηρεί τη γνώση επίκαιρη με τρέχουσες ενημερώσεις"
             }
   }
 }

@@ -12,7 +12,7 @@
   "competences": "Taidot",
   "level_1": "Taso 1",
   "level_2": "Taso 2",
-  "not_attempted": "Ei aloitettu", 
+  "not_attempted": "Ei aloitettu",
   "take_sa_again": "Tee itsearvio uudelleen",
   "complete_other_categories": "Suorita muut aihealueet",
   "confirm_action": "Vahvista toiminto",
@@ -21,39 +21,35 @@
   "confirm_and_reset": "Vahvista ja jatka",
   "placement": "Sijainti",
   "Completed": "Valmis",
-  "Locked": "Lukittu", 
+  "Locked": "Lukittu",
   "Resume": "Jatka",
   "Play": "Aloita",
   "digital_skills_progress": "Digitaitojen aloittelija",
-  "keep_it_up" : "Jatka harjoittelua!",
+  "keep_it_up": "Jatka harjoittelua!",
   "digital_skills_elite_performer": "Digitaitojen mestari",
   "incredible_achievement": "Huikea saavutus - 45 000 pistettä! Olet aivan huipputasolla ja nouset digitaalisten innovoijien kärkeen.",
   "digital_skills_advanced_achiever": "Edistynyt digitaitaja",
   "excellent_work": "Loistavaa työtä - 30 000 pistettä kasassa! Osoitat edistynyttä osaamista ja valmiutta vaativiin haasteisiin.",
   "digital_skills_rising_star": "Digitaitojen nouseva tähti",
   "great_job": "Mahtavaa! Olet saavuttanut 15 000 pistettä ja rakentanut vahvan perustan kohti akateemista ja ammatillista menestystä.",
-
   "not_started": "Ei aloitettu",
-  "level" : "Taso",
-
+  "level": "Taso",
   "Dashboard": "Työpöytä",
-  "Score": "Pisteet", 
+  "Score": "Pisteet",
   "Rank": "Sijoitus",
   "Profile": "Profiili",
-
   "competece_area_label": "Osaamisalueet",
   "points_earned": "pistettä",
   "total_score": "Kokonaispisteet",
   "out_of": "",
   "total_points": "{{total_point, number}} pistettä",
   "possible_points": "mahdollisesta pisteestä",
-  "out_of_total_score" : "{{total_point, number}} mahdollisesta pisteestä",
+  "out_of_total_score": "{{total_point, number}} mahdollisesta pisteestä",
   "congratulations": "Onnea!",
   "congratulations_long": "Onnea, olet saavuttanut {{points, number}} pistettä!",
-
   "leaderboard": "Tulostaulu",
   "your_rank": "Sijoituksesi",
-  "you": "sinä", 
+  "you": "sinä",
   "rank": "Sija",
   "avatars": "Avatarit",
   "unlock_avatars": "Ansaitse hienoja avataria keräämällä pisteitä! Nykyiset pisteet:",
@@ -62,35 +58,32 @@
   "gold": "Kulta",
   "diamond": "Timantti",
   "you_still_need": "Tarvitset vielä {{scoresToGo, number}} pistettä",
-  "avatar_threshold": "{{avatarThreshold, number}} pistettä", 
-  "avatar_points" : "{{user_score, number}}",
-  "unlock_now" : "Avaa nyt",
-  "unlocked" : "Avattu",
-
-  "assessment_status" : "Itsearvioinnin tilanne",
-  "your_progress" : "Edistymisesi",
-  "progress" : "Edistyminen",
-  "total_available_questions" : "Saatavilla olevat kysymykset",
-  "remaining_questions" : "Jäljellä olevat kysymykset",
-  "completed_questions" : "Vastatut kysymykset",
-  "assessment_by_category" : "Itsearviointi aihealue kerrallaan",
+  "avatar_threshold": "{{avatarThreshold, number}} pistettä",
+  "avatar_points": "{{user_score, number}}",
+  "unlock_now": "Avaa nyt",
+  "unlocked": "Avattu",
+  "assessment_status": "Itsearvioinnin tilanne",
+  "your_progress": "Edistymisesi",
+  "progress": "Edistyminen",
+  "total_available_questions": "Saatavilla olevat kysymykset",
+  "remaining_questions": "Jäljellä olevat kysymykset",
+  "completed_questions": "Vastatut kysymykset",
+  "assessment_by_category": "Itsearviointi aihealue kerrallaan",
   "estimated_time": "Arvioitu suoritusaika",
-  "minutes" : "minuuttia",
-  "start_assessment" : "Aloita itsearvio nähdäksesi edistymisesi",
-  "you_have_completed" :"Olet suorittanut {{completedCount}} / {{totalQuestions}} kysymystä",
-"continue_full" : "Jatka itsearviointia",
-"start_full" : "Aloita täydellinen itsearviointi",
-"categories_completed" : "aihealue suoritettu",
-"category_progress" : "Aihealueiden edistyminen",
-
-"go_to_dashboard" : "Siirry työpöydälle",
-"check_progress" : "Tarkista edistymisesi tilanne",
-"full_assessment_explanation" : "Täydellinen itsearviointi sisältää kaikki 82 kysymystä ja tarjoaa kattavan arvion digitaalisista taidoistasi.",
-"select_one_area"  : "Valitse yksi aihealue",
-"select_area_explanation" : "Valitse haluamasi aihealue tai aloita täysi itsearviointi",
-"self_assessment"  : "Itsearviointi",
-"self_assessment_instruction" : "Valitse vaihtoehto, joka kuvastaa parhaiten nykyistä taitotasoasi",
-
+  "minutes": "minuuttia",
+  "start_assessment": "Aloita itsearvio nähdäksesi edistymisesi",
+  "you_have_completed": "Olet suorittanut {{completedCount}} / {{totalQuestions}} kysymystä",
+  "continue_full": "Jatka itsearviointia",
+  "start_full": "Aloita täydellinen itsearviointi",
+  "categories_completed": "aihealue suoritettu",
+  "category_progress": "Aihealueiden edistyminen",
+  "go_to_dashboard": "Siirry työpöydälle",
+  "check_progress": "Tarkista edistymisesi tilanne",
+  "full_assessment_explanation": "Täydellinen itsearviointi sisältää kaikki 82 kysymystä ja tarjoaa kattavan arvion digitaalisista taidoistasi.",
+  "select_one_area": "Valitse yksi aihealue",
+  "select_area_explanation": "Valitse haluamasi aihealue tai aloita täysi itsearviointi",
+  "self_assessment": "Itsearviointi",
+  "self_assessment_instruction": "Valitse vaihtoehto, joka kuvastaa parhaiten nykyistä taitotasoasi",
   "general_settings": "Yleiset asetukset",
   "app_information": "Tietoja sovelluksesta",
   "change_password": "Vaihda salasana",
@@ -98,12 +91,10 @@
   "about_app": "Sovelluksen tiedot",
   "terms": "Käyttöehdot",
   "privacy_policy": "Tietosuojalauseke",
-
   "lang_settings": "Sovelluksen kieli",
   "select_lang": "Valitse kieli",
   "select_lang_message": "Valitse listasta haluamasi kieli sovelluksen käyttöliittymälle",
   "confirm_selection": "Vahvista valinta",
-
   "forgot_password": "Salasanan palautus",
   "forgot_your_password": "Unohditko salasanasi?",
   "forgot_password_text": "Syötä sähköpostiosoitteesi, niin lähetämme sinulle vahvistuskoodin salasanan palauttamista varten.",
@@ -118,23 +109,18 @@
   "code_was_sent": "Koodi lähetetty",
   "failed_to_send": "Koodin lähettäminen epäonnistui",
   "invalid_code": "Virheellinen koodi",
-
   "login": "Kirjaudu",
   "welcome_simons": "Tervetuloa SIMOnS-sovellukseen!",
   "password": "Salasana",
   "or": "TAI",
   "login_with_google": "Kirjaudu Googlen avulla",
   "dont_have_account": "Eikö sinulla ole tunnusta?",
-  "signup" : "Rekisteröidy",
-
-  "did_not_receive": "Etkö saanut koodia?", 
+  "signup": "Rekisteröidy",
+  "did_not_receive": "Etkö saanut koodia?",
   "resend_code": "Lähetä koodi uudestaan",
   "resend_in_seconds": "Lähetä koodi uudestaan {{timer}} s päästä",
-  
   "app_explanation": "Itsearviointi- ja oppimisympäristö digitaitojen harjoitteluun eurooppalaisen perusdigitaitojen viitekehyksen avulla",
-
   "sign_with_google": "Rekisteröidy Google-tunnuksella",
-
   "firstname": "Etunimi",
   "lastname": "Sukunimi",
   "dob": "Syntymäaika",
@@ -142,23 +128,18 @@
   "country": "Valitse maa",
   "university": "Valitse yliopisto (ei pakollinen)",
   "repeat_password": "Vahvista salasana",
-
   "male": "Mies",
   "female": "Nainen",
   "other": "Muunsukupuolinen",
-
   "already_account": "Onko sinulla jo käyttäjätunnus?",
   "join_us": "Liity yhteisöön!",
   "create_account": "Rekisteröi käyttäjätunnus",
-
-  "study_material" : "Oppimateriaalit",
-  "learning_materials" : "Oppimateriaalit",
+  "study_material": "Oppimateriaalit",
+  "learning_materials": "Oppimateriaalit",
   "return_to_dashboard": "Palaa etusivulle",
-  "additional_resources" : "Lisämateriaalit",
-
-  "quiz_completed" : "Testi on jo suoritettu",
-  "take_the_quiz" : "Aloita testi",
-
+  "additional_resources": "Lisämateriaalit",
+  "quiz_completed": "Testi on jo suoritettu",
+  "take_the_quiz": "Aloita testi",
   "Level 2": "Taso 2",
   "Level 1": "Taso 1",
   "Level 1-2": "Tasot 1-2",
@@ -174,15 +155,14 @@
   "correct_answer": "Oikea vastaus: {{basePoints}} pistettä",
   "speed_bonus": "Nopeusbonus jopa 50 pisettä",
   "perfect_run": "Lisäpisteitä kaikista oikeista vastauksista",
-  
   "processing_results": "Käsitellään tuloksia",
   "calculating_score": "Lasketaan pisteitä",
   "quiz_results": "Testin tulokset",
   "analyzing": "Analysoidaan suoritusta ja aikabonuksia...",
   "error_processing": "Pisteiden laskennassa tapahtui virhe",
-  "Try again..." : "Yritä uudestaan...",
+  "Try again...": "Yritä uudestaan...",
   "Almost there!": "Melkein perillä!",
-  "Excellent work!" : "Erinomaista työtä!",
+  "Excellent work!": "Erinomaista työtä!",
   "you_earned": "Ansaitsit +{{totalScore}} pistettä",
   "score_breakdown": "Pisteiden muodostuminen",
   "correct_answers": "Oikeita vastauksia",
@@ -195,72 +175,57 @@
   "missed_explanation": "Olisit voinut ansaita {{lostOpportunity}} pistettä enemmän oikeilla vastauksilla",
   "review_material": "Tutustu oppimateriaaliin",
   "retake_quiz": "Tee testi uudelleen",
-
   "You answered 0/3 correctly": "Vastasit oikein 0/3 kysymykseen",
   "You answered 1/3 correctly": "Vastasit oikein 1/3 kysymykseen",
   "You answered 2/3 correctly": "Vastasit oikein 2/3 kysymykseen",
   "You answered 3/3 correctly": "Vastasit oikein 3/3 kysymykseen",
-  "Perfect score!" : "Täydellinen suoritus!",
-
-"questions_answered": "kysymystä vastattu tällä kerralla",
-"succesfully_completed_questions":"Suoritit menestyksellä {{completedCount}} kysymystä. ",
-"complete_others": "Vastaa myös loppuihin kysymyksiin viimeistelläksesi itsearvioinnin.",
-"starting_level_determined": "Lähtötasosi kaikkiin aihealueisiin on tunnistettu",
-"category_completed" : "Tämän aihealueen itsearviointi on nyt suoritettu!", 
-"full_completed" : "Itsearviointi on nyt suoritettu kokonaan!",
-"processing_selfassessment" :"Käsitellään itsearviointia",
-"please_wait" : "Odota hetki niin käsittelemme vastauksiasi.",
-"results": "Tulokset",
-"continue_to_other" : "Jatka muilla aihealueilla",
-"next_steps": "Seuraavat askeleet",
-"self_assessment_complete": "Itsearviointi on valmis. Voit nyt siirtyä työpöydälle tutustumaan lisäharjoituksiin",
-"continue_to_next" : "Jatka seuraavaan aihealueeseen täydentämään itsearviointiasi.",
-"complete" : "Valmis", 
-
-
+  "Perfect score!": "Täydellinen suoritus!",
+  "questions_answered": "kysymystä vastattu tällä kerralla",
+  "succesfully_completed_questions": "Suoritit menestyksellä {{completedCount}} kysymystä. ",
+  "complete_others": "Vastaa myös loppuihin kysymyksiin viimeistelläksesi itsearvioinnin.",
+  "starting_level_determined": "Lähtötasosi kaikkiin aihealueisiin on tunnistettu",
+  "category_completed": "Tämän aihealueen itsearviointi on nyt suoritettu!",
+  "full_completed": "Itsearviointi on nyt suoritettu kokonaan!",
+  "processing_selfassessment": "Käsitellään itsearviointia",
+  "please_wait": "Odota hetki niin käsittelemme vastauksiasi.",
+  "results": "Tulokset",
+  "continue_to_other": "Jatka muilla aihealueilla",
+  "next_steps": "Seuraavat askeleet",
+  "self_assessment_complete": "Itsearviointi on valmis. Voit nyt siirtyä työpöydälle tutustumaan lisäharjoituksiin",
+  "continue_to_next": "Jatka seuraavaan aihealueeseen täydentämään itsearviointiasi.",
+  "complete": "Valmis",
   "privacy": {
     "intro": "Tämä tietosuojaseloste kuvaa, miten SIMOnS – Student Improvement and Monitoring of Online Skills, Euroopan unionin rahoittama Erasmus+ -hankkeen (2023-1-PT01-KA220-HED-000160187) puitteissa toteutettu opetuksellinen mobiilisovellus, kerää, käyttää ja suojaa henkilötietojasi yleisen tietosuoja-asetuksen (GDPR) mukaisesti. Tiedonkeruun on hyväksynyt Maia-yliopiston eettinen toimikunta (hyväksyntä nro 288/2025). Tätä tietosuojaselostetta voidaan päivittää, ja päivityksistä ilmoitetaan sovelluksen tai sähköpostin välityksellä.",
-
     "title.data_collected": "Kerättävät tiedot",
     "content.data_collected.p1": "Henkilötiedot: sähköposti, syntymäaika, sukupuoli, yliopisto (vapaaehtoinen), salasana tai Google-tilin tiedot (sähköposti ja perustiedot) rekisteröitymistä varten.",
     "content.data_collected.p2": "Ei-henkilökohtaiset tiedot: itsearviointikyselyn vastaukset (anonyymit), harjoitusten pistemäärät, oppimisvideoiden katselutiedot sekä laitetiedot (esim. IP-osoite, laitetyyppi).",
-    
     "title.data_usage": "Tietojen käyttö",
     "content.data_usage.p1": "Käyttäjätilien luominen ja hallinta.",
     "content.data_usage.p2": "Henkilökohtaisen opetussisällön ja taitopalautteen tarjoaminen.",
     "content.data_usage.p3": "Käytön analysointi (pseudonymisoituna) sovelluksen kehittämiseksi ja Erasmus+ -hankkeen tulosten tukemiseksi (raportit, tutkimusartikkelit ja levitystapahtumat).",
     "content.data_usage.p4": "GDPR-vaatimusten noudattaminen.",
-    
     "title.data_sharing": "Tietojen jakaminen",
     "intro.data_sharing": "Kerättyjä tietoja ei myydä tai vuokrata kaupallisiin tarkoituksiin. Tietoja voidaan jakaa:",
     "content.data_sharing.p1": "Erasmus+ -hankekumppaneille (anonymisoituna) tutkimusta ja raportointia varten.",
     "content.data_sharing.p2": "Palveluntarjoajille (esim. pilvipalvelut) ja kolmansille osapuolille (esim. Google-kirjautuminen) tiukan luottamuksellisuuden alaisena ja ulkoisia tietosuojakäytäntöjä noudattaen. Lisätietoa kaikista käytetyistä palveluista saa ottamalla yhteyttä tiimiin.",
-    
     "title.data_security": "Tietoturva",
     "content.data_security.p1": "Tiedot salataan ja niiden käyttö edellyttää tiimin jäseniltä monivaiheista tunnistautumista tietosuojan ja turvallisuuden varmistamiseksi, vaikka mikään järjestelmä ei ole täysin turvallinen.",
-    
     "title.data_retention": "Tietojen säilytys",
     "content.data_retention.p1": "Tiedot tallennetaan hankekumppaneiden palvelimille sekä Maiêutican palvelimille (Microsoft OneDrive). Tietoja säilytetään Erasmus+ -hankkeen keston ajan ja enintään 3 vuotta arviointia varten, ellei poistamista pyydetä.",
-    
     "title.user_rights": "Käyttäjän oikeudet",
     "intro.user_rights": "GDPR:n mukaisesti käyttäjillä on oikeus:",
     "content.user_rights.p1": "Saada pääsy tietoihin, oikaista tai poistaa niitä.",
     "content.user_rights.p2": "Rajoittaa tietojen käsittelyä tai vastustaa sitä.",
     "content.user_rights.p3": "Pyytää tietojen siirrettävyyttä.",
-    
     "title_contact": "Yhteystiedot",
     "contact_us": "Ota yhteyttä oikeuksiesi käyttämiseksi.",
-    
     "approval": "Käyttämällä SIMOnS-sovellusta hyväksyt tämän tietosuojaselosteen."
   },
-
-  "back_to_profile" : "Takaisin profiiliin",
-
-  "about_simons_app" :"Tietoja SIMOnS-sovelluksesta",
+  "back_to_profile": "Takaisin profiiliin",
+  "about_simons_app": "Tietoja SIMOnS-sovelluksesta",
   "about_the_app": "Tietoa sovelluksesta",
   "about.p1": "SIMOnS (Student Improvement and Monitoring of Online Skills) on itsearviointityökalu, joka auttaa käyttäjiä arvioimaan ja kehittämään digitaalisia taitojaan Euroopan kansalaisille suunnatun digitaalisten taitojen viitekehyksen (DigComp) pohjalta.",
   "about.p2": "Itsearviointikyselyiden ja kohdennettujen oppimateriaalien avulla SIMOnS tukee käyttäjiä vahvuuksien ja kehityskohteiden tunnistamisessa digitaalisessa maailmassa.",
-
   "competence_areas": {
     "1": {
       "name": "Informaatio- ja datalukutaito",
@@ -283,8 +248,7 @@
       "description": "Teknisten ongelmien ratkaiseminen ja tarpeiden tunnistaminen"
     }
   },
-
-"competence_details": {
+  "competence_details": {
     "1_1": {
       "title": "Tietojen, informaation ja digitaalisen sisällön selaaminen, hakeminen ja suodattaminen"
     },
@@ -349,73 +313,71 @@
       "title": "Digitaalisten osaamisen puutteiden tunnistaminen"
     }
   },
-
-"competence_details_short": {
-  "1_1": {
-    "title": "Tiedonhaku ja selaaminen"
+  "competence_details_short": {
+    "1_1": {
+      "title": "Tiedonhaku ja selaaminen"
+    },
+    "1_2": {
+      "title": "Tiedon arviointi"
+    },
+    "1_3": {
+      "title": "Tiedon hallinta"
+    },
+    "2_1": {
+      "title": "Vuorovaikutus digitaalisten teknologioiden avulla"
+    },
+    "2_2": {
+      "title": "Tiedon jakaminen"
+    },
+    "2_3": {
+      "title": "Kansalaisosallistuminen"
+    },
+    "2_4": {
+      "title": "Yhteistyö digitaalisten teknologioiden avulla"
+    },
+    "2_5": {
+      "title": "Netiketti"
+    },
+    "2_6": {
+      "title": "Digitaalisen identiteetin hallinta"
+    },
+    "3_1": {
+      "title": "Digitaalisen sisällön tuottaminen"
+    },
+    "3_2": {
+      "title": "Digitaalisen sisällön yhdistäminen ja uudelleentyöstö"
+    },
+    "3_3": {
+      "title": "Tekijänoikeus ja lisenssit"
+    },
+    "3_4": {
+      "title": "Ohjelmointi"
+    },
+    "4_1": {
+      "title": "Laitteiden suojaaminen"
+    },
+    "4_2": {
+      "title": "Henkilötietojen ja yksityisyyden suojaaminen"
+    },
+    "4_3": {
+      "title": "Terveyden ja hyvinvoinnin suojaaminen"
+    },
+    "4_4": {
+      "title": "Ympäristön suojeleminen"
+    },
+    "5_1": {
+      "title": "Teknisten ongelmien ratkaiseminen"
+    },
+    "5_2": {
+      "title": "Tarpeiden ja teknologisten ratkaisujen tunnistaminen"
+    },
+    "5_3": {
+      "title": "Digitaalisten teknologioiden luova käyttö"
+    },
+    "5_4": {
+      "title": "Digiosaamisen puutteiden tunnistaminen"
+    }
   },
-  "1_2": {
-    "title": "Tiedon arviointi"
-  },
-  "1_3": {
-    "title": "Tiedon hallinta"
-  },
-  "2_1": {
-    "title": "Vuorovaikutus digitaalisten teknologioiden avulla"
-  },
-  "2_2": {
-    "title": "Tiedon jakaminen"
-  },
-  "2_3": {
-    "title": "Kansalaisosallistuminen"
-  },
-  "2_4": {
-    "title": "Yhteistyö digitaalisten teknologioiden avulla"
-  },
-  "2_5": {
-    "title": "Netiketti"
-  },
-  "2_6": {
-    "title": "Digitaalisen identiteetin hallinta"
-  },
-  "3_1": {
-    "title": "Digitaalisen sisällön tuottaminen"
-  },
-  "3_2": {
-    "title": "Digitaalisen sisällön yhdistäminen ja uudelleentyöstö"
-  },
-  "3_3": {
-    "title": "Tekijänoikeus ja lisenssit"
-  },
-  "3_4": {
-    "title": "Ohjelmointi"
-  },
-  "4_1": {
-    "title": "Laitteiden suojaaminen"
-  },
-  "4_2": {
-    "title": "Henkilötietojen ja yksityisyyden suojaaminen"
-  },
-  "4_3": {
-    "title": "Terveyden ja hyvinvoinnin suojaaminen"
-  },
-  "4_4": {
-    "title": "Ympäristön suojeleminen"
-  },
-  "5_1": {
-    "title": "Teknisten ongelmien ratkaiseminen"
-  },
-  "5_2": {
-    "title": "Tarpeiden ja teknologisten ratkaisujen tunnistaminen"
-  },
-  "5_3": {
-    "title": "Digitaalisten teknologioiden luova käyttö"
-  },
-  "5_4": {
-    "title": "Digiosaamisen puutteiden tunnistaminen"
-  }
-},
-
   "learning_material": {
     "1.1": {
       "basic": "Opi tunnistamaan tiedontarpeet ja hakemaan tehokkaasti akateemisista tietokannoista ja hakukoneista, käyttämällä Boolen operaattoreita ja täsmentämällä hakustrategioita relevantin digitaalisen sisällön löytämiseksi.",
@@ -502,6 +464,5 @@
       "master": "Opi etsimään mahdollisuuksia itsekehitykseen ja pysymään ajan tasalla digitaalisen kehityksen suhteen. Hyödynnä tietojasi edistääksesi omaa akateemista etenemistäsi ja ohjataksesi muita digitaalisten osaamiskapeikkojen tunnistamisessa."
     }
   },
-
-  "selectLabel" : "Valitse kieli"
+  "selectLabel": "Valitse kieli"
 }

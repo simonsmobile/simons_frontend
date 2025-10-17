@@ -423,7 +423,7 @@
     },
 
     "2.2 M1": {
-      "question": "You found an interesting picture online which is protected by the following creative commons license. How can you reuse it?",
+      "question": "You found an interesting picture online which is protected by the Creative Commons BY-SA license. How can you reuse it?",
       "options": [
         "Modify the colours of the picture and use it in a presentation, displaying the author and CC logo",
         "Printing the picture on a package with the CC logo and sell it",
@@ -747,9 +747,9 @@
         "No, never.",
         "Yes, because it is a private space.",
         "Yes, as long as I ask their parents.",
-        "Yes, only if I do not show parts of their body that allow them to be recognised."
+        "Yes, if I do not show any recognizable features and I ask a permission to publish the photo.."
       ],
-      "answer": "Yes, as long as I ask their parents."
+      "answer": "Yes, if I do not show any recognizable features and I ask a permission to publish the photo."
     },
 
     "2.6 M1": {

@@ -422,7 +422,7 @@
 
 
     "2.2 M1": {
-    "question": "Löysit verkosta mielenkiintoisen kuvan, jota suojaa seuraava Creative Commons -lisenssi. Kuinka voit käyttää sitä uudelleen?",
+    "question": "Löysit verkosta mielenkiintoisen kuvan, jota suojaa Creative Commons BY-SA -lisenssi. Kuinka voit käyttää sitä uudelleen?",
     "options": [
         "Muokata kuvan värejä ja käyttää sitä esityksessä mainiten tekijän ja CC-logon",
         "Tulostaa kuva pakkaukseen CC-logolla ja myydä sitä",
@@ -796,9 +796,9 @@
     "Ei koskaan.",
     "Kyllä, koska se on yksityinen tila.",
     "Kyllä, jos kysyn vanhemmilta luvan.",
-    "Kyllä, jos en näytä tunnistettavia piirteitä."
+    "Kyllä, jos en näytä tunnistettavia piirteitä ja pyydän lupaa kuvan julkaisemiseen."
   ],
-  "answer": "Kyllä, jos kysyn vanhemmilta luvan."
+  "answer": "Kyllä, jos en näytä tunnistettavia piirteitä ja pyydän lupaa kuvan julkaisemiseen."
 },
 
 "2.6 M1": {
