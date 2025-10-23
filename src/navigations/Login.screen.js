@@ -5,6 +5,8 @@ import { signInWithPopup } from 'firebase/auth';
 import { auth, provider } from '../configs/Firebase';
 import { useToast } from "../hooks/useToast";
 import env from '../configs/env';
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
 
 const LoginScreen = () => {
   const navigate = useNavigate();
@@ -14,7 +16,7 @@ const LoginScreen = () => {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-
+  const { t, i18n } = useTranslation();
   const checkSession = () => {
     setValue(localStorage.getItem('username'));
     if (localStorage.getItem('username') !== null) {
@@ -154,7 +156,7 @@ const LoginScreen = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </Link>
-          <h1 className="text-lg font-semibold text-center flex-1">Login</h1>
+          <h1 className="text-lg font-semibold text-center flex-1">{t('login')}</h1>
           <div className="w-6"></div>
         </div>
       </div>
@@ -173,15 +175,15 @@ const LoginScreen = () => {
         
         <div className="max-w-md mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-2xl font-bold text-gray-900 mb-1">Login</h1>
-            <p className="text-gray-500 text-sm">Welcome back to SIMOnS!</p>
+            <h1 className="text-2xl font-bold text-gray-900 mb-1">{t('login')}</h1>
+            <p className="text-gray-500 text-sm">{t('welcome_simons')}</p>
           </div>
           
           <form onSubmit={submitAction} className="space-y-4 mb-6">
             <div className="bg-white rounded-lg shadow-sm">
               <input
                 type="email"
-                placeholder="Email"
+                placeholder={t('email')}
                 className="w-full p-4 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -191,7 +193,7 @@ const LoginScreen = () => {
             <div className="relative bg-white rounded-lg shadow-sm">
               <input
                 type={showPassword ? "text" : "password"}
-                placeholder="Password"
+                placeholder={t('password')}
                 className="w-full p-4 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-400 pr-12"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -216,7 +218,7 @@ const LoginScreen = () => {
             
             <div className="text-right">
               <Link to="/forgot-password" className="text-sm text-black hover:underline">
-                Forgot password?
+                {t('forgot_your_password')}
               </Link>
             </div>
             
@@ -230,14 +232,14 @@ const LoginScreen = () => {
                   <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
                 </div>
               ) : (
-                'Login'
+                t('login')
               )}
             </button>
           </form>
           
           <div className="relative flex items-center justify-center mb-6">
             <div className="border-t border-gray-300 w-full"></div>
-            <div className="bg-white px-3 text-sm text-gray-500 absolute">OR</div>
+            <div className="bg-white px-3 text-sm text-gray-500 absolute">{t('or')}</div>
           </div>
           
           <button
@@ -245,14 +247,14 @@ const LoginScreen = () => {
             className="w-full py-4 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg shadow-sm hover:bg-gray-50 transition-colors duration-300 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2"
           >
             <FaGoogle className="mr-2" />
-            Login with Google
+            {t('login_with_google')}
           </button>
           
           <div className="text-center mt-8">
             <p className="text-gray-600">
-              Don't have an account?{' '}
+              {t('dont_have_account')}{' '}
               <Link to="/create-account" className="text-black font-medium hover:underline">
-                Sign up
+                {t('signup')}
               </Link>
             </p>
           </div>

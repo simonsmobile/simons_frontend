@@ -22,14 +22,14 @@ const env = {
       question:
         "I know which words to use in order to find what I need quickly (e.g. to search online or within a document).",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "I have no knowledge of this / I never heard of this",
+        "I have only a limited understanding of this and need more explanations",
+        "I have a good understanding of this",
+        "I fully master this topic/issue and I could explain it to others ",
       ],
       answer: "",
       points: 1.1,
-      type: "Skills",
+      type: "Knowledge",
       level: "Foundation",
     },
     {
@@ -66,35 +66,20 @@ const env = {
       question:
         "I know how to differentiate promoted content from other content I find or receive online (e.g., recognizing an advert on social media or search engines).",
       options: [
-        "I have no knowledge of this / I never heard of this",
-        "I have only a limited understanding of this and need more explanations",
-        "I have a good understanding of this",
-        "I fully master this topic/issue and I could explain it to others ",
+        "I don’t know how to do it",
+        "I can do it with help",
+        "I can do it on my own",
+        "I can do it with confidence and, if needed, I can support/guide others",
       ],
       answer: "",
       points: 1.2,
-      type: "Knowledge",
+      type: "Skills",
       level: "Intermediate",
     },
     {
       title: "Question 6",
       question:
         "I know how to identify the purpose of an online information source (e.g., to inform, influence, entertain, or sell).",
-      options: [
-        "I have no knowledge of this / I never heard of this",
-        "I have only a limited understanding of this and need more explanations",
-        "I have a good understanding of this",
-        "I fully master this topic/issue and I could explain it to others ",
-      ],
-      answer: "",
-      points: 1.2,
-      type: "Knowledge",
-      level: "Intermediate",
-    },
-    {
-      title: "Question 7",
-      question:
-        "I critically check if the information I find online is reliable.",
       options: [
         "I don’t know how to do it",
         "I can do it with help",
@@ -104,6 +89,21 @@ const env = {
       answer: "",
       points: 1.2,
       type: "Skills",
+      level: "Intermediate",
+    },
+    {
+      title: "Question 7",
+      question:
+        "I critically check if the information I find online is reliable.",
+      options: [
+        "Not at all",
+        "Not much / very little",
+        "Yes / Yes I am / Yes I do",
+        "Very much",
+      ],
+      answer: "",
+      points: 1.2,
+      type: "Attitude",
       level: "Intermediate",
     },
     {
@@ -230,35 +230,20 @@ const env = {
       question:
         "I know which communication tools and services (e.g. phone, email, video conference, text message) are appropriate to use in different circumstances.",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "I have no knowledge of this / I never heard of this",
+        "I have only a limited understanding of this and need more explanations",
+        "I have a good understanding of this",
+        "I fully master this topic/issue and I could explain it to others ",
       ],
       answer: "",
       points: 2.1,
-      type: "Skills",
+      type: "Knowledge",
       level: "Foundation",
     },
     {
       title: "Question 17",
       question:
         "I am open towards sharing digital content that I think might be interesting and useful to others",
-      options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
-      ],
-      answer: "",
-      points: 2.2,
-      type: "Skills",
-      level: "Intermediate",
-    },
-    {
-      title: "Question 18",
-      question:
-        "I know how to use cloud services (e.g. Google Drive, DropBox and OneDrive) to share my files",
       options: [
         "Not at all",
         "Not much / very little",
@@ -268,6 +253,21 @@ const env = {
       answer: "",
       points: 2.2,
       type: "Attitude",
+      level: "Intermediate",
+    },
+    {
+      title: "Question 18",
+      question:
+        "I know how to use cloud services (e.g. Google Drive, DropBox and OneDrive) to share my files",
+      options: [
+        "I don’t know how to do it",
+        "I can do it with help",
+        "I can do it on my own",
+        "I can do it with confidence and, if needed, I can support/guide others",
+      ],
+      answer: "",
+      points: 2.2,
+      type: "Skills",
       level: "Intermediate",
     },
     {
@@ -320,10 +320,10 @@ const env = {
       question:
         "I know that many public services are available on the Internet (e.g. booking a health visit, submitting tax declaration, requesting birth, marriage, residence and other certificates).",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "I have no knowledge of this / I never heard of this",
+        "I have only a limited understanding of this and need more explanations",
+        "I have a good understanding of this",
+        "I fully master this topic/issue and I could explain it to others ",
       ],
       answer: "",
       points: 2.3,
@@ -365,14 +365,14 @@ const env = {
       question:
         "I understand the benefits of remote collaboration (e.g. reduced commuting time). ",
       options: [
-        "I have no knowledge of this / I never heard of this",
-        "I have only a limited understanding of this and need more explanations",
-        "I have a good understanding of this",
-        "I fully master this topic/issue and I could explain it to others ",
+        "Not at all",
+        "Not much / very little",
+        "Yes / Yes I am / Yes I do",
+        "Very much",
       ],
       answer: "",
       points: 2.4,
-      type: "Knowledge",
+      type: "Attitude",
       level: "Intermediate",
     },
     {
@@ -439,14 +439,14 @@ const env = {
       question:
         "I can take the right measures if someone is doing the wrong thing online (e.g. an offensive comment, threats).",
       options: [
-        "Not at all",
-        "Not much / very little",
-        "Yes / Yes I am / Yes I do",
-        "Very much",
+        "I don’t know how to do it",
+        "I can do it with help",
+        "I can do it on my own",
+        "I can do it with confidence and, if needed, I can support/guide others",
       ],
       answer: "",
       points: 2.5,
-      type: "Attitude",
+      type: "Skills",
       level: "Intermediate",
     },
     {
@@ -454,14 +454,14 @@ const env = {
       question:
         "I know how to behave online according to the situation (e.g. formal vs informal).",
       options: [
-        "Not at all",
-        "Not much / very little",
-        "Yes / Yes I am / Yes I do",
-        "Very much",
+        "I have no knowledge of this / I never heard of this",
+        "I have only a limited understanding of this and need more explanations",
+        "I have a good understanding of this",
+        "I fully master this topic/issue and I could explain it to others ",
       ],
       answer: "",
       points: 2.5,
-      type: "Attitude",
+      type: "Knowledge",
       level: "Foundation",
     },
     {
@@ -484,14 +484,14 @@ const env = {
       question:
         "I know how to create a profile in digital environments for personal or professional purposes.",
       options: [
-        "I have no knowledge of this / I never heard of this",
-        "I have only a limited understanding of this and need more explanations",
-        "I have a good understanding of this",
-        "I fully master this topic/issue and I could explain it to others ",
+        "I don’t know how to do it",
+        "I can do it with help",
+        "I can do it on my own",
+        "I can do it with confidence and, if needed, I can support/guide others",
       ],
       answer: "",
       points: 2.6,
-      type: "Knowledge",
+      type: "Skills",
       level: "Intermediate",
     },
     {
@@ -559,14 +559,14 @@ const env = {
       question:
         "I know how to produce a multimedia presentation with text, images, audio and video elements.",
       options: [
-        "I have no knowledge of this / I never heard of this",
-        "I have only a limited understanding of this and need more explanations",
-        "I have a good understanding of this",
-        "I fully master this topic/issue and I could explain it to others ",
+        "I don’t know how to do it",
+        "I can do it with help",
+        "I can do it on my own",
+        "I can do it with confidence and, if needed, I can support/guide others",
       ],
       answer: "",
       points: 3.1,
-      type: "Knowledge",
+      type: "Skills",
       level: "Advanced",
     },
     {
@@ -589,14 +589,14 @@ const env = {
       question:
         "I am keen to create new digital content by mixing and modifying existing digital resources (e.g. a presentation with photos and a soundtrack found on the Internet)",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "Not at all",
+        "Not much / very little",
+        "Yes / Yes I am / Yes I do",
+        "Very much",
       ],
       answer: "",
       points: 3.2,
-      type: "Skills",
+      type: "Attitude",
       level: "Intermediate",
     },
     {
@@ -634,14 +634,14 @@ const env = {
       question:
         "I know how to create something new by mixing different types of content (e.g. text and images).",
       options: [
-        "Not at all",
-        "Not much / very little",
-        "Yes / Yes I am / Yes I do",
-        "Very much",
+        "I don’t know how to do it",
+        "I can do it with help",
+        "I can do it on my own",
+        "I can do it with confidence and, if needed, I can support/guide others",
       ],
       answer: "",
       points: 3.2,
-      type: "Attitude",
+      type: "Skills",
       level: "Foundation",
     },
     {
@@ -664,21 +664,6 @@ const env = {
       question:
         "I know that downloading or sharing digital content (e.g. music, software, films) may have ethical or legal consequences.",
       options: [
-        "Not at all",
-        "Not much / very little",
-        "Yes / Yes I am / Yes I do",
-        "Very much",
-      ],
-      answer: "",
-      points: 3.3,
-      type: "Attitude",
-      level: "Intermediate",
-    },
-    {
-      title: "Question 46",
-      question:
-        "I can detect when digital content is made available illegally (e.g. software, movies, music, books, TV)",
-      options: [
         "I have no knowledge of this / I never heard of this",
         "I have only a limited understanding of this and need more explanations",
         "I have a good understanding of this",
@@ -687,6 +672,21 @@ const env = {
       answer: "",
       points: 3.3,
       type: "Knowledge",
+      level: "Intermediate",
+    },
+    {
+      title: "Question 46",
+      question:
+        "I can detect when digital content is made available illegally (e.g. software, movies, music, books, TV)",
+      options: [
+        "I don’t know how to do it",
+        "I can do it with help",
+        "I can do it on my own",
+        "I can do it with confidence and, if needed, I can support/guide others",
+      ],
+      answer: "",
+      points: 3.3,
+      type: "Skills",
       level: "Intermediate",
     },
     {
@@ -709,14 +709,14 @@ const env = {
       question:
         "I am interested in understanding how a task can be broken down into steps so that it can be automated, for example in software or by a robot",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "Not at all",
+        "Not much / very little",
+        "Yes / Yes I am / Yes I do",
+        "Very much",
       ],
       answer: "",
       points: 3.4,
-      type: "Skills",
+      type: "Attitude",
       level: "Advanced",
     },
     {
@@ -731,7 +731,7 @@ const env = {
       ],
       answer: "",
       points: 3.4,
-      type: "Skills",
+      type: "Knowledge",
       level: "Foundation",
     },
     {
@@ -754,14 +754,14 @@ const env = {
       question:
         "I know that there could be different algorithmic solutions to accomplish a specific computational task (e.g. sorting and searching).",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "I have no knowledge of this / I never heard of this",
+        "I have only a limited understanding of this and need more explanations",
+        "I have a good understanding of this",
+        "I fully master this topic/issue and I could explain it to others ",
       ],
       answer: "",
       points: 3.4,
-      type: "Skills",
+      type: "Knowledge",
       level: "Advanced",
     },
     {
@@ -769,14 +769,14 @@ const env = {
       question:
         "I understand the benefits and also the safety risks when using Internet-connected devices or systems (e.g. smart watches, smart home devices).",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "I have no knowledge of this / I never heard of this",
+        "I have only a limited understanding of this and need more explanations",
+        "I have a good understanding of this",
+        "I fully master this topic/issue and I could explain it to others ",
       ],
       answer: "",
       points: 4.1,
-      type: "Skills",
+      type: "Knowledge",
       level: "Intermediate",
     },
     {
@@ -784,14 +784,14 @@ const env = {
       question:
         "I know about the importance of keeping the operating system, antivirus and other software up-to-date in order to prevent security issues",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "I have no knowledge of this / I never heard of this",
+        "I have only a limited understanding of this and need more explanations",
+        "I have a good understanding of this",
+        "I fully master this topic/issue and I could explain it to others ",
       ],
       answer: "",
       points: 4.1,
-      type: "Skills",
+      type: "Knowledge",
       level: "Intermediate",
     },
     {
@@ -844,14 +844,14 @@ const env = {
       question:
         "I know how to identify suspicious e-mail messages that try to obtain my personal data.",
       options: [
-        "I have no knowledge of this / I never heard of this",
-        "I have only a limited understanding of this and need more explanations",
-        "I have a good understanding of this",
-        "I fully master this topic/issue and I could explain it to others ",
+        "I don’t know how to do it",
+        "I can do it with help",
+        "I can do it on my own",
+        "I can do it with confidence and, if needed, I can support/guide others",
       ],
       answer: "",
       points: 4.2,
-      type: "Knowledge",
+      type: "Skills",
       level: "Intermediate",
     },
     {
@@ -874,14 +874,14 @@ const env = {
       question:
         "I know which personal data I should not share and display online (e.g. on social media). ",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "I have no knowledge of this / I never heard of this",
+        "I have only a limited understanding of this and need more explanations",
+        "I have a good understanding of this",
+        "I fully master this topic/issue and I could explain it to others ",
       ],
       answer: "",
       points: 4.2,
-      type: "Skills",
+      type: "Knowledge",
       level: "Intermediate",
     },
     {
@@ -889,14 +889,14 @@ const env = {
       question:
         "I am careful about checking the privacy policies of the digital services that I use",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "Not at all",
+        "Not much / very little",
+        "Yes / Yes I am / Yes I do",
+        "Very much",
       ],
       answer: "",
       points: 4.2,
-      type: "Skills",
+      type: "Attitude",
       level: "Intermediate",
     },
     {
@@ -904,14 +904,14 @@ const env = {
       question:
         "I am aware that I should manage the time I spend on my digital devices",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "Not at all",
+        "Not much / very little",
+        "Yes / Yes I am / Yes I do",
+        "Very much",
       ],
       answer: "",
       points: 4.3,
-      type: "Skills",
+      type: "Attitude",
       level: "Intermediate",
     },
     {
@@ -934,29 +934,29 @@ const env = {
       question:
         "I know about digital tools that can help older people or people with special needs.",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "I have no knowledge of this / I never heard of this",
+        "I have only a limited understanding of this and need more explanations",
+        "I have a good understanding of this",
+        "I fully master this topic/issue and I could explain it to others ",
       ],
       answer: "",
       points: 4.3,
-      type: "Skills",
+      type: "Knowledge",
       level: "Advanced",
     },
     {
       title: "Question 64",
       question:
         "I seek out ways in which digital technologies could help me to live and consume in a more environmentally friendly way.",
-      options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+    options: [
+        "Not at all",
+        "Not much / very little",
+        "Yes / Yes I am / Yes I do",
+        "Very much",
       ],
       answer: "",
       points: 4.4,
-      type: "Skills",
+      type: "Attitude",
       level: "Advanced",
     },
     {
@@ -964,14 +964,14 @@ const env = {
       question:
         "I know that old digital devices and consumables (e.g. computers, smartphones, batteries) must be appropriately disposed to minimise their environmental impact.",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "I have no knowledge of this / I never heard of this",
+        "I have only a limited understanding of this and need more explanations",
+        "I have a good understanding of this",
+        "I fully master this topic/issue and I could explain it to others ",
       ],
       answer: "",
       points: 4.4,
-      type: "Skills",
+      type: "Knowledge",
       level: "Intermediate",
     },
     {
@@ -994,14 +994,14 @@ const env = {
       question:
         'I know "green" behaviours to follow when buying or using digital devices (e.g. purchase devices with Eco-label, restrain from unnecessary printing of digital files, do not leave mobile phones and laptop chargers connected without the device).',
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "I have no knowledge of this / I never heard of this",
+        "I have only a limited understanding of this and need more explanations",
+        "I have a good understanding of this",
+        "I fully master this topic/issue and I could explain it to others ",
       ],
       answer: "",
       points: 4.4,
-      type: "Skills",
+      type: "Knowledge",
       level: "Intermediate",
     },
     {
@@ -1009,14 +1009,14 @@ const env = {
       question:
         "When I face a technical problem, I try step-by-step to identify the problem",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "Not at all",
+        "Not much / very little",
+        "Yes / Yes I am / Yes I do",
+        "Very much",
       ],
       answer: "",
       points: 5.1,
-      type: "Skills",
+      type: "Attitude",
       level: "Intermediate",
     },
     {
@@ -1024,14 +1024,14 @@ const env = {
       question:
         "I know some reasons why a digital device may fail to connect online (e.g. wrong Wi-Fi password, airplane mode on). ",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "I have no knowledge of this / I never heard of this",
+        "I have only a limited understanding of this and need more explanations",
+        "I have a good understanding of this",
+        "I fully master this topic/issue and I could explain it to others ",
       ],
       answer: "",
       points: 5.1,
-      type: "Skills",
+      type: "Knowledge",
       level: "Foundation",
     },
     {
@@ -1069,14 +1069,14 @@ const env = {
       question:
         "I usually try to find out if there is a technology solution that might help me address a personal or professional need.",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "Not at all",
+        "Not much / very little",
+        "Yes / Yes I am / Yes I do",
+        "Very much",
       ],
       answer: "",
       points: 5.2,
-      type: "Skills",
+      type: "Attitude",
       level: "Intermediate",
     },
     {
@@ -1084,14 +1084,14 @@ const env = {
       question:
         "I know the main functions of the most common digital devices (computer, tablet, smartphone).",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "I have no knowledge of this / I never heard of this",
+        "I have only a limited understanding of this and need more explanations",
+        "I have a good understanding of this",
+        "I fully master this topic/issue and I could explain it to others ",
       ],
       answer: "",
       points: 5.2,
-      type: "Skills",
+      type: "Knowledge",
       level: "Foundation",
     },
     {
@@ -1114,14 +1114,14 @@ const env = {
       question:
         "I know technical solutions that can improve the access and use of digital tools such as language translation, magnification or zoom and text-to-voice functionality.",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "I have no knowledge of this / I never heard of this",
+        "I have only a limited understanding of this and need more explanations",
+        "I have a good understanding of this",
+        "I fully master this topic/issue and I could explain it to others ",
       ],
       answer: "",
       points: 5.2,
-      type: "Skills",
+      type: "Knowledge",
       level: "Intermediate",
     },
     {
@@ -1129,14 +1129,14 @@ const env = {
       question:
         "I know that digital technology can be used as a powerful tool to innovate processes and products",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "I have no knowledge of this / I never heard of this",
+        "I have only a limited understanding of this and need more explanations",
+        "I have a good understanding of this",
+        "I fully master this topic/issue and I could explain it to others ",
       ],
       answer: "",
       points: 5.3,
-      type: "Skills",
+      type: "Knowledge",
       level: "Intermediate",
     },
     {
@@ -1144,14 +1144,14 @@ const env = {
       question:
         "I am willing to take part in challenges and contests, aimed at solving intellectual, social or practical problems through digital technologies.",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "Not at all",
+        "Not much / very little",
+        "Yes / Yes I am / Yes I do",
+        "Very much",
       ],
       answer: "",
       points: 5.3,
-      type: "Skills",
+      type: "Attitude",
       level: "Advanced",
     },
     {
@@ -1174,14 +1174,14 @@ const env = {
       question:
         "I am willing to help people in my community improve their digital skills.",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "Not at all",
+        "Not much / very little",
+        "Yes / Yes I am / Yes I do",
+        "Very much",
       ],
       answer: "",
       points: 5.4,
-      type: "Skills",
+      type: "Attitude",
       level: "Intermediate",
     },
     {
@@ -1189,14 +1189,14 @@ const env = {
       question:
         "I am curious about new digital devices and applications and I am keen to experiment with them whenever I find the opportunity.",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "Not at all",
+        "Not much / very little",
+        "Yes / Yes I am / Yes I do",
+        "Very much",
       ],
       answer: "",
       points: 5.4,
-      type: "Skills",
+      type: "Attitude",
       level: "Intermediate",
     },
     {
@@ -1219,14 +1219,14 @@ const env = {
       question:
         "I know about new trends in the digital world and how they impact on my personal or professional life",
       options: [
-        "I don’t know how to do it",
-        "I can do it with help",
-        "I can do it on my own",
-        "I can do it with confidence and, if needed, I can support/guide others",
+        "I have no knowledge of this / I never heard of this",
+        "I have only a limited understanding of this and need more explanations",
+        "I have a good understanding of this",
+        "I fully master this topic/issue and I could explain it to others ",
       ],
       answer: "",
       points: 5.4,
-      type: "Skills",
+      type: "Knowledge",
       level: "Intermediate",
     },
   ],
@@ -1419,7 +1419,7 @@ const env = {
 
   QS_SAMPLE2: [
     {
-      title: "Question 1",
+      title: "1.1 B1",
       question:
         "When articulating an information need, what should be your first step?",
       options: [
@@ -1434,7 +1434,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 2",
+      title: "1.1 B2",
       question:
         "If you are unsure of what information you need, which is the best approach?",
       options: [
@@ -1449,7 +1449,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 3",
+      title: "1.1 B3",
       question:
         "What is the main benefit of using Boolean operators in search queries?",
       options: [
@@ -1464,7 +1464,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 4",
+      title: "1.1 B4",
       question:
         "How can you refine your search results when too many unrelated items appear?",
       options: [
@@ -1479,7 +1479,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 5",
+      title: "1.1 B5",
       question:
         "What is a hyperlink typically used for in digital environments?",
       options: [
@@ -1493,23 +1493,9 @@ const env = {
       type: "1.1",
       level: "basic",
     },
+
     {
-      title: "Question 6",
-      question:
-        "What should be a key consideration when updating a search strategy?",
-      options: [
-        "The layout of the search engine page",
-        "The number of sources available",
-        "The refinement of search terms based on new findings",
-        "The inclusion of unrelated topics for broader results",
-      ],
-      answer: "The refinement of search terms based on new findings",
-      points: 1.0,
-      type: "1.1",
-      level: "basic",
-    },
-    {
-      title: "Question 7",
+      title: "1.1 M1",
       question: "Which of the following is NOT an information need?",
       options: [
         "Finding out the cause of a historical event",
@@ -1523,7 +1509,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 8",
+      title: "1.1 M2",
       question:
         "If you want to exclude a term from your search, which Boolean operator should you use?",
       options: ["AND", "OR", "NOT", "WITH"],
@@ -1533,7 +1519,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 9",
+      title: "1.1 M3",
       question:
         "If you encounter a paywall when trying to access an article, what should you do?",
       options: [
@@ -1549,7 +1535,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 10",
+      title: "1.1 M4",
       question:
         "How do menus and navigation bars assist in digital content browsing?",
       options: [
@@ -1564,7 +1550,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 11",
+      title: "1.1 M5",
       question:
         "What’s an effective way to adapt your search strategy over time?",
       options: [
@@ -1579,22 +1565,9 @@ const env = {
       type: "1.1",
       level: "master",
     },
+
     {
-      title: "Question 12",
-      question: "Why is it important to update search strategies regularly?",
-      options: [
-        "To avoid repetition of results",
-        "To stay informed about newly available data and sources",
-        "To prevent distractions during browsing",
-        "To reduce search engine loading times",
-      ],
-      answer: "To stay informed about newly available data and sources",
-      points: 1.0,
-      type: "1.1",
-      level: "master",
-    },
-    {
-      title: "Question 13",
+      title: "1.2 B1",
       question:
         "Which of the following factors indicates that a source is credible?",
       options: [
@@ -1609,7 +1582,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 14",
+      title: "1.2 B2",
       question:
         "How can you determine whether information in an article is up to date?",
       options: [
@@ -1624,7 +1597,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 15",
+      title: "1.2 B3",
       question: "What is an important step in critically evaluating data?",
       options: [
         "Ignoring contradictory information",
@@ -1638,7 +1611,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 16",
+      title: "1.2 B4",
       question:
         "How should you approach conflicting data from different sources?",
       options: [
@@ -1653,7 +1626,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 17",
+      title: "1.2 B5",
       question: "What is the best way to store data for easy retrieval later?",
       options: [
         "Save it all in one folder without categorization",
@@ -1667,22 +1640,9 @@ const env = {
       type: "1.2",
       level: "basic",
     },
+
     {
-      title: "Question 18",
-      question: "How can cloud storage help with managing data?",
-      options: [
-        "It automatically categorizes files",
-        "It allows access to data from multiple devices",
-        "It limits your data storage capacity",
-        "It only works offline",
-      ],
-      answer: "It allows access to data from multiple devices",
-      points: 1.0,
-      type: "1.2",
-      level: "basic",
-    },
-    {
-      title: "Question 19",
+      title: "1.2 M1",
       question:
         "Why is it important to cross-check information from multiple sources?",
       options: [
@@ -1697,7 +1657,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 20",
+      title: "I.2 M2",
       question: "How can you verify the accuracy of data found online?",
       options: [
         "By relying on the first search result",
@@ -1711,7 +1671,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 21",
+      title: "1.2 M3",
       question:
         "Which of the following helps ensure data is accurate and reliable?",
       options: [
@@ -1726,7 +1686,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 22",
+      title: "1.2 M4",
       question:
         "What is a key consideration when interpreting data in context?",
       options: [
@@ -1741,7 +1701,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 23",
+      title: "1.2 M5",
       question: "How can you add metadata to improve data organization?",
       options: [
         "By tagging files with relevant keywords",
@@ -1754,22 +1714,9 @@ const env = {
       type: "1.2",
       level: "master",
     },
+
     {
-      title: "Question 24",
-      question: "What is a benefit of using file synchronization tools?",
-      options: [
-        "They help transfer data between unrelated devices",
-        "They allow access to updated files across multiple devices",
-        "They automatically remove old files",
-        "They organize files into specific formats",
-      ],
-      answer: "They allow access to updated files across multiple devices",
-      points: 1.0,
-      type: "1.2",
-      level: "master",
-    },
-    {
-      title: "Question 25",
+      title: "1.3 B1",
       question: "What is the best way to store data for easy retrieval later?",
       options: [
         "Save it all in one folder without categorization",
@@ -1784,7 +1731,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 26",
+      title: "1.3 B2",
       question: "How can cloud storage help with managing data?",
       options: [
         "It automatically categorizes files",
@@ -1798,7 +1745,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 27",
+      title: "1.3 B3",
       question: "Which of the following is a good practice for file naming?",
       options: [
         "Use random letters and numbers",
@@ -1812,7 +1759,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 28",
+      title: "1.3 B4",
       question:
         "Which of the following is an example of using a structured environment to process data?",
       options: [
@@ -1827,7 +1774,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 29",
+      title: "1.3 B5",
       question:
         "What can databases help you do when managing large amounts of data?",
       options: [
@@ -1841,23 +1788,9 @@ const env = {
       type: "1.3",
       level: "basic",
     },
+
     {
-      title: "Question 30",
-      question:
-        "How can data visualization tools assist in processing information?",
-      options: [
-        "By making data more visually appealing without context",
-        "By helping to identify patterns and trends in large datasets",
-        "By simplifying data without any analysis",
-        "By hiding data behind charts",
-      ],
-      answer: "By helping to identify patterns and trends in large datasets",
-      points: 1.0,
-      type: "1.3",
-      level: "basic",
-    },
-    {
-      title: "Question 31",
+      title: "1.3 M1",
       question: "Why is it important to back up your data regularly?",
       options: [
         "To save storage space",
@@ -1871,7 +1804,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 32",
+      title: "1.3 M2",
       question: "How can you add metadata to improve data organization?",
       options: [
         "By tagging files with relevant keywords",
@@ -1885,7 +1818,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 33",
+      title: "1.3 M3",
       question: "What is a benefit of using file synchronization tools?",
       options: [
         "They help transfer data between unrelated devices",
@@ -1899,7 +1832,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 34",
+      title: "1.3 M4",
       question:
         "Why is it important to apply consistent methods for organizing and processing data?",
       options: [
@@ -1914,7 +1847,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 35",
+      title: "1.3 M5",
       question:
         "What is one advantage of using automation tools for repetitive data tasks?",
       options: [
@@ -1928,23 +1861,9 @@ const env = {
       type: "1.3",
       level: "master",
     },
+
     {
-      title: "Question 36",
-      question: "How can you best manage complex datasets for easy analysis?",
-      options: [
-        "Use multiple spreadsheets without linking them",
-        "Structure the data in a database or spreadsheet for sorting and filtering",
-        "Avoid using any digital tools",
-        "Store the data in unstructured formats like text files",
-      ],
-      answer:
-        "Structure the data in a database or spreadsheet for sorting and filtering",
-      points: 1.0,
-      type: "1.3",
-      level: "master",
-    },
-    {
-      title: "Question 1",
+      title: "2.1 B1",
       question:
         "Which of the following tools is more appropriate to send an institutional newsletter?",
       options: ["Email", "Snapchat", "WhatsApp", "Instagram"],
@@ -1954,7 +1873,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 2",
+      title: "2.1 B2",
       question:
         "Select the correct matching of the following online platforms with their primary use:",
       options: [
@@ -1969,7 +1888,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 3",
+      title: "2.1 B3",
       question:
         "When communicating through digital technologies, it is essential to be aware of _______ to ensure that your message is received as intended and to avoid misunderstandings.",
       options: ["Context", "Grammar", "Spelling", "Language"],
@@ -1979,7 +1898,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 4",
+      title: "2.1 B4",
       question:
         "You are collaborating on a project with a team that needs quick feedback. Which digital tool is most appropriate?",
       options: [
@@ -1994,7 +1913,7 @@ const env = {
       level: "basic",
     },
     {
-      title: "Question 5",
+      title: "2.1 B5",
       question:
         "You are notifying your tutor about a missed deadline. What is the most appropriate way to communicate this?",
       options: [
@@ -2008,18 +1927,9 @@ const env = {
       type: "2.1",
       level: "basic",
     },
+
     {
-      title: "Question 6",
-      question:
-        "You are discussing a sensitive topic with a colleague. Which method should you choose?",
-      options: ["Group chat", "Video call", "Public forum", "Direct message"],
-      answer: "Video call",
-      points: 1.0,
-      type: "2.1",
-      level: "basic",
-    },
-    {
-      title: "Question 7",
+      title: "2.1 M1",
       question:
         "Imagine you ordered a student’s book online on a website, and you are having trouble tracking the order. Which sentence (input) would be the most effective way of asking a virtual assistant (bot) to look for your latest order?",
       options: [
@@ -2034,7 +1944,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 8",
+      title: "2.1 M2",
       question:
         "When interacting with generative AI platforms (e.g., ChatGPT), what is the most appropriate way of writing the input to obtain accurate results?",
       options: [
@@ -2049,7 +1959,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 9",
+      title: "2.1 M3",
       question:
         "Which of the following is a key factor in choosing the appropriate digital communication tool for an academic presentation?",
       options: [
@@ -2064,7 +1974,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 10",
+      title: "2.1 M4",
       question:
         "You are asked to present a new software feature to a group of colleagues. What is the most appropriate method of communication?",
       options: [
@@ -2079,7 +1989,7 @@ const env = {
       level: "master",
     },
     {
-      title: "Question 11",
+      title: "2.1 M5",
       question:
         "You are the class representative and need to make an announcement that affects all students. Which communication channel is most effective?",
       options: [
@@ -2093,16 +2003,7 @@ const env = {
       type: "2.1",
       level: "master",
     },
-    {
-      title: "Question 12",
-      question:
-        "You and your classmates are developing a project for a curricular unit. Which of the following platforms would help your group keep track of the ongoing tasks?",
-      options: ["Trello", "Discord", "Slack", "Email"],
-      answer: "Trello",
-      points: 1.0,
-      type: "2.1",
-      level: "master",
-    },
+
     {
       title: "2.2 B1",
       question: "Which of the following best defines 'data sharing'?",
@@ -2173,20 +2074,7 @@ const env = {
       type: "2.2",
       level: "basic",
     },
-    {
-      title: "2.2 B6",
-      question: "Which images can you share online?",
-      options: [
-        "Any images from Google Images",
-        "Only copyright free pictures",
-        "Any images from the Internet",
-        "Only copyright free images or authorised by authors.",
-      ],
-      answer: "Only copyright free images or authorised by authors.",
-      points: 1.0,
-      type: "2.2",
-      level: "basic",
-    },
+
     {
       title: "2.2 M1",
       question:
@@ -2263,20 +2151,7 @@ const env = {
       type: "2.2",
       level: "master",
     },
-    {
-      title: "2.2 M6",
-      question: "Which action does not violate intellectual property rights?",
-      options: [
-        "Download and use public domain databases",
-        "Lending passwords to friends to access paid content",
-        "Download software from torrent websites",
-        "Record parts of a TV show and upload it on YouTube.",
-      ],
-      answer: "Download and use public domain databases",
-      points: 1.0,
-      type: "2.2",
-      level: "master",
-    },
+
     {
       title: "2.3 B1",
       question:
@@ -2342,22 +2217,7 @@ const env = {
       type: "2.3",
       level: "basic",
     },
-    {
-      title: "2.3 B6",
-      question:
-        "Select the incorrect matching pair of the digital technology with its civic engagement function:",
-      options: [
-        "Online petitions: Gathering public support for causes",
-        "Social media campaigns: Collecting signatures for a political party",
-        "E-Government services: Accessing government services",
-        "Crowdfunding platforms: Fundraising for community projects",
-      ],
-      answer:
-        "Social media campaigns: Collecting signatures for a political party",
-      points: 1.0,
-      type: "2.3",
-      level: "basic",
-    },
+
     {
       title: "2.3 M1",
       question:
@@ -2430,22 +2290,7 @@ const env = {
       type: "2.3",
       level: "master",
     },
-    {
-      title: "2.3 M6",
-      question:
-        "Select the correct matching of the digital technology with its relevant feature or benefit in promoting participatory citizenship:",
-      options: [
-        "Social media platforms: Offer resources and tools for effective civic engagement to advocate for the most vulnerable.",
-        "Online voting systems: Provide platforms for amplifying marginalised voices.",
-        "Digital advocacy tools: Facilitate collective action and gather community input.",
-        "Civic tech websites: Enable real-time feedback and discussions among citizens.",
-      ],
-      answer:
-        "Civic tech websites: Enable real-time feedback and discussions among citizens.",
-      points: 1.0,
-      type: "2.3",
-      level: "master",
-    },
+
     {
       title: "2.4 B1",
       question:
@@ -2523,22 +2368,7 @@ const env = {
       type: "2.4",
       level: "basic",
     },
-    {
-      title: "2.4 B6",
-      question:
-        "Select the correct matching of the digital tools with its co-creation function:",
-      options: [
-        "Collaborative mapping tools: Gathering diverse input from the public",
-        "Crowdsourcing platforms: Allowing multiple users to edit and update information",
-        "Wikis: Visualising data and ideas spatially",
-        "Online survey tools: Collecting opinions and data from stakeholders",
-      ],
-      answer:
-        "Online survey tools: Collecting opinions and data from stakeholders",
-      points: 1.0,
-      type: "2.4",
-      level: "basic",
-    },
+
     {
       title: "2.4 M1",
       question:
@@ -2609,16 +2439,6 @@ const env = {
         "Data mining",
       ],
       answer: "Citizen science",
-      points: 1.0,
-      type: "2.4",
-      level: "master",
-    },
-    {
-      title: "2.4 M6",
-      question:
-        "Which term defines reusing and changing someone else’s creation or code in the digital world?",
-      options: ["Adaptation", "Remixing", "Apud", "Reusing"],
-      answer: "Remixing",
       points: 1.0,
       type: "2.4",
       level: "master",
@@ -2699,21 +2519,7 @@ const env = {
       type: "2.5",
       level: "basic",
     },
-    {
-      title: "2.5 B6",
-      question:
-        "You need to interrupt your teacher in an online class, what should you do?",
-      options: [
-        "Use the raise hand feature and wait for my turn",
-        "Turn the camera on and raise my hand",
-        "Use the microphone and ask for permission",
-        "Send a private message to the teacher",
-      ],
-      answer: "Use the raise hand feature and wait for my turn",
-      points: 1.0,
-      type: "2.5",
-      level: "basic",
-    },
+
     {
       title: "2.5 M1",
       question:
@@ -2789,22 +2595,7 @@ const env = {
       type: "2.5",
       level: "master",
     },
-    {
-      title: "2.5 M6",
-      question:
-        "You want to schedule a virtual meeting with participants from various time zones, including both younger and older individuals. You notice that some prefer late-night meetings while others prefer mornings. What should you do?",
-      options: [
-        "Schedule the meeting at a time that works for you; others can adjust.",
-        "Propose a few time options that suits you and use a poll to find a consensus on the best time.",
-        "Choose the earliest time that suits your convenience and inform others afterward.",
-        "Have everyone send their availability and then decide based on majority preference.",
-      ],
-      answer:
-        "Have everyone send their availability and then decide based on majority preference.",
-      points: 1.0,
-      type: "2.5",
-      level: "master",
-    },
+
     {
       title: "2.6 B1",
       question:
@@ -2883,22 +2674,7 @@ const env = {
       type: "2.6",
       level: "basic",
     },
-    {
-      title: "2.6 B6",
-      question:
-        "You’re applying for a new job and realise that your social media profiles are public. You have some posts that may not align with your professional image. What should you do?",
-      options: [
-        "Leave everything as it is; the employer shouldn’t judge you based on personal posts.",
-        "Review and update your privacy settings to restrict who can see your posts.",
-        "Delete all posts from the last five years.",
-        "Create a separate professional account for job-related connections.",
-      ],
-      answer:
-        "Review and update your privacy settings to restrict who can see your posts.",
-      points: 1.0,
-      type: "2.6",
-      level: "basic",
-    },
+
     {
       title: "2.6 M1",
       question:
@@ -2975,21 +2751,7 @@ const env = {
       type: "2.6",
       level: "master",
     },
-    {
-      title: "2.6 M6",
-      question:
-        "According to the GDPR, for how long can a given organisation store your personal data?",
-      options: [
-        "For as long as they wish",
-        "For the shortest time possible",
-        "For 3 years",
-        "Until I tell them to remove",
-      ],
-      answer: "For the shortest time possible",
-      points: 1.0,
-      type: "2.6",
-      level: "master",
-    },
+
     {
       title: "3.1 B1",
       question: "What is digitizing?",
@@ -3056,16 +2818,7 @@ const env = {
       type: "3.1",
       level: "basic",
     },
-    {
-      title: "3.1 B6",
-      question:
-        "Which media uses are the most appropriate with social media platforms?",
-      options: ["Instagram", "TikTok", "Facebook", "All"],
-      answer: "All",
-      points: 1.0,
-      type: "3.1",
-      level: "basic",
-    },
+
     {
       title: "3.1 M1",
       question: "What six elements can be combined to create multimedia?",
@@ -3139,22 +2892,7 @@ const env = {
       type: "3.1",
       level: "master",
     },
-    {
-      title: "3.1 M6",
-      question:
-        "In the context of digital content creation, what is the primary function of a content management system (CMS)?",
-      options: [
-        "To track user engagement metrics",
-        "To facilitate the creation, editing, and publishing of digital content",
-        "To analyse competitors",
-        "To create social media posts only",
-      ],
-      answer:
-        "To facilitate the creation, editing, and publishing of digital content",
-      points: 1.0,
-      type: "3.1",
-      level: "master",
-    },
+
     {
       title: "3.2 B1",
       question:
@@ -3210,20 +2948,7 @@ const env = {
       type: "3.2",
       level: "basic",
     },
-    {
-      title: "3.2 B6",
-      question: "Who might make up your content target group?",
-      options: [
-        "a young audience",
-        "people with a conservative approach to life",
-        "elderly people",
-        "all answers are correct",
-      ],
-      answer: "all answers are correct",
-      points: 1.0,
-      type: "3.2",
-      level: "basic",
-    },
+
     {
       title: "3.2 M1",
       question:
@@ -3292,21 +3017,7 @@ const env = {
       type: "3.2",
       level: "master",
     },
-    {
-      title: "3.2 M6",
-      question:
-        "Which of the following best describes a key step in integrating hardware sensors with digital technologies to create a smart home device?",
-      options: [
-        "Ensuring the device has a complex user interface",
-        "Selecting appropriate sensors to collect relevant data",
-        "Limiting connectivity options to reduce costs",
-        "Designing the device to be operated only manually",
-      ],
-      answer: "Selecting appropriate sensors to collect relevant data",
-      points: 1.0,
-      type: "3.2",
-      level: "master",
-    },
+
     {
       title: "3.3 B1",
       question:
@@ -3388,20 +3099,7 @@ const env = {
       type: "3.3",
       level: "basic",
     },
-    {
-      title: "3.3 B6",
-      question: "If you want to use a copyrighted work, what should you do?",
-      options: [
-        "Modify it slightly",
-        "Get permission from the copyright owner",
-        "Use it for free if it’s for personal use",
-        "Cite the source and use it freely",
-      ],
-      answer: "Get permission from the copyright owner",
-      points: 1.0,
-      type: "3.3",
-      level: "basic",
-    },
+
     {
       title: "3.3 M1",
       question:
@@ -3478,23 +3176,7 @@ const env = {
       type: "3.3",
       level: "master",
     },
-    {
-      title: "3.3 M6",
-      question:
-        "I borrowed my friend’s phone and took a Snapchat of her posing with my dog. Who owns the copyright on the pic?",
-      options: [
-        "Your friend, since she’s the one in the picture",
-        "You do, since you took the pic",
-        "You do, because it’s your dog",
-        "Your friend, since it’s on her phone",
-        "Snapchat, since you were using their app to take the pic",
-        "Your dog, because he’s obviously the star of the picture",
-      ],
-      answer: "You do, since you took the pic",
-      points: 1.0,
-      type: "3.3",
-      level: "master",
-    },
+
     {
       title: "3.4 B1",
       question: "What is an algorithm?",
@@ -3566,21 +3248,7 @@ const env = {
       type: "3.4",
       level: "basic",
     },
-    {
-      title: "3.4 B6",
-      question: "How can you solve a problem using a programming language?",
-      options: [
-        "By writing messages",
-        "By creating an algorithm that describes the steps to the solution",
-        "By only writing texts",
-        "By only drawing diagrams",
-      ],
-      answer:
-        "By creating an algorithm that describes the steps to the solution",
-      points: 1.0,
-      type: "3.4",
-      level: "basic",
-    },
+
     {
       title: "3.4 M1",
       question: "Which is the algorithmic structure in proper order:",
@@ -3647,21 +3315,7 @@ const env = {
       type: "3.4",
       level: "master",
     },
-    {
-      title: "3.4 M6",
-      question:
-        "What is the significance of the 'debugging' process in programming?",
-      options: [
-        "Writing code without errors",
-        "Finding and fixing errors",
-        "Only organizing code",
-        "Optimizing code",
-      ],
-      answer: "Finding and fixing errors",
-      points: 1.0,
-      type: "3.4",
-      level: "master",
-    },
+
     {
       title: "4.1 B1",
       question:
@@ -3736,20 +3390,7 @@ const env = {
       type: "4.1",
       level: "basic",
     },
-    // {
-    //     title: "4.1 B7",
-    //     question: "Which of the following is a common risk when using unsecured public Wi-Fi networks?",
-    //     options: [
-    //         "Slower downloads",
-    //         "Unauthorized access to personal data",
-    //         "Network service interruptions",
-    //         "Faster battery drain"
-    //     ],
-    //     answer: "Unauthorized access to personal data",
-    //     points: 1.0,
-    //     type: "4.1",
-    //     level: "basic"
-    // },
+
     {
       title: "4.1 M1",
       question:
@@ -3809,6 +3450,22 @@ const env = {
       type: "4.1",
       level: "master",
     },
+
+    {
+      title: "4.1 M5",
+      question: "What is the basic principle of the AES encryption algorithm for protecting data?",
+      options: [
+        "Turning data into a readable binary code",
+        "Using symmetric keys for encryption and decryption",
+        "Generating random alphanumeric passwords",
+        "Using asymmetric keys for enhanced security",
+      ],
+      answer: "Using symmetric keys for encryption and decryption",
+      points: 1.0,
+      type: "4.1",
+      level: "master",
+    },
+
     {
       title: "4.2 B1",
       question:
@@ -3880,20 +3537,6 @@ const env = {
         "Accepting all permissions without review",
       ],
       answer: "Regularly clearing your browsing history",
-      points: 1.0,
-      type: "4.2",
-      level: "basic",
-    },
-    {
-      title: "4.2 B6",
-      question: "What is a common privacy risk when using social media?",
-      options: [
-        "Receiving too many friend requests",
-        "Sharing too much personal information publicly",
-        "Losing old posts",
-        "Following unwanted accounts",
-      ],
-      answer: "Sharing too much personal information publicly",
       points: 1.0,
       type: "4.2",
       level: "basic",
@@ -3971,21 +3614,7 @@ const env = {
       type: "4.2",
       level: "master",
     },
-    {
-      title: "4.2 M6",
-      question:
-        "Which of the following is a common security feature used by digital services to protect personal data?",
-      options: [
-        "Automatically sharing user data with advertisers",
-        "Two-factor authentication (2FA)",
-        "Publicly displaying all user information",
-        "Allowing users to use weak passwords",
-      ],
-      answer: "Two-factor authentication (2FA)",
-      points: 1.0,
-      type: "4.2",
-      level: "master",
-    },
+
     {
       title: "4.3 B1",
       question:
@@ -4061,21 +3690,7 @@ const env = {
       type: "4.3",
       level: "basic",
     },
-    {
-      title: "4.3 B6",
-      question:
-        "Which of the following digital technologies is particularly effective in promoting social inclusion for people with disabilities?",
-      options: [
-        "Virtual reality",
-        "Voice recognition software",
-        "Artificial intelligence for finance",
-        "Entertainment apps",
-      ],
-      answer: "Voice recognition software",
-      points: 1.0,
-      type: "4.3",
-      level: "basic",
-    },
+
     {
       title: "4.3 M1",
       question:
@@ -4153,22 +3768,7 @@ const env = {
       type: "4.3",
       level: "master",
     },
-    {
-      title: "4.3 M6",
-      question:
-        "How can digital technologies promote social inclusion for vulnerable groups?",
-      options: [
-        "By allowing greater public exposure of their vulnerabilities",
-        "By providing safe platforms for support and communication with others",
-        "By limiting access to social networks for security reasons",
-        "By allowing only professionals to interact with these groups",
-      ],
-      answer:
-        "By providing safe platforms for support and communication with others",
-      points: 1.0,
-      type: "4.3",
-      level: "master",
-    },
+
     {
       title: "4.4 B1",
       question:
@@ -4242,20 +3842,7 @@ const env = {
       type: "4.4",
       level: "basic",
     },
-    {
-      title: "4.4 B6",
-      question: "How can individuals reduce their digital carbon footprint?",
-      options: [
-        "Using multiple devices at once",
-        "Turning off devices when not in use",
-        "Frequently upgrading to the latest models",
-        "Deleting unused apps",
-      ],
-      answer: "Turning off devices when not in use",
-      points: 1.0,
-      type: "4.4",
-      level: "basic",
-    },
+
 
     {
       title: "4.4 M1",
@@ -4333,21 +3920,7 @@ const env = {
       type: "4.4",
       level: "master",
     },
-    {
-      title: "4.4 M6",
-      question:
-        "Which of the following digital practices could lead to higher environmental impact?",
-      options: [
-        "Using cloud storage powered by renewable energy",
-        "Implementing energy-saving features in software",
-        "Keeping large amounts of unused data in online servers",
-        "Running data centers on energy-efficient cooling systems",
-      ],
-      answer: "Keeping large amounts of unused data in online servers",
-      points: 1.0,
-      type: "4.4",
-      level: "master",
-    },
+
 
     {
       title: "5.1 B1",
@@ -4413,20 +3986,7 @@ const env = {
       type: "5.1",
       level: "basic",
     },
-    {
-      title: "5.1 B6",
-      question: "What tool can help diagnose network issues?",
-      options: [
-        "Task Manager",
-        "Device Manager",
-        "Command Prompt",
-        "Control Panel",
-      ],
-      answer: "Command Prompt",
-      points: 1.0,
-      type: "5.1",
-      level: "basic",
-    },
+
     {
       title: "5.1 M1",
       question:
@@ -4497,20 +4057,7 @@ const env = {
       type: "5.1",
       level: "master",
     },
-    {
-      title: "5.1 M6",
-      question:
-        "When encountering a 'blue screen of death' (BSOD) on Windows, what is the most critical first step?",
-      options: [
-        "Note down the error code displayed on the screen",
-        "Perform a clean reinstallation of the operating system",
-        "Replace the hardware immediately",
-      ],
-      answer: "Note down the error code displayed on the screen",
-      points: 1.0,
-      type: "5.1",
-      level: "master",
-    },
+
     {
       title: "5.2 B1",
       question:
@@ -4575,21 +4122,7 @@ const env = {
       type: "5.2",
       level: "basic",
     },
-    {
-      title: "5.2 B6",
-      question:
-        "Which of the following best describes a platform that facilitates non-commercial transactions like donating or gifting?",
-      options: [
-        "E-commerce Website",
-        "Social Media Platform",
-        "Crowdfunding Site",
-        "Online Marketplace",
-      ],
-      answer: "Crowdfunding Site",
-      points: 1.0,
-      type: "5.2",
-      level: "basic",
-    },
+
     {
       title: "5.2 M1",
       question:
@@ -4662,16 +4195,7 @@ const env = {
       type: "5.2",
       level: "master",
     },
-    {
-      title: "5.2 M6",
-      question:
-        "Is the following sentence true or false? “Using high-contrast mode improves accessibility for all users, regardless of visual impairments.”",
-      options: ["True", "False"],
-      answer: "False",
-      points: 1.0,
-      type: "5.2",
-      level: "master",
-    },
+
     {
       title: "5.3 B1",
       question:
@@ -4737,21 +4261,7 @@ const env = {
       type: "5.3",
       level: "basic",
     },
-    {
-      title: "5.3 B6",
-      question:
-        "Which of the following digital tools is most effective for prototyping and validating a new product idea quickly in a startup environment?",
-      options: [
-        "Word Processing Software",
-        "Project Management Tools",
-        "3D Printing Technology",
-        "Social Media Analytics",
-      ],
-      answer: "3D Printing Technology",
-      points: 1.0,
-      type: "5.3",
-      level: "basic",
-    },
+
     {
       title: "5.3 M1",
       question:
@@ -4828,22 +4338,7 @@ const env = {
       type: "5.3",
       level: "master",
     },
-    {
-      title: "5.3 M6",
-      question:
-        "In a collaborative problem-solving environment, which of the following practices is most effective for fostering diverse perspectives and enhancing team creativity?",
-      options: [
-        "Establishing a strict hierarchy in decision-making",
-        "Conducting regular brainstorming sessions without evaluation",
-        "Limiting participation to only subject matter experts",
-        "Encouraging open dialogue and using design thinking methodologies",
-      ],
-      answer:
-        "Encouraging open dialogue and using design thinking methodologies",
-      points: 1.0,
-      type: "5.3",
-      level: "master",
-    },
+
     {
       title: "5.4 B1",
       question:
@@ -4911,16 +4406,7 @@ const env = {
       type: "5.4",
       level: "basic",
     },
-    {
-      title: "5.4 B6",
-      question:
-        "Is the following sentence true or false? Once you’ve identified your digital competence gaps, the next step is to immediately start advanced training programs without considering basic skills.",
-      options: ["True", "False"],
-      answer: "False",
-      points: 1.0,
-      type: "5.4",
-      level: "basic",
-    },
+
     {
       title: "5.4 M1",
       question:
@@ -4992,20 +4478,7 @@ const env = {
       type: "5.4",
       level: "master",
     },
-    {
-      title: "5.4 M6",
-      question: "Which of the following is not true?",
-      options: [
-        "Online courses provide structure for developing specific skills",
-        "Digital mentor provides personalised advice and insights on strengths/weaknesses",
-        "Industry news subscription keeps knowledge fresh with current updates",
-        "Digital mentor keeps knowledge fresh with current updates",
-      ],
-      answer: "Digital mentor keeps knowledge fresh with current updates",
-      points: 1.0,
-      type: "5.4",
-      level: "master",
-    },
+
   ],
 
   LEARNING_MATERIAL: [
@@ -5362,7 +4835,7 @@ const env = {
       level: "basic",
     },
     {
-      text: "Identify  apply  and adapt effective strategies to prevent health risks and protect physical and psychological well-being when using digital technologies. Implement and evaluate appropriate measures to safeguard yourself and others from online dangers while promoting responsible digital engagement. Develop innovative solutions to complex challenges related to digital well-being  safety  and social inclusion  contributing to advancements in this field.",
+      text: "Identify apply and adapt effective strategies to prevent health risks and protect physical and psychological well-being when using digital technologies. Implement and evaluate appropriate measures to safeguard yourself and others from online dangers while promoting responsible digital engagement. Develop innovative solutions to complex challenges related to digital well-being  safety  and social inclusion  contributing to advancements in this field.",
       links: [],
       type: "4.3",
       level: "master",

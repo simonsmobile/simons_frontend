@@ -5,6 +5,8 @@ import env from "../configs/env";
 import BottomNav from "./BottomNav";
 import Header from "./Header";
 import { auth } from "../configs/Firebase";
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
 import {
   FaSignOutAlt,
   FaMoon,
@@ -19,6 +21,7 @@ import {
 
 const ProfileScreen = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [userData, setUserData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [currentUser, setCurrentUser] = useState(auth.currentUser);
@@ -122,7 +125,7 @@ const ProfileScreen = () => {
 
         <div className="mb-8">
           <h3 className="text-xs font-semibold uppercase text-gray-500 px-4 mb-2">
-            General Settings
+            {t('general_settings')}
           </h3>
           <div className="bg-white rounded-lg shadow overflow-hidden border border-gray-200">
             <ul className="divide-y divide-gray-200">
@@ -130,7 +133,7 @@ const ProfileScreen = () => {
                 <li className="px-4 py-3 flex justify-between items-center cursor-pointer">
                   <div className="flex items-center">
                     <FaKey className="w-5 h-5 text-gray-500 mr-3" />
-                    <span className="text-gray-700">Change Password</span>
+                    <span className="text-gray-700">{t('change_password')}</span>
                   </div>
                   <FaChevronRight className="w-4 h-4 text-gray-400" />
                 </li>
@@ -139,7 +142,7 @@ const ProfileScreen = () => {
                 <li className="px-4 py-3 flex justify-between items-center cursor-pointer">
                   <div className="flex items-center">
                     <FaGlobe className="w-5 h-5 text-gray-500 mr-3" />
-                    <span className="text-gray-700">Language</span>
+                    <span className="text-gray-700">{t('language')}</span>
                   </div>
                   <FaChevronRight className="w-4 h-4 text-gray-400" />
                 </li>
@@ -150,7 +153,7 @@ const ProfileScreen = () => {
 
         <div className="mb-8">
           <h3 className="text-xs font-semibold uppercase text-gray-500 px-4 mb-2">
-            Information
+            {t('app_information')}
           </h3>
           <div className="bg-white rounded-lg shadow overflow-hidden border border-gray-200">
             <ul className="divide-y divide-gray-200">
@@ -158,25 +161,27 @@ const ProfileScreen = () => {
                 <li className="px-4 py-3 flex justify-between items-center cursor-pointer">
                   <div className="flex items-center">
                     <FaInfoCircle className="w-5 h-5 text-gray-500 mr-3" />
-                    <span className="text-gray-700">About App</span>
+                    <span className="text-gray-700">{t('about_app')}</span>
                   </div>
                   <FaChevronRight className="w-4 h-4 text-gray-400" />
                 </li>
               </Link>
+              {/*
               <Link to="/terms" className="block hover:bg-gray-50">
                 <li className="px-4 py-3 flex justify-between items-center cursor-pointer">
                   <div className="flex items-center">
                     <FaFileContract className="w-5 h-5 text-gray-500 mr-3" />
-                    <span className="text-gray-700">Terms & Conditions</span>
+                    <span className="text-gray-700">{t('terms')}</span>
                   </div>
                   <FaChevronRight className="w-4 h-4 text-gray-400" />
                 </li>
               </Link>
+                */}
               <Link to="/privacy" className="block hover:bg-gray-50">
                 <li className="px-4 py-3 flex justify-between items-center cursor-pointer">
                   <div className="flex items-center">
                     <FaShieldAlt className="w-5 h-5 text-gray-500 mr-3" />
-                    <span className="text-gray-700">Privacy Policy</span>
+                    <span className="text-gray-700">{t('privacy_policy')}</span>
                   </div>
                   <FaChevronRight className="w-4 h-4 text-gray-400" />
                 </li>
@@ -190,7 +195,7 @@ const ProfileScreen = () => {
           className="w-full py-3 text-sm bg-amber-600 text-white font-medium rounded-md shadow-md hover:bg-amber-500 transition-colors duration-300 flex items-center justify-center"
         >
           <FaSignOutAlt className="mr-2" />
-          Logout
+          {t('logout')}
         </button>
       </div>
 

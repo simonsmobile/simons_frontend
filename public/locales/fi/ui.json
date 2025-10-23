@@ -1,0 +1,468 @@
+{
+  "welcome_message": "Tervetuloa ",
+  "logout": "Kirjaudu ulos",
+  "dashboard": "Työpöytä",
+  "progress_tracker": "Edistyminen",
+  "dashboard_info": "Digitaalisten taitojesi tilanne",
+  "points": "pistettä",
+  "dashboard_greeting": "Oletko valmis nousemaan seuraavalle tasolle? Aloita harjoittelu ja kerää lisää pisteitä!",
+  "view_score": "Näytä pisteet",
+  "competence_overview": "Yleiskatsaus taidoistasi",
+  "training_exercises": "Harjoitukset",
+  "competences": "Taidot",
+  "level_1": "Taso 1",
+  "level_2": "Taso 2",
+  "not_attempted": "Ei aloitettu",
+  "take_sa_again": "Tee itsearvio uudelleen",
+  "complete_other_categories": "Suorita muut aihealueet",
+  "confirm_action": "Vahvista toiminto",
+  "confirm_action_text": "Tämä poistaa kaikki nykyiset testituloksesi ja edistymisesi, nollaa sijoituksesi tulostaulussa ja poistaa avatarisi. Voit aloittaa itsearvioinnin alusta. Tätä toimintoa ei voi peruuttaa. Haluatko varmasti jatkaa?",
+  "cancel": "Peruuta",
+  "confirm_and_reset": "Vahvista ja jatka",
+  "placement": "Sijainti",
+  "Completed": "Valmis",
+  "Locked": "Lukittu",
+  "Resume": "Jatka",
+  "Play": "Aloita",
+  "digital_skills_progress": "Digitaitojen aloittelija",
+  "keep_it_up": "Jatka harjoittelua!",
+  "digital_skills_elite_performer": "Digitaitojen mestari",
+  "incredible_achievement": "Huikea saavutus - 45 000 pistettä! Olet aivan huipputasolla ja nouset digitaalisten innovoijien kärkeen.",
+  "digital_skills_advanced_achiever": "Edistynyt digitaitaja",
+  "excellent_work": "Loistavaa työtä - 30 000 pistettä kasassa! Osoitat edistynyttä osaamista ja valmiutta vaativiin haasteisiin.",
+  "digital_skills_rising_star": "Digitaitojen nouseva tähti",
+  "great_job": "Mahtavaa! Olet saavuttanut 15 000 pistettä ja rakentanut vahvan perustan kohti akateemista ja ammatillista menestystä.",
+  "not_started": "Ei aloitettu",
+  "level": "Taso",
+  "Dashboard": "Työpöytä",
+  "Score": "Pisteet",
+  "Rank": "Sijoitus",
+  "Profile": "Profiili",
+  "competece_area_label": "Osaamisalueet",
+  "points_earned": "pistettä",
+  "total_score": "Kokonaispisteet",
+  "out_of": "",
+  "total_points": "{{total_point, number}} pistettä",
+  "possible_points": "mahdollisesta pisteestä",
+  "out_of_total_score": "{{total_point, number}} mahdollisesta pisteestä",
+  "congratulations": "Onnea!",
+  "congratulations_long": "Onnea, olet saavuttanut {{points, number}} pistettä!",
+  "leaderboard": "Tulostaulu",
+  "your_rank": "Sijoituksesi",
+  "you": "sinä",
+  "rank": "Sija",
+  "avatars": "Avatarit",
+  "unlock_avatars": "Ansaitse hienoja avataria keräämällä pisteitä! Nykyiset pisteet:",
+  "bronze": "Pronssi",
+  "silver": "Hopea",
+  "gold": "Kulta",
+  "diamond": "Timantti",
+  "you_still_need": "Tarvitset vielä {{scoresToGo, number}} pistettä",
+  "avatar_threshold": "{{avatarThreshold, number}} pistettä",
+  "avatar_points": "{{user_score, number}}",
+  "unlock_now": "Avaa nyt",
+  "unlocked": "Avattu",
+  "assessment_status": "Itsearvioinnin tilanne",
+  "your_progress": "Edistymisesi",
+  "progress": "Edistyminen",
+  "total_available_questions": "Saatavilla olevat kysymykset",
+  "remaining_questions": "Jäljellä olevat kysymykset",
+  "completed_questions": "Vastatut kysymykset",
+  "assessment_by_category": "Itsearviointi aihealue kerrallaan",
+  "estimated_time": "Arvioitu suoritusaika",
+  "minutes": "minuuttia",
+  "start_assessment": "Aloita itsearvio nähdäksesi edistymisesi",
+  "you_have_completed": "Olet suorittanut {{completedCount}} / {{totalQuestions}} kysymystä",
+  "continue_full": "Jatka itsearviointia",
+  "start_full": "Aloita täydellinen itsearviointi",
+  "categories_completed": "aihealue suoritettu",
+  "category_progress": "Aihealueiden edistyminen",
+  "go_to_dashboard": "Siirry työpöydälle",
+  "check_progress": "Tarkista edistymisesi tilanne",
+  "full_assessment_explanation": "Täydellinen itsearviointi sisältää kaikki 82 kysymystä ja tarjoaa kattavan arvion digitaalisista taidoistasi.",
+  "select_one_area": "Valitse yksi aihealue",
+  "select_area_explanation": "Valitse haluamasi aihealue tai aloita täysi itsearviointi",
+  "self_assessment": "Itsearviointi",
+  "self_assessment_instruction": "Valitse vaihtoehto, joka kuvastaa parhaiten nykyistä taitotasoasi",
+  "general_settings": "Yleiset asetukset",
+  "app_information": "Tietoja sovelluksesta",
+  "change_password": "Vaihda salasana",
+  "language": "Sovelluksen kieli",
+  "about_app": "Sovelluksen tiedot",
+  "terms": "Käyttöehdot",
+  "privacy_policy": "Tietosuojalauseke",
+  "lang_settings": "Sovelluksen kieli",
+  "select_lang": "Valitse kieli",
+  "select_lang_message": "Valitse listasta haluamasi kieli sovelluksen käyttöliittymälle",
+  "confirm_selection": "Vahvista valinta",
+  "forgot_password": "Salasanan palautus",
+  "forgot_your_password": "Unohditko salasanasi?",
+  "forgot_password_text": "Syötä sähköpostiosoitteesi, niin lähetämme sinulle vahvistuskoodin salasanan palauttamista varten.",
+  "email": "Sähköpostiosoite",
+  "email_instruction": "Syötä sähköpostiosoitteesi",
+  "send_code": "Lähetä vahvistuskoodi",
+  "remember_password": "Muistatko salasanasi?",
+  "back_to_login": "Palaa kirjautumiseen",
+  "code_sent": "Vahvistuskoodi lähetetty osoitteeseen {{email}}",
+  "enter_verification": "Syötä vahvistuskoodi",
+  "verify_code": "Vahvista koodi",
+  "code_was_sent": "Koodi lähetetty",
+  "failed_to_send": "Koodin lähettäminen epäonnistui",
+  "invalid_code": "Virheellinen koodi",
+  "login": "Kirjaudu",
+  "welcome_simons": "Tervetuloa SIMOnS-sovellukseen!",
+  "password": "Salasana",
+  "or": "TAI",
+  "login_with_google": "Kirjaudu Googlen avulla",
+  "dont_have_account": "Eikö sinulla ole tunnusta?",
+  "signup": "Rekisteröidy",
+  "did_not_receive": "Etkö saanut koodia?",
+  "resend_code": "Lähetä koodi uudestaan",
+  "resend_in_seconds": "Lähetä koodi uudestaan {{timer}} s päästä",
+  "app_explanation": "Itsearviointi- ja oppimisympäristö digitaitojen harjoitteluun eurooppalaisen perusdigitaitojen viitekehyksen avulla",
+  "sign_with_google": "Rekisteröidy Google-tunnuksella",
+  "firstname": "Etunimi",
+  "lastname": "Sukunimi",
+  "dob": "Syntymäaika",
+  "gender": "Valitse sukupuoli",
+  "country": "Valitse maa",
+  "university": "Valitse yliopisto (ei pakollinen)",
+  "repeat_password": "Vahvista salasana",
+  "male": "Mies",
+  "female": "Nainen",
+  "other": "Muunsukupuolinen",
+  "already_account": "Onko sinulla jo käyttäjätunnus?",
+  "join_us": "Liity yhteisöön!",
+  "create_account": "Rekisteröi käyttäjätunnus",
+  "study_material": "Oppimateriaalit",
+  "learning_materials": "Oppimateriaalit",
+  "return_to_dashboard": "Palaa etusivulle",
+  "additional_resources": "Lisämateriaalit",
+  "quiz_completed": "Testi on jo suoritettu",
+  "take_the_quiz": "Aloita testi",
+  "Level 2": "Taso 2",
+  "Level 1": "Taso 1",
+  "Level 1-2": "Tasot 1-2",
+  "question": "Kysymys",
+  "of": "/",
+  "base": "Peruspisteet",
+  "time_running_out": "Aika on loppumassa! {{timeRemaining}} sekuntia jäljellä",
+  "time_up": "Aika loppui! Siirrytään seuraavaan kysymykseen...",
+  "back": "Edellinen",
+  "next": "Seuraava",
+  "finish": "Lopeta",
+  "scoring_info": "Pisteytys",
+  "correct_answer": "Oikea vastaus: {{basePoints}} pistettä",
+  "speed_bonus": "Nopeusbonus jopa 50 pisettä",
+  "perfect_run": "Lisäpisteitä kaikista oikeista vastauksista",
+  "processing_results": "Käsitellään tuloksia",
+  "calculating_score": "Lasketaan pisteitä",
+  "quiz_results": "Testin tulokset",
+  "analyzing": "Analysoidaan suoritusta ja aikabonuksia...",
+  "error_processing": "Pisteiden laskennassa tapahtui virhe",
+  "Try again...": "Yritä uudestaan...",
+  "Almost there!": "Melkein perillä!",
+  "Excellent work!": "Erinomaista työtä!",
+  "you_earned": "Ansaitsit +{{totalScore}} pistettä",
+  "score_breakdown": "Pisteiden muodostuminen",
+  "correct_answers": "Oikeita vastauksia",
+  "speed_bonus_earned": "Aikabonus",
+  "perfect_score_bonus": "Täydellisen suorituksen bonus",
+  "what_went_wrong": "Kuinka onnistuit?",
+  "correct": "oikein",
+  "incorrect": "väärin",
+  "missed_opportunity": "Menetetyt mahdollisuudet",
+  "missed_explanation": "Olisit voinut ansaita {{lostOpportunity}} pistettä enemmän oikeilla vastauksilla",
+  "review_material": "Tutustu oppimateriaaliin",
+  "retake_quiz": "Tee testi uudelleen",
+  "You answered 0/3 correctly": "Vastasit oikein 0/3 kysymykseen",
+  "You answered 1/3 correctly": "Vastasit oikein 1/3 kysymykseen",
+  "You answered 2/3 correctly": "Vastasit oikein 2/3 kysymykseen",
+  "You answered 3/3 correctly": "Vastasit oikein 3/3 kysymykseen",
+  "Perfect score!": "Täydellinen suoritus!",
+  "questions_answered": "kysymystä vastattu tällä kerralla",
+  "succesfully_completed_questions": "Suoritit menestyksellä {{completedCount}} kysymystä. ",
+  "complete_others": "Vastaa myös loppuihin kysymyksiin viimeistelläksesi itsearvioinnin.",
+  "starting_level_determined": "Lähtötasosi kaikkiin aihealueisiin on tunnistettu",
+  "category_completed": "Tämän aihealueen itsearviointi on nyt suoritettu!",
+  "full_completed": "Itsearviointi on nyt suoritettu kokonaan!",
+  "processing_selfassessment": "Käsitellään itsearviointia",
+  "please_wait": "Odota hetki niin käsittelemme vastauksiasi.",
+  "results": "Tulokset",
+  "continue_to_other": "Jatka muilla aihealueilla",
+  "next_steps": "Seuraavat askeleet",
+  "self_assessment_complete": "Itsearviointi on valmis. Voit nyt siirtyä työpöydälle tutustumaan lisäharjoituksiin",
+  "continue_to_next": "Jatka seuraavaan aihealueeseen täydentämään itsearviointiasi.",
+  "complete": "Valmis",
+  "privacy": {
+    "intro": "Tämä tietosuojaseloste kuvaa, miten SIMOnS – Student Improvement and Monitoring of Online Skills, Euroopan unionin rahoittama Erasmus+ -hankkeen (2023-1-PT01-KA220-HED-000160187) puitteissa toteutettu opetuksellinen mobiilisovellus, kerää, käyttää ja suojaa henkilötietojasi yleisen tietosuoja-asetuksen (GDPR) mukaisesti. Tiedonkeruun on hyväksynyt Maia-yliopiston eettinen toimikunta (hyväksyntä nro 288/2025). Tätä tietosuojaselostetta voidaan päivittää, ja päivityksistä ilmoitetaan sovelluksen tai sähköpostin välityksellä.",
+    "title.data_collected": "Kerättävät tiedot",
+    "content.data_collected.p1": "Henkilötiedot: sähköposti, syntymäaika, sukupuoli, yliopisto (vapaaehtoinen), salasana tai Google-tilin tiedot (sähköposti ja perustiedot) rekisteröitymistä varten.",
+    "content.data_collected.p2": "Ei-henkilökohtaiset tiedot: itsearviointikyselyn vastaukset (anonyymit), harjoitusten pistemäärät, oppimisvideoiden katselutiedot sekä laitetiedot (esim. IP-osoite, laitetyyppi).",
+    "title.data_usage": "Tietojen käyttö",
+    "content.data_usage.p1": "Käyttäjätilien luominen ja hallinta.",
+    "content.data_usage.p2": "Henkilökohtaisen opetussisällön ja taitopalautteen tarjoaminen.",
+    "content.data_usage.p3": "Käytön analysointi (pseudonymisoituna) sovelluksen kehittämiseksi ja Erasmus+ -hankkeen tulosten tukemiseksi (raportit, tutkimusartikkelit ja levitystapahtumat).",
+    "content.data_usage.p4": "GDPR-vaatimusten noudattaminen.",
+    "title.data_sharing": "Tietojen jakaminen",
+    "intro.data_sharing": "Kerättyjä tietoja ei myydä tai vuokrata kaupallisiin tarkoituksiin. Tietoja voidaan jakaa:",
+    "content.data_sharing.p1": "Erasmus+ -hankekumppaneille (anonymisoituna) tutkimusta ja raportointia varten.",
+    "content.data_sharing.p2": "Palveluntarjoajille (esim. pilvipalvelut) ja kolmansille osapuolille (esim. Google-kirjautuminen) tiukan luottamuksellisuuden alaisena ja ulkoisia tietosuojakäytäntöjä noudattaen. Lisätietoa kaikista käytetyistä palveluista saa ottamalla yhteyttä tiimiin.",
+    "title.data_security": "Tietoturva",
+    "content.data_security.p1": "Tiedot salataan ja niiden käyttö edellyttää tiimin jäseniltä monivaiheista tunnistautumista tietosuojan ja turvallisuuden varmistamiseksi, vaikka mikään järjestelmä ei ole täysin turvallinen.",
+    "title.data_retention": "Tietojen säilytys",
+    "content.data_retention.p1": "Tiedot tallennetaan hankekumppaneiden palvelimille sekä Maiêutican palvelimille (Microsoft OneDrive). Tietoja säilytetään Erasmus+ -hankkeen keston ajan ja enintään 3 vuotta arviointia varten, ellei poistamista pyydetä.",
+    "title.user_rights": "Käyttäjän oikeudet",
+    "intro.user_rights": "GDPR:n mukaisesti käyttäjillä on oikeus:",
+    "content.user_rights.p1": "Saada pääsy tietoihin, oikaista tai poistaa niitä.",
+    "content.user_rights.p2": "Rajoittaa tietojen käsittelyä tai vastustaa sitä.",
+    "content.user_rights.p3": "Pyytää tietojen siirrettävyyttä.",
+    "title_contact": "Yhteystiedot",
+    "contact_us": "Ota yhteyttä oikeuksiesi käyttämiseksi.",
+    "approval": "Käyttämällä SIMOnS-sovellusta hyväksyt tämän tietosuojaselosteen."
+  },
+  "back_to_profile": "Takaisin profiiliin",
+  "about_simons_app": "Tietoja SIMOnS-sovelluksesta",
+  "about_the_app": "Tietoa sovelluksesta",
+  "about.p1": "SIMOnS (Student Improvement and Monitoring of Online Skills) on itsearviointityökalu, joka auttaa käyttäjiä arvioimaan ja kehittämään digitaalisia taitojaan Euroopan kansalaisille suunnatun digitaalisten taitojen viitekehyksen (DigComp) pohjalta.",
+  "about.p2": "Itsearviointikyselyiden ja kohdennettujen oppimateriaalien avulla SIMOnS tukee käyttäjiä vahvuuksien ja kehityskohteiden tunnistamisessa digitaalisessa maailmassa.",
+  "competence_areas": {
+    "1": {
+      "name": "Informaatio- ja datalukutaito",
+      "description": "Tietojen selaaminen, haku, suodatus, arviointi ja hallinta"
+    },
+    "2": {
+      "name": "Viestintä ja yhteistyö",
+      "description": "Vuorovaikutus, jakaminen ja yhteistyö digitaalisten teknologioiden avulla"
+    },
+    "3": {
+      "name": "Digitaalinen sisällöntuotanto",
+      "description": "Digitaalisen sisällön kehittäminen, integrointi ja uudelleenmuokkaus"
+    },
+    "4": {
+      "name": "Turvallisuus",
+      "description": "Laitteiden, henkilötietojen, terveyden ja ympäristön suojelu"
+    },
+    "5": {
+      "name": "Ongelmanratkaisu",
+      "description": "Teknisten ongelmien ratkaiseminen ja tarpeiden tunnistaminen"
+    }
+  },
+  "competence_details": {
+    "1_1": {
+      "title": "Tietojen, informaation ja digitaalisen sisällön selaaminen, hakeminen ja suodattaminen"
+    },
+    "1_2": {
+      "title": "Tietojen, informaation ja digitaalisen sisällön arviointi"
+    },
+    "1_3": {
+      "title": "Tietojen, informaation ja digitaalisen sisällön hallinta"
+    },
+    "2_1": {
+      "title": "Vuorovaikutus digitaalisten teknologioiden avulla"
+    },
+    "2_2": {
+      "title": "Tietojen ja sisällön jakaminen digitaalisten teknologioiden avulla"
+    },
+    "2_3": {
+      "title": "Osallistuminen kansalaisena digitaalisten teknologioiden avulla"
+    },
+    "2_4": {
+      "title": "Yhteistyö digitaalisten teknologioiden avulla"
+    },
+    "2_5": {
+      "title": "Netiketti"
+    },
+    "2_6": {
+      "title": "Digitaalisen identiteetin hallinta"
+    },
+    "3_1": {
+      "title": "Digitaalisen sisällön kehittäminen"
+    },
+    "3_2": {
+      "title": "Digitaalisen sisällön integrointi ja muokkaaminen"
+    },
+    "3_3": {
+      "title": "Tekijänoikeuksien ja lisenssien kunnioittaminen"
+    },
+    "3_4": {
+      "title": "Ohjelmointi"
+    },
+    "4_1": {
+      "title": "Laitteiden ja digitaalisen sisällön suojaaminen"
+    },
+    "4_2": {
+      "title": "Henkilötietojen ja yksityisyyden suojaaminen"
+    },
+    "4_3": {
+      "title": "Digitaalisen hyvinvoinnin suojaaminen"
+    },
+    "4_4": {
+      "title": "Ympäristön suojeleminen"
+    },
+    "5_1": {
+      "title": "Teknisten ongelmien ratkaiseminen"
+    },
+    "5_2": {
+      "title": "Oman tarpeen ja teknologisten ratkaisujen tunnistaminen"
+    },
+    "5_3": {
+      "title": "Digitaalisten taitojen luova käyttö"
+    },
+    "5_4": {
+      "title": "Digitaalisten osaamisen puutteiden tunnistaminen"
+    }
+  },
+  "competence_details_short": {
+    "1_1": {
+      "title": "Tiedonhaku ja selaaminen"
+    },
+    "1_2": {
+      "title": "Tiedon arviointi"
+    },
+    "1_3": {
+      "title": "Tiedon hallinta"
+    },
+    "2_1": {
+      "title": "Vuorovaikutus digitaalisten teknologioiden avulla"
+    },
+    "2_2": {
+      "title": "Tiedon jakaminen"
+    },
+    "2_3": {
+      "title": "Kansalaisosallistuminen"
+    },
+    "2_4": {
+      "title": "Yhteistyö digitaalisten teknologioiden avulla"
+    },
+    "2_5": {
+      "title": "Netiketti"
+    },
+    "2_6": {
+      "title": "Digitaalisen identiteetin hallinta"
+    },
+    "3_1": {
+      "title": "Digitaalisen sisällön tuottaminen"
+    },
+    "3_2": {
+      "title": "Digitaalisen sisällön yhdistäminen ja uudelleentyöstö"
+    },
+    "3_3": {
+      "title": "Tekijänoikeus ja lisenssit"
+    },
+    "3_4": {
+      "title": "Ohjelmointi"
+    },
+    "4_1": {
+      "title": "Laitteiden suojaaminen"
+    },
+    "4_2": {
+      "title": "Henkilötietojen ja yksityisyyden suojaaminen"
+    },
+    "4_3": {
+      "title": "Terveyden ja hyvinvoinnin suojaaminen"
+    },
+    "4_4": {
+      "title": "Ympäristön suojeleminen"
+    },
+    "5_1": {
+      "title": "Teknisten ongelmien ratkaiseminen"
+    },
+    "5_2": {
+      "title": "Tarpeiden ja teknologisten ratkaisujen tunnistaminen"
+    },
+    "5_3": {
+      "title": "Digitaalisten teknologioiden luova käyttö"
+    },
+    "5_4": {
+      "title": "Digiosaamisen puutteiden tunnistaminen"
+    }
+  },
+  "learning_material": {
+    "1.1": {
+      "basic": "Opi tunnistamaan tiedontarpeet ja hakemaan tehokkaasti akateemisista tietokannoista ja hakukoneista, käyttämällä Boolen operaattoreita ja täsmentämällä hakustrategioita relevantin digitaalisen sisällön löytämiseksi.",
+      "master": "Hallitse edistyneet hakutekniikat akateemisissa ja erikoistuneissa tietokannoissa. Hyödynnä tutkimusarkistoja, käytä metadatan suodatusta ja optimoi haut korkealaatuisen, vertaisarvioidun sisällön löytämiseksi."
+    },
+    "1.2": {
+      "basic": "Kehitä kriittisen ajattelun taitoja tiedon luotettavuuden arvioimiseksi. Opi tunnistamaan luotettavat lähteet, tarkistamaan julkaisupäivämäärät, havaitsemaan mahdollisia ennakkoasenteita ja vertailemaan menetelmiä tulkinnan tarkkuuden varmistamiseksi.",
+      "master": "Sovella syvällisiä arviointimenetelmiä, kuten lähteiden ristiin tarkastelua, tutkimusmenetelmien analysointia ja vertaisarvioidun tiedon priorisointia. Vahvista tutkimuksen luotettavuutta käyttämällä metadataa ja systemaattista tiedostojen organisointia."
+    },
+    "1.3": {
+      "basic": "Opi organisoimaan digitaaliset tiedostot tehokkaasti jäsennellyillä kansioilla ja selkeillä nimeämiskäytännöillä. Hyödynnä pilvitallennusta tiedon saavutettavuuden parantamiseksi ja käytä datavisualisointityökaluja ymmärryksen lisäämiseksi sekä tutkimuksen vaikuttavuuden vahvistamiseksi.",
+      "master": "Ota käyttöön hyviä käytäntöjä digitaalisen datan hallintaan, kuten säännölliset varmuuskopiot, metadatan merkintä ja toistuvien tehtävien automatisointi. Hyödynnä tietokantoja ja edistyneitä työkaluja tutkimuksen sujuvaan organisointiin."
+    },
+    "2.1": {
+      "basic": "Opi käyttämään erilaisia digitaalisia teknologioita vuorovaikutukseen vertaisesi tai opettajiesi kanssa institutionaalisissa tai yksityisissä ympäristöissä sekä valitsemaan tilanteeseen parhaiten sopivat viestintävälineet.",
+      "master": "Opi vuorovaikutusta tekoälypohjaisten työkalujen kanssa ja valitsemaan sopiva viestintäalusta erilaisiin tilanteisiin, erityisesti yhteisölliseen työskentelyyn."
+    },
+    "2.2": {
+      "basic": "Opi käyttämään digitaalisia välineitä ja teknologioita tiedon, informaation ja digitaalisen sisällön jakamiseen muiden kanssa. Ymmärtämällä jakamisen säännöt ja asianmukaisen viittauksen voit viedä yhteistyön uudelle tasolle.",
+      "master": "Opi jakamaan tietoa ja dataa verkossa asianmukaisesti käyttämällä oikeita työkaluja ja ymmärtämällä tekijänoikeudet ja erilaiset lisenssityypit."
+    },
+    "2.3": {
+      "basic": "Opi osallistumaan yhteiskuntaan hyödyntämällä julkisia ja yksityisiä digitaalisia palveluja. Etsi mahdollisuuksia itseohjautuvuuteen ja osallistuvaan kansalaisuuteen digitaalisten teknologioiden avulla.",
+      "master": "Opi toimimaan aktiivisena kansalaisena digitaalisessa maailmassa ymmärtämällä esimerkiksi lohkoketju- ja tekoälyteknologioita. Hyödynnä kyselyitä näkökulmien keräämiseen ja yhteisöjen aktivoimiseen sosiaalisessa mediassa."
+    },
+    "2.4": {
+      "basic": "Opi käyttämään digitaalisia välineitä ja teknologioita yhteistoiminnalliseen työskentelyyn sekä tiedon, aineistojen ja osaamisen yhteiskehittämiseen.",
+      "master": "Opi tehostamaan ryhmätyötä verkkoyhteistyön avulla ja seuraamaan muutoksia jaettuihin tiedostoihin. Kehitä luovuuttasi yhdistelemällä muiden sisältöjä ja toimi osallistuessasi tiedon yhteisluomiseen."
+    },
+    "2.5": {
+      "basic": "Ole tietoinen käyttäytymisnormeista ja vuorovaikutustavoista digitaalisissa ympäristöissä.",
+      "master": "Opi mukauttamaan viestintästrategioita kohdeyleisön mukaan sekä olemaan inklusiivinen ja kunnioittava kulttuurista ja sukupolvien moninaisuudesta digitaalisissa ympäristöissä."
+    },
+    "2.6": {
+      "basic": "Opi luomaan ja hallitsemaan useita digitaalisia identiteettejä suojaamalla mainettasi ja huomioimalla sosiaalisen median julkaisujesi vaikutukset.",
+      "master": "Opi suojaamaan digitaalisia identiteettejä turvallisilla tunnistautumisilla ja hallitsemaan tuottamaasi dataa eri alustoilla, välineissä ja palveluissa."
+    },
+    "3.1": {
+      "basic": "Opi luomaan, muokkaamaan ja parantamaan digitaalista sisältöä yhdistämällä erilaisia mediamuotoja, kuten tekstiä, kuvia ja ääntä, käyttäen digitaalisia työkaluja.",
+      "master": "Opi suunnittelemaan, kehittämään ja optimoimaan monimutkaista digitaalista sisältöä yhdistämällä multimediaa, interaktiivisia elementtejä ja datavisualisointityökaluja."
+    },
+    "3.2": {
+      "basic": "Valitse tapoja muokata, parantaa ja yhdistellä yksinkertaista tietoa uuden sisällön luomiseksi.",
+      "master": "Analysoi kriittisesti, muokkaa ja uudista digitaalista sisältöä yhdistämällä monimuotoisia mediakeinoja, edistyneitä editointitekniikoita ja dataperustaisia elementtejä. Sovella luovia ja teknisiä taitoja digitaalisen materiaalin parantamiseksi varmistaen samalla alkuperäisyys, saavutettavuus ja eettinen uudelleenkäyttö."
+    },
+    "3.3": {
+      "basic": "Tunnista ja ymmärrä tekijänoikeuksia ja lisenssejä koskevat säännöt, jotka liittyvät dataan, digitaaliseen tietoon ja sisältöön. Opi käyttämään ja jakamaan digitaalista sisältöä laillisesti tarkistamalla käyttöehdot ja lisensointimallit, kuten Creative Commons -lisenssit. Osaa tunnistaa tekijänoikeuksien rajoitukset ja poikkeukset.",
+      "master": "Valitse sopivimmat tekijänoikeus- ja lisenssisäännöt datalle, digitaaliselle tiedolle ja sisällölle. Opi laatimaan asianmukainen strategia sisällön jakamiseksi ja oman luovan työn suojaamiseksi."
+    },
+    "3.4": {
+      "basic": "Kirjoita yksinkertaisia ohjeita tietokonejärjestelmälle ratkaistaksesi annetun ongelman tai suorittaaksesi tietyn tehtävän.",
+      "master": "Opi kehittämään ratkaisuja monimutkaisiin ongelmiin, joissa on useita vuorovaikuttavia tekijöitä, suunnittelemalla ja luomalla ohjeita tietokonejärjestelmälle tehtävien tehokasta suorittamista varten."
+    },
+    "4.1": {
+      "basic": "Tunnista ja sovella perustavanlaatuisia strategioita laitteiden ja digitaalisen sisällön suojaamiseksi, arvioi yleisiä verkon riskejä ja uhkia. Toteuta standarditurvatoimia digitaalisen turvallisuuden varmistamiseksi ja noudata hyviä käytäntöjä. Arvioi digitaalisen tiedon luotettavuutta ja pidä kiinni yksityisyydensuojan periaatteista.",
+      "master": "Valitse sopivat suojaustoimet laitteille ja digitaaliselle sisällölle arvioimalla verkon uhkia. Kehitä ratkaisuja monimutkaisiin kyberturvallisuuteen liittyviin haasteisiin toteuttamalla turvatoimia, riskienhallintaa ja yksityisyyden suojaa. Hallitse digitaalista turvallisuutta ja ohjaa muita laitteiden ja datan suojaamisessa."
+    },
+    "4.2": {
+      "basic": "Tunnista ja sovella perustapoja henkilötietojen ja yksityisyyden suojaamiseen digitaalisissa ympäristöissä. Varmista vastuullinen henkilötietojen jakaminen ja minimoi riskit itsellesi ja muille. Ymmärrä verkkopalveluiden tietosuojakäytännöt ja henkilötietojen käyttöehdot.",
+      "master": "Sovella ja arvioi menetelmiä henkilötietojen ja yksityisyyden suojaamiseksi digitaalisissa ympäristöissä. Varmista vastuullinen tiedon jakaminen minimoiden riskit. Analysoi ja arvioi tietosuojakäytäntöjä ymmärtääksesi, miten henkilötietoja käytetään, ja kehitä ratkaisuja tietosuojan ja tietoturvan haasteisiin. Ehdota innovatiivisia lähestymistapoja ja ohjaa muita digitaalisen yksityisyyden suojaamisessa."
+    },
+    "4.3": {
+      "basic": "Tunnista ja sovella perusstrategioita terveysriskien ehkäisemiseksi ja fyysisen sekä psyykkisen hyvinvoinnin suojaamiseksi digitaalisia teknologioita käytettäessä. Valitse sopivat keinot suojataksesi itsesi ja muut mahdollisilta vaaroilta digitaalisissa ympäristöissä. Tutustu digitaalisiin ratkaisuihin, jotka edistävät sosiaalista hyvinvointia ja osallisuutta.",
+      "master": "Tunnista, sovella ja mukauta tehokkaita strategioita terveysriskien ehkäisemiseksi ja hyvinvoinnin suojaamiseksi digitaalisia teknologioita käytettäessä. Toteuta ja arvioi sopivia keinoja suojellaksesi itseäsi ja muita verkon vaaroista samalla kun edistät vastuullista digitaalista toimintaa. Kehitä innovatiivisia ratkaisuja digitaalisen hyvinvoinnin, turvallisuuden ja osallisuuden edistämiseksi."
+    },
+    "4.4": {
+      "basic": "Tunnista digitaalisten teknologioiden ja niiden käytön perusympäristövaikutukset. Kuvaa arkipäiväisiä tapoja, joilla digiteknologiat vaikuttavat ympäristöön. Pohdi strategioita digitaalisten teknologioiden käytön ympäristövaikutusten vähentämiseksi.",
+      "master": "Tunnista ja toteuta tehokkaita strategioita digitaalisten teknologioiden ympäristövaikutusten vähentämiseksi. Kehitä ja arvioi innovatiivisia ratkaisuja digitaalisen teknologian kestävään käyttöön. Edistä kestävää toimintaa soveltamalla tietoa, ohjaamalla muita ympäristönsuojelussa ja tuomalla uusia ideoita alalle."
+    },
+    "5.1": {
+      "basic": "Opi tunnistamaan ja ratkaisemaan yksinkertaisia teknisiä ongelmia laitteita käytettäessä ja digitaalisissa ympäristöissä toimittaessa.",
+      "master": "Opi arvioimaan teknisiä ongelmia ja kehittämään ratkaisuja monimutkaisten teknisten ongelmien ratkaisemiseksi."
+    },
+    "5.2": {
+      "basic": "Opi arvioimaan tarpeita sekä tunnistamaan, arvioimaan, valitsemaan ja käyttämään digitaalisia välineitä ja menetelmiä ongelmien ratkaisemiseksi. Mukauta digitaalisia ympäristöjä henkilökohtaisiin tai institutionaalisiin tarpeisiin kiinnittäen huomiota saavutettavuuteen.",
+      "master": "Opi arvioimaan tarpeita, valitsemaan tarkoituksenmukaiset digitaaliset työkalut ja kehittämään teknologisia ratkaisuja näiden tarpeiden täyttämiseksi."
+    },
+    "5.3": {
+      "basic": "Opi käyttämään digitaalisia välineitä ja teknologioita tiedon luomiseen ja prosessien sekä tuotteiden innovointiin.",
+      "master": "Osallistu yhteisöihin ja vertaisryhmiin kognitiiviseen prosessointiin ymmärtääksesi ja ratkaistaksesi käsitteellisiä ongelmia digitaalisissa ympäristöissä."
+    },
+    "5.4": {
+      "basic": "Ymmärrä, missä omia digitaalisia taitoja tulee parantaa tai päivittää. Opi tukemaan muita heidän digitaalisen osaamisensa kehittämisessä.",
+      "master": "Opi etsimään mahdollisuuksia itsekehitykseen ja pysymään ajan tasalla digitaalisen kehityksen suhteen. Hyödynnä tietojasi edistääksesi omaa akateemista etenemistäsi ja ohjataksesi muita digitaalisten osaamiskapeikkojen tunnistamisessa."
+    }
+  },
+  "selectLabel": "Valitse kieli"
+}

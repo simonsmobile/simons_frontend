@@ -1,0 +1,742 @@
+{
+  "assessment": {
+    "Question 1": {
+      "question": "So che diversi motori di ricerca possono dare risultati diversi, perché sono influenzati da fattori commerciali.",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 2": {
+      "question": "So quali parole usare per trovare rapidamente ciò di cui ho bisogno (es. per cercare online o all’interno di un documento).",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 3": {
+      "question": "Quando uso un motore di ricerca, so come sfruttarne le funzionalità avanzate.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo con sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 4": {
+      "question": "So come ritrovare un sito web che ho visitato in precedenza.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo con sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 5": {
+      "question": "So come distinguere i contenuti promozionali dagli altri contenuti che trovo o ricevo online (es. riconoscere un annuncio sui social media o nei motori di ricerca).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo con sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 6": {
+      "question": "So come identificare qual è lo scopo di una fonte di informazione online (es. informare, influenzare, intrattenere o vendere).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo con sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 7": {
+      "question": "Verifico criticamente se le informazioni che trovo online sono affidabili.",
+      "options": [
+        "Per nulla",
+        "Poco / molto poco",
+        "Abbastanza",
+        "Molto"
+      ]
+    },
+    "Question 8": {
+      "question": "So che alcune informazioni su Internet sono false (es. le fake news).",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 9": {
+      "question": "Conosco diversi supporti di archiviazione dei dati (es. disco rigido interno o esterno, memoria USB, pen drive, memory card).",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 10": {
+      "question": "So come organizzare i contenuti digitali (es. documenti, immagini, video...) usando cartelle o tag per ritrovarli in seguito.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo in sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 11": {
+      "question": "So come copiare e spostare i file (es. documenti, immagini, video...) tra le cartelle del computer, tra diversi dispositivi o sul cloud.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo in sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 12": {
+      "question": "So come gestire e analizzare dei dati usando dei software (es. ordinare, filtrare, compiendo calcoli...).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo in sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 13": {
+      "question": "So come inviare, rispondere e inoltrare e-mail.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo in sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 14": {
+      "question": "So che molti servizi di comunicazione e social media sono gratuiti perché finanziati dalla pubblicità.",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 15": {
+      "question": "So come usare funzionalità avanzate di videoconferenza (es. moderare, registrare audio e video...).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo con sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 16": {
+      "question": "So quali strumenti e servizi di comunicazione (es. telefono, e-mail, videoconferenza, messaggi) usare in diverse circostanze.",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 17": {
+      "question": "Sono disposto a condividere contenuti digitali che ritengo interessanti e utili per altri.",
+      "options": [
+        "Per nulla",
+        "Poco / molto poco",
+        "Abbastanza",
+        "Molto"
+      ]
+    },
+    "Question 18": {
+      "question": "So come usare servizi di archiviazione online (cloud) (es. Google Drive, DropBox, OneDrive) per condividere i miei file.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo con sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 19": {
+      "question": "So come cambiare con chi condivido i contenuti (es. amici, amici di amici, tutti).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo inn sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 20": {
+      "question": "So come citare la fonte di documenti trovati online (es. autore o indirizzo web).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo con sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 21": {
+      "question": "So come candidarmi per un lavoro usando una piattaforma digitale (es. compilare un modulo, caricare CV e foto).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo con sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 22": {
+      "question": "So che molti servizi pubblici sono disponibili online (es. prenotare una visita medica, inviare dichiarazioni fiscali, richiedere certificati di nascita, matrimonio, residenza).",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 23": {
+      "question": "So come pagare beni e servizi che acquisto online (es. bonifico, carta di credito/debito, altri sistemi di pagamento online).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo in sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 24": {
+      "question": "Mi interessa dibattere online questioni sociali o politiche (es. forum online, siti di news, Facebook, Twitter).",
+      "options": [
+        "Per nulla",
+        "Poco / molto poco",
+        "Sì, abbastanza",
+        "Molto"
+      ]
+    },
+    "Question 25": {
+      "question": "Comprendo i benefici della collaborazione a distanza / da remoto (es. minor tempo di spostamento).",
+      "options": [
+        "Per nulla",
+        "Poco / molto poco",
+        "Sì, abbastanza",
+        "Molto"
+      ]
+    },
+    "Question 26": {
+      "question": "So come modificare un documento condiviso online.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo in sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 27": {
+      "question": "So come invitare altri e assegnare i permessi appropriati per collaborare su un documento condiviso.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo in sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 28": {
+      "question": "So che dovrei chiedere il permesso prima di pubblicare o condividere foto di altre persone.",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 29": {
+      "question": "So riconoscere messaggi e comportamenti online che attaccano gruppi o individui (es. discorsi d’odio).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo con sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 30": {
+      "question": "So cosa fare se qualcuno fa qualcosa di scorretto online (es. commento offensivo, minacce).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo con sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 31": {
+      "question": "So come comportarmi online a seconda della situazione (es. formale vs informale).",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 32": {
+      "question": "So che la mia identità digitale include tutto ciò che mi identifica negli ambienti online (es. username, like e post sui social, firme digitali).",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 33": {
+      "question": "So come creare un profilo negli ambienti digitali a scopi personali o professionali.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo con sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 34": {
+      "question": "So che l’Unione Europea ha introdotto il Diritto all’Oblio (ossia far rimuovere informazioni personali dal web).",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 35": {
+      "question": "So come configurare il browser per prevenire o limitare i cookie.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo in sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 36": {
+      "question": "So come creare e modificare file di testo digitali (es. Word, OpenDocument, Google Docs).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo in sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 37": {
+      "question": "So esprimermi creando contenuti digitali online (es. post su blog, video su YouTube).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso sicuramente farlo e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 38": {
+      "question": "So come realizzare una presentazione multimediale con testo, immagini, audio e video.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo con sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 39": {
+      "question": "Per esprimermi, scelgo attentamente il tipo di media digitale in base al pubblico a cui mi voglio rivolgere e all’obiettivo (es. usare i social media per promuovere un progetto).",
+      "options": [
+        "Per nulla",
+        "Poco / molto poco",
+        "Sì, abbastanza",
+        "Molto"
+      ]
+    },
+    "Question 40": {
+      "question": "Desidero creare nuovi contenuti digitali mescolando e modificando risorse digitali esistenti (es. presentazione con foto e musica trovate online).",
+      "options": [
+        "Per nulla",
+        "Poco / molto poco",
+        "Sì, abbastanza",
+        "Molto"
+      ]
+    },
+    "Question 41": {
+      "question": "So che alcuni contenuti digitali possono essere riutilizzati e modificati legalmente (es. pubblico dominio o con licenze Creative Commons).",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 42": {
+      "question": "So come integrare o apportare cambiamenti a contenuti digitali creati da altri (es. inserire un testo in un’immagine, modificare una wiki).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "So farlo e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 43": {
+      "question": "So come creare qualcosa di nuovo mescolando diversi tipi di contenuto (es. testo e immagini).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "So farlo e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 44": {
+      "question": "Sono attento/a a seguire le normative sul diritto d’autore (copyright) e sulle licenze dei contenuti digitali che trovo.",
+      "options": [
+        "Per nulla",
+        "Poco / molto poco",
+        "Sì, abbastanza",
+        "Molto"
+      ]
+    },
+    "Question 45": {
+      "question": "So che scaricare o condividere contenuti digitali (es. musica, software, film) potrebbe avere conseguenze etiche o legali.",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 46": {
+      "question": "Riesco a individuare quando contenuti digitali sono messi a disposizione illegalmente (es. software, film, musica, libri, TV).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "So farlo e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 47": {
+      "question": "So quali diversi tipi di licenze utilizzare per l’uso dei contenuti digitali (es. licenze Creative Commons).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo con sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 48": {
+      "question": "Mi interessa capire come un compito può essere scomposto in passaggi in modo da poter essere automatizzato, ad esempio con un software o un robot.",
+      "options": [
+        "Per nulla",
+        "Poco / molto poco",
+        "Sì, abbastanza",
+        "Molto"
+      ]
+    },
+    "Question 49": {
+      "question": "So che i linguaggi di programmazione (es. Python, Visual Basic, Java) servono a dare istruzioni a un dispositivo digitale per eseguire un compito.",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 50": {
+      "question": "So scrivere script, macro e applicazioni semplici per automatizzare l’esecuzione di un compito.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso sicuramente farlo e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 51": {
+      "question": "So che possono esistere diverse procedure e soluzioni algoritmiche per completare un compito computazionale specifico (es. ordinamento e ricerca).",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 52": {
+      "question": "Comprendo i benefici ma anche i rischi per la sicurezza nell’uso di dispositivi o sistemi connessi a Internet (es. smartwatch, dispositivi smart home).",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 53": {
+      "question": "So dell’importanza di mantenere aggiornati il sistema operativo, l'antivirus e gli altri software per prevenire problemi di sicurezza.",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 54": {
+      "question": "So come configurare le impostazioni di un firewall su diversi dispositivi.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso sicuramente farlo e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 55": {
+      "question": "So come recuperare informazioni digitali e altri contenuti (es. foto, contatti) da un backup.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso sicuramente farlo e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 56": {
+      "question": "So come limitare o rifiutare l’accesso alla mia posizione geografica.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo con sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 57": {
+      "question": "So come identificare e-mail sospette che cercano di ottenere i miei dati personali.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo con sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 58": {
+      "question": "So come verificare che il sito web dove mi viene richiesto di inserire dati personali sia sicuro (es. siti https, logo o certificato di sicurezza).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo in sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 59": {
+      "question": "So quali dati personali non dovrei condividere o mostrare online (es. sui social media).",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 60": {
+      "question": "Faccio attenzione a controllare le politiche sulla privacy dei servizi digitali che uso.",
+      "options": [
+        "Per nulla",
+        "Poco / molto poco",
+        "Sì, abbastanza",
+        "Molto"
+      ]
+    },
+    "Question 61": {
+      "question": "So che dovrei gestire il tempo che trascorro sui miei dispositivi digitali.",
+      "options": [
+        "Per nulla",
+        "Poco / molto poco",
+        "Sì, abbastanza",
+        "Molto"
+      ]
+    },
+    "Question 62": {
+      "question": "So come proteggermi da incontri e materiali indesiderati e dannosi online (es. spam, email di phishing).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso farlo con sicurezza e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 63": {
+      "question": "Conosco strumenti digitali che possono aiutare persone anziane o con bisogni speciali.",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 64": {
+      "question": "Cerco modi in cui le tecnologie digitali possano aiutarmi a vivere e consumare in modo più ecologico.",
+      "options": [
+        "Per nulla",
+        "Poco / molto poco",
+        "Sì, abbastanza",
+        "Molto"
+      ]
+    },
+    "Question 65": {
+      "question": "So che i vecchi dispositivi digitali e materiali di consumo (es. computer, smartphone, batterie) devono essere smaltiti correttamente per ridurre l’impatto ambientale.",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 66": {
+      "question": "So come ridurre il consumo energetico dei miei dispositivi (es. cambiare impostazioni, chiudere app, spegnere il Wi-Fi).",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 67": {
+      "question": "Conosco comportamenti \"green\" da seguire quando acquisto o uso dispositivi digitali (es. acquistare dispositivi con Eco-label, evitare di stampare inutilmente, non lasciare caricabatterie collegati senza il dispositivo).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso sicuramente farlo e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 68": {
+      "question": "Quando incontro un problema tecnico, cerco passo passo di identificare il problema.",
+      "options": [
+        "Per nulla",
+        "Poco / molto poco",
+        "Sì, abbastanza",
+        "Molto spesso"
+      ]
+    },
+    "Question 69": {
+      "question": "Conosco alcune ragioni per cui un dispositivo digitale può non connettersi a Internet (es. password Wi-Fi sbagliata, modalità aereo attiva).",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 70": {
+      "question": "Quando incontro un problema tecnico, sono in grado di trovare soluzioni su Internet.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso sicuramente farlo e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 71": {
+      "question": "Sono in grado di modificare le configurazioni del sistema operativo dei miei dispositivi digitali per risolvere problemi tecnici (es. stop/start automatico dei servizi, modificare chiavi di registro).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso sicuramente farlo e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 72": {
+      "question": "Di solito cerco di scoprire se esiste una soluzione tecnologica che possa aiutarmi a soddisfare un bisogno personale o professionale.",
+      "options": [
+        "Per nulla",
+        "Poco / molto poco",
+        "Sì, abbastanza",
+        "Molto spesso"
+      ]
+    },
+    "Question 73": {
+      "question": "Conosco le principali funzioni dei dispositivi digitali più comuni (computer, tablet, smartphone).",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 74": {
+      "question": "So come selezionare lo strumento, il dispositivo o il servizio giusto per svolgere un compito (es. scegliere uno smartphone adatto, scegliere uno strumento per una videocall professionale).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso sicuramente farlo e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 75": {
+      "question": "Conosco soluzioni tecniche che possono migliorare l’accesso e l’uso degli strumenti digitali, come traduzione automatica, ingrandimento o zoom, sintesi vocale.",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 76": {
+      "question": "So che la tecnologia digitale può essere usata come potente strumento per innovare processi e prodotti.",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    },
+    "Question 77": {
+      "question": "Sono interessato a partecipare a sfide e concorsi finalizzati a risolvere problemi intellettuali, sociali o pratici tramite tecnologie digitali.",
+      "options": [
+        "Per nulla",
+        "Poco / molto poco",
+        "Sì, abbastanza",
+        "Molto"
+      ]
+    },
+    "Question 78": {
+      "question": "So usare strumenti per i dati (es. database, software di analisi ed estrazione dati) che gestiscono e organizzano informazioni complesse per prendere decisioni e risolvere problemi.",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso sicuramente farlo e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 79": {
+      "question": "Sono disposto ad aiutare le persone della mia comunità a migliorare le loro competenze digitali.",
+      "options": [
+        "Per niente",
+        "Poco / molto poco",
+        "Sì, abbastanza",
+        "Molto!"
+      ]
+    },
+    "Question 80": {
+      "question": "Sono curioso riguardo ai nuovi dispositivi e le nuove applicazioni digitali e desidero sperimentarli ogni volta che posso.",
+      "options": [
+        "Per niente",
+        "Poco / molto poco",
+        "Sì, abbastanza",
+        "Molto!"
+      ]
+    },
+    "Question 81": {
+      "question": "So come usare strumenti di apprendimento online per migliorare le mie competenze digitali (es. video tutorial, corsi online).",
+      "options": [
+        "Non so come farlo",
+        "Posso farlo con un aiuto",
+        "Posso farlo da solo",
+        "Posso sicuramente farlo e, se necessario, supportare/guidare altri"
+      ]
+    },
+    "Question 82": {
+      "question": "So quali sono le nuove tendenze nel mondo digitale e come influenzano la mia vita personale o professionale.",
+      "options": [
+        "Non ne ho conoscenza / Non ne ho mai sentito parlare",
+        "Ne ho solo una comprensione limitata e ho bisogno di ulteriori spiegazioni",
+        "Ne ho una buona comprensione",
+        "Padroneggio completamente l’argomento e potrei spiegarlo ad altri"
+      ]
+    }
+  }
+}

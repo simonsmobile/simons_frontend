@@ -5,10 +5,13 @@ import env from "../configs/env";
 import BottomNav from "./BottomNav";
 import Header from "./Header";
 import { useToast } from "../hooks/useToast";
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
 
 const RankScreen = () => {
   const toast = useToast();
-  const [leaderboardData, setLeaderboardData] = useState(null);
+    const { t, i18n } = useTranslation();
+    const [leaderboardData, setLeaderboardData] = useState(null);
   const [userScore, setUserScore] = useState(0);
   const [loading, setLoading] = useState(true);
   const [unlockedAvatars, setUnlockedAvatars] = useState([]);
@@ -16,28 +19,28 @@ const RankScreen = () => {
   const avatars = [
     {
       id: 1,
-      name: "Bronze",
+      name: t('bronze'), 
       threshold: 10000,
       emoji: "🥉",
       color: "bg-orange-100 border-orange-300",
     },
     {
       id: 2,
-      name: "Silver",
+      name: t('silver'),
       threshold: 20000,
       emoji: "🥈",
       color: "bg-gray-100 border-gray-300",
     },
     {
       id: 3,
-      name: "Gold",
+      name: t('gold'),
       threshold: 30000,
       emoji: "🥇",
       color: "bg-yellow-100 border-yellow-300",
     },
     {
       id: 4,
-      name: "Diamond",
+      name: t('diamond'),
       threshold: 40000,
       emoji: "💎",
       color: "bg-blue-100 border-blue-300",
@@ -115,13 +118,13 @@ const RankScreen = () => {
         <div className="bg-white rounded-lg shadow border border-gray-200 p-4 mb-6">
           <div className="flex items-center mb-4">
             <FaTrophy className="text-amber-500 mr-2" />
-            <h2 className="text-xl font-bold text-gray-900">Leaderboard</h2>
+            <h2 className="text-xl font-bold text-gray-900">{t('leaderboard')}</h2>
           </div>
 
           {leaderboardData && (
             <div className="mb-4">
               <p className="text-sm text-gray-600 text-center">
-                Your rank:{" "}
+                {t('your_rank')}:{" "}
                 <span className="font-bold text-amber-600">
                   #{leaderboardData.userRank}
                 </span>{" "}
@@ -162,14 +165,14 @@ const RankScreen = () => {
                         {user.name}
                         {user.isCurrentUser && (
                           <span className="ml-2 text-xs text-amber-600">
-                            (You)
+                            ({t('you')})
                           </span>
                         )}
                       </p>
                     </div>
                   </div>
                   <div className="text-right">
-                    <p className="text-xs text-gray-500">Rank #{position}</p>
+                    <p className="text-xs text-gray-500">{t('rank')} #{position}</p>
                   </div>
                 </div>
               );
@@ -181,13 +184,13 @@ const RankScreen = () => {
         <div className="bg-white rounded-lg shadow border border-gray-200 p-4">
           <div className="flex items-center mb-4">
             <div className="text-2xl mr-2">🎭</div>
-            <h2 className="text-xl font-bold text-gray-900">Avatars</h2>
+            <h2 className="text-xl font-bold text-gray-900">{t('avatars')}</h2>
           </div>
 
           <p className="text-sm text-gray-600 mb-4">
-            Unlock special avatars by earning points! Current point:{" "}
+            {t('unlock_avatars')}{" "}
             <span className="font-bold text-amber-600">
-              {userScore.toLocaleString()}
+              {t('avatar_points', {user_score: userScore})}
             </span>
           </p>
 
@@ -195,6 +198,7 @@ const RankScreen = () => {
             {avatars.map((avatar) => {
               const isUnlocked = unlockedAvatars.includes(avatar.id);
               const canUnlock = userScore >= avatar.threshold && !isUnlocked;
+              const scoresToGo = avatar.threshold - userScore;
 
               return (
                 <div
@@ -208,27 +212,26 @@ const RankScreen = () => {
                     {avatar.name}
                   </h3>
                   <p className="text-xs text-gray-600 mb-3">
-                    {avatar.threshold.toLocaleString()} pts
+                    {t('avatar_threshold', {avatarThreshold: avatar.threshold})}
                   </p>
 
                   {isUnlocked ? (
                     <div className="flex items-center justify-center text-green-600">
                       <FaUnlock className="mr-1" />
-                      <span className="text-xs font-medium">Unlocked</span>
+                      <span className="text-xs font-medium">{t('unlocked')}</span>
                     </div>
                   ) : canUnlock ? (
                     <button
                       onClick={() => unlockAvatar(avatar.id)}
                       className="w-full py-2 bg-amber-500 text-white text-xs font-medium rounded-md hover:bg-amber-600 transition-colors"
                     >
-                      Unlock Now
+                      {t('unlock_now')}
                     </button>
                   ) : (
                     <div className="flex items-center justify-center text-gray-400">
                       <FaLock className="mr-1" />
                       <span className="text-xs">
-                        {(avatar.threshold - userScore).toLocaleString()} more
-                        pts
+                        {t('you_still_need', { scoresToGo })}
                       </span>
                     </div>
                   )}

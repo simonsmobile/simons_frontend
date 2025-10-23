@@ -5,9 +5,13 @@ import { FaChevronLeft, FaClock } from "react-icons/fa";
 import { calculateTimeBonus } from "../utils/scoring";
 import SCORING_CONFIG from '../configs/scoringConfig';
 
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
+
 const SubQuestionnaireScreen = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation(["ui", "questions"]);
   const { index, level, category, sub } = location.state || {};
 
   const getFilteredRandomQuestions = (questionnaire, levelId, typeId) => {
@@ -240,6 +244,9 @@ const SubQuestionnaireScreen = () => {
     ((currentQuestionIndex + 1) / questionnaire.length) * 100;
   const displayLevel = level === "basic" ? "Level 1" : "Level 2";
 
+  const translated_question = t("questions." + currentQuestion.title, { ns: "questions", returnObjects: true });
+//  console.log(translated_question);
+
   // Calculate potential time bonus for current answer
   const potentialTimeBonus = selected ? calculateTimeBonus(timeRemaining) : 0;
   const basePoints =
@@ -275,9 +282,9 @@ const SubQuestionnaireScreen = () => {
             <FaChevronLeft className="h-6 w-6" />
           </button>
           <div className="text-center flex-1">
-            <h1 className="text-lg font-semibold">{category}</h1>
+            <h1 className="text-lg font-semibold">{t(category)}</h1>
             <p className="text-xs text-gray-500">
-              {sub.title} ({displayLevel})
+              {t(sub.title)} ({t(displayLevel)})
             </p>
           </div>
 
@@ -299,11 +306,11 @@ const SubQuestionnaireScreen = () => {
           {/* Question Number and Scoring Info */}
           <div className="text-center mb-4">
             <span className="text-sm font-medium text-gray-500">
-              Question {currentQuestionIndex + 1} of {questionnaire.length}
+            {t('question')} {currentQuestionIndex + 1} {t('of')} {questionnaire.length}
             </span>
             <div className="mt-2 flex justify-center space-x-4 text-xs text-gray-600">
               <div className="bg-blue-50 px-2 py-1 rounded">
-                Base: {basePoints} pts
+                {t('base')}: {basePoints} {t('points')}
               </div>
             </div>
           </div>
@@ -312,7 +319,7 @@ const SubQuestionnaireScreen = () => {
           {timeRemaining <= 10 && timeRemaining > 0 && (
             <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-center">
               <p className="text-red-600 text-sm font-medium">
-                ⏰ Time running out! {timeRemaining} seconds remaining
+                ⏰ {t('time_running_out', {timeRemaining})}
               </p>
             </div>
           )}
@@ -321,7 +328,7 @@ const SubQuestionnaireScreen = () => {
           {timeRemaining === 0 && (
             <div className="mb-4 p-3 bg-gray-100 border border-gray-300 rounded-lg text-center">
               <p className="text-gray-700 text-sm font-medium">
-                ⏱️ Time's up! Moving to next question...
+                ⏱️ {t('time_up')}
               </p>
             </div>
           )}
@@ -329,7 +336,7 @@ const SubQuestionnaireScreen = () => {
           {/* Question Text */}
           <div className="mb-8 p-4 bg-white rounded-lg shadow border border-gray-200">
             <h3 className="text-lg font-medium text-gray-900">
-              {currentQuestion.question}
+              {translated_question.question}
             </h3>
           </div>
 
@@ -367,7 +374,7 @@ const SubQuestionnaireScreen = () => {
                     id={`option-label-${currentQuestionIndex}-${shuffledIndex}`}
                     className="text-sm font-medium text-gray-800"
                   >
-                    {option.text}
+                    {translated_question.options[option.originalIndex]}
                   </span>
                 </label>
               </div>
@@ -385,7 +392,7 @@ const SubQuestionnaireScreen = () => {
                   : "bg-white border border-gray-300 text-gray-700 hover:bg-gray-50"
               }`}
             >
-              Back
+              {t('back')}
             </button>
 
             {currentQuestionIndex < questionnaire.length - 1 ? (
@@ -398,7 +405,7 @@ const SubQuestionnaireScreen = () => {
                     : "bg-black text-white hover:bg-gray-800"
                 }`}
               >
-                {timeRemaining === 0 ? "Next" : "Next"}
+                {timeRemaining === 0 ? t('next') : t('next')}
               </button>
             ) : (
               <button
@@ -410,7 +417,7 @@ const SubQuestionnaireScreen = () => {
                     : "bg-amber-600 text-white hover:bg-amber-700"
                 }`}
               >
-                Finish
+                {t('finish')}
               </button>
             )}
           </div>
@@ -418,14 +425,14 @@ const SubQuestionnaireScreen = () => {
           {/* Scoring Preview */}
           <div className="mt-6 p-4 bg-gray-50 rounded-lg">
             <h4 className="text-sm font-medium text-gray-700 mb-2">
-              Scoring Info
+              {t('scoring_info')}
             </h4>
             <div className="text-xs text-gray-600 space-y-1">
-              <div>• Correct answer: {basePoints} points</div>
+              <div>• {t('correct_answer', {basePoints})}</div>
               <div>
-                • Speed bonus: up to {SCORING_CONFIG.MAX_TIME_BONUS} points
+                • {t('speed_bonus') }
               </div>
-              <div>• Perfect run bonus: Additional points for all correct</div>
+              <div>• {t('perfect_run')}</div>
             </div>
           </div>
         </div>

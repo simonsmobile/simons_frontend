@@ -9,7 +9,12 @@ import { FaGoogle } from "react-icons/fa";
 import countryList from "../utils/countries";
 import ReactDatePickerComponent from "../components/ReactDatePicker";
 
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
+
+
 const CreateAccount = () => {
+  const { t, i18n } = useTranslation();
   const location = useLocation();
   const toast = useToast();
   const googleData = location.state || {};
@@ -327,7 +332,7 @@ const CreateAccount = () => {
             </svg>
           </Link>
           <h1 className="text-lg font-semibold text-center flex-1">
-            Create Account
+            {t('create_account')}
           </h1>
           <div className="w-6"></div>
         </div>
@@ -351,20 +356,20 @@ const CreateAccount = () => {
               </div>
             )}
 
-            <p className="text-center text-gray-600 mb-6">Join Us</p>
+            <p className="text-center text-gray-600 mb-6">{t('join_us')}</p>
 
             <button
               onClick={onGoogleSignUp}
               className="w-full mb-6 py-3 bg-white border border-gray-300 text-gray-700 font-medium rounded-md shadow-sm hover:bg-gray-50 transition-colors duration-300 flex items-center justify-center"
             >
               <FaGoogle className="mr-2" />
-              Sign up with Google
+              {t('sign_with_google')}
             </button>
 
             <div className="relative flex items-center justify-center mb-6">
               <div className="border-t border-gray-300 w-full"></div>
               <div className="bg-white px-3 text-sm text-gray-500 absolute">
-                OR
+                {t('or')}
               </div>
             </div>
 
@@ -372,7 +377,7 @@ const CreateAccount = () => {
               <div>
                 <input
                   type="email"
-                  placeholder="Email"
+                  placeholder={t('email')}
                   className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-400"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -383,7 +388,7 @@ const CreateAccount = () => {
                 <div className="flex-1">
                   <input
                     type="text"
-                    placeholder="First Name"
+                    placeholder={t('firstname')}
                     className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-400"
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
@@ -392,7 +397,7 @@ const CreateAccount = () => {
                 <div className="flex-1">
                   <input
                     type="text"
-                    placeholder="Last Name"
+                    placeholder={t('lastname')}
                     className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-400"
                     value={lastName}
                     onChange={(e) => setLastName(e.target.value)}
@@ -412,7 +417,7 @@ const CreateAccount = () => {
                         setAge("");
                       }
                     }}
-                    placeholder="Date of Birth"
+                    placeholder={t('dob')}
                   />
                 </div>
               </div>
@@ -424,11 +429,11 @@ const CreateAccount = () => {
                   onChange={(e) => setGender(e.target.value)}
                 >
                   <option value="" disabled>
-                    Select Gender
+                    {t('gender')}
                   </option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-                  <option value="Other">Other</option>
+                  <option value="Male">{t('male')}</option>
+                  <option value="Female">{t('female')}</option>
+                  <option value="Other">{t('other')}</option>
                 </select>
               </div>
 
@@ -439,7 +444,7 @@ const CreateAccount = () => {
                   onChange={(e) => setCountry(e.target.value)}
                 >
                   <option value="" disabled>
-                    Select Country
+                    {t('country')}
                   </option>
                   {countryList.map((countryName) => (
                     <option key={countryName} value={countryName}>
@@ -456,7 +461,7 @@ const CreateAccount = () => {
                   onChange={(e) => setUniversity(e.target.value)}
                 >
                   <option value="" disabled>
-                    Select University (Optional)
+                    {t('university')}
                   </option>
                   {universities.map((uni, index) => (
                     <option key={index} value={uni}>
@@ -470,7 +475,7 @@ const CreateAccount = () => {
                 <div className="flex-1 relative">
                   <input
                     type={showPassword ? "text" : "password"}
-                    placeholder="Password"
+                    placeholder={t('password')}
                     className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-400 pr-10"
                     value={password}
                     onChange={handlePasswordChange}
@@ -523,7 +528,7 @@ const CreateAccount = () => {
                 <div className="flex-1 relative">
                   <input
                     type={showConfirmPassword ? "text" : "password"}
-                    placeholder="Confirm Password"
+                    placeholder={t('repeat_password')}
                     className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-400 pr-10"
                     value={retypePassword}
                     onChange={(e) => setRetypePassword(e.target.value)}
@@ -691,18 +696,18 @@ const CreateAccount = () => {
                     <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
                   </div>
                 ) : (
-                  "Sign up"
+                  t('signup')
                 )}
               </button>
             </form>
 
             <p className="text-center text-gray-600 mt-6">
-              Already have an account?{" "}
+              {t('already_account')}{" "}
               <Link
                 to="/login"
                 className="text-black font-medium hover:underline"
               >
-                Login
+                {t('login')}
               </Link>
             </p>
           </div>

@@ -2,8 +2,13 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaChartBar, FaUserCircle, FaThLarge, FaTrophy } from "react-icons/fa";
 
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
+
 const BottomNav = () => {
   const location = useLocation();
+  const { t, i18n } = useTranslation();
+  
   const navItems = [
     { path: "/dashboard", icon: FaThLarge, label: "Dashboard" },
     { path: "/score", icon: FaChartBar, label: "Score" },
@@ -44,7 +49,7 @@ const BottomNav = () => {
                   />
                 )
               )}
-              <span className="text-xs">{item.label}</span>
+              <span className="text-xs">{t(item.label)}</span>
             </Link>
           );
         })}

@@ -3,8 +3,12 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import env from "../configs/env";
 
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
+
 const CategorySelectionScreen = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   useEffect(() => {
     const completedCategories = JSON.parse(
       localStorage.getItem("completedCategories") || "[]"
@@ -27,45 +31,46 @@ const CategorySelectionScreen = () => {
     );
     return completedCategories.length > 0;
   };
+  const translatedCategories = t("competence_areas" , { returnObjects: true });
 
   const [categories, setCategories] = useState([
     {
       id: "1",
-      title: "Information and data literacy",
+      title: translatedCategories[1].name,
       icon: "search",
       points: [1.1, 1.2, 1.3],
       description:
-        "Browsing, searching, filtering, evaluating and managing data",
+        translatedCategories[1].description,
     },
     {
       id: "2",
-      title: "Communication and collaboration",
+      title: translatedCategories[2].name,
       icon: "users",
       points: [2.1, 2.2, 2.3, 2.4, 2.5, 2.6],
       description:
-        "Interacting, sharing, collaborating through digital technologies",
+        translatedCategories[2].description,
     },
     {
       id: "3",
-      title: "Digital content creation",
+      title: translatedCategories[3].name,
       icon: "video",
       points: [3.1, 3.2, 3.3, 3.4],
-      description: "Developing, integrating and re-elaborating digital content",
+      description: translatedCategories[3].description,
     },
     {
       id: "4",
-      title: "Safety",
+      title: translatedCategories[4].name,
       icon: "shield",
       points: [4.1, 4.2, 4.3, 4.4],
       description:
-        "Protecting devices, personal data, health and the environment",
+        translatedCategories[4].description,
     },
     {
       id: "5",
-      title: "Problem solving",
+      title: translatedCategories[5].name,
       icon: "puzzle",
       points: [5.1, 5.2, 5.3, 5.4],
-      description: "Solving technical problems and identifying needs",
+      description: translatedCategories[5].description,
     },
   ]);
 
@@ -220,7 +225,7 @@ const CategorySelectionScreen = () => {
             </svg>
           </Link>
           <h1 className="text-lg font-semibold text-center flex-1">
-            Self-assessment
+            {t('self_assessment')}
           </h1>
         </div>
       </div>
@@ -229,10 +234,10 @@ const CategorySelectionScreen = () => {
         <div className="max-w-md mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-2">
-              Select one area to start
+              {t('select_one_area')}
             </h2>
             <p className="text-gray-600">
-              Choose a specific competence area or take the full self-assessment
+              {t('select_area_explanation')}
             </p>
           </div>
 
@@ -257,7 +262,7 @@ const CategorySelectionScreen = () => {
                     </h3>
                     {category.completed && (
                       <span className="ml-2 bg-amber-500 text-white text-xs px-2 py-1 rounded-full">
-                        Completed
+                        {t('Completed')}
                       </span>
                     )}
                   </div>
@@ -287,7 +292,7 @@ const CategorySelectionScreen = () => {
               onClick={handleFullAssessment}
               className="w-full py-3 bg-black text-white font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300"
             >
-              Take Full Self-Assessment
+             {t('start_full')}
             </button>
 
             {hasAnyCompletedCategories() && (
@@ -295,15 +300,15 @@ const CategorySelectionScreen = () => {
                 onClick={() => navigate("/dashboard")}
                 className="w-full py-3 bg-amber-400 text-black font-medium rounded-md shadow-md hover:bg-amber-500 transition-colors duration-300"
               >
-                Go to Dashboard
+                {t('go_to_dashboard')}
               </button>
             )}
           </div>
 
           <div className="mt-4 text-center">
             <p className="text-sm text-gray-600">
-              The full self-assessment contains all 82 questions and provides a
-              complete evaluation of your digital competence
+
+              {t('full_assessment_explanation')}
             </p>
           </div>
         </div>
@@ -326,7 +331,7 @@ const CategorySelectionScreen = () => {
                 d="M15 5l-7 7 7 7"
               />
             </svg>
-            Check Progress Status
+            {t('check_progress')}
           </Link>
         </div>
         <div className="text-center mt-4 mb-2">
@@ -349,7 +354,7 @@ const CategorySelectionScreen = () => {
                   d="M9 5l7 7-7 7"
                 />
               </svg>
-              Go to Dashboard
+              {t('go_to_dashboard')}
             </Link>
           ) : null}
         </div>

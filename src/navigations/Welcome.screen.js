@@ -1,9 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
+import LanguageSwitcher from '../components/LanguageSwitcher';
 
 const WelcomeScreen = () => {
   const navigate = useNavigate();
   const [redirectRoute, setRedirectRoute] = useState("/landing");
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    // Aseta <html lang> kun kieli vaihtuu (sekä ensimmäisellä renderillä)
+    document.documentElement.lang = i18n.resolvedLanguage || i18n.language || 'en';
+  }, [i18n.resolvedLanguage, i18n.language]);
 
   useEffect(() => {
     const changeRoute = () => {
@@ -20,11 +29,19 @@ const WelcomeScreen = () => {
     changeRoute();
   }, [navigate]);
 
+  //console.log("language: " + i18n.language);          // 'en-US' (pyydetty)
+  //console.log("resolved language: " + i18n.resolvedLanguage);  // 'en'
+  
   return (
     <div className="flex flex-col items-center justify-between min-h-screen bg-white px-4 py-8">
       <div className="w-full max-w-md">
         <div className="relative mb-8">
           <div className="absolute top-0 right-0 w-3/4 h-40 bg-amber-300 rounded-bl-full -z-10"></div>
+
+          {/* Kielenvaihdin oikeassa yläkulmassa */}
+          <div className="absolute top-3 right-3">
+            <LanguageSwitcher />
+          </div>
 
           <div className="flex justify-center pt-12">
             <div className="bg-white rounded-full p-3 shadow-md">
@@ -39,14 +56,13 @@ const WelcomeScreen = () => {
 
         <div className="text-center mb-10">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
-            Welcome to SIMOnS
+            {t('welcome_simons')}
           </h1>
           <p className="text-gray-600 px-6">
             Student Improvement and Monitoring of Online Skills
           </p>
           <p className="text-sm text-gray-500 mt-3 px-6">
-            A self-reflection tool for the European Digital Competence Framework
-            for Citizens
+            {t('app_explanation')}
           </p>
         </div>
       </div>
@@ -60,13 +76,13 @@ const WelcomeScreen = () => {
             to="/login"
             className="w-full py-3 bg-black text-white font-medium rounded-md text-center shadow-md hover:bg-gray-800 transition-colors duration-300 flex items-center justify-center"
           >
-            <span>Login</span>
+            <span>{t('login')}</span>
           </Link>
           <Link
             to="/create-account"
             className="w-full py-3 bg-white text-black font-medium rounded-md text-center border border-black shadow-md hover:bg-gray-100 transition-colors duration-300 flex items-center justify-center"
           >
-            <span>Register</span>
+            <span>{t('signup')}</span>
           </Link>
         </div>
 

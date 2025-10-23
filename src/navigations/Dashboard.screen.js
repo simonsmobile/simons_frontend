@@ -22,6 +22,9 @@ import RisingStarBadge from "../assets/badges/RisingStarBadge";
 import SavvyMentorBadge from "../assets/badges/SavvyMentorBadge";
 import SimonsAdvocateBadge from "../assets/badges/SimonsAdvocateBadge";
 
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
+
 const getCompetenceArea = (point) => {
   return Math.floor(parseFloat(point));
 };
@@ -29,6 +32,7 @@ const getCompetenceArea = (point) => {
 const DashboardScreen = () => {
   const navigate = useNavigate();
   const toast = useToast();
+  const { t, i18n } = useTranslation();
   const [scores, setScores] = useState(null);
   const [latestGrades, setLatestGrades] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -243,14 +247,13 @@ const DashboardScreen = () => {
       <main className="flex-1 max-w-xl mx-auto px-4 py-6 w-full">
         <div className="mb-6">
           <h2 className="text-2xl font-bold text-gray-900">
-            Welcome, {userName}
+            {t('welcome_message')} {userName}
           </h2>
           <p className="text-sm text-gray-600 mt-1">
-            Your digital competence dashboard
+            {t('dashboard_info')}
           </p>
           <p className="text-sm text-gray-600 mt-1">
-            Ready to level up? Take training exercises and quizzes to earn more
-            points!
+            {t('dashboard_greeting')}
           </p>
         </div>
 
@@ -281,11 +284,11 @@ const DashboardScreen = () => {
             )}
             <div>
               <h3 className="text-lg font-bold text-amber-600">
-                {scores.totalScore} points
+                {t('total_points', {total_point: scores.totalScore})}
               </h3>
               <p className="text-xs text-gray-500">
                 {gamification
-                  ? gamification.title
+                  ? t(gamification.title)
                   : "Current achievement score"}
               </p>
             </div>
@@ -294,13 +297,13 @@ const DashboardScreen = () => {
             to="/score"
             className="text-sm font-medium text-black bg-amber-300 px-3 py-1.5 rounded-md hover:bg-amber-400 transition-colors"
           >
-            View Score
+            {t('view_score')}
           </Link>
         </div>
 
         <div className="bg-white rounded-lg shadow border border-gray-200 p-5 mb-6">
           <h3 className="text-lg font-bold text-gray-900 mb-4">
-            Competence Overview
+             {t('competence_overview')}
           </h3>
           <div className="space-y-3">
             {scores.areaScores.map((item) => {
@@ -309,7 +312,7 @@ const DashboardScreen = () => {
                 <div key={item.id}>
                   <div className="flex justify-between items-center mb-1">
                     <span className="text-sm font-medium text-gray-700">
-                      {item.name}
+                      {t(item.name)}
                     </span>
                     <span className="text-xs font-medium text-amber-700">
                       {percentage}%
@@ -329,7 +332,7 @@ const DashboardScreen = () => {
 
         <div className="bg-white rounded-lg shadow border border-gray-200 overflow-hidden mb-6">
           <h3 className="text-lg font-bold text-gray-900 p-4 border-b border-gray-200">
-            Training exercises
+            {t('training_exercises')} 
           </h3>
           <div className="divide-y divide-gray-200">
             {COMPETENCE_AREAS.map((area, areaIndex) => {
@@ -352,14 +355,14 @@ const DashboardScreen = () => {
                       <div className="w-16 h-12 rounded-md bg-black flex flex-col items-center justify-center mr-4 flex-shrink-0">
                         <span className="text-white font-bold text-[10px] leading-tight text-center px-1">
                           {levelDisplay.includes("-") ? (
-                            <span className="block">{levelDisplay}</span>
+                            <span className="block">{t(levelDisplay)}</span>
                           ) : (
-                            levelDisplay
+                            t(levelDisplay)
                           )}
                         </span>
                       </div>
                       <div className="flex-1">
-                        <p className="font-medium text-gray-800">{area.name}</p>
+                        <p className="font-medium text-gray-800">{t(area.name)}</p>
                         <div className="flex items-center mt-1">
                           <div className="w-24 bg-gray-300 rounded-full h-2 mr-2">
                             <div
@@ -387,14 +390,14 @@ const DashboardScreen = () => {
                     <div className="px-4 pt-2 pb-4 bg-gray-50 border-t border-gray-200">
                       <div className="flex justify-between items-center mb-3 mt-2 bg-amber-300 rounded-t-lg px-4 py-2">
                         <span className="font-bold text-gray-900">
-                          Competences
+                          {t('competences')}
                         </span>
                         <div className="flex space-x-8">
                           <span className="font-bold text-gray-900">
-                            Level 1
+                            {t('level_1')}
                           </span>
                           <span className="font-bold text-gray-900">
-                            Level 2
+                            {t('level_2')}
                           </span>
                         </div>
                       </div>
@@ -431,7 +434,7 @@ const DashboardScreen = () => {
 
                           const IconLevel1 = getIconForStatus(statusLevel1);
                           const IconLevel2 = getIconForStatus(statusLevel2);
-
+                          
                           const competenceNumber =
                             COMPETENCE_AREAS.slice(0, areaIndex).reduce(
                               (total, prevArea) =>
@@ -450,11 +453,11 @@ const DashboardScreen = () => {
                               <div className="flex justify-between items-center">
                                 <div className="flex-1 mr-4">
                                   <p className="text-sm font-medium text-gray-800">
-                                    {competenceNumber}. {sub.title}
+                                    {competenceNumber}. {t(sub.title)}
                                   </p>
                                   <div className="flex items-center mt-1 space-x-2">
                                     <p className="text-xs text-gray-600">
-                                      Placement: {levelText}
+                                      {t('placement')}: {t(levelText)}
                                     </p>
                                   </div>
                                 </div>
@@ -491,7 +494,7 @@ const DashboardScreen = () => {
                                           : "text-gray-700"
                                       }`}
                                     >
-                                      {statusLevel1}
+                                      {t(statusLevel1)}
                                     </span>
                                   </div>
 
@@ -527,7 +530,7 @@ const DashboardScreen = () => {
                                           : "text-gray-700"
                                       }`}
                                     >
-                                      {statusLevel2}
+                                      {t(statusLevel2)}
                                     </span>
                                   </div>
                                 </div>
@@ -549,7 +552,7 @@ const DashboardScreen = () => {
             onClick={handleRetakeAssessment}
             className="px-6 py-2 bg-amber-300 text-black text-sm font-medium rounded-md shadow-md hover:bg-amber-400 transition-colors duration-300"
           >
-            Take Self-Assessment Again
+             {t('take_sa_again')}
           </button>
 
           {hasIncompleteCategories() && (
@@ -557,7 +560,7 @@ const DashboardScreen = () => {
               onClick={() => navigate("/category-selection")}
               className="px-6 py-2 bg-black text-white text-sm font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300"
             >
-              Complete Other Categories
+               {t('complete_other_categories')}
             </button>
           )}
         </div>
@@ -568,26 +571,23 @@ const DashboardScreen = () => {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-lg shadow-xl p-6 w-full max-w-sm">
             <h3 className="text-lg font-semibold text-gray-900 mb-4">
-              Confirm Action
+              {t('confirm_action')}
             </h3>
             <p className="text-sm text-gray-600 mb-6">
-              This will delete all your existing test scores and progress, reset
-              your leaderboard ranking to 0, and clear your unlocked avatars.
-              You'll be able to start the self-assessment from scratch. This
-              action cannot be undone. Are you sure you want to continue?
+              {t('confirm_action_text')}
             </p>
             <div className="flex justify-end space-x-3">
               <button
                 onClick={cancelRetake}
                 className="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 text-sm font-medium"
               >
-                Cancel
+                 {t('cancel')}
               </button>
               <button
                 onClick={confirmRetake}
                 className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition-colors duration-300 text-sm font-medium"
               >
-                Confirm & Reset
+                 {t('confirm_and_reset')}
               </button>
             </div>
           </div>

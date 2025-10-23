@@ -2,6 +2,10 @@ import React, { useEffect, useState, useRef } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import env from "../configs/env";
 import axios from "axios";
+
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
+
 import {
   calculateQuizScore,
   generateQuizFeedback,
@@ -13,6 +17,8 @@ import SCORING_CONFIG from "../configs/scoringConfig";
 const SubEndScreen = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
+  
   const {
     answers = [],
     questionnaire = [],
@@ -143,7 +149,7 @@ const SubEndScreen = () => {
               </svg>
             </button>
             <h1 className="text-lg font-semibold text-center flex-1">
-              Processing Results
+              {t('processing_results')}
             </h1>
             <div className="w-6"></div>
           </div>
@@ -152,10 +158,10 @@ const SubEndScreen = () => {
         <div className="flex-1 flex flex-col items-center justify-center py-12">
           <div className="w-16 h-16 border-4 border-t-amber-400 border-gray-200 rounded-full animate-spin mb-6"></div>
           <h2 className="text-xl font-medium text-gray-900 mb-2">
-            Calculating Your Score
+            {t('calculating_score')}
           </h2>
           <p className="text-center text-gray-600">
-            Analysing your performance and time bonuses...
+            {t('analyzing')}
           </p>
         </div>
       </div>
@@ -166,7 +172,7 @@ const SubEndScreen = () => {
     return (
       <div className="flex flex-col min-h-screen bg-white">
         <div className="flex-1 flex items-center justify-center">
-          <p className="text-red-500">Error processing quiz results</p>
+          <p className="text-red-500">{t('error_processing')}</p>
         </div>
       </div>
     );
@@ -203,7 +209,7 @@ const SubEndScreen = () => {
             </svg>
           </button>
           <h1 className="text-lg font-semibold text-center flex-1">
-            Quiz Results
+            {t('quiz_results')}
           </h1>
           <div className="w-6"></div>
         </div>
@@ -219,13 +225,13 @@ const SubEndScreen = () => {
             <div className="mb-6">
               <div className="flex items-center space-x-2 mb-2">
                 <div className="inline-block px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-xs font-medium">
-                  {levelNumber === 1 ? "Level 1" : "Level 2"}
+                  {levelNumber === 1 ? t('level_1') : t('level_2')}
                 </div>
               </div>
               <h2 className="text-xl font-bold text-gray-900 mb-1">
-                {category}
+                {t(category)}
               </h2>
-              {sub && <p className="text-gray-600 text-sm">{sub.title}</p>}
+              {sub && <p className="text-gray-600 text-sm">{t(sub.title)}</p>}
             </div>
 
             <div className="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden mb-6">
@@ -242,42 +248,42 @@ const SubEndScreen = () => {
                   {isSuccess ? "🎉" : "📚"}
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  {feedback.title}
+                  {t(feedback.title)}
                 </h3>
-                <p className="text-gray-600 mb-4">{feedback.message}</p>
+                <p className="text-gray-600 mb-4">{t(feedback.message)}</p>
                 <div className="text-lg font-semibold text-gray-800">
-                  You earned: +{totalScore} points
+                  {t('you_earned', {totalScore})}
                 </div>
               </div>
 
               <div className="p-4 bg-gray-50">
                 <h4 className="font-medium text-gray-800 mb-3">
-                  Score Breakdown
+                  {t('score_breakdown')}
                 </h4>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
                     <span>
-                      Correct answers ({correctAnswers}/{totalQuestions})
+                      {t('correct_answers')} ({correctAnswers}/{totalQuestions})
                     </span>
-                    <span className="font-medium">+{baseScore} pts</span>
+                    <span className="font-medium">+{baseScore} {t('points')}</span>
                   </div>
                   {timeBonus > 0 && (
                     <div className="flex justify-between text-amber-600">
-                      <span>Speed bonus</span>
-                      <span className="font-medium">+{timeBonus} pts</span>
+                      <span>{t('speed_bonus_earned')}</span>
+                      <span className="font-medium">+{timeBonus} {t('points')}</span>
                     </div>
                   )}
                   {isPerfect && quizResult.perfectBonus > 0 && (
                     <div className="flex justify-between text-purple-600">
-                      <span>Perfect score bonus</span>
+                      <span>{t('perfect_score_bonus')}</span>
                       <span className="font-medium">
-                        +{quizResult.perfectBonus} pts
+                        +{quizResult.perfectBonus} {t('points')}
                       </span>
                     </div>
                   )}
                   <div className="border-t pt-2 flex justify-between font-semibold">
-                    <span>Total Score</span>
-                    <span>+{totalScore} pts</span>
+                    <span>{t('total_score')}</span>
+                    <span>+{totalScore} {t('points')}</span>
                   </div>
                 </div>
               </div>
@@ -285,31 +291,31 @@ const SubEndScreen = () => {
               {!isSuccess && feedback.details && (
                 <div className="p-4 border-t">
                   <h4 className="font-medium text-gray-800 mb-3">
-                    What went wrong?
+                    {t('what_went_wrong')}
                   </h4>
                   <div className="grid grid-cols-2 gap-4 text-sm">
                     <div className="text-center p-3 bg-amber-50 rounded">
                       <div className="text-2xl font-bold text-amber-600">
                         {feedback.details.correct}
                       </div>
-                      <div className="text-gray-600">Correct</div>
+                      <div className="text-gray-600">{t('correct')}</div>
                     </div>
                     <div className="text-center p-3 bg-gray-50 rounded">
                       <div className="text-2xl font-bold text-black">
                         {feedback.details.incorrect}
                       </div>
-                      <div className="text-gray-600">Incorrect</div>
+                      <div className="text-gray-600">{t('incorrect')}</div>
                     </div>
                   </div>
 
                   {feedback.details.pointsLost > 0 && (
                     <div className="mt-3 p-3 bg-orange-50 rounded text-sm">
                       <div className="font-medium text-orange-800">
-                        Missed Opportunity
+                       {t('missed_opportunity')}
                       </div>
                       <div className="text-orange-600">
-                        You could have earned {feedback.details.pointsLost} more
-                        points with correct answers
+
+                        {t('missed_explanation',  {lostOpportunity: feedback.details.pointsLost})}
                       </div>
                     </div>
                   )}
@@ -326,13 +332,13 @@ const SubEndScreen = () => {
                     }
                     className="w-full py-3 bg-amber-400 text-black font-medium rounded-md shadow-md hover:bg-amber-500 transition-colors duration-300"
                   >
-                    Review Learning Materials
+                   {t('review_material')}
                   </button>
                   <button
                     onClick={retakeQuiz}
                     className="w-full py-3 bg-gray-600 text-white font-medium rounded-md shadow-md hover:bg-gray-700 transition-colors duration-300"
                   >
-                    Retake Quiz
+                    {t('retake_quiz')}
                   </button>
                 </>
               )}
@@ -347,7 +353,7 @@ const SubEndScreen = () => {
                     <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
                   </div>
                 ) : (
-                  "Return to Dashboard"
+                  t('return_to_dashboard')
                 )}
               </button>
             </div>

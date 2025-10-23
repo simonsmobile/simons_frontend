@@ -2,6 +2,10 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useToast } from "../hooks/useToast";
 import env from "../configs/env";
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
+import { FaChevronLeft } from "react-icons/fa";
+
 
 const ForgotPasswordScreen = () => {
   const toast = useToast(); 
@@ -14,6 +18,8 @@ const ForgotPasswordScreen = () => {
 
   const inputRefs = useRef([]);
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
+  
 
   const validateEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -101,8 +107,8 @@ const ForgotPasswordScreen = () => {
 
       if (response.ok) {
         setSent(true);
-        generateOTP();
-        toast.success("Code was sent to your email");
+        // generateOTP();
+        toast.success(t('code_was_sent'));
 
         setTimeout(() => {
           if (inputRefs.current[0]) {
@@ -111,7 +117,7 @@ const ForgotPasswordScreen = () => {
         }, 300);
       } else {
         const error = await response.json();
-        toast.error(error.message || "Failed to send Code");
+        toast.error(error.message || t('failed_to_send') + "Failed to send Code");
       }
     } catch (error) {
       console.error(error);
@@ -163,7 +169,7 @@ const ForgotPasswordScreen = () => {
       });
 
       if (response.ok) {
-        generateOTP();
+        // generateOTP();
         setInputOTP(["", "", "", "", ""]);
         if (inputRefs.current[0]) {
           inputRefs.current[0].focus();
@@ -205,9 +211,11 @@ const ForgotPasswordScreen = () => {
                 d="M15 19l-7-7 7-7"
               />
             </svg>
+            
           </Link>
+
           <h1 className="text-lg font-semibold text-center flex-1">
-            Forgot Password
+            {t("forgot_password")}
           </h1>
           <div className="w-6"></div>
         </div>
@@ -236,12 +244,12 @@ const ForgotPasswordScreen = () => {
 
           <div className="text-center mb-6">
             <h2 className="text-xl font-bold text-gray-900 mb-2">
-              Forgot Your Password?
+              {t("forgot_your_password")}
             </h2>
             <p className="text-gray-600 text-sm">
               {!sent
-                ? "Enter your email below and we'll send you a verification code to reset your password."
-                : `We've sent a verification code to ${email}`}
+                ? t('forgot_password_text')
+                : t("code_sent", {email})}
             </p>
           </div>
 
@@ -252,12 +260,12 @@ const ForgotPasswordScreen = () => {
                   htmlFor="email"
                   className="block text-sm font-medium text-gray-700 mb-1"
                 >
-                  Email Address
+                 {t("email")}
                 </label>
                 <input
                   id="email"
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder={t("email_instruction")}
                   className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-400"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -274,7 +282,7 @@ const ForgotPasswordScreen = () => {
                     <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
                   </div>
                 ) : (
-                  "Send Verification Code"
+                  t("send_code")
                 )}
               </button>
             </form>
@@ -285,7 +293,7 @@ const ForgotPasswordScreen = () => {
                   htmlFor="otp"
                   className="block text-sm font-medium text-gray-700 mb-3 text-center"
                 >
-                  Enter Verification Code
+                  {t('enter_verification')}
                 </label>
 
                 <div className="flex justify-center space-x-2 mb-2">
@@ -323,12 +331,12 @@ const ForgotPasswordScreen = () => {
                 onClick={verifyOtp}
                 className="w-full py-3 bg-black text-white font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300 focus:outline-none"
               >
-                Verify Code
+               {t('verify_code')}
               </button>
 
               <div className="text-center">
                 <p className="text-sm text-gray-600 mb-1">
-                  Didn't receive the code?
+                  {t('did_not_receive')}
                 </p>
                 <button
                   onClick={handleResendOTP}
@@ -361,7 +369,7 @@ const ForgotPasswordScreen = () => {
                       ></path>
                     </svg>
                   )}
-                  {timer > 0 ? `Resend in ${timer}s` : "Resend Code"}
+                  {timer > 0 ? t('resend_in_seconds', {timer}) : t('resend_code')}
                 </button>
               </div>
             </div>
@@ -369,12 +377,12 @@ const ForgotPasswordScreen = () => {
 
           <div className="text-center mt-8">
             <p className="text-gray-600 text-sm">
-              Remember your password?{" "}
+              {t("remember_password")}{" "}
               <Link
                 to="/login"
                 className="text-black font-medium hover:underline"
               >
-                Back to Login
+                {t("back_to_login")}
               </Link>
             </p>
           </div>

@@ -34,57 +34,54 @@ export const SCORING_CONFIG = {
     F: {
       level: 0,
       points: 0,
-      label: "Not attempted",
+      label: "not_attempted",
       description: "No competence demonstrated",
     },
     B: {
       level: 1,
       points: 50,
-      label: "Level 1",
+      label: "level_1",
       description: "Foundation level competence",
     },
     M: {
       level: 1,
       points: 100,
-      label: "Level 1",
+      label: "level_1",
       description: "Solid foundation level mastery",
     },
     C: {
       level: 2,
       points: 150,
-      label: "Level 2",
+      label: "level_2",
       description: "Advanced level competence",
     },
   },
 
   COMPETENCE_AREAS: {
     1: {
-      name: "Information and data literacy",
+      name: "competence_areas.1.name",
       competences: ["1.1", "1.2", "1.3"],
-      description:
-        "Browsing, searching, filtering, evaluating and managing data",
+      description: "competence_areas.1.description",
     },
     2: {
-      name: "Communication and collaboration",
+      name: "competence_areas.2.name",
       competences: ["2.1", "2.2", "2.3", "2.4", "2.5", "2.6"],
-      description:
-        "Interacting, sharing, collaborating through digital technologies",
+      description:  "competence_areas.2.description",
     },
     3: {
-      name: "Digital content creation",
+      name: "competence_areas.3.name",
       competences: ["3.1", "3.2", "3.3", "3.4"],
-      description: "Developing, integrating and re-elaborating digital content",
+      description: "competence_areas.3.description",
     },
     4: {
-      name: "Safety",
+      name: "competence_areas.4.name",
       competences: ["4.1", "4.2", "4.3", "4.4"],
-      description:
-        "Protecting devices, personal data, health and the environment",
+      description: "competence_areas.4.description",
     },
     5: {
-      name: "Problem solving",
+      name: "competence_areas.5.name",
       competences: ["5.1", "5.2", "5.3", "5.4"],
-      description: "Solving technical problems and identifying needs",
+      description: "competence_areas.5.description",
     },
   },
 
@@ -121,23 +118,30 @@ export const SCORING_CONFIG = {
 
     MILESTONES: {
       15000: {
-        title: "Digital Skills Rising Star",
-        message:
-          "Great job reaching 15,000 points! You've made strong progress building a solid foundation for academic and professional success.",
+        //title: "Digital Skills Rising Star",
+        //message:
+        //  "Great job reaching 15,000 points! You've made strong progress building a solid foundation for academic and professional success.",
+        title: "digital_skills_rising_star",
+        message: "great_job",
       },
       30000: {
-        title: "Digital Skills Advanced Achiever",
-        message:
-          "Excellent work hitting 30,000 points! Your advanced proficiency demonstrates readiness for complex academic tasks and internships.",
+        //title: "Digital Skills Advanced Achiever",
+       // message:
+          //"Excellent work hitting 30,000 points! Your advanced proficiency demonstrates readiness for complex academic tasks and internships.",
+
+        title: "digital_skills_advanced_achiever",
+        message: "excellent_work",
       },
       45000: {
-        title: "Digital Skills Elite Performer",
-        message:
-          "Incredible achievement reaching 45,000 points, near the maximum score! Your near-perfect mastery positions you as a digital innovator.",
+        // title: "Digital Skills Elite Performer",
+        //message:
+        //  "Incredible achievement reaching 45,000 points, near the maximum score! Your near-perfect mastery positions you as a digital innovator.",
+        title: "digital_skills_elite_performer",
+        message: "incredible_achievement",
       },
       0: {
-        title: "Digital Skills Progress",
-        message: "Keep it up!",
+        title: "digital_skills_progress",
+        message: "keep_it_up",
       }
     },
   },

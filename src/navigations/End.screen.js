@@ -1,13 +1,17 @@
-import React, { useEffect, useState, useRef } from "react";
-import { useLocation, Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+import { useEffect, useRef, useState } from "react";
+import { useTranslation } from 'react-i18next';
+import { useLocation, useNavigate } from "react-router-dom";
 import env from "../configs/env";
 import { useToast } from "../hooks/useToast";
-import axios from "axios";
+import '../i18n'; // Ensure i18n is initialized
 
 const EndScreen = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const toast = useToast();
+  const {t} = useTranslation();
+
   const {
     answers = [],
     questionnaire = [],
@@ -206,27 +210,27 @@ const EndScreen = () => {
 
   const getSubcategoryName = (grade) => {
     const subcategories = {
-      1.1: "Browsing, searching and filtering data",
-      1.2: "Evaluating data",
-      1.3: "Managing data",
-      2.1: "Interacting through digital technologies",
-      2.2: "Sharing information",
-      2.3: "Engaging in citizenship",
-      2.4: "Collaborating through digital technologies",
-      2.5: "Netiquette",
-      2.6: "Managing digital identity",
-      3.1: "Developing digital content",
-      3.2: "Integrating and re-elaborating digital content",
-      3.3: "Copyright and licenses",
-      3.4: "Programming",
-      4.1: "Protecting devices",
-      4.2: "Protecting personal data and privacy",
-      4.3: "Protecting health and well-being",
-      4.4: "Protecting the environment",
-      5.1: "Solving technical problems",
-      5.2: "Identifying needs and technological responses",
-      5.3: "Creatively using digital technologies",
-      5.4: "Identifying digital competence gaps",
+      1.1: t('competence_details_short.1_1.title'),
+      1.2: t('competence_details_short.1_2.title'),
+      1.3: t('competence_details_short.1_3.title'),
+      2.1: t('competence_details_short.2_1.title'),
+      2.2: t('competence_details_short.2_2.title'),
+      2.3: t('competence_details_short.2_3.title'),
+      2.4: t('competence_details_short.2_4.title'),
+      2.5: t('competence_details_short.2_5.title'),
+      2.6: t('competence_details_short.2_6.title'),
+      3.1: t('competence_details_short.3_1.title'),
+      3.2: t('competence_details_short.3_2.title'),
+      3.3: t('competence_details_short.3_3.title'),
+      3.4: t('competence_details_short.3_4.title'),
+      4.1: t('competence_details_short.4_1.title'),
+      4.2: t('competence_details_short.4_2.title'),
+      4.3: t('competence_details_short.4_3.title'),
+      4.4: t('competence_details_short.4_4.title'),
+      5.1: t('competence_details_short.5_1.title'),
+      5.2: t('competence_details_short.5_2.title'),
+      5.3: t('competence_details_short.5_3.title'),
+      5.4: t('competence_details_short.5_4.title'),
     };
     return subcategories[grade] || grade;
   };
@@ -234,13 +238,13 @@ const EndScreen = () => {
   const getGradeLabel = (grade) => {
     switch (grade) {
       case "C":
-        return "Level 2";
+        return t('level_2');
       case "M":
-        return "Level 1";
+        return t('level_1');
       case "B":
-        return "Level 1";
+        return t('level_1');
       case "F":
-        return "Not Attempted";
+        return t('not_attempted');
       default:
         return "Unknown";
     }
@@ -255,7 +259,7 @@ const EndScreen = () => {
       <div className="sticky top-0 z-10 bg-white shadow-sm px-4 py-3">
         <h1 className="text-lg font-semibold text-center">
           {isPartialAssessment
-            ? `${selectedCategory} Self-Assessment`
+            ? t('self_assessment') + ": "+ `${selectedCategory}`
             : "Self-Assessment"}
         </h1>
       </div>
@@ -266,10 +270,11 @@ const EndScreen = () => {
             <div className="flex flex-col items-center justify-center py-12">
               <div className="w-20 h-20 border-4 border-t-accent border-gray-200 rounded-full animate-spin mb-6"></div>
               <h2 className="text-xl font-medium text-gray-900 mb-2">
-                Processing Your Self-Assessment
+                
+                {t('processing_selfassessment')}
               </h2>
               <p className="text-center text-gray-600">
-                Please wait while we analyze your responses.
+                {t('please_wait')}
               </p>
             </div>
           ) : (
@@ -300,14 +305,15 @@ const EndScreen = () => {
               <div className="text-center mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">
                   {checkAllCategoriesComplete()
-                    ? "Full Self-Assessment Complete!"
-                    : "Category Self-Assessment Complete!"}
+                    ? t('full_completed')
+                    : t('category_completed') }
                 </h2>
                 <p className="text-gray-600">
-                  You've successfully completed {completedCount} questions.
+                  
+                  {t('succesfully_completed_questions', {completedCount})}
                   {checkAllCategoriesComplete()
-                    ? "Your starting levels for all competences have been determined."
-                    : "Complete the others to finalize your self-assessment."}
+                    ? t('starting_level_determined') 
+                    : t('complete_others')}
                 </p>
               </div>
 
@@ -318,7 +324,7 @@ const EndScreen = () => {
                       {completedCount}
                     </span>
                     <span className="text-sm text-gray-600">
-                      Questions Answered in this Session
+                     {t('questions_answered')}
                     </span>
                   </div>
                 </div>
@@ -327,7 +333,7 @@ const EndScreen = () => {
               {isPartialAssessment && categoryResults.length > 0 && (
                 <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-4 mb-8">
                   <h3 className="font-medium text-gray-900 mb-3">
-                    {selectedCategory} Results
+                    {t('results')}: {selectedCategory} 
                   </h3>
                   <div className="space-y-3">
                     {categoryResults.map((result, idx) => (
@@ -358,11 +364,11 @@ const EndScreen = () => {
               )}
 
               <div className="bg-gray-50 border border-gray-200 rounded-lg shadow-sm p-4 mb-8">
-                <h3 className="font-medium text-gray-900 mb-2">Next Steps</h3>
+                <h3 className="font-medium text-gray-900 mb-2">{t('next_steps')}</h3>
                 <p className="text-sm text-gray-800">
                   {checkAllCategoriesComplete()
-                    ? "Your self-assessment is complete! You can now proceed to your dashboard to start the timed exercises."
-                    : "Continue to the next category to complete your self-assessment."}
+                    ? t('self_assessment_complete') 
+                    : t('continue_to_next') }
                 </p>
               </div>
             </div>
@@ -381,8 +387,8 @@ const EndScreen = () => {
               {loading
                 ? "Processing..."
                 : checkAllCategoriesComplete()
-                ? "Go to Dashboard"
-                : "Continue Other Categories"}
+                ?  t('go_to_dashboard')
+                : t('continue_to_other') }
             </button>
 
             {isPartialAssessment && !checkAllCategoriesComplete() && (
@@ -395,7 +401,7 @@ const EndScreen = () => {
                     : "bg-amber-400 text-black hover:bg-amber-500"
                 }`}
               >
-                Go to Dashboard
+                {t('go_to_dashboard')}
               </button>
             )}
           </div>

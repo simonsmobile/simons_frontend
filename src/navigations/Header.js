@@ -3,9 +3,12 @@ import { useNavigate } from "react-router-dom";
 import { FaEllipsisV, FaSignOutAlt } from "react-icons/fa";
 import { auth } from "../configs/Firebase";
 import { signOut } from "firebase/auth";
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
 
 const Header = ({ title, showMenuButton = false, showSimonsText = false }) => {
   const navigate = useNavigate();
+  const { t, i18n } = useTranslation();
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef(null);
 
@@ -55,7 +58,7 @@ const Header = ({ title, showMenuButton = false, showSimonsText = false }) => {
           />
           {!showSimonsText && title && (
             <h1 className="text-lg font-semibold text-center flex-1 absolute left-1/2 transform -translate-x-1/2">
-              {title}
+              {t(title)}
             </h1>
           )}
         </div>
@@ -84,7 +87,7 @@ const Header = ({ title, showMenuButton = false, showSimonsText = false }) => {
               className="flex items-center w-full px-4 py-2 text-sm text-red-600 hover:bg-red-50"
             >
               <FaSignOutAlt className="mr-2" />
-              Log Out
+              {t('logout')}
             </button>
           </div>
         )}

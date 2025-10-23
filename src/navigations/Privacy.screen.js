@@ -1,9 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+import '../i18n'; // Ensure i18n is initialized
 
 const PrivacyScreen = () => {
   const navigate = useNavigate();
-
+  const { t, i18n } = useTranslation();
+  
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <div className="w-full relative">
@@ -32,7 +35,7 @@ const PrivacyScreen = () => {
             </svg>
           </button>
           <h1 className="text-lg font-semibold text-center flex-1">
-            Privacy Policy
+            {t('privacy_policy')}
           </h1>
           <div className="w-6"></div>
         </div>
@@ -41,30 +44,151 @@ const PrivacyScreen = () => {
       <div className="flex-1 px-4 py-6 mt-4">
         <div className="max-w-xl mx-auto bg-white p-6 rounded-lg shadow border border-gray-200">
           <h2 className="text-xl font-bold text-gray-900 mb-4">
-            Privacy Policy
+            {t('privacy_policy')}
           </h2>
           <div className="prose prose-sm max-w-none text-gray-700 space-y-4">
-            <p>...</p>
+            <p>{t("privacy.intro")}</p>
 
             <h3 className="font-semibold text-gray-800">
-              Information We Collect
+              {t("privacy.title.data_collected")}
             </h3>
-            <p>...</p>
+            <p>
+              <ul>
+                <li>
+                  {t("privacy.content.data_collected.p1")}
+                </li>
+                <li>
+                  {t("privacy.content.data_collected.p2")}
+                </li>
+              </ul>
+            </p>
 
             <h3 className="font-semibold text-gray-800">
-              How We Use Information
+              {t("privacy.title.data_usage")}
             </h3>
-            <p>...</p>
+            <p>
+              <ul>
+                <li>
+                  {t("privacy.content.data_usage.p1")}
+                </li>
+                <li>
+                  {t("privacy.content.data_usage.p2")}
+                </li>
+                <li>
+                  {t("privacy.content.data_usage.p3")}
+                </li>
+                <li>
+                  {t("privacy.content.data_usage.p4")}
+                </li>
+              </ul>
+            </p>
 
-            <h3 className="font-semibold text-gray-800">Data Security</h3>
-            <p>...</p>
+            <h3 className="font-semibold text-gray-800">
+              {t("privacy.title.data_sharing")}
+            </h3>
+            <p>
+              {t("privacy.intro.data_sharing")}
+              <ul>
+                <li>
+                  {t("privacy.content.data_sharing.p1")}
+                </li>
+                <li>
+                  {t("privacy.content.data_sharing.p2")}
+                </li>
+              </ul>
+            </p>
+
+            <h3 className="font-semibold text-gray-800">
+              {t("privacy.title.data_security")}
+            </h3>
+            <p>
+              {t("privacy.content.data_security.p1")}
+            </p>
+
+            <h3 className="font-semibold text-gray-800">
+              {t("privacy.title.data_retention")}
+            </h3>
+            <p>
+              {t("privacy.content.data_retention.p1")}
+            </p>
+
+            <h3 className="font-semibold text-gray-800">
+              {t("privacy.title.user_rights")}
+            </h3>
+            <p>
+              {t("privacy.intro.user_rights")}
+              <ul>
+                <li>
+                  {t("privacy.content.user_rights.p1")}
+                </li>
+                <li>
+                  {t("privacy.content.user_rights.p2")}
+                </li>
+                <li>
+                  {t("privacy.content.user_rights.p3")}
+                </li>
+              </ul>
+            </p>
+            <h3 className="font-semibold text-gray-800">
+              {t("privacy.title_contact")}
+            </h3>
+            <p>
+              SIMOnS – Student Improvement and Monitoring of Online Skills<br />
+              <a
+                href="https://www.simonsproject.eu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-blue-600 hover:underline hover:text-blue-800 flex items-center group"
+              >
+                <svg
+                  className="w-4 h-4 mr-2 flex-shrink-0 text-gray-400 group-hover:text-blue-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                  />
+                </svg>
+                https://www.simonsproject.eu
+              </a>
+              
+                <a
+                href="mailto:info@simonsproject.eu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-blue-600 hover:underline hover:text-blue-800 flex items-center group"
+              >
+                <svg
+                  className="w-4 h-4 mr-2 flex-shrink-0 text-gray-400 group-hover:text-blue-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                  />
+                </svg>
+                info@simonsproject.eu
+              </a>
+            </p>
+            <p>
+              {t('privacy.contact_us')}
+            </p>
+            <p><strong>{t('privacy.approval')}</strong></p>
           </div>
           <div className="mt-8 text-center">
             <button
               onClick={() => navigate("/profile")}
               className="px-6 py-2 bg-black text-white font-medium rounded-md shadow-md hover:bg-gray-800 transition-colors duration-300 text-sm"
             >
-              Back to Profile
+              {t('back_to_profile')}
             </button>
           </div>
         </div>

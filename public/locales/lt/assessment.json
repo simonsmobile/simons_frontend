@@ -1,0 +1,742 @@
+{
+  "assessment": {
+    "Question 1": {
+      "question": "Aš žinau, kad skirtingos paieškos sistemos gali pateikti skirtingus paieškos rezultatus, nes į juos daro įtaką komerciniai veiksniai.",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 2": {
+      "question": "Aš žinau, kokius žodžius naudoti, kad greitai rasčiau tai, ko man reikia (pvz., ieškant internete ar dokumente).",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 3": {
+      "question": "Naudodamasis paieškos sistema, aš moku naudotis jos išplėstinėmis funkcijomis.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 4": {
+      "question": "Aš žinau, kaip surasti svetainę, kurioje jau lankiausi anksčiau.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 5": {
+      "question": "Aš žinau, kaip atskirti reklaminį turinį nuo kito internete randamo ar gaunamo turinio (pvz., atpažinti reklamą socialiniuose tinkluose ar paieškos sistemose).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 6": {
+      "question": "Aš žinau, kaip nustatyti internetinio informacijos šaltinio paskirtį (pvz., informuoti, paveikti, linksminti ar parduoti).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 7": {
+      "question": "Aš kritiškai tikrinu, ar internete randama informacija yra patikima.",
+      "options": [
+        "Visai ne",
+        "Nedaug / labai mažai",
+        "Taip / Taip, esu / Taip, darau",
+        "Labai daug"
+      ]
+    },
+    "Question 8": {
+      "question": "Aš žinau, kad kai kuri informacija internete yra klaidinga (pvz., melagingos naujienos).",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 9": {
+      "question": "Aš žinau apie skirtingas saugojimo laikmenas (pvz., vidinį ar išorinį kietąjį diską, USB atmintį, atminties kortelę).",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 10": {
+      "question": "Aš žinau, kaip tvarkyti skaitmeninį turinį (pvz., dokumentus, nuotraukas, vaizdo įrašus) naudodamas aplankus arba žymas, kad galėčiau juos rasti vėliau.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 11": {
+      "question": "Aš žinau, kaip kopijuoti ir perkelti failus (pvz., dokumentus, nuotraukas, vaizdo įrašus) tarp aplankų, įrenginių ar debesyje.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 12": {
+      "question": "Aš žinau, kaip valdyti ir analizuoti duomenis naudodamasis programine įranga (pvz., rūšiavimas, filtravimas, skaičiavimai).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 13": {
+      "question": "Aš žinau, kaip siųsti, atsakyti ir persiųsti el. laiškus.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 14": {
+      "question": "Aš žinau, kad daugelis komunikacijos paslaugų ir socialiniai tinklai yra nemokami, nes juos finansuoja reklama.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 15": {
+      "question": "Aš žinau, kaip naudotis pažangiomis vaizdo konferencijų funkcijomis (pvz., moderavimu, garso ir vaizdo įrašymu).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 16": {
+      "question": "Aš žinau, kurie komunikacijos įrankiai ir paslaugos (pvz., telefonas, el. paštas, vaizdo konferencija, tekstinė žinutė) yra tinkami naudoti skirtingomis aplinkybėmis.",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 17": {
+      "question": "Aš esu linkęs dalintis skaitmeniniu turiniu, kuris, mano manymu, gali būti įdomus ir naudingas kitiems.",
+      "options": [
+        "Visai ne",
+        "Nedaug / labai mažai",
+        "Taip / Taip, esu / Taip, darau",
+        "Labai daug"
+      ]
+    },
+    "Question 18": {
+      "question": "Aš žinau, kaip naudotis debesų paslaugomis (pvz., Google Drive, DropBox, OneDrive), kad galėčiau dalintis savo failais.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 19": {
+      "question": "Aš žinau, kaip pakeisti, su kuo dalinuosi turiniu (pvz., draugais, draugų draugais, visais).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 20": {
+      "question": "Aš žinau, kaip nurodyti dokumentų, rastų internete, šaltinį (pvz., autorių ar tinklalapio adresą).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 21": {
+      "question": "Aš žinau, kaip kandidatuoti į darbą naudodamasis skaitmenine platforma (pvz., užpildyti formą, įkelti savo CV ir nuotrauką).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 22": {
+      "question": "Aš žinau, kad daug viešųjų paslaugų prieinamos internete (pvz., vizito pas gydytoją rezervavimas, mokesčių deklaracijos pateikimas, gimimo, santuokos, gyvenamosios vietos ir kitų pažymų užsakymas).",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 23": {
+      "question": "Aš žinau, kaip apmokėti už prekes ir paslaugas, kurias perku internetu (pvz., naudojant tiesioginį banko pavedimą, kredito / debeto korteles, kitas internetines mokėjimo sistemas).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 24": {
+      "question": "Man svarbu diskutuoti socialiniais ar politiniais klausimais internete (pvz., forumuose, naujienų svetainėse, Facebook, Twitter).",
+      "options": [
+        "Visai ne",
+        "Nedaug / labai mažai",
+        "Taip / Taip, esu / Taip, darau",
+        "Labai daug"
+      ]
+    },
+    "Question 25": {
+      "question": "Aš suprantu nuotolinio bendradarbiavimo naudą (pvz., sumažėjusį kelionės laiką).",
+      "options": [
+        "Visai ne",
+        "Nedaug / labai mažai",
+        "Taip / Taip, esu / Taip, darau",
+        "Labai daug"
+      ]
+    },
+    "Question 26": {
+      "question": "Aš žinau, kaip redaguoti bendrinamą internetinį dokumentą.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 27": {
+      "question": "Aš žinau, kaip pakviesti kitus ir suteikti tinkamas teises bendradarbiauti prie bendrinamo dokumento.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 28": {
+      "question": "Aš žinau, kad turėčiau paprašyti žmogaus leidimo prieš skelbdamas ar dalindamasis jų nuotraukomis.",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 29": {
+      "question": "Aš žinau, kaip atpažinti internetines žinutes ir elgesį, kuris puola tam tikras grupes ar asmenis (pvz., neapykantos kalba).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 30": {
+      "question": "Aš galiu imtis tinkamų veiksmų, jei kas nors elgiasi netinkamai internete (pvz., įžeidžiantis komentaras, grasinimai).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 31": {
+      "question": "Aš žinau, kaip elgtis internete pagal situaciją (pvz., oficialiai ar neoficialiai).",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 32": {
+      "question": "Aš žinau, kad mano skaitmeninė tapatybė yra viskas, kas mane identifikuoja interneto aplinkose (pvz., vartotojo vardai, patiktukai ir įrašai socialiniuose tinkluose, internete pasirašytos peticijos).",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 33": {
+      "question": "Aš žinau, kaip sukurti profilį skaitmeninėje aplinkoje asmeniniais ar profesiniais tikslais.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 34": {
+      "question": "Aš žinau, kad ES įvedė teisės būti pamirštam reglamentą (t. y. galimybę pašalinti privačią informaciją iš interneto).",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 35": {
+      "question": "Aš žinau, kaip sukonfigūruoti savo interneto naršyklės nustatymus, kad apribotų ar neleisti slapukų.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 36": {
+      "question": "Aš žinau, kaip kurti ir redaguoti skaitmeninius teksto failus (pvz., Word, OpenDocument, Google Docs).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 37": {
+      "question": "Aš žinau, kaip išreikšti save kuriant skaitmeninį turinį internete (pvz., tinklaraščio įrašą, vaizdo įrašą „YouTube“).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 38": {
+      "question": "Aš žinau, kaip sukurti multimedijos pristatymą su tekstu, vaizdais, garsu ir vaizdo elementais.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 39": {
+      "question": "Norėdamas išreikšti save, aš atsargiai renkuosi tinkamą skaitmeninės medijos tipą, atsižvelgdamas į auditoriją ir savo tikslą (pvz., naudoti socialinę žiniasklaidą projekto reklamavimui).",
+      "options": [
+        "Visai ne",
+        "Nedaug / labai mažai",
+        "Taip / Taip, esu / Taip, darau",
+        "Labai daug"
+      ]
+    },
+    "Question 40": {
+      "question": "Aš noriai kuriu naują skaitmeninį turinį maišydamas ir modifikuodamas esamus skaitmeninius išteklius (pvz., pristatymą su nuotraukomis ir internete rasta garso takeliu).",
+      "options": [
+        "Visai ne",
+        "Nedaug / labai mažai",
+        "Taip / Taip, esu / Taip, darau",
+        "Labai daug"
+      ]
+    },
+    "Question 41": {
+      "question": "Aš žinau, kad kai kuriuos skaitmeninius turinius galima teisėtai naudoti pakartotinai ar perdirbti (pvz., viešo naudojimo arba su „Creative Commons“ licencijomis).",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 42": {
+      "question": "Aš žinau, kaip redaguoti ar keisti kitų sukurtą skaitmeninį turinį (pvz., įterpti tekstą į paveikslėlį, redaguoti wiki).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 43": {
+      "question": "Aš žinau, kaip sukurti ką nors naujo derinant skirtingus turinio tipus (pvz., tekstą ir vaizdus).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 44": {
+      "question": "Aš esu atsargus ir laikau taisyklių dėl autorių teisių ir skaitmeninio turinio licencijų, kurias randu internete.",
+      "options": [
+        "Visai ne",
+        "Nedaug / labai mažai",
+        "Taip / Taip, esu / Taip, darau",
+        "Labai daug"
+      ]
+    },
+    "Question 45": {
+      "question": "Aš žinau, kad atsisiųsti ar dalintis skaitmeniniu turiniu (pvz., muzika, programine įranga, filmais) gali turėti etinių ar teisinių pasekmių.",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 46": {
+      "question": "Aš galiu atpažinti, kada skaitmeninis turinys pateikiamas neteisėtai (pvz., programinė įranga, filmai, muzika, knygos, TV).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 47": {
+      "question": "Aš žinau, kokios skirtingos licencijos taikomos naudojant skaitmeninį turinį (pvz., „Creative Commons“ licencijos).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 48": {
+      "question": "Man įdomu suprasti, kaip užduotį galima suskaidyti į žingsnius, kad ji būtų automatizuota, pavyzdžiui, programinėje įrangoje ar roboto pagalba.",
+      "options": [
+        "Visai ne",
+        "Nedaug / labai mažai",
+        "Taip / Taip, esu / Taip, darau",
+        "Labai daug"
+      ]
+    },
+    "Question 49": {
+      "question": "Aš žinau, kad programavimo kalbos (pvz., Python, Visual Basic, Java) naudojamos nurodyti skaitmeniniam įrenginiui, kaip atlikti užduotį.",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 50": {
+      "question": "Aš galiu rašyti scenarijus, makrokomandas ir paprastas programas, kad automatizuočiau užduoties vykdymą.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 51": {
+      "question": "Aš žinau, kad gali būti skirtingi algoritminiai sprendimai atlikti tam tikrą skaičiavimo užduotį (pvz., rūšiavimą ar paiešką).",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 52": {
+      "question": "Aš suprantu naudą ir taip pat saugumo rizikas naudojant prie interneto prijungtus įrenginius ar sistemas (pvz., išmaniuosius laikrodžius, išmaniuosius namų įrenginius).",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 53": {
+      "question": "Aš žinau apie tai, kaip svarbu nuolat atnaujinti operacinę sistemą, antivirusinę programą ir kitą programinę įrangą, kad būtų išvengta saugumo problemų.",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 54": {
+      "question": "Aš žinau, kaip sukonfigūruoti ugniasienės nustatymus skirtinguose įrenginiuose.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 55": {
+      "question": "Aš žinau, kaip atkurti skaitmeninę informaciją ir kitą turinį (pvz., nuotraukas, kontaktus) iš atsarginės kopijos.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 56": {
+      "question": "Aš žinau, kaip apriboti arba neleisti prieiti prie mano geografinės vietos.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 57": {
+      "question": "Aš žinau, kaip atpažinti įtartinus el. laiškus, kurie bando gauti mano asmens duomenis.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 58": {
+      "question": "Aš žinau, kaip patikrinti, ar svetainė, kurioje manęs prašoma pateikti asmens duomenis, yra saugi (pvz., https svetainės, saugumo logotipas ar sertifikatas).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 59": {
+      "question": "Aš žinau, kokių asmens duomenų neturėčiau dalintis ar viešinti internete (pvz., socialiniuose tinkluose).",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 60": {
+      "question": "Aš atidžiai tikrinu naudojamų skaitmeninių paslaugų privatumo politikas",
+      "options": [
+        "Visai ne",
+        "Nedaug / labai mažai",
+        "Taip / Taip, esu / Taip, darau",
+        "Labai daug"
+      ]
+    },
+    "Question 61": {
+      "question": "Aš suvokiu, kad turėčiau valdyti laiką, kurį praleidžiu naudodamasis skaitmeniniais įrenginiais",
+      "options": [
+        "Visai ne",
+        "Nedaug / labai mažai",
+        "Taip / Taip, esu / Taip, darau",
+        "Labai daug"
+      ]
+    },
+    "Question 62": {
+      "question": "Aš žinau, kaip apsisaugoti nuo nepageidaujamų ir kenkėjiškų internetinių sąveikų bei turinio (pvz., šlamšto žinutės, laiškai dėl tapatybės vagystės).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 63": {
+      "question": "Aš žinau apie skaitmeninius įrankius, kurie gali padėti vyresnio amžiaus žmonėms ar žmonėms su specialiaisiais poreikiais.",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 64": {
+      "question": "Aš ieškau būdų, kaip skaitmeninės technologijos galėtų padėti man gyventi ir vartoti ekologiškiau.",
+      "options": [
+        "Visai ne",
+        "Nedaug / labai mažai",
+        "Taip / Taip, esu / Taip, darau",
+        "Labai daug"
+      ]
+    },
+    "Question 65": {
+      "question": "Aš žinau, kad seni skaitmeniniai įrenginiai ir eksploatacinės medžiagos (pvz., kompiuteriai, išmanieji telefonai, baterijos) turi būti tinkamai utilizuojami, kad būtų sumažintas jų poveikis aplinkai.",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 66": {
+      "question": "Aš žinau, kaip sumažinti mano įrenginių energijos suvartojimą (pvz., pakeisti nustatymus, uždaryti programėles, išjungti „Wi-Fi“).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 67": {
+      "question": "Aš žinau „žalius“ elgsenos įpročius, kurių reikėtų laikytis perkant ar naudojant skaitmeninius įrenginius (pvz., rinktis įrenginius su „Eco“ ženklu, vengti nereikalingo skaitmeninių failų spausdinimo, nelaikyti prijungtų telefonų ir nešiojamųjų kompiuterių įkroviklių be įrenginio).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 68": {
+      "question": "Susidūręs su technine problema, aš bandau nuosekliai, žingsnis po žingsnio, nustatyti problemą",
+      "options": [
+        "Visai ne",
+        "Nedaug / labai mažai",
+        "Taip / Taip, esu / Taip, darau",
+        "Labai daug"
+      ]
+    },
+    "Question 69": {
+      "question": "Aš žinau kelias priežastis, kodėl skaitmeninis įrenginys gali nepavykti prisijungti prie interneto (pvz., neteisingas „Wi-Fi“ slaptažodis, įjungtas lėktuvo režimas).",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 70": {
+      "question": "Susidūręs su technine problema, aš gebu rasti sprendimus internete.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 71": {
+      "question": "Aš galiu redaguoti savo skaitmeninių įrenginių operacinės sistemos konfigūracijas, kad išspręsčiau technines problemas (pvz., paslaugų automatinis sustabdymas / paleidimas, registro raktų keitimas).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 72": {
+      "question": "Aš paprastai stengiuosi išsiaiškinti, ar yra technologinis sprendimas, galintis padėti išspręsti mano asmeninį ar profesinį poreikį.",
+      "options": [
+        "Visai ne",
+        "Nedaug / labai mažai",
+        "Taip / Taip, esu / Taip, darau",
+        "Labai daug"
+      ]
+    },
+    "Question 73": {
+      "question": "Aš žinau dažniausiai naudojamų skaitmeninių įrenginių (kompiuterio, planšetės, išmaniojo telefono) pagrindines funkcijas.",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 74": {
+      "question": "Aš žinau, kaip pasirinkti tinkamą įrankį, įrenginį ar paslaugą konkrečiai užduočiai atlikti (pvz., pasirinkti išmanųjį telefoną pagal savo poreikius, išsirinkti įrankį profesinei vaizdo konferencijai).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 75": {
+      "question": "Aš žinau techninius sprendimus, kurie gali pagerinti prieigą prie skaitmeninių įrankių ir jų naudojimą, pavyzdžiui, kalbos vertimą, padidinimą (magnification) ar mastelio didinimą (zoom) ir teksto į balsą funkciją.",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 76": {
+      "question": "Aš žinau, kad skaitmeninė technologija gali būti galingas įrankis procesams ir produktams inovuoti",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    },
+    "Question 77": {
+      "question": "Aš esu pasirengęs dalyvauti iššūkiuose ir konkursuose, skirtuose intelektinėms, socialinėms ar praktinėms problemoms spręsti pasitelkiant skaitmenines technologijas.",
+      "options": [
+        "Visai ne",
+        "Nedaug / labai mažai",
+        "Taip / Taip, esu / Taip, darau",
+        "Labai daug"
+      ]
+    },
+    "Question 78": {
+      "question": "Aš galiu naudoti duomenų įrankius (pvz., duomenų bazes, duomenų gavybos ir analizės programinę įrangą), kurie valdo ir organizuoja sudėtingą informaciją, kad priimčiau sprendimus ir spręsčiau problemas.",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 79": {
+      "question": "Aš esu pasirengęs padėti savo bendruomenės žmonėms tobulinti jų skaitmeninius įgūdžius.",
+      "options": [
+        "Visai ne",
+        "Nedaug / labai mažai",
+        "Taip / Taip, esu / Taip, darau",
+        "Labai daug"
+      ]
+    },
+    "Question 80": {
+      "question": "Aš domiuosi naujais skaitmeniniais įrenginiais ir programomis ir noriai su jais eksperimentuoju, kai tik pasitaiko proga.",
+      "options": [
+        "Visai ne",
+        "Nedaug / labai mažai",
+        "Taip / Taip, esu / Taip, darau",
+        "Labai daug"
+      ]
+    },
+    "Question 81": {
+      "question": "Aš žinau, kaip naudotis internetiniais mokymosi įrankiais, kad gerinčiau savo skaitmeninius įgūdžius (pvz., vaizdo pamokos, internetiniai kursai).",
+      "options": [
+        "Nežinau, kaip tai padaryti",
+        "Galiu tai padaryti su pagalba",
+        "Galiu tai padaryti savarankiškai",
+        "Galiu tai padaryti užtikrintai ir, jei reikia, galiu padėti / vadovauti kitiems"
+      ]
+    },
+    "Question 82": {
+      "question": "Aš žinau apie naujas skaitmeninio pasaulio tendencijas ir kaip jos veikia mano asmeninį ar profesinį gyvenimą",
+      "options": [
+        "Neturiu apie tai žinių / Niekada apie tai negirdėjau",
+        "Turiu tik ribotą supratimą apie tai ir man reikia daugiau paaiškinimų",
+        "Turiu gerą supratimą apie tai",
+        "Puikiai valdau šią temą / klausimą ir galėčiau tai paaiškinti kitiems"
+      ]
+    }
+  }
+}
