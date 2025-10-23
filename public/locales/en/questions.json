@@ -747,7 +747,7 @@
         "No, never.",
         "Yes, because it is a private space.",
         "Yes, as long as I ask their parents.",
-        "Yes, if I do not show any recognizable features and I ask a permission to publish the photo.."
+        "Yes, if I do not show any recognizable features and I ask a permission to publish the photo."
       ],
       "answer": "Yes, if I do not show any recognizable features and I ask a permission to publish the photo."
     },
@@ -1207,6 +1207,18 @@
         ],
         "answer": "The VPN encrypts traffic, the firewall monitors and filters it"
     },
+
+    "4.1 M5": {
+        "question":"What is the basic principle of the AES encryption algorithm for protecting data?",
+        "options": [
+        "Turning data into a readable binary code",
+        "Using symmetric keys for encryption and decryption",
+        "Generating random alphanumeric passwords",
+        "Using asymmetric keys for enhanced security"
+        ],
+        "answer": "Using symmetric keys for encryption and decryption"
+    },
+
     "4.2 B1": {
         "question": "How can you protect your personal data when using social media?",
         "options": [

@@ -1286,6 +1286,18 @@
   ],
   "answer": "VPN salaa liikenteen, palomuuri valvoo ja suodattaa sitä"
 },
+
+"4.1 M5": {
+  "question": "Mikä on AES-salausalgoritmin perusperiaate tietojen suojaamisessa?",
+  "options": [
+    "Tietojen muuntaminen luettavaksi binäärikoodiksi",
+    "Symmetristen avainten käyttö salauksessa ja salauksen purkamisessa",
+    "Satunnaisten aakkosnumeeristen salasanojen luominen",
+    "Epäsymmetristen avainten käyttö turvallisuuden parantamiseksi"
+  ],
+  "answer": "Symmetristen avainten käyttö salauksessa ja salauksen purkamisessa"
+},
+
 "4.2 B1": {
   "question": "Miten voit suojata henkilötietojasi sosiaalista mediaa käyttäessäsi?",
   "options": [
